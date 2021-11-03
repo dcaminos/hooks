@@ -1,26 +1,16 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
+import { Router } from "./router";
+import { ConfigProvider } from 'antd';
+import { useContext } from "react";
+import { UIContext } from "./stores/ui-store";
+import { observer } from "mobx-react-lite";
+
+export const App: React.FC = observer(props => {
+  const { direction } = useContext(UIContext)
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ConfigProvider direction={direction}>
+      <Router />
+    </ConfigProvider>
   );
-}
-
-export default App;
+})
