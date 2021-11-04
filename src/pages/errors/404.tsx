@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import { Row, Col, Button } from "antd";
 
-import img from "../../../assets/images/pages/error/404.svg";
+import img from "../../assets/images/pages/error/404.svg";
 
 export default function Error404() {
   return (

@@ -8,8 +8,8 @@ export class UiStore {
     @observable sidebarCollapsed: boolean = false
     @observable sidebarCollapseButton: boolean = true
     @observable layout: 'horizontal' | 'vertical' = 'vertical'
-    @observable navigationFull: DirectionType = 'ltr'
-    @observable navigationBg: DirectionType = 'ltr'
+    @observable navigationFull: boolean = false
+    @observable navigationBg: boolean =  false
     @observable direction: DirectionType = 'ltr'
 
 }
