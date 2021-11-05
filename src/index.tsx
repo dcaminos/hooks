@@ -7,7 +7,7 @@ import { initializeApp } from 'firebase/app'
 import "./assets/icons/remixicon.css";
 import "./assets/less/yoda-theme.less";
 
-import { App } from './app';
+import { App } from './App';
 
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
