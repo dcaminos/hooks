@@ -21,6 +21,8 @@ import Dashboard from "./pages/dashboard/dashboard";
 import { Editor } from "./pages/editor/editor";
 import { EditorLayout } from "./components/layouts/editor-layout";
 
+import {SingUp} from "./pages/auth/register/index";
+
 export const Router: React.FC = observer(props => {
     // Mobx
     const { theme, direction } = useContext(UIContext)
@@ -70,6 +72,14 @@ export const Router: React.FC = observer(props => {
                     render={() => (<DashboardLayout> 
                         <Dashboard/>
                     </DashboardLayout>)}
+                    
+                />
+
+                {/* Register */}
+                <Route
+                    exact
+                    path={'/register'}
+                    render={() => (<SingUp />)}
                     
                 />
 

@@ -25,6 +25,7 @@ export function HeaderText() {
           href="https://trello.com/b/8ZRmDN5y/yoda-roadmap"
           className="da-ml-8 da-text-color-black-60"
           target="_blank"
+          rel="noreferrer"
         >
             <div className="remix-icon da-text-color-dark-5" >
           <Upload set="light" />
