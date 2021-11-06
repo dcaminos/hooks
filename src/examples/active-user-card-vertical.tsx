@@ -3,18 +3,19 @@ import React, { useEffect, useState } from "react";
 import { Row, Col } from "antd";
 import Chart from "react-apexcharts";
 
-export default function CustomerSupportCardVertical() {
-  const [chartWidth, setChartWidth] = useState("50%")
+export default function ActiveUserCardVertical() {
+  const [chartWidth, setChartWidth] = useState("50%");
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setChartWidth("100%")
+      setChartWidth("100%");
     }, 10);
+
     return () => clearTimeout(timer);
   }, []);
 
   const [data] = useState({
-    series: [76],
+    series: [40],
     options: {
       chart: {
         fontFamily: "Manrope, sans-serif",
@@ -60,19 +61,18 @@ export default function CustomerSupportCardVertical() {
 
           dataLabels: {
             show: true,
-
             value: {
               fontSize: "14px",
               offsetY: -10,
               color: "#636E72",
             },
-
             total: {
               show: true,
               fontSize: "14px",
+              fontWeight: "light",
               label: "",
               formatter: function () {
-                return "%" + 76;
+                return "%" + 40;
               },
             },
           },
@@ -84,7 +84,7 @@ export default function CustomerSupportCardVertical() {
       dataLabels: {
         enabled: false,
       },
-      colors: ["#FF8B9A"],
+      colors: ["#FFC700"],
       xaxis: {
         labels: {
           show: false,
@@ -114,7 +114,7 @@ export default function CustomerSupportCardVertical() {
         <Col span={24} className="da-text-center">
           <div
             id="chart"
-            className="da-bg-color-secondary-4 da-bg-color-dark-90 da-border-radius da-d-flex-center-full da-mb-18 da-w-100 da-overflow-hidden"
+            className="da-bg-color-warning-4 da-bg-color-dark-90 da-border-radius da-d-flex-center-full da-mb-18"
           >
             <Chart
               options={data.options as any}
@@ -126,9 +126,9 @@ export default function CustomerSupportCardVertical() {
             />
           </div>
 
-          <h3 className="da-mb-0">2,345</h3>
+          <h3 className="da-mb-0">17,346</h3>
           <p className="da-p1-body da-mb-0 da-text-color-black-80 da-text-color-dark-50">
-            Ticket Closed
+            Active Users
           </p>
         </Col>
       </Row>

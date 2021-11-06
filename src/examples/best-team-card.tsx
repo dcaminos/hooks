@@ -68,7 +68,10 @@ export default function BestTeamCard() {
               className="da-mr-16 da-bg-color-warning-3"
             />
 
-            <RiArrowRightLine className="remix-icon da-text-color-dark-30" size={24} />
+            <RiArrowRightLine
+              className="remix-icon da-text-color-dark-30"
+              size={24}
+            />
           </Row>
         </Col>
       </Row>

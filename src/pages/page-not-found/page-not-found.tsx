@@ -5,7 +5,7 @@ import { Row, Col, Button } from "antd";
 
 import img from "../../assets/images/pages/error/404.svg";
 
-export default function Error404() {
+export const PageNotFound: React.FC = (props) => {
   return (
     <Row className="da-bg-color-primary-4 da-bg-color-dark-90 da-text-center">
       <Col className="da-error-content da-py-32" span={24}>
@@ -14,7 +14,11 @@ export default function Error404() {
             <div className="da-position-relative da-mt-sm-0 da-mt-64 da-mb-32">
               <div className="da-error-content-circle da-bg-dark-100"></div>
 
-              <img className="da-position-relative da-d-block da-m-auto" src={img} alt="404" />
+              <img
+                className="da-position-relative da-d-block da-m-auto"
+                src={img}
+                alt="404"
+              />
             </div>
 
             <h1 className="da-error-content-title da-mb-sm-0 da-mb-8 da-font-weight-300">
@@ -39,4 +43,4 @@ export default function Error404() {
       </Col>
     </Row>
   );
-}
+};

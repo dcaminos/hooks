@@ -3,19 +3,18 @@ import React, { useEffect, useState } from "react";
 import { Row, Col } from "antd";
 import Chart from "react-apexcharts";
 
-export default function ActiveUserCardVertical() {
-  const [chartWidth, setChartWidth] = useState("50%")
+export default function CustomerSupportCardVertical() {
+  const [chartWidth, setChartWidth] = useState("50%");
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setChartWidth("100%")
+      setChartWidth("100%");
     }, 10);
-
     return () => clearTimeout(timer);
   }, []);
 
   const [data] = useState({
-    series: [40],
+    series: [76],
     options: {
       chart: {
         fontFamily: "Manrope, sans-serif",
@@ -61,18 +60,19 @@ export default function ActiveUserCardVertical() {
 
           dataLabels: {
             show: true,
+
             value: {
               fontSize: "14px",
               offsetY: -10,
               color: "#636E72",
             },
+
             total: {
               show: true,
               fontSize: "14px",
-              fontWeight: "light",
               label: "",
               formatter: function () {
-                return "%" + 40;
+                return "%" + 76;
               },
             },
           },
@@ -84,7 +84,7 @@ export default function ActiveUserCardVertical() {
       dataLabels: {
         enabled: false,
       },
-      colors: ["#FFC700"],
+      colors: ["#FF8B9A"],
       xaxis: {
         labels: {
           show: false,
@@ -114,10 +114,10 @@ export default function ActiveUserCardVertical() {
         <Col span={24} className="da-text-center">
           <div
             id="chart"
-            className="da-bg-color-warning-4 da-bg-color-dark-90 da-border-radius da-d-flex-center-full da-mb-18"
+            className="da-bg-color-secondary-4 da-bg-color-dark-90 da-border-radius da-d-flex-center-full da-mb-18 da-w-100 da-overflow-hidden"
           >
             <Chart
-              options={data.options  as any}
+              options={data.options as any}
               series={data.series}
               type="radialBar"
               width={chartWidth}
@@ -126,9 +126,9 @@ export default function ActiveUserCardVertical() {
             />
           </div>
 
-          <h3 className="da-mb-0">17,346</h3>
+          <h3 className="da-mb-0">2,345</h3>
           <p className="da-p1-body da-mb-0 da-text-color-black-80 da-text-color-dark-50">
-            Active Users
+            Ticket Closed
           </p>
         </Col>
       </Row>

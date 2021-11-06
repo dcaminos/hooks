@@ -1,7 +1,7 @@
 import { createContext } from "react";
 import { action, observable } from "mobx";
 
-export class UiStore {
+export class EditorStore {
   @observable theme: "light" | "dark" = "light";
   @observable sidebarCollapsed: boolean = false;
 
@@ -11,4 +11,4 @@ export class UiStore {
   };
 }
 
-export const UIContext = createContext<UiStore>(new UiStore());
+export const EditorContext = createContext<EditorStore>(new EditorStore());

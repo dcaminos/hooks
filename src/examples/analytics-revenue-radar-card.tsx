@@ -106,7 +106,11 @@ export default function AnalyticsRevenueRadarCard() {
 
             <Col>
               <Dropdown overlay={menu} trigger={["click"]}>
-                <RiMoreFill size={24} onClick={(e) => e.preventDefault()} className="da-text-color-dark-0" />
+                <RiMoreFill
+                  size={24}
+                  onClick={(e) => e.preventDefault()}
+                  className="da-text-color-dark-0"
+                />
               </Dropdown>
             </Col>
           </Row>

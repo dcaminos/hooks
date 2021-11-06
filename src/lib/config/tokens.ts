@@ -1,4 +1,4 @@
-import { Token } from "../lib/token";
+import { Token } from "../token";
 
 // @ts-ignore
 export const tokens: Token[] = [

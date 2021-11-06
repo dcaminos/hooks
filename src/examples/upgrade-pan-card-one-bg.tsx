@@ -7,9 +7,8 @@ import cardImgDark from "../assets/images/dasboard/analytics-payment-bg-dark.png
 import { observer } from "mobx-react-lite";
 import { UIContext } from "../stores/ui-store";
 
-
-export const UpgradePlanCardOneBg: React.FC = observer(props => {
-    const { theme } = useContext(UIContext)
+export const UpgradePlanCardOneBg: React.FC = observer((props) => {
+  const { theme } = useContext(UIContext);
 
   return (
     <Card
@@ -41,4 +40,4 @@ export const UpgradePlanCardOneBg: React.FC = observer(props => {
       </Row>
     </Card>
   );
-})
+});

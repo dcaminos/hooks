@@ -3,12 +3,12 @@ import React, { useEffect, useState } from "react";
 import { Row, Col } from "antd";
 import Chart from "react-apexcharts";
 
-export default function OrderColumnCardVertical() {
-  const [chartWidth, setChartWidth] = useState("50%")
+export default function SubsColumnCardVertical() {
+  const [chartWidth, setChartWidth] = useState("50%");
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setChartWidth("100%")
+      setChartWidth("100%");
     }, 10);
     return () => clearTimeout(timer);
   }, []);
@@ -53,7 +53,7 @@ export default function OrderColumnCardVertical() {
       dataLabels: {
         enabled: false,
       },
-      colors: ["#0010F7"],
+      colors: ["#00F7BF"],
       xaxis: {
         labels: {
           show: false,
@@ -95,8 +95,10 @@ export default function OrderColumnCardVertical() {
             />
           </div>
 
-          <h3 className="da-mb-0">13,346</h3>
-          <p className="da-p1-body da-mb-0 da-text-color-black-80 da-text-color-dark-50">New Order</p>
+          <h3 className="da-mb-0">1,346</h3>
+          <p className="da-p1-body da-mb-0 da-text-color-black-80 da-text-color-dark-50">
+            New Subscribe
+          </p>
         </Col>
       </Row>
     </div>

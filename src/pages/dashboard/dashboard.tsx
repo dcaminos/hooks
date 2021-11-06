@@ -2,20 +2,20 @@ import React from "react";
 
 import { Row, Col } from "antd";
 
-import { UpgradePlanCardOneBg } from "../../widgets/upgrade-pan-card-one-bg";
-import OrderColumnCardVertical from "../../widgets/order-column-card-vertical";
-import ActiveUserCardVertical from "../../widgets/active-user-card-vertical";
-import SubsColumnCardVertical from "../../widgets/subs-column-card-vertical";
-import CustomerSupportCardVertical from "../../widgets/customer-support-card-vertical";
-import { DownloadCard } from "../../widgets/download-card";
-import EarningsCard from "../../widgets/earnings-card";
-import BestTeamCard from "../../widgets/best-team-card";
-import ExpensesCard from "../../widgets/expenses-card";
-import AnalyticsProjectTableCard from "../../widgets/analytics-project-table-card";
-import AnalyticsRevenueRadarCard from "../../widgets/analytics-revenue-radar-card";
-import AnalyticsVisitersLineCard from "../../widgets/analytics-visiters-line-card";
+import { UpgradePlanCardOneBg } from "../../examples/upgrade-pan-card-one-bg";
+import OrderColumnCardVertical from "../../examples/order-column-card-vertical";
+import ActiveUserCardVertical from "../../examples/active-user-card-vertical";
+import SubsColumnCardVertical from "../../examples/subs-column-card-vertical";
+import CustomerSupportCardVertical from "../../examples/customer-support-card-vertical";
+import { DownloadCard } from "../../examples/download-card";
+import EarningsCard from "../../examples/earnings-card";
+import BestTeamCard from "../../examples/best-team-card";
+import ExpensesCard from "../../examples/expenses-card";
+import AnalyticsProjectTableCard from "../../examples/analytics-project-table-card";
+import AnalyticsRevenueRadarCard from "../../examples/analytics-revenue-radar-card";
+import AnalyticsVisitersLineCard from "../../examples/analytics-visiters-line-card";
 
-export default function Dashboard() {
+export const Dashboard: React.FC = (props) => {
   return (
     <Row gutter={[32, 0]}>
       <Col span={24}>
@@ -79,4 +79,4 @@ export default function Dashboard() {
       </Col>
     </Row>
   );
-}
+};

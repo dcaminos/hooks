@@ -32,9 +32,7 @@ export class SolanaNetwork extends GenericNetwork implements NetworkInterface {
         `${walletAddress}`,
       ]);
       const result = await axios(requestConfig);
-      return new BN((result.data as any).result.value).mul(
-        new BN(10 ** 9)
-      );
+      return new BN((result.data as any).result.value).mul(new BN(10 ** 9));
     } catch (error) {
       //console.error(error)
     }
@@ -69,12 +67,9 @@ export class SolanaNetwork extends GenericNetwork implements NetworkInterface {
       ]);
       response = await axios(requestConfig);
       const value = (response.data as any).result.value;
-      return new BN(value.amount).mul(
-        new BN(10 ** (18 - value.decimals))
-      );
+      return new BN(value.amount).mul(new BN(10 ** (18 - value.decimals)));
     } catch (error) {
       //console.error(error)
     }
   };
-
 }

@@ -31,72 +31,72 @@ export default function AnalyticsVisitersLineCard() {
       },
       colors: ["#0063F7", "#00F7BF"],
       labels: {
+        style: {
+          fontSize: "14px",
+        },
+      },
+      fill: {
+        opacity: 0.3,
+      },
+
+      dataLabels: {
+        enabled: false,
+      },
+
+      grid: {
+        borderColor: "#DFE6E9",
+        row: {
+          opacity: 0.5,
+        },
+      },
+
+      markers: {
+        strokeWidth: 0,
+        size: 0,
+        colors: ["rgba(0, 255, 198, 0.17)", "rgba(45, 125, 239, 0.17)"],
+        hover: {
+          sizeOffset: 1,
+        },
+      },
+      xaxis: {
+        axisTicks: {
+          show: false,
+          borderType: "solid",
+          borderColor: "#DFE6E9",
+          height: 6,
+          offsetX: 0,
+          offsetY: 0,
+        },
+
+        labels: {
           style: {
             fontSize: "14px",
           },
         },
-        fill: {
-          opacity: 0.3,
+        categories: ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
+      },
+      legend: {
+        horizontalAlign: "right",
+        offsetX: 40,
+        position: "top",
+        labels: {
+          colors: "#636E72",
         },
-
-        dataLabels: {
-          enabled: false,
-        },
-
-        grid: {
-          borderColor: "#DFE6E9",
-          row: {
-            opacity: 0.5,
+      },
+      yaxis: {
+        labels: {
+          style: {
+            fontSize: "14px",
+          },
+          formatter: (value: number) => {
+            return value / 1000 + "K";
           },
         },
 
-        markers: {
-          strokeWidth: 0,
-          size: 0,
-          colors: ["rgba(0, 255, 198, 0.17)", "rgba(45, 125, 239, 0.17)"],
-          hover: {
-            sizeOffset: 1,
-          },
-        },
-        xaxis: {
-          axisTicks: {
-            show: false,
-            borderType: "solid",
-            borderColor: "#DFE6E9",
-            height: 6,
-            offsetX: 0,
-            offsetY: 0,
-          },
-
-          labels: {
-            style: {
-              fontSize: "14px",
-            },
-          },
-          categories: ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
-        },
-        legend: {
-          horizontalAlign: "right",
-          offsetX: 40,
-          position: "top",
-          labels: {
-            colors: "#636E72"
-          },
-        },
-        yaxis: {
-          labels: {
-            style: {
-              fontSize: "14px",
-            },
-            formatter: (value:number) => {
-              return value / 1000 + "K";
-            },
-          },
-
-          min: 0,
-          max: 30000,
-          tickAmount: 3,
-        },
+        min: 0,
+        max: 30000,
+        tickAmount: 3,
+      },
     },
   });
 
@@ -110,10 +110,7 @@ export default function AnalyticsVisitersLineCard() {
             </Row>
 
             <Col>
-              <DatePicker
-                picker="year"
-                defaultValue={moment("2019", "YYYY")}
-              />
+              <DatePicker picker="year" defaultValue={moment("2019", "YYYY")} />
             </Col>
           </Row>
         </Col>

@@ -1,36 +1,33 @@
-import React, { useContext, useEffect, useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 
 import { Layout, Button, Row, Col } from "antd";
 import { RiCloseLine, RiMenuFill } from "react-icons/ri";
 import { Search } from "react-iconly";
 
-import { HeaderSearch } from './header-search'
+import { HeaderSearch } from "./header-search";
 import { HeaderUser } from "./header-user";
 import { HeaderNotifications } from "./header-notifications";
-import { observer } from "mobx-react-lite";
-import { UIContext } from "../../stores/ui-store";
 
 import { Logo } from "../menu/logo";
 import { Mobile } from "../menu/mobile";
 
 const { Header } = Layout;
 
-export type EditorHeaderProps = {
-  visible: boolean
-  setVisible: (value: boolean) => void
-}
+export type HeaderHorizontalProps = {
+  showMenu: boolean;
+  setShowMenu: (value: boolean) => void;
+};
 
-export const EditorHeader: React.FC<EditorHeaderProps> = observer(props => {
-  const { visible, setVisible } = props;
-  const { contentWidth, navigationBg, navigationFull } = useContext(UIContext)
-  
+export const HeaderHorizontal: React.FC<HeaderHorizontalProps> = (props) => {
+  const { showMenu, setShowMenu } = props;
+
   const [searchHeader, setSearchHeader] = useState(false);
   const [searchActive, setSearchActive] = useState(false);
 
-
   // Header Class
-  const [headerClass, setHeaderClass] = useState<string>()
+  //const [headerClass, setHeaderClass] = useState<string>()
 
+  /*
   useEffect(() => {
     if (navigationFull) {
       setHeaderClass(" da-header-full");
@@ -39,11 +36,11 @@ export const EditorHeader: React.FC<EditorHeaderProps> = observer(props => {
     } else {
       setHeaderClass("");
     }
-  }, [navigationFull, navigationBg])
+  }, [navigationFull, navigationBg])*/
 
   // Mobile Sidebar
   const onClose = () => {
-    setVisible(false);
+    setShowMenu(false);
   };
 
   // Focus
@@ -56,20 +53,20 @@ export const EditorHeader: React.FC<EditorHeaderProps> = observer(props => {
   setTimeout(() => setSearchActive(searchHeader), 100);
 
   const searchClick = () => {
-    setSearchHeader(true)
+    setSearchHeader(true);
 
     setTimeout(() => {
-      if(inputFocusRef !== null && inputFocusRef.current !== null) {
+      if (inputFocusRef !== null && inputFocusRef.current !== null) {
         (inputFocusRef.current as any).focus({
-          cursor: 'start',
+          cursor: "start",
         });
       }
     }, 200);
-  }
+  };
 
   // Mobile Sidebar
   const showDrawer = () => {
-    setVisible(true);
+    setShowMenu(true);
     setSearchHeader(false);
   };
 
@@ -99,13 +96,17 @@ export const EditorHeader: React.FC<EditorHeaderProps> = observer(props => {
           </Col>
         </Col>
 
-
         <Col
           flex="1"
-          style={{ display: !searchHeader ? 'none' : 'block' }}
-          className={`da-pl-md-0 da-pr-md-0 da-pl-32 da-pr-16 da-header-search ${searchActive && "da-header-search-active"}`}
+          style={{ display: !searchHeader ? "none" : "block" }}
+          className={`da-pl-md-0 da-pr-md-0 da-pl-32 da-pr-16 da-header-search ${
+            searchActive && "da-header-search-active"
+          }`}
         >
-          <HeaderSearch inputFocusProp={inputFocusProp} setSearchHeader={setSearchHeader} />
+          <HeaderSearch
+            inputFocusProp={inputFocusProp}
+            setSearchHeader={setSearchHeader}
+          />
         </Col>
 
         <Col>
@@ -116,9 +117,7 @@ export const EditorHeader: React.FC<EditorHeaderProps> = observer(props => {
                   type="text"
                   icon={
                     <div className="da-text-color-black-60">
-                    <Search
-                      set="light"
-                    />
+                      <Search set="light" />
                     </div>
                   }
                   onClick={() => searchClick()}
@@ -127,10 +126,7 @@ export const EditorHeader: React.FC<EditorHeaderProps> = observer(props => {
                 <Button
                   type="text"
                   icon={
-                    <RiCloseLine
-                      size={24}
-                      className="da-text-color-black-60"
-                    />
+                    <RiCloseLine size={24} className="da-text-color-black-60" />
                   }
                   onClick={() => setSearchHeader(false)}
                 />
@@ -143,32 +139,16 @@ export const EditorHeader: React.FC<EditorHeaderProps> = observer(props => {
           </Row>
         </Col>
       </Row>
-    )
-  }
+    );
+  };
 
   return (
-    <Header
-      className={'da-header-horizontal' + headerClass}
-    >
+    <Header className={"da-header-horizontal"}>
       <Row justify="center" className="da-w-100">
-        {
-          contentWidth === "full" && (
-            <Col span={24}>
-              {headerChildren()}
-            </Col>
-          )
-        }
-
-        {
-          contentWidth === "boxed" && (
-            <Col xxl={20} xl={22} span={24}>
-              {headerChildren()}
-            </Col>
-          )
-        }
+        <Col span={24}>{headerChildren()}</Col>
       </Row>
 
-      <Mobile onClose={onClose} visible={visible} />
+      <Mobile onClose={onClose} visible={showMenu} />
     </Header>
   );
-});
+};

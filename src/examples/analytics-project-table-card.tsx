@@ -6,44 +6,70 @@ import { RiMoreFill } from "react-icons/ri";
 export default function AnalyticsProjectTableCard() {
   const columns = [
     {
-      title: <span className="da-badge-size da-font-weight-400 da-text-color-black-60 da-text-color-dark-40 da-text-uppercase">#</span>,
+      title: (
+        <span className="da-badge-size da-font-weight-400 da-text-color-black-60 da-text-color-dark-40 da-text-uppercase">
+          #
+        </span>
+      ),
       dataIndex: "no",
       key: "no",
-      render: (text:string) => (
+      render: (text: string) => (
         <p className="da-mb-0 da-font-weight-500 da-text-color-black-100 da-text-color-dark-0">
           {text}
         </p>
       ),
     },
     {
-      title: <span className="da-badge-size da-font-weight-400 da-text-color-black-60 da-text-color-dark-40 da-text-uppercase">Project Name</span>,
+      title: (
+        <span className="da-badge-size da-font-weight-400 da-text-color-black-60 da-text-color-dark-40 da-text-uppercase">
+          Project Name
+        </span>
+      ),
       dataIndex: "projectName",
       key: "projectName",
-      render: (text:string) => (
-        <p className="da-mb-0 da-text-color-black-80 da-text-color-dark-30">{text}</p>
+      render: (text: string) => (
+        <p className="da-mb-0 da-text-color-black-80 da-text-color-dark-30">
+          {text}
+        </p>
       ),
     },
     {
-      title: <span className="da-badge-size da-font-weight-400 da-text-color-black-60 da-text-color-dark-40 da-text-uppercase">Start Date</span>,
+      title: (
+        <span className="da-badge-size da-font-weight-400 da-text-color-black-60 da-text-color-dark-40 da-text-uppercase">
+          Start Date
+        </span>
+      ),
       dataIndex: "startDate",
       key: "startDate",
-      render: (text:string) => (
-        <p className="da-mb-0 da-text-color-black-80 da-text-color-dark-30">{text}</p>
+      render: (text: string) => (
+        <p className="da-mb-0 da-text-color-black-80 da-text-color-dark-30">
+          {text}
+        </p>
       ),
     },
     {
-      title: <span className="da-badge-size da-font-weight-400 da-text-color-black-60 da-text-color-dark-40 da-text-uppercase">End Date</span>,
+      title: (
+        <span className="da-badge-size da-font-weight-400 da-text-color-black-60 da-text-color-dark-40 da-text-uppercase">
+          End Date
+        </span>
+      ),
       dataIndex: "endDate",
       key: "endDate",
-      render: (text:string) => (
-        <p className="da-mb-0 da-text-color-black-80 da-text-color-dark-30">{text}</p>
+      render: (text: string) => (
+        <p className="da-mb-0 da-text-color-black-80 da-text-color-dark-30">
+          {text}
+        </p>
       ),
     },
     {
-      title: <span className="da-badge-size da-font-weight-400 da-text-color-black-60 da-text-color-dark-40 da-text-uppercase">Status</span>,
+      title: (
+        <span className="da-badge-size da-font-weight-400 da-text-color-black-60 da-text-color-dark-40 da-text-uppercase">
+          Status
+        </span>
+      ),
       key: "tags",
       dataIndex: "tags",
-      render: (tags:string[]) => (
+      render: (tags: string[]) => (
         <>
           {tags.map((tag) => {
             let color = tag;
@@ -65,11 +91,17 @@ export default function AnalyticsProjectTableCard() {
     },
 
     {
-      title: <span className="da-badge-size da-font-weight-400 da-text-color-black-60 da-text-color-dark-40 da-text-uppercase">Assign</span>,
+      title: (
+        <span className="da-badge-size da-font-weight-400 da-text-color-black-60 da-text-color-dark-40 da-text-uppercase">
+          Assign
+        </span>
+      ),
       dataIndex: "assign",
       key: "assign",
-      render: (text:string) => (
-        <p className="da-mb-0 da-text-color-black-80 da-text-color-dark-30">{text}</p>
+      render: (text: string) => (
+        <p className="da-mb-0 da-text-color-black-80 da-text-color-dark-30">
+          {text}
+        </p>
       ),
     },
   ];

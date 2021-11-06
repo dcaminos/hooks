@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState } from "react";
 
 import Chart from "react-apexcharts";
@@ -48,7 +49,7 @@ export default function ExpensesCard() {
                 fontSize: "24px",
                 fontWeight: "medium",
                 color: "#2D3436",
-                formatter(val:number) {
+                formatter(val: number) {
                   return `$${val}`;
                 },
               },
@@ -59,10 +60,13 @@ export default function ExpensesCard() {
                 label: "Total",
                 color: "#636E72",
 
-                formatter: function (w:any) {
-                  return `$${w.globals.seriesTotals.reduce((a:number, b:number) => {
-                    return a + b;
-                  }, 0)}`;
+                formatter: function (w: any) {
+                  return `$${w.globals.seriesTotals.reduce(
+                    (a: number, b: number) => {
+                      return a + b;
+                    },
+                    0
+                  )}`;
                 },
               },
             },
@@ -113,7 +117,11 @@ export default function ExpensesCard() {
 
             <Col>
               <Dropdown overlay={menu} trigger={["click"]}>
-                <RiMoreFill size={24} onClick={(e) => e.preventDefault()} className="da-text-color-dark-0" />
+                <RiMoreFill
+                  size={24}
+                  onClick={(e) => e.preventDefault()}
+                  className="da-text-color-dark-0"
+                />
               </Dropdown>
             </Col>
           </Row>
@@ -122,7 +130,7 @@ export default function ExpensesCard() {
         <Col span={24}>
           <div id="expenses-donut-card" className="da-donut-chart">
             <Chart
-              options={data.options  as any}
+              options={data.options as any}
               series={data.series}
               type="donut"
               height={350}
@@ -134,14 +142,15 @@ export default function ExpensesCard() {
         <Col span={24} className="da-mt-24">
           <h5 className="da-mb-24">By Category</h5>
 
-          <a href="#" className="da-d-block da-transition da-py-12 da-px-6 da-border-radius da-hover-bg-color-primary-4 da-hover-bg-color-dark-primary">
+          <a
+            href="#"
+            className="da-d-block da-transition da-py-12 da-px-6 da-border-radius da-hover-bg-color-primary-4 da-hover-bg-color-dark-primary"
+          >
             <Row align="middle" justify="space-between">
               <Col flex="0.9">
                 <Row align="middle">
                   <div className="remix-icon da-mr-24 da-text-color-primary-2">
-                    <Wallet 
-                      set="light"
-                    />
+                    <Wallet set="light" />
                   </div>
                   <Col flex="1">
                     <h5 className="da-mb-0">Company Expenses</h5>
@@ -156,20 +165,21 @@ export default function ExpensesCard() {
             </Row>
           </a>
 
-          <a href="#" className="da-mt-12 da-d-block da-transition da-py-12 da-px-6 da-border-radius da-hover-bg-color-primary-4 da-hover-bg-color-dark-primary">
+          <a
+            href="#"
+            className="da-mt-12 da-d-block da-transition da-py-12 da-px-6 da-border-radius da-hover-bg-color-primary-4 da-hover-bg-color-dark-primary"
+          >
             <Row align="middle" justify="space-between">
               <Col flex="0.9">
                 <Row align="middle">
-                <div className="remix-icon da-mr-24 da-text-color-primary-2">
-                  <Discount
-                    set="light"
-                  />
-                </div>
+                  <div className="remix-icon da-mr-24 da-text-color-primary-2">
+                    <Discount set="light" />
+                  </div>
                   <Col flex="1">
                     <h5 className="da-mb-0">Company Expenses</h5>
                     <p className="da-p1-body da-text-color-black-60 da-mb-0">
                       Promotion & Commercial
-                  </p>
+                    </p>
                   </Col>
                 </Row>
               </Col>
@@ -178,20 +188,21 @@ export default function ExpensesCard() {
             </Row>
           </a>
 
-          <a href="#" className="da-mt-12 da-d-block da-transition da-py-12 da-px-6 da-border-radius da-hover-bg-color-primary-4 da-hover-bg-color-dark-primary">
+          <a
+            href="#"
+            className="da-mt-12 da-d-block da-transition da-py-12 da-px-6 da-border-radius da-hover-bg-color-primary-4 da-hover-bg-color-dark-primary"
+          >
             <Row align="middle" justify="space-between">
               <Col flex="0.9">
                 <Row align="middle">
-                <div className="remix-icon da-mr-24 da-text-color-primary-2">
-                  <Bag
-                    set="light"
-                  />
-                </div>
+                  <div className="remix-icon da-mr-24 da-text-color-primary-2">
+                    <Bag set="light" />
+                  </div>
                   <Col flex="1">
                     <h5 className="da-mb-0">Shopping Expenses</h5>
                     <p className="da-p1-body da-text-color-black-60 da-mb-0">
                       Checkout last years expenses
-                  </p>
+                    </p>
                   </Col>
                 </Row>
               </Col>
@@ -200,20 +211,21 @@ export default function ExpensesCard() {
             </Row>
           </a>
 
-          <a href="#" className="da-mt-12 da-d-block da-transition da-py-12 da-px-6 da-border-radius da-hover-bg-color-primary-4 da-hover-bg-color-dark-primary">
+          <a
+            href="#"
+            className="da-mt-12 da-d-block da-transition da-py-12 da-px-6 da-border-radius da-hover-bg-color-primary-4 da-hover-bg-color-dark-primary"
+          >
             <Row align="middle" justify="space-between">
               <Col flex="0.9">
                 <Row align="middle">
-                <div className="remix-icon da-mr-24 da-text-color-primary-2">
-                  <Calendar
-                    set="light"
-                  />
-                </div>
+                  <div className="remix-icon da-mr-24 da-text-color-primary-2">
+                    <Calendar set="light" />
+                  </div>
                   <Col flex="1">
                     <h5 className="da-mb-0">Booking Expenses</h5>
                     <p className="da-p1-body da-text-color-black-60 da-mb-0">
                       Checkout hotel expenses
-                  </p>
+                    </p>
                   </Col>
                 </Row>
               </Col>

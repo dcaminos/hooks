@@ -1,23 +1,23 @@
 /* eslint-disable import/no-webpack-loader-syntax */
-import Editor, {  Monaco } from "@monaco-editor/react";
-import * as monaco from 'monaco-editor/esm/vs/editor/editor.api';
+import Editor, { Monaco } from "@monaco-editor/react";
+import * as monaco from "monaco-editor/esm/vs/editor/editor.api";
 
 import React from "react";
-import {Card } from "antd";
+import { Card } from "antd";
 import { observer } from "mobx-react-lite";
 
-const contractCode = require('!!raw-loader!./../../lib/contract').default
-const hookCode = require('!!raw-loader!./../../lib/hook').default
-const integrationRequestCode = require('!!raw-loader!./../../lib/integration-request').default
-const integrationResponseCode = require('!!raw-loader!./../../lib/integration-response').default
-const netowrkCode = require('!!raw-loader!./../../lib/network').default
-const tokenCode = require('!!raw-loader!./../../lib/token').default
-const userCode = require('!!raw-loader!./../../lib/user').default
-const walletCode = require('!!raw-loader!./../../lib/wallet').default
+const contractCode = require("!!raw-loader!./../../lib/contract").default;
+const hookCode = require("!!raw-loader!./../../lib/hook").default;
+const integrationRequestCode =
+  require("!!raw-loader!./../../lib/integration-request").default;
+const integrationResponseCode =
+  require("!!raw-loader!./../../lib/integration-response").default;
+const netowrkCode = require("!!raw-loader!./../../lib/network").default;
+const tokenCode = require("!!raw-loader!./../../lib/token").default;
+const userCode = require("!!raw-loader!./../../lib/user").default;
+const walletCode = require("!!raw-loader!./../../lib/wallet").default;
 
-
-export const EditorSandbox: React.FC = observer(props => {
-
+export const EditorSandbox: React.FC = observer((props) => {
   const initialCode = `
 import { EthereumContract } from 'file:///contract'
 import { IntegrationRequest } from 'file:///integration-request'
@@ -42,54 +42,90 @@ async function runIntegration(request: IntegrationRequest): Promise<IntegrationR
         
     return response;
 }
-  `
+  `;
 
   const beforeMount = (monaco: Monaco) => {
     // validation settings
     monaco.languages.typescript.typescriptDefaults.setDiagnosticsOptions({
       noSemanticValidation: false,
-      noSyntaxValidation: false
+      noSyntaxValidation: false,
     });
 
     // compiler options
     monaco.languages.typescript.typescriptDefaults.setCompilerOptions({
       target: monaco.languages.typescript.ScriptTarget.ES2020,
-      allowNonTsExtensions: true
+      allowNonTsExtensions: true,
     });
 
     // extra libraries
-    monaco.editor.createModel(contractCode, 'typescript',monaco.Uri.parse("file:///contract.ts"));
-    monaco.editor.createModel(hookCode, 'typescript',monaco.Uri.parse("file:///hook.ts"));
-    monaco.editor.createModel(integrationRequestCode, 'typescript',monaco.Uri.parse("file:///integration-request.ts"));
-    monaco.editor.createModel(integrationResponseCode, 'typescript',monaco.Uri.parse("file:///integration-response.ts"));
-    monaco.editor.createModel(netowrkCode, 'typescript',monaco.Uri.parse("file:///network.ts"));
-    monaco.editor.createModel(tokenCode, 'typescript',monaco.Uri.parse("file:///token.ts"));
-    monaco.editor.createModel(userCode, 'typescript',monaco.Uri.parse("file:///user.ts"));
-    monaco.editor.createModel(walletCode, 'typescript',monaco.Uri.parse("file:///wallet.ts"));
-  }
-  
-  const onMount = (editor: monaco.editor.IStandaloneCodeEditor, monaco: Monaco,) => {
-   editor.focus();
-}
+    monaco.editor.createModel(
+      contractCode,
+      "typescript",
+      monaco.Uri.parse("file:///contract.ts")
+    );
+    monaco.editor.createModel(
+      hookCode,
+      "typescript",
+      monaco.Uri.parse("file:///hook.ts")
+    );
+    monaco.editor.createModel(
+      integrationRequestCode,
+      "typescript",
+      monaco.Uri.parse("file:///integration-request.ts")
+    );
+    monaco.editor.createModel(
+      integrationResponseCode,
+      "typescript",
+      monaco.Uri.parse("file:///integration-response.ts")
+    );
+    monaco.editor.createModel(
+      netowrkCode,
+      "typescript",
+      monaco.Uri.parse("file:///network.ts")
+    );
+    monaco.editor.createModel(
+      tokenCode,
+      "typescript",
+      monaco.Uri.parse("file:///token.ts")
+    );
+    monaco.editor.createModel(
+      userCode,
+      "typescript",
+      monaco.Uri.parse("file:///user.ts")
+    );
+    monaco.editor.createModel(
+      walletCode,
+      "typescript",
+      monaco.Uri.parse("file:///wallet.ts")
+    );
+  };
 
+  const onMount = (
+    editor: monaco.editor.IStandaloneCodeEditor,
+    monaco: Monaco
+  ) => {
+    editor.focus();
+  };
 
-const handleEditorChange = (value: string | undefined,
-  ev:any) => {
-  //console.log("here is the current model value:", value);
-}
-      
+  const handleEditorChange = (value: string | undefined, ev: any) => {
+    //console.log("here is the current model value:", value);
+  };
+
   return (
-    <Card className="da-border-color-black-40 da-overflow-hidden da-mb-32 p-0" style={{height: "calc(100% - 32px)"}}>
-      { /** This is the div which monaco is added into - careful, lots of changes happen here at runtime **/}
+    <Card
+      className="da-border-color-black-40 da-overflow-hidden da-mb-32 p-0"
+      style={{ height: "calc(100% - 32px)" }}
+    >
+      {/** This is the div which monaco is added into - careful, lots of changes happen here at runtime **/}
       <Editor
-      defaultLanguage="typescript"
-      theme="vs-dark"
+        defaultLanguage="typescript"
+        theme="vs-dark"
         defaultValue={initialCode}
-        height="80vh"
+        height="50vh"
         beforeMount={beforeMount}
         onMount={onMount}
         onChange={handleEditorChange}
-    />
+      />
     </Card>
   );
-})
+});

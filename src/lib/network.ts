@@ -1,5 +1,5 @@
 import BN from "bn.js";
-import { tokens } from "../config/tokens";
+import { tokens } from "./config/tokens";
 import { Token } from "./token";
 import { EthereumNetwork } from "./networks/ethereum";
 import { SolanaNetwork } from "./networks/solana";
@@ -33,7 +33,6 @@ export class NetworkFactory {
     }
   };
 }
-
 
 export interface NetworkInterface {
   id: NetworkId;

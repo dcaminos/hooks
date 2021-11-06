@@ -9,8 +9,8 @@ import cardVectorImg from "../assets/images/dasboard/analytics-download-vector.s
 import { observer } from "mobx-react-lite";
 import { UIContext } from "../stores/ui-store";
 
-export const DownloadCard: React.FC = observer(props => {
-    const { theme } = useContext(UIContext)
+export const DownloadCard: React.FC = observer((props) => {
+  const { theme } = useContext(UIContext);
 
   return (
     <Card
@@ -29,7 +29,12 @@ export const DownloadCard: React.FC = observer(props => {
 
           <Button
             className="da-mt-32 da-border-color-primary-1 da-bg-color-black-0 da-bg-color-dark-primary-1 da-text-color-primary-1 da-text-color-dark-0"
-            icon={<div className="remix-icon"> <Download /> </div>}
+            icon={
+              <div className="remix-icon">
+                {" "}
+                <Download />{" "}
+              </div>
+            }
           >
             Download
           </Button>
@@ -43,4 +48,4 @@ export const DownloadCard: React.FC = observer(props => {
       </Row>
     </Card>
   );
-})
+});

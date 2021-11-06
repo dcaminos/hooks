@@ -1,4 +1,4 @@
-import { Network } from "../lib/network";
+import { Network } from "../network";
 
 export const networks: Network[] = [
   {
