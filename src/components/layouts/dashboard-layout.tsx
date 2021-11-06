@@ -16,8 +16,10 @@ const { Content } = Layout;
 export const DashboardLayout: React.FC = observer(props => {
     const { children } = props;
     const { contentWidth } = useContext(UIContext)
-    const [visible, setVisible] = useState(false);
 
+    
+    const [visible, setVisible] = useState(false);
+        
     return (
         <Layout className="da-app-layout">
             <Sidebar visible={visible} setVisible={setVisible} />

@@ -1,4 +1,7 @@
 const CracoLessPlugin = require("craco-less-plugin");
+const MonacoWebpackPlugin = require('monaco-editor-webpack-plugin');
+const rawLoader = require('craco-raw-loader')
+
 
 module.exports = {
   plugins: [
@@ -13,5 +16,20 @@ module.exports = {
         javascriptEnabled: true,
       },
     },
+    {
+      plugin: new MonacoWebpackPlugin({
+        languages: ['json']
+      })
+    },
+    { 
+      plugin: rawLoader,
+      rules: [
+        {
+          test: /\.txt$/i,
+          use: 'raw-loader',
+        },
+      ],
+      options: { test: /\.frag$/ }
+    }
   ],
 };

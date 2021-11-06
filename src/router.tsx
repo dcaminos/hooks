@@ -18,7 +18,7 @@ import Error404 from "./pages/errors/404";
 import { UIContext } from "./stores/ui-store";
 import { observer } from "mobx-react-lite";
 import Dashboard from "./pages/dashboard/dashboard";
-import Editor from "./pages/editor/editor";
+import { Editor } from "./pages/editor/editor";
 import { EditorLayout } from "./components/layouts/editor-layout";
 
 export const Router: React.FC = observer(props => {
