@@ -30,6 +30,6 @@ module.exports = {
         },
       ],
       options: { test: /\.frag$/ }
-    }
+    },
   ],
 };

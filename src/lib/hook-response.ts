@@ -8,7 +8,7 @@ export type StakingPosition = {
   rewardToken: string;
 };
 
-export class IntegrationResponse {
+export class HookResponse {
   private stakingPositions: StakingPosition[];
 
   constructor(public networkId: NetworkId, public walletAddress: string) {

@@ -1,4 +1,4 @@
-import { Suspense, useContext, useEffect } from "react";
+import { useContext, useEffect } from "react";
 
 // Router
 import { BrowserRouter, Route, Switch } from "react-router-dom";
@@ -30,13 +30,13 @@ export const Router: React.FC = observer((props) => {
   return (
     <BrowserRouter>
       <Switch>
-        <Route
+        {/*<Route
           path={"/hooks"}
           exact={true}
           render={(props) => {
-            return <Suspense fallback={null}>{/*<Hooks />*/}</Suspense>;
+            return <Suspense fallback={null}>{<Hooks />}</Suspense>;
           }}
-        />
+        />*/}
 
         {/* Editor Page */}
         <Route
@@ -60,8 +60,8 @@ export const Router: React.FC = observer((props) => {
           )}
         />
 
-        {/* Register */}
-        <Route exact path={"/register"} render={() => <SingUp />} />
+        {/* singup */}
+        <Route exact path={"/singup"} render={() => <SingUp />} />
 
         {/* NotFound */}
         <Route path="*">
