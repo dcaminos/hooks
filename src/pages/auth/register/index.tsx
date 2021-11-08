@@ -6,14 +6,12 @@ import { Row, Col, Form, Input, Button } from "antd";
 import LeftContent from "../leftContent";
 
 import { observer } from "mobx-react-lite";
-import { ValidateStatus } from "antd/lib/form/FormItem";
 import { useCallback } from "react";
+import { formatTimeStr } from "antd/lib/statistic/utils";
 
-export type FormItemState = {
-  value: string,
-  isValid: ValidateStatus,
-  help: string
-}
+import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
+
+import { FormItemState } from "../../../lib/types";
 
 export type SignUpFormState = {
   username: FormItemState, email: FormItemState, password: FormItemState, password2: FormItemState
@@ -21,7 +19,7 @@ export type SignUpFormState = {
 
 export const SingUp : React.FC = props => {
 
-   const [formState, setFormState] = React.useState<SignUpFormState>({
+  const [formState, setFormState] = React.useState<SignUpFormState>({
     username: {
       value: "",
       isValid: "validating",
@@ -56,31 +54,85 @@ export const SingUp : React.FC = props => {
   }
 
   function handleSubmit(e:any) {
+
     // validate username
-    let username = formState.username.value
-    let isValid = true;
-    let error = "";
+    let user: string = formState.username.value
 
-    if (username == "") {
-      isValid = false;
-      error = "Choose your <b>username</b>"
-    }
-    
-    if (username.length < 6) {
-      isValid = false;
-      error = "Name too short, try something longer"
-    }
-
-    // TODO: add some regex test to validate username 
-
-    setFormState({
+    if (user.length < 6) {
+      setFormState({
         ...formState,
         username: {
           value: formState.username.value,
-          isValid: isValid ? 'success' : 'error',
-          help: error
+          isValid: "error",
+          help: "Username too short, try something longer",
         }
-    })
+      })
+      return;
+    }
+
+    // validate email
+    const EMAIL_REGEX = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    if ( ! EMAIL_REGEX.test(formState.email.value) ){
+      setFormState({
+        ...formState,
+        email: {
+          value: formState.email.value,
+          isValid: "error",
+          help: "Enter a valid email",
+        }
+      })
+      return;
+    }
+
+    // validate password
+
+    const PWD_REGEX = /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{10,100}$/
+
+    if ( ! PWD_REGEX.test(formState.password.value) ) {
+      setFormState({
+        ...formState,
+        password: {
+          value: formState.password.value,
+          isValid: "error",
+          help: "Password is not valid. Use at least 10 characters, numbers and special symbols"
+        }
+      })
+      return;
+    }
+
+    // check for password confirmation
+    if ( formState.password.value != formState.password2.value ) {
+      setFormState({
+        ...formState,
+        password2: {
+          value: formState.password2.value,
+          isValid: "error",
+          help: "Passwords entered doesn't match"
+        }
+      })
+      return;
+    }
+
+    // submit user creation request
+
+    const auth = getAuth();
+    createUserWithEmailAndPassword(auth, formState.email.value, formState.password.value)
+      .then((userCredential) => {
+        // Signed in
+        const user = userCredential.user;
+        console.log("success: ", userCredential)
+
+        
+      })
+      .catch((error) => {
+        const errorCode = error.code;
+        const errorMessage = error.message;
+        
+
+        console.log("error: ", error);
+      });
+    
+    
   }
 
   return (
@@ -105,15 +157,15 @@ export const SingUp : React.FC = props => {
                 <Input id="username" name="username" value={formState.username.value} onChange={handleInput} />
               </Form.Item>
 
-              <Form.Item label="E-mail:" validateStatus={formState.email.isValid}>
+              <Form.Item label="E-mail:" validateStatus={formState.email.isValid} help={formState.email.help} hasFeedback={formState.email.isValid != "validating"}>
                 <Input id="email" name="email" value={formState.email.value} onChange={handleInput}/>
               </Form.Item>
 
-              <Form.Item label="Password:" validateStatus={formState.password.isValid}>
+              <Form.Item label="Password:" validateStatus={formState.password.isValid} help={formState.password.help} hasFeedback={formState.password.isValid != "validating"}>
                 <Input.Password id="password" name="password" value={formState.password.value} onChange={handleInput} />
               </Form.Item>
 
-              <Form.Item label="Confirm Password:" validateStatus={formState.password2.isValid}>
+              <Form.Item label="Confirm Password:" validateStatus={formState.password2.isValid} help={formState.password2.help} hasFeedback={formState.password2.isValid != "validating"}>
                 <Input.Password id="password2" name="password2" value={formState.password2.value} onChange={handleInput} />
               </Form.Item>
 

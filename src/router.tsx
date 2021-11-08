@@ -22,6 +22,7 @@ import Editor from "./pages/editor/editor";
 import { EditorLayout } from "./components/layouts/editor-layout";
 
 import {SingUp} from "./pages/auth/register/index";
+import {Login} from "./pages/auth/login";
 
 export const Router: React.FC = observer(props => {
     // Mobx
@@ -80,6 +81,14 @@ export const Router: React.FC = observer(props => {
                     exact
                     path={'/register'}
                     render={() => (<SingUp />)}
+                    
+                />
+
+                {/** Login */}
+                <Route
+                    exact
+                    path={'/login'}
+                    render={() => (<Login />)}
                     
                 />
 
