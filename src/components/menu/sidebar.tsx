@@ -1,16 +1,8 @@
 import React, { useState, createElement, useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
 
-import {
-    Layout,
-    Button,
-    Row,
-    Col,
-} from "antd";
-import {
-    RiMenuFoldLine,
-    RiMenuUnfoldLine,
-} from "react-icons/ri";
+import { Layout, Button, Row, Col } from "antd";
+import { RiMenuFoldLine, RiMenuUnfoldLine } from "react-icons/ri";
 
 import logoSmall from "../../assets/images/logo/logo-small.svg";
 
@@ -24,81 +16,77 @@ import { UIContext } from "../../stores/ui-store";
 const { Sider } = Layout;
 
 export type SidebarProps = {
-    visible: boolean,
-    setVisible: (value: boolean) => void
-}
+  visible: boolean;
+  setVisible: (value: boolean) => void;
+};
 
-export const Sidebar: React.FC<SidebarProps> = observer(props => {
-    const { setVisible } = props;
-    const { sidebarCollapsed, sidebarCollapseButton } = useContext(UIContext)
-    
-    // Collapsed
-    const [collapsed, setCollapsed] = useState(false);
+export const Sidebar: React.FC<SidebarProps> = observer((props) => {
+  const { setVisible } = props;
+  const { sidebarCollapsed } = useContext(UIContext);
 
-    useEffect(() => {
-        setCollapsed(sidebarCollapsed);
-    }, [sidebarCollapsed])
+  const sidebarCollapseButton = true;
 
-    // Mobile Sidebar
-    const onClose = () => {
-        setVisible(false);
-    };
+  // Collapsed
+  const [collapsed, setCollapsed] = useState(false);
 
-    // Menu
-    function toggle() {
-        setCollapsed(!collapsed);
-    }
+  useEffect(() => {
+    setCollapsed(sidebarCollapsed);
+  }, [sidebarCollapsed]);
 
-    const trigger = createElement(
-        collapsed ? RiMenuUnfoldLine : RiMenuFoldLine,
-        {
-            className: "trigger",
-            onClick: toggle,
-        }
-    );
+  // Mobile Sidebar
+  const onClose = () => {
+    setVisible(false);
+  };
 
-    return (
-        <Sider
-            trigger={null}
-            collapsible
-            collapsed={collapsed}
-            width={256}
-            className="da-sidebar da-bg-color-black-0 da-bg-color-dark-100"
-        >
-            <Row className="da-mr-12 da-ml-24 da-mt-24" align="bottom" justify="space-between">
-                <Col>
-                    {collapsed === false ? <Logo onClose={onClose} /> : ""}
-                </Col>
+  // Menu
+  function toggle() {
+    setCollapsed(!collapsed);
+  }
 
-                {
-                    sidebarCollapseButton && (
-                        <Col className="da-pr-0">
-                            <Button
-                                icon={trigger}
-                                type="text"
-                                className="da-float-right da-text-color-dark-0"
-                            ></Button>
-                        </Col>
-                    )
-                }
+  const trigger = createElement(collapsed ? RiMenuUnfoldLine : RiMenuFoldLine, {
+    className: "trigger",
+    onClick: toggle,
+  });
 
-                {collapsed !== false && (
-                    <Col className="da-mt-8">
-                        <Link
-                            to="/"
-                            onClick={onClose}
-                        >
-                            <img className="da-logo" src={logoSmall} alt="logo" />
-                        </Link>
-                    </Col>
-                )}
-            </Row>
+  return (
+    <Sider
+      trigger={null}
+      collapsible
+      collapsed={collapsed}
+      width={256}
+      className="da-sidebar da-bg-color-black-0 da-bg-color-dark-100"
+    >
+      <Row
+        className="da-mr-12 da-ml-24 da-mt-24"
+        align="bottom"
+        justify="space-between"
+      >
+        <Col>{collapsed === false ? <Logo onClose={onClose} /> : ""}</Col>
 
-            {/*<MenuItem onClose={onClose} />*/}
+        {sidebarCollapseButton && (
+          <Col className="da-pr-0">
+            <Button
+              icon={trigger}
+              type="text"
+              className="da-float-right da-text-color-dark-0"
+            ></Button>
+          </Col>
+        )}
 
-            <Footer onClose={onClose} collapsed={collapsed} />
+        {collapsed !== false && (
+          <Col className="da-mt-8">
+            <Link to="/" onClick={onClose}>
+              <img className="da-logo" src={logoSmall} alt="logo" />
+            </Link>
+          </Col>
+        )}
+      </Row>
 
-            {/*<MenuMobile onClose={onClose} visible={visible} />*/}
-        </Sider>
-    );
+      {/*<MenuItem onClose={onClose} />*/}
+
+      <Footer onClose={onClose} collapsed={collapsed} />
+
+      {/*<MenuMobile onClose={onClose} visible={visible} />*/}
+    </Sider>
+  );
 });

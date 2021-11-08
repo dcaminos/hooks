@@ -1,102 +1,77 @@
-import { Suspense, useContext, useEffect } from "react";
+import { useContext, useEffect } from "react";
 
 // Router
-import {
-    BrowserRouter,
-    Route,
-    Switch,
-} from "react-router-dom";
-
-// Layouts
-import { DashboardLayout } from "./components/layouts/dashboard-layout";
-//import HorizontalLayout from "../layout/HorizontalLayout";
-//import FullLayout from "../layout/FullLayout";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 // Components
 //import Analytics from "../view/main/dashboard/analytics";
-import Error404 from "./pages/errors/404";
+import { PageNotFound } from "./pages/page-not-found/page-not-found";
 import { UIContext } from "./stores/ui-store";
 import { observer } from "mobx-react-lite";
-import Dashboard from "./pages/dashboard/dashboard";
-import Editor from "./pages/editor/editor";
-import { EditorLayout } from "./components/layouts/editor-layout";
+import { Dashboard } from "./pages/dashboard/dashboard";
+import { Editor } from "./pages/editor/editor";
 
-import {SingUp} from "./pages/auth/register/index";
-import {Login} from "./pages/auth/login";
+import { SingUp } from "./pages/sing-up/sing-up";
+import { FixedLayout } from "./components/layout/fixed-layout";
+import { VerticalLayout } from "./components/layout/vertical-layout";
+import { SignIn } from "./pages/sign-in/sign-in";
 
-export const Router: React.FC = observer(props => {
-    // Mobx
-    const { theme, direction } = useContext(UIContext)
+export const Router: React.FC = observer((props) => {
+  // Mobx
+  const { theme } = useContext(UIContext);
 
-    useEffect(() => {
-        document.querySelector("body")?.classList.add(theme)
-    }, [theme])
+  useEffect(() => {
+    document.querySelector("body")?.classList.add(theme);
+  }, [theme]);
 
-    // RTL
-    useEffect(() => {
-        if (direction === "ltr") {
-            document.querySelector("html")?.setAttribute("dir", "ltr");
-        } else if (direction === "rtl") {
-            document.querySelector("html")?.setAttribute("dir", "rtl");
-        }
-    }, [direction])
+  useEffect(() => {
+    document.querySelector("html")?.setAttribute("dir", "ltr");
+  }, []);
 
-    return (
-        <BrowserRouter>
-            <Switch>
-                <Route
-                    path={'/hooks'}
-                    exact={true}
-                    render={(props) => {
-                        return (
-                            <Suspense fallback={null}>
-                                {/*<Hooks />*/}
-                            </Suspense>
-                        );
-                    }}
-                />
+  return (
+    <BrowserRouter>
+      <Switch>
+        {/*<Route
+          path={"/hooks"}
+          exact={true}
+          render={(props) => {
+            return <Suspense fallback={null}>{<Hooks />}</Suspense>;
+          }}
+        />*/}
 
-                {/* Editor Page */}
-                <Route
-                    exact
-                    path={'/editor'}
-                    render={() => (
-                        <EditorLayout>
-                    <Editor/>
-                    </EditorLayout>)}
-                />
+        {/* Editor Page */}
+        <Route
+          exact
+          path={"/editor"}
+          render={() => (
+            <FixedLayout>
+              <Editor />
+            </FixedLayout>
+          )}
+        />
 
-                {/* Home Page */}
-                <Route
-                    exact
-                    path={'/'}
-                    render={() => (<DashboardLayout> 
-                        <Dashboard/>
-                    </DashboardLayout>)}
-                    
-                />
+        {/* Home Page */}
+        <Route
+          exact
+          path={"/"}
+          render={() => (
+            <VerticalLayout>
+              <Dashboard />
+            </VerticalLayout>
+          )}
+        />
 
-                {/* Register */}
-                <Route
-                    exact
-                    path={'/register'}
-                    render={() => (<SingUp />)}
-                    
-                />
+        {/* singup */}
+        <Route exact path={"/singup"} render={() => <SingUp />} />
 
-                {/** Login */}
-                <Route
-                    exact
-                    path={'/login'}
-                    render={() => (<Login />)}
-                    
-                />
+        {/** Login */}
+        <Route exact path={"/signin"} render={() => <SignIn />} />
 
-                {/* NotFound */}
-                <Route path='*'>
-                    <Error404 />
-                </Route>
-            </Switch>
-        </BrowserRouter>
-    );
-})
+        {/* NotFound */}
+        <Route path="*">
+          <PageNotFound />
+        </Route>
+      </Switch>
+    </BrowserRouter>
+  );
+});

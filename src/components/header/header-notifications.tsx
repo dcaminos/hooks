@@ -1,14 +1,10 @@
-import React, { useContext } from "react";
+import React from "react";
 
 import { Button, Badge, Row, Col, Dropdown, Divider, Avatar } from "antd";
 import { Notification, Message, Calendar } from "react-iconly";
 import { RiMoneyDollarCircleLine, RiTruckLine } from "react-icons/ri";
-import { observer } from "mobx-react-lite";
-import { UIContext } from "../../stores/ui-store";
 
-export const HeaderNotifications: React.FC = observer(props => {
-    const { direction } = useContext(UIContext)
-
+export const HeaderNotifications: React.FC = (props) => {
   const notificationMenu = (
     <div className="da-py-16 da-bg-color-black-0 da-bg-color-dark-100 da-border-color-black-40 da-border-color-dark-80 da-border-radius da-border-1">
       <div className="da-px-16">
@@ -28,7 +24,16 @@ export const HeaderNotifications: React.FC = observer(props => {
       <div className="da-px-16">
         <Row align="middle">
           <Col className="da-mr-8">
-            <Avatar size={32} icon={<div className="da-text-color-primary-1 remix-icon"> <Message size={17} /></div>} className="da-d-flex-center-full" />
+            <Avatar
+              size={32}
+              icon={
+                <div className="da-text-color-primary-1 remix-icon">
+                  {" "}
+                  <Message size={17} />
+                </div>
+              }
+              className="da-d-flex-center-full"
+            />
           </Col>
 
           <Col>
@@ -48,7 +53,16 @@ export const HeaderNotifications: React.FC = observer(props => {
       <div className="da-px-16">
         <Row align="middle">
           <Col className="da-mr-8">
-            <Avatar size={32} icon={<div className="da-text-color-primary-1 remix-icon"> <Calendar size={17} /></div>} className="da-d-flex-center-full" />
+            <Avatar
+              size={32}
+              icon={
+                <div className="da-text-color-primary-1 remix-icon">
+                  {" "}
+                  <Calendar size={17} />
+                </div>
+              }
+              className="da-d-flex-center-full"
+            />
           </Col>
 
           <Col>
@@ -68,7 +82,16 @@ export const HeaderNotifications: React.FC = observer(props => {
       <div className="da-px-16">
         <Row align="middle">
           <Col className="da-mr-8">
-            <Avatar size={32} icon={<RiMoneyDollarCircleLine size={17} className="da-text-color-primary-1 remix-icon" />} className="da-d-flex-center-full" />
+            <Avatar
+              size={32}
+              icon={
+                <RiMoneyDollarCircleLine
+                  size={17}
+                  className="da-text-color-primary-1 remix-icon"
+                />
+              }
+              className="da-d-flex-center-full"
+            />
           </Col>
 
           <Col>
@@ -88,7 +111,16 @@ export const HeaderNotifications: React.FC = observer(props => {
       <div className="da-px-16">
         <Row align="middle">
           <Col className="da-mr-8">
-            <Avatar size={32} icon={<RiTruckLine size={17} className="da-text-color-primary-1 remix-icon" />} className="da-d-flex-center-full" />
+            <Avatar
+              size={32}
+              icon={
+                <RiTruckLine
+                  size={17}
+                  className="da-text-color-primary-1 remix-icon"
+                />
+              }
+              className="da-d-flex-center-full"
+            />
           </Col>
 
           <Col>
@@ -106,10 +138,7 @@ export const HeaderNotifications: React.FC = observer(props => {
       <Divider className="da-my-16 da-mx-0 da-bg-color-black-40 da-bg-color-dark-80" />
 
       <div className="da-px-16">
-        <Button
-          type="primary"
-          block
-        >
+        <Button type="primary" block>
           Clear all notifications
         </Button>
       </div>
@@ -123,16 +152,14 @@ export const HeaderNotifications: React.FC = observer(props => {
         icon={
           <Dropdown overlay={notificationMenu} placement="bottomRight">
             <div className="da-position-relative">
-              <div className="da-position-absolute" style={direction === "rtl" ? { left: -5, top: -5 } : { right: -5, top: -5 }}>
-                <Badge
-                  dot
-                  status="processing"
-                />
+              <div
+                className="da-position-absolute"
+                style={{ right: -5, top: -5 }}
+              >
+                <Badge dot status="processing" />
               </div>
               <div className="a-text-color-black-60">
-              <Notification
-                set="light"
-              />
+                <Notification set="light" />
               </div>
             </div>
           </Dropdown>
@@ -140,4 +167,4 @@ export const HeaderNotifications: React.FC = observer(props => {
       />
     </Col>
   );
-});
+};

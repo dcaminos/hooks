@@ -1,17 +1,14 @@
 import { createContext } from "react";
-import { observable } from 'mobx'
-import { DirectionType } from "antd/lib/config-provider";
+import { action, observable } from "mobx";
 
 export class UiStore {
-    @observable theme: "light" | 'dark' = 'light'
-    @observable contentWidth: 'full' | 'boxed' = 'full'
-    @observable sidebarCollapsed: boolean = false
-    @observable sidebarCollapseButton: boolean = true
-    @observable layout: 'horizontal' | 'vertical' = 'vertical'
-    @observable navigationFull: boolean = false
-    @observable navigationBg: boolean =  false
-    @observable direction: DirectionType = 'ltr'
+  @observable theme: "light" | "dark" = "light";
+  @observable sidebarCollapsed: boolean = false;
 
+  @action
+  setTheme = (value: "light" | "dark") => {
+    this.theme = value;
+  };
 }
 
-export const UIContext = createContext<UiStore>(new UiStore())
+export const UIContext = createContext<UiStore>(new UiStore());
