@@ -1,21 +1,32 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, Redirect } from "react-router-dom";
 
-import { Row, Col, Form, Input, Button, Checkbox } from "antd";
-import { RiFacebookFill } from "react-icons/ri";
+import { Row, Col, Form, Input, Button, Checkbox, notification } from "antd";
+import { RiCloseFill, RiErrorWarningFill, RiFacebookFill } from "react-icons/ri";
 
 import { AuthLeftContent } from "../../components/auth-left-content/auth-left-content";
 
 import { FormItemState } from "../../lib/types";
+import { useContext } from "react";
+
+import { useState } from "react";
+import { UserContext } from "../../contexts";
 
 export type LoginFormState = {
-  username: FormItemState;
-  password: FormItemState;
-};
 
-export const SignIn: React.FC = (props) => {
+  email: FormItemState,
+  password: FormItemState
+}
+
+export const SignIn : React.FC = (props) => {
+
+  const [redirect, setRedirect] = useState(false);
+
+  const UserStore = useContext(UserContext)!;
+
+
   const [formState, setFormState] = React.useState<LoginFormState>({
-    username: {
+    email: {
       value: "",
       isValid: "validating",
       help: "",
@@ -27,7 +38,7 @@ export const SignIn: React.FC = (props) => {
     },
   });
 
-  function handleInput(e: any) {
+  const handleInput = (e:any) => {
     setFormState({
       ...formState,
       [e.target.name]: {
@@ -38,8 +49,60 @@ export const SignIn: React.FC = (props) => {
     });
   }
 
+  const handleSubmit = async () => {
+
+    const EMAIL_REGEX =
+      /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    
+      if (!EMAIL_REGEX.test(formState.email.value)) {
+      setFormState({
+        ...formState,
+        email: {
+          value: formState.email.value,
+          isValid: "error",
+          help: "Enter a valid email",
+        },
+      });
+      return;
+    }
+
+    if (formState.password.value === "") {
+        setFormState({
+        ...formState,
+        password: {
+          value: "",
+          isValid: "error",
+          help: "Enter password",
+        },
+      });
+      return;
+    }
+
+    let result = await UserStore.logInUser(formState.email.value, formState.password.value)
+
+    if (result.success) {
+      setRedirect(true)
+    } else {
+      notification.open({
+        message: "Error",
+        description: result.error,
+        icon: <RiErrorWarningFill style={{ color: "#FF0022" }} />,
+        closeIcon: (
+          <RiCloseFill
+            className="remix-icon da-text-color-black-80 da-text-color-dark-30"
+            size={24}
+          />
+        ),
+      });
+    }
+
+  }
+
   return (
     <Row gutter={[32, 0]} className="da-authentication-page">
+
+      { redirect ? <Redirect to ="/" /> : null}
+
       <AuthLeftContent />
 
       <Col lg={12} span={24} className="da-py-sm-0 da-py-md-64">
@@ -63,21 +126,12 @@ export const SignIn: React.FC = (props) => {
               initialValues={{ remember: true }}
               className="da-mt-sm-16 da-mt-32"
             >
-              <Form.Item label="Username:" className="da-mb-16">
-                <Input
-                  id="username"
-                  name="username"
-                  value={formState.username.value}
-                  onChange={handleInput}
-                />
+              <Form.Item label="Email:" className="da-mb-16" >
+                <Input id="email" name="email" value={formState.email.value} onChange={handleInput} />
               </Form.Item>
 
-              <Form.Item label="Password:" className="da-mb-8">
-                <Input.Password
-                  id="password"
-                  value={formState.password.value}
-                  onChange={handleInput}
-                />
+              <Form.Item label="Password:" className="da-mb-8" >
+                <Input.Password id="password" name="password" value={formState.password.value} onChange={handleInput} />
               </Form.Item>
 
               <Row align="middle" justify="space-between">
@@ -94,7 +148,7 @@ export const SignIn: React.FC = (props) => {
               </Row>
 
               <Form.Item className="da-mt-16 da-mb-8">
-                <Button block type="primary" htmlType="submit">
+                <Button block type="primary" htmlType="submit" onClick={handleSubmit}> 
                   Sign in
                 </Button>
               </Form.Item>
@@ -107,7 +161,7 @@ export const SignIn: React.FC = (props) => {
 
               <Link
                 className="da-text-color-primary-1 da-text-color-dark-primary-2 da-caption"
-                to="/pages/authentication/register"
+                to="/signup"
               >
                 Create an account
               </Link>
@@ -165,16 +219,10 @@ export const SignIn: React.FC = (props) => {
             </Col>
 
             <Col className="da-other-links da-mt-24">
-              <a
-                href="#"
-                className="da-text-color-black-80 da-text-color-dark-40"
-              >
+              <a href="/privacy-policy" className="da-text-color-black-80 da-text-color-dark-40">
                 Privacy Policy
               </a>
-              <a
-                href="#"
-                className="da-text-color-black-80 da-text-color-dark-40"
-              >
+              <a href="/terms-of-use" className="da-text-color-black-80 da-text-color-dark-40">
                 Term of use
               </a>
             </Col>

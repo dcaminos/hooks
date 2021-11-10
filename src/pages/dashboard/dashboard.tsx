@@ -14,12 +14,19 @@ import ExpensesCard from "../../examples/expenses-card";
 import AnalyticsProjectTableCard from "../../examples/analytics-project-table-card";
 import AnalyticsRevenueRadarCard from "../../examples/analytics-revenue-radar-card";
 import AnalyticsVisitersLineCard from "../../examples/analytics-visiters-line-card";
+import { useContext } from "react";
+import { observer } from "mobx-react-lite";
+import { UserContext } from "../../contexts";
 
-export const Dashboard: React.FC = (props) => {
+export const Dashboard: React.FC = observer( (props) => {
+  
+  const userStore = useContext(UserContext)!;
+  const userEmail = userStore.user?.email;
+
   return (
     <Row gutter={[32, 0]}>
       <Col span={24}>
-        <h3>Welcome back, Edward 👋</h3>
+        <h3>Welcome back {userEmail} 👋</h3>
 
         <p className="da-p1-body da-mb-0">
           Your current status and analytics are here
@@ -79,4 +86,4 @@ export const Dashboard: React.FC = (props) => {
       </Col>
     </Row>
   );
-};
+})

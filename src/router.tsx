@@ -62,7 +62,7 @@ export const Router: React.FC = observer((props) => {
         />
 
         {/* singup */}
-        <Route exact path={"/singup"} render={() => <SingUp />} />
+        <Route exact path={"/signup"} render={() => <SingUp />} />
 
         {/** Login */}
         <Route exact path={"/signin"} render={() => <SignIn />} />
