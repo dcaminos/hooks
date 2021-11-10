@@ -3,7 +3,6 @@ import { observer } from "mobx-react-lite";
 import { ReactNode, useContext, useEffect, useState } from "react";
 import { NetworkId } from "../../lib/network";
 import { TokenContext } from "../../contexts";
-import { CustomTagProps } from "rc-select/lib/interface/generator";
 
 export type TokenPickerProps = {
   values: string[];
