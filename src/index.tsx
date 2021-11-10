@@ -1,7 +1,7 @@
-import React, { Suspense } from "react";
+import React, { createContext, Suspense } from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter } from "react-router-dom";
-import { UIContext, UiStore } from "./stores/ui-store";
+import { UiStore } from "./stores/ui-store";
 import { initializeApp } from "firebase/app";
 
 import "./assets/icons/remixicon.css";
@@ -9,7 +9,8 @@ import "./assets/less/yoda-theme.less";
 
 import { ConfigProvider } from "antd";
 import { Router } from "./router";
-import { EditorContext, EditorStore } from "./stores/editor-store";
+import { EditorStore } from "./stores/editor-store";
+import { UserStore } from "./stores/user-store";
 
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
@@ -28,17 +29,28 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 console.log(app.name);
 
+const userStore = new UserStore();
+export const UserContext = createContext<UserStore>(userStore);
+
+const uiStore = new UiStore(); 
+export const UIContext = createContext<UiStore>(uiStore);
+
+const editorStore = new EditorStore();
+export const EditorContext = createContext<EditorStore>(editorStore);
+
 ReactDOM.render(
   <React.StrictMode>
     <Suspense fallback="loading">
-      <UIContext.Provider value={new UiStore()}>
-        <EditorContext.Provider value={new EditorStore()}>
-          <BrowserRouter>
-            <ConfigProvider>
-              <Router />
-            </ConfigProvider>
-          </BrowserRouter>
-        </EditorContext.Provider>
+      <UIContext.Provider value={uiStore}>
+        <UserContext.Provider value={userStore}>
+          <EditorContext.Provider value={editorStore}>
+            <BrowserRouter>
+              <ConfigProvider>
+                <Router />
+              </ConfigProvider>
+            </BrowserRouter>
+          </EditorContext.Provider>
+        </UserContext.Provider>
       </UIContext.Provider>
     </Suspense>
   </React.StrictMode>,

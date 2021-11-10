@@ -6,7 +6,6 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 // Components
 //import Analytics from "../view/main/dashboard/analytics";
 import { PageNotFound } from "./pages/page-not-found/page-not-found";
-import { UIContext } from "./stores/ui-store";
 import { observer } from "mobx-react-lite";
 import { Dashboard } from "./pages/dashboard/dashboard";
 import { Editor } from "./pages/editor/editor";
@@ -15,6 +14,7 @@ import { SingUp } from "./pages/sing-up/sing-up";
 import { FixedLayout } from "./components/layout/fixed-layout";
 import { VerticalLayout } from "./components/layout/vertical-layout";
 import { SignIn } from "./pages/sign-in/sign-in";
+import { UIContext } from ".";
 
 export const Router: React.FC = observer((props) => {
   // Mobx
@@ -62,7 +62,7 @@ export const Router: React.FC = observer((props) => {
         />
 
         {/* singup */}
-        <Route exact path={"/singup"} render={() => <SingUp />} />
+        <Route exact path={"/signup"} render={() => <SingUp />} />
 
         {/** Login */}
         <Route exact path={"/signin"} render={() => <SignIn />} />

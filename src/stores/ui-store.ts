@@ -1,4 +1,3 @@
-import { createContext } from "react";
 import { action, observable } from "mobx";
 
 export class UiStore {
@@ -10,5 +9,3 @@ export class UiStore {
     this.theme = value;
   };
 }
-
-export const UIContext = createContext<UiStore>(new UiStore());

@@ -5,7 +5,7 @@ import { Card, Row, Col, Button } from "antd";
 import cardImg from "../assets/images/dasboard/analytics-payment-bg.svg";
 import cardImgDark from "../assets/images/dasboard/analytics-payment-bg-dark.png";
 import { observer } from "mobx-react-lite";
-import { UIContext } from "../stores/ui-store";
+import { UIContext } from "..";
 
 export const UpgradePlanCardOneBg: React.FC = observer((props) => {
   const { theme } = useContext(UIContext);

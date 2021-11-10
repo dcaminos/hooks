@@ -5,7 +5,7 @@ import * as monaco from "monaco-editor/esm/vs/editor/editor.api";
 import React, { useContext } from "react";
 import { Card } from "antd";
 import { observer } from "mobx-react-lite";
-import { EditorContext } from "../../stores/editor-store";
+import { EditorContext } from "../..";
 
 const contractCode = require("!!raw-loader!./../../lib/contract").default;
 const hookCode = require("!!raw-loader!./../../lib/hook").default;
