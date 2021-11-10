@@ -9,34 +9,33 @@ import { AuthLeftContent } from "../../components/auth-left-content/auth-left-co
 import { FormItemState } from "../../lib/types";
 
 export type LoginFormState = {
-  username: FormItemState,
-  password: FormItemState
-}
+  username: FormItemState;
+  password: FormItemState;
+};
 
-export const SignIn : React.FC = (props) => {
-
+export const SignIn: React.FC = (props) => {
   const [formState, setFormState] = React.useState<LoginFormState>({
     username: {
       value: "",
       isValid: "validating",
-      help: ""
+      help: "",
     },
     password: {
       value: "",
       isValid: "validating",
-      help: ""
-    }
-  })
+      help: "",
+    },
+  });
 
-  function handleInput(e:any) {
+  function handleInput(e: any) {
     setFormState({
       ...formState,
       [e.target.name]: {
         value: e?.target.value,
         isValid: "validating",
         help: "",
-      }
-    })
+      },
+    });
   }
 
   return (
@@ -64,12 +63,21 @@ export const SignIn : React.FC = (props) => {
               initialValues={{ remember: true }}
               className="da-mt-sm-16 da-mt-32"
             >
-              <Form.Item label="Username:" className="da-mb-16" >
-                <Input id="username" name="username" value={formState.username.value} onChange={handleInput} />
+              <Form.Item label="Username:" className="da-mb-16">
+                <Input
+                  id="username"
+                  name="username"
+                  value={formState.username.value}
+                  onChange={handleInput}
+                />
               </Form.Item>
 
-              <Form.Item label="Password:" className="da-mb-8" >
-                <Input.Password id="password" value={formState.password.value} onChange={handleInput} />
+              <Form.Item label="Password:" className="da-mb-8">
+                <Input.Password
+                  id="password"
+                  value={formState.password.value}
+                  onChange={handleInput}
+                />
               </Form.Item>
 
               <Row align="middle" justify="space-between">
@@ -157,10 +165,16 @@ export const SignIn : React.FC = (props) => {
             </Col>
 
             <Col className="da-other-links da-mt-24">
-              <a href="#" className="da-text-color-black-80 da-text-color-dark-40">
+              <a
+                href="#"
+                className="da-text-color-black-80 da-text-color-dark-40"
+              >
                 Privacy Policy
               </a>
-              <a href="#" className="da-text-color-black-80 da-text-color-dark-40">
+              <a
+                href="#"
+                className="da-text-color-black-80 da-text-color-dark-40"
+              >
                 Term of use
               </a>
             </Col>

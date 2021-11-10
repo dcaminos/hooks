@@ -16,6 +16,7 @@ export type Network = {
   name: string;
   url: string;
   tokenId: string;
+  image: string;
 };
 
 export class NetworkFactory {
@@ -39,6 +40,7 @@ export interface NetworkInterface {
   name: string;
   url: string;
   tokenId: string;
+  image: string;
 
   getTokens: (tokenIds: string[]) => Token[];
   getBalance: (walletAddress: string) => Promise<BN | undefined>;
@@ -53,12 +55,14 @@ export class GenericNetwork {
   name: string;
   url: string;
   tokenId: string;
+  image: string;
 
   constructor(networ: Network) {
     this.id = networ.id;
     this.name = networ.name;
     this.url = networ.url;
     this.tokenId = networ.tokenId;
+    this.image = networ.image;
   }
 
   getTokens: (tokenIds: string[]) => Token[] = (tokenIds: string[]) => {

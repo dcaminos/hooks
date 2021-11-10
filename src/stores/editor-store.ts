@@ -1,4 +1,3 @@
-import { createContext } from "react";
 import { action, observable } from "mobx";
 import { Hook } from "../lib/hook";
 
@@ -26,5 +25,3 @@ export class EditorStore {
   @action
   test = async (walletAddress: string) => {};
 }
-
-export const EditorContext = createContext<EditorStore>(new EditorStore());

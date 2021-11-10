@@ -1,15 +1,12 @@
+import { ConfigProvider } from "antd";
+import { initializeApp } from "firebase/app";
 import React, { Suspense } from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter } from "react-router-dom";
-import { UIContext, UiStore } from "./stores/ui-store";
-import { initializeApp } from "firebase/app";
-
 import "./assets/icons/remixicon.css";
 import "./assets/less/yoda-theme.less";
-
-import { ConfigProvider } from "antd";
+import { AppProviders } from "./contexts";
 import { Router } from "./router";
-import { EditorContext, EditorStore } from "./stores/editor-store";
 
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
@@ -31,15 +28,13 @@ console.log(app.name);
 ReactDOM.render(
   <React.StrictMode>
     <Suspense fallback="loading">
-      <UIContext.Provider value={new UiStore()}>
-        <EditorContext.Provider value={new EditorStore()}>
-          <BrowserRouter>
-            <ConfigProvider>
-              <Router />
-            </ConfigProvider>
-          </BrowserRouter>
-        </EditorContext.Provider>
-      </UIContext.Provider>
+      <AppProviders>
+        <BrowserRouter>
+          <ConfigProvider>
+            <Router />
+          </ConfigProvider>
+        </BrowserRouter>
+      </AppProviders>
     </Suspense>
   </React.StrictMode>,
   document.getElementById("root")

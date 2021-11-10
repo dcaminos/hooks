@@ -5,7 +5,7 @@ import * as monaco from "monaco-editor/esm/vs/editor/editor.api";
 import React, { useContext } from "react";
 import { Card } from "antd";
 import { observer } from "mobx-react-lite";
-import { EditorContext } from "../../stores/editor-store";
+import { EditorContext } from "../../contexts";
 
 const contractCode = require("!!raw-loader!./../../lib/contract").default;
 const hookCode = require("!!raw-loader!./../../lib/hook").default;
@@ -20,7 +20,7 @@ const walletCode = require("!!raw-loader!./../../lib/wallet").default;
 const bigNumberCode = require("!!raw-loader!./../../lib/big-number").default;
 
 export const EditorSandbox: React.FC = observer((props) => {
-  const { updateCode } = useContext(EditorContext);
+  const { updateCode } = useContext(EditorContext)!;
 
   const initialCode = `
 import { EthereumContract } from 'file:///contract'

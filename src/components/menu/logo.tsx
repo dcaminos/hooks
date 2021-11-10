@@ -5,14 +5,14 @@ import YodaDark from "../../assets/images/logo/logo-dark.svg";
 
 import { observer } from "mobx-react-lite";
 import { useContext } from "react";
-import { UIContext } from "../../stores/ui-store";
+import { UIContext } from "../../contexts";
 
 export type LogoProps = {
   onClose: React.MouseEventHandler<HTMLAnchorElement>;
 };
 
 export const Logo: React.FC<LogoProps> = observer((props) => {
-  const { theme } = useContext(UIContext);
+  const { theme } = useContext(UIContext)!;
 
   return (
     <Link

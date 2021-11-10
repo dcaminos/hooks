@@ -13,10 +13,10 @@ import {
 import avatarImg from "../../assets/images/memoji/memoji-1.png";
 import { observer } from "mobx-react-lite";
 import { useContext } from "react";
-import { UIContext } from "../../stores/ui-store";
+import { UIContext } from "../../contexts";
 
 export const HeaderUser: React.FC = observer((props) => {
-  const { theme } = useContext(UIContext);
+  const { theme } = useContext(UIContext)!;
 
   const menu = (
     <Menu theme={theme === "light" ? "light" : "dark"}>
