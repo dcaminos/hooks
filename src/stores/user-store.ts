@@ -1,4 +1,4 @@
-import { action, observable } from "mobx";
+import { action, makeAutoObservable } from "mobx";
 
 import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword , UserCredential, User, onAuthStateChanged, Auth } from "firebase/auth";
 import { FirebaseError } from "firebase/app";
@@ -10,16 +10,18 @@ export type UserCreateResult = {
 
 export class UserStore {
 
-  @observable user: User | undefined;
+  user: User | undefined;
+  user2: User | undefined;
 
   private auth: Auth;
 
   constructor() {
-    this.auth = getAuth();
+    makeAutoObservable(this);
 
+    this.auth = getAuth();
     onAuthStateChanged(this.auth, user => {
       if (user) {
-        this.user = user
+        this.user = user;
       }
     })
   }
@@ -44,7 +46,8 @@ export class UserStore {
     } catch (error) {
       return { error: (error as FirebaseError).code }
     }
-  
   };
+
+  
 }
 

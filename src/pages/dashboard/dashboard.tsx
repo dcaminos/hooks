@@ -19,12 +19,9 @@ import { UserContext } from "../..";
 import { observer } from "mobx-react-lite";
 
 export const Dashboard: React.FC = observer( (props) => {
-
-    
+  
   const userStore = useContext(UserContext);
   const userEmail = userStore.user?.email;
-
-  console.log(userStore.user?.email)
 
   return (
     <Row gutter={[32, 0]}>
