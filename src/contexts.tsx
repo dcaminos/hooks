@@ -1,3 +1,4 @@
+import { FirebaseApp } from "@firebase/app";
 import { createContext } from "react";
 import { EditorStore } from "./stores/editor-store";
 import { HookStore } from "./stores/hook-store";
@@ -11,11 +12,14 @@ export const UserContext = createContext<UserStore | null>(null);
 export const HookContext = createContext<HookStore | null>(null);
 export const EditorContext = createContext<EditorStore | null>(null);
 
-export const AppProviders: React.FC = ({ children }) => (
+export const AppProviders: React.FC<{ firebaseApp: FirebaseApp }> = ({
+  firebaseApp,
+  children,
+}) => (
   <UIContext.Provider value={new UiStore()}>
     <TokenContext.Provider value={new TokenStore()}>
       <UserContext.Provider value={new UserStore()}>
-        <HookContext.Provider value={new HookStore()}>
+        <HookContext.Provider value={new HookStore(firebaseApp)}>
           <EditorContext.Provider value={new EditorStore()}>
             {children}
           </EditorContext.Provider>

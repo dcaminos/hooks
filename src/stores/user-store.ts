@@ -18,7 +18,6 @@ export type UserCreateResult = {
 
 export class UserStore {
   user: User | undefined;
-  user2: User | undefined;
 
   private auth: Auth;
 

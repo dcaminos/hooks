@@ -1,5 +1,5 @@
 import { ConfigProvider } from "antd";
-import { initializeApp } from "firebase/app";
+import { FirebaseApp, initializeApp } from "firebase/app";
 import React, { Suspense } from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter } from "react-router-dom";
@@ -22,13 +22,12 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
-const app = initializeApp(firebaseConfig);
-console.log(app.name);
+const firebaseApp: FirebaseApp = initializeApp(firebaseConfig);
 
 ReactDOM.render(
   <React.StrictMode>
     <Suspense fallback="loading">
-      <AppProviders>
+      <AppProviders firebaseApp={firebaseApp}>
         <BrowserRouter>
           <ConfigProvider>
             <Router />
