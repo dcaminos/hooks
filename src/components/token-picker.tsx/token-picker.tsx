@@ -1,4 +1,4 @@
-import { Avatar, Col, Row, Select, Tag } from "antd";
+import { Avatar, Select, Space, Tag } from "antd";
 import { observer } from "mobx-react-lite";
 import { ReactNode, useContext, useEffect, useState } from "react";
 import { NetworkId } from "../../lib/network";
@@ -32,17 +32,11 @@ export const TokenPicker: React.FC<TokenPickerProps> = observer((props) => {
     setTokens(
       getTokensPerNetwork(networkId).map((token) => ({
         value: token.id,
-        //label: ,
         label: (
-          <Row align="middle">
-            <Col>
-              <Avatar src={token.image} size={20} />
-            </Col>
-            <Col style={{ marginLeft: 10 }}>
-              {" "}
-              {`${token.symbol.toUpperCase()} - ${token.name}`}
-            </Col>
-          </Row>
+          <Space align="center">
+            <Avatar src={token.image} size={20} />
+            {`${token.symbol.toUpperCase()} - ${token.name}`}
+          </Space>
         ),
         symbol: token.symbol,
         name: token.name.toLocaleLowerCase(),
@@ -66,20 +60,13 @@ export const TokenPicker: React.FC<TokenPickerProps> = observer((props) => {
   };
 
   const tagRender = (props: any) => {
-    console.log(props);
     const { label, closable, onClose } = props;
-
-    /*const onPreventMouseDown = event => {
-      event.preventDefault();
-      event.stopPropagation();
-    };*/
 
     return (
       <Tag
-        //onMouseDown={onPreventMouseDown}
+        style={{ display: "flex", alignItems: "center", padding: "3px 8px" }}
         closable={closable}
         onClose={onClose}
-        style={{ marginRight: 3 }}
       >
         {label}
       </Tag>
@@ -96,6 +83,7 @@ export const TokenPicker: React.FC<TokenPickerProps> = observer((props) => {
       onChange={onTokensChange}
       options={options}
       filterOption={filterOption}
+      maxTagCount={"responsive"}
     />
   );
 });
