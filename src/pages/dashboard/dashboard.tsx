@@ -23,6 +23,8 @@ export const Dashboard: React.FC = observer( (props) => {
   const userStore = useContext(UserContext)!;
   const userEmail = userStore.user?.email;
 
+  console.log(userStore)
+
   return (
     <Row gutter={[32, 0]}>
       <Col span={24}>

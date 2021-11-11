@@ -1,17 +1,27 @@
 import { action, makeAutoObservable } from "mobx";
 
-import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword , UserCredential, User, onAuthStateChanged, Auth } from "firebase/auth";
+import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword , UserCredential, User as FirebaseUser, onAuthStateChanged, Auth } from "firebase/auth";
 import { FirebaseError } from "firebase/app";
+import { Hook } from "../lib/hook";
 
 export type UserCreateResult = {
   success? : string,
   error? : FirebaseError
 }
 
+export type Profile = {
+  hooks: Array<Hook>
+}
+
+export type User = FirebaseUser & {
+  firstName?: string,
+  lastName?: string,
+  profiles?: Array<Profile>
+}
+
 export class UserStore {
 
   user: User | undefined;
-  user2: User | undefined;
 
   private auth: Auth;
 
@@ -19,9 +29,11 @@ export class UserStore {
     makeAutoObservable(this);
 
     this.auth = getAuth();
-    onAuthStateChanged(this.auth, user => {
-      if (user) {
-        this.user = user;
+    onAuthStateChanged(this.auth, firebaseUser => {
+      if (firebaseUser) {
+        this.user = firebaseUser;
+        // load or create user document 
+        // load profiles or create default
       }
     })
   }
