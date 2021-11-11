@@ -13,7 +13,11 @@ export class TokenStore {
     networks.forEach((network) => {
       this.tokensPerNetwor.set(
         network.id,
-        tokens.filter((token) => token.contracts[network.id] !== undefined)
+        tokens.filter(
+          (token) =>
+            token.contracts[network.id] !== undefined ||
+            token.id === network.tokenId
+        )
       );
     });
   }

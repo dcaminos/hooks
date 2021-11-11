@@ -18,8 +18,7 @@ import { useContext } from "react";
 import { observer } from "mobx-react-lite";
 import { UserContext } from "../../contexts";
 
-export const Dashboard: React.FC = observer( (props) => {
-  
+export const Dashboard: React.FC = observer((props) => {
   const userStore = useContext(UserContext)!;
   const userEmail = userStore.user?.email;
 
@@ -86,4 +85,4 @@ export const Dashboard: React.FC = observer( (props) => {
       </Col>
     </Row>
   );
-})
+});

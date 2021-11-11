@@ -21,12 +21,11 @@ export type SignUpFormState = {
 };
 
 export const SingUp: React.FC = (props) => {
-  
   const userStore = useContext(UserContext)!;
 
-  const [ redirect, setRedirect ] = useState(false);
+  const [redirect, setRedirect] = useState(false);
 
-  const [ formState, setFormState ] = React.useState<SignUpFormState>({
+  const [formState, setFormState] = React.useState<SignUpFormState>({
     email: {
       value: "",
       isValid: "validating",
@@ -56,7 +55,6 @@ export const SingUp: React.FC = (props) => {
   }
 
   const handleSubmit = async (e: SyntheticEvent) => {
-
     // validate email
 
     const EMAIL_REGEX =
@@ -75,7 +73,8 @@ export const SingUp: React.FC = (props) => {
 
     // validate password
 
-    const PWD_REGEX = /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{10,100}$/;
+    const PWD_REGEX =
+      /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{10,100}$/;
 
     if (!PWD_REGEX.test(formState.password.value)) {
       setFormState({
@@ -105,12 +104,14 @@ export const SingUp: React.FC = (props) => {
 
     // submit user creation request
 
-    let result = await userStore.signUpUser(formState.email.value, formState.password.value);
+    let result = await userStore.signUpUser(
+      formState.email.value,
+      formState.password.value
+    );
 
-    if(result.success) {
-      setRedirect(true)
+    if (result.success) {
+      setRedirect(true);
     } else {
-
       notification.open({
         message: "Error",
         description: result.error,
@@ -123,31 +124,41 @@ export const SingUp: React.FC = (props) => {
         ),
       });
     }
-  
-  }
+  };
 
   return (
     <Row gutter={[32, 0]} className="da-authentication-page">
-      
-      { redirect ? <Redirect to="/" /> : null }
-      
+      {redirect ? <Redirect to="/" /> : null}
+
       <AuthLeftContent />
 
       <Col md={12}>
         <Row className="da-h-100" align="middle" justify="center">
-          <Col xxl={11} xl={15} lg={20} md={20} sm={24} className="da-px-sm-8 da-pt-24 da-pb-48">
+          <Col
+            xxl={11}
+            xl={15}
+            lg={20}
+            md={20}
+            sm={24}
+            className="da-px-sm-8 da-pt-24 da-pb-48"
+          >
             <h1>Create Account</h1>
             <p className="da-mt-8 da-text-color-black-60">
-              Please sign up to your personal account if you want to use all our premium products.
+              Please sign up to your personal account if you want to use all our
+              premium products.
             </p>
 
-            <Form layout="vertical" name="basic" className="da-mt-sm-16 da-mt-32">
-
+            <Form
+              layout="vertical"
+              name="basic"
+              className="da-mt-sm-16 da-mt-32"
+            >
               <Form.Item
                 label="E-mail:"
                 validateStatus={formState.email.isValid}
                 help={formState.email.help}
-                hasFeedback={formState.email.help !== ""}>
+                hasFeedback={formState.email.help !== ""}
+              >
                 <Input
                   id="email"
                   name="email"
@@ -160,7 +171,8 @@ export const SingUp: React.FC = (props) => {
                 label="Password:"
                 validateStatus={formState.password.isValid}
                 help={formState.password.help}
-                hasFeedback={formState.password.help !== ""}>
+                hasFeedback={formState.password.help !== ""}
+              >
                 <Input.Password
                   id="password"
                   name="password"
@@ -173,7 +185,8 @@ export const SingUp: React.FC = (props) => {
                 label="Confirm Password:"
                 validateStatus={formState.password2.isValid}
                 help={formState.password2.help}
-                hasFeedback={formState.password2.help !== ""}>
+                hasFeedback={formState.password2.help !== ""}
+              >
                 <Input.Password
                   id="password2"
                   name="password2"
@@ -183,7 +196,12 @@ export const SingUp: React.FC = (props) => {
               </Form.Item>
 
               <Form.Item className="da-mt-16 da-mb-8">
-                <Button block type="primary" htmlType="submit" onClick={handleSubmit}>
+                <Button
+                  block
+                  type="primary"
+                  htmlType="submit"
+                  onClick={handleSubmit}
+                >
                   Sign up
                 </Button>
               </Form.Item>
@@ -196,7 +214,8 @@ export const SingUp: React.FC = (props) => {
 
               <Link
                 to="/signin"
-                className="da-text-color-primary-1 da-text-color-dark-primary-2 da-caption">
+                className="da-text-color-primary-1 da-text-color-dark-primary-2 da-caption"
+              >
                 Login
               </Link>
             </div>

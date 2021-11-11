@@ -1,4 +1,4 @@
-import { Avatar, Col, Row, Select } from "antd";
+import { Avatar, Select, Space } from "antd";
 import { networks } from "../../lib/config/networks";
 import { NetworkId } from "../../lib/network";
 
@@ -23,12 +23,10 @@ export const NetworkPicker: React.FC<NetworkPickerProps> = (props) => {
       {networks.map((network) => {
         return (
           <Option key={`network-item-${network.id}`} value={network.id}>
-            <Row align="middle">
-              <Col span={4}>
-                <Avatar src={network.image} size={20} />
-              </Col>
-              <Col> {network.name}</Col>
-            </Row>
+            <Space align="center">
+              <Avatar src={network.image} size={20} />
+              {network.name}
+            </Space>
           </Option>
         );
       })}
