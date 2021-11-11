@@ -9,6 +9,7 @@ export class EditorStore {
   updateCode = async (tsCode: string) => {
     const hook = new Hook(
       "live",
+      "ownerId",
       "test",
       "binance-smart-chain",
       tsCode,
