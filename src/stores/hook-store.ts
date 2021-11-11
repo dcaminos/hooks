@@ -34,6 +34,16 @@ export class HookStore {
   fetchHooks = async () => {
     const hooksCol = collection(this.firestore, "hooks");
     const hookSnapshot = await getDocs(hooksCol);
-    this.hooks = hookSnapshot.docs.map((doc) => doc.data() as Hook);
+    this.hooks = hookSnapshot.docs.map((doc) => {
+      const data = doc.data();
+      return new Hook(
+        doc.id,
+        data.owner.id,
+        data.name,
+        data.networkId,
+        data.ts,
+        data.js
+      );
+    });
   };
 }

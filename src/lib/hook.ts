@@ -18,6 +18,7 @@ const compilerOptions: typescript.CompilerOptions = {
 export class Hook {
   constructor(
     public id: string,
+    public owner: string,
     public name: string,
     public networkId: NetworkId,
     public ts: string,
