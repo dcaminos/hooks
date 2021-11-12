@@ -19,8 +19,10 @@ export class Hook {
   constructor(
     public id: string,
     public owner: string,
-    public name: string,
+    public title: string,
     public networkId: NetworkId,
+    public tokenIds: string[],
+    public isPublic: boolean,
     public ts: string,
     public js: string
   ) {}
