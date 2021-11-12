@@ -3,7 +3,7 @@ import { useContext } from "react";
 import { NewHookModal } from "../../components/new-hook-modal/new-hook-modal";
 import { UIContext } from "../../contexts";
 
-export const Editor: React.FC = () => {
+export const EditorHome: React.FC = () => {
   const { showModal } = useContext(UIContext)!;
 
   return (
@@ -17,15 +17,6 @@ export const Editor: React.FC = () => {
       >
         Create new Hook
       </Button>
-      {/*}
-    <Row gutter={[32, 0]}>
-      <Col span={8}>
-        <EditorSandbox />
-      </Col>
-      <Col span={16}>
-        <NewHookForm onCreateHook={createHook}  />
-      </Col>
-    </Row>*/}
     </>
   );
 };

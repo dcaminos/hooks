@@ -17,6 +17,7 @@ export type Network = {
   url: string;
   tokenId: string;
   image: string;
+  hookTemplate: string;
 };
 
 export class NetworkFactory {
