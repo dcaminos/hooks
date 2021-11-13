@@ -7,7 +7,7 @@ import cardImg from "../assets/images/dasboard/analytics-download-bg.png";
 import cardImgDark from "../assets/images/dasboard/analytics-download-bg-dark.png";
 import cardVectorImg from "../assets/images/dasboard/analytics-download-vector.svg";
 import { observer } from "mobx-react-lite";
-import { UIContext } from "../contexts";
+import { UIContext } from "../utils/contexts";
 
 export const DownloadCard: React.FC = observer((props) => {
   const { theme } = useContext(UIContext)!;

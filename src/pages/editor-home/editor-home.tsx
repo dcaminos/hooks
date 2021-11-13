@@ -1,7 +1,7 @@
 import { Button } from "antd";
 import { useContext } from "react";
 import { NewHookModal } from "../../components/new-hook-modal/new-hook-modal";
-import { UIContext } from "../../contexts";
+import { UIContext } from "../../utils/contexts";
 
 export const EditorHome: React.FC = () => {
   const { showModal } = useContext(UIContext)!;

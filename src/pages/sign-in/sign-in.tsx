@@ -1,91 +1,41 @@
-import React from "react";
-import { Link, Redirect } from "react-router-dom";
-
-import { Row, Col, Form, Input, Button, Checkbox, notification } from "antd";
+import {
+  Button,
+  Checkbox,
+  Col,
+  Form,
+  Input,
+  notification,
+  Row,
+  Spin,
+} from "antd";
+import { observer } from "mobx-react-lite";
+import React, { useContext, useEffect } from "react";
 import {
   RiCloseFill,
   RiErrorWarningFill,
   RiFacebookFill,
 } from "react-icons/ri";
-
+import { Link, useHistory } from "react-router-dom";
 import { AuthLeftContent } from "../../components/auth-left-content/auth-left-content";
+import { UserContext } from "../../utils/contexts";
 
-import { useContext } from "react";
+export const SignIn: React.FC = observer((props) => {
+  const { authReady, user, signIn } = useContext(UserContext)!;
+  const history = useHistory();
+  const [email, setEmail] = React.useState<string>("");
+  const [password, setPassword] = React.useState<string>("");
+  const [loading, setLoading] = React.useState<boolean>(false);
 
-import { useState } from "react";
-import { UserContext } from "../../contexts";
-import { ValidateStatus } from "antd/lib/form/FormItem";
-
-export type FormItemState = {
-  value: string;
-  isValid: ValidateStatus;
-  help: string;
-};
-
-export type LoginFormState = {
-  email: FormItemState;
-  password: FormItemState;
-};
-
-export const SignIn: React.FC = (props) => {
-  const [redirect, setRedirect] = useState(false);
-
-  const { signIn } = useContext(UserContext)!;
-
-  const [formState, setFormState] = React.useState<LoginFormState>({
-    email: {
-      value: "",
-      isValid: "validating",
-      help: "",
-    },
-    password: {
-      value: "",
-      isValid: "validating",
-      help: "",
-    },
-  });
-
-  const handleInput = (e: any) => {
-    setFormState({
-      ...formState,
-      [e.target.name]: {
-        value: e?.target.value,
-        isValid: "validating",
-        help: "",
-      },
-    });
-  };
-
-  const handleSubmit = async () => {
-    const EMAIL_REGEX =
-      /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-
-    if (!EMAIL_REGEX.test(formState.email.value)) {
-      setFormState({
-        ...formState,
-        email: {
-          value: formState.email.value,
-          isValid: "error",
-          help: "Enter a valid email",
-        },
-      });
-      return;
+  useEffect(() => {
+    if (authReady && user) {
+      history.push("/");
     }
+  }, [history, authReady, user]);
 
-    if (formState.password.value === "") {
-      setFormState({
-        ...formState,
-        password: {
-          value: "",
-          isValid: "error",
-          help: "Enter password",
-        },
-      });
-      return;
-    }
-
+  const onFinish = async () => {
     try {
-      await signIn(formState.email.value, formState.password.value);
+      setLoading(true);
+      await signIn(email, password);
     } catch (error) {
       notification.open({
         message: "Error",
@@ -98,16 +48,22 @@ export const SignIn: React.FC = (props) => {
           />
         ),
       });
-      return;
     }
-
-    setRedirect(true);
+    setLoading(false);
   };
+
+  if (!authReady) {
+    return (
+      <Spin
+        style={{ position: "fixed", top: "50%", left: "50%" }}
+        spinning={true}
+        size="large"
+      />
+    );
+  }
 
   return (
     <Row gutter={[32, 0]} className="da-authentication-page">
-      {redirect ? <Redirect to="/" /> : null}
-
       <AuthLeftContent />
 
       <Col lg={12} span={24} className="da-py-sm-0 da-py-md-64">
@@ -130,22 +86,52 @@ export const SignIn: React.FC = (props) => {
               name="basic"
               initialValues={{ remember: true }}
               className="da-mt-sm-16 da-mt-32"
+              onFinish={onFinish}
             >
-              <Form.Item label="Email:" className="da-mb-16">
+              <Form.Item
+                label="Email:"
+                name="email"
+                className="da-mb-16"
+                rules={[
+                  { type: "email", validateTrigger: "onSubmit" },
+                  {
+                    required: true,
+                    message: "Please input your email!",
+                    validateTrigger: "onSubmit",
+                  },
+                ]}
+              >
                 <Input
-                  id="email"
-                  name="email"
-                  value={formState.email.value}
-                  onChange={handleInput}
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
                 />
               </Form.Item>
 
-              <Form.Item label="Password:" className="da-mb-8">
+              <Form.Item
+                label="Password:"
+                name="password"
+                className="da-mb-8"
+                rules={[
+                  {
+                    required: true,
+                    message: "Please input your password!",
+                    validateTrigger: "onSubmit",
+                  },
+                  {
+                    min: 5,
+                    message: "Password must be minimum 5 characters.",
+                    validateTrigger: "onSubmit",
+                  },
+                  {
+                    pattern: new RegExp("(?=.*[0-9])"),
+                    message: "Password should include at least one number",
+                    validateTrigger: "onSubmit",
+                  },
+                ]}
+              >
                 <Input.Password
-                  id="password"
-                  name="password"
-                  value={formState.password.value}
-                  onChange={handleInput}
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
                 />
               </Form.Item>
 
@@ -167,7 +153,7 @@ export const SignIn: React.FC = (props) => {
                   block
                   type="primary"
                   htmlType="submit"
-                  onClick={handleSubmit}
+                  loading={loading}
                 >
                   Sign in
                 </Button>
@@ -195,6 +181,7 @@ export const SignIn: React.FC = (props) => {
 
             <Col className="da-account-buttons da-mt-32">
               <Button
+                loading={loading}
                 block
                 icon={
                   <svg
@@ -228,6 +215,7 @@ export const SignIn: React.FC = (props) => {
               </Button>
 
               <Button
+                loading={loading}
                 className="da-mt-16"
                 block
                 icon={
@@ -257,4 +245,4 @@ export const SignIn: React.FC = (props) => {
       </Col>
     </Row>
   );
-};
+});

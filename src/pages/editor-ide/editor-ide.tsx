@@ -1,7 +1,7 @@
 import { Col, Row, Spin } from "antd";
 import { useContext, useEffect, useState } from "react";
 import { useHistory, useParams } from "react-router-dom";
-import { EditorContext, HookContext } from "../../contexts";
+import { EditorContext, HookContext } from "../../utils/contexts";
 import { Hook } from "../../lib/hook";
 import { EditorSandbox } from "./editor-sandbox";
 import { HookInfo } from "./hook-info";

@@ -5,7 +5,7 @@ import {
   Timestamp,
 } from "@firebase/firestore";
 import { User } from "../user";
-import { pick } from "../../utils";
+import { pick } from "../../utils/utils";
 
 export const userConverter = {
   toFirestore(user: User): DocumentData {

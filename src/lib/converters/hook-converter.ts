@@ -5,7 +5,7 @@ import {
   Timestamp,
 } from "@firebase/firestore";
 import { Hook } from "../hook";
-import { pick } from "../../utils";
+import { pick } from "../../utils/utils";
 
 export const hookConverter = {
   toFirestore(hook: Hook): DocumentData {

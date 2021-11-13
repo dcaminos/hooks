@@ -11,7 +11,7 @@ import { Footer } from "./footer";
 //import MenuItem from "./item";
 //import MenuMobile from "./mobile";
 import { observer } from "mobx-react-lite";
-import { UIContext } from "../../contexts";
+import { UIContext } from "../../utils/contexts";
 
 const { Sider } = Layout;
 

@@ -44,7 +44,7 @@
     "test": "craco test",
     "eject": "react-scripts eject",
     "format": "prettier --write \"src/**/*.{ts,tsx,js,jsx}\"",
-    "get-tokens": "node src/scripts/get-token-list.js"
+    "get-tokens": "node src/utils/get-token-list.js"
   },
   "eslintConfig": {
     "extends": [

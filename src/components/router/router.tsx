@@ -5,17 +5,18 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 // Components
 //import Analytics from "../view/main/dashboard/analytics";
-import { PageNotFound } from "./pages/page-not-found/page-not-found";
+import { PageNotFound } from "../../pages/page-not-found/page-not-found";
 import { observer } from "mobx-react-lite";
-import { Dashboard } from "./pages/dashboard/dashboard";
-import { EditorIDE } from "./pages/editor-ide/editor-ide";
+import { Dashboard } from "../../pages/dashboard/dashboard";
+import { EditorIDE } from "../../pages/editor-ide/editor-ide";
 
-import { SingUp } from "./pages/sing-up/sing-up";
-import { FixedLayout } from "./components/layout/fixed-layout";
-import { VerticalLayout } from "./components/layout/vertical-layout";
-import { SignIn } from "./pages/sign-in/sign-in";
-import { UIContext } from "./contexts";
-import { EditorHome } from "./pages/editor-home/editor-home";
+import { SingUp } from "../../pages/sing-up/sing-up";
+import { FixedLayout } from "../layout/fixed-layout";
+import { VerticalLayout } from "../layout/vertical-layout";
+import { SignIn } from "../../pages/sign-in/sign-in";
+import { UIContext } from "../../utils/contexts";
+import { EditorHome } from "../../pages/editor-home/editor-home";
+import { PrivatePage } from "./private-page";
 
 export const Router: React.FC = observer((props) => {
   // Mobx
@@ -45,9 +46,11 @@ export const Router: React.FC = observer((props) => {
           exact
           path={"/editor"}
           render={() => (
-            <FixedLayout>
-              <EditorHome />
-            </FixedLayout>
+            <PrivatePage>
+              <FixedLayout>
+                <EditorHome />
+              </FixedLayout>
+            </PrivatePage>
           )}
         />
 
@@ -66,9 +69,11 @@ export const Router: React.FC = observer((props) => {
           exact
           path={"/"}
           render={() => (
-            <VerticalLayout>
-              <Dashboard />
-            </VerticalLayout>
+            <PrivatePage>
+              <VerticalLayout>
+                <Dashboard />
+              </VerticalLayout>
+            </PrivatePage>
           )}
         />
 

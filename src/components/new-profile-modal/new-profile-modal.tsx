@@ -2,7 +2,7 @@ import { Button, Modal } from "antd";
 import { observer } from "mobx-react-lite";
 import { useContext } from "react";
 import { RiCloseFill } from "react-icons/ri";
-import { UIContext } from "../../contexts";
+import { UIContext } from "../../utils/contexts";
 import { ModalType } from "../../stores/ui-store";
 
 const modalType: ModalType = "new-profile";

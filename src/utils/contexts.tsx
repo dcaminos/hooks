@@ -1,10 +1,10 @@
 import { FirebaseApp } from "@firebase/app";
 import { createContext } from "react";
-import { EditorStore } from "./stores/editor-store";
-import { HookStore } from "./stores/hook-store";
-import { TokenStore } from "./stores/token-store";
-import { UiStore } from "./stores/ui-store";
-import { UserStore } from "./stores/user-store";
+import { EditorStore } from "../stores/editor-store";
+import { HookStore } from "../stores/hook-store";
+import { TokenStore } from "../stores/token-store";
+import { UiStore } from "../stores/ui-store";
+import { UserStore } from "../stores/user-store";
 
 export const UIContext = createContext<UiStore | null>(null);
 export const TokenContext = createContext<TokenStore | null>(null);

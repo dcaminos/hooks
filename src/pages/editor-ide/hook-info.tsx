@@ -1,13 +1,11 @@
 import { Button, Card, Col, Row } from "antd";
 import { observer } from "mobx-react-lite";
-import { useContext, useState } from "react";
-import { EditorContext, HookContext } from "../../contexts";
+import { useContext } from "react";
+import { EditorContext } from "../../utils/contexts";
 
 export const HookInfo: React.FC = observer(() => {
   const { code, currentHook, saveChanges, savingChanges } =
     useContext(EditorContext)!;
-  const { updateHook } = useContext(HookContext)!;
-  //const [savingChanges, setSavingChanges] = useState<boolean>(false);
 
   const listTitle = "da-p1-body";
   const listResult =

@@ -3,7 +3,7 @@ import { observer } from "mobx-react-lite";
 import { useContext, useState } from "react";
 import { RiCloseFill } from "react-icons/ri";
 import { useHistory } from "react-router";
-import { HookContext, UIContext, UserContext } from "../../contexts";
+import { HookContext, UIContext, UserContext } from "../../utils/contexts";
 import { NetworkId } from "../../lib/network";
 import { ModalType } from "../../stores/ui-store";
 import { NewHookFrom } from "../new-hook-form/new-hook-form";

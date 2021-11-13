@@ -3,7 +3,7 @@ import { observer } from "mobx-react-lite";
 import { useContext } from "react";
 import cardImgDark from "../../assets/images/dasboard/analytics-payment-bg-dark.png";
 import cardImg from "../../assets/images/dasboard/analytics-payment-bg.svg";
-import { UIContext } from "../../contexts";
+import { UIContext } from "../../utils/contexts";
 
 export const PublishHook: React.FC = observer(() => {
   const { theme } = useContext(UIContext)!;

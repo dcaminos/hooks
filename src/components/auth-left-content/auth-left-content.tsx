@@ -7,7 +7,7 @@ import bgDark from "../../assets/images/pages/authentication/authentication-bg-d
 import logo from "../../assets/images/logo/logo-vector-blue.svg";
 import logoDark from "../../assets/images/logo/logo-vector.svg";
 import { useContext } from "react";
-import { UIContext } from "../../contexts";
+import { UIContext } from "../../utils/contexts";
 
 export const AuthLeftContent: React.FC = (props) => {
   const { theme } = useContext(UIContext)!;
