@@ -18,7 +18,7 @@ export const AppProviders: React.FC<{ firebaseApp: FirebaseApp }> = ({
 }) => (
   <UIContext.Provider value={new UiStore()}>
     <TokenContext.Provider value={new TokenStore()}>
-      <UserContext.Provider value={new UserStore()}>
+      <UserContext.Provider value={new UserStore(firebaseApp)}>
         <HookContext.Provider value={new HookStore(firebaseApp)}>
           <EditorContext.Provider value={new EditorStore()}>
             {children}
