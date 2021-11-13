@@ -4,14 +4,16 @@ import { useContext, useState } from "react";
 import { EditorContext, HookContext } from "../../contexts";
 
 export const HookInfo: React.FC = observer(() => {
-  const { code, currentHook, setCurrentHook } = useContext(EditorContext)!;
+  const { code, currentHook, saveChanges, savingChanges } =
+    useContext(EditorContext)!;
   const { updateHook } = useContext(HookContext)!;
-  const [savingChanges, setSavingChanges] = useState<boolean>(false);
+  //const [savingChanges, setSavingChanges] = useState<boolean>(false);
 
   const listTitle = "da-p1-body";
   const listResult =
     "da-mt-sm-4 da-p1-body da-text-color-black-100 da-text-color-dark-0";
 
+  /*
   const saveChanges = async () => {
     if (!currentHook) {
       return;
@@ -23,7 +25,7 @@ export const HookInfo: React.FC = observer(() => {
     setCurrentHook(currentHook);
     setSavingChanges(false);
   };
-
+*/
   return (
     <Card>
       <Row align="middle" justify="space-between">

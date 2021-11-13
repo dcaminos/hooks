@@ -3,6 +3,7 @@ import { Hook } from "../lib/hook";
 
 export class EditorStore {
   currentHook: Hook | undefined = undefined;
+  savingChanges: boolean = false;
   code: string = "";
 
   constructor() {
@@ -18,6 +19,11 @@ export class EditorStore {
   @action
   updateCode = async (code: string) => {
     this.code = code;
+  };
+
+  @action
+  saveChanges = async () => {
+    console.log("PASO");
   };
 
   @action

@@ -23,7 +23,8 @@ export class Hook {
     public networkId: NetworkId,
     public tokenIds: string[],
     public isPublic: boolean,
-    public code: string
+    public code: string,
+    public createdAt: Date
   ) {}
 
   compile = async (): Promise<string | undefined> => {

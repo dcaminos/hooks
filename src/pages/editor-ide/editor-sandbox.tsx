@@ -16,7 +16,6 @@ const HookResponseCode =
 const netowrkCode = require("!!raw-loader!./../../lib/network").default;
 const tokenCode = require("!!raw-loader!./../../lib/token").default;
 const userCode = require("!!raw-loader!./../../lib/user").default;
-const walletCode = require("!!raw-loader!./../../lib/wallet").default;
 const bigNumberCode = require("!!raw-loader!./../../lib/big-number").default;
 
 export const EditorSandbox: React.FC = observer((props) => {
@@ -73,11 +72,6 @@ export const EditorSandbox: React.FC = observer((props) => {
       monaco.Uri.parse("file:///user.ts")
     );
     monaco.editor.createModel(
-      walletCode,
-      "typescript",
-      monaco.Uri.parse("file:///wallet.ts")
-    );
-    monaco.editor.createModel(
       bigNumberCode,
       "typescript",
       monaco.Uri.parse("file:///big-number.ts")
@@ -89,6 +83,12 @@ export const EditorSandbox: React.FC = observer((props) => {
     monaco: Monaco
   ) => {
     editor.focus();
+    editor.addCommand(monaco.KeyMod.CtrlCmd | monaco.KeyCode.KeyS, () => {
+      alert("SAVE pressed!");
+    });
+    editor.addCommand(monaco.KeyCode.KeyA, () => {
+      alert("SAVE pressed! ");
+    });
   };
 
   const handleEditorChange = (value: string | undefined, ev: any) => {

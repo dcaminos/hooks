@@ -21,7 +21,7 @@ export type SignUpFormState = {
 };
 
 export const SingUp: React.FC = (props) => {
-  const userStore = useContext(UserContext)!;
+  const { signUp } = useContext(UserContext)!;
 
   const [redirect, setRedirect] = useState(false);
 
@@ -104,17 +104,12 @@ export const SingUp: React.FC = (props) => {
 
     // submit user creation request
 
-    let result = await userStore.signUpUser(
-      formState.email.value,
-      formState.password.value
-    );
-
-    if (result.success) {
-      setRedirect(true);
-    } else {
+    try {
+      await signUp(formState.email.value, formState.password.value);
+    } catch (error) {
       notification.open({
         message: "Error",
-        description: result.error,
+        description: <>{(error as any).message}</>,
         icon: <RiErrorWarningFill style={{ color: "#FF0022" }} />,
         closeIcon: (
           <RiCloseFill
@@ -123,7 +118,10 @@ export const SingUp: React.FC = (props) => {
           />
         ),
       });
+      return;
     }
+
+    setRedirect(true);
   };
 
   return (

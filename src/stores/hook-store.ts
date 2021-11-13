@@ -8,14 +8,13 @@ import {
   getDocs,
   getFirestore,
   setDoc,
-  Timestamp,
   updateDoc,
 } from "@firebase/firestore";
 import { FirebaseApp } from "firebase/app";
 import { action, makeAutoObservable } from "mobx";
-import { hookConverter } from "../converters";
 import { networks } from "../lib/config/networks";
 import { tokens } from "../lib/config/tokens";
+import { hookConverter } from "../lib/converters/hook-converter";
 import { Hook } from "../lib/hook";
 import { NetworkId } from "../lib/network";
 
@@ -54,19 +53,25 @@ export class HookStore {
       }'\n`;
     });
 
-    const hookReference = await addDoc(collection(this.firestore, "hooks"), {
-      owner: userId,
+    const hook = new Hook(
+      "",
+      userId,
       title,
       networkId,
       tokenIds,
-      code: network.hookTemplate.replace("TOKENS_ADDRESSES", tokensText),
-      createdAt: Timestamp.fromDate(new Date()),
-    });
+      false,
+      network.hookTemplate.replace("TOKENS_ADDRESSES", tokensText),
+      new Date()
+    );
 
+    const hookReference = await addDoc(
+      collection(this.firestore, "hooks"),
+      hookConverter.toFirestore(hook)
+    );
     const userRef = doc(this.firestore, "users", userId);
-    // Atomically add a new region to the "regions" array field.
+
     await updateDoc(userRef, {
-      hooks: arrayUnion(hookReference),
+      createdHookIds: arrayUnion(hookReference.id),
     });
 
     return hookReference.id;

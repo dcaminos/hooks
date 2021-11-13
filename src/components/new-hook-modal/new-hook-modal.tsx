@@ -23,7 +23,7 @@ export const NewHookModal: React.FC = observer((props) => {
     networkId: NetworkId,
     tokenIds: string[]
   ) => {
-    const loggedUserId = user?.uid;
+    const loggedUserId = user?.id;
     if (!loggedUserId) {
       return;
     }

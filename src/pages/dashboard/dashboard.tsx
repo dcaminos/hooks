@@ -21,18 +21,17 @@ import { NewProfileModal } from "../../components/new-profile-modal/new-profile-
 import { useEffect } from "react";
 
 export const Dashboard: React.FC = observer((props) => {
-
   const { user } = useContext(UserContext)!;
   const { showModal } = useContext(UIContext)!;
 
-  useEffect( () => {
-    const  profiles  = user?.profiles;
-    
+  useEffect(() => {
+    const profiles = user?.profiles;
+
     if (profiles?.length === 0) {
       showModal("new-profile");
-      console.log("show modal called")
+      console.log("show modal called");
     }
-  }, [user?.profiles, showModal])
+  }, [user?.profiles, showModal]);
 
   return (
     <>

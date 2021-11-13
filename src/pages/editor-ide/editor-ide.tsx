@@ -6,13 +6,18 @@ import { Hook } from "../../lib/hook";
 import { EditorSandbox } from "./editor-sandbox";
 import { HookInfo } from "./hook-info";
 import { PublishHook } from "./publish-hook";
+import { HotKeys } from "react-hotkeys";
 
 export const EditorIDE: React.FC = () => {
-  const { setCurrentHook } = useContext(EditorContext)!;
+  const { setCurrentHook, saveChanges } = useContext(EditorContext)!;
   const { fetchHook } = useContext(HookContext)!;
   const [loading, setLoading] = useState<boolean>(true);
   const { hookId } = useParams<{ hookId: string }>();
   const history = useHistory();
+
+  const handlers = {
+    SAVE_HOOK: saveChanges,
+  };
 
   useEffect(() => {
     setLoading(true);
@@ -42,18 +47,20 @@ export const EditorIDE: React.FC = () => {
   }
 
   return (
-    <Row gutter={[32, 0]}>
-      <Col span={16}>
-        <EditorSandbox />
-      </Col>
-      <Col span={8}>
-        <Row>
-          <PublishHook />
-        </Row>
-        <Row>
-          <HookInfo />
-        </Row>
-      </Col>
-    </Row>
+    <HotKeys handlers={handlers}>
+      <Row gutter={[32, 0]}>
+        <Col span={16}>
+          <EditorSandbox />
+        </Col>
+        <Col span={8}>
+          <Row>
+            <PublishHook />
+          </Row>
+          <Row>
+            <HookInfo />
+          </Row>
+        </Col>
+      </Row>
+    </HotKeys>
   );
 };

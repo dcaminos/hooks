@@ -1,121 +1,84 @@
-import { action, makeAutoObservable } from "mobx";
-
 import {
-  getAuth,
-  createUserWithEmailAndPassword,
-  signInWithEmailAndPassword,
-  onAuthStateChanged,
-} from "firebase/auth";
-
-import { FirebaseApp, FirebaseError } from "firebase/app";
-
-import {
-  Firestore,
-  getFirestore,
-  getDoc,
   doc,
+  Firestore,
+  getDoc,
+  getFirestore,
   setDoc,
-  Timestamp,
 } from "@firebase/firestore";
-
-import { Hook } from "../lib/hook";
-import { Token } from "../lib/token";
-import { Wallet } from "../lib/wallet";
-
-export type UserCreateResult = {
-  success?: boolean;
-  error?: string;
-};
-
-export type Profile = {
-  hooks: Hook[],
-  tokens: Token[],
-  wallets: Wallet[],
-}
-
-export type User = {
-  id: string,
-  email: string | null,
-  currentProfile?: string,
-  profiles: Profile[],
-  hooks: Hook[],
-  createdAt: Date,
-  updatedAt?: Date,
-}
+import { FirebaseApp, FirebaseError } from "firebase/app";
+import {
+  createUserWithEmailAndPassword,
+  getAuth,
+  onAuthStateChanged,
+  signInWithEmailAndPassword,
+  User as FirebaseUser,
+  signOut,
+} from "firebase/auth";
+import { action, makeAutoObservable } from "mobx";
+import { userConverter } from "../lib/converters/user-converter";
+import { User } from "../lib/user";
 
 export class UserStore {
-  user: User | undefined;
-  
   private firebaseApp: FirebaseApp;
   private firestore: Firestore;
+  public user: User | undefined;
 
   constructor(firebaseApp: FirebaseApp) {
     makeAutoObservable(this);
 
     this.firebaseApp = firebaseApp;
     this.firestore = getFirestore(this.firebaseApp);
-
-    const auth = getAuth();
-    onAuthStateChanged(auth, async firebaseUser => {
-      if (firebaseUser) {
-        const docRef = doc(this.firestore, "users", firebaseUser.uid);        
-        const userDoc = await getDoc(docRef);
-
-        const data  = userDoc.data();
-        if ( data === undefined ) {
-          this.user = { 
-              id: firebaseUser.uid, 
-              email: firebaseUser.email,
-              hooks: [], 
-              profiles: [], 
-              currentProfile: '', 
-              createdAt: new Date()
-            }
-          await setDoc(docRef, 
-            { 
-              id: firebaseUser.uid, 
-              hooks: [], 
-              profiles: [], 
-              currentProfile: '', 
-              createdAt: Timestamp.fromDate(this.user.createdAt)
-            })
-        } else {
-          this.user = {
-            id: data.id, 
-            email: firebaseUser.email,
-            profiles: data.profiles, 
-            hooks: data.hooks,
-            currentProfile: data.currentProfile,
-            createdAt: (data.createdAt as Timestamp).toDate()
-          }
-        }
-      }
-    });
+    onAuthStateChanged(getAuth(), this.onAuthStateChanged);
   }
 
   @action
-  signUpUser = async (email: string, password: string): Promise<UserCreateResult> => {
-    const auth = getAuth();
-    try {
-      await createUserWithEmailAndPassword(auth, email, password);
-      return { success: true };
-    } catch (error) {
-      return { error: (error as FirebaseError).code };
+  onAuthStateChanged = async (firebaseUser: FirebaseUser | null) => {
+    if (firebaseUser) {
+      const docRef = doc(this.firestore, "users", firebaseUser.uid);
+      const userDoc = await getDoc(docRef.withConverter(userConverter));
+      if (!userDoc.exists()) {
+        this.user = new User(
+          firebaseUser.uid,
+          firebaseUser.email,
+          firebaseUser.displayName,
+          firebaseUser.photoURL,
+          firebaseUser.emailVerified,
+          [],
+          [],
+          new Date()
+        );
+
+        await setDoc(docRef.withConverter(userConverter), this.user);
+      } else {
+        this.user = userDoc.data();
+        this.user.email = firebaseUser.email;
+        this.user.displayName = firebaseUser.displayName;
+        this.user.photoURL = firebaseUser.photoURL;
+        this.user.emailVerified = firebaseUser.emailVerified;
+      }
     }
   };
 
   @action
-  logInUser = async (email: string, password: string) => {
-    const auth = getAuth();
+  signUp = async (email: string, password: string): Promise<void> => {
     try {
-      await signInWithEmailAndPassword(
-        auth,
-        email,
-        password
-      );
-      return { success: true };
+      await createUserWithEmailAndPassword(getAuth(), email, password);
     } catch (error) {
-      return { error: (error as FirebaseError).code };
+      throw Error((error as FirebaseError).code);
     }
+  };
+
+  @action
+  signIn = async (email: string, password: string) => {
+    try {
+      await signInWithEmailAndPassword(getAuth(), email, password);
+    } catch (error) {
+      throw Error((error as FirebaseError).code);
+    }
+  };
+
+  @action
+  signOut = async () => {
+    signOut(getAuth());
   };
 }

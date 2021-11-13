@@ -10,11 +10,17 @@ import {
 
 import { AuthLeftContent } from "../../components/auth-left-content/auth-left-content";
 
-import { FormItemState } from "../../lib/types";
 import { useContext } from "react";
 
 import { useState } from "react";
 import { UserContext } from "../../contexts";
+import { ValidateStatus } from "antd/lib/form/FormItem";
+
+export type FormItemState = {
+  value: string;
+  isValid: ValidateStatus;
+  help: string;
+};
 
 export type LoginFormState = {
   email: FormItemState;
@@ -24,7 +30,7 @@ export type LoginFormState = {
 export const SignIn: React.FC = (props) => {
   const [redirect, setRedirect] = useState(false);
 
-  const UserStore = useContext(UserContext)!;
+  const { signIn } = useContext(UserContext)!;
 
   const [formState, setFormState] = React.useState<LoginFormState>({
     email: {
@@ -78,17 +84,12 @@ export const SignIn: React.FC = (props) => {
       return;
     }
 
-    let result = await UserStore.logInUser(
-      formState.email.value,
-      formState.password.value
-    );
-
-    if (result.success) {
-      setRedirect(true);
-    } else {
+    try {
+      await signIn(formState.email.value, formState.password.value);
+    } catch (error) {
       notification.open({
         message: "Error",
-        description: result.error,
+        description: (error as any).message,
         icon: <RiErrorWarningFill style={{ color: "#FF0022" }} />,
         closeIcon: (
           <RiCloseFill
@@ -97,7 +98,10 @@ export const SignIn: React.FC = (props) => {
           />
         ),
       });
+      return;
     }
+
+    setRedirect(true);
   };
 
   return (

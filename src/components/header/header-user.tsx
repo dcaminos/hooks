@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 
 import { Menu, Dropdown, Col, Avatar } from "antd";
 import {
@@ -13,10 +13,17 @@ import {
 import avatarImg from "../../assets/images/memoji/memoji-1.png";
 import { observer } from "mobx-react-lite";
 import { useContext } from "react";
-import { UIContext } from "../../contexts";
+import { UIContext, UserContext } from "../../contexts";
 
 export const HeaderUser: React.FC = observer((props) => {
   const { theme } = useContext(UIContext)!;
+  const { signOut } = useContext(UserContext)!;
+  const history = useHistory();
+
+  const logout = async () => {
+    await signOut();
+    history.push("/signin");
+  };
 
   const menu = (
     <Menu theme={theme === "light" ? "light" : "dark"}>
@@ -88,6 +95,7 @@ export const HeaderUser: React.FC = observer((props) => {
           </div>
         }
         className="da-text-color-dark-0"
+        onClick={logout}
       >
         <Link to="/pages/authentication/login">Logout</Link>
       </Menu.Item>

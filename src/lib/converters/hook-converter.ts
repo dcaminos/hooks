@@ -2,16 +2,10 @@ import {
   DocumentData,
   QueryDocumentSnapshot,
   SnapshotOptions,
+  Timestamp,
 } from "@firebase/firestore";
-import { Hook } from "./lib/hook";
-
-function pick<T, K extends keyof T>(obj: T, ...keys: K[]): Pick<T, K> {
-  const ret: any = {};
-  keys.forEach((key) => {
-    ret[key] = obj[key];
-  });
-  return ret;
-}
+import { Hook } from "../hook";
+import { pick } from "../../utils";
 
 export const hookConverter = {
   toFirestore(hook: Hook): DocumentData {
@@ -41,7 +35,8 @@ export const hookConverter = {
       data.networkId,
       data.tokenIds,
       data.isPublic,
-      data.code
+      data.code,
+      data.createdAt ? (data.createdAt as Timestamp).toDate() : new Date()
     );
   },
 };
