@@ -23,18 +23,17 @@ export class Hook {
     public networkId: NetworkId,
     public tokenIds: string[],
     public isPublic: boolean,
-    public ts: string,
-    public js: string
+    public code: string
   ) {}
 
-  compile = async () => {
+  compile = async (): Promise<string | undefined> => {
     const fsMap = await createDefaultMapFromCDN(
       compilerOptions,
       typescript.version,
       true,
       typescript
     );
-    fsMap.set("index.ts", this.ts);
+    fsMap.set("index.ts", this.code);
 
     const system = createSystem(fsMap);
     const host = createVirtualCompilerHost(system, compilerOptions, typescript);
@@ -49,11 +48,12 @@ export class Hook {
     const _jsCode = fsMap.get("index.js");
     if (_jsCode !== undefined) {
       // remove imports
-      this.js =
+      return (
         _jsCode
           .split(";")
           .filter((t) => t.replace("\n", "").substr(0, 7) !== "import ")
-          .join(";") + `\n runIntegration`;
+          .join(";") + `\n runIntegration`
+      );
     }
   };
 
@@ -64,12 +64,16 @@ export class Hook {
     const BigNumber = require("./big-number").BigNumber;
 
     try {
+      const jsCode = await this.compile();
+      if (!jsCode) {
+        return;
+      }
       const hookRequest: HookRequest = new HookRequest(
         this.networkId,
         walletAddress
       );
       // eslint-disable-next-line no-eval
-      const hookResponse = await eval(this.js)(hookRequest);
+      const hookResponse = await eval(jsCode)(hookRequest);
       return hookResponse as HookResponse;
     } catch (e) {
       console.error(e);

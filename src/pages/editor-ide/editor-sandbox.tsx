@@ -20,12 +20,8 @@ const walletCode = require("!!raw-loader!./../../lib/wallet").default;
 const bigNumberCode = require("!!raw-loader!./../../lib/big-number").default;
 
 export const EditorSandbox: React.FC = observer((props) => {
-  const { currentHook } = useContext(EditorContext)!;
+  const { code, updateCode } = useContext(EditorContext)!;
   const { theme } = useContext(UIContext)!;
-
-  if (!currentHook) {
-    return null;
-  }
 
   const beforeMount = (monaco: Monaco) => {
     // validation settings
@@ -97,7 +93,7 @@ export const EditorSandbox: React.FC = observer((props) => {
 
   const handleEditorChange = (value: string | undefined, ev: any) => {
     if (value) {
-      //updateCode(value);
+      updateCode(value);
     }
   };
 
@@ -111,7 +107,7 @@ export const EditorSandbox: React.FC = observer((props) => {
       <Editor
         defaultLanguage="typescript"
         theme={theme === "dark" ? "vs-dark" : "light"}
-        defaultValue={currentHook.ts}
+        defaultValue={code}
         height="80vh"
         beforeMount={beforeMount}
         onMount={onMount}

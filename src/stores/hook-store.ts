@@ -1,17 +1,19 @@
 import {
-  Firestore,
-  getFirestore,
+  addDoc,
+  arrayUnion,
   collection,
   doc,
-  getDocs,
-  addDoc,
-  updateDoc,
-  arrayUnion,
-  Timestamp,
+  Firestore,
   getDoc,
+  getDocs,
+  getFirestore,
+  setDoc,
+  Timestamp,
+  updateDoc,
 } from "@firebase/firestore";
 import { FirebaseApp } from "firebase/app";
 import { action, makeAutoObservable } from "mobx";
+import { hookConverter } from "../converters";
 import { networks } from "../lib/config/networks";
 import { tokens } from "../lib/config/tokens";
 import { Hook } from "../lib/hook";
@@ -49,7 +51,7 @@ export class HookStore {
 
       tokensText += `const address${token.symbol.toUpperCase()} = '${
         token.contracts[networkId]
-      }'`;
+      }'\n`;
     });
 
     const hookReference = await addDoc(collection(this.firestore, "hooks"), {
@@ -57,8 +59,7 @@ export class HookStore {
       title,
       networkId,
       tokenIds,
-      tjs: network.hookTemplate.replace("TOKENS_ADDRESSES", tokensText),
-      js: "",
+      code: network.hookTemplate.replace("TOKENS_ADDRESSES", tokensText),
       createdAt: Timestamp.fromDate(new Date()),
     });
 
@@ -73,39 +74,24 @@ export class HookStore {
 
   fetchHook = async (hookId: string): Promise<Hook | undefined> => {
     const hookRef = doc(this.firestore, "hooks", hookId);
-    const hookDoc = await getDoc(hookRef);
+    const hookDoc = await getDoc(hookRef.withConverter(hookConverter));
     if (!hookDoc.exists()) {
       return undefined;
     }
+    return hookDoc.data();
+  };
 
-    const data = hookDoc.data();
-    return new Hook(
-      hookDoc.id,
-      data.owner.id,
-      data.title,
-      data.networkId,
-      data.tokenIds,
-      data.isPublic,
-      data.ts,
-      data.js
-    );
+  updateHook = async (hook: Hook): Promise<void> => {
+    if (!hook.id) {
+      throw Error("Hook id is missing");
+    }
+    const hookRef = doc(this.firestore, "hooks", hook.id);
+    await setDoc(hookRef.withConverter(hookConverter), hook);
   };
 
   fetchHooks = async () => {
     const hooksCol = collection(this.firestore, "hooks");
-    const hookSnapshot = await getDocs(hooksCol);
-    this.hooks = hookSnapshot.docs.map((doc) => {
-      const data = doc.data();
-      return new Hook(
-        doc.id,
-        data.owner.id,
-        data.title,
-        data.networkId,
-        data.tokenIds,
-        data.isPublic,
-        data.ts,
-        data.js
-      );
-    });
+    const hookSnapshot = await getDocs(hooksCol.withConverter(hookConverter));
+    this.hooks = hookSnapshot.docs.map((doc) => doc.data());
   };
 }
