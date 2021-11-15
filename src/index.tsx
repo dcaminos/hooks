@@ -1,4 +1,3 @@
-import { HotKeys } from "react-hotkeys";
 import { ConfigProvider } from "antd";
 import { FirebaseApp, initializeApp } from "firebase/app";
 import React, { Suspense } from "react";
@@ -25,22 +24,13 @@ const firebaseConfig = {
 // Initialize Firebase
 const firebaseApp: FirebaseApp = initializeApp(firebaseConfig);
 
-const keyMap = {
-  SAVE_HOOK: "command",
-};
-const handlers = {
-  SAVE_HOOK: () => console.log("PASO 1"),
-};
-
 ReactDOM.render(
   <React.StrictMode>
     <Suspense fallback="loading">
       <AppProviders firebaseApp={firebaseApp}>
         <BrowserRouter>
           <ConfigProvider>
-            <HotKeys keyMap={keyMap} handlers={handlers}>
-              <Router />
-            </HotKeys>
+            <Router />
           </ConfigProvider>
         </BrowserRouter>
       </AppProviders>

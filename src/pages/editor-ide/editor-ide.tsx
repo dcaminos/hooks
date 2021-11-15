@@ -15,8 +15,19 @@ export const EditorIDE: React.FC = () => {
   const { hookId } = useParams<{ hookId: string }>();
   const history = useHistory();
 
+  
+  const keyMap = {
+    SAVE_HOOK: ["ctrl+s", "cmd+s"]
+
+  };
   const handlers = {
-    SAVE_HOOK: saveChanges,
+    SAVE_HOOK: (e: any) => {
+      if(e && e.nativeEvent) {
+        e.nativeEvent.preventDefault()
+        e.nativeEvent.stopImmediatePropagation()
+      }
+      saveChanges()
+    }
   };
 
   useEffect(() => {
@@ -47,7 +58,8 @@ export const EditorIDE: React.FC = () => {
   }
 
   return (
-    <HotKeys handlers={handlers}>
+    <HotKeys keyMap={keyMap} root={true}>
+      <HotKeys handlers={handlers}>
       <Row gutter={[32, 0]}>
         <Col span={16}>
           <EditorSandbox />
@@ -61,6 +73,7 @@ export const EditorIDE: React.FC = () => {
           </Row>
         </Col>
       </Row>
+    </HotKeys>
     </HotKeys>
   );
 };

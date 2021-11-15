@@ -1,36 +1,29 @@
 import {
-  doc,
-  Firestore,
-  getDoc,
-  getFirestore,
-  setDoc,
+  doc, getDoc, setDoc
 } from "@firebase/firestore";
-import { FirebaseApp, FirebaseError } from "firebase/app";
+import { FirebaseError } from "firebase/app";
 import {
   createUserWithEmailAndPassword,
   getAuth,
   onAuthStateChanged,
   signInWithEmailAndPassword,
   signOut,
-  User as FirebaseUser,
+  User as FirebaseUser
 } from "firebase/auth";
-import { action, makeAutoObservable } from "mobx";
+import { action, makeAutoObservable, runInAction } from "mobx";
 import { userConverter } from "../lib/converters/user-converter";
 import { User } from "../lib/user";
+import { RootStore } from "./root-store";
 
 export class UserStore {
-  private firebaseApp: FirebaseApp;
-  private firestore: Firestore;
   public fetchingUser: boolean = false;
 
   public authReady: boolean = false;
   public user: User | undefined;
 
-  constructor(firebaseApp: FirebaseApp) {
+  constructor(private rootStore: RootStore) {
     makeAutoObservable(this);
-
-    this.firebaseApp = firebaseApp;
-    this.firestore = getFirestore(this.firebaseApp);
+    this.rootStore.userStore = this
     onAuthStateChanged(getAuth(), this.onAuthStateChanged);
   }
 
@@ -38,12 +31,20 @@ export class UserStore {
   onAuthStateChanged = async (firebaseUser: FirebaseUser | null) => {
     if (!this.fetchingUser) {
       if (firebaseUser && !this.user) {
-        this.user = await this.fetchUser(firebaseUser);
+        const user = await this.fetchUser(firebaseUser);
+        runInAction(async () => {
+          this.user = user
+        })
       } else if (!firebaseUser && this.user) {
-        this.user = undefined;
+        runInAction(async () => {
+          this.user = undefined;
+        })
+        
       }
     }
-    this.authReady = true;
+    runInAction(async () => {
+      this.authReady = true;
+    })
   };
 
   @action
@@ -54,7 +55,10 @@ export class UserStore {
         email,
         password
       );
-      this.user = await this.fetchUser(userCredential.user);
+      runInAction(async () => {
+        this.user = await this.fetchUser(userCredential.user);
+      })
+      
     } catch (error) {
       throw Error((error as FirebaseError).code);
     }
@@ -68,7 +72,10 @@ export class UserStore {
         email,
         password
       );
-      this.user = await this.fetchUser(userCredential.user);
+      const user = await this.fetchUser(userCredential.user);
+      runInAction(async () => {
+        this.user = user
+      })
     } catch (error) {
       throw Error((error as FirebaseError).code);
     }
@@ -83,7 +90,7 @@ export class UserStore {
   @action
   fetchUser = async (firebaseUser: FirebaseUser): Promise<User> => {
     this.fetchingUser = true;
-    const docRef = doc(this.firestore, "users", firebaseUser.uid);
+    const docRef = doc(this.rootStore.firestore, "users", firebaseUser.uid);
     const userDoc = await getDoc(docRef.withConverter(userConverter));
     if (!userDoc.exists()) {
       const user = new User(
@@ -98,7 +105,9 @@ export class UserStore {
       );
 
       await setDoc(docRef.withConverter(userConverter), user);
-      this.fetchingUser = false;
+      runInAction(async () => {
+        this.fetchingUser = false;
+      })
       return user;
     } else {
       const user = userDoc.data();
@@ -106,7 +115,9 @@ export class UserStore {
       user.displayName = firebaseUser.displayName;
       user.photoURL = firebaseUser.photoURL;
       user.emailVerified = firebaseUser.emailVerified;
-      this.fetchingUser = false;
+      runInAction(async () => {
+        this.fetchingUser = false;
+      })
       return user;
     }
   };

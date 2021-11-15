@@ -76,6 +76,14 @@ export const EditorSandbox: React.FC = observer((props) => {
       "typescript",
       monaco.Uri.parse("file:///big-number.ts")
     );
+
+    monaco.editor.registerCommand("save", () => {
+      alert("SAVE pressed!");
+    })
+
+    
+    
+    
   };
 
   const onMount = (
@@ -83,12 +91,37 @@ export const EditorSandbox: React.FC = observer((props) => {
     monaco: Monaco
   ) => {
     editor.focus();
-    editor.addCommand(monaco.KeyMod.CtrlCmd | monaco.KeyCode.KeyS, () => {
-      alert("SAVE pressed!");
-    });
-    editor.addCommand(monaco.KeyCode.KeyA, () => {
-      alert("SAVE pressed! ");
-    });
+    
+    const shareAction = {
+      id: "copy-clipboard",
+      label: "Save to clipboard",
+      keybindings: [monaco.KeyMod.CtrlCmd | monaco.KeyCode.KeyS],
+  
+      contextMenuGroupId: "run",
+      contextMenuOrder: 1.5,
+  
+      run: function () {
+        // Update the URL, then write that to the clipboard
+       console.log("PASO POR ACA")
+       // Update the URL, then write that to the clipboard
+      
+      },
+    }
+    editor.addAction(shareAction)
+
+    editor.addAction({
+      id: "run-js",
+      label: "Run the evaluated JavaScript for your TypeScript file",
+      keybindings: [monaco.KeyMod.CtrlCmd | monaco.KeyCode.Enter],
+
+      contextMenuGroupId: "run",
+      contextMenuOrder: 1.5,
+
+      run: function (ed) {
+        console.log("PASO RUN")
+        
+      },
+    })
   };
 
   const handleEditorChange = (value: string | undefined, ev: any) => {
@@ -96,6 +129,7 @@ export const EditorSandbox: React.FC = observer((props) => {
       updateCode(value);
     }
   };
+  
 
   return (
     <Card

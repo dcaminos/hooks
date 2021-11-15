@@ -2,31 +2,24 @@ import {
   addDoc,
   arrayUnion,
   collection,
-  doc,
-  Firestore,
-  getDoc,
-  getDocs,
-  getFirestore,
-  setDoc,
-  updateDoc,
+  doc, getDoc,
+  getDocs, setDoc,
+  updateDoc
 } from "@firebase/firestore";
-import { FirebaseApp } from "firebase/app";
 import { action, makeAutoObservable } from "mobx";
 import { networks } from "../lib/config/networks";
 import { tokens } from "../lib/config/tokens";
 import { hookConverter } from "../lib/converters/hook-converter";
 import { Hook } from "../lib/hook";
 import { NetworkId } from "../lib/network";
+import { RootStore } from "./root-store";
 
 export class HookStore {
   hooks: Hook[] = [];
-  firebaseApp: FirebaseApp;
-  firestore: Firestore;
 
-  constructor(firebaseApp: FirebaseApp) {
+  constructor(private rootStore: RootStore) {
     makeAutoObservable(this);
-    this.firebaseApp = firebaseApp;
-    this.firestore = getFirestore(this.firebaseApp);
+    this.rootStore.hookStore = this
   }
 
   @action
@@ -65,10 +58,10 @@ export class HookStore {
     );
 
     const hookReference = await addDoc(
-      collection(this.firestore, "hooks"),
+      collection(this.rootStore.firestore, "hooks"),
       hookConverter.toFirestore(hook)
     );
-    const userRef = doc(this.firestore, "users", userId);
+    const userRef = doc(this.rootStore.firestore, "users", userId);
 
     await updateDoc(userRef, {
       createdHookIds: arrayUnion(hookReference.id),
@@ -78,7 +71,7 @@ export class HookStore {
   };
 
   fetchHook = async (hookId: string): Promise<Hook | undefined> => {
-    const hookRef = doc(this.firestore, "hooks", hookId);
+    const hookRef = doc(this.rootStore.firestore, "hooks", hookId);
     const hookDoc = await getDoc(hookRef.withConverter(hookConverter));
     if (!hookDoc.exists()) {
       return undefined;
@@ -90,12 +83,12 @@ export class HookStore {
     if (!hook.id) {
       throw Error("Hook id is missing");
     }
-    const hookRef = doc(this.firestore, "hooks", hook.id);
+    const hookRef = doc(this.rootStore.firestore, "hooks", hook.id);
     await setDoc(hookRef.withConverter(hookConverter), hook);
   };
 
   fetchHooks = async () => {
-    const hooksCol = collection(this.firestore, "hooks");
+    const hooksCol = collection(this.rootStore.firestore, "hooks");
     const hookSnapshot = await getDocs(hooksCol.withConverter(hookConverter));
     this.hooks = hookSnapshot.docs.map((doc) => doc.data());
   };

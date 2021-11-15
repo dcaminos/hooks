@@ -19,7 +19,7 @@ export class User {
     public photoURL: string | null,
     public emailVerified: boolean,
     public profiles: UserProfile[],
-    public createdHookIds: string[],
+    public hookIds: string[],
     public createdAt: Date
   ) {}
 }

@@ -4,26 +4,13 @@ import { useContext } from "react";
 import { EditorContext } from "../../utils/contexts";
 
 export const HookInfo: React.FC = observer(() => {
-  const { code, currentHook, saveChanges, savingChanges } =
+  const { shouldSave, saveChanges, savingChanges } =
     useContext(EditorContext)!;
 
   const listTitle = "da-p1-body";
   const listResult =
     "da-mt-sm-4 da-p1-body da-text-color-black-100 da-text-color-dark-0";
 
-  /*
-  const saveChanges = async () => {
-    if (!currentHook) {
-      return;
-    }
-
-    setSavingChanges(true);
-    currentHook.code = code;
-    await updateHook(currentHook);
-    setCurrentHook(currentHook);
-    setSavingChanges(false);
-  };
-*/
   return (
     <Card>
       <Row align="middle" justify="space-between">
@@ -61,7 +48,7 @@ export const HookInfo: React.FC = observer(() => {
             className="da-mt-16"
             type="primary"
             block
-            disabled={code === currentHook?.code}
+            disabled={!shouldSave}
             loading={savingChanges}
             onClick={saveChanges}
           >

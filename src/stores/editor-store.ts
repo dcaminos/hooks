@@ -1,13 +1,16 @@
-import { action, makeAutoObservable } from "mobx";
+import { action, computed, makeAutoObservable, runInAction } from "mobx";
 import { Hook } from "../lib/hook";
+import { RootStore } from "./root-store";
+
 
 export class EditorStore {
   currentHook: Hook | undefined = undefined;
   savingChanges: boolean = false;
   code: string = "";
 
-  constructor() {
-    makeAutoObservable(this);
+  constructor(private rootStore: RootStore) {
+    makeAutoObservable(this)
+    this.rootStore.editorStore = this
   }
 
   @action
@@ -21,9 +24,26 @@ export class EditorStore {
     this.code = code;
   };
 
+  @computed
+  get shouldSave() {
+    return this.currentHook ? this.code !== this.currentHook.code : false;
+  }
+  
   @action
   saveChanges = async () => {
-    console.log("PASO");
+    if(!this.rootStore.hookStore || !this.currentHook) {
+      return
+    }
+
+    if(this.currentHook.code === this.code) {
+      return
+    }
+    this.savingChanges = true
+    this.currentHook.code = this.code
+    await this.rootStore.hookStore.updateHook(this.currentHook)
+    runInAction(() => {
+      this.savingChanges = false
+    })
   };
 
   @action

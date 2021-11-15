@@ -1,4 +1,5 @@
 import { action, makeAutoObservable } from "mobx";
+import { RootStore } from "./root-store";
 
 export type ModalType = "new-hook" | "new-profile";
 
@@ -10,8 +11,9 @@ export class UiStore {
   isNewHookModalVisible: boolean = false;
   isNewProfileModalVisible: boolean = false;
 
-  constructor() {
+  constructor(private rootStore: RootStore) {
     makeAutoObservable(this);
+    this.rootStore.uiStore = this
   }
 
   @action
