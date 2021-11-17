@@ -91,6 +91,7 @@ export const SignIn: React.FC = observer((props) => {
               <Form.Item
                 label="Email:"
                 name="email"
+                id="email"
                 className="da-mb-16"
                 rules={[
                   { type: "email", validateTrigger: "onSubmit" },
@@ -110,6 +111,7 @@ export const SignIn: React.FC = observer((props) => {
               <Form.Item
                 label="Password:"
                 name="password"
+                id="password"
                 className="da-mb-8"
                 rules={[
                   {
