@@ -1,10 +1,9 @@
 /* eslint-disable import/no-webpack-loader-syntax */
 import Editor, { Monaco } from "@monaco-editor/react";
-import * as monaco from "monaco-editor/esm/vs/editor/editor.api";
-
-import React, { useContext } from "react";
 import { Card } from "antd";
 import { observer } from "mobx-react-lite";
+import * as monaco from "monaco-editor/esm/vs/editor/editor.api";
+import React, { useContext } from "react";
 import { EditorContext, UIContext } from "../../utils/contexts";
 
 const contractCode = require("!!raw-loader!./../../lib/contract").default;
@@ -19,7 +18,7 @@ const userCode = require("!!raw-loader!./../../lib/user").default;
 const bigNumberCode = require("!!raw-loader!./../../lib/big-number").default;
 
 export const EditorSandbox: React.FC = observer((props) => {
-  const { code, updateCode } = useContext(EditorContext)!;
+  const { code, updateCode, runTest } = useContext(EditorContext)!;
   const { theme } = useContext(UIContext)!;
 
   const beforeMount = (monaco: Monaco) => {
@@ -34,6 +33,8 @@ export const EditorSandbox: React.FC = observer((props) => {
       target: monaco.languages.typescript.ScriptTarget.ES2020,
       allowNonTsExtensions: true,
     });
+
+    monaco.languages.typescript.javascriptDefaults.setEagerModelSync(true);
 
     // extra libraries
     monaco.editor.createModel(
@@ -79,11 +80,7 @@ export const EditorSandbox: React.FC = observer((props) => {
 
     monaco.editor.registerCommand("save", () => {
       alert("SAVE pressed!");
-    })
-
-    
-    
-    
+    });
   };
 
   const onMount = (
@@ -91,37 +88,19 @@ export const EditorSandbox: React.FC = observer((props) => {
     monaco: Monaco
   ) => {
     editor.focus();
-    
-    const shareAction = {
-      id: "copy-clipboard",
-      label: "Save to clipboard",
-      keybindings: [monaco.KeyMod.CtrlCmd | monaco.KeyCode.KeyS],
-  
-      contextMenuGroupId: "run",
-      contextMenuOrder: 1.5,
-  
-      run: function () {
-        // Update the URL, then write that to the clipboard
-       console.log("PASO POR ACA")
-       // Update the URL, then write that to the clipboard
-      
-      },
-    }
-    editor.addAction(shareAction)
 
     editor.addAction({
-      id: "run-js",
-      label: "Run the evaluated JavaScript for your TypeScript file",
+      id: "run-test",
+      label: "Run this hook with a valid wallet address",
       keybindings: [monaco.KeyMod.CtrlCmd | monaco.KeyCode.Enter],
 
       contextMenuGroupId: "run",
       contextMenuOrder: 1.5,
 
-      run: function (ed) {
-        console.log("PASO RUN")
-        
+      run: (ed: monaco.editor.ICodeEditor) => {
+        runTest();
       },
-    })
+    });
   };
 
   const handleEditorChange = (value: string | undefined, ev: any) => {
@@ -129,24 +108,15 @@ export const EditorSandbox: React.FC = observer((props) => {
       updateCode(value);
     }
   };
-  
 
   return (
-    <Card
-      className="da-border-color-black-40 da-overflow-hidden da-mb-32 p-0"
-      bodyStyle={{ padding: "20px 0px 0px 0px" }}
-      style={{ height: "calc(100% - 32px)" }}
-    >
-      {/** This is the div which monaco is added into - careful, lots of changes happen here at runtime **/}
-      <Editor
-        defaultLanguage="typescript"
-        theme={theme === "dark" ? "vs-dark" : "light"}
-        defaultValue={code}
-        height="80vh"
-        beforeMount={beforeMount}
-        onMount={onMount}
-        onChange={handleEditorChange}
-      />
-    </Card>
+    <Editor
+      defaultLanguage="typescript"
+      theme={theme === "dark" ? "vs-dark" : "light"}
+      defaultValue={code}
+      beforeMount={beforeMount}
+      onMount={onMount}
+      onChange={handleEditorChange}
+    />
   );
 });

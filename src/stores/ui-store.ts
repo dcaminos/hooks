@@ -13,7 +13,7 @@ export class UiStore {
 
   constructor(private rootStore: RootStore) {
     makeAutoObservable(this);
-    this.rootStore.uiStore = this
+    this.rootStore.uiStore = this;
   }
 
   @action

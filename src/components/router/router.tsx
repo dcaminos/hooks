@@ -17,6 +17,7 @@ import { SignIn } from "../../pages/sign-in/sign-in";
 import { UIContext } from "../../utils/contexts";
 import { EditorHome } from "../../pages/editor-home/editor-home";
 import { PrivatePage } from "./private-page";
+import { HorizontalLayout } from "../layout/horizontal-layout";
 
 export const Router: React.FC = observer((props) => {
   // Mobx
@@ -58,9 +59,9 @@ export const Router: React.FC = observer((props) => {
         <Route
           path={"/editor/:hookId"}
           render={() => (
-            <FixedLayout>
+            <PrivatePage>
               <EditorIDE />
-            </FixedLayout>
+            </PrivatePage>
           )}
         />
 

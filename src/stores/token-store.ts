@@ -10,7 +10,7 @@ export class TokenStore {
 
   constructor(private rootStore: RootStore) {
     makeAutoObservable(this);
-    this.rootStore.tokenStore = this
+    this.rootStore.tokenStore = this;
 
     this.tokensPerNetwor = new Map<NetworkId, Token[]>();
     networks.forEach((network) => {
@@ -24,7 +24,6 @@ export class TokenStore {
       );
     });
   }
-
 
   @computed
   getTokensPerNetwork = (NetworkId: NetworkId) =>

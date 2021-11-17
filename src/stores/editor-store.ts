@@ -2,15 +2,16 @@ import { action, computed, makeAutoObservable, runInAction } from "mobx";
 import { Hook } from "../lib/hook";
 import { RootStore } from "./root-store";
 
-
 export class EditorStore {
   currentHook: Hook | undefined = undefined;
   savingChanges: boolean = false;
+  runningTest: boolean = false;
   code: string = "";
+  testingAddress: string = "";
 
   constructor(private rootStore: RootStore) {
-    makeAutoObservable(this)
-    this.rootStore.editorStore = this
+    makeAutoObservable(this);
+    this.rootStore.editorStore = this;
   }
 
   @action
@@ -28,22 +29,32 @@ export class EditorStore {
   get shouldSave() {
     return this.currentHook ? this.code !== this.currentHook.code : false;
   }
-  
+
   @action
   saveChanges = async () => {
-    if(!this.rootStore.hookStore || !this.currentHook) {
-      return
+    if (!this.rootStore.hookStore || !this.currentHook) {
+      return;
     }
 
-    if(this.currentHook.code === this.code) {
-      return
+    if (this.currentHook.code === this.code) {
+      return;
     }
-    this.savingChanges = true
-    this.currentHook.code = this.code
-    await this.rootStore.hookStore.updateHook(this.currentHook)
+    this.savingChanges = true;
+    this.currentHook.code = this.code;
+    await this.rootStore.hookStore.updateHook(this.currentHook);
     runInAction(() => {
-      this.savingChanges = false
-    })
+      this.savingChanges = false;
+    });
+  };
+
+  @action
+  setTestingAddress = async (value: string) => {
+    this.testingAddress = value;
+  };
+
+  @action
+  runTest = async () => {
+    console.log("RUN TEST");
   };
 
   @action
