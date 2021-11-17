@@ -25,6 +25,7 @@
     "craco-less": "^1.20.0",
     "craco-less-plugin": "^0.0.3",
     "ethers": "^5.5.1",
+    "firebase-functions": "^3.16.0",
     "mobx": "^6.3.6",
     "mobx-react-lite": "^3.2.2",
     "monaco-editor": "^0.30.1",
@@ -67,6 +68,7 @@
   },
   "devDependencies": {
     "craco-raw-loader": "^1.0.2",
+    "eslint-config-react-app": "^6.0.0",
     "monaco-editor-webpack-plugin": "^6.0.0",
     "raw-loader": "^4.0.2"
   }
