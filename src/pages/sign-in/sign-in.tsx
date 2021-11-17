@@ -25,6 +25,7 @@ export const SignIn: React.FC = observer((props) => {
   const [email, setEmail] = React.useState<string>("");
   const [password, setPassword] = React.useState<string>("");
   const [loading, setLoading] = React.useState<boolean>(false);
+  const [rememberMe, setRememberMe] = React.useState<boolean>(true);
 
   useEffect(() => {
     if (authReady && user) {
@@ -35,7 +36,7 @@ export const SignIn: React.FC = observer((props) => {
   const onFinish = async () => {
     try {
       setLoading(true);
-      await signIn(email, password);
+      await signIn(email, password, rememberMe);
     } catch (error) {
       notification.open({
         message: "Error",
@@ -139,7 +140,7 @@ export const SignIn: React.FC = observer((props) => {
 
               <Row align="middle" justify="space-between">
                 <Form.Item className="da-mb-0">
-                  <Checkbox name="remember">Remember me</Checkbox>
+                  <Checkbox name="remember" checked={rememberMe} onClick={() => setRememberMe(!rememberMe)}>Remember me</Checkbox>
                 </Form.Item>
 
                 <Link

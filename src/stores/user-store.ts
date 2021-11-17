@@ -4,9 +4,12 @@ import {
   createUserWithEmailAndPassword,
   getAuth,
   onAuthStateChanged,
+  setPersistence,
   signInWithEmailAndPassword,
   signOut,
   User as FirebaseUser,
+  browserLocalPersistence,
+  browserSessionPersistence
 } from "firebase/auth";
 import { action, makeAutoObservable, runInAction } from "mobx";
 import { userConverter } from "../lib/converters/user-converter";
@@ -62,8 +65,9 @@ export class UserStore {
   };
 
   @action
-  signIn = async (email: string, password: string) => {
+  signIn = async (email: string, password: string, rememberMe: boolean) => {
     try {
+      await setPersistence(getAuth(), rememberMe ? browserLocalPersistence : browserSessionPersistence )
       const userCredential = await signInWithEmailAndPassword(
         getAuth(),
         email,
