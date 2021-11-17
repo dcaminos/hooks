@@ -9,7 +9,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: yarn add @craco/craco
+      - name: Install Packages
+      - run: yarn
+      - name: Build
       - run: yarn build
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
