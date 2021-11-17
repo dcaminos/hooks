@@ -5,13 +5,13 @@ name: Deploy to Firebase Hosting on PR
 'on': pull_request
 jobs:
   build_and_preview:
+    env:
+      NODE_OPTIONS: '--max_old_space_size=4096'
     if: '${{ github.event.pull_request.head.repo.full_name == github.repository }}'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Install Packages
       - run: yarn
-      - name: Build
       - run: yarn build
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
