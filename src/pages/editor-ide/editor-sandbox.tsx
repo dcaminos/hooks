@@ -1,6 +1,5 @@
 /* eslint-disable import/no-webpack-loader-syntax */
 import Editor, { Monaco } from "@monaco-editor/react";
-import { Card } from "antd";
 import { observer } from "mobx-react-lite";
 import * as monaco from "monaco-editor/esm/vs/editor/editor.api";
 import React, { useContext } from "react";

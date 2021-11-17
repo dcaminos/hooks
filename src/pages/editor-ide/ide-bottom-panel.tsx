@@ -1,7 +1,5 @@
 import { Button, Input, Space, Tabs } from "antd";
-import SplitPane, { Pane } from "react-split-pane";
 import "./editor-ide.css";
-import { EditorSandbox } from "./editor-sandbox";
 
 export const IdeBottomPanel: React.FC = () => {
   const extraContent = (

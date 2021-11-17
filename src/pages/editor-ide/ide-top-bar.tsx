@@ -1,13 +1,13 @@
 import { Button } from "antd";
 import { observer } from "mobx-react-lite";
 import { useContext } from "react";
-import { RiArrowLeftLine, RiSave3Line, RiSearchLine } from "react-icons/ri";
+import { RiArrowLeftLine, RiSave3Line } from "react-icons/ri";
 import { NetworkTag } from "../../components/network-tag/network-tag";
 import { TokenTag } from "../../components/token-tag/token-tag";
 import { networks } from "../../lib/config/networks";
 import { tokens } from "../../lib/config/tokens";
 import { Hook } from "../../lib/hook";
-import { EditorContext, UIContext } from "../../utils/contexts";
+import { EditorContext } from "../../utils/contexts";
 import "./editor-ide.css";
 
 export type HookTitleProps = {
@@ -37,7 +37,7 @@ export const HookTitle: React.FC<HookTitleProps> = (props) => {
 };
 
 export const IdeTopBar: React.FC = observer((props) => {
-  const { theme } = useContext(UIContext)!;
+  //const { theme } = useContext(UIContext)!;
   const { currentHook, code, savingChanges, saveChanges } =
     useContext(EditorContext)!;
   return (
