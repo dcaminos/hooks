@@ -1,21 +1,18 @@
+import { observer } from "mobx-react-lite";
 import { useContext, useEffect } from "react";
-
 // Router
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-
+import { Dashboard } from "../../pages/dashboard/dashboard";
+import { EditorHome } from "../../pages/editor-home/editor-home";
+import { EditorIDE } from "../../pages/editor-ide/editor-ide";
 // Components
 //import Analytics from "../view/main/dashboard/analytics";
 import { PageNotFound } from "../../pages/page-not-found/page-not-found";
-import { observer } from "mobx-react-lite";
-import { Dashboard } from "../../pages/dashboard/dashboard";
-import { EditorIDE } from "../../pages/editor-ide/editor-ide";
-
+import { SignIn } from "../../pages/sign-in/sign-in";
 import { SingUp } from "../../pages/sing-up/sing-up";
+import { UIContext } from "../../utils/contexts";
 import { FixedLayout } from "../layout/fixed-layout";
 import { VerticalLayout } from "../layout/vertical-layout";
-import { SignIn } from "../../pages/sign-in/sign-in";
-import { UIContext } from "../../utils/contexts";
-import { EditorHome } from "../../pages/editor-home/editor-home";
 import { PrivatePage } from "./private-page";
 
 export const Router: React.FC = observer((props) => {
@@ -58,9 +55,9 @@ export const Router: React.FC = observer((props) => {
         <Route
           path={"/editor/:hookId"}
           render={() => (
-            <FixedLayout>
+            <PrivatePage>
               <EditorIDE />
-            </FixedLayout>
+            </PrivatePage>
           )}
         />
 

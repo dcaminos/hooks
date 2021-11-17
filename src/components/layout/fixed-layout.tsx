@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Layout, Row, Col } from "antd";
+import { Layout } from "antd";
 import { HeaderFixed } from "../header/header-fixed";
 //import MenuFooter from "./components/footer";
 //import CustomiseTheme from "./components/customise";
@@ -18,11 +18,7 @@ export const FixedLayout: React.FC = (props) => {
     >
       <HeaderFixed />
 
-      <Content className="da-content-main">
-        <Row justify="center">
-          <Col span={24}>{children}</Col>
-        </Row>
-      </Content>
+      <Content className="da-content-main">{children}</Content>
 
       {/*<MenuFooter />*/}
 

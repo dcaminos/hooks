@@ -2,9 +2,11 @@ import {
   addDoc,
   arrayUnion,
   collection,
-  doc, getDoc,
-  getDocs, setDoc,
-  updateDoc
+  doc,
+  getDoc,
+  getDocs,
+  setDoc,
+  updateDoc,
 } from "@firebase/firestore";
 import { action, makeAutoObservable } from "mobx";
 import { networks } from "../lib/config/networks";
@@ -19,7 +21,7 @@ export class HookStore {
 
   constructor(private rootStore: RootStore) {
     makeAutoObservable(this);
-    this.rootStore.hookStore = this
+    this.rootStore.hookStore = this;
   }
 
   @action

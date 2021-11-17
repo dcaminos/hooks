@@ -1,6 +1,4 @@
-import {
-  doc, getDoc, setDoc
-} from "@firebase/firestore";
+import { doc, getDoc, setDoc } from "@firebase/firestore";
 import { FirebaseError } from "firebase/app";
 import {
   createUserWithEmailAndPassword,
@@ -8,7 +6,7 @@ import {
   onAuthStateChanged,
   signInWithEmailAndPassword,
   signOut,
-  User as FirebaseUser
+  User as FirebaseUser,
 } from "firebase/auth";
 import { action, makeAutoObservable, runInAction } from "mobx";
 import { userConverter } from "../lib/converters/user-converter";
@@ -24,7 +22,7 @@ export class UserStore {
 
   constructor(private rootStore: RootStore) {
     makeAutoObservable(this);
-    this.rootStore.userStore = this
+    this.rootStore.userStore = this;
     onAuthStateChanged(getAuth(), this.onAuthStateChanged);
   }
 
@@ -34,18 +32,17 @@ export class UserStore {
       if (firebaseUser && !this.user) {
         const user = await this.fetchUser(firebaseUser);
         runInAction(async () => {
-          this.user = user
-        })
+          this.user = user;
+        });
       } else if (!firebaseUser && this.user) {
         runInAction(async () => {
           this.user = undefined;
-        })
-        
+        });
       }
     }
     runInAction(async () => {
       this.authReady = true;
-    })
+    });
   };
 
   @action
@@ -58,8 +55,7 @@ export class UserStore {
       );
       runInAction(async () => {
         this.user = await this.fetchUser(userCredential.user);
-      })
-      
+      });
     } catch (error) {
       throw Error((error as FirebaseError).code);
     }
@@ -75,8 +71,8 @@ export class UserStore {
       );
       const user = await this.fetchUser(userCredential.user);
       runInAction(async () => {
-        this.user = user
-      })
+        this.user = user;
+      });
     } catch (error) {
       throw Error((error as FirebaseError).code);
     }
@@ -108,7 +104,7 @@ export class UserStore {
       await setDoc(docRef.withConverter(userConverter), user);
       runInAction(async () => {
         this.fetchingUser = false;
-      })
+      });
       return user;
     } else {
       const user = userDoc.data();
@@ -118,7 +114,7 @@ export class UserStore {
       user.emailVerified = firebaseUser.emailVerified;
       runInAction(async () => {
         this.fetchingUser = false;
-      })
+      });
       return user;
     }
   };

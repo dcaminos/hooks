@@ -5,7 +5,7 @@ import cardImgDark from "../../assets/images/dasboard/analytics-payment-bg-dark.
 import cardImg from "../../assets/images/dasboard/analytics-payment-bg.svg";
 import { UIContext } from "../../utils/contexts";
 
-export const PublishHook: React.FC = observer(() => {
+export const MakePublicCard: React.FC = observer(() => {
   const { theme } = useContext(UIContext)!;
 
   return (
@@ -15,6 +15,7 @@ export const PublishHook: React.FC = observer(() => {
         backgroundImage: `url(${theme === "dark" ? cardImgDark : cardImg})`,
         backgroundSize: "cover",
         backgroundPosition: "right",
+        marginBottom: "16px",
       }}
     >
       <Row align="middle" className="da-mt-8">

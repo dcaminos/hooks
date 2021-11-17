@@ -10,15 +10,14 @@ export class RootStore {
   firebaseApp: FirebaseApp;
   firestore: Firestore;
 
-  editorStore?: EditorStore
-  hookStore?: HookStore
-  tokenStore?: TokenStore
-  uiStore?: UiStore
-  userStore?: UserStore
+  editorStore?: EditorStore;
+  hookStore?: HookStore;
+  tokenStore?: TokenStore;
+  uiStore?: UiStore;
+  userStore?: UserStore;
 
   constructor(firebaseApp: FirebaseApp) {
     this.firebaseApp = firebaseApp;
     this.firestore = getFirestore(this.firebaseApp);
   }
-  
 }
