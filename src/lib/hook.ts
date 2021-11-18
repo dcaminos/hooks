@@ -24,7 +24,8 @@ export class Hook {
     public tokenIds: string[],
     public isPublic: boolean,
     public code: string,
-    public createdAt: Date
+    public createdAt: Date,
+    public updatedAt: Date
   ) {}
 
   compile = async (): Promise<string | undefined> => {

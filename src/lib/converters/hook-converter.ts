@@ -16,7 +16,9 @@ export const hookConverter = {
       "networkId",
       "tokenIds",
       "isPublic",
-      "code"
+      "code",
+      "createdAt",
+      "updatedAt"
     ) as any;
     Object.keys(obj).forEach(
       (key) => obj[key] === undefined && delete obj[key]
@@ -36,7 +38,8 @@ export const hookConverter = {
       data.tokenIds,
       data.isPublic,
       data.code,
-      data.createdAt ? (data.createdAt as Timestamp).toDate() : new Date()
+      data.createdAt ? (data.createdAt as Timestamp).toDate() : new Date(),
+      data.updatedAt ? (data.updatedAt as Timestamp).toDate() : new Date()
     );
   },
 };

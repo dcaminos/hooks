@@ -8,7 +8,7 @@ import {
   setDoc,
   updateDoc,
 } from "@firebase/firestore";
-import { action, makeAutoObservable } from "mobx";
+import { action, makeAutoObservable, runInAction } from "mobx";
 import { networks } from "../lib/config/networks";
 import { tokens } from "../lib/config/tokens";
 import { hookConverter } from "../lib/converters/hook-converter";
@@ -22,6 +22,7 @@ export class HookStore {
   constructor(private rootStore: RootStore) {
     makeAutoObservable(this);
     this.rootStore.hookStore = this;
+    this.fetchHooks();
   }
 
   @action
@@ -56,6 +57,7 @@ export class HookStore {
       tokenIds,
       false,
       network.hookTemplate.replace("TOKENS_ADDRESSES", tokensText),
+      new Date(),
       new Date()
     );
 
@@ -92,6 +94,8 @@ export class HookStore {
   fetchHooks = async () => {
     const hooksCol = collection(this.rootStore.firestore, "hooks");
     const hookSnapshot = await getDocs(hooksCol.withConverter(hookConverter));
-    this.hooks = hookSnapshot.docs.map((doc) => doc.data());
+    runInAction(() => {
+      this.hooks = hookSnapshot.docs.map((doc) => doc.data());
+    });
   };
 }

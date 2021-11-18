@@ -2,10 +2,9 @@ import { Avatar } from "antd";
 import { observer } from "mobx-react-lite";
 import { useContext } from "react";
 import { RiSettings3Line } from "react-icons/ri";
-import { Link } from "react-router-dom";
 import cardImgDark from "../../assets/images/dasboard/left-bar-dark.png";
 import cardImg from "../../assets/images/dasboard/left-bar.png";
-import logoSmall from "../../assets/images/logo/logo-small.svg";
+import logoSmall from "../../assets/images/logo/logo-vector-blue.svg";
 import avatar from "../../assets/images/memoji/memoji-1.png";
 import { UIContext } from "../../utils/contexts";
 import "./editor-ide.css";
@@ -32,9 +31,7 @@ export const IdeLeftBar: React.FC = observer((props) => {
         padding: 10,
       }}
     >
-      <Link to="/" onClick={() => {}}>
-        <img className="da-logo" src={logoSmall} alt="logo" />
-      </Link>
+      <img className="da-logo" src={logoSmall} alt="logo" />
       <div style={{ flexGrow: 1 }}></div>
 
       <Avatar

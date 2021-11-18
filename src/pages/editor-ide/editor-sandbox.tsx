@@ -36,46 +36,50 @@ export const EditorSandbox: React.FC = observer((props) => {
     monaco.languages.typescript.javascriptDefaults.setEagerModelSync(true);
 
     // extra libraries
-    monaco.editor.createModel(
-      contractCode,
-      "typescript",
-      monaco.Uri.parse("file:///contract.ts")
-    );
-    monaco.editor.createModel(
-      hookCode,
-      "typescript",
-      monaco.Uri.parse("file:///hook.ts")
-    );
-    monaco.editor.createModel(
-      HookRequestCode,
-      "typescript",
-      monaco.Uri.parse("file:///hook-request.ts")
-    );
-    monaco.editor.createModel(
-      HookResponseCode,
-      "typescript",
-      monaco.Uri.parse("file:///hook-response.ts")
-    );
-    monaco.editor.createModel(
-      netowrkCode,
-      "typescript",
-      monaco.Uri.parse("file:///network.ts")
-    );
-    monaco.editor.createModel(
-      tokenCode,
-      "typescript",
-      monaco.Uri.parse("file:///token.ts")
-    );
-    monaco.editor.createModel(
-      userCode,
-      "typescript",
-      monaco.Uri.parse("file:///user.ts")
-    );
-    monaco.editor.createModel(
-      bigNumberCode,
-      "typescript",
-      monaco.Uri.parse("file:///big-number.ts")
-    );
+    if (
+      monaco.editor.getModel(monaco.Uri.parse("file:///contract.ts")) === null
+    ) {
+      monaco.editor.createModel(
+        contractCode,
+        "typescript",
+        monaco.Uri.parse("file:///contract.ts")
+      );
+      monaco.editor.createModel(
+        hookCode,
+        "typescript",
+        monaco.Uri.parse("file:///hook.ts")
+      );
+      monaco.editor.createModel(
+        HookRequestCode,
+        "typescript",
+        monaco.Uri.parse("file:///hook-request.ts")
+      );
+      monaco.editor.createModel(
+        HookResponseCode,
+        "typescript",
+        monaco.Uri.parse("file:///hook-response.ts")
+      );
+      monaco.editor.createModel(
+        netowrkCode,
+        "typescript",
+        monaco.Uri.parse("file:///network.ts")
+      );
+      monaco.editor.createModel(
+        tokenCode,
+        "typescript",
+        monaco.Uri.parse("file:///token.ts")
+      );
+      monaco.editor.createModel(
+        userCode,
+        "typescript",
+        monaco.Uri.parse("file:///user.ts")
+      );
+      monaco.editor.createModel(
+        bigNumberCode,
+        "typescript",
+        monaco.Uri.parse("file:///big-number.ts")
+      );
+    }
 
     monaco.editor.registerCommand("save", () => {
       alert("SAVE pressed!");
@@ -109,13 +113,15 @@ export const EditorSandbox: React.FC = observer((props) => {
   };
 
   return (
-    <Editor
-      defaultLanguage="typescript"
-      theme={theme === "dark" ? "vs-dark" : "light"}
-      defaultValue={code}
-      beforeMount={beforeMount}
-      onMount={onMount}
-      onChange={handleEditorChange}
-    />
+    <div style={{ marginLeft: 4, height: "100%" }}>
+      <Editor
+        defaultLanguage="typescript"
+        theme={theme === "dark" ? "vs-dark" : "light"}
+        defaultValue={code}
+        beforeMount={beforeMount}
+        onMount={onMount}
+        onChange={handleEditorChange}
+      />
+    </div>
   );
 });

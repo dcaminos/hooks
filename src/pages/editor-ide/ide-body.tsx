@@ -20,11 +20,11 @@ export const IdeBody: React.FC = () => {
         defaultSize={parseInt(localStorage.getItem("splitPos") ?? "800", 10)}
         onChange={(size) => localStorage.setItem("splitPos", size.toString())}
       >
-        <Pane>
+        <Pane className="">
           <EditorSandbox />
         </Pane>
 
-        <Pane>
+        <Pane className="">
           <IdeBottomPanel />
         </Pane>
       </SplitPane>
