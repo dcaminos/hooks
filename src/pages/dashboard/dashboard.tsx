@@ -18,20 +18,14 @@ import { useContext } from "react";
 import { observer } from "mobx-react-lite";
 import { UIContext, UserContext } from "../../utils/contexts";
 import { NewProfileModal } from "../../components/new-profile-modal/new-profile-modal";
-import { useEffect } from "react";
 
 export const Dashboard: React.FC = observer((props) => {
   const { user } = useContext(UserContext)!;
   const { showModal } = useContext(UIContext)!;
 
-  useEffect(() => {
-    const profiles = user?.profiles;
-
-    if (profiles?.length === 0) {
-      showModal("new-profile");
-      console.log("show modal called");
-    }
-  }, [user?.profiles, showModal]);
+  if (user && user.profiles.length === 0) {
+    showModal("new-profile");
+  }
 
   return (
     <>

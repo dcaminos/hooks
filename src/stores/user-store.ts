@@ -4,14 +4,18 @@ import {
   createUserWithEmailAndPassword,
   getAuth,
   onAuthStateChanged,
+  setPersistence,
   signInWithEmailAndPassword,
   signOut,
   User as FirebaseUser,
+  browserLocalPersistence,
+  browserSessionPersistence
 } from "firebase/auth";
 import { action, makeAutoObservable, runInAction } from "mobx";
 import { userConverter } from "../lib/converters/user-converter";
 import { User } from "../lib/user";
 import { RootStore } from "./root-store";
+import { UserProfile } from "../lib/user"
 
 export class UserStore {
   public fetchingUser: boolean = false;
@@ -61,8 +65,9 @@ export class UserStore {
   };
 
   @action
-  signIn = async (email: string, password: string) => {
+  signIn = async (email: string, password: string, rememberMe: boolean) => {
     try {
+      await setPersistence(getAuth(), rememberMe ? browserLocalPersistence : browserSessionPersistence )
       const userCredential = await signInWithEmailAndPassword(
         getAuth(),
         email,
@@ -117,4 +122,18 @@ export class UserStore {
       return user;
     }
   };
+
+  @action
+  addProfile = async (profile: UserProfile) => {
+    if (!this.user) return;
+    const user = {...this.user};
+    this.fetchingUser = true;
+    user.profiles.push(profile);
+    const userDocRef = doc(this.rootStore.firestore, "users", this.user.id);
+    await setDoc(userDocRef.withConverter(userConverter), user);    
+    runInAction(async () => {
+      this.user = user;
+      this.fetchingUser = false;
+    })
+  }
 }
