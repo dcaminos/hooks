@@ -21,8 +21,10 @@ export const userConverter = {
     options: SnapshotOptions
   ): User {
     const data = snapshot.data(options)!;
-    data.id = snapshot.id
-    data.createdAt = data.createdAt ? (data.createdAt as Timestamp).toDate() : new Date()
+    data.id = snapshot.id;
+    data.createdAt = data.createdAt
+      ? (data.createdAt as Timestamp).toDate()
+      : new Date();
     return new User(data as UserD);
   },
 };

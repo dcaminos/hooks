@@ -2,11 +2,17 @@ import { action, computed, makeAutoObservable, runInAction } from "mobx";
 import { Hook } from "../lib/hook";
 import { RootStore } from "./root-store";
 
+export type EditorError = {
+  code: string | undefined;
+  message: string;
+};
+
 export class EditorStore {
   currentHook: Hook | undefined = undefined;
   savingChanges: boolean = false;
   runningTest: boolean = false;
   code: string = "";
+  errors: EditorError[] = [];
   testingAddress: string = "";
 
   constructor(private rootStore: RootStore) {
@@ -55,6 +61,11 @@ export class EditorStore {
   @action
   runTest = async () => {
     console.log("RUN TEST");
+  };
+
+  @action
+  setEditorErrors = async (errors: EditorError[]) => {
+    this.errors = errors;
   };
 
   @action

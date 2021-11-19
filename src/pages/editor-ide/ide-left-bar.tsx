@@ -7,7 +7,6 @@ import cardImg from "../../assets/images/dasboard/left-bar.png";
 import logoSmall from "../../assets/images/logo/logo-vector-blue.svg";
 import avatar from "../../assets/images/memoji/memoji-1.png";
 import { UIContext } from "../../utils/contexts";
-import "./editor-ide.css";
 
 export const IdeLeftBar: React.FC = observer((props) => {
   const { theme } = useContext(UIContext)!;

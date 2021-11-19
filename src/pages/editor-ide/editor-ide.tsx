@@ -2,10 +2,12 @@ import { Col, Row, Spin } from "antd";
 import { useContext, useEffect, useState } from "react";
 import { GlobalHotKeys } from "react-hotkeys";
 import { useHistory, useParams } from "react-router-dom";
+import SplitPane, { Pane } from "react-split-pane";
 import { Hook } from "../../lib/hook";
 import { EditorContext, HookContext } from "../../utils/contexts";
-import "./editor-ide.css";
+import "./editor-ide.scss";
 import { IdeBody } from "./ide-body";
+import { IdeBottomPanel } from "./ide-bottom-panel/ide-bottom-panel";
 import { IdeLeftBar } from "./ide-left-bar";
 import { IdeTopBar } from "./ide-top-bar";
 export const EditorIDE: React.FC = () => {
@@ -75,23 +77,37 @@ export const EditorIDE: React.FC = () => {
       <GlobalHotKeys keyMap={keyMap} handlers={handlers} />
       <IdeLeftBar />
       <IdeTopBar />
-      <IdeBody />
+      <div
+        style={{
+          position: "fixed",
+          top: 60,
+          left: 60,
+          width: "calc(100vw - 60px)",
+          height: "calc(100vh - 60px)",
+        }}
+      >
+        <SplitPane
+          split="horizontal"
+          minSize={100}
+          maxSize={-40}
+          defaultSize={
+            localStorage.getItem("bottomPanelPos3")
+              ? parseInt(localStorage.getItem("bottomPanelPos3") ?? "600", 10)
+              : "80%"
+          }
+          onChange={(size) =>
+            localStorage.setItem("bottomPanelPos", size.toString())
+          }
+        >
+          <Pane className="">
+            <IdeBody />
+          </Pane>
+
+          <Pane className="da-h-100">
+            <IdeBottomPanel />
+          </Pane>
+        </SplitPane>
+      </div>
     </>
   );
 };
-
-/*
- <Row gutter={[16,16]} wrap={false}>
-        <Col flex="auto" >
-          <EditorSandbox  />
-        </Col>
-        <Col flex="500px">
-          <div  style={{ height: "calc(100vh - 128px)", marginBottom: "16px", display:"flex" , flexDirection: "column"}}>
-          <MakePublicCard />
-          <HookDetailsCard/>
-          <RunTestCard/>
-          </div>
-          
-        </Col>
-      </Row>
-*/

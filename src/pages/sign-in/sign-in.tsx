@@ -140,7 +140,13 @@ export const SignIn: React.FC = observer((props) => {
 
               <Row align="middle" justify="space-between">
                 <Form.Item className="da-mb-0">
-                  <Checkbox name="remember" checked={rememberMe} onClick={() => setRememberMe(!rememberMe)}>Remember me</Checkbox>
+                  <Checkbox
+                    name="remember"
+                    checked={rememberMe}
+                    onClick={() => setRememberMe(!rememberMe)}
+                  >
+                    Remember me
+                  </Checkbox>
                 </Form.Item>
 
                 <Link

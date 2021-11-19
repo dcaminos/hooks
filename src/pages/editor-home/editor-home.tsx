@@ -12,19 +12,16 @@ export const EditorHome: React.FC = () => {
   const history = useHistory();
   const [userHooks, setUserHooks] = useState<Hook[]>([]);
 
-  console.log(user)
+  console.log(user);
   useEffect(() => {
-    const hookIds = user?.hookIds;
+    const hookIds = user?.createdHookIds;
     if (hookIds === undefined || hookIds.length === 0) {
       setUserHooks([]);
       return;
     }
 
-    /*let temp = hooks.filter((h) => hookIds.includes(h.id))
-    temp = [...temp, ...temp,...temp, ...temp,...temp, ...temp,...temp,...temp, ...temp,...temp, ...temp,...temp, ...temp,...temp]
-    setUserHooks(temp);*/
     setUserHooks(hooks.filter((h) => hookIds.includes(h.id)));
-  }, [hooks, user?.hookIds]);
+  }, [hooks, user?.createdHookIds]);
 
   const headerActions = [
     {

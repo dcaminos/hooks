@@ -9,7 +9,6 @@ import { networks } from "../../lib/config/networks";
 import { tokens } from "../../lib/config/tokens";
 import { Hook } from "../../lib/hook";
 import { EditorContext } from "../../utils/contexts";
-import "./editor-ide.css";
 
 export type HookTitleProps = {
   hook: Hook;
