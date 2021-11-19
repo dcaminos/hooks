@@ -94,16 +94,18 @@ export class UserStore {
     const docRef = doc(this.rootStore.firestore, "users", firebaseUser.uid);
     const userDoc = await getDoc(docRef.withConverter(userConverter));
     if (!userDoc.exists()) {
-      const user = new User(
-        firebaseUser.uid,
-        firebaseUser.email,
-        firebaseUser.displayName,
-        firebaseUser.photoURL,
-        firebaseUser.emailVerified,
-        [],
-        [],
-        new Date()
-      );
+      const user = new User({
+        id: firebaseUser.uid,
+        email:firebaseUser.email,
+        displayName: firebaseUser.displayName,
+        photoURL: firebaseUser.photoURL,
+        emailVerified: firebaseUser.emailVerified,
+        profiles: []
+        tokenIds: []
+        hookIds: []
+        createdHookIds: [],
+        createdAt: new Date()
+      })
 
       await setDoc(docRef.withConverter(userConverter), user);
       runInAction(async () => {

@@ -4,7 +4,7 @@ import {
   SnapshotOptions,
   Timestamp,
 } from "@firebase/firestore";
-import { User } from "../user";
+import { User, UserD } from "../user";
 import { pick } from "../../utils/utils";
 
 export const userConverter = {
@@ -21,15 +21,8 @@ export const userConverter = {
     options: SnapshotOptions
   ): User {
     const data = snapshot.data(options)!;
-    return new User(
-      snapshot.id,
-      "",
-      "",
-      "",
-      false,
-      data.profiles,
-      data.hookIds,
-      data.createdAt ? (data.createdAt as Timestamp).toDate() : new Date()
-    );
+    data.id = snapshot.id
+    data.createdAt = data.createdAt ? (data.createdAt as Timestamp).toDate() : new Date()
+    return new User(data as UserD);
   },
 };

@@ -12,6 +12,7 @@ export const EditorHome: React.FC = () => {
   const history = useHistory();
   const [userHooks, setUserHooks] = useState<Hook[]>([]);
 
+  console.log(user)
   useEffect(() => {
     const hookIds = user?.hookIds;
     if (hookIds === undefined || hookIds.length === 0) {
