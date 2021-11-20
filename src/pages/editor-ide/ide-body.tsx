@@ -64,6 +64,10 @@ export const IdeBody: React.FC = observer((props) => {
       .filter((m) => m.severity >= 8)
       .map((m) => ({
         code: typeof m.code === "object" ? m.code.value : m.code,
+        line:
+          m.startLineNumber !== m.endLineNumber
+            ? `${m.startLineNumber} - ${m.endLineNumber}`
+            : `${m.startLineNumber}`,
         message: m.message,
       }));
     setEditorErrors(errors);

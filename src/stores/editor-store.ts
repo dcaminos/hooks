@@ -1,9 +1,12 @@
 import { action, computed, makeAutoObservable, runInAction } from "mobx";
 import { Hook } from "../lib/hook";
 import { RootStore } from "./root-store";
+import { Hook as AttachConsole, Unhook as DetachConsole } from "console-feed";
+import { getTokensInfo } from "../utils/utils";
 
 export type EditorError = {
   code: string | undefined;
+  line: string;
   message: string;
 };
 
@@ -13,6 +16,7 @@ export class EditorStore {
   runningTest: boolean = false;
   code: string = "";
   errors: EditorError[] = [];
+  logs: any[] = [];
   testingAddress: string = "";
 
   constructor(private rootStore: RootStore) {
@@ -60,7 +64,34 @@ export class EditorStore {
 
   @action
   runTest = async () => {
-    console.log("RUN TEST");
+    if (this.errors.length > 0 || !this.currentHook) {
+      return;
+    }
+
+    this.runningTest = true;
+    this.logs = [];
+    this.currentHook.code = this.code;
+
+    const tempConsole = AttachConsole(
+      window.console,
+      (log) => {
+        this.addEditorLog(log);
+      },
+      false
+    );
+    console.time("Hook running time");
+    const response = await this.currentHook.run(this.testingAddress);
+    console.timeEnd("Hook running time");
+
+    if (response) {
+      const tokensInfo = await getTokensInfo(this.currentHook.tokenIds);
+      console.log("Hook reponse:");
+      response.logResult(tokensInfo);
+    }
+    DetachConsole(tempConsole);
+    runInAction(() => {
+      this.runningTest = false;
+    });
   };
 
   @action
@@ -69,5 +100,7 @@ export class EditorStore {
   };
 
   @action
-  test = async (walletAddress: string) => {};
+  addEditorLog = (log: any) => {
+    this.logs = [...this.logs, log];
+  };
 }

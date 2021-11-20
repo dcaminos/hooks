@@ -1,5 +1,5 @@
 import { NetworkId } from "./network";
-import BN from "bn.js";
+import { BigNumber } from "./big-number";
 
 export type Token = {
   id: string;
@@ -12,7 +12,7 @@ export type Token = {
 };
 
 export type TokenInfo = {
-  price: BN;
+  price: BigNumber;
 };
 
 export type TokensInfo = {

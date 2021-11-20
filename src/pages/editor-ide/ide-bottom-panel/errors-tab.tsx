@@ -2,6 +2,7 @@ import { Table } from "antd";
 import { observer } from "mobx-react-lite";
 import { useContext } from "react";
 import { EditorContext } from "../../../utils/contexts";
+import { AlignType } from "rc-table/lib/interface";
 
 export const ErrorsTab: React.FC = observer((props) => {
   const { errors } = useContext(EditorContext)!;
@@ -15,6 +16,13 @@ export const ErrorsTab: React.FC = observer((props) => {
       title: "Code",
       dataIndex: "code",
       width: 80,
+      align: "center" as AlignType,
+    },
+    {
+      title: "Line",
+      dataIndex: "line",
+      width: 100,
+      align: "center" as AlignType,
     },
     {
       title: "Message",
@@ -34,10 +42,13 @@ export const ErrorsTab: React.FC = observer((props) => {
           borderBottom: "1px solid grey",
         }}
       >
-        <p className="da-mb-0" style={{ marginLeft: 16 }}>
+        <p className="da-mb-0" style={{ width: 80, textAlign: "center" }}>
           Code
         </p>
-        <p className="da-mb-0" style={{ marginLeft: 44 }}>
+        <p className="da-mb-0" style={{ width: 100, textAlign: "center" }}>
+          Line
+        </p>
+        <p className="da-mb-0" style={{ paddingLeft: 16 }}>
           Message
         </p>
       </div>
@@ -46,13 +57,15 @@ export const ErrorsTab: React.FC = observer((props) => {
           position: "absolute",
           bottom: 0,
           top: 68,
+          left: 0,
+          right: 0,
           overflowY: "scroll",
         }}
       >
         <Table
           showHeader={false}
           size="small"
-          className="ant-table-wrapper"
+          className="da-w-100 da-p-0"
           columns={columns}
           dataSource={errors}
           pagination={false}

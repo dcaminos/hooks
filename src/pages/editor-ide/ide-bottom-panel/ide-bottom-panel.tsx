@@ -1,17 +1,52 @@
 import { Button, Input, Space, Tabs } from "antd";
 import { observer } from "mobx-react-lite";
-import { ReactNode, useContext } from "react";
+import { ChangeEvent, ReactNode, useContext, useEffect } from "react";
 import { RiErrorWarningFill } from "react-icons/ri";
 import { EditorContext } from "../../../utils/contexts";
+import { ConsoleTab } from "./console-tab";
 import { ErrorsTab } from "./errors-tab";
 
 export const IdeBottomPanel: React.FC = observer((props) => {
-  const { errors } = useContext(EditorContext)!;
+  const {
+    currentHook,
+    errors,
+    runTest,
+    testingAddress,
+    setTestingAddress,
+    runningTest,
+  } = useContext(EditorContext)!;
+
+  useEffect(() => {
+    const value = localStorage.getItem(`${currentHook?.id}-testing-address`);
+    if (value !== null) {
+      setTestingAddress(value);
+    }
+  }, [setTestingAddress, currentHook?.id]);
+
+  const onWalletAddressChange = (event: ChangeEvent<HTMLInputElement>) => {
+    localStorage.setItem(
+      `${currentHook?.id}-testing-address`,
+      event.target.value
+    );
+    setTestingAddress(event.target.value);
+  };
 
   const extraContent = (
     <Space className="da-mr-16">
-      <Input size="small" placeholder="Wallet address" style={{ width: 400 }} />
-      <Button type="primary" size="small" disabled={false} onClick={() => {}}>
+      <Input
+        size="small"
+        placeholder="Wallet address"
+        style={{ width: 400 }}
+        value={testingAddress}
+        onChange={onWalletAddressChange}
+      />
+      <Button
+        type="primary"
+        size="small"
+        disabled={errors.length > 0 || testingAddress.length < 15}
+        onClick={runTest}
+        loading={runningTest}
+      >
         Run Test
       </Button>
     </Space>
@@ -45,11 +80,9 @@ export const IdeBottomPanel: React.FC = observer((props) => {
         tabBarExtraContent={extraContent}
       >
         <Tabs.TabPane tab="Console" key="1">
-          {`> Starting hook test...`}
+          <ConsoleTab />
         </Tabs.TabPane>
-        <Tabs.TabPane tab="Preview" key="2">
-          Content of card tab 2
-        </Tabs.TabPane>
+        <Tabs.TabPane tab="Preview" key="2"></Tabs.TabPane>
         <Tabs.TabPane tab={errorTabTitle} key="3">
           <ErrorsTab />
         </Tabs.TabPane>
