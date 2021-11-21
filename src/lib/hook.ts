@@ -6,9 +6,15 @@ import {
   createSystem,
   createVirtualCompilerHost,
 } from "@typescript/vfs";
-import { HookRequest } from "./hook-request";
-import { HookResponse } from "./hook-response";
+import { HookRequest } from "./sdk/hook-request";
+import { HookResponse } from "./sdk/hook-response";
 import { NetworkId } from "./network";
+import { networks } from "./config/networks";
+import { tokens } from "./config/tokens";
+import { Network as SdkNetwork } from "./sdk/network";
+import { Token as SdkToken } from "./sdk/token";
+import { getTokensPrices } from "../utils/utils";
+import { getTokenBalance } from "./token";
 
 const compilerOptions: typescript.CompilerOptions = {
   target: typescript.ScriptTarget.ES2020,
@@ -54,25 +60,79 @@ export class Hook {
         _jsCode
           .split(";")
           .filter((t) => t.replace("\n", "").substr(0, 7) !== "import ")
-          .join(";") + `\n runIntegration`
+          .join(";") + `\n runHook`
       );
     }
   };
 
+  getSdkNetwork = (): SdkNetwork => {
+    const network = networks.find((n) => n.id === this.networkId);
+    if (!network) {
+      throw new Error("Imposible to find network");
+    }
+
+    return {
+      id: network.id,
+      name: network.name,
+      url: network.url,
+    };
+  };
+
+  getSdkTokens = async (): Promise<SdkToken[]> => {
+    const tokenPrices = await getTokensPrices(this.tokenIds);
+    const network = networks.find((n) => n.id === this.networkId);
+
+    if (!network) {
+      throw new Error("Imposible to find network");
+    }
+
+    return this.tokenIds.map((tokenId) => {
+      const token = tokens.find((n) => n.id === tokenId);
+      const price = tokenPrices[tokenId];
+
+      if (!token) {
+        throw new Error("Imposible to find token");
+      }
+
+      if (!price) {
+        throw new Error("Imposible to find token price");
+      }
+
+      const address = token.contracts[this.networkId];
+      if (!address) {
+        throw new Error("Imposible to find token address");
+      }
+
+      return {
+        id: token.id,
+        symbol: token.symbol,
+        name: token.name,
+        address: address,
+        price: price,
+        balanceOf: (address: string) =>
+          getTokenBalance(token, network, address),
+      };
+    });
+  };
+
   run = async (walletAddress: string): Promise<HookResponse | undefined> => {
-    const HookResponse = require("./hook-response").HookResponse;
-    const HookRequest = require("./hook-request").HookRequest;
-    const EthereumContract = require("./contract").EthereumContract;
-    const BigNumber = require("./big-number").BigNumber;
+    const HookResponse = require("./sdk/hook-response").HookResponse;
+    const HookRequest = require("./sdk/hook-request").HookRequest;
+    const EthereumContract = require("./sdk/contract").EthereumContract;
+    const BigNumber = require("./sdk/big-number").BigNumber;
 
     try {
+      const hookNetwork = networks.find((n) => n.id === this.networkId);
+      const hookTokens = tokens.filter((t) => this.tokenIds.includes(t.id));
       const jsCode = await this.compile();
-      if (!jsCode) {
+      if (!jsCode || !hookNetwork || hookTokens.length === 0) {
         return;
       }
+      const sdkTokens = await this.getSdkTokens();
       const hookRequest: HookRequest = new HookRequest(
-        this.networkId,
-        walletAddress
+        walletAddress,
+        this.getSdkNetwork(),
+        sdkTokens
       );
       // eslint-disable-next-line no-eval
       const hookResponse = await eval(jsCode)(hookRequest);

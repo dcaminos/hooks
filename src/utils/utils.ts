@@ -1,7 +1,7 @@
 import axios from "axios";
-import { BigNumber } from "../lib/big-number";
+import { BigNumber } from "../lib/sdk/big-number";
 import { tokens } from "../lib/config/tokens";
-import { TokensInfo } from "../lib/token";
+import { TokensPrice } from "../lib/token";
 
 export function pick<T, K extends keyof T>(obj: T, ...keys: K[]): Pick<T, K> {
   const ret: any = {};
@@ -21,9 +21,9 @@ export function disabledEventPropagation(e: Event) {
   }
 }
 
-export const getTokensInfo = async (
+export const getTokensPrices = async (
   tokenIds: string[]
-): Promise<TokensInfo> => {
+): Promise<TokensPrice> => {
   const ids = tokens
     .filter((t) => tokenIds.includes(t.id))
     .map((t) => t.id)
@@ -31,16 +31,9 @@ export const getTokensInfo = async (
   const res = await axios(
     `https://api.coingecko.com/api/v3/simple/price?ids=${ids}&vs_currencies=usd`
   );
-  let prices: TokensInfo = {};
-  Object.keys(res.data).forEach((k) => {
-    prices[k] = {
-      price: BigNumber.from(
-        Math.round(
-          (((res.data[k] as any).usd as number) + Number.EPSILON) * 100
-        )
-      ).div(BigNumber.from(100)),
-    };
-  });
-
+  let prices: TokensPrice = {};
+  Object.keys(res.data).forEach(
+    (k) => (prices[k] = BigNumber.fromReal(res.data[k].usd))
+  );
   return prices;
 };

@@ -2,7 +2,6 @@ import { action, computed, makeAutoObservable, runInAction } from "mobx";
 import { Hook } from "../lib/hook";
 import { RootStore } from "./root-store";
 import { Hook as AttachConsole, Unhook as DetachConsole } from "console-feed";
-import { getTokensInfo } from "../utils/utils";
 
 export type EditorError = {
   code: string | undefined;
@@ -64,7 +63,7 @@ export class EditorStore {
 
   @action
   runTest = async () => {
-    if (this.errors.length > 0 || !this.currentHook) {
+    if (this.runningTest || this.errors.length > 0 || !this.currentHook) {
       return;
     }
 
@@ -84,9 +83,9 @@ export class EditorStore {
     console.timeEnd("Hook running time");
 
     if (response) {
-      const tokensInfo = await getTokensInfo(this.currentHook.tokenIds);
-      console.log("Hook reponse:");
-      response.logResult(tokensInfo);
+      //const tokensInfo = await getTokensInfo(this.currentHook.tokenIds);
+      //console.log("Hook reponse:");
+      response.logResult();
     }
     DetachConsole(tempConsole);
     runInAction(() => {
