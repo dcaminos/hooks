@@ -1,4 +1,6 @@
 import { observer } from "mobx-react-lite";
+import { Account } from "pages/account/account";
+import { ProfilePage } from "pages/profile/profile";
 import { useContext, useEffect } from "react";
 // Router
 import { BrowserRouter, Route, Switch } from "react-router-dom";
@@ -74,10 +76,34 @@ export const Router: React.FC = observer((props) => {
           )}
         />
 
-        {/* singup */}
+        {/* Account Page */}
+        <Route
+          path={"/account"}
+          render={() => (
+            <PrivatePage>
+              <VerticalLayout>
+                <Account />
+              </VerticalLayout>
+            </PrivatePage>
+          )}
+        />
+
+        {/* Profile Page */}
+        <Route
+          path={"/profile"}
+          render={() => (
+            <PrivatePage>
+              <VerticalLayout>
+                <ProfilePage />
+              </VerticalLayout>
+            </PrivatePage>
+          )}
+        />
+
+        {/* Sign Up */}
         <Route exact path={"/signup"} render={() => <SingUp />} />
 
-        {/** Login */}
+        {/** Sign In */}
         <Route exact path={"/signin"} render={() => <SignIn />} />
 
         {/* NotFound */}

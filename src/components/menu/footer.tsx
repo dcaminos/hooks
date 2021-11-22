@@ -31,7 +31,7 @@ export const Footer: React.FC<FooterProps> = observer((props) => {
             </span>
 
             <Link
-              to="/pages/profile/personel-information"
+              to="/profile"
               className="da-badge-text da-text-color-dark-30"
               onClick={props.onClose}
             >

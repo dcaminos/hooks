@@ -1,8 +1,8 @@
 import { Form, FormInstance, Input } from "antd";
 import { useState } from "react";
-import { NetworkId } from "../../lib/network";
-import { NetworkPicker } from "../network-picker/network-picker";
-import { TokenPicker } from "../token-picker.tsx/token-picker";
+import { NetworkId } from "../../../lib/network";
+import { NetworkPicker } from "../../network-picker/network-picker";
+import { TokenPicker } from "../../token-picker.tsx/token-picker";
 
 export type NewHookFromProps = {
   form: FormInstance;

@@ -1,4 +1,7 @@
 import { Spin } from "antd";
+import { NewHookModal } from "components/modals/new-hook-modal/new-hook-modal";
+import { FirstProfileModal } from "components/modals/first-profile-modal/first-profile-modal";
+import { NewWalletModal } from "components/modals/new-wallet-modal/new-wallet-modal";
 import { observer } from "mobx-react-lite";
 import { useContext, useEffect, useState } from "react";
 import { useHistory } from "react-router";
@@ -29,5 +32,11 @@ export const PrivatePage: React.FC = observer((props) => {
     );
   }
 
-  return <>{children}</>;
+  return ( 
+    <>
+      <FirstProfileModal />
+      <NewHookModal />
+      <NewWalletModal />
+      {children}
+    </>);
 });

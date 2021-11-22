@@ -9,7 +9,7 @@ import { pick } from "../../utils/utils";
 
 export const userConverter = {
   toFirestore(user: User): DocumentData {
-    const obj = pick(user, "profiles", "hookIds", "createdAt") as any;
+    const obj = pick(user, "profiles", "hookIds", "tokenIds", "createdHookIds", "createdAt") as any;
     Object.keys(obj).forEach(
       (key) => obj[key] === undefined && delete obj[key]
     );
@@ -29,6 +29,8 @@ export const userConverter = {
       false,
       data.profiles,
       data.hookIds,
+      data.tokenIds,
+      data.createdHookIds,
       data.createdAt ? (data.createdAt as Timestamp).toDate() : new Date()
     );
   },

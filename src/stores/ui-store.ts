@@ -1,7 +1,7 @@
 import { action, makeAutoObservable } from "mobx";
 import { RootStore } from "./root-store";
 
-export type ModalType = "new-hook" | "new-profile";
+export type ModalType = "new-hook" | "first-profile" | "new-wallet" | "edit-wallet";
 
 export class UiStore {
   theme: "light" | "dark" = "light";
@@ -10,6 +10,7 @@ export class UiStore {
   // Modals
   isNewHookModalVisible: boolean = false;
   isNewProfileModalVisible: boolean = false;
+  isNewWalletModalVisible: boolean = false;
 
   constructor(private rootStore: RootStore) {
     makeAutoObservable(this);
@@ -23,12 +24,16 @@ export class UiStore {
 
   @action
   showModal = (type: ModalType) => {
+    console.log(this)
     switch (type) {
       case "new-hook":
         this.isNewHookModalVisible = true;
         return;
-      case "new-profile":
+      case "first-profile":
         this.isNewProfileModalVisible = true;
+        return;
+      case "new-wallet":
+        this.isNewWalletModalVisible = true;
         return;
     }
   };
@@ -39,8 +44,11 @@ export class UiStore {
       case "new-hook":
         this.isNewHookModalVisible = false;
         return;
-      case "new-profile":
+      case "first-profile":
         this.isNewProfileModalVisible = false;
+        return;
+      case "new-wallet":
+        this.isNewWalletModalVisible = false;
         return;
     }
   };

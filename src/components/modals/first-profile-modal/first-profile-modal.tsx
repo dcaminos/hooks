@@ -2,17 +2,17 @@ import { Form, message, Modal } from "antd";
 import { observer } from "mobx-react-lite";
 import { useContext } from "react";
 import { RiCheckboxCircleLine, RiCloseFill, RiErrorWarningLine } from "react-icons/ri";
-import { UIContext, UserContext } from "../../utils/contexts";
-import { ModalType } from "../../stores/ui-store";
-import { NewProfileForm } from "../new-profile-form/new-profile-form";
-import { defaultProfile } from '../../lib/config/profile';
+import { UIContext, UserContext } from "utils/contexts";
+import { ModalType } from "stores/ui-store";
+import { NewProfileForm } from "components/forms/new-profile-form/new-profile-form";
+import { defaultProfile } from 'lib/config/profile';
 
 
-const modalType: ModalType = "new-profile";
+const modalType: ModalType = "first-profile";
 
-export type NewProfileModalProps = {};
+export type FirstProfileModalProps = {};
 
-export const NewProfileModal: React.FC<NewProfileModalProps> = observer((props) => {
+export const FirstProfileModal: React.FC<FirstProfileModalProps> = observer((props) => {
   const [form] = Form.useForm();
   const { addProfile, fetchingUser } = useContext(UserContext)!;
 
@@ -32,7 +32,7 @@ export const NewProfileModal: React.FC<NewProfileModalProps> = observer((props) 
     />
   );
 
-  const submit = async (title: string, address: string) => { 
+  const onModalSubmit = async (title: string, address: string) => { 
      
     addProfile ({
       ...defaultProfile,
@@ -70,7 +70,7 @@ export const NewProfileModal: React.FC<NewProfileModalProps> = observer((props) 
       confirmLoading={fetchingUser}
       onOk={form.submit}
     >
-      <NewProfileForm form={form} onSubmit={submit} />
+      <NewProfileForm form={form} onSubmit={onModalSubmit} />
     </Modal>
   );
 });

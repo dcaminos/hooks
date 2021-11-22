@@ -17,19 +17,17 @@ import AnalyticsVisitersLineCard from "../../examples/analytics-visiters-line-ca
 import { useContext } from "react";
 import { observer } from "mobx-react-lite";
 import { UIContext, UserContext } from "../../utils/contexts";
-import { NewProfileModal } from "../../components/new-profile-modal/new-profile-modal";
 
 export const Dashboard: React.FC = observer((props) => {
   const { user } = useContext(UserContext)!;
   const { showModal } = useContext(UIContext)!;
 
   if (user && user.profiles.length === 0) {
-    showModal("new-profile");
+    showModal("first-profile");
   }
 
   return (
     <>
-      <NewProfileModal />
       <Row gutter={[32, 0]}>
         <Col span={24}>
           <h3>Welcome back {user?.email} 👋</h3>

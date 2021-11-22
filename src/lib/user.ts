@@ -6,8 +6,6 @@ export type UserWallet = {
 
 export type UserProfile = {
   active: boolean;
-  hookIds: string[];
-  tokenIds: string[];
   wallets: UserWallet[];
 };
 
@@ -20,6 +18,8 @@ export class User {
     public emailVerified: boolean,
     public profiles: UserProfile[],
     public hookIds: string[],
+    public tokenIds: string[],
+    public createdHookIds: string[],
     public createdAt: Date
   ) {}
 }
