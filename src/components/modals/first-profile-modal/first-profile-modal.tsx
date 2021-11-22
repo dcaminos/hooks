@@ -1,39 +1,20 @@
 import { Form, message, Modal } from "antd";
+import { NewProfileForm } from "components/forms/new-profile-form/new-profile-form";
+import { defaultProfile } from "lib/config/profile";
 import { observer } from "mobx-react-lite";
 import { useContext } from "react";
-<<<<<<< HEAD:src/components/modals/first-profile-modal/first-profile-modal.tsx
-import { RiCheckboxCircleLine, RiCloseFill, RiErrorWarningLine } from "react-icons/ri";
-import { UIContext, UserContext } from "utils/contexts";
+import { RiCloseFill, RiCheckboxCircleLine, RiErrorWarningLine } from "react-icons/ri";
 import { ModalType } from "stores/ui-store";
-import { NewProfileForm } from "components/forms/new-profile-form/new-profile-form";
-import { defaultProfile } from 'lib/config/profile';
-
-=======
-import {
-  RiCheckboxCircleLine,
-  RiCloseFill,
-  RiErrorWarningLine,
-} from "react-icons/ri";
-import { UIContext, UserContext } from "../../utils/contexts";
-import { ModalType } from "../../stores/ui-store";
-import { NewProfileForm } from "../new-profile-form/new-profile-form";
-import { defaultProfile } from "../../lib/config/profile";
->>>>>>> 01e389d0c1b86e467afabb9a8f6e23810734a39d:src/components/new-profile-modal/new-profile-modal.tsx
+import { UserContext, UIContext } from "utils/contexts";
 
 const modalType: ModalType = "first-profile";
 
 export type FirstProfileModalProps = {};
 
-<<<<<<< HEAD:src/components/modals/first-profile-modal/first-profile-modal.tsx
 export const FirstProfileModal: React.FC<FirstProfileModalProps> = observer((props) => {
   const [form] = Form.useForm();
-  const { addProfile, fetchingUser } = useContext(UserContext)!;
-=======
-export const NewProfileModal: React.FC<NewProfileModalProps> = observer(
-  (props) => {
-    const [form] = Form.useForm();
-    const { addProfile } = useContext(UserContext)!;
->>>>>>> 01e389d0c1b86e467afabb9a8f6e23810734a39d:src/components/new-profile-modal/new-profile-modal.tsx
+  const { addProfile, loading } = useContext(UserContext)!;
+
 
     const { isNewProfileModalVisible, hideModal } = useContext(UIContext)!;
 
@@ -54,9 +35,7 @@ export const NewProfileModal: React.FC<NewProfileModalProps> = observer(
       />
     );
 
-<<<<<<< HEAD:src/components/modals/first-profile-modal/first-profile-modal.tsx
   const onModalSubmit = async (title: string, address: string) => { 
-     
     addProfile ({
       ...defaultProfile,
       wallets: [{
@@ -65,19 +44,7 @@ export const NewProfileModal: React.FC<NewProfileModalProps> = observer(
         type: "defi"
       }]
     });
-=======
-    const submit = async (title: string, address: string) => {
-      addProfile({
-        ...defaultProfile,
-        wallets: [
-          {
-            name: title,
-            address: address,
-            type: "defi",
-          },
-        ],
-      });
->>>>>>> 01e389d0c1b86e467afabb9a8f6e23810734a39d:src/components/new-profile-modal/new-profile-modal.tsx
+
 
       hideModal(modalType);
 
@@ -95,7 +62,6 @@ export const NewProfileModal: React.FC<NewProfileModalProps> = observer(
       });
     };
 
-<<<<<<< HEAD:src/components/modals/first-profile-modal/first-profile-modal.tsx
   return (
     <Modal
       title={modalHeader}
@@ -105,29 +71,11 @@ export const NewProfileModal: React.FC<NewProfileModalProps> = observer(
       onCancel={onModalCancel}
       okText={"Create Profile"}
       closeIcon={closeIcon}
-      confirmLoading={fetchingUser}
+      confirmLoading={loading}
       onOk={form.submit}
     >
       <NewProfileForm form={form} onSubmit={onModalSubmit} />
     </Modal>
   );
 });
-=======
-    return (
-      <Modal
-        title={modalHeader}
-        destroyOnClose={true}
-        width={1000}
-        visible={isNewProfileModalVisible}
-        onCancel={onModalCancel}
-        okText={"Create Profile"}
-        closeIcon={closeIcon}
-        //confirmLoading={fetchingUser}
-        onOk={form.submit}
-      >
-        <NewProfileForm form={form} onSubmit={submit} />
-      </Modal>
-    );
-  }
-);
->>>>>>> 01e389d0c1b86e467afabb9a8f6e23810734a39d:src/components/new-profile-modal/new-profile-modal.tsx
+

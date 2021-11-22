@@ -25,7 +25,7 @@ export const TokenPicker: React.FC<TokenPickerProps> = observer((props) => {
   const [options, setOptions] = useState<TokenPickerItem[]>([]);
 
   useEffect(() => {
-    setOptions(tokens.filter((token) => !values.includes(token.value)));
+    setOptions(tokens); //tokens.filter((token) => !values.includes(token.value)));
   }, [setOptions, tokens, values]);
 
   useEffect(() => {
@@ -72,6 +72,8 @@ export const TokenPicker: React.FC<TokenPickerProps> = observer((props) => {
       </Tag>
     );
   };
+
+  console.log(values)
 
   return (
     <Select

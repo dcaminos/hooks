@@ -8,7 +8,7 @@ import { observer } from "mobx-react-lite";
 
 export const WalletsTab: React.FC = observer(() => {
   
-  const {user, updateUser, fetchingUser} = useContext(UserContext)!;
+  const {user, updateUser, loading} = useContext(UserContext)!;
 
   const {showModal} = useContext(UIContext)!;
   
@@ -25,7 +25,7 @@ export const WalletsTab: React.FC = observer(() => {
   }
 
   const deleteWallet = (index: number) => {
-    if (fetchingUser) return;
+    if (loading) return;
     const newUser = {...user}
     newUser.profiles[0].wallets.splice(index,1);
     updateUser(newUser)

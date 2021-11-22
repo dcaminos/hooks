@@ -53,7 +53,7 @@ export const TokensTab: React.FC = observer( () => {
         </Form.Item>
         
         <Form.Item>
-          <Button loading={loading} type="primary" htmlType="submit" className="da-mr-sm-8 da-mr-16" onClick={() => onSubmit(tokenIds)} >
+          <Button loading={loading} type="primary" htmlType="submit" className="da-mr-sm-8 da-mr-16" onClick={() => onSubmit(user.tokenIds)} >
             Save
           </Button>
         </Form.Item>

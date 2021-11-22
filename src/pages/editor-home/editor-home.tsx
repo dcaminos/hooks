@@ -35,7 +35,6 @@ export const EditorHome: React.FC = observer(() => {
   ];
   return (
     <>
-      <NewHookModal />
       <HookList
         hooks={userHooks}
         headerActions={headerActions}
