@@ -1,26 +1,14 @@
-import { useContext, useEffect, useState } from "react";
+import { observer } from "mobx-react-lite";
+import { useContext } from "react";
 import { useHistory } from "react-router";
 import { HookList } from "../../components/hook-list/hook-list";
 import { NewHookModal } from "../../components/new-hook-modal/new-hook-modal";
-import { Hook } from "../../lib/hook";
-import { HookContext, UIContext, UserContext } from "../../utils/contexts";
+import { UIContext, UserContext } from "../../utils/contexts";
 
-export const EditorHome: React.FC = () => {
+export const EditorHome: React.FC = observer(() => {
   const { showModal } = useContext(UIContext)!;
-  const { user } = useContext(UserContext)!;
-  const { hooks } = useContext(HookContext)!;
+  const { userHooks } = useContext(UserContext)!;
   const history = useHistory();
-  const [userHooks, setUserHooks] = useState<Hook[]>([]);
-
-  useEffect(() => {
-    const hookIds = user?.createdHookIds;
-    if (hookIds === undefined || hookIds.length === 0) {
-      setUserHooks([]);
-      return;
-    }
-
-    setUserHooks(hooks.filter((h) => hookIds.includes(h.id)));
-  }, [hooks, user?.createdHookIds]);
 
   const headerActions = [
     {
@@ -53,4 +41,4 @@ export const EditorHome: React.FC = () => {
       />
     </>
   );
-};
+});

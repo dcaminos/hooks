@@ -21,6 +21,27 @@ const compilerOptions: typescript.CompilerOptions = {
   esModuleInterop: true,
 };
 
+export type HookVersion = {
+  version: number;
+  releaseDate: Date;
+  ts: string;
+  js: string;
+  notes: string;
+};
+
+export type HookD = {
+  id: string;
+  owner: string;
+  title: string;
+  networkId: NetworkId;
+  tokenIds: string[];
+  isPublic: boolean;
+  code: string;
+  createdAt: Date;
+  updatedAt: Date;
+  versions: HookVersion[];
+};
+
 export class Hook {
   constructor(
     public id: string,

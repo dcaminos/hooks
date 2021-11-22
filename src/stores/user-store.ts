@@ -1,6 +1,8 @@
-import { doc, getDoc, setDoc } from "@firebase/firestore";
+import { doc, getDoc, getDocs, setDoc } from "@firebase/firestore";
 import { FirebaseError } from "firebase/app";
 import {
+  browserLocalPersistence,
+  browserSessionPersistence,
   createUserWithEmailAndPassword,
   getAuth,
   onAuthStateChanged,
@@ -8,44 +10,40 @@ import {
   signInWithEmailAndPassword,
   signOut,
   User as FirebaseUser,
-  browserLocalPersistence,
-  browserSessionPersistence,
 } from "firebase/auth";
-import { action, makeAutoObservable, runInAction } from "mobx";
+import { collection, query, where } from "firebase/firestore";
+import { action, makeAutoObservable, runInAction, when } from "mobx";
+import { hookConverter } from "../lib/converters/hook-converter";
 import { userConverter } from "../lib/converters/user-converter";
-import { User } from "../lib/user";
+import { Hook } from "../lib/hook";
+import { User, UserProfile } from "../lib/user";
 import { RootStore } from "./root-store";
-import { UserProfile } from "../lib/user";
 
 export class UserStore {
-  public fetchingUser: boolean = false;
+  private static firebaseUser: FirebaseUser | null = null;
+  private isFirebaseReady: boolean = false;
 
-  public authReady: boolean = false;
   public user: User | undefined;
+  public authReady: boolean = false;
+  public userHooks: Hook[] = [];
 
   constructor(private rootStore: RootStore) {
     makeAutoObservable(this);
     this.rootStore.userStore = this;
     onAuthStateChanged(getAuth(), this.onAuthStateChanged);
+    when(
+      () => this.isFirebaseReady,
+      () => this.fetchUser()
+    );
+    when(
+      () => this.user !== undefined,
+      () => this.fetchUserHooks()
+    );
   }
 
-  @action
   onAuthStateChanged = async (firebaseUser: FirebaseUser | null) => {
-    if (!this.fetchingUser) {
-      if (firebaseUser && !this.user) {
-        const user = await this.fetchUser(firebaseUser);
-        runInAction(async () => {
-          this.user = user;
-        });
-      } else if (!firebaseUser && this.user) {
-        runInAction(async () => {
-          this.user = undefined;
-        });
-      }
-    }
-    runInAction(async () => {
-      this.authReady = true;
-    });
+    UserStore.firebaseUser = firebaseUser;
+    this.isFirebaseReady = true;
   };
 
   @action
@@ -56,9 +54,8 @@ export class UserStore {
         email,
         password
       );
-      runInAction(async () => {
-        this.user = await this.fetchUser(userCredential.user);
-      });
+      UserStore.firebaseUser = userCredential.user;
+      await this.fetchUser();
     } catch (error) {
       throw Error((error as FirebaseError).code);
     }
@@ -76,10 +73,8 @@ export class UserStore {
         email,
         password
       );
-      const user = await this.fetchUser(userCredential.user);
-      runInAction(async () => {
-        this.user = user;
-      });
+      UserStore.firebaseUser = userCredential.user;
+      await this.fetchUser();
     } catch (error) {
       throw Error((error as FirebaseError).code);
     }
@@ -92,53 +87,70 @@ export class UserStore {
   };
 
   @action
-  fetchUser = async (firebaseUser: FirebaseUser): Promise<User> => {
-    this.fetchingUser = true;
-    const docRef = doc(this.rootStore.firestore, "users", firebaseUser.uid);
+  fetchUser = async () => {
+    if (!UserStore.firebaseUser) {
+      return;
+    }
+
+    const docRef = doc(
+      this.rootStore.firestore,
+      "users",
+      UserStore.firebaseUser.uid
+    );
     const userDoc = await getDoc(docRef.withConverter(userConverter));
+    let user: User | undefined = undefined;
     if (!userDoc.exists()) {
-      const user = new User({
-        id: firebaseUser.uid,
-        email: firebaseUser.email,
-        displayName: firebaseUser.displayName,
-        photoURL: firebaseUser.photoURL,
-        emailVerified: firebaseUser.emailVerified,
+      user = new User({
+        id: UserStore.firebaseUser.uid,
+        email: UserStore.firebaseUser.email,
+        displayName: UserStore.firebaseUser.displayName,
+        photoURL: UserStore.firebaseUser.photoURL,
+        emailVerified: UserStore.firebaseUser.emailVerified,
         profiles: [],
         tokenIds: [],
         hookIds: [],
-        createdHookIds: [],
         createdAt: new Date(),
       });
-
       await setDoc(docRef.withConverter(userConverter), user);
-      runInAction(async () => {
-        this.fetchingUser = false;
-      });
-      return user;
     } else {
-      const user = userDoc.data();
-      user.email = firebaseUser.email;
-      user.displayName = firebaseUser.displayName;
-      user.photoURL = firebaseUser.photoURL;
-      user.emailVerified = firebaseUser.emailVerified;
-      runInAction(async () => {
-        this.fetchingUser = false;
-      });
-      return user;
+      user = userDoc.data();
+      user.email = UserStore.firebaseUser.email;
+      user.displayName = UserStore.firebaseUser.displayName;
+      user.photoURL = UserStore.firebaseUser.photoURL;
+      user.emailVerified = UserStore.firebaseUser.emailVerified;
     }
+    runInAction(() => {
+      this.user = user;
+      this.authReady = true;
+    });
   };
 
   @action
   addProfile = async (profile: UserProfile) => {
     if (!this.user) return;
     const user = { ...this.user };
-    this.fetchingUser = true;
     user.profiles.push(profile);
     const userDocRef = doc(this.rootStore.firestore, "users", this.user.id);
     await setDoc(userDocRef.withConverter(userConverter), user);
-    runInAction(async () => {
+    runInAction(() => {
       this.user = user;
-      this.fetchingUser = false;
+    });
+  };
+
+  @action
+  fetchUserHooks = async () => {
+    const userId = this.user?.id;
+    if (!userId) {
+      return;
+    }
+
+    const hooksCol = collection(this.rootStore.firestore, "hooks");
+    const q = query(hooksCol, where("owner", "==", userId)).withConverter(
+      hookConverter
+    );
+    const r = await getDocs(q);
+    runInAction(() => {
+      this.userHooks = r.docs.map((doc) => doc.data());
     });
   };
 }

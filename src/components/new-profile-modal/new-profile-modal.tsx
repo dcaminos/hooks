@@ -18,7 +18,7 @@ export type NewProfileModalProps = {};
 export const NewProfileModal: React.FC<NewProfileModalProps> = observer(
   (props) => {
     const [form] = Form.useForm();
-    const { addProfile, fetchingUser } = useContext(UserContext)!;
+    const { addProfile } = useContext(UserContext)!;
 
     const { isNewProfileModalVisible, hideModal } = useContext(UIContext)!;
 
@@ -76,7 +76,7 @@ export const NewProfileModal: React.FC<NewProfileModalProps> = observer(
         onCancel={onModalCancel}
         okText={"Create Profile"}
         closeIcon={closeIcon}
-        confirmLoading={fetchingUser}
+        //confirmLoading={fetchingUser}
         onOk={form.submit}
       >
         <NewProfileForm form={form} onSubmit={submit} />

@@ -1,13 +1,13 @@
 import {
   addDoc,
-  arrayUnion,
   collection,
   doc,
   getDoc,
   getDocs,
+  query,
   setDoc,
-  updateDoc,
 } from "@firebase/firestore";
+import { where } from "firebase/firestore";
 import { action, makeAutoObservable, runInAction } from "mobx";
 import { networks } from "../lib/config/networks";
 import { tokens } from "../lib/config/tokens";
@@ -22,7 +22,6 @@ export class HookStore {
   constructor(private rootStore: RootStore) {
     makeAutoObservable(this);
     this.rootStore.hookStore = this;
-    this.fetchHooks();
   }
 
   @action
@@ -65,11 +64,6 @@ export class HookStore {
       collection(this.rootStore.firestore, "hooks"),
       hookConverter.toFirestore(hook)
     );
-    const userRef = doc(this.rootStore.firestore, "users", userId);
-
-    await updateDoc(userRef, {
-      createdHookIds: arrayUnion(hookReference.id),
-    });
 
     return hookReference.id;
   };
@@ -93,9 +87,13 @@ export class HookStore {
 
   fetchHooks = async () => {
     const hooksCol = collection(this.rootStore.firestore, "hooks");
-    const hookSnapshot = await getDocs(hooksCol.withConverter(hookConverter));
+    const q = query(hooksCol, where("isPublic", "==", true)).withConverter(
+      hookConverter
+    );
+    const r = await getDocs(q);
     runInAction(() => {
-      this.hooks = hookSnapshot.docs.map((doc) => doc.data());
+      this.hooks = r.docs.map((doc) => doc.data());
+      console.log(this.hooks);
     });
   };
 }

@@ -18,7 +18,6 @@ export type UserD = {
   profiles: UserProfile[];
   tokenIds: string[];
   hookIds: string[];
-  createdHookIds: string[];
   createdAt: Date;
 };
 
@@ -31,7 +30,6 @@ export class User {
   public profiles: UserProfile[];
   public tokenIds: string[];
   public hookIds: string[];
-  public createdHookIds: string[];
   public createdAt: Date;
 
   constructor(userD: UserD) {
@@ -43,7 +41,6 @@ export class User {
     this.profiles = userD.profiles;
     this.tokenIds = userD.tokenIds;
     this.hookIds = userD.hookIds;
-    this.createdHookIds = userD.createdHookIds;
     this.createdAt = userD.createdAt;
   }
 }
