@@ -19,6 +19,7 @@ import {
 
 import { Logger } from "@ethersproject/logger";
 import { version } from "@ethersproject/bignumber/src.ts/_version";
+import { ethers } from "ethers";
 const logger = new Logger(version);
 
 const _constructorGuard = {};
@@ -244,6 +245,20 @@ export class BigNumber implements Hexable {
 
   toJSON(key?: string): any {
     return { type: "BigNumber", hex: this.toHexString() };
+  }
+
+  toReal(decimals?: number): string {
+    if (!decimals) {
+      return ethers.utils.formatEther(this);
+    }
+    return parseFloat(ethers.utils.formatEther(this)).toFixed(decimals);
+  }
+
+  static fromReal(value: string | number): BigNumber {
+    if (typeof value === "number") {
+      return BigNumber.from(ethers.utils.parseEther(value.toString()));
+    }
+    return BigNumber.from(ethers.utils.parseEther(value));
   }
 
   static from(value: any): BigNumber {

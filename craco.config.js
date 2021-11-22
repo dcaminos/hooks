@@ -2,6 +2,7 @@ const CracoLessPlugin = require("craco-less-plugin");
 const MonacoWebpackPlugin = require('monaco-editor-webpack-plugin');
 const rawLoader = require('craco-raw-loader')
 const FilterWarningsPlugin = require("webpack-filter-warnings-plugin");
+const sassResourcesLoader = require('craco-sass-resources-loader');
 
 module.exports = {
   webpack: {
@@ -42,5 +43,12 @@ module.exports = {
       ],
       options: { test: /\.frag$/ }
     },
+    {
+      plugin: sassResourcesLoader,
+      options: {
+          resources: "./src/global.scss",
+      },
+  },
+
   ],
 };

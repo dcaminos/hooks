@@ -2,34 +2,32 @@ import { Button, Card, Input, Row } from "antd"
 import { Form } from "antd";
 import { TokenPicker } from "components/token-picker.tsx/token-picker";
 import { NetworkId } from "lib/network";
+import { observer } from "mobx-react-lite";
 import { useContext } from "react";
 import { useState } from "react";
 import { UserContext } from "utils/contexts";
 
-export const TokensTab: React.FC = () => {
+export const TokensTab: React.FC = observer( () => {
   const [networkId, setNetworkId] = useState<NetworkId>("ethereum");
-  const [tokenIds, setTokenIds] = useState<string[]>([]);
 
   const [form] = Form.useForm();
 
-  const {fetchingUser} = useContext(UserContext)!;
+  const {loading} = useContext(UserContext)!;
 
-  const { setTokens, user } = useContext(UserContext)!;
+  const { setTokens, user, updateUser } = useContext(UserContext)!;
+
+  if (!user) return null;
 
   const validateTokens = async () => {
-    if (tokenIds.length < 1) {
+    if (user.tokenIds.length < 1) {
       throw new Error(
         "At least one token should be used to interact with the smart contract, e.g: staked token"
       );
     }
   };
 
-  if (user && tokenIds.length === 0) {
-    setTokenIds(user.tokenIds)
-  }
-
   const onSubmit = async (tokenIds: string[] ) => {
-    await setTokens(tokenIds);
+    updateUser(user);
   };
 
   return (
@@ -48,14 +46,14 @@ export const TokensTab: React.FC = () => {
           rules={[{ required: true, validator: validateTokens }]}
         >
           <TokenPicker
-            values={tokenIds}
+            values={user.tokenIds}
             networkId={networkId}
-            onTokensChange={setTokenIds}
+            onTokensChange={setTokens}
           />
         </Form.Item>
         
         <Form.Item>
-          <Button loading={fetchingUser} type="primary" htmlType="submit" className="da-mr-sm-8 da-mr-16" onClick={() => onSubmit(tokenIds)} >
+          <Button loading={loading} type="primary" htmlType="submit" className="da-mr-sm-8 da-mr-16" onClick={() => onSubmit(tokenIds)} >
             Save
           </Button>
         </Form.Item>
@@ -63,4 +61,4 @@ export const TokensTab: React.FC = () => {
       </Form>
     </Card>
   )
-}
+});
