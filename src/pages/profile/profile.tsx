@@ -1,10 +1,6 @@
 import { Col, Row, Tabs } from "antd";
 import { useState } from "react";
-import {
-  RiLinksLine,
-  RiMoneyDollarCircleLine,
-  RiWallet2Line,
-} from "react-icons/ri";
+import { RiLinksLine, RiMoneyDollarCircleLine, RiWallet2Line } from "react-icons/ri";
 import { HooksTab } from "./tabs/hooks";
 import { TokensTab } from "./tabs/tokens";
 import { WalletsTab } from "./tabs/wallets";

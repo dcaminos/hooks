@@ -1,4 +1,4 @@
-import { Avatar, Button, Card, List, Row } from "antd";
+import { Avatar, Button, Card, Col, List, Row } from "antd";
 import generic from "assets/images/memoji/memoji-1.png";
 import { observer } from "mobx-react-lite";
 import { useContext } from "react";
@@ -30,15 +30,18 @@ export const WalletsTab: React.FC = observer(() => {
 
   return (
     <Card>
-      <h4>Wallets</h4>
       <Row justify="end">
-        <Button
-          type="primary"
-          className="da-mr-sm-8 da-mr-16"
-          onClick={() => showModal("new-wallet")}
-        >
-          Add new
-        </Button>
+        <Col span={12}>
+          <h4>Wallets</h4>
+        </Col>
+        <Col span={12} >
+          <Row justify="end">
+
+            <Button type="primary" size="small" className="da-mr-sm-8 da-mr-16" onClick={() => showModal("new-wallet")}>
+              Add new
+            </Button>
+          </Row>
+        </Col>
       </Row>
       <List
         itemLayout="horizontal"
@@ -55,11 +58,13 @@ export const WalletsTab: React.FC = observer(() => {
               <div onClick={() => deleteWallet(index)} style={{ color: "red" }}>
                 delete
               </div>,
+
             ]}
           >
             <List.Item.Meta
               avatar={<Avatar src={generic} />}
               title={item.name}
+
               description={item.address}
             />
           </List.Item>
