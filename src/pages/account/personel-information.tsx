@@ -19,7 +19,8 @@ export const InfoProfile: React.FC = () => {
   const [preferanceModalVisible, setPreferanceModalVisible] = useState(false);
 
   const listTitle = "da-p1-body";
-  const listResult = "da-mt-sm-4 da-p1-body da-text-color-black-100 da-text-color-dark-0";
+  const listResult =
+    "da-mt-sm-4 da-p1-body da-text-color-black-100 da-text-color-dark-0";
   const dividerClass = "da-border-color-black-40 da-border-color-dark-80";
 
   const contactModalShow = () => {
@@ -259,4 +260,4 @@ export const InfoProfile: React.FC = () => {
       </Row>
     </div>
   );
-}
+};

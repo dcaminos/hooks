@@ -1,10 +1,5 @@
-import { Card } from "antd"
+import { Card } from "antd";
 
 export const HooksTab: React.FC = () => {
-
-  return (
-    <Card>
-      Hooks
-    </Card>
-  )
-}
+  return <Card>Hooks</Card>;
+};

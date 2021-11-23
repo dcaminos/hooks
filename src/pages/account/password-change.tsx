@@ -11,7 +11,7 @@ export const PasswordProfile: React.FC = () => {
         <h2>Change Password</h2>
         <p className="da-p1-body da-mb-0">
           Set a unique password to protect your account.
-         </p>
+        </p>
 
         <Divider className={dividerClass} />
       </Col>
@@ -60,4 +60,4 @@ export const PasswordProfile: React.FC = () => {
       </Col>
     </Row>
   );
-}
+};

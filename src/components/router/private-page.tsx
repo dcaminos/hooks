@@ -32,11 +32,12 @@ export const PrivatePage: React.FC = observer((props) => {
     );
   }
 
-  return ( 
+  return (
     <>
       <FirstProfileModal />
       <NewHookModal />
       <NewWalletModal />
       {children}
-    </>);
+    </>
+  );
 });

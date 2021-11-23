@@ -1,7 +1,11 @@
 import { action, makeAutoObservable } from "mobx";
 import { RootStore } from "./root-store";
 
-export type ModalType = "new-hook" | "first-profile" | "new-wallet" | "edit-wallet";
+export type ModalType =
+  | "new-hook"
+  | "first-profile"
+  | "new-wallet"
+  | "edit-wallet";
 
 export class UiStore {
   theme: "light" | "dark" = "light";
@@ -24,7 +28,7 @@ export class UiStore {
 
   @action
   showModal = (type: ModalType) => {
-    console.log(this)
+    console.log(this);
     switch (type) {
       case "new-hook":
         this.isNewHookModalVisible = true;

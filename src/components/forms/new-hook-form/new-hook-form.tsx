@@ -1,5 +1,5 @@
 import { Form, FormInstance, Input } from "antd";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { NetworkId } from "../../../lib/network";
 import { NetworkPicker } from "../../network-picker/network-picker";
 import { TokenPicker } from "../../token-picker.tsx/token-picker";
@@ -14,6 +14,10 @@ export const NewHookFrom: React.FC<NewHookFromProps> = (props) => {
   const [title, setTitle] = useState<string>("");
   const [networkId, setNetworkId] = useState<NetworkId>("ethereum");
   const [tokenIds, setTokenIds] = useState<string[]>([]);
+
+  useEffect(() => {
+    setTokenIds([]);
+  }, [networkId]);
 
   const validateTokens = async () => {
     if (tokenIds.length < 1) {

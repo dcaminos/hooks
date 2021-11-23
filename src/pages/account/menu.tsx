@@ -1,23 +1,13 @@
-import React from "react";
-import { Link, useLocation } from "react-router-dom";
-
-import { Col, Avatar, Badge, Menu } from "antd";
-import {
-  User,
-  Notification,
-  Activity,
-  Setting,
-  Password,
-  Heart,
-} from "react-iconly";
-
-import menuImg from "assets/images/pages/profile/menu-img.svg";
+import { Avatar, Badge, Col, Menu } from "antd";
 import avatar from "assets/images/memoji/memoji-1.png";
-import { useContext } from "react";
+import menuImg from "assets/images/pages/profile/menu-img.svg";
+import React, { useContext } from "react";
+import { Password, User } from "react-iconly";
+import { Link, useLocation } from "react-router-dom";
 import { UIContext } from "utils/contexts";
 
 export const MenuProfile = (props: any) => {
-  const menuIconClass: string = "remix-icon da-mr-8";
+  //const menuIconClass: string = "remix-icon da-mr-8";
 
   const customise = useContext(UIContext)!;
 
@@ -25,7 +15,7 @@ export const MenuProfile = (props: any) => {
     if (props.footer !== "none") {
       return (
         <div className="da-profile-menu-footer">
-          <img src={menuImg} alt="Profile Image" />
+          <img src={menuImg} alt="Profile" />
         </div>
       );
     }
@@ -64,22 +54,23 @@ export const MenuProfile = (props: any) => {
         <Menu
           mode="inline"
           className="da-w-100 da-profile-menu-body"
-          theme={customise.theme == "light" ? "light" : "dark"}
+          theme={customise.theme === "light" ? "light" : "dark"}
         >
           <Menu.Item
             key="1"
             icon={<User set="bold" /* className={menuIconClass} */ />}
             className={`
               da-mb-16 da-pl-24 da-pr-32
-              ${splitLocation[splitLocation.length - 1] === "personel-information"
-                ? "ant-menu-item-selected"
-                : "ant-menu-item-selected-in-active"}
+              ${
+                splitLocation[splitLocation.length - 1] ===
+                "personel-information"
+                  ? "ant-menu-item-selected"
+                  : "ant-menu-item-selected-in-active"
+              }
             `}
             onClick={props.onCloseDrawer}
           >
-            <Link to="/account">
-              Personal Information
-            </Link>
+            <Link to="/account">Personal Information</Link>
           </Menu.Item>
 
           <Menu.Item
@@ -87,19 +78,20 @@ export const MenuProfile = (props: any) => {
             icon={<Password set="bold" /* className={menuIconClass} */ />}
             className={`
               da-mb-16 da-pl-24 da-pr-32
-              ${splitLocation[splitLocation.length - 1] === "password-change"
-                ? "ant-menu-item-selected"
-                : "ant-menu-item-selected-in-active"}
+              ${
+                splitLocation[splitLocation.length - 1] === "password-change"
+                  ? "ant-menu-item-selected"
+                  : "ant-menu-item-selected-in-active"
+              }
             `}
             onClick={props.onCloseDrawer}
           >
             <Link to="/account/password-change">Password Change</Link>
           </Menu.Item>
-
         </Menu>
       </div>
 
       {menuFooterItem()}
     </Col>
   );
-}
+};

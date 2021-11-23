@@ -1,4 +1,6 @@
-import { Avatar, Select, Space, Tag } from "antd";
+import { Avatar, Select, Space } from "antd";
+import { TokenTag } from "components/token-tag/token-tag";
+import { Token } from "lib/token";
 import { observer } from "mobx-react-lite";
 import { ReactNode, useContext, useEffect, useState } from "react";
 import { NetworkId } from "../../lib/network";
@@ -6,31 +8,24 @@ import { TokenContext } from "../../utils/contexts";
 
 export type TokenPickerProps = {
   values: string[];
-  networkId: NetworkId;
+  networkId?: NetworkId;
   onTokensChange: (tokenIds: any) => void;
 };
 
 type TokenPickerItem = {
   value: string;
   label: ReactNode;
-  symbol: string;
-  name: string;
-  contract: string;
+  token: Token;
 };
 
 export const TokenPicker: React.FC<TokenPickerProps> = observer((props) => {
   const { getTokensPerNetwork } = useContext(TokenContext)!;
   const { values, networkId, onTokensChange } = props;
-  const [tokens, setTokens] = useState<TokenPickerItem[]>([]);
   const [options, setOptions] = useState<TokenPickerItem[]>([]);
 
   useEffect(() => {
-    setOptions(tokens); //tokens.filter((token) => !values.includes(token.value)));
-  }, [setOptions, tokens, values]);
-
-  useEffect(() => {
-    setTokens(
-      getTokensPerNetwork(networkId).map((token) => ({
+    setOptions(
+      getTokensPerNetwork(networkId).map<TokenPickerItem>((token) => ({
         value: token.id,
         label: (
           <Space align="center">
@@ -38,42 +33,36 @@ export const TokenPicker: React.FC<TokenPickerProps> = observer((props) => {
             {`${token.symbol.toUpperCase()} - ${token.name}`}
           </Space>
         ),
-        symbol: token.symbol,
-        name: token.name.toLocaleLowerCase(),
-        contract: token.contracts[networkId] ?? "",
+        token,
       }))
     );
-    onTokensChange([]);
-  }, [setTokens, getTokensPerNetwork, onTokensChange, networkId]);
+  }, [setOptions, getTokensPerNetwork, onTokensChange, networkId]);
 
   const filterOption = (input: string, option: any) => {
-    const symbol: string = option.symbol ?? "";
-    const name: string = option.name ?? "";
-    const contract: string = option.contract ?? "";
-    const search: string = input.toLocaleLowerCase();
+    const symbol: string = option.token.symbol.toLowerCase();
+    const name: string = option.token.name.toLowerCase();
+    const contracts: string[] = Object.keys(option.token.contracts).map(
+      (k) => option.token.contracts[k as NetworkId]?.toLowerCase() ?? ""
+    );
+    const search: string = input.toLowerCase();
 
     return (
       symbol.indexOf(search) >= 0 ||
       name.indexOf(search) >= 0 ||
-      contract.indexOf(search) >= 0
+      contracts.some((c) => c.indexOf(search) >= 0)
     );
   };
 
   const tagRender = (props: any) => {
-    const { label, closable, onClose } = props;
-
+    const { value, closable, onClose } = props;
+    const option = options.find((o) => o.value === value);
+    if (!option) {
+      return <></>;
+    }
     return (
-      <Tag
-        style={{ display: "flex", alignItems: "center", padding: "3px 8px" }}
-        closable={closable}
-        onClose={onClose}
-      >
-        {label}
-      </Tag>
+      <TokenTag token={option.token} closable={closable} onClose={onClose} />
     );
   };
-
-  console.log(values)
 
   return (
     <Select

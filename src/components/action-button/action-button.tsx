@@ -3,7 +3,7 @@ import React from "react";
 import { Col, Row, Button } from "antd";
 import { RiSettings4Line } from "react-icons/ri";
 
-export const ActionButton : React.FC = () => {
+export const ActionButton: React.FC = () => {
   return (
     <Col>
       <Row align="middle">
@@ -15,4 +15,4 @@ export const ActionButton : React.FC = () => {
       </Row>
     </Col>
   );
-}
+};

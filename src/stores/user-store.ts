@@ -138,21 +138,20 @@ export class UserStore {
     runInAction(() => {
       this.user = user;
       this.loading = false;
-    })
-  }
+    });
+  };
 
   @action
   updateUser = async (newUser: User) => {
     if (!this.user) return;
-    this.loading = true
+    this.loading = true;
     const userDocRef = doc(this.rootStore.firestore, "users", this.user.id);
     await setDoc(userDocRef.withConverter(userConverter), newUser);
-    runInAction(()=>{
+    runInAction(() => {
       this.user = newUser;
       this.loading = false;
-    })
-  }
-
+    });
+  };
 
   @action
   fetchUserHooks = async () => {
@@ -174,22 +173,22 @@ export class UserStore {
   @action
   addWalletToDefaultProfile = async (wallet: UserWallet) => {
     if (!this.user) return;
-    const user = {...this.user};
+    const user = { ...this.user };
     this.loading = true;
     user.profiles[0].wallets.push(wallet);
     const userDocRef = doc(this.rootStore.firestore, "users", this.user.id);
     await setDoc(userDocRef.withConverter(userConverter), user);
-    runInAction(()=>{
+    runInAction(() => {
       this.user = user;
       this.loading = false;
-    })
-  }
+    });
+  };
 
   @action
   setTokens = (tokenIds: string[]) => {
     if (!this.user) return;
-    const user = {...this.user};
+    const user = { ...this.user };
     user.tokenIds = tokenIds;
     this.user = user;
-  }
+  };
 }

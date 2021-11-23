@@ -1,13 +1,15 @@
 import { Avatar, Tag } from "antd";
-import { Token } from "../../lib/token";
+import { Token } from "lib/token";
 
 export type TokenTagProps = {
   className?: string;
   token: Token;
+  closable?: boolean;
+  onClose?: () => void;
 };
 
 export const TokenTag: React.FC<TokenTagProps> = (props) => {
-  const { className, token } = props;
+  const { className, token, closable, onClose } = props;
 
   return (
     <Tag
@@ -16,12 +18,15 @@ export const TokenTag: React.FC<TokenTagProps> = (props) => {
         display: "flex",
         justifyContent: "flex-start",
         alignItems: "center",
+        padding: "0px 8px 0px 4px",
       }}
       className={className}
-      icon={<Avatar size={25} src={token.image} />}
+      icon={<Avatar size={24} src={token.image} />}
       color="magenta"
+      closable={closable}
+      onClose={onClose}
     >
-      {token.name}
+      <div className="da-ml-8">{token.name}</div>
     </Tag>
   );
 };

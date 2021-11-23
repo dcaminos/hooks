@@ -1,8 +1,10 @@
-import { Col, Row, Tabs, Card } from "antd";
-import { useContext } from "react";
+import { Col, Row, Tabs } from "antd";
 import { useState } from "react";
-import { RiFlagLine, RiLinksLine, RiMoneyDollarCircleLine, RiWallet2Line } from "react-icons/ri";
-import { UIContext } from "utils/contexts";
+import {
+  RiLinksLine,
+  RiMoneyDollarCircleLine,
+  RiWallet2Line,
+} from "react-icons/ri";
 import { HooksTab } from "./tabs/hooks";
 import { TokensTab } from "./tabs/tokens";
 import { WalletsTab } from "./tabs/wallets";
@@ -11,8 +13,6 @@ const { TabPane } = Tabs;
 
 export const ProfilePage: React.FC = () => {
   const [currentTab, setTab] = useState("wallets");
-
-  const {showModal} = useContext(UIContext)!;
 
   const renderTab = (t: string) => {
     switch (t) {
@@ -31,7 +31,8 @@ export const ProfilePage: React.FC = () => {
         <h1>Profile</h1>
         <Tabs
           className="da-faq-tabs da-border-radius da-bg-black-0 da-bg-dark-100 da-px-42"
-          onChange={setTab}>
+          onChange={setTab}
+        >
           <TabPane
             tab={
               <span className="da-d-flex-center">
@@ -44,7 +45,8 @@ export const ProfilePage: React.FC = () => {
                 </span>
               </span>
             }
-            key={"wallets"}></TabPane>
+            key={"wallets"}
+          ></TabPane>
           <TabPane
             tab={
               <span className="da-d-flex-center">
@@ -57,7 +59,8 @@ export const ProfilePage: React.FC = () => {
                 </span>
               </span>
             }
-            key={"tokens"}></TabPane>
+            key={"tokens"}
+          ></TabPane>
           <TabPane
             tab={
               <span className="da-d-flex-center">
@@ -70,11 +73,11 @@ export const ProfilePage: React.FC = () => {
                 </span>
               </span>
             }
-            key={"hooks"}></TabPane>
+            key={"hooks"}
+          ></TabPane>
         </Tabs>
       </Col>
       <Col span={24}>{renderTab(currentTab)}</Col>
     </Row>
   );
 };
-

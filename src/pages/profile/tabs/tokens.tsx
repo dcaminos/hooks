@@ -1,18 +1,13 @@
-import { Button, Card, Input, Row } from "antd"
-import { Form } from "antd";
+import { Button, Card, Form } from "antd";
 import { TokenPicker } from "components/token-picker.tsx/token-picker";
-import { NetworkId } from "lib/network";
 import { observer } from "mobx-react-lite";
 import { useContext } from "react";
-import { useState } from "react";
 import { UserContext } from "utils/contexts";
 
-export const TokensTab: React.FC = observer( () => {
-  const [networkId, setNetworkId] = useState<NetworkId>("ethereum");
-
+export const TokensTab: React.FC = observer(() => {
   const [form] = Form.useForm();
 
-  const {loading} = useContext(UserContext)!;
+  const { loading } = useContext(UserContext)!;
 
   const { setTokens, user, updateUser } = useContext(UserContext)!;
 
@@ -26,7 +21,7 @@ export const TokensTab: React.FC = observer( () => {
     }
   };
 
-  const onSubmit = async (tokenIds: string[] ) => {
+  const onSubmit = async (tokenIds: string[]) => {
     updateUser(user);
   };
 
@@ -45,20 +40,21 @@ export const TokensTab: React.FC = observer( () => {
           name="tokenIds"
           rules={[{ required: true, validator: validateTokens }]}
         >
-          <TokenPicker
-            values={user.tokenIds}
-            networkId={networkId}
-            onTokensChange={setTokens}
-          />
+          <TokenPicker values={user.tokenIds} onTokensChange={setTokens} />
         </Form.Item>
-        
+
         <Form.Item>
-          <Button loading={loading} type="primary" htmlType="submit" className="da-mr-sm-8 da-mr-16" onClick={() => onSubmit(user.tokenIds)} >
+          <Button
+            loading={loading}
+            type="primary"
+            htmlType="submit"
+            className="da-mr-sm-8 da-mr-16"
+            onClick={() => onSubmit(user.tokenIds)}
+          >
             Save
           </Button>
         </Form.Item>
-      
       </Form>
     </Card>
-  )
+  );
 });

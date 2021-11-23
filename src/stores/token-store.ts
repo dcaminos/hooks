@@ -26,6 +26,14 @@ export class TokenStore {
   }
 
   @computed
-  getTokensPerNetwork = (NetworkId: NetworkId) =>
-    this.tokensPerNetwor.get(NetworkId) ?? [];
+  getTokensPerNetwork = (networkId?: NetworkId) => {
+    if (networkId !== undefined) {
+      return this.tokensPerNetwor.get(networkId) ?? [];
+    }
+
+    const networkIds: string[] = networks.map((n) => n.id);
+    return tokens.filter((t) =>
+      Object.keys(t.contracts).some((c) => networkIds.includes(c))
+    );
+  };
 }

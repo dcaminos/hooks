@@ -13,9 +13,9 @@ export const NewWalletForm: React.FC<NewWalletFormProps> = (props) => {
   const [title, setTitle] = useState<string>("");
 
   return (
-    <Form 
-      form={form} 
-      layout="vertical" 
+    <Form
+      form={form}
+      layout="vertical"
       name="new-profile-form"
       onFinish={() => onSubmit(title, address)}
     >
@@ -25,8 +25,8 @@ export const NewWalletForm: React.FC<NewWalletFormProps> = (props) => {
         rules={[
           {
             required: true,
-            message: "Please set a title for your wallet"
-          }
+            message: "Please set a title for your wallet",
+          },
         ]}
       >
         <Input
@@ -42,18 +42,16 @@ export const NewWalletForm: React.FC<NewWalletFormProps> = (props) => {
         rules={[
           {
             required: true,
-            message: "This field is required"
-          }
+            message: "This field is required",
+          },
         ]}
       >
-        <Input 
+        <Input
           placeholder="0x324DC1696F95D0Db58DcC8DF64C176406C446EAb"
           value={address}
           onChange={(e) => setAddress(e.target.value)}
         />
-
       </Form.Item>
-
     </Form>
-  )
-}
+  );
+};

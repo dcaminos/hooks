@@ -9,12 +9,12 @@ import { UIContext, UserContext } from "utils/contexts";
 
 const modalType: ModalType = "new-wallet";
 
-export const NewWalletModal: React.FC = observer( (props) => {
+export const NewWalletModal: React.FC = observer((props) => {
   const [form] = Form.useForm();
 
   const { addWalletToDefaultProfile, loading } = useContext(UserContext)!;
 
-  const {isNewWalletModalVisible, hideModal} = useContext(UIContext)!;
+  const { isNewWalletModalVisible, hideModal } = useContext(UIContext)!;
 
   const modalHeader = (
     <>
@@ -30,22 +30,24 @@ export const NewWalletModal: React.FC = observer( (props) => {
     />
   );
 
-  const onModalCancel = () => { hideModal(modalType) }
+  const onModalCancel = () => {
+    hideModal(modalType);
+  };
 
   const onModalSubmit = async (title: string, address: string) => {
     const wallet: UserWallet = {
       name: title,
       address,
-      type: "defi"
-    }
+      type: "defi",
+    };
 
     await addWalletToDefaultProfile(wallet);
 
     hideModal(modalType);
-  }
+  };
 
   return (
-    <Modal 
+    <Modal
       title={modalHeader}
       destroyOnClose={true}
       width={1000}
@@ -58,5 +60,5 @@ export const NewWalletModal: React.FC = observer( (props) => {
     >
       <NewWalletForm form={form} onSubmit={onModalSubmit} />
     </Modal>
-  )
+  );
 });
