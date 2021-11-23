@@ -1,6 +1,4 @@
-import { Button } from "antd";
 import { HookList } from "components/hook-list/hook-list";
-import { NewHookModal } from "components/modals/new-hook-modal/new-hook-modal";
 import { observer } from "mobx-react-lite";
 import { useContext } from "react";
 import { useHistory } from "react-router-dom";

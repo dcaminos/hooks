@@ -1,8 +1,6 @@
-import { Col, Row, Tabs, Card } from "antd";
-import { useContext } from "react";
+import { Col, Row, Tabs } from "antd";
 import { useState } from "react";
-import { RiFlagLine, RiLinksLine, RiMoneyDollarCircleLine, RiWallet2Line } from "react-icons/ri";
-import { UIContext } from "utils/contexts";
+import { RiLinksLine, RiMoneyDollarCircleLine, RiWallet2Line } from "react-icons/ri";
 import { HooksTab } from "./tabs/hooks";
 import { TokensTab } from "./tabs/tokens";
 import { WalletsTab } from "./tabs/wallets";
@@ -11,8 +9,6 @@ const { TabPane } = Tabs;
 
 export const ProfilePage: React.FC = () => {
   const [currentTab, setTab] = useState("wallets");
-
-  const {showModal} = useContext(UIContext)!;
 
   const renderTab = (t: string) => {
     switch (t) {

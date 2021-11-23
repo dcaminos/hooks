@@ -8,8 +8,6 @@ import { InfoProfile } from "./personel-information";
 import { MenuProfile } from "./menu";
 import { PasswordProfile } from "./password-change";
 
-import { ActionButton } from "components/action-button/action-button";
-
 export const Account: React.FC = () => {
   const [visible, setVisible] = useState(false);
 

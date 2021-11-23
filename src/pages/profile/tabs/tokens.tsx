@@ -1,4 +1,4 @@
-import { Button, Card, Input, Row } from "antd"
+import { Button, Card } from "antd"
 import { Form } from "antd";
 import { TokenPicker } from "components/token-picker.tsx/token-picker";
 import { NetworkId } from "lib/network";
@@ -8,7 +8,7 @@ import { useState } from "react";
 import { UserContext } from "utils/contexts";
 
 export const TokensTab: React.FC = observer( () => {
-  const [networkId, setNetworkId] = useState<NetworkId>("ethereum");
+  const [networkId] = useState<NetworkId>("ethereum");
 
   const [form] = Form.useForm();
 

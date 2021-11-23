@@ -1,14 +1,9 @@
-import React from "react";
 import { Link, useLocation } from "react-router-dom";
 
 import { Col, Avatar, Badge, Menu } from "antd";
 import {
   User,
-  Notification,
-  Activity,
-  Setting,
   Password,
-  Heart,
 } from "react-iconly";
 
 import menuImg from "assets/images/pages/profile/menu-img.svg";
@@ -17,7 +12,7 @@ import { useContext } from "react";
 import { UIContext } from "utils/contexts";
 
 export const MenuProfile = (props: any) => {
-  const menuIconClass: string = "remix-icon da-mr-8";
+  //const menuIconClass: string = "remix-icon da-mr-8";
 
   const customise = useContext(UIContext)!;
 
@@ -25,7 +20,7 @@ export const MenuProfile = (props: any) => {
     if (props.footer !== "none") {
       return (
         <div className="da-profile-menu-footer">
-          <img src={menuImg} alt="Profile Image" />
+          <img src={menuImg} alt="Profile" />
         </div>
       );
     }
@@ -64,7 +59,7 @@ export const MenuProfile = (props: any) => {
         <Menu
           mode="inline"
           className="da-w-100 da-profile-menu-body"
-          theme={customise.theme == "light" ? "light" : "dark"}
+          theme={customise.theme === "light" ? "light" : "dark"}
         >
           <Menu.Item
             key="1"

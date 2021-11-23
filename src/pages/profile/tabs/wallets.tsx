@@ -1,10 +1,10 @@
-import { Card, List, Avatar, Button, Row } from "antd";
+import { Card, List, Avatar, Button, Row, Col } from "antd";
 import { useContext } from "react";
 import { UIContext, UserContext } from "utils/contexts";
 
 import generic from "assets/images/memoji/memoji-1.png";
-import { observable, runInAction } from "mobx";
 import { observer } from "mobx-react-lite";
+import { Link } from "react-router-dom";
 
 export const WalletsTab: React.FC = observer(() => {
   
@@ -16,13 +16,6 @@ export const WalletsTab: React.FC = observer(() => {
 
   const { wallets } = user.profiles[0];
 
-  const editWallet = (index: number) => {
-    const newUser = {...user}
-
-    newUser.profiles[0].wallets[index].name = "Metamask";
-
-    updateUser(newUser);
-  }
 
   const deleteWallet = (index: number) => {
     if (loading) return;
@@ -34,11 +27,18 @@ export const WalletsTab: React.FC = observer(() => {
 
   return (
     <Card>
-      <h4>Wallets</h4>
       <Row justify="end">
-        <Button type="primary" className="da-mr-sm-8 da-mr-16" onClick={() => showModal("new-wallet")}>
-          Add new
-        </Button>
+        <Col span={12}>
+          <h4>Wallets</h4>
+        </Col>
+        <Col span={12} >
+          <Row justify="end">
+
+            <Button type="primary" size="small" className="da-mr-sm-8 da-mr-16" onClick={() => showModal("new-wallet")}>
+              Add new
+            </Button>
+          </Row>
+        </Col>
 
       </Row>
       <List
@@ -47,13 +47,12 @@ export const WalletsTab: React.FC = observer(() => {
         renderItem={(item, index) => (
           <List.Item
             actions={[
-              <a onClick={() => editWallet(index)}>edit</a>,
-              <a onClick={() => deleteWallet(index)} style={{color:'red'}}>delete</a>,
+              <Link to="#" onClick={() => deleteWallet(index)} >delete</Link>,
             ]}
           >
             <List.Item.Meta
               avatar={<Avatar src={generic} />}
-              title={<a href="#">{item.name}</a>}
+              title={<b>{item.name}</b>}
               description={item.address}
               
             />
