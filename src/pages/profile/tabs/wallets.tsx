@@ -34,10 +34,14 @@ export const WalletsTab: React.FC = observer(() => {
         <Col span={12}>
           <h4>Wallets</h4>
         </Col>
-        <Col span={12} >
+        <Col span={12}>
           <Row justify="end">
-
-            <Button type="primary" size="small" className="da-mr-sm-8 da-mr-16" onClick={() => showModal("new-wallet")}>
+            <Button
+              type="primary"
+              size="small"
+              className="da-mr-sm-8 da-mr-16"
+              onClick={() => showModal("new-wallet")}
+            >
               Add new
             </Button>
           </Row>
@@ -58,13 +62,11 @@ export const WalletsTab: React.FC = observer(() => {
               <div onClick={() => deleteWallet(index)} style={{ color: "red" }}>
                 delete
               </div>,
-
             ]}
           >
             <List.Item.Meta
               avatar={<Avatar src={generic} />}
               title={item.name}
-
               description={item.address}
             />
           </List.Item>
