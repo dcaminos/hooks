@@ -1,17 +1,17 @@
 //import { searchProduct, priceFilter } from '../../../../redux/ecommerce/ecommerceActions';
 import { Button, Col, Input, Row, Select } from "antd";
-import React from "react";
-import { HookListAction, HookListInternalProps } from "./hook-list";
+import React, { ReactNode } from "react";
+import { HookListInternalProps } from "./hook-list";
 
 const { Option } = Select;
 export type HookListHeaderProps = {
   listProps: HookListInternalProps;
   setListProps: (value: Partial<HookListInternalProps>) => void;
-  actions?: HookListAction[];
+  actionsRender: () => ReactNode;
 };
 
 export const HookListHeader: React.FC<HookListHeaderProps> = (props) => {
-  const { listProps, setListProps, actions } = props;
+  const { listProps, setListProps, actionsRender } = props;
 
   return (
     <Row gutter={[16, 16]} className="da-ecommerce-app-header da-mb-32">
@@ -73,7 +73,8 @@ export const HookListHeader: React.FC<HookListHeaderProps> = (props) => {
           onClick={() => setListProps({ listType: "list" })}
         ></Button>
       </Col>
-      {actions &&
+          { actionsRender() }
+{/*       {actions &&
         actions.length > 0 &&
         actions.map((action, index) => (
           <Col key={`header-action-${index}`}>
@@ -85,7 +86,7 @@ export const HookListHeader: React.FC<HookListHeaderProps> = (props) => {
               {action.label}
             </Button>
           </Col>
-        ))}
+        ))} */}
     </Row>
   );
 };

@@ -19,6 +19,8 @@ export const TokenTag: React.FC<TokenTagProps> = (props) => {
         justifyContent: "flex-start",
         alignItems: "center",
         padding: "0px 8px 0px 4px",
+        marginTop: "2px",
+        marginBottom: "2px",
       }}
       className={className}
       icon={<Avatar size={24} src={token.image} />}

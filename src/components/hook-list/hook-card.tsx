@@ -1,20 +1,19 @@
 //import { searchProduct, priceFilter } from '../../../../redux/ecommerce/ecommerceActions';
-import { Button, Card, Col, Row } from "antd";
-import React from "react";
+import { Card, Col, Row } from "antd";
+import React, { ReactNode } from "react";
 import { networks } from "../../lib/config/networks";
 import { tokens } from "../../lib/config/tokens";
 import { Hook } from "../../lib/hook";
 import { NetworkTag } from "../network-tag/network-tag";
 import { TokenTag } from "../token-tag/token-tag";
-import { HookListAction } from "./hook-list";
 
 export type HookCardProps = {
   hook: Hook;
-  actions?: HookListAction[];
+  actionsRender: (hook: Hook) => ReactNode;
 };
 
 export const HookCard: React.FC<HookCardProps> = (props) => {
-  const { hook, actions } = props;
+  const { hook, actionsRender } = props;
 
   const network = networks.find((n) => n.id === hook.networkId);
   const tokenTags = hook.tokenIds
@@ -47,26 +46,29 @@ export const HookCard: React.FC<HookCardProps> = (props) => {
             </p>
             <div
               className="da-mb-24"
-              style={{ display: "flex", justifyContent: "center" }}
+              style={{ display: "flex", justifyContent: "center", flexWrap: "wrap" }}
             >
               {tokenTags}
             </div>
 
             <div style={{ display: "flex", justifyContent: "space-between" }}>
-              {actions &&
+
+              {actionsRender(hook)}
+{/*               {actions &&
                 actions.length > 0 &&
                 actions.map((action, index) => (
                   <Button
                     key={`hook-action-${hook.id}-${index}`}
                     className="da-mt-8"
-                    type="primary"
+                    type={(action.type ? (action.type as "link" | "text" | "ghost" | "default" | "primary" | "dashed" ) : "primary")}
                     style={{ width: `calc(${100 / actions.length}% - 8px)` }}
                     icon={action.icon}
                     onClick={() => action.onClick(hook.id)}
+                    loading={action.loading}
                   >
                     {action.label}
                   </Button>
-                ))}
+                ))} */}
             </div>
           </Col>
         </Row>

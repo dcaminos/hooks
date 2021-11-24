@@ -40,9 +40,8 @@ export const NewWalletModal: React.FC = observer((props) => {
       address,
       type: "defi",
     };
-
     await addWalletToDefaultProfile(wallet);
-
+    form.resetFields();
     hideModal(modalType);
   };
 

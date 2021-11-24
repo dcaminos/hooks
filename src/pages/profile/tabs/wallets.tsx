@@ -2,6 +2,7 @@ import { Avatar, Button, Card, Col, List, Row } from "antd";
 import generic from "assets/images/memoji/memoji-1.png";
 import { observer } from "mobx-react-lite";
 import { useContext } from "react";
+import { Link } from "react-router-dom";
 import { UIContext, UserContext } from "utils/contexts";
 
 export const WalletsTab: React.FC = observer(() => {
@@ -12,14 +13,6 @@ export const WalletsTab: React.FC = observer(() => {
   if (!user || user.profiles.length === 0) return null;
 
   const { wallets } = user.profiles[0];
-
-  const editWallet = (index: number) => {
-    const newUser = { ...user };
-
-    newUser.profiles[0].wallets[index].name = "Metamask";
-
-    updateUser(newUser);
-  };
 
   const deleteWallet = (index: number) => {
     if (loading) return;
@@ -53,15 +46,9 @@ export const WalletsTab: React.FC = observer(() => {
         renderItem={(item, index) => (
           <List.Item
             actions={[
-              <div
-                onClick={() => editWallet(index)}
-                style={{ color: "primary" }}
-              >
-                edit
-              </div>,
-              <div onClick={() => deleteWallet(index)} style={{ color: "red" }}>
+              <Link to="#" onClick={() => deleteWallet(index)} style={{ color: "red" }}>
                 delete
-              </div>,
+              </Link>,
             ]}
           >
             <List.Item.Meta

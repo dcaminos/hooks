@@ -16,20 +16,15 @@ const defaultHookListInternalProps: HookListInternalProps = {
   sortValue: "updatedAt",
 };
 
-export type HookListAction = {
-  label: string;
-  icon?: ReactNode;
-  onClick: (hookId?: string) => void;
-};
-
 export type HookListProps = {
   hooks: Hook[];
-  headerActions?: HookListAction[];
-  hookActions?: HookListAction[];
+  renderHookActions: (hook: Hook) => ReactNode;
+  renderHeaderActions: () => ReactNode;
+  loading?: boolean;
 };
 
 export const HookList: React.FC<HookListProps> = (props) => {
-  const { hooks, headerActions, hookActions } = props;
+  const { hooks, renderHeaderActions, renderHookActions, loading } = props;
   const [listProps, setListProps] = useState(defaultHookListInternalProps);
 
   const setPartialListProps = (value: Partial<HookListInternalProps>) =>
@@ -54,22 +49,24 @@ export const HookList: React.FC<HookListProps> = (props) => {
       <HookListHeader
         listProps={listProps}
         setListProps={setPartialListProps}
-        actions={headerActions}
+        actionsRender={renderHeaderActions}
       />
       {listProps.listType === "card" ? (
         <List<Hook>
+          loading={loading || false}
           pagination={pagiCheck}
           dataSource={hooksFilters}
           renderItem={(value) => (
-            <HookCard hook={value} actions={hookActions} />
+            <HookCard hook={value} actionsRender={renderHookActions} />
           )}
         />
       ) : (
         <List
+          loading={(loading || false)}
           pagination={pagiCheckLarge}
           dataSource={hooksFilters}
           renderItem={(value) => (
-            <HookCard hook={value} actions={hookActions} />
+            <HookCard hook={value} actionsRender={renderHookActions} />
           )}
         />
       )}

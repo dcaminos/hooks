@@ -93,7 +93,6 @@ export class HookStore {
     const r = await getDocs(q);
     runInAction(() => {
       this.hooks = r.docs.map((doc) => doc.data());
-      console.log(this.hooks);
     });
   };
 }
