@@ -21,7 +21,7 @@ export const NetworkTag: React.FC<NetworkTagProps> = (props) => {
         padding: "0px 8px 0px 4px",
       }}
       className={className}
-      icon={<Avatar size={24} src={network.image} />}
+      icon={<Avatar shape="square" size={24} src={network.image} />}
       color="blue"
       closable={closable}
       onClose={onClose}

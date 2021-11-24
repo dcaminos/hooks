@@ -41,8 +41,7 @@ export const HookTitle: React.FC<HookTitleProps> = (props) => {
 export const IdeTopBar: React.FC = observer((props) => {
   //const { theme } = useContext(UIContext)!;
   const history = useHistory();
-  const { currentHook, code, savingChanges, saveChanges } =
-    useContext(EditorContext)!;
+  const { currentHook, code, action, saveChanges } = useContext(EditorContext)!;
   return (
     <div
       style={{
@@ -79,7 +78,7 @@ export const IdeTopBar: React.FC = observer((props) => {
         size="small"
         icon={<RiSave3Line className="remix-icon" />}
         disabled={currentHook?.code === code}
-        loading={savingChanges}
+        loading={action === "saving"}
         onClick={saveChanges}
       >
         Save Changes

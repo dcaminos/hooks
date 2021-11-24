@@ -29,7 +29,7 @@ export const TokenPicker: React.FC<TokenPickerProps> = observer((props) => {
         value: token.id,
         label: (
           <Space align="center">
-            <Avatar src={token.image} size={20} />
+            <Avatar shape="square" src={token.image} size={20} />
             {`${token.symbol.toUpperCase()} - ${token.name}`}
           </Space>
         ),

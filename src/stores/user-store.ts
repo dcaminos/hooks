@@ -50,6 +50,9 @@ export class UserStore {
   };
 
   @action
+  setUser = (user: User) => (this.user = user);
+
+  @action
   signUp = async (email: string, password: string): Promise<void> => {
     try {
       const userCredential = await createUserWithEmailAndPassword(

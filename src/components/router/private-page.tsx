@@ -6,6 +6,8 @@ import { observer } from "mobx-react-lite";
 import { useContext, useEffect, useState } from "react";
 import { useHistory } from "react-router";
 import { UserContext } from "../../utils/contexts";
+import { PublishHookModal } from "components/modals/publish-hook-modal/publish-hook-modal";
+import { PublishHookSuccessModal } from "components/modals/publish-hook-success/publish-hook-success";
 
 export const PrivatePage: React.FC = observer((props) => {
   const { children } = props;
@@ -37,6 +39,8 @@ export const PrivatePage: React.FC = observer((props) => {
       <FirstProfileModal />
       <NewHookModal />
       <NewWalletModal />
+      <PublishHookModal />
+      <PublishHookSuccessModal />
       {children}
     </>
   );
