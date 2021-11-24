@@ -1,7 +1,7 @@
+import { Hook as AttachConsole, Unhook as DetachConsole } from "console-feed";
 import { action, computed, makeAutoObservable, runInAction } from "mobx";
 import { Hook } from "../lib/hook";
 import { RootStore } from "./root-store";
-import { Hook as AttachConsole, Unhook as DetachConsole } from "console-feed";
 
 export type EditorError = {
   code: string | undefined;
@@ -11,12 +11,11 @@ export type EditorError = {
 
 export class EditorStore {
   currentHook: Hook | undefined = undefined;
-  savingChanges: boolean = false;
-  runningTest: boolean = false;
   code: string = "";
+  testingAddress: string = "";
   errors: EditorError[] = [];
   logs: any[] = [];
-  testingAddress: string = "";
+  action: "saving" | "testing" | "publishing" | undefined;
 
   constructor(private rootStore: RootStore) {
     makeAutoObservable(this);
@@ -24,13 +23,13 @@ export class EditorStore {
   }
 
   @action
-  setCurrentHook = async (hook: Hook) => {
+  setCurrentHook = (hook: Hook) => {
     this.currentHook = hook;
     this.code = hook.code ?? "";
   };
 
   @action
-  updateCode = async (code: string) => {
+  updateCode = (code: string) => {
     this.code = code;
   };
 
@@ -48,11 +47,11 @@ export class EditorStore {
     if (this.currentHook.code === this.code) {
       return;
     }
-    this.savingChanges = true;
+    this.action = "saving";
     this.currentHook.code = this.code;
     await this.rootStore.hookStore.updateHook(this.currentHook);
     runInAction(() => {
-      this.savingChanges = false;
+      this.action = undefined;
     });
   };
 
@@ -63,11 +62,15 @@ export class EditorStore {
 
   @action
   runTest = async () => {
-    if (this.runningTest || this.errors.length > 0 || !this.currentHook) {
+    if (
+      this.action !== undefined ||
+      this.errors.length > 0 ||
+      !this.currentHook
+    ) {
       return;
     }
 
-    this.runningTest = true;
+    this.action = "testing";
     this.logs = [];
     this.currentHook.code = this.code;
 
@@ -89,7 +92,7 @@ export class EditorStore {
     }
     DetachConsole(tempConsole);
     runInAction(() => {
-      this.runningTest = false;
+      this.action = undefined;
     });
   };
 
@@ -101,5 +104,49 @@ export class EditorStore {
   @action
   addEditorLog = (log: any) => {
     this.logs = [...this.logs, log];
+  };
+
+  @action
+  publish = async () => {
+    if (
+      this.action !== undefined ||
+      this.errors.length > 0 ||
+      !this.currentHook ||
+      !this.rootStore.userStore?.user
+    ) {
+      return;
+    }
+    const user = { ...this.rootStore.userStore.user };
+    const currentHook = { ...this.currentHook };
+
+    this.action = "publishing";
+    this.currentHook.code = this.code;
+    const jsCode = await this.currentHook.compile();
+    if (!jsCode) {
+      return;
+    }
+
+    user.hookIds.push(this.currentHook.id);
+    currentHook.isPublic = true;
+    currentHook.versions = [
+      {
+        version: 1,
+        releaseDate: new Date(),
+        ts: this.currentHook.code,
+        js: jsCode,
+        notes: "First deploy",
+      },
+    ];
+
+    await Promise.all([
+      this.rootStore.userStore.updateUser(user),
+      this.rootStore.hookStore?.updateHook(currentHook),
+    ]);
+
+    runInAction(() => {
+      this.rootStore.userStore?.setUser(user);
+      this.currentHook = currentHook;
+      this.action = undefined;
+    });
   };
 }

@@ -18,7 +18,8 @@ export const hookConverter = {
       "isPublic",
       "code",
       "createdAt",
-      "updatedAt"
+      "updatedAt",
+      "versions"
     ) as any;
     Object.keys(obj).forEach(
       (key) => obj[key] === undefined && delete obj[key]
@@ -30,16 +31,21 @@ export const hookConverter = {
     options: SnapshotOptions
   ): Hook {
     const data = snapshot.data(options)!;
-    return new Hook(
-      snapshot.id,
-      data.owner,
-      data.title,
-      data.networkId,
-      data.tokenIds,
-      data.isPublic,
-      data.code,
-      data.createdAt ? (data.createdAt as Timestamp).toDate() : new Date(),
-      data.updatedAt ? (data.updatedAt as Timestamp).toDate() : new Date()
-    );
+    return new Hook({
+      id: snapshot.id,
+      owner: data.owner,
+      title: data.title,
+      networkId: data.networkId,
+      tokenIds: data.tokenIds,
+      isPublic: data.isPublic,
+      code: data.code,
+      createdAt: data.createdAt
+        ? (data.createdAt as Timestamp).toDate()
+        : new Date(),
+      updatedAt: data.updatedAt
+        ? (data.updatedAt as Timestamp).toDate()
+        : new Date(),
+      versions: data.versions,
+    });
   },
 };

@@ -48,17 +48,18 @@ export class HookStore {
       }'\n`;
     });
 
-    const hook = new Hook(
-      "",
-      userId,
-      title,
-      networkId,
-      tokenIds,
-      false,
-      network.hookTemplate.replace("TOKENS_ADDRESSES", tokensText),
-      new Date(),
-      new Date()
-    );
+    const hook = new Hook({
+      id: "",
+      owner: userId,
+      title: title,
+      networkId: networkId,
+      tokenIds: tokenIds,
+      isPublic: false,
+      code: network.hookTemplate.replace("TOKENS_ADDRESSES", tokensText),
+      createdAt: new Date(),
+      updatedAt: new Date(),
+      versions: [],
+    });
 
     const hookReference = await addDoc(
       collection(this.rootStore.firestore, "hooks"),

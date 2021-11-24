@@ -43,17 +43,29 @@ export type HookD = {
 };
 
 export class Hook {
-  constructor(
-    public id: string,
-    public owner: string,
-    public title: string,
-    public networkId: NetworkId,
-    public tokenIds: string[],
-    public isPublic: boolean,
-    public code: string,
-    public createdAt: Date,
-    public updatedAt: Date
-  ) {}
+  public id: string;
+  public owner: string;
+  public title: string;
+  public networkId: NetworkId;
+  public tokenIds: string[];
+  public isPublic: boolean;
+  public code: string;
+  public createdAt: Date;
+  public updatedAt: Date;
+  public versions: HookVersion[];
+
+  constructor(hook: HookD) {
+    this.id = hook.id;
+    this.owner = hook.owner;
+    this.title = hook.title;
+    this.networkId = hook.networkId;
+    this.tokenIds = hook.tokenIds;
+    this.isPublic = hook.isPublic;
+    this.code = hook.code;
+    this.createdAt = hook.createdAt;
+    this.updatedAt = hook.updatedAt;
+    this.versions = hook.versions;
+  }
 
   compile = async (): Promise<string | undefined> => {
     const fsMap = await createDefaultMapFromCDN(

@@ -23,7 +23,7 @@ export const TokenTag: React.FC<TokenTagProps> = (props) => {
         marginBottom: "2px",
       }}
       className={className}
-      icon={<Avatar size={24} src={token.image} />}
+      icon={<Avatar shape="square" size={24} src={token.image} />}
       color="magenta"
       closable={closable}
       onClose={onClose}

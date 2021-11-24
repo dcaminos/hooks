@@ -5,7 +5,9 @@ export type ModalType =
   | "new-hook"
   | "first-profile"
   | "new-wallet"
-  | "edit-wallet";
+  | "edit-wallet"
+  | "publish-hook"
+  | "publish-hook-success";
 
 export class UiStore {
   theme: "light" | "dark" = "light";
@@ -15,6 +17,8 @@ export class UiStore {
   isNewHookModalVisible: boolean = false;
   isNewProfileModalVisible: boolean = false;
   isNewWalletModalVisible: boolean = false;
+  isPublishHookModalVisible: boolean = false;
+  isPublishHookSuccessModalVisible: boolean = false;
 
   constructor(private rootStore: RootStore) {
     makeAutoObservable(this);
@@ -39,6 +43,12 @@ export class UiStore {
       case "new-wallet":
         this.isNewWalletModalVisible = true;
         return;
+      case "publish-hook":
+        this.isPublishHookModalVisible = true;
+        return;
+      case "publish-hook-success":
+        this.isPublishHookSuccessModalVisible = true;
+        return;
     }
   };
 
@@ -53,6 +63,12 @@ export class UiStore {
         return;
       case "new-wallet":
         this.isNewWalletModalVisible = false;
+        return;
+      case "publish-hook":
+        this.isPublishHookModalVisible = false;
+        return;
+      case "publish-hook-success":
+        this.isPublishHookSuccessModalVisible = false;
         return;
     }
   };
