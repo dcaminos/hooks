@@ -16,7 +16,7 @@ export type HookTitleProps = {
 
 export const HookTitle: React.FC<HookTitleProps> = (props) => {
   const { hook } = props;
-  const network = networks.find((n) => n.id === hook.networkId);
+  const hookNetworks = networks.filter((n) => hook.networkIds.includes(n.id));
   const tokenTags = hook.tokenIds
     .map((tid) => tokens.find((t) => t.id === tid))
     .map(
@@ -32,7 +32,7 @@ export const HookTitle: React.FC<HookTitleProps> = (props) => {
       }}
     >
       <h4 className="da-mb-0 da-mr-16">{hook.title}</h4>
-      {network && <NetworkTag network={network} />}
+      {hookNetworks.length > 0 && <NetworkTag networks={hookNetworks} />}
       {tokenTags}
     </div>
   );

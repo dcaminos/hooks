@@ -46,7 +46,11 @@ export const WalletsTab: React.FC = observer(() => {
         renderItem={(item, index) => (
           <List.Item
             actions={[
-              <Link to="#" onClick={() => deleteWallet(index)} style={{ color: "red" }}>
+              <Link
+                to="#"
+                onClick={() => deleteWallet(index)}
+                style={{ color: "red" }}
+              >
                 delete
               </Link>,
             ]}

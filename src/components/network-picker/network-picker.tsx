@@ -1,6 +1,6 @@
 import { Avatar, Select, Space } from "antd";
-import { networks } from "../../lib/config/networks";
-import { NetworkId } from "../../lib/network";
+import { networks } from "lib/config/networks";
+import { NetworkId } from "lib/sdk/network";
 
 const { Option } = Select;
 

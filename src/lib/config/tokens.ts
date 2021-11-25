@@ -1,4 +1,4 @@
-import { Token } from "../token";
+import { Token } from "lib/sdk/token";
 
 // @ts-ignore
 export const tokens: Token[] = [

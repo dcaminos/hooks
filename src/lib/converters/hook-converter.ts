@@ -11,9 +11,10 @@ export const hookConverter = {
   toFirestore(hook: Hook): DocumentData {
     const obj = pick(
       hook,
+      "type",
       "owner",
       "title",
-      "networkId",
+      "networkIds",
       "tokenIds",
       "isPublic",
       "code",
@@ -33,9 +34,10 @@ export const hookConverter = {
     const data = snapshot.data(options)!;
     return new Hook({
       id: snapshot.id,
+      type: data.type,
       owner: data.owner,
       title: data.title,
-      networkId: data.networkId,
+      networkIds: data.networkIds,
       tokenIds: data.tokenIds,
       isPublic: data.isPublic,
       code: data.code,

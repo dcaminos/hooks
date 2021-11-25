@@ -14,23 +14,29 @@ export const EditorHome: React.FC = observer(() => {
   const openModal = () => showModal("new-hook");
 
   const headerActions = () => (
-    <Button onClick={openModal}>
-      Create new Hook
-    </Button>
-  )
-  
+    <Button onClick={openModal}>Create new Hook</Button>
+  );
+
   const redirectToEditHook = (hookId: string) => {
     if (hookId) {
       history.push(`/editor/${hookId}`);
     }
-  }
+  };
 
   const hookActions = (hook: Hook) => (
     <div style={{ display: "flex", justifyContent: "center" }}>
-      <Button type="primary" className="da-ml-8" >Clone</Button>
-      <Button type="primary" className="da-ml-8" onClick={ () => redirectToEditHook(hook.id)}>Edit</Button>
+      <Button type="primary" className="da-ml-8">
+        Clone
+      </Button>
+      <Button
+        type="primary"
+        className="da-ml-8"
+        onClick={() => redirectToEditHook(hook.id)}
+      >
+        Edit
+      </Button>
     </div>
-  )
+  );
 
   return (
     <HookList
@@ -38,5 +44,5 @@ export const EditorHome: React.FC = observer(() => {
       renderHeaderActions={headerActions}
       renderHookActions={hookActions}
     />
-  ); 
+  );
 });

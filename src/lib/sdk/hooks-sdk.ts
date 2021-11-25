@@ -1,6 +1,7 @@
 /* eslint-disable import/no-webpack-loader-syntax */
 
 import { Monaco } from "@monaco-editor/react";
+import { HookType } from "lib/hook";
 
 const sdkCode = `
 import { EthereumContract } from 'file:///contract'
@@ -12,8 +13,28 @@ import { BigNumber } from 'file:///big-number'
 export { HookRequest, HookResponse, BigNumber, Network, EthereumContract }
 `;
 
-export const addHooksSDK = (monaco: Monaco) => {
+export const addHooksSDK = (monaco: Monaco, hookType: HookType) => {
   const sdkURI = monaco.Uri.parse("hooks-sdk.ts");
+
+  let hookRequestCode = "";
+  let hookResponseCode = "";
+  switch (hookType) {
+    case "staking":
+      hookRequestCode =
+        require("!!raw-loader!./../../lib/sdk/hooks/staking/request").default;
+      hookResponseCode =
+        require("!!raw-loader!./../../lib/sdk/hooks/staking/response").default;
+      break;
+    case "token-balance":
+      hookRequestCode =
+        require("!!raw-loader!./../../lib/sdk/hooks/token-balance/request").default;
+      hookResponseCode =
+        require("!!raw-loader!./../../lib/sdk/hooks/token-balance/response").default;
+      break;
+    default:
+      break;
+  }
+
   if (monaco.editor.getModel(sdkURI) === null) {
     const libMap = [
       /*{
@@ -23,11 +44,11 @@ export const addHooksSDK = (monaco: Monaco) => {
       { lib: "hook", code: require("!!raw-loader!./../../lib/hook").default },*/
       {
         lib: "hook-request",
-        code: require("!!raw-loader!./../../lib/sdk/hook-request").default,
+        code: hookRequestCode,
       },
       {
         lib: "hook-response",
-        code: require("!!raw-loader!./../../lib/sdk/hook-response").default,
+        code: hookResponseCode,
       },
       {
         lib: "network",

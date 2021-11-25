@@ -8,12 +8,11 @@ import {
   setDoc,
 } from "@firebase/firestore";
 import { where } from "firebase/firestore";
+import { NetworkId } from "lib/sdk/network";
 import { action, makeAutoObservable, runInAction } from "mobx";
 import { networks } from "../lib/config/networks";
-import { tokens } from "../lib/config/tokens";
 import { hookConverter } from "../lib/converters/hook-converter";
 import { Hook } from "../lib/hook";
-import { NetworkId } from "../lib/network";
 import { RootStore } from "./root-store";
 
 export class HookStore {
@@ -36,26 +35,15 @@ export class HookStore {
       return;
     }
 
-    let tokensText = "";
-    tokenIds.forEach((tokenId) => {
-      const token = tokens.find((t) => t.id === tokenId);
-      if (!token) {
-        return;
-      }
-
-      tokensText += `const address${token.symbol.toUpperCase()} = '${
-        token.contracts[networkId]
-      }'\n`;
-    });
-
     const hook = new Hook({
       id: "",
+      type: "staking",
       owner: userId,
       title: title,
-      networkId: networkId,
+      networkIds: [networkId],
       tokenIds: tokenIds,
       isPublic: false,
-      code: network.hookTemplate.replace("TOKENS_ADDRESSES", tokensText),
+      code: "",
       createdAt: new Date(),
       updatedAt: new Date(),
       versions: [],

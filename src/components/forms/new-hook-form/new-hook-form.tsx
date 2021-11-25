@@ -1,6 +1,6 @@
 import { Form, FormInstance, Input } from "antd";
 import { useEffect, useState } from "react";
-import { NetworkId } from "../../../lib/network";
+import { NetworkId } from "lib/sdk/network";
 import { NetworkPicker } from "../../network-picker/network-picker";
 import { TokenPicker } from "../../token-picker.tsx/token-picker";
 

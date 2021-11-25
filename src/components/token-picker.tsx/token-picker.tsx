@@ -1,10 +1,10 @@
 import { Avatar, Select, Space } from "antd";
 import { TokenTag } from "components/token-tag/token-tag";
-import { Token } from "lib/token";
+import { Token } from "lib/sdk/token";
 import { observer } from "mobx-react-lite";
 import { ReactNode, useContext, useEffect, useState } from "react";
-import { NetworkId } from "../../lib/network";
-import { TokenContext } from "../../utils/contexts";
+import { NetworkId } from "lib/sdk/network";
+import { TokenContext } from "utils/contexts";
 
 export type TokenPickerProps = {
   values: string[];

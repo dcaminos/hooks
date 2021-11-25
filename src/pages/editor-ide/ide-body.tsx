@@ -7,7 +7,7 @@ import { addHooksSDK } from "../../lib/sdk/hooks-sdk";
 import { EditorContext, UIContext } from "../../utils/contexts";
 
 export const IdeBody: React.FC = observer((props) => {
-  const { code, updateCode, runTest, setEditorErrors } =
+  const { code, updateCode, runTest, setEditorErrors, currentHook } =
     useContext(EditorContext)!;
   const { theme } = useContext(UIContext)!;
 
@@ -26,7 +26,9 @@ export const IdeBody: React.FC = observer((props) => {
 
     monaco.languages.typescript.javascriptDefaults.setEagerModelSync(true);
 
-    addHooksSDK(monaco);
+    if (currentHook) {
+      addHooksSDK(monaco, currentHook.type);
+    }
 
     monaco.editor.registerCommand("save", () => {
       alert("SAVE pressed!");

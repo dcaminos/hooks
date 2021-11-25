@@ -88,7 +88,7 @@ export class EditorStore {
     if (response) {
       //const tokensInfo = await getTokensInfo(this.currentHook.tokenIds);
       //console.log("Hook reponse:");
-      response.logResult();
+      console.log(response.toString());
     }
     DetachConsole(tempConsole);
     runInAction(() => {

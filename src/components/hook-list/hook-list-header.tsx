@@ -73,8 +73,8 @@ export const HookListHeader: React.FC<HookListHeaderProps> = (props) => {
           onClick={() => setListProps({ listType: "list" })}
         ></Button>
       </Col>
-          { actionsRender() }
-{/*       {actions &&
+      {actionsRender()}
+      {/*       {actions &&
         actions.length > 0 &&
         actions.map((action, index) => (
           <Col key={`header-action-${index}`}>

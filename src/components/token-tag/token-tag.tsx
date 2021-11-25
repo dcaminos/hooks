@@ -1,5 +1,5 @@
 import { Avatar, Tag } from "antd";
-import { Token } from "lib/token";
+import { Token } from "lib/sdk/token";
 
 export type TokenTagProps = {
   className?: string;
