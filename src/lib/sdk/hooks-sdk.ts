@@ -5,47 +5,31 @@ import { HookType } from "lib/hook";
 
 const sdkCode = `
 import { EthereumContract } from 'file:///contract'
-import { HookRequest } from 'file:///hook-request'
-import { HookResponse } from 'file:///hook-response'
+import { TokenBalanceRequest } from 'file:///token-balance-request'
+import { TokenBalanceResponse } from 'file:///token-balance-response'
+import { StakingRequest } from 'file:///staking-request'
+import { StakingResponse } from 'file:///staking-response'
 import { Network, NetworkId } from 'file:///network'
 import { Token } from 'file:///token'
 import { BigNumber } from 'file:///big-number'
 
-export { TokenBalanceRequest, TokenBalanceResponse, BigNumber, Network, NetworkId, Token, EthereumContract }
+export { TokenBalanceRequest, TokenBalanceResponse, StakingRequest, StakingResponse, BigNumber, Network, NetworkId, Token, EthereumContract }
 `;
 
 export const addHooksSDK = (monaco: Monaco, hookType: HookType) => {
   const sdkURI = monaco.Uri.parse("hooks-sdk.ts");
 
-  let hookRequestCode = "";
-  let hookResponseCode = "";
-  switch (hookType) {
-    case "staking":
-      hookRequestCode =
-        require("!!raw-loader!./../../lib/sdk/hooks/staking/request").default;
-      hookResponseCode =
-        require("!!raw-loader!./../../lib/sdk/hooks/staking/response").default;
-      break;
-    case "token-balance":
-      break;
-    default:
-      break;
-  }
-
   if (monaco.editor.getModel(sdkURI) === null) {
     const libMap = [
-      /*{
-        lib: "contract",
-        code: require("!!raw-loader!./../../lib/contract").default,
-      },
-      { lib: "hook", code: require("!!raw-loader!./../../lib/hook").default },*/
       {
-        lib: "hook-request",
-        code: hookRequestCode,
+        lib: "staking-request",
+        code: require("!!raw-loader!./../../lib/sdk/hooks/staking/staking-request")
+          .default,
       },
       {
-        lib: "hook-response",
-        code: hookResponseCode,
+        lib: "staking-response",
+        code: require("!!raw-loader!./../../lib/sdk/hooks/staking/staking-response")
+          .default,
       },
       {
         lib: "token-balance-request",

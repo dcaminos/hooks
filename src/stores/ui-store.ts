@@ -4,6 +4,7 @@ import { RootStore } from "./root-store";
 export type ModalType =
   | "new-hook"
   | "new-token-balance"
+  | "new-staking"
   | "first-profile"
   | "new-wallet"
   | "edit-wallet"
@@ -17,6 +18,7 @@ export class UiStore {
   // Modals
   isNewHookModalVisible: boolean = false;
   isNewTokenBalanceModalVisible: boolean = false;
+  isNewStakingModalVisible: boolean = false;
   isNewProfileModalVisible: boolean = false;
   isNewWalletModalVisible: boolean = false;
   isPublishHookModalVisible: boolean = false;
@@ -41,6 +43,9 @@ export class UiStore {
       case "new-token-balance":
         this.isNewTokenBalanceModalVisible = true;
         return;
+      case "new-staking":
+        this.isNewStakingModalVisible = true;
+        return;
       case "first-profile":
         this.isNewProfileModalVisible = true;
         return;
@@ -64,6 +69,9 @@ export class UiStore {
         return;
       case "new-token-balance":
         this.isNewTokenBalanceModalVisible = false;
+        return;
+      case "new-staking":
+        this.isNewStakingModalVisible = false;
         return;
       case "first-profile":
         this.isNewProfileModalVisible = false;

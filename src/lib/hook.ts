@@ -6,7 +6,7 @@ import {
 import { networks } from "lib/config/networks";
 import { tokens } from "lib/config/tokens";
 
-import { run as hookStakingRun } from "lib/sdk/hooks/staking/run";
+import { run as hookStakingRun } from "lib/sdk/hooks/staking/staking";
 import { run as hookTokenBalanceRun } from "lib/sdk/hooks/token-balance/token-balance";
 
 import { Network, NetworkId } from "lib/sdk/network";
@@ -116,10 +116,10 @@ export class Hook {
     const tokenPrices = await getTokensPrices(this.tokenIds);
 
     return this.tokenIds.map((tokenId) => {
-      const token = tokens.find((n) => n.id === tokenId);
+      const tokenD = tokens.find((n) => n.id === tokenId);
       const price = tokenPrices[tokenId];
 
-      if (!token) {
+      if (!tokenD) {
         throw new Error("Imposible to find token");
       }
 
@@ -127,6 +127,7 @@ export class Hook {
         throw new Error("Imposible to find token price");
       }
 
+      const token = new Token(tokenD);
       token.price = price;
       return token;
     });

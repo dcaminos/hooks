@@ -32,17 +32,8 @@ export const NewHookModal: React.FC = observer((props) => {
       description: "Read the rewards and staked amount from a smart contract",
       image: Logistic,
       onSelect: () => {
-        notification.open({
-          message: "Coming soon!",
-          description: "Staking hooks are not implemented yet...",
-          icon: <RiErrorWarningFill style={{ color: "#1BE7FF" }} />,
-          closeIcon: (
-            <RiCloseFill
-              className="remix-icon da-text-color-black-80"
-              size={24}
-            />
-          ),
-        });
+        hideModal(modalType);
+        showModal("new-staking");
       },
     },
     {

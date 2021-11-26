@@ -24,8 +24,8 @@ export const run = async (
     const hookRequest = new TokenBalanceRequest(walletAdress, hookTokens[0]);
 
     // eslint-disable-next-line no-eval
-    const hookResponse = await eval(jsCode)(hookRequest);
-    return hookResponse as TokenBalanceResponse;
+    const response = await eval(jsCode)(hookRequest);
+    return response as TokenBalanceResponse;
   } catch (e) {
     console.error(e);
   }
