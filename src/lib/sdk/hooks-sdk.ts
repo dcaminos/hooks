@@ -7,10 +7,11 @@ const sdkCode = `
 import { EthereumContract } from 'file:///contract'
 import { HookRequest } from 'file:///hook-request'
 import { HookResponse } from 'file:///hook-response'
-import { Network } from 'file:///network'
+import { Network, NetworkId } from 'file:///network'
+import { Token } from 'file:///token'
 import { BigNumber } from 'file:///big-number'
 
-export { HookRequest, HookResponse, BigNumber, Network, EthereumContract }
+export { TokenBalanceRequest, TokenBalanceResponse, BigNumber, Network, NetworkId, Token, EthereumContract }
 `;
 
 export const addHooksSDK = (monaco: Monaco, hookType: HookType) => {
@@ -26,10 +27,6 @@ export const addHooksSDK = (monaco: Monaco, hookType: HookType) => {
         require("!!raw-loader!./../../lib/sdk/hooks/staking/response").default;
       break;
     case "token-balance":
-      hookRequestCode =
-        require("!!raw-loader!./../../lib/sdk/hooks/token-balance/request").default;
-      hookResponseCode =
-        require("!!raw-loader!./../../lib/sdk/hooks/token-balance/response").default;
       break;
     default:
       break;
@@ -49,6 +46,16 @@ export const addHooksSDK = (monaco: Monaco, hookType: HookType) => {
       {
         lib: "hook-response",
         code: hookResponseCode,
+      },
+      {
+        lib: "token-balance-request",
+        code: require("!!raw-loader!./../../lib/sdk/hooks/token-balance/token-balance-request")
+          .default,
+      },
+      {
+        lib: "token-balance-response",
+        code: require("!!raw-loader!./../../lib/sdk/hooks/token-balance/token-balance-response")
+          .default,
       },
       {
         lib: "network",

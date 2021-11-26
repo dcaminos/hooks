@@ -14,7 +14,8 @@ import { UIContext } from "utils/contexts";
 const modalType: ModalType = "new-hook";
 
 export const NewHookModal: React.FC = observer((props) => {
-  const { isNewHookModalVisible, hideModal } = useContext(UIContext)!;
+  const { isNewHookModalVisible, showModal, hideModal } =
+    useContext(UIContext)!;
 
   const options = [
     {
@@ -23,6 +24,7 @@ export const NewHookModal: React.FC = observer((props) => {
       image: Finance,
       onSelect: () => {
         hideModal(modalType);
+        showModal("new-token-balance");
       },
     },
     {
@@ -134,7 +136,7 @@ export const NewHookModal: React.FC = observer((props) => {
       <Row gutter={[32, 32]}>
         {options.map((option) => {
           return (
-            <Col xl={8} md={12} xs={24}>
+            <Col key={`option-${option.title}`} xl={8} md={12} xs={24}>
               <Button
                 type="default"
                 className="da-text-center"

@@ -1,5 +1,5 @@
 import { Token } from "lib/sdk/token";
 
-export class HookRequest {
+export class TokenBalanceRequest {
   constructor(public walletAdress: string, public token: Token) {}
 }

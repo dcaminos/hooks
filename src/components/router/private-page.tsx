@@ -8,6 +8,7 @@ import { useHistory } from "react-router";
 import { UserContext } from "../../utils/contexts";
 import { PublishHookModal } from "components/modals/publish-hook-modal/publish-hook-modal";
 import { PublishHookSuccessModal } from "components/modals/publish-hook-success/publish-hook-success";
+import { NewTokenBalanceModal } from "components/modals/new-token-balance-modal/new-token-balance-modal";
 
 export const PrivatePage: React.FC = observer((props) => {
   const { children } = props;
@@ -38,6 +39,7 @@ export const PrivatePage: React.FC = observer((props) => {
     <>
       <FirstProfileModal />
       <NewHookModal />
+      <NewTokenBalanceModal />
       <NewWalletModal />
       <PublishHookModal />
       <PublishHookSuccessModal />

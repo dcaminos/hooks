@@ -7,7 +7,7 @@ import { networks } from "lib/config/networks";
 import { tokens } from "lib/config/tokens";
 
 import { run as hookStakingRun } from "lib/sdk/hooks/staking/run";
-import { run as hookTokenBalanceRun } from "lib/sdk/hooks/token-balance/run";
+import { run as hookTokenBalanceRun } from "lib/sdk/hooks/token-balance/token-balance";
 
 import { Network, NetworkId } from "lib/sdk/network";
 import { Token } from "lib/sdk/token";
