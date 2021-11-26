@@ -14,16 +14,14 @@ export const EditorHome: React.FC = observer(() => {
   const openModal = () => showModal("new-hook");
 
   const headerActions = () => (
-    <Button onClick={openModal}>
-      Create new Hook
-    </Button>
-  )
-  
+    <Button onClick={openModal}>Create new Hook</Button>
+  );
+
   const redirectToEditHook = (hookId: string) => {
     if (hookId) {
       history.push(`/editor/${hookId}`);
     }
-  }
+  };
 
   const hookActions = (hook: Hook) => (
     <>
@@ -32,11 +30,12 @@ export const EditorHome: React.FC = observer(() => {
     </>
   )
 
+
   return (
     <HookList
       hooks={userHooks}
       renderHeaderActions={headerActions}
       renderHookActions={hookActions}
     />
-  ); 
+  );
 });

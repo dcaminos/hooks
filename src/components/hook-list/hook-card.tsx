@@ -15,7 +15,7 @@ export type HookCardProps = {
 export const HookCard: React.FC<HookCardProps> = (props) => {
   const { hook, actionsRender } = props;
 
-  const network = networks.find((n) => n.id === hook.networkId);
+  const hookNetworks = networks.filter((n) => hook.networkIds.includes(n.id));
   const tokenTags = hook.tokenIds
     .map((tid) => tokens.find((t) => t.id === tid))
     .map((t) => t && <TokenTag key={`token-tag-${t.id}`} token={t} />);
@@ -26,7 +26,9 @@ export const HookCard: React.FC<HookCardProps> = (props) => {
         <Row>
           <Col span={24}>
             <div className="da-mb-24 " style={{ display: "flex" }}>
-              {network && <NetworkTag network={network} />}
+              {hookNetworks.length > 0 && (
+                <NetworkTag networks={hookNetworks} />
+              )}
             </div>
 
             <p className="da-mb-4 da-badge-text da-font-weight-400">
@@ -46,13 +48,16 @@ export const HookCard: React.FC<HookCardProps> = (props) => {
             </p>
             <div
               className="da-mb-24"
-              style={{ display: "flex", justifyContent: "center", flexWrap: "wrap" }}
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                flexWrap: "wrap",
+              }}
             >
               {tokenTags}
             </div>
 
             <div style={{ display: "flex", justifyContent: "space-between" }}>
-
               {actionsRender(hook)}
 
             </div>

@@ -1,25 +1,25 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
-
-import typescript from "typescript";
 import {
   createDefaultMapFromCDN,
   createSystem,
   createVirtualCompilerHost,
 } from "@typescript/vfs";
-import { HookRequest } from "./sdk/hook-request";
-import { HookResponse } from "./sdk/hook-response";
-import { NetworkId } from "./network";
-import { networks } from "./config/networks";
-import { tokens } from "./config/tokens";
-import { Network as SdkNetwork } from "./sdk/network";
-import { Token as SdkToken } from "./sdk/token";
-import { getTokensPrices } from "../utils/utils";
-import { getTokenBalance } from "./token";
+import { networks } from "lib/config/networks";
+import { tokens } from "lib/config/tokens";
+
+import { run as hookStakingRun } from "lib/sdk/hooks/staking/staking";
+import { run as hookTokenBalanceRun } from "lib/sdk/hooks/token-balance/token-balance";
+
+import { Network, NetworkId } from "lib/sdk/network";
+import { Token } from "lib/sdk/token";
+import typescript from "typescript";
+import { getTokensPrices } from "utils/utils";
 
 const compilerOptions: typescript.CompilerOptions = {
   target: typescript.ScriptTarget.ES2020,
   esModuleInterop: true,
 };
+
+export type HookType = "token-balance" | "staking";
 
 export type HookVersion = {
   version: number;
@@ -31,9 +31,10 @@ export type HookVersion = {
 
 export type HookD = {
   id: string;
+  type: HookType;
   owner: string;
   title: string;
-  networkId: NetworkId;
+  networkIds: NetworkId[];
   tokenIds: string[];
   isPublic: boolean;
   code: string;
@@ -44,9 +45,10 @@ export type HookD = {
 
 export class Hook {
   public id: string;
+  public type: HookType;
   public owner: string;
   public title: string;
-  public networkId: NetworkId;
+  public networkIds: NetworkId[];
   public tokenIds: string[];
   public isPublic: boolean;
   public code: string;
@@ -56,9 +58,10 @@ export class Hook {
 
   constructor(hook: HookD) {
     this.id = hook.id;
+    this.type = hook.type;
     this.owner = hook.owner;
     this.title = hook.title;
-    this.networkId = hook.networkId;
+    this.networkIds = hook.networkIds;
     this.tokenIds = hook.tokenIds;
     this.isPublic = hook.isPublic;
     this.code = hook.code;
@@ -98,32 +101,25 @@ export class Hook {
     }
   };
 
-  getSdkNetwork = (): SdkNetwork => {
-    const network = networks.find((n) => n.id === this.networkId);
-    if (!network) {
-      throw new Error("Imposible to find network");
-    }
+  getNetworks = (): Network[] => {
+    return this.networkIds.map((networkId) => {
+      const network = networks.find((n) => n.id === networkId);
+      if (!network) {
+        throw new Error("Imposible to find network");
+      }
 
-    return {
-      id: network.id,
-      name: network.name,
-      url: network.url,
-    };
+      return network;
+    });
   };
 
-  getSdkTokens = async (): Promise<SdkToken[]> => {
+  getTokens = async (): Promise<Token[]> => {
     const tokenPrices = await getTokensPrices(this.tokenIds);
-    const network = networks.find((n) => n.id === this.networkId);
-
-    if (!network) {
-      throw new Error("Imposible to find network");
-    }
 
     return this.tokenIds.map((tokenId) => {
-      const token = tokens.find((n) => n.id === tokenId);
+      const tokenD = tokens.find((n) => n.id === tokenId);
       const price = tokenPrices[tokenId];
 
-      if (!token) {
+      if (!tokenD) {
         throw new Error("Imposible to find token");
       }
 
@@ -131,47 +127,20 @@ export class Hook {
         throw new Error("Imposible to find token price");
       }
 
-      const address = token.contracts[this.networkId];
-      if (!address) {
-        throw new Error("Imposible to find token address");
-      }
-
-      return {
-        id: token.id,
-        symbol: token.symbol,
-        name: token.name,
-        address: address,
-        price: price,
-        balanceOf: (address: string) =>
-          getTokenBalance(token, network, address),
-      };
+      const token = new Token(tokenD);
+      token.price = price;
+      return token;
     });
   };
 
-  run = async (walletAddress: string): Promise<HookResponse | undefined> => {
-    const HookResponse = require("./sdk/hook-response").HookResponse;
-    const HookRequest = require("./sdk/hook-request").HookRequest;
-    const EthereumContract = require("./sdk/contract").EthereumContract;
-    const BigNumber = require("./sdk/big-number").BigNumber;
-
-    try {
-      const hookNetwork = networks.find((n) => n.id === this.networkId);
-      const hookTokens = tokens.filter((t) => this.tokenIds.includes(t.id));
-      const jsCode = await this.compile();
-      if (!jsCode || !hookNetwork || hookTokens.length === 0) {
-        return;
-      }
-      const sdkTokens = await this.getSdkTokens();
-      const hookRequest: HookRequest = new HookRequest(
-        walletAddress,
-        this.getSdkNetwork(),
-        sdkTokens
-      );
-      // eslint-disable-next-line no-eval
-      const hookResponse = await eval(jsCode)(hookRequest);
-      return hookResponse as HookResponse;
-    } catch (e) {
-      console.error(e);
+  run = async (walletAdress: string) => {
+    switch (this.type) {
+      case "staking":
+        return hookStakingRun(this, walletAdress);
+      case "token-balance":
+        return hookTokenBalanceRun(this, walletAdress);
+      default:
+        return undefined;
     }
   };
 }

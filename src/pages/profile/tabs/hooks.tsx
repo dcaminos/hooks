@@ -6,30 +6,25 @@ import { useEffect } from "react";
 import { useContext, useState } from "react";
 import { HookContext, UserContext } from "utils/contexts";
 
-
-
 export const HooksTab: React.FC = observer(() => {
-
   const { hooks, fetchHooks } = useContext(HookContext)!;
   const { user, loading, updateUser } = useContext(UserContext)!;
 
   const [ filterChoice, setFilterChoice ] = useState('all');
 
   if (!user) return null;
-  
+
   const selectedHookIds: string[] = user.hookIds;
 
   if (hooks.length === 0) fetchHooks();
 
-  const headerActions = () => (
-    <Button>Create new Hook</Button>
-  )
+  const headerActions = () => <Button>Create new Hook</Button>;
 
   const selectHook = (hookId: string | undefined) => {
     if (!hookId || loading) return;
     user.hookIds.push(hookId);
     updateUser(user);
-  }
+  };
 
   const unSelectHook = (hookId: string | undefined) => {
     if (!hookId || loading) return;
@@ -38,21 +33,21 @@ export const HooksTab: React.FC = observer(() => {
   }
 
   const hookActions = (hook: Hook) => {
-    if ( isHookSubscribed(hook.id) ) {
+    if (isHookSubscribed(hook.id)) {
+
       return (
         <Button type="default" block onClick={() => unSelectHook(hook.id)}>
           Unsubscribe
         </Button>
-      )
+      );
     } else {
       return (
         <Button type="primary" block onClick={() => selectHook(hook.id)}>
           Subscribe
         </Button>
-      )
+      );
     }
-      
-  }
+  };
 
   const isHookSubscribed: (hookId: string) => boolean = (hookId: string) => {
     return selectedHookIds.some( id => id === hookId );

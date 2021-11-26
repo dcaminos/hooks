@@ -1,8 +1,8 @@
 import { computed, makeAutoObservable } from "mobx";
-import { networks } from "../lib/config/networks";
-import { tokens } from "../lib/config/tokens";
-import { NetworkId } from "../lib/network";
-import { Token } from "../lib/token";
+import { networks } from "lib/config/networks";
+import { tokens } from "lib/config/tokens";
+import { NetworkId } from "lib/sdk/network";
+import { Token } from "lib/sdk/token";
 import { RootStore } from "./root-store";
 
 export class TokenStore {

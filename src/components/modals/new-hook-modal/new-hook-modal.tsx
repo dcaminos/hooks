@@ -1,208 +1,148 @@
-import { Form, Modal } from "antd";
+import { Button, Col, Modal, notification, Row, Space } from "antd";
+import Charts from "assets/images/pages/knowledgebase/analyse.png";
+import Callcenter from "assets/images/pages/knowledgebase/contact.png";
+import Logistic from "assets/images/pages/knowledgebase/location.png";
+import Mailing from "assets/images/pages/knowledgebase/newsletter.png";
+import Finance from "assets/images/pages/knowledgebase/save-money.png";
+import Seo from "assets/images/pages/knowledgebase/seo.png";
 import { observer } from "mobx-react-lite";
-import { useContext, useState } from "react";
-import { RiCloseFill } from "react-icons/ri";
-import { useHistory } from "react-router";
-import { HookContext, UIContext, UserContext } from "utils/contexts";
-import { NetworkId } from "lib/network";
+import { useContext } from "react";
+import { RiCloseFill, RiErrorWarningFill } from "react-icons/ri";
 import { ModalType } from "stores/ui-store";
-import { NewHookFrom } from "components/forms/new-hook-form/new-hook-form";
+import { UIContext } from "utils/contexts";
 
 const modalType: ModalType = "new-hook";
 
 export const NewHookModal: React.FC = observer((props) => {
-  const { user } = useContext(UserContext)!;
-  const { isNewHookModalVisible, hideModal } = useContext(UIContext)!;
-  const { createNewHook } = useContext(HookContext)!;
-  const history = useHistory();
-  const [confirmLoading, setConfirmLoading] = useState<boolean>(false);
-  const [form] = Form.useForm();
+  const { isNewHookModalVisible, showModal, hideModal } =
+    useContext(UIContext)!;
 
-  const submit = async (
-    title: string,
-    networkId: NetworkId,
-    tokenIds: string[]
-  ) => {
-    const loggedUserId = user?.id;
-    if (!loggedUserId) {
-      return;
-    }
-    setConfirmLoading(true);
-    const hookId = await createNewHook(
-      loggedUserId,
-      title,
-      networkId,
-      tokenIds
-    );
-    hideModal(modalType);
-    setConfirmLoading(false);
-    history.push(`/editor/${hookId}`);
-  };
-
-  const modalHeader = (
-    <>
-      <h4>New Hook</h4>
-      <p className="da-p1-body" style={{ margin: 0 }}>
-        Connect with a smart contract and fetch data to see it in our dashboard.
-      </p>
-    </>
-  );
-
-  const closeIcon = (
-    <RiCloseFill
-      className="remix-icon da-text-color-black-100 da-text-color-dark-0"
-      size={24}
-    />
-  );
+  const options = [
+    {
+      title: "Token Balcance",
+      description: "Get the balance of a custom token in one o more networks",
+      image: Finance,
+      onSelect: () => {
+        hideModal(modalType);
+        showModal("new-token-balance");
+      },
+    },
+    {
+      title: "Staking",
+      description: "Read the rewards and staked amount from a smart contract",
+      image: Logistic,
+      onSelect: () => {
+        hideModal(modalType);
+        showModal("new-staking");
+      },
+    },
+    {
+      title: "Yield Farming",
+      description: "Read the current position from a farming smart contract",
+      image: Charts,
+      onSelect: () => {
+        notification.open({
+          message: "Coming soon!",
+          description: "Yield Farming hooks are not implemented yet...",
+          icon: <RiErrorWarningFill style={{ color: "#1BE7FF" }} />,
+          closeIcon: (
+            <RiCloseFill
+              className="remix-icon da-text-color-black-80"
+              size={24}
+            />
+          ),
+        });
+      },
+    },
+    {
+      title: "Leveraged Yield Farming",
+      description:
+        "Get the rewards, stake amount and lending status for a leverage farming",
+      image: Seo,
+      onSelect: () => {
+        notification.open({
+          message: "Coming soon!",
+          description:
+            "Leveraged Yield Farming hooks are not implemented yet...",
+          icon: <RiErrorWarningFill style={{ color: "#1BE7FF" }} />,
+          closeIcon: (
+            <RiCloseFill
+              className="remix-icon da-text-color-black-80"
+              size={24}
+            />
+          ),
+        });
+      },
+    },
+    {
+      title: "Yield Agreggator",
+      description: "Get the balance of a custom token in one o more networks",
+      image: Callcenter,
+      onSelect: () => {
+        notification.open({
+          message: "Coming soon!",
+          description: "Yield Agreggator hooks are not implemented yet...",
+          icon: <RiErrorWarningFill style={{ color: "#1BE7FF" }} />,
+          closeIcon: (
+            <RiCloseFill
+              className="remix-icon da-text-color-black-80"
+              size={24}
+            />
+          ),
+        });
+      },
+    },
+    {
+      title: "Lending Protocol",
+      description:
+        "Get the colareal, borrowed and liquidation limit from a protocol ",
+      image: Mailing,
+      onSelect: () => {
+        notification.open({
+          message: "Coming soon!",
+          description: "Lending Protocol hooks are not implemented yet...",
+          icon: <RiErrorWarningFill style={{ color: "#1BE7FF" }} />,
+          closeIcon: (
+            <RiCloseFill
+              className="remix-icon da-text-color-black-80"
+              size={24}
+            />
+          ),
+        });
+      },
+    },
+  ];
 
   return (
     <Modal
-      title={modalHeader}
       destroyOnClose={true}
-      width={800}
+      width={1000}
       visible={isNewHookModalVisible}
       onCancel={() => hideModal(modalType)}
-      okText={"Create Hook"}
-      onOk={form.submit}
-      closeIcon={closeIcon}
-      confirmLoading={confirmLoading}
+      footer={null}
     >
-      <NewHookFrom form={form} onSubmit={submit} />
+      <h4 className="da-text-center da-mb-32">
+        What kind of Hook do you want to create?
+      </h4>
+      <Row gutter={[32, 32]}>
+        {options.map((option) => {
+          return (
+            <Col key={`option-${option.title}`} xl={8} md={12} xs={24}>
+              <Button
+                type="default"
+                className="da-text-center"
+                onClick={option.onSelect}
+              >
+                <Space direction="vertical">
+                  <img src={option.image} alt={option.title} />
+                  <h4>{option.title}</h4>
+                  <p className="da-p1-body da-mb-0">{option.description}</p>
+                </Space>
+              </Button>
+            </Col>
+          );
+        })}
+      </Row>
     </Modal>
   );
 });
-
-/*
-
-import { Form, Input, Modal } from "antd";
-import { observer } from "mobx-react-lite";
-import { useContext, useState } from "react";
-import { RiCloseFill } from "react-icons/ri";
-import { useHistory } from "react-router";
-import { HookContext, UIContext, UserContext } from "../../contexts";
-import { NetworkId } from "../../lib/network";
-import { ModalType } from "../../stores/ui-store";
-import { NetworkPicker } from "../network-picker/network-picker";
-import { TokenPicker } from "../token-picker.tsx/token-picker";
-
-const modalType: ModalType = "new-hook";
-export type NewHookModalProps = {};
-
-export const NewHookModal: React.FC<NewHookModalProps> = observer((props) => {
-  const { user } = useContext(UserContext)!
-  const { isNewHookModalVisible, hideModal } = useContext(UIContext)!;
-  const { createNewHook } = useContext(HookContext)!;
-  const history= useHistory()
-  const [confirmLoading, setConfirmLoading] = useState<boolean>(false);
-  const [title, setTitle] = useState<string>("");
-  const [networkId, setNetworkId] = useState<NetworkId>("ethereum");
-  const [tokenIds, setTokenIds] = useState<string[]>([]);
-  const [form] = Form.useForm();
-
-  const submit = async () => {
-    const loggedUserId = user?.uid
-    if(!loggedUserId) {
-      return
-    }
-    setConfirmLoading(true)
-    const hookId = await createNewHook(loggedUserId, title, networkId, tokenIds);
-    hideModal(modalType);
-    setConfirmLoading(false)
-    history.push(`/editor/${hookId}`)
-  };
-
-  const cancel = async () => {
-    setTitle('')
-    setNetworkId('ethereum')
-    setTokenIds([])
-    hideModal(modalType)
-  }
-
-  const validateTokens = async () => {
-    if (tokenIds.length < 1) {
-      throw new Error(
-        "At least one token should be used to interact with the smart contract, e.g: staked token"
-      );
-    }
-  };
-
-  const modalHeader = (
-    <>
-      <h4>New Hook</h4>
-      <p className="da-p1-body" style={{ margin: 0 }}>
-        Connect with a smart contract and fetch data to see it in our dashboard.
-      </p>
-    </>
-  );
-
-  return (
-    <Modal
-      title={modalHeader}
-      destroyOnClose={true}
-      width={800}
-      visible={isNewHookModalVisible}
-      onCancel={cancel}
-      okText={'Create Hook'}
-      onOk={form.submit}
-      closeIcon={
-        <RiCloseFill
-          className="remix-icon da-text-color-black-100 da-text-color-dark-0"
-          size={24}
-        />
-      }
-      confirmLoading={confirmLoading}
-    >
-      <Form
-        form={form}
-        layout="vertical"
-        name="new-hook-form"
-        onFinish={submit}
-      >
-        <Form.Item
-          label="Title"
-          name="title"
-          rules={[
-            {
-              required: true,
-              message: "Please set a title for this hook!",
-              validateTrigger: "onSubmit",
-            },
-            {
-              min: 10,
-              message: "Please, set a more descriptive title",
-              validateTrigger: "onSubmit",
-            },
-          ]}
-        >
-          <Input
-            placeholder="E.g: PancakeSwap ETH-CAKE pool"
-            value={title}
-            onChange={(e) => setTitle(e.target.value)}
-          />
-        </Form.Item>
-
-        <Form.Item
-          label="Network"
-          name="networkId"
-          rules={[{ required: true, validator: async () => {} }]}
-        >
-          <NetworkPicker value={networkId} onNetworkSelected={setNetworkId} />
-        </Form.Item>
-
-        <Form.Item
-          label="Tokens"
-          name="tokenIds"
-          rules={[{ required: true, validator: validateTokens }]}
-        >
-          <TokenPicker
-            values={tokenIds}
-            networkId={networkId}
-            onTokensChange={setTokenIds}
-          />
-        </Form.Item>
-      </Form>
-    </Modal>
-  );
-});
-
-*/

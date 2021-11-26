@@ -1,7 +1,7 @@
 import axios from "axios";
 import { BigNumber } from "../lib/sdk/big-number";
 import { tokens } from "../lib/config/tokens";
-import { TokensPrice } from "../lib/token";
+import { TokensPrice } from "lib/sdk/token";
 
 export function pick<T, K extends keyof T>(obj: T, ...keys: K[]): Pick<T, K> {
   const ret: any = {};

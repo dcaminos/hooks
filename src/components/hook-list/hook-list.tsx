@@ -89,7 +89,7 @@ export const HookList: React.FC<HookListProps> = (props) => {
         />
       ) : (
         <List
-          loading={(loading || false)}
+          loading={loading || false}
           pagination={pagiCheckLarge}
           dataSource={hooksFilters}
           renderItem={(value) => (

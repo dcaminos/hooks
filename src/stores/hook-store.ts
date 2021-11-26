@@ -9,15 +9,13 @@ import {
 } from "@firebase/firestore";
 import { where } from "firebase/firestore";
 import { action, makeAutoObservable, runInAction } from "mobx";
-import { networks } from "../lib/config/networks";
-import { tokens } from "../lib/config/tokens";
 import { hookConverter } from "../lib/converters/hook-converter";
 import { Hook } from "../lib/hook";
-import { NetworkId } from "../lib/network";
 import { RootStore } from "./root-store";
 
 export class HookStore {
   hooks: Hook[] = [];
+  action: "creating" | "fetching" | "updating" | undefined;
 
   constructor(private rootStore: RootStore) {
     makeAutoObservable(this);
@@ -25,56 +23,24 @@ export class HookStore {
   }
 
   @action
-  createNewHook = async (
-    userId: string,
-    title: string,
-    networkId: NetworkId,
-    tokenIds: string[]
-  ) => {
-    const network = networks.find((n) => n.id === networkId);
-    if (!network) {
-      return;
-    }
-
-    let tokensText = "";
-    tokenIds.forEach((tokenId) => {
-      const token = tokens.find((t) => t.id === tokenId);
-      if (!token) {
-        return;
-      }
-
-      tokensText += `const address${token.symbol.toUpperCase()} = '${
-        token.contracts[networkId]
-      }'\n`;
-    });
-
-    const hook = new Hook({
-      id: "",
-      owner: userId,
-      title: title,
-      networkId: networkId,
-      tokenIds: tokenIds,
-      isPublic: false,
-      code: network.hookTemplate.replace("TOKENS_ADDRESSES", tokensText),
-      createdAt: new Date(),
-      updatedAt: new Date(),
-      versions: [],
-    });
-
+  createHook = async (hook: Hook) => {
+    this.action = "creating";
     const hookReference = await addDoc(
       collection(this.rootStore.firestore, "hooks"),
       hookConverter.toFirestore(hook)
     );
-
+    runInAction(() => (this.action = undefined));
     return hookReference.id;
   };
 
   fetchHook = async (hookId: string): Promise<Hook | undefined> => {
+    this.action = "fetching";
     const hookRef = doc(this.rootStore.firestore, "hooks", hookId);
     const hookDoc = await getDoc(hookRef.withConverter(hookConverter));
     if (!hookDoc.exists()) {
       return undefined;
     }
+    runInAction(() => (this.action = undefined));
     return hookDoc.data();
   };
 
@@ -82,11 +48,14 @@ export class HookStore {
     if (!hook.id) {
       throw Error("Hook id is missing");
     }
+    this.action = "updating";
     const hookRef = doc(this.rootStore.firestore, "hooks", hook.id);
     await setDoc(hookRef.withConverter(hookConverter), hook);
+    runInAction(() => (this.action = undefined));
   };
 
   fetchHooks = async () => {
+    this.action = "fetching";
     const hooksCol = collection(this.rootStore.firestore, "hooks");
     const q = query(hooksCol, where("isPublic", "==", false)).withConverter(
       hookConverter
@@ -94,6 +63,27 @@ export class HookStore {
     const r = await getDocs(q);
     runInAction(() => {
       this.hooks = r.docs.map((doc) => doc.data());
+      this.action = undefined;
     });
   };
 }
+
+// JS
+/*
+async function runHook(request) {
+    const balances = await request.token.balancesOf(request.walletAdress);
+    return new TokenBalanceResponse(balances);
+}
+
+ runHook
+ */
+
+// TS
+/*
+import { TokenBalanceRequest, TokenBalanceResponse, BigNumber, NetworkId } from 'file:///hooks-sdk'
+
+async function runHook(request: TokenBalanceRequest): Promise<TokenBalanceResponse> {
+    const balances: Map<NetworkId,BigNumber> = await request.token.balancesOf(request.walletAdress)
+    return new TokenBalanceResponse(balances)
+}
+ */

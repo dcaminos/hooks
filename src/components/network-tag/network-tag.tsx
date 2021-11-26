@@ -1,16 +1,17 @@
 import { Avatar, Tag } from "antd";
-import { Network } from "lib/network";
+import { Network } from "lib/sdk/network";
 
 export type NetworkTagProps = {
   className?: string;
-  network: Network;
+  networks: Network[];
   closable?: boolean;
   onClose?: () => void;
 };
 
 export const NetworkTag: React.FC<NetworkTagProps> = (props) => {
-  const { className, network, closable, onClose } = props;
+  const { className, networks, closable, onClose } = props;
 
+  const network = networks[0];
   return (
     <Tag
       style={{
