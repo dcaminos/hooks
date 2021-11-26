@@ -26,10 +26,10 @@ export const EditorHome: React.FC = observer(() => {
   }
 
   const hookActions = (hook: Hook) => (
-    <div style={{ display: "flex", justifyContent: "center" }}>
-      <Button type="primary" className="da-ml-8" >Clone</Button>
-      <Button type="primary" className="da-ml-8" onClick={ () => redirectToEditHook(hook.id)}>Edit</Button>
-    </div>
+    <>
+      <Button type="primary" block className="da-ml-8" >Clone</Button>
+      <Button type="primary" block className="da-ml-8" onClick={ () => redirectToEditHook(hook.id)}>Edit</Button>
+    </>
   )
 
   return (

@@ -29,8 +29,11 @@ export const HookListHeader: React.FC<HookListHeaderProps> = (props) => {
           style={{ width: 150 }}
           onChange={(e) => setListProps({ sortValue: e })}
         >
-          <Option value="lowest">Lowest</Option>
-          <Option value="highest">Highest</Option>
+          <Option value="alpha">Alphabetically</Option>
+          <Option value="network">By Network</Option>
+          <Option value="lastUpdated">Last updated</Option>
+          <Option value="newer">Newer</Option>
+          <Option value="older">Older</Option>
         </Select>
       </Col>
 

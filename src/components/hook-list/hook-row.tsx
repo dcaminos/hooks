@@ -7,12 +7,12 @@ import { Hook } from "../../lib/hook";
 import { NetworkTag } from "../network-tag/network-tag";
 import { TokenTag } from "../token-tag/token-tag";
 
-export type HookCardProps = {
+export type HookCardRowProps = {
   hook: Hook;
   actionsRender: (hook: Hook) => ReactNode;
 };
 
-export const HookCard: React.FC<HookCardProps> = (props) => {
+export const HookCardRow: React.FC<HookCardRowProps> = (props) => {
   const { hook, actionsRender } = props;
 
   const network = networks.find((n) => n.id === hook.networkId);
@@ -21,23 +21,17 @@ export const HookCard: React.FC<HookCardProps> = (props) => {
     .map((t) => t && <TokenTag key={`token-tag-${t.id}`} token={t} />);
 
   return (
-    <Col xl={6} md={12} xs={24} span={24} style={{ padding: "0px 16px" }}>
-      <Card className="da-border-color-black-40 da-mb-32 da-eCommerceCardOne">
-        <Row>
-          <Col span={24}>
-            <div className="da-mb-24 " style={{ display: "flex" }}>
+    <Col xl={24} md={24} xs={24} span={24} style={{ padding: "0px 16px" }}>
+      <Card className="da-border-color-black-40 da-mb-16" bodyStyle={{padding: "8px 24px"}}>
+        <Row justify="space-between" align="middle" >
+          <Col span={10}>
+            <h4 className="da-mb-4">{hook.title}
+            <span style={{display: "inline-block", marginLeft: "8px", verticalAlign: "sub"}}>
               {network && <NetworkTag network={network} />}
-            </div>
-
-            <p className="da-mb-4 da-badge-text da-font-weight-400">
-              {hook.createdAt.toDateString()}
-            </p>
-            <h4 className="da-mb-4">{hook.title}</h4>
-
-            <p className="da-mb-24 da-badge-text da-font-weight-400">
-              Last update: {hook.updatedAt.toLocaleString()}
-            </p>
-
+            </span>
+            </h4>
+          </Col>
+          <Col span={10} className="da-pt-8">
             <p
               style={{ textAlign: "center" }}
               className="da-badge-text da-mb-8 da-text-color-black-100 da-text-color-dark-0"
@@ -45,12 +39,13 @@ export const HookCard: React.FC<HookCardProps> = (props) => {
               Tokens
             </p>
             <div
-              className="da-mb-24"
+              className="da-mb-12"
               style={{ display: "flex", justifyContent: "center", flexWrap: "wrap" }}
             >
               {tokenTags}
             </div>
-
+          </Col>
+          <Col span={4}>
             <div style={{ display: "flex", justifyContent: "space-between" }}>
 
               {actionsRender(hook)}

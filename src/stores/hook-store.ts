@@ -88,7 +88,7 @@ export class HookStore {
 
   fetchHooks = async () => {
     const hooksCol = collection(this.rootStore.firestore, "hooks");
-    const q = query(hooksCol, where("isPublic", "==", true)).withConverter(
+    const q = query(hooksCol, where("isPublic", "==", false)).withConverter(
       hookConverter
     );
     const r = await getDocs(q);

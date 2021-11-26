@@ -3,17 +3,18 @@ import { ReactNode, useState } from "react";
 import { HookListHeader } from "../../components/hook-list/hook-list-header";
 import { Hook } from "../../lib/hook";
 import { HookCard } from "./hook-card";
+import { HookCardRow } from "./hook-row";
 
 export type HookListInternalProps = {
   listType: "list" | "card";
   searchValue: string;
-  sortValue: "updatedAt" | "createdAt" | "title";
+  sortValue: "alpha" | "network" | "lastUpdated" | "newer" | "older";
 };
 
 const defaultHookListInternalProps: HookListInternalProps = {
   listType: "list",
   searchValue: "",
-  sortValue: "updatedAt",
+  sortValue: "lastUpdated",
 };
 
 export type HookListProps = {
@@ -21,6 +22,7 @@ export type HookListProps = {
   renderHookActions: (hook: Hook) => ReactNode;
   renderHeaderActions: () => ReactNode;
   loading?: boolean;
+  afterHeaderRender?: ReactNode;
 };
 
 export const HookList: React.FC<HookListProps> = (props) => {
@@ -38,7 +40,31 @@ export const HookList: React.FC<HookListProps> = (props) => {
   });
 
   hooksFilters.sort((a: Hook, b: Hook) => {
-    return -1;
+    switch (listProps.sortValue) {
+      case "alpha":
+        if(a.title.toLowerCase() < b.title.toLowerCase()) { return -1; }
+        if(a.title.toLowerCase() > b.title.toLowerCase()) { return 1; }
+        return 0;
+      case "network":
+        if(a.networkId?.toLowerCase() < b.networkId?.toLowerCase()) { return -1; }
+        if(a.networkId?.toLowerCase() > b.networkId?.toLowerCase()) { return 1; }
+        return 0;
+      case "lastUpdated":
+        if(a.updatedAt > b.updatedAt) { return -1; }
+        if(a.updatedAt < b.updatedAt) { return 1; }
+        return 0;
+      case "newer":
+        if(a.createdAt > b.createdAt) { return -1; }
+        if(a.createdAt < b.createdAt) { return 1; }
+        return 0;
+      case "older":
+        if(a.createdAt < b.createdAt) { return -1; }
+        if(a.createdAt > b.createdAt) { return 1; }
+        return 0;
+      default: 
+        return -1;
+    }
+
   });
 
   const pagiCheck = hooksFilters.length <= 8 ? undefined : { pageSize: 8 };
@@ -51,6 +77,7 @@ export const HookList: React.FC<HookListProps> = (props) => {
         setListProps={setPartialListProps}
         actionsRender={renderHeaderActions}
       />
+      {props.afterHeaderRender ? props.afterHeaderRender : null}
       {listProps.listType === "card" ? (
         <List<Hook>
           loading={loading || false}
@@ -66,7 +93,7 @@ export const HookList: React.FC<HookListProps> = (props) => {
           pagination={pagiCheckLarge}
           dataSource={hooksFilters}
           renderItem={(value) => (
-            <HookCard hook={value} actionsRender={renderHookActions} />
+            <HookCardRow hook={value} actionsRender={renderHookActions} />
           )}
         />
       )}
