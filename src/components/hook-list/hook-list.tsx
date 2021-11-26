@@ -42,29 +42,43 @@ export const HookList: React.FC<HookListProps> = (props) => {
   hooksFilters.sort((a: Hook, b: Hook) => {
     switch (listProps.sortValue) {
       case "alpha":
-        if(a.title.toLowerCase() < b.title.toLowerCase()) { return -1; }
-        if(a.title.toLowerCase() > b.title.toLowerCase()) { return 1; }
+        if (a.title.toLowerCase() < b.title.toLowerCase()) {
+          return -1;
+        }
+        if (a.title.toLowerCase() > b.title.toLowerCase()) {
+          return 1;
+        }
         return 0;
       case "network":
-        if(a.networkId?.toLowerCase() < b.networkId?.toLowerCase()) { return -1; }
-        if(a.networkId?.toLowerCase() > b.networkId?.toLowerCase()) { return 1; }
+        // not implemented
         return 0;
       case "lastUpdated":
-        if(a.updatedAt > b.updatedAt) { return -1; }
-        if(a.updatedAt < b.updatedAt) { return 1; }
+        if (a.updatedAt > b.updatedAt) {
+          return -1;
+        }
+        if (a.updatedAt < b.updatedAt) {
+          return 1;
+        }
         return 0;
       case "newer":
-        if(a.createdAt > b.createdAt) { return -1; }
-        if(a.createdAt < b.createdAt) { return 1; }
+        if (a.createdAt > b.createdAt) {
+          return -1;
+        }
+        if (a.createdAt < b.createdAt) {
+          return 1;
+        }
         return 0;
       case "older":
-        if(a.createdAt < b.createdAt) { return -1; }
-        if(a.createdAt > b.createdAt) { return 1; }
+        if (a.createdAt < b.createdAt) {
+          return -1;
+        }
+        if (a.createdAt > b.createdAt) {
+          return 1;
+        }
         return 0;
-      default: 
+      default:
         return -1;
     }
-
   });
 
   const pagiCheck = hooksFilters.length <= 8 ? undefined : { pageSize: 8 };

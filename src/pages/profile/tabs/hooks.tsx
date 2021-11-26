@@ -10,7 +10,7 @@ export const HooksTab: React.FC = observer(() => {
   const { hooks, fetchHooks } = useContext(HookContext)!;
   const { user, loading, updateUser } = useContext(UserContext)!;
 
-  const [ filterChoice, setFilterChoice ] = useState('all');
+  const [filterChoice, setFilterChoice] = useState("all");
 
   if (!user) return null;
 
@@ -28,13 +28,12 @@ export const HooksTab: React.FC = observer(() => {
 
   const unSelectHook = (hookId: string | undefined) => {
     if (!hookId || loading) return;
-    user.hookIds = user.hookIds.filter(id => id !== hookId);
+    user.hookIds = user.hookIds.filter((id) => id !== hookId);
     updateUser(user);
-  }
+  };
 
   const hookActions = (hook: Hook) => {
     if (isHookSubscribed(hook.id)) {
-
       return (
         <Button type="default" block onClick={() => unSelectHook(hook.id)}>
           Unsubscribe
@@ -50,18 +49,23 @@ export const HooksTab: React.FC = observer(() => {
   };
 
   const isHookSubscribed: (hookId: string) => boolean = (hookId: string) => {
-    return selectedHookIds.some( id => id === hookId );
-  }
-  
-  const handleFilterChange = (e:any) => setFilterChoice(e.target.value) ;
+    return selectedHookIds.some((id) => id === hookId);
+  };
+
+  const handleFilterChange = (e: any) => setFilterChoice(e.target.value);
 
   const FiltersChoices = (
-    <Radio.Group size="middle" value={filterChoice} onChange={handleFilterChange} className="da-mb-8">
+    <Radio.Group
+      size="middle"
+      value={filterChoice}
+      onChange={handleFilterChange}
+      className="da-mb-8"
+    >
       <Radio.Button value="all">All</Radio.Button>
       <Radio.Button value="subs">Subscribed</Radio.Button>
       <Radio.Button value="unsubs">Unsubscribed</Radio.Button>
     </Radio.Group>
-  )
+  );
 
   let filteredHooks: Hook[] = [];
 
@@ -70,12 +74,12 @@ export const HooksTab: React.FC = observer(() => {
       filteredHooks = hooks;
       break;
     case "subs":
-      filteredHooks = hooks.filter( hook => ! isHookSubscribed(hook.id) ) 
+      filteredHooks = hooks.filter((hook) => !isHookSubscribed(hook.id));
       break;
     case "unsubs":
-      filteredHooks = hooks.filter( hook => isHookSubscribed(hook.id) ) 
+      filteredHooks = hooks.filter((hook) => isHookSubscribed(hook.id));
       break;
-    }
+  }
 
   return (
     <Card>

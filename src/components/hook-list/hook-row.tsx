@@ -15,20 +15,32 @@ export type HookCardRowProps = {
 export const HookCardRow: React.FC<HookCardRowProps> = (props) => {
   const { hook, actionsRender } = props;
 
-  const network = networks.find((n) => n.id === hook.networkId);
+  const hookNetworks = networks.filter((n) => hook.networkIds.includes(n.id));
   const tokenTags = hook.tokenIds
     .map((tid) => tokens.find((t) => t.id === tid))
     .map((t) => t && <TokenTag key={`token-tag-${t.id}`} token={t} />);
 
   return (
     <Col xl={24} md={24} xs={24} span={24} style={{ padding: "0px 16px" }}>
-      <Card className="da-border-color-black-40 da-mb-16" bodyStyle={{padding: "8px 24px"}}>
-        <Row justify="space-between" align="middle" >
+      <Card
+        className="da-border-color-black-40 da-mb-16"
+        bodyStyle={{ padding: "8px 24px" }}
+      >
+        <Row justify="space-between" align="middle">
           <Col span={10}>
-            <h4 className="da-mb-4">{hook.title}
-            <span style={{display: "inline-block", marginLeft: "8px", verticalAlign: "sub"}}>
-              {network && <NetworkTag network={network} />}
-            </span>
+            <h4 className="da-mb-4">
+              {hook.title}
+              <span
+                style={{
+                  display: "inline-block",
+                  marginLeft: "8px",
+                  verticalAlign: "sub",
+                }}
+              >
+                {hookNetworks.length > 0 && (
+                  <NetworkTag networks={hookNetworks} />
+                )}
+              </span>
             </h4>
           </Col>
           <Col span={10} className="da-pt-8">
@@ -40,16 +52,18 @@ export const HookCardRow: React.FC<HookCardRowProps> = (props) => {
             </p>
             <div
               className="da-mb-12"
-              style={{ display: "flex", justifyContent: "center", flexWrap: "wrap" }}
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                flexWrap: "wrap",
+              }}
             >
               {tokenTags}
             </div>
           </Col>
           <Col span={4}>
             <div style={{ display: "flex", justifyContent: "space-between" }}>
-
               {actionsRender(hook)}
-
             </div>
           </Col>
         </Row>

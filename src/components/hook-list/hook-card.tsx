@@ -59,7 +59,6 @@ export const HookCard: React.FC<HookCardProps> = (props) => {
 
             <div style={{ display: "flex", justifyContent: "space-between" }}>
               {actionsRender(hook)}
-
             </div>
           </Col>
         </Row>
