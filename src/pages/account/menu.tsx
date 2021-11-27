@@ -4,7 +4,7 @@ import menuImg from "assets/images/pages/profile/menu-img.svg";
 import React, { useContext } from "react";
 import { Password, User } from "react-iconly";
 import { Link, useLocation } from "react-router-dom";
-import { UIContext } from "utils/contexts";
+import { UIContext } from "components/router/contexts";
 
 export const MenuProfile = (props: any) => {
   //const menuIconClass: string = "remix-icon da-mr-8";

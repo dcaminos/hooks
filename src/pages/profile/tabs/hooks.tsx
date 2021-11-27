@@ -1,10 +1,9 @@
 import { Button, Card, Radio } from "antd";
 import { HookList } from "components/hook-list/hook-list";
+import { HookContext, UserContext } from "components/router/contexts";
 import { Hook } from "lib/hook";
 import { observer } from "mobx-react-lite";
-import { useEffect } from "react";
 import { useContext, useState } from "react";
-import { HookContext, UserContext } from "utils/contexts";
 
 export const HooksTab: React.FC = observer(() => {
   const { hooks, fetchHooks } = useContext(HookContext)!;
@@ -14,7 +13,7 @@ export const HooksTab: React.FC = observer(() => {
 
   if (!user) return null;
 
-  const selectedHookIds: string[] = user.hookIds;
+  const selectedHookIds: string[] = user.profiles[0].hookIds;
 
   if (hooks.length === 0) fetchHooks();
 
@@ -22,13 +21,15 @@ export const HooksTab: React.FC = observer(() => {
 
   const selectHook = (hookId: string | undefined) => {
     if (!hookId || loading) return;
-    user.hookIds.push(hookId);
+    user.profiles[0].hookIds.push(hookId);
     updateUser(user);
   };
 
   const unSelectHook = (hookId: string | undefined) => {
     if (!hookId || loading) return;
-    user.hookIds = user.hookIds.filter((id) => id !== hookId);
+    user.profiles[0].hookIds = user.profiles[0].hookIds.filter(
+      (id) => id !== hookId
+    );
     updateUser(user);
   };
 

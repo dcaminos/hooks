@@ -9,9 +9,10 @@ import {
 } from "@firebase/firestore";
 import { where } from "firebase/firestore";
 import { action, makeAutoObservable, runInAction } from "mobx";
-import { hookConverter } from "../lib/converters/hook-converter";
-import { Hook } from "../lib/hook";
+import { Hook, hookConverter, TokenBalanceData } from "lib/hook";
 import { RootStore } from "./root-store";
+import { TokenBalanceRequest } from "lib/sdk/token-balance/token-balance-request";
+import { run } from "lib/sdk/sdk";
 
 export class HookStore {
   hooks: Hook[] = [];
@@ -65,6 +66,33 @@ export class HookStore {
       this.hooks = r.docs.map((doc) => doc.data());
       this.action = undefined;
     });
+  };
+
+  getHookRequest = (hook: Hook, walletAddress: string) => {
+    switch (hook.type) {
+      case "token-balance":
+        const token = this.rootStore.tokenStore?.getToken(
+          (hook.data as TokenBalanceData).tokenId
+        );
+        if (!token) {
+          return;
+        }
+        return new TokenBalanceRequest({ walletAddress, token });
+      default:
+        return undefined;
+    }
+  };
+
+  @action
+  runHook = async (hook: Hook, walletAddress: string) => {
+    const currentVersion = hook.versions.find((v) => v.active);
+    const request = this.getHookRequest(hook, walletAddress);
+    if (!hook.isPublic || !currentVersion || !request) {
+      return;
+    }
+
+    const response = await run(currentVersion.js, request);
+    return response;
   };
 }
 

@@ -3,7 +3,7 @@ import { observer } from "mobx-react-lite";
 import { ChangeEvent, ReactNode, useContext, useEffect } from "react";
 import { RiErrorWarningFill } from "react-icons/ri";
 import { FiShare } from "react-icons/fi";
-import { EditorContext, UIContext } from "utils/contexts";
+import { EditorContext, UIContext } from "components/router/contexts";
 import { ConsoleTab } from "./console-tab";
 import { ErrorsTab } from "./errors-tab";
 import "./ide-bottom-panel.less";

@@ -12,7 +12,7 @@ import { EditorIDE } from "../../pages/editor-ide/editor-ide";
 import { PageNotFound } from "../../pages/page-not-found/page-not-found";
 import { SignIn } from "../../pages/sign-in/sign-in";
 import { SingUp } from "../../pages/sing-up/sing-up";
-import { UIContext } from "../../utils/contexts";
+import { UIContext } from "./contexts";
 import { FixedLayout } from "../layout/fixed-layout";
 import { VerticalLayout } from "../layout/vertical-layout";
 import { PrivatePage } from "./private-page";

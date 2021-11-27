@@ -5,7 +5,7 @@ import YodaDark from "../../assets/images/logo/logo-dark.svg";
 
 import { observer } from "mobx-react-lite";
 import { useContext } from "react";
-import { UIContext } from "../../utils/contexts";
+import { UIContext } from "../router/contexts";
 
 export type LogoProps = {
   onClose: React.MouseEventHandler<HTMLAnchorElement>;

@@ -1,11 +1,7 @@
 //import { searchProduct, priceFilter } from '../../../../redux/ecommerce/ecommerceActions';
 import { Card, Col, Row } from "antd";
 import React, { ReactNode } from "react";
-import { networks } from "../../lib/config/networks";
-import { tokens } from "../../lib/config/tokens";
 import { Hook } from "../../lib/hook";
-import { NetworkTag } from "../network-tag/network-tag";
-import { TokenTag } from "../token-tag/token-tag";
 
 export type HookCardProps = {
   hook: Hook;
@@ -15,24 +11,19 @@ export type HookCardProps = {
 export const HookCard: React.FC<HookCardProps> = (props) => {
   const { hook, actionsRender } = props;
 
-  const hookNetworks = networks.filter((n) => hook.networkIds.includes(n.id));
-  const tokenTags = hook.tokenIds
-    .map((tid) => tokens.find((t) => t.id === tid))
-    .map((t) => t && <TokenTag key={`token-tag-${t.id}`} token={t} />);
-
   return (
     <Col xl={6} md={12} xs={24} span={24} style={{ padding: "0px 16px" }}>
       <Card className="da-border-color-black-40 da-mb-32 da-eCommerceCardOne">
         <Row>
           <Col span={24}>
-            <div className="da-mb-24 " style={{ display: "flex" }}>
+            {/*<div className="da-mb-24 " style={{ display: "flex" }}>
               {hookNetworks.length > 0 && (
                 <NetworkTag networks={hookNetworks} />
               )}
-            </div>
+              </div>*/}
 
             <p className="da-mb-4 da-badge-text da-font-weight-400">
-              {hook.createdAt.toDateString()}
+              {hook.createdAt.toString()}
             </p>
             <h4 className="da-mb-4">{hook.title}</h4>
 
@@ -53,9 +44,7 @@ export const HookCard: React.FC<HookCardProps> = (props) => {
                 justifyContent: "center",
                 flexWrap: "wrap",
               }}
-            >
-              {tokenTags}
-            </div>
+            ></div>
 
             <div style={{ display: "flex", justifyContent: "space-between" }}>
               {actionsRender(hook)}

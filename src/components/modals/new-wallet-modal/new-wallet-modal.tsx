@@ -5,7 +5,7 @@ import { observer } from "mobx-react-lite";
 import { useContext } from "react";
 import { RiCloseFill } from "react-icons/ri";
 import { ModalType } from "stores/ui-store";
-import { UIContext, UserContext } from "utils/contexts";
+import { UIContext, UserContext } from "components/router/contexts";
 
 const modalType: ModalType = "new-wallet";
 

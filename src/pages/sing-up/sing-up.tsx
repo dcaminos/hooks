@@ -6,7 +6,7 @@ import { AuthLeftContent } from "../../components/auth-left-content/auth-left-co
 
 import { useContext } from "react";
 import { RiCloseFill, RiErrorWarningFill } from "react-icons/ri";
-import { UserContext } from "../../utils/contexts";
+import { UserContext } from "../../components/router/contexts";
 
 export type FormItemState = {
   value: string;

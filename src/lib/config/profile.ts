@@ -1,6 +1,8 @@
-export const defaultProfile = {
-  title: "Default",
+import { UserProfile } from "lib/user";
+
+export const defaultProfile: UserProfile = {
   active: true,
-  tokenIds: ["BTC", "ETH"],
+  title: "Default",
+  wallets: [],
   hookIds: [],
 };

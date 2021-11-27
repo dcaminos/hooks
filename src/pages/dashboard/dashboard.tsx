@@ -16,7 +16,7 @@ import AnalyticsRevenueRadarCard from "../../examples/analytics-revenue-radar-ca
 import AnalyticsVisitersLineCard from "../../examples/analytics-visiters-line-card";
 import { useContext } from "react";
 import { observer } from "mobx-react-lite";
-import { UIContext, UserContext } from "../../utils/contexts";
+import { UIContext, UserContext } from "../../components/router/contexts";
 
 export const Dashboard: React.FC = observer((props) => {
   const { user } = useContext(UserContext)!;

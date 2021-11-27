@@ -4,7 +4,7 @@ import { useContext } from "react";
 import { RiCheckboxCircleFill } from "react-icons/ri";
 import { useHistory } from "react-router";
 import { ModalType } from "stores/ui-store";
-import { UIContext } from "utils/contexts";
+import { UIContext } from "components/router/contexts";
 
 const modalType: ModalType = "publish-hook-success";
 

@@ -13,12 +13,11 @@ import {
 } from "firebase/auth";
 import { collection, query, where } from "firebase/firestore";
 import { action, makeAutoObservable, runInAction, when } from "mobx";
-import { hookConverter } from "lib/converters/hook-converter";
-import { userConverter } from "lib/converters/user-converter";
-import { Hook } from "lib/hook";
-import { User, UserProfile, UserWallet } from "../lib/user";
-
+import { Hook, hookConverter } from "lib/hook";
+import { User, userConverter, UserProfile, UserWallet } from "lib/user";
 import { RootStore } from "./root-store";
+import moment from "moment";
+import { defaultProfile } from "lib/config/profile";
 
 export class UserStore {
   private static firebaseUser: FirebaseUser | null = null;
@@ -27,7 +26,6 @@ export class UserStore {
   public user: User | undefined;
   public authReady: boolean = false;
   public userHooks: Hook[] = [];
-
   public loading: boolean = false;
 
   constructor(private rootStore: RootStore) {
@@ -95,6 +93,9 @@ export class UserStore {
   @action
   fetchUser = async () => {
     if (!UserStore.firebaseUser) {
+      runInAction(() => {
+        this.authReady = true;
+      });
       return;
     }
 
@@ -106,17 +107,15 @@ export class UserStore {
     const userDoc = await getDoc(docRef.withConverter(userConverter));
     let user: User | undefined = undefined;
     if (!userDoc.exists()) {
-      user = new User({
+      user = {
         id: UserStore.firebaseUser.uid,
         email: UserStore.firebaseUser.email,
         displayName: UserStore.firebaseUser.displayName,
         photoURL: UserStore.firebaseUser.photoURL,
         emailVerified: UserStore.firebaseUser.emailVerified,
-        profiles: [],
-        tokenIds: [],
-        hookIds: [],
-        createdAt: new Date(),
-      });
+        profiles: [defaultProfile],
+        createdAt: moment(),
+      } as User;
       await setDoc(docRef.withConverter(userConverter), user);
     } else {
       user = userDoc.data();
@@ -132,10 +131,10 @@ export class UserStore {
   };
 
   @action
-  addProfile = async (profile: UserProfile) => {
+  createProfile = async (profile: Partial<UserProfile>) => {
     if (!this.user) return;
     const user = { ...this.user };
-    user.profiles.push(profile);
+    user.profiles.push({ ...defaultProfile, ...profile });
     const userDocRef = doc(this.rootStore.firestore, "users", this.user.id);
     await setDoc(userDocRef.withConverter(userConverter), user);
     runInAction(() => {
@@ -185,13 +184,5 @@ export class UserStore {
       this.user = user;
       this.loading = false;
     });
-  };
-
-  @action
-  setTokens = (tokenIds: string[]) => {
-    if (!this.user) return;
-    const user = { ...this.user };
-    user.tokenIds = tokenIds;
-    this.user = user;
   };
 }

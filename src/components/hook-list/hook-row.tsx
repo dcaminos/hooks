@@ -1,11 +1,7 @@
 //import { searchProduct, priceFilter } from '../../../../redux/ecommerce/ecommerceActions';
 import { Card, Col, Row } from "antd";
 import React, { ReactNode } from "react";
-import { networks } from "../../lib/config/networks";
-import { tokens } from "../../lib/config/tokens";
 import { Hook } from "../../lib/hook";
-import { NetworkTag } from "../network-tag/network-tag";
-import { TokenTag } from "../token-tag/token-tag";
 
 export type HookCardRowProps = {
   hook: Hook;
@@ -14,11 +10,6 @@ export type HookCardRowProps = {
 
 export const HookCardRow: React.FC<HookCardRowProps> = (props) => {
   const { hook, actionsRender } = props;
-
-  const hookNetworks = networks.filter((n) => hook.networkIds.includes(n.id));
-  const tokenTags = hook.tokenIds
-    .map((tid) => tokens.find((t) => t.id === tid))
-    .map((t) => t && <TokenTag key={`token-tag-${t.id}`} token={t} />);
 
   return (
     <Col xl={24} md={24} xs={24} span={24} style={{ padding: "0px 16px" }}>
@@ -36,11 +27,7 @@ export const HookCardRow: React.FC<HookCardRowProps> = (props) => {
                   marginLeft: "8px",
                   verticalAlign: "sub",
                 }}
-              >
-                {hookNetworks.length > 0 && (
-                  <NetworkTag networks={hookNetworks} />
-                )}
-              </span>
+              ></span>
             </h4>
           </Col>
           <Col span={10} className="da-pt-8">
@@ -57,9 +44,7 @@ export const HookCardRow: React.FC<HookCardRowProps> = (props) => {
                 justifyContent: "center",
                 flexWrap: "wrap",
               }}
-            >
-              {tokenTags}
-            </div>
+            ></div>
           </Col>
           <Col span={4}>
             <div style={{ display: "flex", justifyContent: "space-between" }}>

@@ -7,10 +7,10 @@ const fs = require("fs");
 
 const delay = (ms) => new Promise((res) => setTimeout(res, ms));
 
-const tsTemplate = ` import { Token } from '../token'
+const tsTemplate = `import { TokenD } from "lib/sdk/token";
 
 // @ts-ignore
-export const tokens: Token[] = `;
+export const tokens: TokenD[] = `;
 
 const getTokenContracts = async () => {
   const contracts = {};

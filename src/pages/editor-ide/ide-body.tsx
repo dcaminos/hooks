@@ -3,8 +3,8 @@ import Editor, { Monaco } from "@monaco-editor/react";
 import { observer } from "mobx-react-lite";
 import * as monaco from "monaco-editor/esm/vs/editor/editor.api";
 import React, { useContext } from "react";
-import { addHooksSDK } from "../../lib/sdk/hooks-sdk";
-import { EditorContext, UIContext } from "../../utils/contexts";
+import { addHooksSDK } from "../../lib/sdk/sdk";
+import { EditorContext, UIContext } from "../../components/router/contexts";
 
 export const IdeBody: React.FC = observer((props) => {
   const { code, updateCode, runTest, setEditorErrors, currentHook } =

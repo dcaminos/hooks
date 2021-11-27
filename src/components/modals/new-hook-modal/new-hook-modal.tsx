@@ -9,7 +9,7 @@ import { observer } from "mobx-react-lite";
 import { useContext } from "react";
 import { RiCloseFill, RiErrorWarningFill } from "react-icons/ri";
 import { ModalType } from "stores/ui-store";
-import { UIContext } from "utils/contexts";
+import { UIContext } from "components/router/contexts";
 
 const modalType: ModalType = "new-hook";
 

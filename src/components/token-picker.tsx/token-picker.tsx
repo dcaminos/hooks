@@ -1,15 +1,15 @@
 import { Avatar, Select, Space } from "antd";
+import { TokenContext } from "components/router/contexts";
 import { TokenTag } from "components/token-tag/token-tag";
+import { NetworkId } from "lib/sdk/network";
 import { Token } from "lib/sdk/token";
 import { observer } from "mobx-react-lite";
 import { ReactNode, useContext, useEffect, useState } from "react";
-import { NetworkId } from "lib/sdk/network";
-import { TokenContext } from "utils/contexts";
 
 export type TokenPickerProps = {
-  values: string[];
+  value: string | undefined;
+  onChange: (tokenId: string) => void;
   networkId?: NetworkId;
-  onTokensChange: (tokenIds: any) => void;
 };
 
 type TokenPickerItem = {
@@ -20,7 +20,7 @@ type TokenPickerItem = {
 
 export const TokenPicker: React.FC<TokenPickerProps> = observer((props) => {
   const { getTokensPerNetwork } = useContext(TokenContext)!;
-  const { values, networkId, onTokensChange } = props;
+  const { value, networkId, onChange } = props;
   const [options, setOptions] = useState<TokenPickerItem[]>([]);
 
   useEffect(() => {
@@ -36,7 +36,7 @@ export const TokenPicker: React.FC<TokenPickerProps> = observer((props) => {
         token,
       }))
     );
-  }, [setOptions, getTokensPerNetwork, onTokensChange, networkId]);
+  }, [setOptions, getTokensPerNetwork, onChange, networkId]);
 
   const filterOption = (input: string, option: any) => {
     const symbol: string = option.token.symbol.toLowerCase();
@@ -66,12 +66,10 @@ export const TokenPicker: React.FC<TokenPickerProps> = observer((props) => {
 
   return (
     <Select
-      mode="multiple"
       placeholder="Please select "
-      defaultValue={[]}
-      value={values}
+      value={value}
       tagRender={tagRender}
-      onChange={onTokensChange}
+      onChange={onChange}
       options={options}
       filterOption={filterOption}
       maxTagCount={"responsive"}

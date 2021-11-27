@@ -1,6 +1,8 @@
 import { Avatar, Select, Space } from "antd";
-import { networks } from "lib/config/networks";
+import { NetworkContext } from "components/router/contexts";
 import { NetworkId } from "lib/sdk/network";
+import { observer } from "mobx-react-lite";
+import { useContext } from "react";
 
 const { Option } = Select;
 
@@ -11,8 +13,9 @@ export type NetworkPickerProps = {
 
 export const defaultNetworkSelected: NetworkId = "ethereum";
 
-export const NetworkPicker: React.FC<NetworkPickerProps> = (props) => {
+export const NetworkPicker: React.FC<NetworkPickerProps> = observer((props) => {
   const { value, onNetworkSelected } = props;
+  const { networks } = useContext(NetworkContext)!;
 
   return (
     <Select
@@ -32,4 +35,4 @@ export const NetworkPicker: React.FC<NetworkPickerProps> = (props) => {
       })}
     </Select>
   );
-};
+});

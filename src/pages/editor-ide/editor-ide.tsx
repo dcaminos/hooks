@@ -4,7 +4,7 @@ import { GlobalHotKeys } from "react-hotkeys";
 import { useHistory, useParams } from "react-router-dom";
 import SplitPane, { Pane } from "react-split-pane";
 import { Hook } from "../../lib/hook";
-import { EditorContext, HookContext } from "../../utils/contexts";
+import { EditorContext, HookContext } from "../../components/router/contexts";
 import "./editor-ide.scss";
 import { IdeBody } from "./ide-body";
 import { IdeBottomPanel } from "./ide-bottom-panel/ide-bottom-panel";

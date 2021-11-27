@@ -1,7 +1,20 @@
+import {
+  createDefaultMapFromCDN,
+  createSystem,
+  createVirtualCompilerHost,
+} from "@typescript/vfs";
 import { Hook as AttachConsole, Unhook as DetachConsole } from "console-feed";
+import { Hook } from "lib/hook";
+import { run } from "lib/sdk/sdk";
 import { action, computed, makeAutoObservable, runInAction } from "mobx";
-import { Hook } from "../lib/hook";
+import moment from "moment";
+import typescript from "typescript";
 import { RootStore } from "./root-store";
+
+const compilerOptions: typescript.CompilerOptions = {
+  target: typescript.ScriptTarget.ES2020,
+  esModuleInterop: true,
+};
 
 export type EditorError = {
   code: string | undefined;
@@ -81,8 +94,18 @@ export class EditorStore {
       },
       false
     );
+
+    const request = this.rootStore.hookStore?.getHookRequest(
+      this.currentHook,
+      this.testingAddress
+    );
+    const jsCode = await this.compile();
+    if (!jsCode || !request) {
+      return;
+    }
+
     console.time("Hook running time");
-    const response = await this.currentHook.run(this.testingAddress);
+    const response = await run(jsCode, request);
     console.timeEnd("Hook running time");
 
     if (response) {
@@ -121,17 +144,18 @@ export class EditorStore {
 
     this.action = "publishing";
     this.currentHook.code = this.code;
-    const jsCode = await this.currentHook.compile();
+    const jsCode = await this.compile();
     if (!jsCode) {
       return;
     }
 
-    user.hookIds.push(this.currentHook.id);
+    user.profiles[0].hookIds.push(this.currentHook.id);
     currentHook.isPublic = true;
     currentHook.versions = [
       {
+        active: true,
         version: 1,
-        releaseDate: new Date(),
+        releaseDate: moment(),
         ts: this.currentHook.code,
         js: jsCode,
         notes: "First deploy",
@@ -148,5 +172,37 @@ export class EditorStore {
       this.currentHook = currentHook;
       this.action = undefined;
     });
+  };
+
+  @action
+  compile = async (): Promise<string | undefined> => {
+    const fsMap = await createDefaultMapFromCDN(
+      compilerOptions,
+      typescript.version,
+      true,
+      typescript
+    );
+    fsMap.set("index.ts", this.code);
+
+    const system = createSystem(fsMap);
+    const host = createVirtualCompilerHost(system, compilerOptions, typescript);
+    const program = typescript.createProgram({
+      rootNames: Array.from(fsMap.keys()),
+      options: compilerOptions,
+      host: host.compilerHost,
+    });
+
+    program.emit();
+
+    const _jsCode = fsMap.get("index.js");
+    if (_jsCode !== undefined) {
+      // remove imports
+      return (
+        _jsCode
+          .split(";")
+          .filter((t) => t.replace("\n", "").substr(0, 7) !== "import ")
+          .join(";") + `\n runHook`
+      );
+    }
   };
 }

@@ -1,7 +1,7 @@
 import { Table } from "antd";
 import { observer } from "mobx-react-lite";
 import { useContext } from "react";
-import { EditorContext } from "../../../utils/contexts";
+import { EditorContext } from "../../../components/router/contexts";
 import { AlignType } from "rc-table/lib/interface";
 
 export const ErrorsTab: React.FC = observer((props) => {

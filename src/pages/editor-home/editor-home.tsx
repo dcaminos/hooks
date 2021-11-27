@@ -4,7 +4,7 @@ import { Hook } from "lib/hook";
 import { observer } from "mobx-react-lite";
 import { useContext } from "react";
 import { useHistory } from "react-router-dom";
-import { UIContext, UserContext } from "utils/contexts";
+import { UIContext, UserContext } from "components/router/contexts";
 
 export const EditorHome: React.FC = observer(() => {
   const { showModal } = useContext(UIContext)!;

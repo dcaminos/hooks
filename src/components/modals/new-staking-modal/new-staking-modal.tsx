@@ -1,14 +1,18 @@
 import { Button, Col, Form, Input, Modal, Row } from "antd";
 import { NetworkPicker } from "components/network-picker/network-picker";
-import { TokenPicker } from "components/token-picker.tsx/token-picker";
-import { Hook } from "lib/hook";
-import { template } from "lib/sdk/hooks/staking/staking";
+import {
+  HookContext,
+  UIContext,
+  UserContext,
+} from "components/router/contexts";
+import { Hook, StakingData } from "lib/hook";
+import { template } from "lib/sdk/staking/template";
 import { NetworkId } from "lib/sdk/network";
 import { observer } from "mobx-react-lite";
-import { useContext, useEffect, useState } from "react";
+import moment from "moment";
+import { useContext, useState } from "react";
 import { useHistory } from "react-router";
 import { ModalType } from "stores/ui-store";
-import { HookContext, UIContext, UserContext } from "utils/contexts";
 
 const modalType: ModalType = "new-staking";
 
@@ -20,43 +24,35 @@ export const NewStakingModal: React.FC = observer((props) => {
   const history = useHistory();
   const [title, setTitle] = useState("");
   const [networkId, setNetworkId] = useState<NetworkId>("ethereum");
-  const [tokenIds, setTokenIds] = useState<string[]>([]);
+  const [stakedTokenId, setStakedTokenId] = useState<string | undefined>();
+  const [rewardsTokenId, setRewardsTokenId] = useState<string | undefined>();
   const [form] = Form.useForm();
 
-  useEffect(() => {
-    setTokenIds([]);
-  }, [networkId]);
-
   const onCreateHookAction = async () => {
-    if (!user) {
+    if (!user || !stakedTokenId || !rewardsTokenId) {
       return;
     }
 
-    const hook = new Hook({
+    const hook: Hook = {
       id: "",
       type: "staking",
       owner: user.id,
       title: title,
-      networkIds: [networkId],
-      tokenIds: tokenIds,
+      data: {
+        networkId,
+        stakedTokenId,
+        rewardsTokenId,
+      } as StakingData,
       isPublic: false,
       code: template(),
-      createdAt: new Date(),
-      updatedAt: new Date(),
+      createdAt: moment(),
+      updatedAt: moment(),
       versions: [],
-    });
+    };
 
     const hookId = await createHook(hook);
     hideModal(modalType);
     history.push(`/editor/${hookId}`);
-  };
-
-  const validateTokens = async () => {
-    if (tokenIds.length < 1) {
-      throw new Error(
-        "At least one token should be used to interact with the smart contract, e.g: staked token"
-      );
-    }
   };
 
   const modalFooter = (
@@ -135,17 +131,13 @@ export const NewStakingModal: React.FC = observer((props) => {
           <NetworkPicker value={networkId} onNetworkSelected={setNetworkId} />
         </Form.Item>
 
-        <Form.Item
+        {/*<Form.Item
           label="Tokens"
           name="tokenIds"
           rules={[{ required: true, validator: validateTokens }]}
         >
-          <TokenPicker
-            values={tokenIds}
-            networkId={networkId}
-            onTokensChange={setTokenIds}
-          />
-        </Form.Item>
+         
+        </Form.Item>*/}
       </Form>
     </Modal>
   );

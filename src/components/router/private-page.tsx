@@ -5,7 +5,7 @@ import { NewWalletModal } from "components/modals/new-wallet-modal/new-wallet-mo
 import { observer } from "mobx-react-lite";
 import { useContext, useEffect, useState } from "react";
 import { useHistory } from "react-router";
-import { UserContext } from "../../utils/contexts";
+import { UserContext } from "./contexts";
 import { PublishHookModal } from "components/modals/publish-hook-modal/publish-hook-modal";
 import { PublishHookSuccessModal } from "components/modals/publish-hook-success/publish-hook-success";
 import { NewTokenBalanceModal } from "components/modals/new-token-balance-modal/new-token-balance-modal";

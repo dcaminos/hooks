@@ -1,10 +1,118 @@
 import {
+  DocumentData,
+  QueryDocumentSnapshot,
+  SnapshotOptions,
+  Timestamp,
+} from "@firebase/firestore";
+import { pick } from "utils/utils";
+import moment, { Moment } from "moment";
+import { NetworkId } from "./sdk/network";
+
+export type HookType = "token-balance" | "staking" | "yield-farming";
+
+export type HookVersion = {
+  active: boolean;
+  version: number;
+  releaseDate: Moment;
+  ts: string;
+  js: string;
+  notes: string;
+};
+
+export type TokenBalanceData = {
+  tokenId: string;
+};
+
+export type StakingData = {
+  networkId: NetworkId;
+  stakedTokenId: string;
+  rewardsTokenId: string;
+};
+
+export type YieldFarmingData = {
+  networkId: NetworkId;
+  stakedTokenId0: string;
+  stakedTokenId1: string;
+  rewardsTokenId: string;
+};
+
+export type HookData = TokenBalanceData | StakingData | YieldFarmingData;
+
+export type Hook = {
+  id: string;
+  type: HookType;
+  owner: string;
+  title: string;
+  data: HookData;
+  isPublic: boolean;
+  code: string;
+  createdAt: Moment;
+  updatedAt: Moment;
+  versions: HookVersion[];
+};
+
+export const hookConverter = {
+  toFirestore(hook: Hook): DocumentData {
+    const obj = pick(
+      hook,
+      "type",
+      "owner",
+      "title",
+      "data",
+      "isPublic",
+      "code",
+      "createdAt",
+      "updatedAt",
+      "versions"
+    ) as any;
+    obj.createdAt = (obj.createdAt as Moment).toDate();
+    obj.updatedAt = (obj.updatedAt as Moment).toDate();
+    if (obj.versions) {
+      obj.versions = Array.from(obj.versions).map((v: any) => ({
+        ...v,
+        releaseDate: (v.releaseDate as Moment).toDate(),
+      }));
+    }
+    Object.keys(obj).forEach(
+      (key) => obj[key] === undefined && delete obj[key]
+    );
+    return obj;
+  },
+  fromFirestore(
+    snapshot: QueryDocumentSnapshot,
+    options: SnapshotOptions
+  ): Hook {
+    const data = snapshot.data(options)!;
+    return {
+      id: snapshot.id,
+      type: data.type,
+      owner: data.owner,
+      title: data.title,
+      data: data.data,
+      isPublic: data.isPublic,
+      code: data.code,
+      createdAt: data.createdAt
+        ? moment((data.createdAt as Timestamp).toDate())
+        : moment(),
+      updatedAt: data.updatedAt
+        ? moment((data.updatedAt as Timestamp).toDate())
+        : moment(),
+      versions: Array.from(data.versions).map((v: any) => ({
+        ...v,
+        releaseDate: v.releaseDate
+          ? moment((v.releaseDate as Timestamp).toDate())
+          : moment(),
+      })),
+    } as Hook;
+  },
+};
+
+/*
+import {
   createDefaultMapFromCDN,
   createSystem,
   createVirtualCompilerHost,
 } from "@typescript/vfs";
-import { networks } from "lib/config/networks";
-import { tokens } from "lib/config/tokens";
 
 import { run as hookStakingRun } from "lib/sdk/hooks/staking/staking";
 import { run as hookTokenBalanceRun } from "lib/sdk/hooks/token-balance/token-balance";
@@ -144,3 +252,4 @@ export class Hook {
     }
   };
 }
+*/

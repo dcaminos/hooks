@@ -1,13 +1,17 @@
-import { Avatar, Button, Col, Form, Input, Modal, Row, Space } from "antd";
-import { networks } from "lib/config/networks";
-import { Hook } from "lib/hook";
-import { NetworkId } from "lib/sdk/network";
+import { Button, Col, Form, Input, Modal, Row } from "antd";
+import { TokenPicker } from "components/token-picker.tsx/token-picker";
+import { Hook, TokenBalanceData } from "lib/hook";
+import { template } from "lib/sdk/token-balance/template";
 import { observer } from "mobx-react-lite";
 import { useContext, useState } from "react";
 import { useHistory } from "react-router";
 import { ModalType } from "stores/ui-store";
-import { HookContext, UIContext, UserContext } from "utils/contexts";
-import { template } from "lib/sdk/hooks/token-balance/token-balance";
+import {
+  HookContext,
+  UIContext,
+  UserContext,
+} from "components/router/contexts";
+import moment from "moment";
 
 const modalType: ModalType = "new-token-balance";
 
@@ -18,29 +22,28 @@ export const NewTokenBalanceModal: React.FC = observer((props) => {
   const { user } = useContext(UserContext)!;
   const history = useHistory();
   const [title, setTitle] = useState("");
-  const [contracts, setContracts] = useState<Map<NetworkId, string>>(
-    new Map<NetworkId, string>()
-  );
+  const [tokenId, setTokenId] = useState<string | undefined>();
   const [form] = Form.useForm();
 
   const onCreateHookAction = async () => {
-    if (!user) {
+    if (!user || !tokenId) {
       return;
     }
 
-    const hook = new Hook({
+    const hook: Hook = {
       id: "",
       type: "token-balance",
       owner: user.id,
       title: title,
-      networkIds: [],
-      tokenIds: [],
+      data: {
+        tokenId,
+      } as TokenBalanceData,
       isPublic: false,
-      code: template(contracts),
-      createdAt: new Date(),
-      updatedAt: new Date(),
+      code: template(tokenId),
+      createdAt: moment(),
+      updatedAt: moment(),
       versions: [],
-    });
+    };
 
     const hookId = await createHook(hook);
     hideModal(modalType);
@@ -109,37 +112,17 @@ export const NewTokenBalanceModal: React.FC = observer((props) => {
           />
         </Form.Item>
 
-        <Form.Item label="Contract addresses" name="contracts">
-          <Space className="da-w-100" direction="vertical">
-            {networks.map((network) => {
-              return (
-                <div
-                  key={`network-address-${network.id}`}
-                  style={{
-                    display: "flex",
-                    justifyContent: "space-between",
-                    alignItems: "center",
-                    width: "100%",
-                  }}
-                >
-                  <Avatar src={network.image} size={20} />
-                  <div className="da-ml-8" style={{ width: 150 }}>
-                    {network.name}
-                  </div>
-                  <div style={{ flexGrow: 1 }}>
-                    <Input
-                      placeholder={`0X0123456789ABCDEF0123456789ABCDEF`}
-                      value={contracts.get(network.id)}
-                      onChange={(e) => {
-                        contracts.set(network.id, e.target.value);
-                        setContracts(contracts);
-                      }}
-                    />
-                  </div>
-                </div>
-              );
-            })}
-          </Space>
+        <Form.Item
+          label="Token"
+          name="token"
+          rules={[
+            {
+              required: true,
+              message: "Please select a token for your hook",
+            },
+          ]}
+        >
+          <TokenPicker value={tokenId} onChange={setTokenId} />
         </Form.Item>
       </Form>
     </Modal>

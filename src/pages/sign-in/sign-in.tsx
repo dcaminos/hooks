@@ -17,7 +17,7 @@ import {
 } from "react-icons/ri";
 import { Link, useHistory } from "react-router-dom";
 import { AuthLeftContent } from "../../components/auth-left-content/auth-left-content";
-import { UserContext } from "../../utils/contexts";
+import { UserContext } from "../../components/router/contexts";
 
 export const SignIn: React.FC = observer((props) => {
   const { authReady, user, signIn } = useContext(UserContext)!;

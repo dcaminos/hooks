@@ -19,22 +19,41 @@ export type TokenD = {
 };
 
 export class Token {
-  public id: string;
-  public symbol: string;
-  public name: string;
-  public image: string;
-  public contracts: {
+  private _id: string;
+  private _symbol: string;
+  private _name: string;
+  private _image: string;
+  private _contracts: {
     [key in NetworkId]?: string;
   };
-  public price?: BigNumber;
+  private _price?: BigNumber;
 
   constructor(token: TokenD) {
-    this.id = token.id;
-    this.symbol = token.symbol;
-    this.name = token.name;
-    this.image = token.image;
-    this.contracts = token.contracts;
-    this.price = token.price;
+    this._id = token.id;
+    this._symbol = token.symbol;
+    this._name = token.name;
+    this._image = token.image;
+    this._contracts = token.contracts;
+    this._price = token.price;
+  }
+
+  public get id() {
+    return this._id;
+  }
+  public get symbol() {
+    return this._symbol;
+  }
+  public get name() {
+    return this._name;
+  }
+  public get image() {
+    return this._image;
+  }
+  public get contracts() {
+    return this._contracts;
+  }
+  public get price() {
+    return this._price;
   }
 
   balanceOf = async (

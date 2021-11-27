@@ -11,7 +11,7 @@ import {
 } from "react-iconly";
 import { Link } from "react-router-dom";
 import avatarImg from "../../assets/images/memoji/memoji-1.png";
-import { UIContext, UserContext } from "../../utils/contexts";
+import { UIContext, UserContext } from "../router/contexts";
 
 export const HeaderUser: React.FC = observer((props) => {
   const { theme } = useContext(UIContext)!;

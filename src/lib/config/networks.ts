@@ -1,6 +1,6 @@
-import { Network } from "lib/sdk/network";
+import { NetworkD } from "lib/sdk/network";
 
-export const networks: Network[] = [
+export const networks: NetworkD[] = [
   {
     id: "ethereum",
     name: "Ethereum",

@@ -5,7 +5,7 @@ import ReactDOM from "react-dom";
 import { BrowserRouter } from "react-router-dom";
 import "./assets/icons/remixicon.css";
 import "./assets/less/yoda-theme.less";
-import { AppProviders } from "./utils/contexts";
+import { AppProviders } from "./components/router/contexts";
 import { Router } from "./components/router/router";
 
 // TODO: Add SDKs for Firebase products that you want to use

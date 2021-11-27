@@ -3,7 +3,7 @@ import generic from "assets/images/memoji/memoji-1.png";
 import { observer } from "mobx-react-lite";
 import { useContext } from "react";
 import { Link } from "react-router-dom";
-import { UIContext, UserContext } from "utils/contexts";
+import { UIContext, UserContext } from "components/router/contexts";
 
 export const WalletsTab: React.FC = observer(() => {
   const { user, updateUser, loading } = useContext(UserContext)!;

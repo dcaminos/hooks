@@ -1,7 +1,7 @@
 import { Console } from "console-feed";
 import { observer } from "mobx-react-lite";
 import { useContext } from "react";
-import { EditorContext, UIContext } from "../../../utils/contexts";
+import { EditorContext, UIContext } from "../../../components/router/contexts";
 
 export const ConsoleTab: React.FC = observer((props) => {
   const { logs } = useContext(EditorContext)!;

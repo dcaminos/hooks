@@ -6,7 +6,6 @@ import {
   RiWallet2Line,
 } from "react-icons/ri";
 import { HooksTab } from "./tabs/hooks";
-import { TokensTab } from "./tabs/tokens";
 import { WalletsTab } from "./tabs/wallets";
 
 const { TabPane } = Tabs;
@@ -18,8 +17,7 @@ export const ProfilePage: React.FC = () => {
     switch (t) {
       case "wallets":
         return <WalletsTab />;
-      case "tokens":
-        return <TokensTab />;
+
       case "hooks":
         return <HooksTab />;
     }

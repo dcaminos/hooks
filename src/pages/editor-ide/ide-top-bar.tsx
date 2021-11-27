@@ -3,12 +3,8 @@ import { observer } from "mobx-react-lite";
 import { useContext } from "react";
 import { RiArrowLeftLine, RiSave3Line } from "react-icons/ri";
 import { useHistory } from "react-router";
-import { NetworkTag } from "../../components/network-tag/network-tag";
-import { TokenTag } from "../../components/token-tag/token-tag";
-import { networks } from "../../lib/config/networks";
-import { tokens } from "../../lib/config/tokens";
+import { EditorContext } from "../../components/router/contexts";
 import { Hook } from "../../lib/hook";
-import { EditorContext } from "../../utils/contexts";
 
 export type HookTitleProps = {
   hook: Hook;
@@ -16,12 +12,6 @@ export type HookTitleProps = {
 
 export const HookTitle: React.FC<HookTitleProps> = (props) => {
   const { hook } = props;
-  const hookNetworks = networks.filter((n) => hook.networkIds.includes(n.id));
-  const tokenTags = hook.tokenIds
-    .map((tid) => tokens.find((t) => t.id === tid))
-    .map(
-      (t) => t && <TokenTag key={`hook-title-token-tag-${t.id}`} token={t} />
-    );
 
   return (
     <div
@@ -32,8 +22,8 @@ export const HookTitle: React.FC<HookTitleProps> = (props) => {
       }}
     >
       <h4 className="da-mb-0 da-mr-16">{hook.title}</h4>
-      {hookNetworks.length > 0 && <NetworkTag networks={hookNetworks} />}
-      {tokenTags}
+      {/*{hookNetworks.length > 0 && <NetworkTag networks={hookNetworks} />}
+      {tokenTags}*/}
     </div>
   );
 };

@@ -5,7 +5,7 @@ import { observer } from "mobx-react-lite";
 import { useContext } from "react";
 import { FiShare } from "react-icons/fi";
 import { ModalType } from "stores/ui-store";
-import { EditorContext, UIContext } from "utils/contexts";
+import { EditorContext, UIContext } from "components/router/contexts";
 const modalType: ModalType = "publish-hook";
 
 export const PublishHookModal: React.FC = observer((props) => {
