@@ -5,12 +5,13 @@ import {
   UIContext,
   UserContext,
 } from "components/router/contexts";
+import { TokenPicker } from "components/token-picker.tsx/token-picker";
 import { Hook, StakingData } from "lib/hook";
-import { template } from "lib/sdk/staking/template";
 import { NetworkId } from "lib/sdk/network";
+import { template } from "lib/sdk/staking/template";
 import { observer } from "mobx-react-lite";
 import moment from "moment";
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { useHistory } from "react-router";
 import { ModalType } from "stores/ui-store";
 
@@ -23,10 +24,22 @@ export const NewStakingModal: React.FC = observer((props) => {
   const { user } = useContext(UserContext)!;
   const history = useHistory();
   const [title, setTitle] = useState("");
-  const [networkId, setNetworkId] = useState<NetworkId>("ethereum");
+  const [networkId, setNetworkId] = useState<NetworkId | undefined>();
   const [stakedTokenId, setStakedTokenId] = useState<string | undefined>();
   const [rewardsTokenId, setRewardsTokenId] = useState<string | undefined>();
   const [form] = Form.useForm();
+
+  useEffect(() => {
+    form.setFieldsValue({
+      networkId: "ethereum",
+    });
+  }, [form]);
+
+  useEffect(() => {
+    form.resetFields(["stakedTokenId", "rewardsTokenId"]);
+  }, [networkId, form]);
+
+  console.log(rewardsTokenId);
 
   const onCreateHookAction = async () => {
     if (!user || !stakedTokenId || !rewardsTokenId) {
@@ -126,18 +139,56 @@ export const NewStakingModal: React.FC = observer((props) => {
         <Form.Item
           label="Network"
           name="networkId"
-          rules={[{ required: true, validator: async () => {} }]}
+          rules={[
+            {
+              required: true,
+              message: "You need to pick a Network",
+              validateTrigger: "onSubmit",
+            },
+          ]}
         >
-          <NetworkPicker value={networkId} onNetworkSelected={setNetworkId} />
+          <NetworkPicker value={networkId} onChange={setNetworkId} />
         </Form.Item>
-
-        {/*<Form.Item
-          label="Tokens"
-          name="tokenIds"
-          rules={[{ required: true, validator: validateTokens }]}
-        >
-         
-        </Form.Item>*/}
+        <Row gutter={16}>
+          <Col span={12}>
+            <Form.Item
+              label="Staked Token"
+              name="stakedTokenId"
+              rules={[
+                {
+                  required: true,
+                  message: "You need to pick a Token for staking",
+                  validateTrigger: "onSubmit",
+                },
+              ]}
+            >
+              <TokenPicker
+                value={stakedTokenId}
+                onChange={setStakedTokenId}
+                networkId={networkId}
+              />
+            </Form.Item>
+          </Col>
+          <Col span={12}>
+            <Form.Item
+              label="Rewards Token"
+              name="rewardsTokenId"
+              rules={[
+                {
+                  required: true,
+                  message: "You need to pick a Token for staking rewards",
+                  validateTrigger: "onSubmit",
+                },
+              ]}
+            >
+              <TokenPicker
+                value={rewardsTokenId}
+                onChange={setRewardsTokenId}
+                networkId={networkId}
+              />
+            </Form.Item>
+          </Col>
+        </Row>
       </Form>
     </Modal>
   );

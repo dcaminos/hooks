@@ -1,14 +1,13 @@
 import { Avatar, Select, Space } from "antd";
 import { TokenContext } from "components/router/contexts";
-import { TokenTag } from "components/token-tag/token-tag";
 import { NetworkId } from "lib/sdk/network";
 import { Token } from "lib/sdk/token";
 import { observer } from "mobx-react-lite";
 import { ReactNode, useContext, useEffect, useState } from "react";
 
 export type TokenPickerProps = {
-  value: string | undefined;
-  onChange: (tokenId: string) => void;
+  value?: string | undefined;
+  onChange: (value: string) => void;
   networkId?: NetworkId;
 };
 
@@ -53,26 +52,14 @@ export const TokenPicker: React.FC<TokenPickerProps> = observer((props) => {
     );
   };
 
-  const tagRender = (props: any) => {
-    const { value, closable, onClose } = props;
-    const option = options.find((o) => o.value === value);
-    if (!option) {
-      return <></>;
-    }
-    return (
-      <TokenTag token={option.token} closable={closable} onClose={onClose} />
-    );
-  };
-
   return (
     <Select
+      showSearch
       placeholder="Please select "
       value={value}
-      tagRender={tagRender}
       onChange={onChange}
       options={options}
       filterOption={filterOption}
-      maxTagCount={"responsive"}
     />
   );
 });

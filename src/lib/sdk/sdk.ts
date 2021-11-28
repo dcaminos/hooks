@@ -94,9 +94,17 @@ export const addHooksSDK = (monaco: Monaco, hookType: HookType) => {
       },
     ];
 
+    const replaceImports = (code: string) =>
+      code
+        .replace("lib/sdk/big-number", "file:///big-number")
+        .replace("lib/sdk/contract", "file:///contract")
+        .replace("lib/sdk/network", "file:///network")
+        .replace("lib/sdk/token", "file:///token")
+        .replace("lib/sdk/wallet", "file:///wallet");
+
     libMap.forEach(({ lib, code }) => {
       monaco.editor.createModel(
-        code,
+        replaceImports(code),
         "typescript",
         monaco.Uri.parse(`file:///${lib}.ts`)
       );

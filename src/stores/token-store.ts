@@ -15,6 +15,7 @@ export class TokenStore {
     this.tokens = tokenList.map((t) => new Token(t));
 
     this.tokensPerNetwor = new Map<NetworkId, Token[]>();
+    console.log(this.rootStore.networkStore?.networks);
     this.rootStore.networkStore?.networks.forEach((network) => {
       this.tokensPerNetwor.set(
         network.id,

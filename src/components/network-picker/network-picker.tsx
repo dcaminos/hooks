@@ -7,21 +7,21 @@ import { useContext } from "react";
 const { Option } = Select;
 
 export type NetworkPickerProps = {
-  value: NetworkId;
-  onNetworkSelected: (networkId: NetworkId) => void;
+  value?: NetworkId | undefined;
+  onChange?: (networkId: NetworkId) => void;
 };
 
 export const defaultNetworkSelected: NetworkId = "ethereum";
 
 export const NetworkPicker: React.FC<NetworkPickerProps> = observer((props) => {
-  const { value, onNetworkSelected } = props;
+  const { value, onChange } = props;
   const { networks } = useContext(NetworkContext)!;
 
   return (
     <Select
       defaultValue={defaultNetworkSelected}
       value={value}
-      onChange={onNetworkSelected}
+      onChange={onChange}
     >
       {networks.map((network) => {
         return (

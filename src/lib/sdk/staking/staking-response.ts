@@ -3,7 +3,7 @@ import { Token } from "lib/sdk/token";
 
 export type StakingResponseD = {
   stakedToken: Token;
-  rewardToken: Token;
+  rewardsToken: Token;
   staked: BigNumber;
   rewardPending: BigNumber;
   rewardTaken?: BigNumber;
@@ -11,31 +11,54 @@ export type StakingResponseD = {
 };
 
 export class StakingResponse {
-  public stakedToken: Token;
-  public rewardToken: Token;
-  public staked: BigNumber;
-  public rewardPending: BigNumber;
-  public rewardTaken?: BigNumber;
-  public apr?: BigNumber;
+  private _stakedToken: Token;
+  private _rewardsToken: Token;
+  private _staked: BigNumber;
+  private _rewardPending: BigNumber;
+  private _rewardTaken?: BigNumber;
+  private _apr?: BigNumber;
 
   constructor(stakingResponse: StakingResponseD) {
-    this.stakedToken = stakingResponse.stakedToken;
-    this.rewardToken = stakingResponse.rewardToken;
-    this.staked = stakingResponse.staked;
-    this.rewardPending = stakingResponse.rewardPending;
-    this.rewardTaken = stakingResponse.rewardTaken;
-    this.apr = stakingResponse.apr;
+    this._stakedToken = stakingResponse.stakedToken;
+    this._rewardsToken = stakingResponse.rewardsToken;
+    this._staked = stakingResponse.staked;
+    this._rewardPending = stakingResponse.rewardPending;
+    this._rewardTaken = stakingResponse.rewardTaken;
+    this._apr = stakingResponse.apr;
   }
 
+  public get stakedToken() {
+    return this._stakedToken;
+  }
+
+  public get rewardsToken() {
+    return this._rewardsToken;
+  }
+
+  public get staked() {
+    return this._staked;
+  }
+
+  public get rewardPending() {
+    return this._rewardPending;
+  }
+
+  public get rewardTaken() {
+    return this._rewardTaken;
+  }
+
+  public get apr() {
+    return this._apr;
+  }
   toString() {
     return JSON.stringify(
       {
-        stakedToken: this.stakedToken.toString(),
-        rewardToken: this.rewardToken.toString(),
-        staked: this.staked.toReal(),
-        rewardPending: this.rewardPending.toReal(),
-        rewardTaken: this.rewardTaken ? this.rewardTaken.toReal() : undefined,
-        apr: this.apr ? this.apr.toReal(2) + "%" : undefined,
+        stakedToken: this._stakedToken.toString(),
+        rewardToken: this._rewardsToken.toString(),
+        staked: this._staked.toReal(),
+        rewardPending: this._rewardPending.toReal(),
+        rewardTaken: this._rewardTaken ? this._rewardTaken.toReal() : undefined,
+        apr: this._apr ? this._apr.toReal(2) + "%" : undefined,
       },
       undefined,
       1
