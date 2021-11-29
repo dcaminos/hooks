@@ -20,11 +20,10 @@ import { AuthLeftContent } from "../../components/auth-left-content/auth-left-co
 import { UserContext } from "../../components/router/contexts";
 
 export const SignIn: React.FC = observer((props) => {
-  const { authReady, user, signIn } = useContext(UserContext)!;
+  const { authReady, user, signIn, loading } = useContext(UserContext)!;
   const history = useHistory();
   const [email, setEmail] = React.useState<string>("");
   const [password, setPassword] = React.useState<string>("");
-  const [loading, setLoading] = React.useState<boolean>(false);
   const [rememberMe, setRememberMe] = React.useState<boolean>(true);
 
   useEffect(() => {
@@ -35,7 +34,6 @@ export const SignIn: React.FC = observer((props) => {
 
   const onFinish = async () => {
     try {
-      setLoading(true);
       await signIn(email, password, rememberMe);
     } catch (error) {
       notification.open({
@@ -50,7 +48,6 @@ export const SignIn: React.FC = observer((props) => {
         ),
       });
     }
-    setLoading(false);
   };
 
   if (!authReady) {
@@ -190,7 +187,6 @@ export const SignIn: React.FC = observer((props) => {
 
             <Col className="da-account-buttons da-mt-32">
               <Button
-                loading={loading}
                 block
                 icon={
                   <svg
@@ -224,7 +220,6 @@ export const SignIn: React.FC = observer((props) => {
               </Button>
 
               <Button
-                loading={loading}
                 className="da-mt-16"
                 block
                 icon={
