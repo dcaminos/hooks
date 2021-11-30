@@ -52,6 +52,7 @@ export class UserStore {
 
   @action
   signUp = async (email: string, password: string): Promise<void> => {
+    this.loading = true;
     try {
       const userCredential = await createUserWithEmailAndPassword(
         getAuth(),
@@ -61,12 +62,14 @@ export class UserStore {
       UserStore.firebaseUser = userCredential.user;
       await this.fetchUser();
     } catch (error) {
+      this.loading = false;
       throw Error((error as FirebaseError).code);
     }
   };
 
   @action
   signIn = async (email: string, password: string, rememberMe: boolean) => {
+    this.loading = true;
     try {
       await setPersistence(
         getAuth(),
@@ -80,6 +83,7 @@ export class UserStore {
       UserStore.firebaseUser = userCredential.user;
       await this.fetchUser();
     } catch (error) {
+      this.loading = false;
       throw Error((error as FirebaseError).code);
     }
   };
@@ -127,6 +131,7 @@ export class UserStore {
     runInAction(() => {
       this.user = user;
       this.authReady = true;
+      this.loading = false;
     });
   };
 

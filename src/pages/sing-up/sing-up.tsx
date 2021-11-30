@@ -7,6 +7,7 @@ import { AuthLeftContent } from "../../components/auth-left-content/auth-left-co
 import { useContext } from "react";
 import { RiCloseFill, RiErrorWarningFill } from "react-icons/ri";
 import { UserContext } from "../../components/router/contexts";
+import { observer } from "mobx-react-lite";
 
 export type FormItemState = {
   value: string;
@@ -20,8 +21,8 @@ export type SignUpFormState = {
   password2: FormItemState;
 };
 
-export const SingUp: React.FC = (props) => {
-  const { signUp } = useContext(UserContext)!;
+export const SingUp: React.FC = observer( (props) => {
+  const { signUp, loading } = useContext(UserContext)!;
 
   const [redirect, setRedirect] = useState(false);
 
@@ -174,6 +175,7 @@ export const SingUp: React.FC = (props) => {
                 <Input.Password
                   id="password"
                   name="password"
+                  autoComplete="new-password"
                   value={formState.password.value}
                   onChange={handleInput}
                 />
@@ -188,6 +190,7 @@ export const SingUp: React.FC = (props) => {
                 <Input.Password
                   id="password2"
                   name="password2"
+                  autoComplete="new-password"
                   value={formState.password2.value}
                   onChange={handleInput}
                 />
@@ -199,6 +202,7 @@ export const SingUp: React.FC = (props) => {
                   type="primary"
                   htmlType="submit"
                   onClick={handleSubmit}
+                  loading={loading}
                 >
                   Sign up
                 </Button>
@@ -241,4 +245,4 @@ export const SingUp: React.FC = (props) => {
       </Col>
     </Row>
   );
-};
+});
