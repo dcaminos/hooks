@@ -15,11 +15,14 @@ import {
   TokenBalanceData,
   YieldFarmingData,
 } from "lib/hook";
+import { NetworkId } from "lib/sdk/network";
 import { run } from "lib/sdk/sdk";
 import { StakingRequest } from "lib/sdk/staking/staking-request";
+import { Token } from "lib/sdk/token";
 import { TokenBalanceRequest } from "lib/sdk/token-balance/token-balance-request";
 import { YieldFarmingRequest } from "lib/sdk/yield-farming/yield-farming-request";
 import { action, makeAutoObservable, runInAction } from "mobx";
+import moment from "moment";
 import { RootStore } from "./root-store";
 
 export class HookStore {
@@ -29,6 +32,7 @@ export class HookStore {
   constructor(private rootStore: RootStore) {
     makeAutoObservable(this);
     this.rootStore.hookStore = this;
+    this.fetchHooks();
   }
 
   @action
@@ -71,10 +75,58 @@ export class HookStore {
     );
     const r = await getDocs(q);
     runInAction(() => {
-      this.hooks = r.docs.map((doc) => doc.data());
+      this.hooks = [
+        ...r.docs.map((doc) => doc.data()),
+        ...this.createSinteticHooks(),
+      ];
       this.action = undefined;
     });
   };
+
+  createSinteticHooks = (): Hook[] => {
+    const networkIds = this.rootStore.networkStore!.networks.map((n) => n.id);
+    return this.rootStore
+      .tokenStore!.tokens.filter((t) =>
+        Object.keys(t.contracts).some((id) =>
+          networkIds.includes(id as NetworkId)
+        )
+      )
+      .map(this.createSinteticHook);
+  };
+
+  createSinteticHook = (token: Token): Hook => ({
+    id: `sintetic-token-balance${token.id}`,
+    type: "token-balance",
+    owner: "hooks.finance",
+    title: `Token balance: ${token.name} (${token.symbol.toUpperCase()})`,
+    data: {
+      tokenId: token.id,
+    } as TokenBalanceData,
+    isPublic: true,
+    code: `import { TokenBalanceRequest, TokenBalanceResponse, BigNumber, NetworkId } from 'file:///hooks-sdk'
+
+    async function runHook(request: TokenBalanceRequest): Promise<TokenBalanceResponse> {
+        const balances: Map<NetworkId,BigNumber> = await request.token.balancesOf(request.walletAdress)
+        return new TokenBalanceResponse(balances)
+    }`,
+    createdAt: moment(),
+    updatedAt: moment(),
+    versions: [
+      {
+        active: true,
+        version: 1,
+        releaseDate: moment(),
+        ts: ``,
+        js: `async function runHook(request) {
+        const balances = await request.token.balancesOf(request.walletAdress);
+        return new TokenBalanceResponse(balances);
+    }
+    
+     runHook`,
+        notes: "Sintetic Hook",
+      },
+    ],
+  });
 
   getHookRequest = async (hook: Hook, walletAddress: string) => {
     switch (hook.type) {
@@ -146,23 +198,3 @@ export class HookStore {
     return response;
   };
 }
-
-// JS
-/*
-async function runHook(request) {
-    const balances = await request.token.balancesOf(request.walletAdress);
-    return new TokenBalanceResponse(balances);
-}
-
- runHook
- */
-
-// TS
-/*
-import { TokenBalanceRequest, TokenBalanceResponse, BigNumber, NetworkId } from 'file:///hooks-sdk'
-
-async function runHook(request: TokenBalanceRequest): Promise<TokenBalanceResponse> {
-    const balances: Map<NetworkId,BigNumber> = await request.token.balancesOf(request.walletAdress)
-    return new TokenBalanceResponse(balances)
-}
- */

@@ -6,7 +6,7 @@ import { observer } from "mobx-react-lite";
 import { useContext, useState } from "react";
 
 export const HooksTab: React.FC = observer(() => {
-  const { hooks, fetchHooks } = useContext(HookContext)!;
+  const { hooks } = useContext(HookContext)!;
   const { user, loading, updateUser } = useContext(UserContext)!;
 
   const [filterChoice, setFilterChoice] = useState("all");
@@ -14,8 +14,6 @@ export const HooksTab: React.FC = observer(() => {
   if (!user) return null;
 
   const selectedHookIds: string[] = user.profiles[0].hookIds;
-
-  if (hooks.length === 0) fetchHooks();
 
   const headerActions = () => <Button>Create new Hook</Button>;
 

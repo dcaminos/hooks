@@ -21,7 +21,7 @@ export type SignUpFormState = {
   password2: FormItemState;
 };
 
-export const SingUp: React.FC = observer( (props) => {
+export const SingUp: React.FC = observer((props) => {
   const { signUp, loading } = useContext(UserContext)!;
 
   const [redirect, setRedirect] = useState(false);
