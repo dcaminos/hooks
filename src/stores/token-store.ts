@@ -2,6 +2,7 @@ import { tokens as tokenList } from "lib/config/tokens";
 import { NetworkId } from "lib/sdk/network";
 import { Token } from "lib/sdk/token";
 import { computed, makeAutoObservable } from "mobx";
+import { getTokensPrices } from "utils/utils";
 import { RootStore } from "./root-store";
 
 export class TokenStore {
@@ -11,11 +12,8 @@ export class TokenStore {
   constructor(private rootStore: RootStore) {
     makeAutoObservable(this);
     this.rootStore.tokenStore = this;
-
     this.tokens = tokenList.map((t) => new Token(t));
-
     this.tokensPerNetwor = new Map<NetworkId, Token[]>();
-    console.log(this.rootStore.networkStore?.networks);
     this.rootStore.networkStore?.networks.forEach((network) => {
       this.tokensPerNetwor.set(
         network.id,
@@ -43,4 +41,16 @@ export class TokenStore {
 
   @computed
   getToken = (tokenId: string) => this.tokens.find((t) => t.id === tokenId);
+
+  getTokensWithPrice = async (tokenIds: string[]) => {
+    const prices = await getTokensPrices(tokenIds);
+    return tokenIds.map((tid) => {
+      const obj = this.tokens.find((t) => t.id === tid);
+      if (!obj) {
+        return null;
+      }
+      obj.price = prices[obj.id];
+      return obj;
+    });
+  };
 }

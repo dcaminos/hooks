@@ -1,13 +1,13 @@
 /* eslint-disable import/no-webpack-loader-syntax */
 /* eslint-disable @typescript-eslint/no-unused-vars */
-import { request } from "http";
-import { Hook } from "lib/hook";
 import { StakingRequest } from "lib/sdk/staking/staking-request";
 import { StakingResponse } from "lib/sdk/staking/staking-response";
 import { TokenBalanceRequest } from "lib/sdk/token-balance/token-balance-request";
 import { TokenBalanceResponse } from "lib/sdk/token-balance/token-balance-response";
 import { Monaco } from "@monaco-editor/react";
 import { HookType } from "lib/hook";
+import { YieldFarmingRequest } from "./yield-farming/yield-farming-request";
+import { YieldFarmingResponse } from "./yield-farming/yield-farming-response";
 
 const sdkCode = `
 import { BigNumber } from 'file:///big-number'
@@ -40,11 +40,13 @@ export {
 export const addHooksSDK = (monaco: Monaco, hookType: HookType) => {
   const sdkURI = monaco.Uri.parse("hooks-sdk.ts");
 
+  console.log(require("!!raw-loader!bignumber.js/bignumber.d.ts").default);
+
   if (monaco.editor.getModel(sdkURI) === null) {
     const libMap = [
       {
         lib: "big-number",
-        code: require("!!raw-loader!./../../lib/sdk/big-number").default,
+        code: require("!!raw-loader!bignumber.js/bignumber.d.ts").default,
       },
       {
         lib: "contract",
@@ -96,7 +98,7 @@ export const addHooksSDK = (monaco: Monaco, hookType: HookType) => {
 
     const replaceImports = (code: string) =>
       code
-        .replace("lib/sdk/big-number", "file:///big-number")
+        .replace("bignumber.js", "file:///big-number")
         .replace("lib/sdk/contract", "file:///contract")
         .replace("lib/sdk/network", "file:///network")
         .replace("lib/sdk/token", "file:///token")
@@ -114,14 +116,20 @@ export const addHooksSDK = (monaco: Monaco, hookType: HookType) => {
   }
 };
 
-export type HookRquest = TokenBalanceRequest | StakingRequest;
-export type HookResponse = TokenBalanceResponse | StakingResponse;
+export type HookRquest =
+  | TokenBalanceRequest
+  | StakingRequest
+  | YieldFarmingRequest;
+export type HookResponse =
+  | TokenBalanceResponse
+  | StakingResponse
+  | YieldFarmingResponse;
 
 export const run = async (
   jsCode: string,
   request: HookRquest
 ): Promise<HookResponse | undefined> => {
-  const BigNumber = require("lib/sdk/big-number").BigNumber;
+  const BigNumber = require("bignumber.js").BigNumber;
   const Contract = require("lib/sdk/contract").Contract;
   const ContractType = require("lib/sdk/contract").ContractType;
   const Network = require("lib/sdk/network").Network;

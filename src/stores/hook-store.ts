@@ -8,11 +8,19 @@ import {
   setDoc,
 } from "@firebase/firestore";
 import { where } from "firebase/firestore";
-import { action, makeAutoObservable, runInAction } from "mobx";
-import { Hook, hookConverter, TokenBalanceData } from "lib/hook";
-import { RootStore } from "./root-store";
-import { TokenBalanceRequest } from "lib/sdk/token-balance/token-balance-request";
+import {
+  Hook,
+  hookConverter,
+  StakingData,
+  TokenBalanceData,
+  YieldFarmingData,
+} from "lib/hook";
 import { run } from "lib/sdk/sdk";
+import { StakingRequest } from "lib/sdk/staking/staking-request";
+import { TokenBalanceRequest } from "lib/sdk/token-balance/token-balance-request";
+import { YieldFarmingRequest } from "lib/sdk/yield-farming/yield-farming-request";
+import { action, makeAutoObservable, runInAction } from "mobx";
+import { RootStore } from "./root-store";
 
 export class HookStore {
   hooks: Hook[] = [];
@@ -68,16 +76,59 @@ export class HookStore {
     });
   };
 
-  getHookRequest = (hook: Hook, walletAddress: string) => {
+  getHookRequest = async (hook: Hook, walletAddress: string) => {
     switch (hook.type) {
       case "token-balance":
-        const token = this.rootStore.tokenStore?.getToken(
-          (hook.data as TokenBalanceData).tokenId
-        );
+        const [token] = await this.rootStore.tokenStore!.getTokensWithPrice([
+          (hook.data as TokenBalanceData).tokenId,
+        ]);
         if (!token) {
           return;
         }
         return new TokenBalanceRequest({ walletAddress, token });
+      case "staking":
+        const sNetwork = this.rootStore.networkStore?.getNetwork(
+          (hook.data as StakingData).networkId
+        );
+        const [sStakedToken, sRewardsToken] =
+          await this.rootStore.tokenStore!.getTokensWithPrice([
+            (hook.data as StakingData).stakedTokenId,
+            (hook.data as StakingData).rewardsTokenId,
+          ]);
+        if (!sNetwork || !sStakedToken || !sRewardsToken) {
+          return;
+        }
+        return new StakingRequest({
+          walletAddress,
+          network: sNetwork,
+          stakedToken: sStakedToken,
+          rewardsToken: sRewardsToken,
+        });
+      case "yield-farming":
+        const yfNetwork = this.rootStore.networkStore?.getNetwork(
+          (hook.data as YieldFarmingData).networkId
+        );
+        const [yfStakedToken0, yfStakedToken1, yfRewardsToken] =
+          await this.rootStore.tokenStore!.getTokensWithPrice([
+            (hook.data as YieldFarmingData).stakedTokenId0,
+            (hook.data as YieldFarmingData).stakedTokenId1,
+            (hook.data as YieldFarmingData).rewardsTokenId,
+          ]);
+        if (
+          !yfNetwork ||
+          !yfStakedToken0 ||
+          !yfStakedToken1 ||
+          !yfRewardsToken
+        ) {
+          return;
+        }
+        return new YieldFarmingRequest({
+          walletAddress,
+          network: yfNetwork,
+          stakedToken0: yfStakedToken0,
+          stakedToken1: yfStakedToken1,
+          rewardsToken: yfRewardsToken,
+        });
       default:
         return undefined;
     }
@@ -86,7 +137,7 @@ export class HookStore {
   @action
   runHook = async (hook: Hook, walletAddress: string) => {
     const currentVersion = hook.versions.find((v) => v.active);
-    const request = this.getHookRequest(hook, walletAddress);
+    const request = await this.getHookRequest(hook, walletAddress);
     if (!hook.isPublic || !currentVersion || !request) {
       return;
     }

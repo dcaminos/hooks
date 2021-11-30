@@ -1,6 +1,6 @@
 import { ethers } from "ethers";
 import { networks } from "lib/config/networks";
-import { BigNumber } from "lib/sdk/big-number";
+import { BigNumber } from "bignumber.js";
 import { NetworkId } from "lib/sdk/network";
 
 export type TokensPrice = {
@@ -56,6 +56,10 @@ export class Token {
     return this._price;
   }
 
+  public set price(value: BigNumber | undefined) {
+    this._price = value;
+  }
+
   balanceOf = async (
     networkId: NetworkId,
     walletAddress: string
@@ -81,7 +85,7 @@ export class Token {
             provider
           );
           const response = await ethersContract["balanceOf"](walletAddress);
-          return BigNumber.from(response);
+          return new BigNumber(ethers.utils.formatEther(response));
         } catch (error) {
           return undefined;
         }
@@ -108,7 +112,7 @@ export class Token {
 
   toString = () => {
     return `${this.name} (${this.symbol.toUpperCase()}) [${
-      this.price?.toReal() ?? "-.--"
+      this.price?.toFormat(2) ?? "-.--"
     }]`;
   };
 }

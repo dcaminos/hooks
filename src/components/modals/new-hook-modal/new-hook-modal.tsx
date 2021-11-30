@@ -41,17 +41,8 @@ export const NewHookModal: React.FC = observer((props) => {
       description: "Read the current position from a farming smart contract",
       image: Charts,
       onSelect: () => {
-        notification.open({
-          message: "Coming soon!",
-          description: "Yield Farming hooks are not implemented yet...",
-          icon: <RiErrorWarningFill style={{ color: "#1BE7FF" }} />,
-          closeIcon: (
-            <RiCloseFill
-              className="remix-icon da-text-color-black-80"
-              size={24}
-            />
-          ),
-        });
+        hideModal(modalType);
+        showModal("new-yield-farming");
       },
     },
     {

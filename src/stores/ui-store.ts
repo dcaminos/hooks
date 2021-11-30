@@ -5,6 +5,7 @@ export type ModalType =
   | "new-hook"
   | "new-token-balance"
   | "new-staking"
+  | "new-yield-farming"
   | "first-profile"
   | "new-wallet"
   | "edit-wallet"
@@ -19,6 +20,7 @@ export class UiStore {
   isNewHookModalVisible: boolean = false;
   isNewTokenBalanceModalVisible: boolean = false;
   isNewStakingModalVisible: boolean = false;
+  isNewYieldFarmingModalVisible: boolean = false;
   isNewProfileModalVisible: boolean = false;
   isNewWalletModalVisible: boolean = false;
   isPublishHookModalVisible: boolean = false;
@@ -46,6 +48,9 @@ export class UiStore {
       case "new-staking":
         this.isNewStakingModalVisible = true;
         return;
+      case "new-yield-farming":
+        this.isNewYieldFarmingModalVisible = true;
+        return;
       case "first-profile":
         this.isNewProfileModalVisible = true;
         return;
@@ -72,6 +77,9 @@ export class UiStore {
         return;
       case "new-staking":
         this.isNewStakingModalVisible = false;
+        return;
+      case "new-yield-farming":
+        this.isNewYieldFarmingModalVisible = false;
         return;
       case "first-profile":
         this.isNewProfileModalVisible = false;

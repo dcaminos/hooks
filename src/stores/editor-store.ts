@@ -95,7 +95,7 @@ export class EditorStore {
       false
     );
 
-    const request = this.rootStore.hookStore?.getHookRequest(
+    const request = await this.rootStore.hookStore?.getHookRequest(
       this.currentHook,
       this.testingAddress
     );
@@ -107,7 +107,7 @@ export class EditorStore {
     console.time("Hook running time");
     const response = await run(jsCode, request);
     console.timeEnd("Hook running time");
-
+    console.log(response);
     if (response) {
       //const tokensInfo = await getTokensInfo(this.currentHook.tokenIds);
       //console.log("Hook reponse:");

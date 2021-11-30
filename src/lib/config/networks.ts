@@ -7,6 +7,7 @@ export const networks: NetworkD[] = [
     url: "https://mainnet.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161",
     tokenId: "ethereum",
     image: "https://assets.coingecko.com/coins/images/279/large/ethereum.png",
+    blockTime: 3,
   },
   {
     id: "binance-smart-chain",
@@ -14,6 +15,7 @@ export const networks: NetworkD[] = [
     url: "https://bsc-dataseed.binance.org",
     tokenId: "binancecoin",
     image: "https://assets.coingecko.com/coins/images/18711/large/Unknown.png",
+    blockTime: 3,
   },
   {
     id: "solana",
@@ -21,6 +23,7 @@ export const networks: NetworkD[] = [
     url: "https://api.mainnet-beta.solana.com",
     tokenId: "solana",
     image: "https://assets.coingecko.com/coins/images/4128/small/Solana.jpg",
+    blockTime: 3,
   },
   {
     id: "moonriver",
@@ -28,5 +31,6 @@ export const networks: NetworkD[] = [
     url: "https://rpc.moonriver.moonbeam.network",
     tokenId: "moonriver",
     image: "https://assets.coingecko.com/coins/images/17984/large/9285.png",
+    blockTime: 3,
   },
 ];

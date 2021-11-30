@@ -10,6 +10,7 @@ import { PublishHookModal } from "components/modals/publish-hook-modal/publish-h
 import { PublishHookSuccessModal } from "components/modals/publish-hook-success/publish-hook-success";
 import { NewTokenBalanceModal } from "components/modals/new-token-balance-modal/new-token-balance-modal";
 import { NewStakingModal } from "components/modals/new-staking-modal/new-staking-modal";
+import { NewYieldFarmingModal } from "components/modals/new-yield-farming-modal/new-yield-farming-modal";
 
 export const PrivatePage: React.FC = observer((props) => {
   const { children } = props;
@@ -42,6 +43,7 @@ export const PrivatePage: React.FC = observer((props) => {
       <NewHookModal />
       <NewTokenBalanceModal />
       <NewStakingModal />
+      <NewYieldFarmingModal />
       <NewWalletModal />
       <PublishHookModal />
       <PublishHookSuccessModal />

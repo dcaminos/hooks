@@ -11,6 +11,7 @@ export type NetworkD = {
   url: string;
   tokenId: string;
   image: string;
+  blockTime: number;
 };
 
 export class Network {
@@ -19,6 +20,7 @@ export class Network {
   private _url: string;
   private _tokenId: string;
   private _image: string;
+  private _blockTime: number;
 
   constructor(network: NetworkD) {
     this._id = network.id;
@@ -26,6 +28,7 @@ export class Network {
     this._url = network.url;
     this._tokenId = network.tokenId;
     this._image = network.image;
+    this._blockTime = network.blockTime;
   }
 
   public get id() {
@@ -42,5 +45,8 @@ export class Network {
   }
   public get image() {
     return this._image;
+  }
+  public get blockTime() {
+    return this._blockTime;
   }
 }

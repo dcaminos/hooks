@@ -6,7 +6,7 @@ import {
   UserContext,
 } from "components/router/contexts";
 import { TokenPicker } from "components/token-picker.tsx/token-picker";
-import { Hook, StakingData } from "lib/hook";
+import { Hook, YieldFarmingData } from "lib/hook";
 import { NetworkId } from "lib/sdk/network";
 import { template } from "lib/sdk/staking/template";
 import { observer } from "mobx-react-lite";
@@ -15,18 +15,19 @@ import { useContext, useEffect, useState } from "react";
 import { useHistory } from "react-router";
 import { ModalType } from "stores/ui-store";
 
-const modalType: ModalType = "new-staking";
+const modalType: ModalType = "new-yield-farming";
 
-export const NewStakingModal: React.FC = observer((props) => {
-  const { isNewStakingModalVisible, showModal, hideModal } =
+export const NewYieldFarmingModal: React.FC = observer((props) => {
+  const { isNewYieldFarmingModalVisible, showModal, hideModal } =
     useContext(UIContext)!;
   const { createHook, action } = useContext(HookContext)!;
   const { user } = useContext(UserContext)!;
   const history = useHistory();
   const [title, setTitle] = useState("");
   const [networkId, setNetworkId] = useState<NetworkId | undefined>();
-  const [stakedTokenId, setStakedTokenId] = useState<string | undefined>();
   const [rewardsTokenId, setRewardsTokenId] = useState<string | undefined>();
+  const [stakedTokenId0, setStakedTokenId0] = useState<string | undefined>();
+  const [stakedTokenId1, setStakedTokenId1] = useState<string | undefined>();
   const [form] = Form.useForm();
 
   useEffect(() => {
@@ -36,20 +37,21 @@ export const NewStakingModal: React.FC = observer((props) => {
   }, [networkId, form]);
 
   const onCreateHookAction = async () => {
-    if (!user || !stakedTokenId || !rewardsTokenId) {
+    if (!user || !stakedTokenId0 || !stakedTokenId1 || !rewardsTokenId) {
       return;
     }
 
     const hook: Hook = {
       id: "",
-      type: "staking",
+      type: "yield-farming",
       owner: user.id,
       title: title,
       data: {
         networkId,
-        stakedTokenId,
+        stakedTokenId0,
+        stakedTokenId1,
         rewardsTokenId,
-      } as StakingData,
+      } as YieldFarmingData,
       isPublic: false,
       code: template(),
       createdAt: moment(),
@@ -93,10 +95,10 @@ export const NewStakingModal: React.FC = observer((props) => {
 
   return (
     <Modal
-      title={<h4 className="da-m-0">Craete Staking Hook</h4>}
+      title={<h4 className="da-m-0">Craete Yield Farming Hook</h4>}
       destroyOnClose={true}
       width={800}
-      visible={isNewStakingModalVisible}
+      visible={isNewYieldFarmingModalVisible}
       onCancel={() => hideModal(modalType)}
       footer={modalFooter}
       confirmLoading={action !== undefined}
@@ -136,37 +138,20 @@ export const NewStakingModal: React.FC = observer((props) => {
           />
         </Form.Item>
 
-        <Form.Item
-          label="Network"
-          name="networkId"
-          rules={[
-            {
-              required: true,
-              message: "You need to pick a Network",
-              validateTrigger: "onSubmit",
-            },
-          ]}
-        >
-          <NetworkPicker value={networkId} onChange={setNetworkId} />
-        </Form.Item>
         <Row gutter={16}>
           <Col span={12}>
             <Form.Item
-              label="Staked Token"
-              name="stakedTokenId"
+              label="Network"
+              name="networkId"
               rules={[
                 {
                   required: true,
-                  message: "You need to pick a Token for staking",
+                  message: "You need to pick a Network",
                   validateTrigger: "onSubmit",
                 },
               ]}
             >
-              <TokenPicker
-                value={stakedTokenId}
-                onChange={setStakedTokenId}
-                networkId={networkId}
-              />
+              <NetworkPicker value={networkId} onChange={setNetworkId} />
             </Form.Item>
           </Col>
           <Col span={12}>
@@ -184,6 +169,46 @@ export const NewStakingModal: React.FC = observer((props) => {
               <TokenPicker
                 value={rewardsTokenId}
                 onChange={setRewardsTokenId}
+                networkId={networkId}
+              />
+            </Form.Item>
+          </Col>
+        </Row>
+        <Row gutter={16}>
+          <Col span={12}>
+            <Form.Item
+              label="Staked Token 0"
+              name="stakedTokenId0"
+              rules={[
+                {
+                  required: true,
+                  message: "You need to pick a Token for staking",
+                  validateTrigger: "onSubmit",
+                },
+              ]}
+            >
+              <TokenPicker
+                value={stakedTokenId0}
+                onChange={setStakedTokenId0}
+                networkId={networkId}
+              />
+            </Form.Item>
+          </Col>
+          <Col span={12}>
+            <Form.Item
+              label="Staked Token 1"
+              name="stakedTokenId1"
+              rules={[
+                {
+                  required: true,
+                  message: "You need to pick a Token for staking",
+                  validateTrigger: "onSubmit",
+                },
+              ]}
+            >
+              <TokenPicker
+                value={stakedTokenId1}
+                onChange={setStakedTokenId1}
                 networkId={networkId}
               />
             </Form.Item>

@@ -1,5 +1,5 @@
 import axios from "axios";
-import { BigNumber } from "../lib/sdk/big-number";
+import { BigNumber } from "bignumber.js";
 import { TokensPrice } from "lib/sdk/token";
 import { tokens } from "lib/config/tokens";
 
@@ -33,7 +33,7 @@ export const getTokensPrices = async (
   );
   let prices: TokensPrice = {};
   Object.keys(res.data).forEach(
-    (k) => (prices[k] = BigNumber.fromReal(res.data[k].usd))
+    (k) => (prices[k] = new BigNumber(res.data[k].usd))
   );
   return prices;
 };

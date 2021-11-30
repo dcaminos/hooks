@@ -1,4 +1,4 @@
-import { BigNumber } from "lib/sdk/big-number";
+import { BigNumber } from "bignumber.js";
 import { NetworkId } from "lib/sdk/network";
 import { Token } from "../token";
 
@@ -28,7 +28,7 @@ export class TokenBalanceResponse {
     let text = this.token.toString() + `\n`;
     for (const [key, value] of Array.from(this._balances.entries())) {
       if (value !== undefined) {
-        text += `${key}: ${(value as BigNumber).toReal()}\n`;
+        text += `${key}: ${(value as BigNumber).toFormat()}\n`;
       }
     }
 

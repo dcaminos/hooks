@@ -6,7 +6,7 @@ import { observer } from "mobx-react-lite";
 import { ReactNode, useContext, useEffect, useState } from "react";
 
 export type TokenPickerProps = {
-  value?: string | undefined;
+  value: string | undefined;
   onChange: (value: string) => void;
   networkId?: NetworkId;
 };

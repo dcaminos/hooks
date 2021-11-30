@@ -10,6 +10,7 @@
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "@types/antd": "^1.0.0",
+    "@types/bignumber.js": "^5.0.0",
     "@types/bn.js": "^5.1.0",
     "@types/firebase": "^3.2.1",
     "@types/jest": "^26.0.15",

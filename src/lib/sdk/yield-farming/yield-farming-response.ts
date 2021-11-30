@@ -1,41 +1,140 @@
-import { BigNumber } from "lib/sdk/big-number";
+import { BigNumber } from "bignumber.js";
 import { Token } from "lib/sdk/token";
+import { Network } from "../network";
 
 export type YieldFarmingResponseD = {
-  stakedToken: Token;
-  rewardToken: Token;
+  network: Network;
+  stakedToken0: Token;
+  stakedToken1: Token;
+  rewardsToken: Token;
   staked: BigNumber;
   rewardPending: BigNumber;
   rewardTaken?: BigNumber;
-  apr?: BigNumber;
+  rewardsPerBlock?: BigNumber;
+  lpTotalSupply?: BigNumber;
+  liquidity?: BigNumber;
+  poolWeight?: BigNumber;
 };
 
 export class YieldFarmingResponse {
-  public stakedToken: Token;
-  public rewardToken: Token;
-  public staked: BigNumber;
-  public rewardPending: BigNumber;
-  public rewardTaken?: BigNumber;
-  public apr?: BigNumber;
+  private _network: Network;
+  private _stakedToken0: Token;
+  private _stakedToken1: Token;
+  private _rewardsToken: Token;
+  private _staked: BigNumber;
+  private _rewardPending: BigNumber;
+  private _rewardTaken?: BigNumber;
+  private _rewardsPerBlock?: BigNumber;
+  private _lpTotalSupply?: BigNumber;
+  private _liquidity?: BigNumber;
+  private _poolWeight?: BigNumber;
+
+  // Calculated values
+
+  private _apr?: BigNumber;
 
   constructor(stakingResponse: YieldFarmingResponseD) {
-    this.stakedToken = stakingResponse.stakedToken;
-    this.rewardToken = stakingResponse.rewardToken;
-    this.staked = stakingResponse.staked;
-    this.rewardPending = stakingResponse.rewardPending;
-    this.rewardTaken = stakingResponse.rewardTaken;
-    this.apr = stakingResponse.apr;
+    this._network = stakingResponse.network;
+    this._stakedToken0 = stakingResponse.stakedToken0;
+    this._stakedToken1 = stakingResponse.stakedToken1;
+    this._rewardsToken = stakingResponse.rewardsToken;
+    this._staked = stakingResponse.staked;
+    this._rewardPending = stakingResponse.rewardPending;
+    this._rewardTaken = stakingResponse.rewardTaken;
+    this._rewardsPerBlock = stakingResponse.rewardsPerBlock;
+    this._lpTotalSupply = stakingResponse.lpTotalSupply;
+    this._liquidity = stakingResponse.liquidity;
+    this._poolWeight = stakingResponse.poolWeight;
+    this.calculateAPR();
   }
+
+  public get network() {
+    return this._network;
+  }
+
+  public get stakedToken0() {
+    return this._stakedToken0;
+  }
+
+  public get stakedToken1() {
+    return this._stakedToken1;
+  }
+
+  public get rewardsToken() {
+    return this._rewardsToken;
+  }
+
+  public get staked() {
+    return this._staked;
+  }
+
+  public get rewardPending() {
+    return this._rewardPending;
+  }
+
+  public get rewardTaken() {
+    return this._rewardTaken;
+  }
+
+  public get rewardsPerBlock() {
+    return this._rewardsPerBlock;
+  }
+
+  public get lpTotalSupply() {
+    return this._lpTotalSupply;
+  }
+
+  public get poolWeight() {
+    return this._poolWeight;
+  }
+
+  public get liquidity() {
+    return this._liquidity;
+  }
+
+  public get apr() {
+    return this._apr;
+  }
+
+  calculateAPR = () => {
+    if (
+      this.poolWeight &&
+      this.rewardsPerBlock &&
+      this.rewardsToken.price &&
+      this.liquidity
+    ) {
+      const blocksPerYear = (60 / this.network.blockTime) * 60 * 24 * 365; // 10512000
+      const yearlyCakeRewardAllocation = this.poolWeight.times(
+        this.rewardsPerBlock.times(new BigNumber(blocksPerYear))
+      );
+      this._apr = yearlyCakeRewardAllocation
+        .times(this.rewardsToken.price)
+        .div(this.liquidity)
+        .times(new BigNumber(100));
+    }
+  };
 
   toString() {
     return JSON.stringify(
       {
-        stakedToken: this.stakedToken.toString(),
-        rewardToken: this.rewardToken.toString(),
-        staked: this.staked.toReal(),
-        rewardPending: this.rewardPending.toReal(),
-        rewardTaken: this.rewardTaken ? this.rewardTaken.toReal() : undefined,
-        apr: this.apr ? this.apr.toReal(2) + "%" : undefined,
+        network: this._network.name,
+        stakedToken0: this._stakedToken0.toString(),
+        stakedToken1: this._stakedToken1.toString(),
+        rewardToken: this._rewardsToken.toString(),
+        staked: this._staked.toFormat(),
+        rewardPending: this._rewardPending.toFormat(),
+        rewardTaken: this._rewardTaken
+          ? this._rewardTaken.toFormat()
+          : undefined,
+        rewardsPerBlock: this._rewardsPerBlock
+          ? this._rewardsPerBlock.toFormat()
+          : undefined,
+        lpTotalSupply: this.lpTotalSupply
+          ? this.lpTotalSupply.toFormat()
+          : undefined,
+        poolWeight: this._poolWeight ? this._poolWeight.toFormat() : undefined,
+        liquidity: this._liquidity ? this._liquidity.toFormat() : undefined,
+        apr: this._apr ? this._apr.toFormat() : undefined,
       },
       undefined,
       1

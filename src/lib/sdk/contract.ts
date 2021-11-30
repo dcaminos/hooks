@@ -1,4 +1,5 @@
 import { ethers } from "ethers";
+import { BigNumber } from "bignumber.js";
 import { Network } from "./network";
 
 export type ContractType = "ethereum" | "solana";
@@ -44,21 +45,49 @@ export class Contract {
       abi,
     });
 
-  call = async (methodName: string, args: any[]): Promise<any> => {
-    if (this._type === "ethereum") {
-      if (!this._abi) {
-        return undefined;
-      }
+  call = async (methodName: string, args: any[]): Promise<any[]> => {
+    switch (this._type) {
+      case "ethereum":
+        return this.callEthereum(methodName, args);
+      default:
+        return [];
+    }
+  };
 
-      const provider = new ethers.providers.JsonRpcProvider(this._network.url);
-      const ethersContract = new ethers.Contract(
-        this._address,
-        this._abi,
-        provider
-      );
-      return await ethersContract[methodName](...args);
+  private callEthereum = async (
+    methodName: string,
+    args: any[]
+  ): Promise<any[]> => {
+    if (!this._abi) {
+      throw new Error("No ABE available");
     }
 
-    return undefined;
+    const provider = new ethers.providers.JsonRpcProvider(this._network.url);
+    const ethersContract = new ethers.Contract(
+      this._address,
+      this._abi,
+      provider
+    );
+
+    const response = await ethersContract[methodName](...args);
+
+    let array = [];
+    if (
+      ethersContract.interface.getFunction(methodName).outputs?.length === 1
+    ) {
+      array = Array.from([response]);
+    } else {
+      array = Array.from(response);
+    }
+
+    const outputs = ethersContract.interface.getFunction(methodName).outputs;
+    return array.map((value, index) => {
+      if (outputs && outputs[index]) {
+        if (outputs[index].type === "uint256") {
+          return new BigNumber(ethers.utils.formatEther(value));
+        }
+      }
+      return value;
+    });
   };
 }
