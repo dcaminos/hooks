@@ -4,6 +4,6 @@ export const template = (tokenId: string) => {
   async function runHook(request: TokenBalanceRequest): Promise<TokenBalanceResponse> {
       const token: Token = request.token
       const balances: Map<NetworkId,BigNumber> = await token.balancesOf(request.walletAddress)
-      return new TokenBalanceResponse({balances})
+      return new TokenBalanceResponse({token, balances})
   }`;
 };

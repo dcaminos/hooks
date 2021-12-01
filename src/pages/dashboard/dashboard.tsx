@@ -1,22 +1,19 @@
-import React from "react";
-
-import { Row, Col } from "antd";
-
-import { UpgradePlanCardOneBg } from "../../examples/upgrade-pan-card-one-bg";
-import OrderColumnCardVertical from "../../examples/order-column-card-vertical";
+import { Col, Row } from "antd";
+import { observer } from "mobx-react-lite";
+import React, { useContext } from "react";
+import { UIContext, UserContext } from "../../components/router/contexts";
 import ActiveUserCardVertical from "../../examples/active-user-card-vertical";
-import SubsColumnCardVertical from "../../examples/subs-column-card-vertical";
-import CustomerSupportCardVertical from "../../examples/customer-support-card-vertical";
-import { DownloadCard } from "../../examples/download-card";
-import EarningsCard from "../../examples/earnings-card";
-import BestTeamCard from "../../examples/best-team-card";
-import ExpensesCard from "../../examples/expenses-card";
 import AnalyticsProjectTableCard from "../../examples/analytics-project-table-card";
 import AnalyticsRevenueRadarCard from "../../examples/analytics-revenue-radar-card";
 import AnalyticsVisitersLineCard from "../../examples/analytics-visiters-line-card";
-import { useContext } from "react";
-import { observer } from "mobx-react-lite";
-import { UIContext, UserContext } from "../../components/router/contexts";
+import BestTeamCard from "../../examples/best-team-card";
+import CustomerSupportCardVertical from "../../examples/customer-support-card-vertical";
+import { DownloadCard } from "../../examples/download-card";
+import EarningsCard from "../../examples/earnings-card";
+import OrderColumnCardVertical from "../../examples/order-column-card-vertical";
+import SubsColumnCardVertical from "../../examples/subs-column-card-vertical";
+import { UpgradePlanCardOneBg } from "../../examples/upgrade-pan-card-one-bg";
+import { TokenBalancesCard } from "./token-balances-card/token-balances-card";
 
 export const Dashboard: React.FC = observer((props) => {
   const { user } = useContext(UserContext)!;
@@ -80,7 +77,7 @@ export const Dashboard: React.FC = observer((props) => {
             </Col>
 
             <Col className="da-analytics-col-2">
-              <ExpensesCard />
+              <TokenBalancesCard />
 
               <DownloadCard />
 

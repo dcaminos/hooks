@@ -77,8 +77,14 @@ export class Token {
       default: {
         //ethereum
         try {
-          const fakeABI: string = `[{"inputs":[{"internalType":"address","name":"_user","type":"address"}],"name":"balanceOf","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"}]`;
           const provider = new ethers.providers.JsonRpcProvider(network.url);
+          if (network.tokenId === this.id) {
+            const response = await provider.getBalance(walletAddress);
+            return new BigNumber(ethers.utils.formatEther(response));
+          }
+
+          const fakeABI: string = `[{"inputs":[{"internalType":"address","name":"_user","type":"address"}],"name":"balanceOf","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"}]`;
+
           const ethersContract = new ethers.Contract(
             tokenAddress,
             fakeABI,

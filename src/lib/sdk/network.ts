@@ -3,7 +3,8 @@ export type NetworkId =
   | "binance-smart-chain"
   | "polygon-pos"
   | "solana"
-  | "moonriver";
+  | "moonriver"
+  | "avalanche";
 
 export type NetworkD = {
   id: NetworkId;

@@ -70,7 +70,7 @@ export class HookStore {
   fetchHooks = async () => {
     this.action = "fetching";
     const hooksCol = collection(this.rootStore.firestore, "hooks");
-    const q = query(hooksCol, where("isPublic", "==", false)).withConverter(
+    const q = query(hooksCol, where("isPublic", "==", true)).withConverter(
       hookConverter
     );
     const r = await getDocs(q);
@@ -103,11 +103,12 @@ export class HookStore {
       tokenId: token.id,
     } as TokenBalanceData,
     isPublic: true,
-    code: `import { TokenBalanceRequest, TokenBalanceResponse, BigNumber, NetworkId } from 'file:///hooks-sdk'
+    code: `import { TokenBalanceRequest, TokenBalanceResponse, BigNumber, Token, NetworkId } from 'file:///hooks-sdk'
 
     async function runHook(request: TokenBalanceRequest): Promise<TokenBalanceResponse> {
-        const balances: Map<NetworkId,BigNumber> = await request.token.balancesOf(request.walletAdress)
-        return new TokenBalanceResponse(balances)
+        const token: Token = request.token
+        const balances: Map<NetworkId,BigNumber> = await token.balancesOf(request.walletAddress)
+        return new TokenBalanceResponse({token, balances})
     }`,
     createdAt: moment(),
     updatedAt: moment(),
@@ -118,11 +119,12 @@ export class HookStore {
         releaseDate: moment(),
         ts: ``,
         js: `async function runHook(request) {
-        const balances = await request.token.balancesOf(request.walletAdress);
-        return new TokenBalanceResponse(balances);
-    }
-    
-     runHook`,
+          const token = request.token;
+          const balances = await token.balancesOf(request.walletAddress);
+          return new TokenBalanceResponse({ token, balances });
+      }
+      
+       runHook`,
         notes: "Sintetic Hook",
       },
     ],

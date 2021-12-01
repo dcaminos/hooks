@@ -17,6 +17,7 @@ export const tokens: TokenD[] = [
     image:
       "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1595348880",
     contracts: {
+      ethereum: "crypto-currency",
       "binance-smart-chain": "0x2170ed0880ac9a755fd29b2688956bd959f933f8",
       "huobi-token": "0x64ff637fb478863b7468bc97d30a5bf3a428a1fd",
       avalanche: "0xf20d962a6c8f70c731bd838a3a388d7d48fa6e15",
@@ -59,7 +60,7 @@ export const tokens: TokenD[] = [
     image:
       "https://assets.coingecko.com/coins/images/825/large/binance-coin-logo.png?1547034615",
     contracts: {
-      binancecoin: "BNB",
+      "binance-smart-chain": "network-currency",
       avalanche: "0x264c1383ea520f73dd837f915ef3a732e204a493",
       "polygon-pos": "0xa649325aa7c5093d12d6f98eb4378deae68ce23f",
       "harmony-shard-0": "0xb1f6e61e1e113625593a22fa6aa94f8052bc39e0",
@@ -1702,7 +1703,7 @@ export const tokens: TokenD[] = [
     symbol: "idex",
     name: "IDEX",
     image:
-      "https://assets.coingecko.com/coins/images/2565/large/49046004.png?1557813562",
+      "https://assets.coingecko.com/coins/images/2565/large/logomark-purple-286x286.png?1638362736",
     contracts: {
       ethereum: "0xb705268213d593b8fd88d3fdeff93aff5cbdcfae",
       sora: "0x006cfd2fb06c15cd2c464d1830c0d247e32f36f34233a6a266d6581ea5677582",
@@ -6426,6 +6427,8 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/10212/large/likecoin.png?1576640519",
     contracts: {
       cosmos: "",
+      osmosis:
+        "IBC/9989AD6CCA39D1131523DB0617B50F6442081162294B4795E26746292467B525",
     },
   },
   {
@@ -10795,7 +10798,7 @@ export const tokens: TokenD[] = [
     symbol: "xcm",
     name: "CoinMetro",
     image:
-      "https://assets.coingecko.com/coins/images/3125/large/biM5NBem.png?1628170420",
+      "https://assets.coingecko.com/coins/images/3125/large/XCM_logo.png?1638343203",
     contracts: {
       ethereum: "0x36ac219f90f5a6a3c77f2a7b660e3cc701f68e25",
     },
@@ -11433,7 +11436,7 @@ export const tokens: TokenD[] = [
     symbol: "zano",
     name: "Zano",
     image:
-      "https://assets.coingecko.com/coins/images/8370/large/xAFGD7BZ_400x400.jpg?1557804634",
+      "https://assets.coingecko.com/coins/images/8370/large/zano.png?1638343828",
     contracts: {
       ethereum: "0xdb85f6685950e285b1e611037bebe5b34e2b7d78",
     },
@@ -11675,16 +11678,6 @@ export const tokens: TokenD[] = [
     contracts: {
       "binance-smart-chain": "0xb8e3bb633f7276cc17735d86154e0ad5ec9928c0",
       ethereum: "0xb8e3bb633f7276cc17735d86154e0ad5ec9928c0",
-    },
-  },
-  {
-    id: "winding-tree",
-    symbol: "lif",
-    name: "Lif",
-    image:
-      "https://assets.coingecko.com/coins/images/1760/large/lif-logo.png?1622196538",
-    contracts: {
-      ethereum: "0x9c38688e5acb9ed6049c8502650db5ac8ef96465",
     },
   },
   {
@@ -12279,6 +12272,7 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/14716/large/gmee-200x200.png?1621827468",
     contracts: {
       ethereum: "0xd9016a907dc0ecfa3ca425ab20b6b785b42f2373",
+      "binance-smart-chain": "0x84e9a6f9d240fdd33801f7135908bfa16866939a",
       "polygon-pos": "0xcf32822ff397ef82425153a9dcb726e5ff61dca7",
     },
   },
@@ -13350,7 +13344,7 @@ export const tokens: TokenD[] = [
     symbol: "xdai",
     name: "xDAI",
     image:
-      "https://assets.coingecko.com/coins/images/11062/large/xdai.png?1614727492",
+      "https://assets.coingecko.com/coins/images/11062/large/Identity-Primary-DarkBG.png?1638372986",
     contracts: {},
   },
   {
@@ -13437,7 +13431,7 @@ export const tokens: TokenD[] = [
     symbol: "kainet",
     name: "KAINET",
     image:
-      "https://assets.coingecko.com/coins/images/19071/large/KAINET.png?1634274234",
+      "https://assets.coingecko.com/coins/images/19071/large/kainet.png?1638345263",
     contracts: {
       "binance-smart-chain": "0x723b6795be37ad8a0376acfb50034fa21912b439",
     },
@@ -14129,8 +14123,9 @@ export const tokens: TokenD[] = [
     image:
       "https://assets.coingecko.com/coins/images/16367/large/Logo-Ever-Rise-light-Logo-1.png?1623819407",
     contracts: {
-      "binance-smart-chain": "0xc7d43f2b51f44f09fbb8a691a0451e8ffcf36c0a",
-      ethereum: "0x8a2d988fe2e8c6716cbcef1b33df626c692f7b98",
+      "binance-smart-chain": "0x0cd022dde27169b20895e0e2b2b8a33b25e63579",
+      "polygon-pos": "0x0cd022dde27169b20895e0e2b2b8a33b25e63579",
+      ethereum: "0x0cd022dde27169b20895e0e2b2b8a33b25e63579",
     },
   },
   {
@@ -14995,7 +14990,7 @@ export const tokens: TokenD[] = [
     symbol: "fhm",
     name: "Fantohm",
     image:
-      "https://assets.coingecko.com/coins/images/20021/large/logo200_%2827%29.png?1636412733",
+      "https://assets.coingecko.com/coins/images/20021/large/fhm.png?1638251002",
     contracts: {
       fantom: "0xfa1fbb8ef55a4855e5688c0ee13ac3f202486286",
     },
@@ -15873,7 +15868,7 @@ export const tokens: TokenD[] = [
     symbol: "ssv",
     name: "SSV Network",
     image:
-      "https://assets.coingecko.com/coins/images/19155/large/ssv.png?1634539858",
+      "https://assets.coingecko.com/coins/images/19155/large/ssv.png?1638181902",
     contracts: {
       ethereum: "0x9d65ff81a3c488d585bbfb0bfe3c7707c7917f54",
     },
@@ -18166,7 +18161,7 @@ export const tokens: TokenD[] = [
     symbol: "bog",
     name: "Bogged Finance",
     image:
-      "https://assets.coingecko.com/coins/images/15980/large/DNZDqtH2_400x400.png?1622530803",
+      "https://assets.coingecko.com/coins/images/15980/large/bog.png?1638183823",
     contracts: {
       "binance-smart-chain": "0xb09fe1613fe03e7361319d2a43edc17422f36b09",
     },
@@ -18947,7 +18942,7 @@ export const tokens: TokenD[] = [
     symbol: "ktn",
     name: "Kattana",
     image:
-      "https://assets.coingecko.com/coins/images/14739/large/c2IqkKWK_400x400.jpg?1618004426",
+      "https://assets.coingecko.com/coins/images/14739/large/256-256-1.png?1638363577",
     contracts: {
       ethereum: "0x491e136ff7ff03e6ab097e54734697bb5802fc1c",
       "binance-smart-chain": "0xdae6c2a48bfaa66b43815c5548b10800919c993e",
@@ -19984,7 +19979,7 @@ export const tokens: TokenD[] = [
     symbol: "1flr",
     name: "Flare Token",
     image:
-      "https://assets.coingecko.com/coins/images/19114/large/1flr.png?1637672278",
+      "https://assets.coingecko.com/coins/images/19114/large/flr.png?1638238607",
     contracts: {
       "polygon-pos": "0x5f0197ba06860dac7e31258bdf749f92b6a636d4",
     },
@@ -19997,6 +19992,7 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/13445/large/onxlogo-1.png?1608629659",
     contracts: {
       ethereum: "0xe0ad1806fd3e7edf6ff52fdb822432e847411033",
+      fantom: "0x27749e79ad796c4251e0a0564aef45235493a0b6",
     },
   },
   {
@@ -20989,14 +20985,6 @@ export const tokens: TokenD[] = [
     contracts: {
       ethereum: "0x4df812f6064def1e5e029f1ca858777cc98d2d81",
     },
-  },
-  {
-    id: "hilux",
-    symbol: "hlx",
-    name: "Hilux",
-    image:
-      "https://assets.coingecko.com/coins/images/5699/large/hiluxlogobig.png?1547041567",
-    contracts: {},
   },
   {
     id: "rublix",
@@ -22117,7 +22105,9 @@ export const tokens: TokenD[] = [
     name: "Midas",
     image:
       "https://assets.coingecko.com/coins/images/6453/large/OMrkHMb.png?1547042650",
-    contracts: {},
+    contracts: {
+      fantom: "0xb37528da6b4d378305d000a66ad91bd88e626761",
+    },
   },
   {
     id: "mirrored-invesco-qqq-trust",
@@ -22376,6 +22366,8 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/20216/large/12663.png?1636671008",
     contracts: {
       "binance-smart-chain": "0x63db060697b01c6f4a26561b1494685dcbbd998c",
+      avalanche: "0x8afa62fa8dde8888405c899d7da077a61a87eed3",
+      "polygon-pos": "0xf52d69bc301be21cbed7d3ca652d1708ff8a1162",
     },
   },
   {
@@ -22477,6 +22469,7 @@ export const tokens: TokenD[] = [
       ronin: "0xc99a6a985ed2cac1ef41640596c5a5f9f4e19ef5",
       cronos: "0xe44fd7fcb2b1581822d0c862b68222998a0c299a",
       boba: "0xdeaddeaddeaddeaddeaddeaddeaddeaddead0000",
+      tron: "THb4CqiFdwNHsWsQCs4JhzwjMWys4aqCbF",
       xdai: "0x6a023ccd1ff6f2045c3309768ead9e68f978f6e1",
     },
   },
@@ -23315,7 +23308,7 @@ export const tokens: TokenD[] = [
     symbol: "koda",
     name: "Koda Cryptocurrency",
     image:
-      "https://assets.coingecko.com/coins/images/15577/large/oPVvqhCU_400x400.jpg?1637792897",
+      "https://assets.coingecko.com/coins/images/15577/large/v2coin-100x100.png?1638150625",
     contracts: {
       "binance-smart-chain": "0x8094e772fa4a60bdeb1dfec56ab040e17dd608d5",
     },
@@ -23489,6 +23482,7 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/18533/large/handle.fiFOREXLogoDark200x200.png?1632755675",
     contracts: {
       ethereum: "0xdb298285fe4c5410b05390ca80e8fbe9de1f259b",
+      "polygon-pos": "0xdb298285fe4c5410b05390ca80e8fbe9de1f259b",
       "arbitrum-one": "0xdb298285fe4c5410b05390ca80e8fbe9de1f259b",
     },
   },
@@ -25906,7 +25900,7 @@ export const tokens: TokenD[] = [
     symbol: "cheems",
     name: "Cheems",
     image:
-      "https://assets.coingecko.com/coins/images/18358/large/logo_-_2021-09-14T154304.120.png?1631605392",
+      "https://assets.coingecko.com/coins/images/18358/large/cheems.png?1638183681",
     contracts: {
       solana: "3FoUAsGDbvTD6YZ4wVKJgTB76onJUKz7GPEBNiR5b8wc",
     },
@@ -26139,7 +26133,7 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/13909/large/RADAR.png?1634183461",
     contracts: {
       ethereum: "0xf9fbe825bfb2bf3e387af0dc18cac8d87f29dea8",
-      "binance-smart-chain": "0xf9fbe825bfb2bf3e387af0dc18cac8d87f29dea8",
+      "binance-smart-chain": "0xf03a2dc374d494fbe894563fe22ee544d826aa50",
     },
   },
   {
@@ -26199,16 +26193,6 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/13378/large/spiderdao_logo.png?1608029180",
     contracts: {
       ethereum: "0xbcd4b7de6fde81025f74426d43165a5b0d790fdd",
-    },
-  },
-  {
-    id: "halalchain",
-    symbol: "hlc",
-    name: "HalalChain",
-    image:
-      "https://assets.coingecko.com/coins/images/2737/large/halalchain.png?1547036938",
-    contracts: {
-      ethereum: "0x58c69ed6cd6887c0225d1fccecc055127843c69b",
     },
   },
   {
@@ -28295,16 +28279,6 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "xaaveb",
-    symbol: "xaaveb",
-    name: "xAAVEb",
-    image:
-      "https://assets.coingecko.com/coins/images/13237/large/xaave.png?1606630133",
-    contracts: {
-      ethereum: "0x704de5696df237c5b9ba0de9ba7e0c63da8ea0df",
-    },
-  },
-  {
     id: "xaavea",
     symbol: "xaavea",
     name: "xAAVEa",
@@ -28312,6 +28286,16 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/13236/large/xAAVEa.png?1606629962",
     contracts: {
       ethereum: "0x80dc468671316e50d4e9023d3db38d3105c1c146",
+    },
+  },
+  {
+    id: "xaaveb",
+    symbol: "xaaveb",
+    name: "xAAVEb",
+    image:
+      "https://assets.coingecko.com/coins/images/13237/large/xaave.png?1606630133",
+    contracts: {
+      ethereum: "0x704de5696df237c5b9ba0de9ba7e0c63da8ea0df",
     },
   },
   {
@@ -28406,7 +28390,7 @@ export const tokens: TokenD[] = [
     symbol: "MINIKISHU",
     name: "MINIKISHU",
     image:
-      "https://assets.coingecko.com/coins/images/18788/large/7BrFsOB.png?1633417207",
+      "https://assets.coingecko.com/coins/images/18788/large/minikishu.png?1638346740",
     contracts: {
       "binance-smart-chain": "0x47fd00664661058546fddada3eecc9f2cd41020e",
     },
@@ -29493,7 +29477,7 @@ export const tokens: TokenD[] = [
     symbol: "squid",
     name: "Squid Game",
     image:
-      "https://assets.coingecko.com/coins/images/20506/large/Squid_Game_Logo-0001.png?1637150038",
+      "https://assets.coingecko.com/coins/images/20506/large/squid.png?1638349268",
     contracts: {
       "binance-smart-chain": "0x87230146e138d3f296a9a77e497a2a83012e9bc5",
     },
@@ -30597,6 +30581,7 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/16386/large/dragonbite.PNG?1623893567",
     contracts: {
       ethereum: "0x4eed0fa8de12d5a86517f214c2f11586ba2ed88d",
+      "polygon-pos": "0x280724409b288de06c6d66c05965d3d456e2283a",
     },
   },
   {
@@ -31382,6 +31367,14 @@ export const tokens: TokenD[] = [
       "binance-smart-chain": "0x199f788ddb566b7ebb59bf35b36914f2acdb33de",
       ethereum: "0xf32122561d51e891b823dec2b42f644884c1cd91",
     },
+  },
+  {
+    id: "klimatas",
+    symbol: "kts",
+    name: "Klimatas",
+    image:
+      "https://assets.coingecko.com/coins/images/7899/large/74kNYS7Z_400x400.jpg?1551661909",
+    contracts: {},
   },
   {
     id: "cryption-network",
@@ -32871,6 +32864,7 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/18589/large/Ou7mp_R1TQ5B9vsBiZ8oQnSv36M6hiA2hESxV_7YSw0.png?1632556422",
     contracts: {
       ethereum: "0xf519381791c03dd7666c142d4e49fd94d3536011",
+      "polygon-pos": "0x50bcbc40306230713239ae1bddd5eefeeaa273dc",
     },
   },
   {
@@ -35331,7 +35325,7 @@ export const tokens: TokenD[] = [
     symbol: "2022m",
     name: "2022MOON",
     image:
-      "https://assets.coingecko.com/coins/images/20473/large/2022m.PNG?1637100670",
+      "https://assets.coingecko.com/coins/images/20473/large/6ccb1b_b632e1f8afa94310a15d53894c6a0410_mv2.png?1638372750",
     contracts: {
       "binance-smart-chain": "0x047a02a57501a813975b2d347278fdd3df671e86",
     },
@@ -36075,7 +36069,7 @@ export const tokens: TokenD[] = [
     symbol: "bcoin",
     name: "Bomber Coin",
     image:
-      "https://assets.coingecko.com/coins/images/18567/large/icon-token.png?1632448270",
+      "https://assets.coingecko.com/coins/images/18567/large/bcoin.png?1638171024",
     contracts: {
       "binance-smart-chain": "0x00e1656e45f18ec6747f5a8496fd39b50b38396d",
     },
@@ -36822,7 +36816,7 @@ export const tokens: TokenD[] = [
     symbol: "btr",
     name: "BTRIPS",
     image:
-      "https://assets.coingecko.com/coins/images/19273/large/btrips.png?1634868890",
+      "https://assets.coingecko.com/coins/images/19273/large/btr.png?1638182009",
     contracts: {
       ethereum: "0x5ea82c27efc7634f1c5ad20a3561c453433a2f3a",
     },
@@ -37409,7 +37403,7 @@ export const tokens: TokenD[] = [
     symbol: "pig",
     name: "Pig Finance",
     image:
-      "https://assets.coingecko.com/coins/images/14338/large/pig_logo.png?1615449163",
+      "https://assets.coingecko.com/coins/images/14338/large/pig.png?1638345420",
     contracts: {
       "binance-smart-chain": "0x8850d2c68c632e3b258e612abaa8fada7e6958e5",
     },
@@ -37711,16 +37705,6 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "spectre-utility-token",
-    symbol: "sxut",
-    name: "Spectre.ai Utility Token",
-    image:
-      "https://assets.coingecko.com/coins/images/2551/large/spectre-utility.png?1547036668",
-    contracts: {
-      ethereum: "0x2c82c73d5b34aa015989462b2948cd616a37641f",
-    },
-  },
-  {
     id: "spectre-dividend-token",
     symbol: "sxdt",
     name: "Spectre.ai Dividend Token",
@@ -37728,6 +37712,16 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/2550/large/spectre-dividend.png?1547036667",
     contracts: {
       ethereum: "0x12b306fa98f4cbb8d4457fdff3a0a0a56f07ccdf",
+    },
+  },
+  {
+    id: "spectre-utility-token",
+    symbol: "sxut",
+    name: "Spectre.ai Utility Token",
+    image:
+      "https://assets.coingecko.com/coins/images/2551/large/spectre-utility.png?1547036668",
+    contracts: {
+      ethereum: "0x2c82c73d5b34aa015989462b2948cd616a37641f",
     },
   },
   {
@@ -37857,16 +37851,6 @@ export const tokens: TokenD[] = [
     contracts: {
       tron: "TYnnMEaYksPaAk2U9a4JEZDaQ1gUDRwEej",
       "binance-smart-chain": "0x38a62b2030068e7b7a5268df7ab7a48bc6e396b4",
-    },
-  },
-  {
-    id: "obee-network",
-    symbol: "obee",
-    name: "Obee Network",
-    image:
-      "https://assets.coingecko.com/coins/images/12326/large/ObeeNetwork.png?1599099616",
-    contracts: {
-      ethereum: "0x3678d8cc9eb08875a3720f34c1c8d1e1b31f5a11",
     },
   },
   {
@@ -39378,16 +39362,6 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "block-array",
-    symbol: "ary",
-    name: "Block Array",
-    image:
-      "https://assets.coingecko.com/coins/images/2645/large/block-array.png?1547350758",
-    contracts: {
-      ethereum: "0xa5f8fc0921880cb7342368bd128eb8050442b1a1",
-    },
-  },
-  {
     id: "fredenergy",
     symbol: "fred",
     name: "FRED Energy",
@@ -39877,17 +39851,6 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "fred-energy-erc20",
-    symbol: "fredx",
-    name: "FRED Energy (ERC-20)",
-    image:
-      "https://assets.coingecko.com/coins/images/14628/large/AcD80M3u_400x400.jpg?1617348984",
-    contracts: {
-      ethereum: "0xd8e2b153e94daec5fe657a49ff59bb68fa67f126",
-      "binance-smart-chain": "0x321614eb36245bf2e2f2e58badaaaad1475e1026",
-    },
-  },
-  {
     id: "commercium",
     symbol: "cmm",
     name: "Commercium",
@@ -40160,7 +40123,7 @@ export const tokens: TokenD[] = [
     symbol: "ftb",
     name: "Fit&Beat",
     image:
-      "https://assets.coingecko.com/coins/images/18871/large/Fit_Beat_beyondbeingfit_logo_final19-01.png?1633655715",
+      "https://assets.coingecko.com/coins/images/18871/large/ftb.png?1638183072",
     contracts: {
       ethereum: "0x5c6ff62552a25d68d453277dd3693f94c7e8c964",
     },
@@ -41045,7 +41008,7 @@ export const tokens: TokenD[] = [
     symbol: "tita",
     name: "Titan Hunters",
     image:
-      "https://assets.coingecko.com/coins/images/20588/large/titan_hunters.PNG?1637274835",
+      "https://assets.coingecko.com/coins/images/20588/large/tita.png?1638343393",
     contracts: {
       "binance-smart-chain": "0x0c1253a30da9580472064a91946c5ce0c58acf7f",
     },
@@ -41420,6 +41383,7 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/20499/large/spacey2025.PNG?1637132488",
     contracts: {
       ethereum: "0x58fad9e3c3ae54c9ba98c3f0e4bf88ab3e8cf3c5",
+      "binance-smart-chain": "0x13a637026df26f846d55acc52775377717345c06",
     },
   },
   {
@@ -41560,16 +41524,6 @@ export const tokens: TokenD[] = [
     contracts: {
       ethereum: "0x1571ed0bed4d987fe2b498ddbae7dfa19519f651",
       "polygon-pos": "0xab0b2ddb9c7e440fac8e140a89c0dbcbf2d7bbff",
-    },
-  },
-  {
-    id: "true-seigniorage-dollar",
-    symbol: "tsd",
-    name: "True Seigniorage Dollar",
-    image:
-      "https://assets.coingecko.com/coins/images/13555/large/2dc3a1b1-41fd-4d9c-ba1d-8114635efd09.jpg?1609754836",
-    contracts: {
-      ethereum: "0x4846239fdf4d4c1aeb26729fa064b0205aca90e1",
     },
   },
   {
@@ -41845,7 +41799,7 @@ export const tokens: TokenD[] = [
     symbol: "sato",
     name: "Satoru Inu",
     image:
-      "https://assets.coingecko.com/coins/images/20455/large/fpekZv-l_400x400.jpg?1637057480",
+      "https://assets.coingecko.com/coins/images/20455/large/sato.png?1638180202",
     contracts: {
       ethereum: "0xaf6f6abf18d2cc611921e6a683164efaa9165b43",
     },
@@ -42289,7 +42243,7 @@ export const tokens: TokenD[] = [
     symbol: "mithril",
     name: "BSC Mithril",
     image:
-      "https://assets.coingecko.com/coins/images/20563/large/mRQWAwmN_400x400.jpg?1637215751",
+      "https://assets.coingecko.com/coins/images/20563/large/mithril_logo--color.png?1638198235",
     contracts: {
       "binance-smart-chain": "0xc4caf585c2b7eaf3f61ac69b1529e79f90b15569",
     },
@@ -43971,16 +43925,6 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "paycent",
-    symbol: "pyn",
-    name: "Paycent",
-    image:
-      "https://assets.coingecko.com/coins/images/2008/large/paycentos-logo-maroon.png?1547036284",
-    contracts: {
-      ethereum: "0x0142c3b2fc51819b5af5dfc4aa52df9722790851",
-    },
-  },
-  {
     id: "sleepy-sloth",
     symbol: "sleepy",
     name: "Sleepy Sloth Finance",
@@ -43988,6 +43932,16 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/15008/large/logo200x200_%283%29.png?1619426268",
     contracts: {
       "binance-smart-chain": "0x86432b9bea373172c852d5bbab1c275fec3f15ae",
+    },
+  },
+  {
+    id: "paycent",
+    symbol: "pyn",
+    name: "Paycent",
+    image:
+      "https://assets.coingecko.com/coins/images/2008/large/paycentos-logo-maroon.png?1547036284",
+    contracts: {
+      ethereum: "0x0142c3b2fc51819b5af5dfc4aa52df9722790851",
     },
   },
   {
@@ -45085,16 +45039,6 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/18688/large/doxxed.png?1632979852",
     contracts: {
       "binance-smart-chain": "0x30ea7c369b87fe261de28a1eefafe806696a738b",
-    },
-  },
-  {
-    id: "wrapped-shift",
-    symbol: "wshift",
-    name: "Wrapped Shift",
-    image:
-      "https://assets.coingecko.com/coins/images/15926/large/Wshift.png?1622434604",
-    contracts: {
-      ethereum: "0x4b4571925e94ccd8c546b39462a270cc9b3ed1e4",
     },
   },
   {
@@ -46841,13 +46785,13 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "sheesh-it-is-bussin-bussin",
+    id: "sheesh",
     symbol: "sheesh",
-    name: "Sheesh it is bussin bussin",
+    name: "Sheesh",
     image:
-      "https://assets.coingecko.com/coins/images/15483/large/YLVttdQ.png?1621015475",
+      "https://assets.coingecko.com/coins/images/15483/large/sheesh.png?1638093700",
     contracts: {
-      "binance-smart-chain": "0x7e5d52c3335c91af0da392bea4bb9e43f2aba62c",
+      "binance-smart-chain": "0x564f184692952adf6a9512a13dc49caf45e76b12",
     },
   },
   {
@@ -48385,6 +48329,7 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/19055/large/BitANT.png?1634264861",
     contracts: {
       ethereum: "0x15ee120fd69bec86c1d38502299af7366a41d1a6",
+      "optimistic-ethereum": "0x5029c236320b8f15ef0a657054b84d90bfbeded3",
     },
   },
   {
@@ -50429,7 +50374,7 @@ export const tokens: TokenD[] = [
     symbol: "gps",
     name: "Triffic",
     image:
-      "https://assets.coingecko.com/coins/images/10020/large/obXSMqIC4ZAtjb8Pki865prRNAui_KJxVpouYCVCDTiMQekq64SXjO6SrouosA5g7ZZMqnJJ2Dmdqi-lSnrdpFqP9dC_vRrxNkDrcpQKuKSh3E0lA7pT1Z2CEZFoKD3jqPaPAFa-N-973lAtzfn6ar2RM657Ub6xW5suvuEQzdnYm8lB1F2ErGcSeZ-Uy5s26tOyKPKUreay9LRXA0YmNkuvbBKEbkE11KF6iTX27zpIVtID.jpg?1574854258",
+      "https://assets.coingecko.com/coins/images/10020/large/gps.png?1638348908",
     contracts: {},
   },
   {
@@ -50489,7 +50434,7 @@ export const tokens: TokenD[] = [
   },
   {
     id: "golden-ball",
-    symbol: "gb",
+    symbol: "glb",
     name: "Golden Ball",
     image:
       "https://assets.coingecko.com/coins/images/20274/large/glb.PNG?1636707869",
@@ -52530,7 +52475,7 @@ export const tokens: TokenD[] = [
     symbol: "metapets",
     name: "MetaPets",
     image:
-      "https://assets.coingecko.com/coins/images/20695/large/XekMO5J8_400x400.jpg?1637564634",
+      "https://assets.coingecko.com/coins/images/20695/large/metapets.png?1638344226",
     contracts: {
       "binance-smart-chain": "0x24ce3d571fbcfd9d81dc0e1a560504636a4d046d",
     },
@@ -53792,16 +53737,6 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "moonpad",
-    symbol: "mpad",
-    name: "Moonpad",
-    image:
-      "https://assets.coingecko.com/coins/images/15969/large/zUkOwmJ.png?1622522413",
-    contracts: {
-      "binance-smart-chain": "0x14fc2486df22772e95335746ba08350e8db2656a",
-    },
-  },
-  {
     id: "octaplex-network",
     symbol: "plx",
     name: "Octaplex Network",
@@ -53856,7 +53791,7 @@ export const tokens: TokenD[] = [
     symbol: "adacash",
     name: "ADAcash",
     image:
-      "https://assets.coingecko.com/coins/images/19509/large/adacash.png?1635316101",
+      "https://assets.coingecko.com/coins/images/19509/large/adacash.png?1638250717",
     contracts: {
       "binance-smart-chain": "0x651a89fed302227d41425235f8e934502fb94c48",
     },
@@ -54012,7 +53947,7 @@ export const tokens: TokenD[] = [
     symbol: "dcy",
     name: "Dinastycoin",
     image:
-      "https://assets.coingecko.com/coins/images/748/large/dynasty.png?1577934658",
+      "https://assets.coingecko.com/coins/images/748/large/dcy.png?1638244750",
     contracts: {},
   },
   {
@@ -54433,16 +54368,6 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "x-ae-a-12",
-    symbol: "xaea12",
-    name: "X AE A-12",
-    image:
-      "https://assets.coingecko.com/coins/images/19960/large/Untitled-design-removebg-preview_%282%29.png?1636341573",
-    contracts: {
-      ethereum: "0x1902882a8f6c7fb1402f83c434ea8e064b35bab3",
-    },
-  },
-  {
     id: "sheeptoken",
     symbol: "SHEEP",
     name: "SheepToken",
@@ -54450,6 +54375,16 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/18820/large/L-sb1AHr_400x400.jpg?1633520042",
     contracts: {
       "binance-smart-chain": "0x0025b42bfc22cbba6c02d23d4ec2abfcf6e014d4",
+    },
+  },
+  {
+    id: "x-ae-a-12",
+    symbol: "xaea12",
+    name: "X AE A-12",
+    image:
+      "https://assets.coingecko.com/coins/images/19960/large/Untitled-design-removebg-preview_%282%29.png?1636341573",
+    contracts: {
+      ethereum: "0x1902882a8f6c7fb1402f83c434ea8e064b35bab3",
     },
   },
   {
@@ -54895,7 +54830,7 @@ export const tokens: TokenD[] = [
     symbol: "frog",
     name: "Frog",
     image:
-      "https://assets.coingecko.com/coins/images/19595/large/frog-logo.png?1635488594",
+      "https://assets.coingecko.com/coins/images/19595/large/frog.png?1638346485",
     contracts: {
       fantom: "0x11319cd0ba5e4ce6c302b275b613962b5cc00ade",
     },
@@ -55534,7 +55469,7 @@ export const tokens: TokenD[] = [
     symbol: "santashib",
     name: "Santa Shiba",
     image:
-      "https://assets.coingecko.com/coins/images/20347/large/santashib.png?1636942672",
+      "https://assets.coingecko.com/coins/images/20347/large/santashib.png?1638251276",
     contracts: {
       "binance-smart-chain": "0x74c609b16512869b1873f5a9d7999deee386e740",
     },
@@ -55788,7 +55723,7 @@ export const tokens: TokenD[] = [
     symbol: "finu",
     name: "First Inu",
     image:
-      "https://assets.coingecko.com/coins/images/19705/large/FIRST_INU_LOGO_200.png?1635754252",
+      "https://assets.coingecko.com/coins/images/19705/large/finu.png?1638346534",
     contracts: {
       ethereum: "0x1bdc5e5aa2749b4934c33441e050b8854b77a331",
     },
@@ -56058,7 +55993,7 @@ export const tokens: TokenD[] = [
     symbol: "dod",
     name: "Day Of Defeat",
     image:
-      "https://assets.coingecko.com/coins/images/20621/large/oQ5rw8c8_400x400.jpg?1637318085",
+      "https://assets.coingecko.com/coins/images/20621/large/dod.png?1638181015",
     contracts: {
       "binance-smart-chain": "0xc709878167ed069aea15fd0bd4e9758ceb4da193",
     },
@@ -56911,7 +56846,7 @@ export const tokens: TokenD[] = [
     symbol: "shr",
     name: "ShiraINU",
     image:
-      "https://assets.coingecko.com/coins/images/20244/large/0oOa4rx.png?1636696831",
+      "https://assets.coingecko.com/coins/images/20244/large/3234bad559608.png?1638363295",
     contracts: {
       ethereum: "0x04a5198063e45d84b1999516d3228167146417a6",
     },
@@ -56925,14 +56860,6 @@ export const tokens: TokenD[] = [
     contracts: {},
   },
   {
-    id: "mylivn-coin",
-    symbol: "mlvc",
-    name: "Mylivn Coin",
-    image:
-      "https://assets.coingecko.com/coins/images/20595/large/icon-black.png?1637286225",
-    contracts: {},
-  },
-  {
     id: "stonks-token",
     symbol: "stonks",
     name: "Stonks Token",
@@ -56941,6 +56868,14 @@ export const tokens: TokenD[] = [
     contracts: {
       "binance-smart-chain": "0xb966150c7a0150ed4ea979e04f18d109301aab95",
     },
+  },
+  {
+    id: "mylivn-coin",
+    symbol: "mlvc",
+    name: "Mylivn Coin",
+    image:
+      "https://assets.coingecko.com/coins/images/20595/large/icon-black.png?1637286225",
+    contracts: {},
   },
   {
     id: "rewards-token",
@@ -58258,7 +58193,7 @@ export const tokens: TokenD[] = [
     symbol: "KAIINU",
     name: "Kai Inu",
     image:
-      "https://assets.coingecko.com/coins/images/15746/large/Inu-Kai-without-text-1.png?1628508158",
+      "https://assets.coingecko.com/coins/images/15746/large/kaiinu.png?1638265530",
     contracts: {
       "binance-smart-chain": "0xe5a09784b16e1065c37df14c6e2f06fdce317a1b",
     },
@@ -58674,7 +58609,7 @@ export const tokens: TokenD[] = [
     symbol: "ckg",
     name: "Crystal Kingdoms",
     image:
-      "https://assets.coingecko.com/coins/images/20469/large/HjPdVboP_400x400.jpg?1637099409",
+      "https://assets.coingecko.com/coins/images/20469/large/ckg.png?1638182690",
     contracts: {
       "binance-smart-chain": "0xcd32a0e26b3a87a064476b2c9e5e691df9ca063a",
     },
@@ -58987,7 +58922,7 @@ export const tokens: TokenD[] = [
     symbol: "hellsing",
     name: "Hellsing Inu",
     image:
-      "https://assets.coingecko.com/coins/images/19795/large/hellsing.png?1635907315",
+      "https://assets.coingecko.com/coins/images/19795/large/hellsing.png?1638182960",
     contracts: {
       ethereum: "0xb087c2180e3134db396977065817aed91fea6ead",
     },
@@ -59284,7 +59219,7 @@ export const tokens: TokenD[] = [
     symbol: "poly",
     name: "FarmPoly",
     image:
-      "https://assets.coingecko.com/coins/images/20237/large/Token_Logo_200x200.png?1636691136",
+      "https://assets.coingecko.com/coins/images/20237/large/Logo_3.0_200x200.jpg?1638372946",
     contracts: {
       "binance-smart-chain": "0x61073ed3acefafc5e8f87afaedacf9b8586fb28c",
     },
@@ -59563,19 +59498,19 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "poolcoin",
-    symbol: "pool",
-    name: "POOLCOIN",
-    image:
-      "https://assets.coingecko.com/coins/images/10666/large/pool-logo-200x200.png?1581498873",
-    contracts: {},
-  },
-  {
     id: "pfzer-coin",
     symbol: "pfzr",
     name: "Pfzer Coin",
     image:
       "https://assets.coingecko.com/coins/images/16377/large/68747470733a2f2f7777772e70667a722e6f6e6c696e652f77702d636f6e74656e742f75706c6f6164732f323032312f30352f32442d5472616e73706172656e74776974686f75742d6261636b67726f756e642e706e67.png?1623831999",
+    contracts: {},
+  },
+  {
+    id: "poolcoin",
+    symbol: "pool",
+    name: "POOLCOIN",
+    image:
+      "https://assets.coingecko.com/coins/images/10666/large/pool-logo-200x200.png?1581498873",
     contracts: {},
   },
   {
@@ -59596,6 +59531,16 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/12983/large/fundamenta.png?1604065939",
     contracts: {
       ethereum: "0xaa9d866666c2a3748d6b23ff69e63e52f08d9ab4",
+    },
+  },
+  {
+    id: "innovaminex",
+    symbol: "minx",
+    name: "InnovaMinex",
+    image:
+      "https://assets.coingecko.com/coins/images/7116/large/innovaminex.jpg?1547043613",
+    contracts: {
+      ethereum: "0xae353daeed8dcc7a9a12027f7e070c0a50b7b6a4",
     },
   },
   {
@@ -60809,7 +60754,7 @@ export const tokens: TokenD[] = [
     symbol: "fan",
     name: "Fanadise",
     image:
-      "https://assets.coingecko.com/coins/images/17417/large/fan.PNG?1627598520",
+      "https://assets.coingecko.com/coins/images/17417/large/logo_fanadise_new_200x200.png?1638260115",
     contracts: {
       "binance-smart-chain": "0xb6d48fcef36e19681ee29896b19c1b6cbd1eab1b",
     },
@@ -60951,14 +60896,12 @@ export const tokens: TokenD[] = [
     contracts: {},
   },
   {
-    id: "ytv-coin",
-    symbol: "ytv",
-    name: "YTV Coin",
+    id: "nodestats",
+    symbol: "ns",
+    name: "Nodestats",
     image:
-      "https://assets.coingecko.com/coins/images/14753/large/200x200-removebg-preview.png?1618182229",
-    contracts: {
-      tron: "TNJZgSvwAKuGhTxxhGXahnWNXrdQsdKuYx",
-    },
+      "https://assets.coingecko.com/coins/images/14286/large/Round-black.png?1615274391",
+    contracts: {},
   },
   {
     id: "investel",
@@ -60968,16 +60911,6 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/16966/large/investelly-logo-200.png?1625806793",
     contracts: {
       "binance-smart-chain": "0xb3ceb24a344fc90289f0255169c3ef65e643f137",
-    },
-  },
-  {
-    id: "daddycake",
-    symbol: "daddycake",
-    name: "DaddyCake",
-    image:
-      "https://assets.coingecko.com/coins/images/17727/large/Daddy200.png?1629098291",
-    contracts: {
-      "binance-smart-chain": "0x14b301e7d1f841555d1c5a0f09a8ed352820b972",
     },
   },
   {
@@ -60991,12 +60924,24 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "nodestats",
-    symbol: "ns",
-    name: "Nodestats",
+    id: "ytv-coin",
+    symbol: "ytv",
+    name: "YTV Coin",
     image:
-      "https://assets.coingecko.com/coins/images/14286/large/Round-black.png?1615274391",
-    contracts: {},
+      "https://assets.coingecko.com/coins/images/14753/large/200x200-removebg-preview.png?1618182229",
+    contracts: {
+      tron: "TNJZgSvwAKuGhTxxhGXahnWNXrdQsdKuYx",
+    },
+  },
+  {
+    id: "daddycake",
+    symbol: "daddycake",
+    name: "DaddyCake",
+    image:
+      "https://assets.coingecko.com/coins/images/17727/large/Daddy200.png?1629098291",
+    contracts: {
+      "binance-smart-chain": "0x14b301e7d1f841555d1c5a0f09a8ed352820b972",
+    },
   },
   {
     id: "bulldogswap",
@@ -61355,15 +61300,8 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/13069/large/medicalveda_new_logo_final_%281%29.png?1604894690",
     contracts: {
       ethereum: "0xcbe7142f5c16755d8683ba329efa1abf7b54482d",
+      "binance-smart-chain": "0x23316e6b09e8f4f67b95d53b4f1e59d1fb518f29",
     },
-  },
-  {
-    id: "darklisk",
-    symbol: "disk",
-    name: "DarkLisk",
-    image:
-      "https://assets.coingecko.com/coins/images/2435/large/disk.png?1547036579",
-    contracts: {},
   },
   {
     id: "bitstake",
@@ -61371,6 +61309,14 @@ export const tokens: TokenD[] = [
     name: "BitStake",
     image:
       "https://assets.coingecko.com/coins/images/231/large/bitstake.png?1547033992",
+    contracts: {},
+  },
+  {
+    id: "darklisk",
+    symbol: "disk",
+    name: "DarkLisk",
+    image:
+      "https://assets.coingecko.com/coins/images/2435/large/disk.png?1547036579",
     contracts: {},
   },
   {
@@ -61552,158 +61498,6 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "top-coin-token",
-    symbol: "tct",
-    name: "Top Coin Token",
-    image:
-      "https://assets.coingecko.com/coins/images/16971/large/TopCoin_logo_remove200x200.png?1625812220",
-    contracts: {
-      "binance-smart-chain": "0x2ac6e39c37e6ab10158ea03d5c96548a3861e0c7",
-    },
-  },
-  {
-    id: "safexi",
-    symbol: "sxi",
-    name: "SafeXI",
-    image:
-      "https://assets.coingecko.com/coins/images/15441/large/safexi.PNG?1620807250",
-    contracts: {
-      "binance-smart-chain": "0xa327179d47fad68d09e4501a838daaaf74fabb7c",
-    },
-  },
-  {
-    id: "babyelon",
-    symbol: "babyelon",
-    name: "BabyElon",
-    image:
-      "https://assets.coingecko.com/coins/images/17013/large/61GMoP9.png?1626073606",
-    contracts: {
-      ethereum: "0xdfb4a81727aa961b6ee830720843104fae0fdff9",
-    },
-  },
-  {
-    id: "xceltoken-plus",
-    symbol: "xlab",
-    name: "XCELTOKEN PLUS",
-    image:
-      "https://assets.coingecko.com/coins/images/8508/large/CXQJPNyO_400x400.jpg?1559030200",
-    contracts: {
-      ethereum: "0x8c4e7f814d40f8929f9112c5d09016f923d34472",
-    },
-  },
-  {
-    id: "whaleroom",
-    symbol: "whl",
-    name: "WhaleRoom",
-    image:
-      "https://assets.coingecko.com/coins/images/14328/large/ArEX8tkV_400x400.png?1615432175",
-    contracts: {
-      ethereum: "0x2af72850c504ddd3c1876c66a914caee7ff8a46a",
-    },
-  },
-  {
-    id: "eternal-oasis",
-    symbol: "etos",
-    name: "Eternal Oasis",
-    image:
-      "https://assets.coingecko.com/coins/images/18286/large/oasis.PNG?1631255877",
-    contracts: {},
-  },
-  {
-    id: "coin4trade",
-    symbol: "c4t",
-    name: "Coin4Trade",
-    image:
-      "https://assets.coingecko.com/coins/images/12041/large/c4t.png?1635470084",
-    contracts: {},
-  },
-  {
-    id: "elon-peg",
-    symbol: "elonpeg",
-    name: "Elon Peg",
-    image:
-      "https://assets.coingecko.com/coins/images/16118/large/elonpeg200x200.png?1623033671",
-    contracts: {
-      "binance-smart-chain": "0xc18994df2dfd0c2767bb1758bae83e95762bbea3",
-    },
-  },
-  {
-    id: "invi-token",
-    symbol: "invi",
-    name: "INVI Token",
-    image:
-      "https://assets.coingecko.com/coins/images/17363/large/INVI-Ticker.png?1627374966",
-    contracts: {
-      ethereum: "0x356a5160f2b34bc8d88fb084745465ebbbed0174",
-    },
-  },
-  {
-    id: "gatenet",
-    symbol: "gate",
-    name: "GATENet",
-    image:
-      "https://assets.coingecko.com/coins/images/16009/large/82168105.png?1622599261",
-    contracts: {
-      ethereum: "0x9d7630adf7ab0b0cb00af747db76864df0ec82e4",
-    },
-  },
-  {
-    id: "aunit",
-    symbol: "aunit",
-    name: "Aunit",
-    image:
-      "https://assets.coingecko.com/coins/images/6703/large/QAaCrx7l_400x400.jpg?1547042914",
-    contracts: {},
-  },
-  {
-    id: "cazi-cazi",
-    symbol: "cazi",
-    name: "Cazi Cazi",
-    image:
-      "https://assets.coingecko.com/coins/images/16006/large/CAZI-favicon.png?1622597456",
-    contracts: {
-      "binance-smart-chain": "0x45e4ec2d4e2ba648052f1f08c7c73dfdc0744fc0",
-    },
-  },
-  {
-    id: "tp-swap",
-    symbol: "tp",
-    name: "Token Swap",
-    image:
-      "https://assets.coingecko.com/coins/images/20514/large/tp.png?1637187477",
-    contracts: {},
-  },
-  {
-    id: "acreage-coin",
-    symbol: "acr",
-    name: "Acreage Coin",
-    image:
-      "https://assets.coingecko.com/coins/images/5100/large/acreage-coin.jpg?1547040494",
-    contracts: {
-      ethereum: "0x76306f029f8f99effe509534037ba7030999e3cf",
-    },
-  },
-  {
-    id: "cyber-movie-chain",
-    symbol: "cmct",
-    name: "Cyber Movie Chain",
-    image:
-      "https://assets.coingecko.com/coins/images/6497/large/cyber-movie-chain.png?1547791095",
-    contracts: {
-      ethereum: "0x7abc60b3290f68c85f495fd2e0c3bd278837a313",
-    },
-  },
-  {
-    id: "hodl",
-    symbol: "hodl",
-    name: "HODL",
-    image:
-      "https://assets.coingecko.com/coins/images/16737/large/HODL-Token-Transparent.png?1624869186",
-    contracts: {
-      ethereum: "0xe2a083397521968eb05585932750634bed4b7d56",
-    },
-  },
-  {
     id: "securabyte-protocol",
     symbol: "sbyte",
     name: "Securabyte Protocol",
@@ -61714,31 +61508,11 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "cheecoin",
-    symbol: "chee",
-    name: "Cheecoin",
+    id: "eternal-oasis",
+    symbol: "etos",
+    name: "Eternal Oasis",
     image:
-      "https://assets.coingecko.com/coins/images/15280/large/200x200_CHEECOIN_FINAL.png?1624906004",
-    contracts: {
-      "binance-smart-chain": "0x93e24685e41ca82fd7a66a69c64f3decac789281",
-    },
-  },
-  {
-    id: "hrdcoin",
-    symbol: "hrd",
-    name: "HRDcoin",
-    image:
-      "https://assets.coingecko.com/coins/images/16016/large/PIfmJq1.jpg?1622610697",
-    contracts: {
-      "binance-smart-chain": "0x9fbf5316f79fb01e3e099568d6ff4ed5d5bfc976",
-    },
-  },
-  {
-    id: "dascoin",
-    symbol: "grn",
-    name: "GreenPower",
-    image:
-      "https://assets.coingecko.com/coins/images/4398/large/GRN-new.png?1603926016",
+      "https://assets.coingecko.com/coins/images/18286/large/oasis.PNG?1631255877",
     contracts: {},
   },
   {
@@ -61752,13 +61526,49 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "bem",
-    symbol: "bemt",
-    name: "BEM",
+    id: "elon-peg",
+    symbol: "elonpeg",
+    name: "Elon Peg",
     image:
-      "https://assets.coingecko.com/coins/images/20549/large/bem.png?1637205747",
+      "https://assets.coingecko.com/coins/images/16118/large/elonpeg200x200.png?1623033671",
     contracts: {
-      tron: "TBp6ZMzkxci5o4sJjFa6Fo9Wy36gcubQLW",
+      "binance-smart-chain": "0xc18994df2dfd0c2767bb1758bae83e95762bbea3",
+    },
+  },
+  {
+    id: "tp-swap",
+    symbol: "tp",
+    name: "Token Swap",
+    image:
+      "https://assets.coingecko.com/coins/images/20514/large/tp.png?1637187477",
+    contracts: {},
+  },
+  {
+    id: "cazi-cazi",
+    symbol: "cazi",
+    name: "Cazi Cazi",
+    image:
+      "https://assets.coingecko.com/coins/images/16006/large/CAZI-favicon.png?1622597456",
+    contracts: {
+      "binance-smart-chain": "0x45e4ec2d4e2ba648052f1f08c7c73dfdc0744fc0",
+    },
+  },
+  {
+    id: "orlycoin",
+    symbol: "orly",
+    name: "Orlycoin",
+    image:
+      "https://assets.coingecko.com/coins/images/3098/large/orlycoin.png?1547037466",
+    contracts: {},
+  },
+  {
+    id: "hodl",
+    symbol: "hodl",
+    name: "HODL",
+    image:
+      "https://assets.coingecko.com/coins/images/16737/large/HODL-Token-Transparent.png?1624869186",
+    contracts: {
+      ethereum: "0xe2a083397521968eb05585932750634bed4b7d56",
     },
   },
   {
@@ -61782,6 +61592,74 @@ export const tokens: TokenD[] = [
     },
   },
   {
+    id: "gbrick",
+    symbol: "gbx",
+    name: "Gbrick",
+    image:
+      "https://assets.coingecko.com/coins/images/11528/large/gbrick.PNG?1590717357",
+    contracts: {},
+  },
+  {
+    id: "bem",
+    symbol: "bemt",
+    name: "BEM",
+    image:
+      "https://assets.coingecko.com/coins/images/20549/large/bem.png?1637205747",
+    contracts: {
+      tron: "TBp6ZMzkxci5o4sJjFa6Fo9Wy36gcubQLW",
+    },
+  },
+  {
+    id: "gatenet",
+    symbol: "gate",
+    name: "GATENet",
+    image:
+      "https://assets.coingecko.com/coins/images/16009/large/82168105.png?1622599261",
+    contracts: {
+      ethereum: "0x9d7630adf7ab0b0cb00af747db76864df0ec82e4",
+    },
+  },
+  {
+    id: "bluechips-token",
+    symbol: "bchip",
+    name: "BLUECHIPS Token",
+    image:
+      "https://assets.coingecko.com/coins/images/7119/large/xIh2PBdp_400x400.jpg?1547043616",
+    contracts: {
+      ethereum: "0x5ef227f7ce4e96c9ce90e32d4850545a6c5d099b",
+    },
+  },
+  {
+    id: "cheecoin",
+    symbol: "chee",
+    name: "Cheecoin",
+    image:
+      "https://assets.coingecko.com/coins/images/15280/large/200x200_CHEECOIN_FINAL.png?1624906004",
+    contracts: {
+      "binance-smart-chain": "0x93e24685e41ca82fd7a66a69c64f3decac789281",
+    },
+  },
+  {
+    id: "cyber-movie-chain",
+    symbol: "cmct",
+    name: "Cyber Movie Chain",
+    image:
+      "https://assets.coingecko.com/coins/images/6497/large/cyber-movie-chain.png?1547791095",
+    contracts: {
+      ethereum: "0x7abc60b3290f68c85f495fd2e0c3bd278837a313",
+    },
+  },
+  {
+    id: "babyelon",
+    symbol: "babyelon",
+    name: "BabyElon",
+    image:
+      "https://assets.coingecko.com/coins/images/17013/large/61GMoP9.png?1626073606",
+    contracts: {
+      ethereum: "0xdfb4a81727aa961b6ee830720843104fae0fdff9",
+    },
+  },
+  {
     id: "tavittcoin",
     symbol: "tavitt",
     name: "Tavittcoin",
@@ -61802,29 +61680,79 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "orlycoin",
-    symbol: "orly",
-    name: "Orlycoin",
+    id: "aunit",
+    symbol: "aunit",
+    name: "Aunit",
     image:
-      "https://assets.coingecko.com/coins/images/3098/large/orlycoin.png?1547037466",
+      "https://assets.coingecko.com/coins/images/6703/large/QAaCrx7l_400x400.jpg?1547042914",
     contracts: {},
   },
   {
-    id: "gbrick",
-    symbol: "gbx",
-    name: "Gbrick",
+    id: "safexi",
+    symbol: "sxi",
+    name: "SafeXI",
     image:
-      "https://assets.coingecko.com/coins/images/11528/large/gbrick.PNG?1590717357",
-    contracts: {},
-  },
-  {
-    id: "bluechips-token",
-    symbol: "bchip",
-    name: "BLUECHIPS Token",
-    image:
-      "https://assets.coingecko.com/coins/images/7119/large/xIh2PBdp_400x400.jpg?1547043616",
+      "https://assets.coingecko.com/coins/images/15441/large/safexi.PNG?1620807250",
     contracts: {
-      ethereum: "0x5ef227f7ce4e96c9ce90e32d4850545a6c5d099b",
+      "binance-smart-chain": "0xa327179d47fad68d09e4501a838daaaf74fabb7c",
+    },
+  },
+  {
+    id: "top-coin-token",
+    symbol: "tct",
+    name: "Top Coin Token",
+    image:
+      "https://assets.coingecko.com/coins/images/16971/large/TopCoin_logo_remove200x200.png?1625812220",
+    contracts: {
+      "binance-smart-chain": "0x2ac6e39c37e6ab10158ea03d5c96548a3861e0c7",
+    },
+  },
+  {
+    id: "invi-token",
+    symbol: "invi",
+    name: "INVI Token",
+    image:
+      "https://assets.coingecko.com/coins/images/17363/large/INVI-Ticker.png?1627374966",
+    contracts: {
+      ethereum: "0x356a5160f2b34bc8d88fb084745465ebbbed0174",
+    },
+  },
+  {
+    id: "xceltoken-plus",
+    symbol: "xlab",
+    name: "XCELTOKEN PLUS",
+    image:
+      "https://assets.coingecko.com/coins/images/8508/large/CXQJPNyO_400x400.jpg?1559030200",
+    contracts: {
+      ethereum: "0x8c4e7f814d40f8929f9112c5d09016f923d34472",
+    },
+  },
+  {
+    id: "hrdcoin",
+    symbol: "hrd",
+    name: "HRDcoin",
+    image:
+      "https://assets.coingecko.com/coins/images/16016/large/PIfmJq1.jpg?1622610697",
+    contracts: {
+      "binance-smart-chain": "0x9fbf5316f79fb01e3e099568d6ff4ed5d5bfc976",
+    },
+  },
+  {
+    id: "coin4trade",
+    symbol: "c4t",
+    name: "Coin4Trade",
+    image:
+      "https://assets.coingecko.com/coins/images/12041/large/c4t.png?1635470084",
+    contracts: {},
+  },
+  {
+    id: "acreage-coin",
+    symbol: "acr",
+    name: "Acreage Coin",
+    image:
+      "https://assets.coingecko.com/coins/images/5100/large/acreage-coin.jpg?1547040494",
+    contracts: {
+      ethereum: "0x76306f029f8f99effe509534037ba7030999e3cf",
     },
   },
   {
@@ -61836,6 +61764,24 @@ export const tokens: TokenD[] = [
     contracts: {
       ethereum: "0xbe6c8f2810ef39420d2dc2901b8414c8c45fee6d",
     },
+  },
+  {
+    id: "whaleroom",
+    symbol: "whl",
+    name: "WhaleRoom",
+    image:
+      "https://assets.coingecko.com/coins/images/14328/large/ArEX8tkV_400x400.png?1615432175",
+    contracts: {
+      ethereum: "0x2af72850c504ddd3c1876c66a914caee7ff8a46a",
+    },
+  },
+  {
+    id: "dascoin",
+    symbol: "grn",
+    name: "GreenPower",
+    image:
+      "https://assets.coingecko.com/coins/images/4398/large/GRN-new.png?1603926016",
+    contracts: {},
   },
   {
     id: "funder-one",
@@ -61927,11 +61873,11 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "bitcoinnexx",
-    symbol: "bnxx",
-    name: "Bitcoinnexx",
+    id: "bowscoin",
+    symbol: "bsc",
+    name: "BowsCoin",
     image:
-      "https://assets.coingecko.com/coins/images/14580/large/68767771.png?1617145953",
+      "https://assets.coingecko.com/coins/images/3101/large/bowscoin.png?1547562781",
     contracts: {},
   },
   {
@@ -61945,11 +61891,11 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "bowscoin",
-    symbol: "bsc",
-    name: "BowsCoin",
+    id: "bitcoinnexx",
+    symbol: "bnxx",
+    name: "Bitcoinnexx",
     image:
-      "https://assets.coingecko.com/coins/images/3101/large/bowscoin.png?1547562781",
+      "https://assets.coingecko.com/coins/images/14580/large/68767771.png?1617145953",
     contracts: {},
   },
   {
@@ -62300,14 +62246,6 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "ea-coin",
-    symbol: "eag",
-    name: "EA Coin",
-    image:
-      "https://assets.coingecko.com/coins/images/1182/large/eacoin.png?1547035210",
-    contracts: {},
-  },
-  {
     id: "gold-pegas",
     symbol: "gdp",
     name: "Gold Pegas",
@@ -62316,6 +62254,14 @@ export const tokens: TokenD[] = [
     contracts: {
       "binance-smart-chain": "0xe724279dcb071c3996a1d72defcf7124c3c45082",
     },
+  },
+  {
+    id: "ea-coin",
+    symbol: "eag",
+    name: "EA Coin",
+    image:
+      "https://assets.coingecko.com/coins/images/1182/large/eacoin.png?1547035210",
+    contracts: {},
   },
   {
     id: "centercoin",
@@ -62491,6 +62437,7 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/18174/large/wjuVH0sC_400x400.jpg?1631267074",
     contracts: {
       ethereum: "0x9bf02cf6b0435a0523e6f6e0d2f35a920144f5fa",
+      "polygon-pos": "0xc58158c14d4757ef36ce25e493758f2fceedec5d",
     },
   },
   {
@@ -62498,8 +62445,10 @@ export const tokens: TokenD[] = [
     symbol: "dtep",
     name: "Decoin",
     image:
-      "https://assets.coingecko.com/coins/images/3896/large/dtep.png?1547038945",
-    contracts: {},
+      "https://assets.coingecko.com/coins/images/3896/large/dtep_logo.png?1638264877",
+    contracts: {
+      "binance-smart-chain": "0xdb9e0580b5370a05217aa99a6fab4088eab5074d",
+    },
   },
   {
     id: "round-dollar",
@@ -62521,14 +62470,6 @@ export const tokens: TokenD[] = [
       ethereum: "0x284b59cf2539544559c6efa11e2795e06d535345",
       "binance-smart-chain": "0xab6b429c73c22ecabc763635dace7efac524993c",
     },
-  },
-  {
-    id: "borderless",
-    symbol: "bds",
-    name: "Borderless",
-    image:
-      "https://assets.coingecko.com/coins/images/6823/large/Borderless.png?1547043129",
-    contracts: {},
   },
   {
     id: "golden-token",
@@ -62561,124 +62502,14 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "bta-protocol",
-    symbol: "btap",
-    name: "BTA Protocol",
+    id: "jeff-in-space",
+    symbol: "jeff",
+    name: "Jeff in Space",
     image:
-      "https://assets.coingecko.com/coins/images/14467/large/coingecko200x200.png?1616378590",
+      "https://assets.coingecko.com/coins/images/17087/large/jeff3.png?1626163962",
     contracts: {
-      ethereum: "0x270371c58d9d775ed73971dd414656107384f235",
+      ethereum: "0xa10a210c27c86f8c63825096e34f671fd61041b1",
     },
-  },
-  {
-    id: "the-node",
-    symbol: "the",
-    name: "THENODE",
-    image:
-      "https://assets.coingecko.com/coins/images/10292/large/thenode_logo.png?1577334103",
-    contracts: {
-      ethereum: "0xb4a677b0e363c3815d46326954a4e4d2b1ace357",
-    },
-  },
-  {
-    id: "abulaba",
-    symbol: "aaa",
-    name: "Abulaba",
-    image:
-      "https://assets.coingecko.com/coins/images/4016/large/abulaba.png?1547039118",
-    contracts: {
-      ethereum: "0xd938137e6d96c72e4a6085412ada2dad78ff89c4",
-    },
-  },
-  {
-    id: "incoin",
-    symbol: "in",
-    name: "InCoin",
-    image:
-      "https://assets.coingecko.com/coins/images/6169/large/InCoin.png?1547042195",
-    contracts: {},
-  },
-  {
-    id: "business-credit-alliance-chain",
-    symbol: "bcac",
-    name: "Business Credit Alliance Chain",
-    image:
-      "https://assets.coingecko.com/coins/images/7001/large/business-credit-alliance-chain.png?1547564281",
-    contracts: {},
-  },
-  {
-    id: "gemvault-coin",
-    symbol: "gvc",
-    name: "GemVault Coin",
-    image:
-      "https://assets.coingecko.com/coins/images/5243/large/gemvault-coin-logo.png?1547040729",
-    contracts: {
-      ethereum: "0xa57392548087453dec6106e670bbfb849276b358",
-    },
-  },
-  {
-    id: "ken-inu",
-    symbol: "kenu",
-    name: "Ken Inu",
-    image:
-      "https://assets.coingecko.com/coins/images/16393/large/R2xo4l5O_400x400.jpg?1623901378",
-    contracts: {
-      "binance-smart-chain": "0xfd914bbb4302d69b9a8c3c96023db6a02be62778",
-    },
-  },
-  {
-    id: "odinycoin",
-    symbol: "odc",
-    name: "Odinycoin",
-    image:
-      "https://assets.coingecko.com/coins/images/12614/large/5SWZykd.png?1601256118",
-    contracts: {},
-  },
-  {
-    id: "shinigami-inu",
-    symbol: "shinu",
-    name: "Shinigami Inu",
-    image:
-      "https://assets.coingecko.com/coins/images/16365/large/SHINU.png?1623818245",
-    contracts: {
-      ethereum: "0xa1ab427451f19df7445a22dea7073800ea3b687f",
-    },
-  },
-  {
-    id: "bidcommerce",
-    symbol: "bidcom",
-    name: "Bidcommerce",
-    image:
-      "https://assets.coingecko.com/coins/images/16168/large/bidcom.PNG?1623190009",
-    contracts: {
-      "binance-smart-chain": "0x9986aa69545dc44b66fc85ba505fd66feae0d6a5",
-    },
-  },
-  {
-    id: "bit-storage-box-token",
-    symbol: "bsbt",
-    name: "Bit Storage Box Token",
-    image:
-      "https://assets.coingecko.com/coins/images/14136/large/A8QSwwsxJ0gl8Er4EF4whEcOqHLqfjWScTYHWKkeXbgoFQLQJ6de46yhxAd8kLvuj6MRQT8lloRdPoS_kqbKCXlw-mYMiqFp7j1CbhBScOzhHyZjbVgLpifjOYawUK1308Xl3aMYCZOHxfVrQZpDxbx-8KATNqX03u-CO5UlG8-bV8p6wKlBHWZdw3AoAt-o0gZCBQCynxwVd-d.jpg?1614639184",
-    contracts: {
-      ethereum: "0xde8607ccad60814c8d9cd6f5ce8e9031e4675c8f",
-    },
-  },
-  {
-    id: "jobscoin",
-    symbol: "jobs",
-    name: "Jobscoin",
-    image:
-      "https://assets.coingecko.com/coins/images/534/large/jobscoin.png?1547034212",
-    contracts: {},
-  },
-  {
-    id: "shorty",
-    symbol: "shorty",
-    name: "Shorty",
-    image:
-      "https://assets.coingecko.com/coins/images/1376/large/shorty.png?1547035401",
-    contracts: {},
   },
   {
     id: "buff-doge",
@@ -62691,33 +62522,13 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "cousin-doge",
-    symbol: "cousindoge",
-    name: "Cousin Doge",
+    id: "shinigami-inu",
+    symbol: "shinu",
+    name: "Shinigami Inu",
     image:
-      "https://assets.coingecko.com/coins/images/16974/large/logo-cousindoge.png?1625817059",
+      "https://assets.coingecko.com/coins/images/16365/large/SHINU.png?1623818245",
     contracts: {
-      "binance-smart-chain": "0xda8df4506de8e110cc216937945963bab380a615",
-    },
-  },
-  {
-    id: "jeff-in-space",
-    symbol: "jeff",
-    name: "Jeff in Space",
-    image:
-      "https://assets.coingecko.com/coins/images/17087/large/jeff3.png?1626163962",
-    contracts: {
-      ethereum: "0xa10a210c27c86f8c63825096e34f671fd61041b1",
-    },
-  },
-  {
-    id: "scorpion-token",
-    symbol: "scorp",
-    name: "Scorpion Token",
-    image:
-      "https://assets.coingecko.com/coins/images/16834/large/scorpion.PNG?1625269748",
-    contracts: {
-      "binance-smart-chain": "0x84750e8efacc62be5afe7221cf149a2520cb1b60",
+      ethereum: "0xa1ab427451f19df7445a22dea7073800ea3b687f",
     },
   },
   {
@@ -62741,6 +62552,46 @@ export const tokens: TokenD[] = [
     },
   },
   {
+    id: "bidcommerce",
+    symbol: "bidcom",
+    name: "Bidcommerce",
+    image:
+      "https://assets.coingecko.com/coins/images/16168/large/bidcom.PNG?1623190009",
+    contracts: {
+      "binance-smart-chain": "0x9986aa69545dc44b66fc85ba505fd66feae0d6a5",
+    },
+  },
+  {
+    id: "cousin-doge",
+    symbol: "cousindoge",
+    name: "Cousin Doge",
+    image:
+      "https://assets.coingecko.com/coins/images/16974/large/logo-cousindoge.png?1625817059",
+    contracts: {
+      "binance-smart-chain": "0xda8df4506de8e110cc216937945963bab380a615",
+    },
+  },
+  {
+    id: "babylondon",
+    symbol: "babylondon",
+    name: "BabyLondon",
+    image:
+      "https://assets.coingecko.com/coins/images/17655/large/baby-LONDON.png?1632478824",
+    contracts: {
+      "binance-smart-chain": "0x3de0a68721bc846e950438071f6afc1faa42ef3e",
+    },
+  },
+  {
+    id: "bit-storage-box-token",
+    symbol: "bsbt",
+    name: "Bit Storage Box Token",
+    image:
+      "https://assets.coingecko.com/coins/images/14136/large/A8QSwwsxJ0gl8Er4EF4whEcOqHLqfjWScTYHWKkeXbgoFQLQJ6de46yhxAd8kLvuj6MRQT8lloRdPoS_kqbKCXlw-mYMiqFp7j1CbhBScOzhHyZjbVgLpifjOYawUK1308Xl3aMYCZOHxfVrQZpDxbx-8KATNqX03u-CO5UlG8-bV8p6wKlBHWZdw3AoAt-o0gZCBQCynxwVd-d.jpg?1614639184",
+    contracts: {
+      ethereum: "0xde8607ccad60814c8d9cd6f5ce8e9031e4675c8f",
+    },
+  },
+  {
     id: "taekwondo-access-credit",
     symbol: "tac",
     name: "Taekwondo Access Credit",
@@ -62749,6 +62600,60 @@ export const tokens: TokenD[] = [
     contracts: {
       ethereum: "0xdeeb6091a5adc78fa0332bee5a38a8908b6b566e",
     },
+  },
+  {
+    id: "abulaba",
+    symbol: "aaa",
+    name: "Abulaba",
+    image:
+      "https://assets.coingecko.com/coins/images/4016/large/abulaba.png?1547039118",
+    contracts: {
+      ethereum: "0xd938137e6d96c72e4a6085412ada2dad78ff89c4",
+    },
+  },
+  {
+    id: "business-credit-alliance-chain",
+    symbol: "bcac",
+    name: "Business Credit Alliance Chain",
+    image:
+      "https://assets.coingecko.com/coins/images/7001/large/business-credit-alliance-chain.png?1547564281",
+    contracts: {},
+  },
+  {
+    id: "the-node",
+    symbol: "the",
+    name: "THENODE",
+    image:
+      "https://assets.coingecko.com/coins/images/10292/large/thenode_logo.png?1577334103",
+    contracts: {
+      ethereum: "0xb4a677b0e363c3815d46326954a4e4d2b1ace357",
+    },
+  },
+  {
+    id: "shorty",
+    symbol: "shorty",
+    name: "Shorty",
+    image:
+      "https://assets.coingecko.com/coins/images/1376/large/shorty.png?1547035401",
+    contracts: {},
+  },
+  {
+    id: "ken-inu",
+    symbol: "kenu",
+    name: "Ken Inu",
+    image:
+      "https://assets.coingecko.com/coins/images/16393/large/R2xo4l5O_400x400.jpg?1623901378",
+    contracts: {
+      "binance-smart-chain": "0xfd914bbb4302d69b9a8c3c96023db6a02be62778",
+    },
+  },
+  {
+    id: "incoin",
+    symbol: "in",
+    name: "InCoin",
+    image:
+      "https://assets.coingecko.com/coins/images/6169/large/InCoin.png?1547042195",
+    contracts: {},
   },
   {
     id: "zombie-farm",
@@ -62761,14 +62666,40 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "babylondon",
-    symbol: "babylondon",
-    name: "BabyLondon",
+    id: "bta-protocol",
+    symbol: "btap",
+    name: "BTA Protocol",
     image:
-      "https://assets.coingecko.com/coins/images/17655/large/baby-LONDON.png?1632478824",
+      "https://assets.coingecko.com/coins/images/14467/large/coingecko200x200.png?1616378590",
     contracts: {
-      "binance-smart-chain": "0x3de0a68721bc846e950438071f6afc1faa42ef3e",
+      ethereum: "0x270371c58d9d775ed73971dd414656107384f235",
     },
+  },
+  {
+    id: "scorpion-token",
+    symbol: "scorp",
+    name: "Scorpion Token",
+    image:
+      "https://assets.coingecko.com/coins/images/16834/large/scorpion.PNG?1625269748",
+    contracts: {
+      "binance-smart-chain": "0x84750e8efacc62be5afe7221cf149a2520cb1b60",
+    },
+  },
+  {
+    id: "jobscoin",
+    symbol: "jobs",
+    name: "Jobscoin",
+    image:
+      "https://assets.coingecko.com/coins/images/534/large/jobscoin.png?1547034212",
+    contracts: {},
+  },
+  {
+    id: "odinycoin",
+    symbol: "odc",
+    name: "Odinycoin",
+    image:
+      "https://assets.coingecko.com/coins/images/12614/large/5SWZykd.png?1601256118",
+    contracts: {},
   },
   {
     id: "fohocoin",
@@ -62928,7 +62859,7 @@ export const tokens: TokenD[] = [
     image:
       "https://assets.coingecko.com/coins/images/16275/large/logo.png?1632478567",
     contracts: {
-      "binance-smart-chain": "0xbe6257f6562036e33ae03e21467d6afe9b7aa66c",
+      "binance-smart-chain": "0xd4513bb02e5613a599b959e5ced0065c5948a873",
     },
   },
   {
@@ -63724,63 +63655,13 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "aave-zrx",
-    symbol: "azrx",
-    name: "Aave ZRX",
+    id: "aave-knc",
+    symbol: "aknc",
+    name: "Aave KNC",
     image:
-      "https://assets.coingecko.com/coins/images/14264/large/aZRX.9be555a9.png?1615528286",
+      "https://assets.coingecko.com/coins/images/14250/large/aKNC.42bcd2e3.png?1615528613",
     contracts: {
-      ethereum: "0xdf7ff54aacacbff42dfe29dd6144a69b629f8c9e",
-    },
-  },
-  {
-    id: "aave-mkr",
-    symbol: "amkr",
-    name: "Aave MKR",
-    image:
-      "https://assets.coingecko.com/coins/images/14248/large/aMKR.ac965178.png?1615528346",
-    contracts: {
-      ethereum: "0xc713e5e149d5d0715dcd1c156a020976e7e56b88",
-    },
-  },
-  {
-    id: "aave-mana",
-    symbol: "amana",
-    name: "Aave MANA",
-    image:
-      "https://assets.coingecko.com/coins/images/14267/large/aMANA.f89a1098.png?1615528680",
-    contracts: {
-      ethereum: "0xa685a61171bb30d4072b338c80cb7b2c865c873e",
-    },
-  },
-  {
-    id: "aave-dai",
-    symbol: "adai",
-    name: "Aave DAI",
-    image:
-      "https://assets.coingecko.com/coins/images/14242/large/aDAI.84b6c41f.png?1615528749",
-    contracts: {
-      ethereum: "0x028171bca77440897b824ca71d1c56cac55b68a3",
-    },
-  },
-  {
-    id: "aave-snx",
-    symbol: "asnx",
-    name: "Aave SNX",
-    image:
-      "https://assets.coingecko.com/coins/images/14265/large/aSNX.3238f3e7.png?1615528264",
-    contracts: {
-      ethereum: "0x35f6b052c598d933d69a4eec4d04c73a191fe6c2",
-    },
-  },
-  {
-    id: "aave-ren",
-    symbol: "aren",
-    name: "Aave REN",
-    image:
-      "https://assets.coingecko.com/coins/images/14249/large/aREN.382be386.png?1615528633",
-    contracts: {
-      ethereum: "0xcc12abe4ff81c9378d670de1b57f8e0dd228d77a",
+      ethereum: "0x39c6b3e42d6a679d7d776778fe880bc9487c2eda",
     },
   },
   {
@@ -63794,33 +63675,13 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "aave-tusd",
-    symbol: "atusd",
-    name: "Aave TUSD",
+    id: "aave-mkr",
+    symbol: "amkr",
+    name: "Aave MKR",
     image:
-      "https://assets.coingecko.com/coins/images/14317/large/aTUSD.08592b49.png?1615528207",
+      "https://assets.coingecko.com/coins/images/14248/large/aMKR.ac965178.png?1615528346",
     contracts: {
-      ethereum: "0x101cc05f4a51c0319f570d5e146a8c625198e636",
-    },
-  },
-  {
-    id: "aave-bat",
-    symbol: "abat",
-    name: "Aave BAT",
-    image:
-      "https://assets.coingecko.com/coins/images/14246/large/aBAT.1fe436f7_-_Copy.png?1615528663",
-    contracts: {
-      ethereum: "0x05ec93c0365baaeabf7aeffb0972ea7ecdd39cf1",
-    },
-  },
-  {
-    id: "aave-busd",
-    symbol: "abusd",
-    name: "Aave BUSD",
-    image:
-      "https://assets.coingecko.com/coins/images/14245/large/aBUSD.346a65d7_-_Copy.png?1615528703",
-    contracts: {
-      ethereum: "0xa361718326c15715591c299427c62086f69923d9",
+      ethereum: "0xc713e5e149d5d0715dcd1c156a020976e7e56b88",
     },
   },
   {
@@ -63834,6 +63695,36 @@ export const tokens: TokenD[] = [
     },
   },
   {
+    id: "aave-tusd",
+    symbol: "atusd",
+    name: "Aave TUSD",
+    image:
+      "https://assets.coingecko.com/coins/images/14317/large/aTUSD.08592b49.png?1615528207",
+    contracts: {
+      ethereum: "0x101cc05f4a51c0319f570d5e146a8c625198e636",
+    },
+  },
+  {
+    id: "aave-zrx",
+    symbol: "azrx",
+    name: "Aave ZRX",
+    image:
+      "https://assets.coingecko.com/coins/images/14264/large/aZRX.9be555a9.png?1615528286",
+    contracts: {
+      ethereum: "0xdf7ff54aacacbff42dfe29dd6144a69b629f8c9e",
+    },
+  },
+  {
+    id: "aave-snx",
+    symbol: "asnx",
+    name: "Aave SNX",
+    image:
+      "https://assets.coingecko.com/coins/images/14265/large/aSNX.3238f3e7.png?1615528264",
+    contracts: {
+      ethereum: "0x35f6b052c598d933d69a4eec4d04c73a191fe6c2",
+    },
+  },
+  {
     id: "aave-enj",
     symbol: "aenj",
     name: "Aave ENJ",
@@ -63844,13 +63735,53 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "aave-knc",
-    symbol: "aknc",
-    name: "Aave KNC",
+    id: "aave-dai",
+    symbol: "adai",
+    name: "Aave DAI",
     image:
-      "https://assets.coingecko.com/coins/images/14250/large/aKNC.42bcd2e3.png?1615528613",
+      "https://assets.coingecko.com/coins/images/14242/large/aDAI.84b6c41f.png?1615528749",
     contracts: {
-      ethereum: "0x39c6b3e42d6a679d7d776778fe880bc9487c2eda",
+      ethereum: "0x028171bca77440897b824ca71d1c56cac55b68a3",
+    },
+  },
+  {
+    id: "aave-ren",
+    symbol: "aren",
+    name: "Aave REN",
+    image:
+      "https://assets.coingecko.com/coins/images/14249/large/aREN.382be386.png?1615528633",
+    contracts: {
+      ethereum: "0xcc12abe4ff81c9378d670de1b57f8e0dd228d77a",
+    },
+  },
+  {
+    id: "aave-mana",
+    symbol: "amana",
+    name: "Aave MANA",
+    image:
+      "https://assets.coingecko.com/coins/images/14267/large/aMANA.f89a1098.png?1615528680",
+    contracts: {
+      ethereum: "0xa685a61171bb30d4072b338c80cb7b2c865c873e",
+    },
+  },
+  {
+    id: "aave-busd",
+    symbol: "abusd",
+    name: "Aave BUSD",
+    image:
+      "https://assets.coingecko.com/coins/images/14245/large/aBUSD.346a65d7_-_Copy.png?1615528703",
+    contracts: {
+      ethereum: "0xa361718326c15715591c299427c62086f69923d9",
+    },
+  },
+  {
+    id: "aave-bat",
+    symbol: "abat",
+    name: "Aave BAT",
+    image:
+      "https://assets.coingecko.com/coins/images/14246/large/aBAT.1fe436f7_-_Copy.png?1615528663",
+    contracts: {
+      ethereum: "0x05ec93c0365baaeabf7aeffb0972ea7ecdd39cf1",
     },
   },
   {
@@ -63882,33 +63813,13 @@ export const tokens: TokenD[] = [
     contracts: {},
   },
   {
-    id: "aave-xsushi",
-    symbol: "aXSUSHI",
-    name: "Aave XSUSHI",
+    id: "aave-crv",
+    symbol: "aCRV",
+    name: "Aave CRV",
     image:
-      "https://assets.coingecko.com/coins/images/17256/large/aXSUSHI_2x.png?1626957111",
+      "https://assets.coingecko.com/coins/images/17250/large/aCRV_2x.png?1626941642",
     contracts: {
-      ethereum: "0xf256cc7847e919fac9b808cc216cac87ccf2f47a",
-    },
-  },
-  {
-    id: "aave-polygon-wbtc",
-    symbol: "amWBTC",
-    name: "Aave Polygon WBTC",
-    image:
-      "https://assets.coingecko.com/coins/images/17265/large/amWBTC_2x.png?1626966974",
-    contracts: {
-      "polygon-pos": "0x5c2ed810328349100a66b82b78a1791b101c9d61",
-    },
-  },
-  {
-    id: "aave-polygon-usdt",
-    symbol: "amUSDT",
-    name: "Aave Polygon USDT",
-    image:
-      "https://assets.coingecko.com/coins/images/17264/large/amUSDT_2x.png?1626966594",
-    contracts: {
-      "polygon-pos": "0x60d55f02a771d515e077c9c2403a1ef324885cec",
+      ethereum: "0x8dae6cb04688c62d939ed9b68d32bc62e49970b1",
     },
   },
   {
@@ -63922,13 +63833,23 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "aave-polygon-weth",
-    symbol: "amWETH",
-    name: "Aave Polygon WETH",
+    id: "aave-polygon-dai",
+    symbol: "amDAI",
+    name: "Aave Polygon DAI",
     image:
-      "https://assets.coingecko.com/coins/images/17266/large/amWETH_2x.png?1626967258",
+      "https://assets.coingecko.com/coins/images/17251/large/amDAI_2x.png?1626942084",
     contracts: {
-      "polygon-pos": "0x28424507fefb6f7f8e9d3860f56504e4e5f5f390",
+      "polygon-pos": "0x27f8d03b3a2196956ed754badc28d73be8830a6e",
+    },
+  },
+  {
+    id: "aave-polygon-wbtc",
+    symbol: "amWBTC",
+    name: "Aave Polygon WBTC",
+    image:
+      "https://assets.coingecko.com/coins/images/17265/large/amWBTC_2x.png?1626966974",
+    contracts: {
+      "polygon-pos": "0x5c2ed810328349100a66b82b78a1791b101c9d61",
     },
   },
   {
@@ -63942,13 +63863,23 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "aave-amm-weth",
-    symbol: "aAmmWETH",
-    name: "Aave AMM WETH",
+    id: "aave-polygon-usdt",
+    symbol: "amUSDT",
+    name: "Aave Polygon USDT",
     image:
-      "https://assets.coingecko.com/coins/images/17259/large/aAMMWETH_2x.png?1626958225",
+      "https://assets.coingecko.com/coins/images/17264/large/amUSDT_2x.png?1626966594",
     contracts: {
-      ethereum: "0xf9fb4ad91812b704ba883b11d2b576e890a6730a",
+      "polygon-pos": "0x60d55f02a771d515e077c9c2403a1ef324885cec",
+    },
+  },
+  {
+    id: "aave-polygon-weth",
+    symbol: "amWETH",
+    name: "Aave Polygon WETH",
+    image:
+      "https://assets.coingecko.com/coins/images/17266/large/amWETH_2x.png?1626967258",
+    contracts: {
+      "polygon-pos": "0x28424507fefb6f7f8e9d3860f56504e4e5f5f390",
     },
   },
   {
@@ -63962,13 +63893,13 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "aave-amm-uniwbtcusdc",
-    symbol: "aAmmUniWBTCUSDC",
-    name: "Aave AMM UniWBTCUSDC",
+    id: "aave-amm-weth",
+    symbol: "aAmmWETH",
+    name: "Aave AMM WETH",
     image:
-      "https://assets.coingecko.com/coins/images/17255/large/aAmmUniWBTCUSDC.png?1626956709",
+      "https://assets.coingecko.com/coins/images/17259/large/aAMMWETH_2x.png?1626958225",
     contracts: {
-      ethereum: "0x2365a4890ed8965e564b7e2d27c38ba67fec4c6f",
+      ethereum: "0xf9fb4ad91812b704ba883b11d2b576e890a6730a",
     },
   },
   {
@@ -63982,13 +63913,13 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "aave-polygon-dai",
-    symbol: "amDAI",
-    name: "Aave Polygon DAI",
+    id: "aave-amm-uniwbtcusdc",
+    symbol: "aAmmUniWBTCUSDC",
+    name: "Aave AMM UniWBTCUSDC",
     image:
-      "https://assets.coingecko.com/coins/images/17251/large/amDAI_2x.png?1626942084",
+      "https://assets.coingecko.com/coins/images/17255/large/aAmmUniWBTCUSDC.png?1626956709",
     contracts: {
-      "polygon-pos": "0x27f8d03b3a2196956ed754badc28d73be8830a6e",
+      ethereum: "0x2365a4890ed8965e564b7e2d27c38ba67fec4c6f",
     },
   },
   {
@@ -64002,13 +63933,13 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "aave-crv",
-    symbol: "aCRV",
-    name: "Aave CRV",
+    id: "aave-xsushi",
+    symbol: "aXSUSHI",
+    name: "Aave XSUSHI",
     image:
-      "https://assets.coingecko.com/coins/images/17250/large/aCRV_2x.png?1626941642",
+      "https://assets.coingecko.com/coins/images/17256/large/aXSUSHI_2x.png?1626957111",
     contracts: {
-      ethereum: "0x8dae6cb04688c62d939ed9b68d32bc62e49970b1",
+      ethereum: "0xf256cc7847e919fac9b808cc216cac87ccf2f47a",
     },
   },
   {
@@ -64022,126 +63953,6 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "aave-weth",
-    symbol: "aweth",
-    name: "Aave WETH",
-    image:
-      "https://assets.coingecko.com/coins/images/17238/large/aWETH_2x.png?1626940782",
-    contracts: {
-      ethereum: "0x030ba81f1c18d280636f32af80b9aad02cf0854e",
-    },
-  },
-  {
-    id: "aave-amm-unibatweth",
-    symbol: "aAmmUniBATWETH",
-    name: "Aave AMM UniBATWETH",
-    image:
-      "https://assets.coingecko.com/coins/images/17217/large/aAmmUniBATWETH.png?1626878218",
-    contracts: {
-      ethereum: "0xa1b0edf4460cc4d8bfaa18ed871bff15e5b57eb4",
-    },
-  },
-  {
-    id: "aave-amm-uniaaveweth",
-    symbol: "aammuniaaveweth",
-    name: "Aave AMM UniAAVEWETH",
-    image:
-      "https://assets.coingecko.com/coins/images/17232/large/aAmmUniAAVEWETH.png?1626921301",
-    contracts: {
-      ethereum: "0xe59d2ff6995a926a574390824a657eed36801e55",
-    },
-  },
-  {
-    id: "aave-amm-unimkrweth",
-    symbol: "aAmmUniMKRWETH",
-    name: "Aave AMM UniMKRWETH",
-    image:
-      "https://assets.coingecko.com/coins/images/17222/large/aAmmUniMKRWETH.png?1626880292",
-    contracts: {
-      ethereum: "0x370adc71f67f581158dc56f539df5f399128ddf9",
-    },
-  },
-  {
-    id: "aave-amm-uniwbtcweth",
-    symbol: "aammuniwbtcweth",
-    name: "Aave AMM UniWBTCWETH",
-    image:
-      "https://assets.coingecko.com/coins/images/17231/large/aAmmUniWBTCWETH.png?1626921113",
-    contracts: {
-      ethereum: "0xc58f53a8adff2fb4eb16ed56635772075e2ee123",
-    },
-  },
-  {
-    id: "aave-amm-unirenweth",
-    symbol: "aAmmUniRENWETH",
-    name: "Aave AMM UniRENWETH",
-    image:
-      "https://assets.coingecko.com/coins/images/17223/large/aAmmUniRENWETH.png?1626880629",
-    contracts: {
-      ethereum: "0xa9e201a4e269d6cd5e9f0fcbcb78520cf815878b",
-    },
-  },
-  {
-    id: "aave-bal",
-    symbol: "abal",
-    name: "Aave BAL",
-    image:
-      "https://assets.coingecko.com/coins/images/17242/large/aBAL_2x.png?1626940749",
-    contracts: {
-      ethereum: "0x272f97b7a56a387ae942350bbc7df5700f8a4576",
-    },
-  },
-  {
-    id: "aave-amm-uniuniweth",
-    symbol: "aAmmUniUNIWETH",
-    name: "Aave AMM UniUNIWETH",
-    image:
-      "https://assets.coingecko.com/coins/images/17225/large/aAmmUniUNIWETH.png?1626881095",
-    contracts: {
-      ethereum: "0x3d26dcd840fcc8e4b2193ace8a092e4a65832f9f",
-    },
-  },
-  {
-    id: "aave-amm-unidaiweth",
-    symbol: "aammunidaiweth",
-    name: "Aave AMM UniDAIWETH",
-    image:
-      "https://assets.coingecko.com/coins/images/17230/large/aAmmUniDAIWETH.png?1626920804",
-    contracts: {
-      ethereum: "0x9303eabc860a743aabcc3a1629014cabcc3f8d36",
-    },
-  },
-  {
-    id: "aave-amm-unidaiusdc",
-    symbol: "aAmmUniDAIUSDC",
-    name: "Aave AMM UniDAIUSDC",
-    image:
-      "https://assets.coingecko.com/coins/images/17218/large/aAmmUniDAIUSDC.png?1626878648",
-    contracts: {
-      ethereum: "0xe340b25fe32b1011616bb8ec495a4d503e322177",
-    },
-  },
-  {
-    id: "aave-polygon-aave",
-    symbol: "amAAVE",
-    name: "Aave Polygon AAVE",
-    image:
-      "https://assets.coingecko.com/coins/images/17239/large/amAAVE_2x.png?1626940769",
-    contracts: {
-      "polygon-pos": "0x1d2a0e5ec8e5bbdca5cb219e649b565d8e5c3360",
-    },
-  },
-  {
-    id: "aave-rai",
-    symbol: "arai",
-    name: "Aave RAI",
-    image:
-      "https://assets.coingecko.com/coins/images/17245/large/aRAI_2x.png?1626942652",
-    contracts: {
-      ethereum: "0xc9bc48c72154ef3e5425641a3c747242112a46af",
-    },
-  },
-  {
     id: "aave-amm-unicrvweth",
     symbol: "aAmmUniCRVWETH",
     name: "Aave AMM UniCRVWETH",
@@ -64152,6 +63963,16 @@ export const tokens: TokenD[] = [
     },
   },
   {
+    id: "aave-uni",
+    symbol: "auni",
+    name: "Aave UNI",
+    image:
+      "https://assets.coingecko.com/coins/images/17247/large/aUNI_2x.png?1626942594",
+    contracts: {
+      ethereum: "0xb9d7cb55f463405cdfbe4e90a6d2df01c2b92bf1",
+    },
+  },
+  {
     id: "aave-amm-usdt",
     symbol: "aAmmUSDT",
     name: "Aave AMM USDT",
@@ -64159,6 +63980,16 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/17200/large/aAMMUSDT_2x.png?1626873261",
     contracts: {
       ethereum: "0x17a79792fe6fe5c95dfe95fe3fcee3caf4fe4cb7",
+    },
+  },
+  {
+    id: "aave-amm-uniwbtcweth",
+    symbol: "aammuniwbtcweth",
+    name: "Aave AMM UniWBTCWETH",
+    image:
+      "https://assets.coingecko.com/coins/images/17231/large/aAmmUniWBTCWETH.png?1626921113",
+    contracts: {
+      ethereum: "0xc58f53a8adff2fb4eb16ed56635772075e2ee123",
     },
   },
   {
@@ -64182,33 +64013,73 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "aave-uni",
-    symbol: "auni",
-    name: "Aave UNI",
+    id: "aave-amm-unidaiweth",
+    symbol: "aammunidaiweth",
+    name: "Aave AMM UniDAIWETH",
     image:
-      "https://assets.coingecko.com/coins/images/17247/large/aUNI_2x.png?1626942594",
+      "https://assets.coingecko.com/coins/images/17230/large/aAmmUniDAIWETH.png?1626920804",
     contracts: {
-      ethereum: "0xb9d7cb55f463405cdfbe4e90a6d2df01c2b92bf1",
+      ethereum: "0x9303eabc860a743aabcc3a1629014cabcc3f8d36",
     },
   },
   {
-    id: "aave-amm-usdc",
-    symbol: "aAmmUSDC",
-    name: "Aave AMM USDC",
+    id: "aave-amm-uniuniweth",
+    symbol: "aAmmUniUNIWETH",
+    name: "Aave AMM UniUNIWETH",
     image:
-      "https://assets.coingecko.com/coins/images/17226/large/aAMMUSDC_2x.png?1626939994",
+      "https://assets.coingecko.com/coins/images/17225/large/aAmmUniUNIWETH.png?1626881095",
     contracts: {
-      ethereum: "0xd24946147829deaa935be2ad85a3291dbf109c80",
+      ethereum: "0x3d26dcd840fcc8e4b2193ace8a092e4a65832f9f",
     },
   },
   {
-    id: "aave-gusd",
-    symbol: "agusd",
-    name: "Aave GUSD",
+    id: "aave-amm-unimkrweth",
+    symbol: "aAmmUniMKRWETH",
+    name: "Aave AMM UniMKRWETH",
     image:
-      "https://assets.coingecko.com/coins/images/17246/large/aGUSD_2x.png?1626942603",
+      "https://assets.coingecko.com/coins/images/17222/large/aAmmUniMKRWETH.png?1626880292",
     contracts: {
-      ethereum: "0xd37ee7e4f452c6638c96536e68090de8cbcdb583",
+      ethereum: "0x370adc71f67f581158dc56f539df5f399128ddf9",
+    },
+  },
+  {
+    id: "aave-amm-uniaaveweth",
+    symbol: "aammuniaaveweth",
+    name: "Aave AMM UniAAVEWETH",
+    image:
+      "https://assets.coingecko.com/coins/images/17232/large/aAmmUniAAVEWETH.png?1626921301",
+    contracts: {
+      ethereum: "0xe59d2ff6995a926a574390824a657eed36801e55",
+    },
+  },
+  {
+    id: "aave-amm-unirenweth",
+    symbol: "aAmmUniRENWETH",
+    name: "Aave AMM UniRENWETH",
+    image:
+      "https://assets.coingecko.com/coins/images/17223/large/aAmmUniRENWETH.png?1626880629",
+    contracts: {
+      ethereum: "0xa9e201a4e269d6cd5e9f0fcbcb78520cf815878b",
+    },
+  },
+  {
+    id: "aave-amm-unibatweth",
+    symbol: "aAmmUniBATWETH",
+    name: "Aave AMM UniBATWETH",
+    image:
+      "https://assets.coingecko.com/coins/images/17217/large/aAmmUniBATWETH.png?1626878218",
+    contracts: {
+      ethereum: "0xa1b0edf4460cc4d8bfaa18ed871bff15e5b57eb4",
+    },
+  },
+  {
+    id: "aave-rai",
+    symbol: "arai",
+    name: "Aave RAI",
+    image:
+      "https://assets.coingecko.com/coins/images/17245/large/aRAI_2x.png?1626942652",
+    contracts: {
+      ethereum: "0xc9bc48c72154ef3e5425641a3c747242112a46af",
     },
   },
   {
@@ -64222,6 +64093,26 @@ export const tokens: TokenD[] = [
     },
   },
   {
+    id: "aave-bal",
+    symbol: "abal",
+    name: "Aave BAL",
+    image:
+      "https://assets.coingecko.com/coins/images/17242/large/aBAL_2x.png?1626940749",
+    contracts: {
+      ethereum: "0x272f97b7a56a387ae942350bbc7df5700f8a4576",
+    },
+  },
+  {
+    id: "aave-amm-usdc",
+    symbol: "aAmmUSDC",
+    name: "Aave AMM USDC",
+    image:
+      "https://assets.coingecko.com/coins/images/17226/large/aAMMUSDC_2x.png?1626939994",
+    contracts: {
+      ethereum: "0xd24946147829deaa935be2ad85a3291dbf109c80",
+    },
+  },
+  {
     id: "aave-amm-unilinkweth",
     symbol: "aAmmUniLINKWETH",
     name: "Aave AMM UniLINKWETH",
@@ -64229,6 +64120,46 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/17221/large/aAmmUniLINKWETH.png?1626879669",
     contracts: {
       ethereum: "0xb8db81b84d30e2387de0ff330420a4aaa6688134",
+    },
+  },
+  {
+    id: "aave-gusd",
+    symbol: "agusd",
+    name: "Aave GUSD",
+    image:
+      "https://assets.coingecko.com/coins/images/17246/large/aGUSD_2x.png?1626942603",
+    contracts: {
+      ethereum: "0xd37ee7e4f452c6638c96536e68090de8cbcdb583",
+    },
+  },
+  {
+    id: "aave-weth",
+    symbol: "aweth",
+    name: "Aave WETH",
+    image:
+      "https://assets.coingecko.com/coins/images/17238/large/aWETH_2x.png?1626940782",
+    contracts: {
+      ethereum: "0x030ba81f1c18d280636f32af80b9aad02cf0854e",
+    },
+  },
+  {
+    id: "aave-amm-unidaiusdc",
+    symbol: "aAmmUniDAIUSDC",
+    name: "Aave AMM UniDAIUSDC",
+    image:
+      "https://assets.coingecko.com/coins/images/17218/large/aAmmUniDAIUSDC.png?1626878648",
+    contracts: {
+      ethereum: "0xe340b25fe32b1011616bb8ec495a4d503e322177",
+    },
+  },
+  {
+    id: "aave-polygon-aave",
+    symbol: "amAAVE",
+    name: "Aave Polygon AAVE",
+    image:
+      "https://assets.coingecko.com/coins/images/17239/large/amAAVE_2x.png?1626940769",
+    contracts: {
+      "polygon-pos": "0x1d2a0e5ec8e5bbdca5cb219e649b565d8e5c3360",
     },
   },
   {
@@ -64885,7 +64816,7 @@ export const tokens: TokenD[] = [
     symbol: "scs",
     name: "Shining Crystal Shard",
     image:
-      "https://assets.coingecko.com/coins/images/20129/large/14231.png?1636526531",
+      "https://assets.coingecko.com/coins/images/20129/large/scs.png?1638182756",
     contracts: {
       "binance-smart-chain": "0xbde9f504d0f3ea0cb1c7d1661fcc941b61613ace",
     },
@@ -64901,23 +64832,13 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "venus-xrp",
-    symbol: "vxrp",
-    name: "Venus XRP",
+    id: "venus-bch",
+    symbol: "vbch",
+    name: "Venus BCH",
     image:
-      "https://assets.coingecko.com/coins/images/13921/large/vxrp.png?1612845452",
+      "https://assets.coingecko.com/coins/images/13922/large/vbch.png?1612845455",
     contracts: {
-      "binance-smart-chain": "0xb248a295732e0225acd3337607cc01068e3b9c10",
-    },
-  },
-  {
-    id: "venus-fil",
-    symbol: "vfil",
-    name: "Venus FIL",
-    image:
-      "https://assets.coingecko.com/coins/images/13925/large/vfil_final.png?1612966425",
-    contracts: {
-      "binance-smart-chain": "0xf91d58b5ae142dacc749f58a49fcbac340cb0343",
+      "binance-smart-chain": "0x5f0388ebc2b94fa8e123f404b79ccf5f40b29176",
     },
   },
   {
@@ -64931,13 +64852,23 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "venus-bch",
-    symbol: "vbch",
-    name: "Venus BCH",
+    id: "venus-dot",
+    symbol: "vdot",
+    name: "Venus DOT",
     image:
-      "https://assets.coingecko.com/coins/images/13922/large/vbch.png?1612845455",
+      "https://assets.coingecko.com/coins/images/13919/large/venus_dot.png?1612844407",
     contracts: {
-      "binance-smart-chain": "0x5f0388ebc2b94fa8e123f404b79ccf5f40b29176",
+      "binance-smart-chain": "0x1610bc33319e9398de5f57b33a5b184c806ad217",
+    },
+  },
+  {
+    id: "venus-xrp",
+    symbol: "vxrp",
+    name: "Venus XRP",
+    image:
+      "https://assets.coingecko.com/coins/images/13921/large/vxrp.png?1612845452",
+    contracts: {
+      "binance-smart-chain": "0xb248a295732e0225acd3337607cc01068e3b9c10",
     },
   },
   {
@@ -64951,13 +64882,13 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "venus-dot",
-    symbol: "vdot",
-    name: "Venus DOT",
+    id: "venus-fil",
+    symbol: "vfil",
+    name: "Venus FIL",
     image:
-      "https://assets.coingecko.com/coins/images/13919/large/venus_dot.png?1612844407",
+      "https://assets.coingecko.com/coins/images/13925/large/vfil_final.png?1612966425",
     contracts: {
-      "binance-smart-chain": "0x1610bc33319e9398de5f57b33a5b184c806ad217",
+      "binance-smart-chain": "0xf91d58b5ae142dacc749f58a49fcbac340cb0343",
     },
   },
   {
@@ -64968,36 +64899,6 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/13920/large/venus_dai.png?1612844411",
     contracts: {
       "binance-smart-chain": "0x334b3ecb4dca3593bccc3c7ebd1a1c1d1780fbf1",
-    },
-  },
-  {
-    id: "venus-usdc",
-    symbol: "vusdc",
-    name: "Venus USDC",
-    image:
-      "https://assets.coingecko.com/coins/images/13906/large/usdc.png?1612799563",
-    contracts: {
-      "binance-smart-chain": "0xeca88125a5adbe82614ffc12d0db554e2e2867c8",
-    },
-  },
-  {
-    id: "venus-ltc",
-    symbol: "vltc",
-    name: "Venus LTC",
-    image:
-      "https://assets.coingecko.com/coins/images/13908/large/ltc.png?1612799575",
-    contracts: {
-      "binance-smart-chain": "0x57a5297f2cb2c0aac9d554660acd6d385ab50c6b",
-    },
-  },
-  {
-    id: "venus-usdt",
-    symbol: "vusdt",
-    name: "Venus USDT",
-    image:
-      "https://assets.coingecko.com/coins/images/13901/large/venus_usdt.png?1612775382",
-    contracts: {
-      "binance-smart-chain": "0xfd5840cd36d94d7229439859c0112a4185bc0255",
     },
   },
   {
@@ -65021,6 +64922,26 @@ export const tokens: TokenD[] = [
     },
   },
   {
+    id: "venus-usdt",
+    symbol: "vusdt",
+    name: "Venus USDT",
+    image:
+      "https://assets.coingecko.com/coins/images/13901/large/venus_usdt.png?1612775382",
+    contracts: {
+      "binance-smart-chain": "0xfd5840cd36d94d7229439859c0112a4185bc0255",
+    },
+  },
+  {
+    id: "venus-ltc",
+    symbol: "vltc",
+    name: "Venus LTC",
+    image:
+      "https://assets.coingecko.com/coins/images/13908/large/ltc.png?1612799575",
+    contracts: {
+      "binance-smart-chain": "0x57a5297f2cb2c0aac9d554660acd6d385ab50c6b",
+    },
+  },
+  {
     id: "venus-xvs",
     symbol: "vxvs",
     name: "Venus XVS",
@@ -65028,6 +64949,16 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/13903/large/xvs_logo.png?1613018688",
     contracts: {
       "binance-smart-chain": "0x151b1e2635a717bcdc836ecd6fbb62b674fe3e1d",
+    },
+  },
+  {
+    id: "venus-usdc",
+    symbol: "vusdc",
+    name: "Venus USDC",
+    image:
+      "https://assets.coingecko.com/coins/images/13906/large/usdc.png?1612799563",
+    contracts: {
+      "binance-smart-chain": "0xeca88125a5adbe82614ffc12d0db554e2e2867c8",
     },
   },
   {
@@ -65466,16 +65397,6 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "compact",
-    symbol: "cpac",
-    name: "Compact",
-    image:
-      "https://assets.coingecko.com/coins/images/15979/large/dawkk7uv.png?1622530047",
-    contracts: {
-      "binance-smart-chain": "0x43d096cdd8a71d9421af406e8eeefed5861e74e1",
-    },
-  },
-  {
     id: "herobattle",
     symbol: "hrb",
     name: "Herobattle",
@@ -65636,46 +65557,6 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "matic-aave-uni",
-    symbol: "mauni",
-    name: "Matic Aave Interest Bearing UNI",
-    image:
-      "https://assets.coingecko.com/coins/images/14079/large/maUNI.png?1614163756",
-    contracts: {
-      "polygon-pos": "0x8c8bdbe9cee455732525086264a4bf9cf821c498",
-    },
-  },
-  {
-    id: "matic-aave-usdc",
-    symbol: "mausdc",
-    name: "Matic Aave Interest Bearing USDC",
-    image:
-      "https://assets.coingecko.com/coins/images/14074/large/maUSDC.png?1614156225",
-    contracts: {
-      "polygon-pos": "0x9719d867a500ef117cc201206b8ab51e794d3f82",
-    },
-  },
-  {
-    id: "matic-aave-link",
-    symbol: "malink",
-    name: "Matic Aave Interest Bearing LINK",
-    image:
-      "https://assets.coingecko.com/coins/images/14082/large/maLINK.png?1614164913",
-    contracts: {
-      "polygon-pos": "0x98ea609569bd25119707451ef982b90e3eb719cd",
-    },
-  },
-  {
-    id: "matic-aave-weth",
-    symbol: "maweth",
-    name: "Matic Aave Interest Bearing WETH",
-    image:
-      "https://assets.coingecko.com/coins/images/14081/large/maWETH.png?1614164372",
-    contracts: {
-      "polygon-pos": "0x20d3922b4a1a8560e1ac99fba4fade0c849e2142",
-    },
-  },
-  {
     id: "matic-aave-dai",
     symbol: "madai",
     name: "Matic Aave Interest Bearing DAI",
@@ -65696,6 +65577,56 @@ export const tokens: TokenD[] = [
     },
   },
   {
+    id: "matic-aave-weth",
+    symbol: "maweth",
+    name: "Matic Aave Interest Bearing WETH",
+    image:
+      "https://assets.coingecko.com/coins/images/14081/large/maWETH.png?1614164372",
+    contracts: {
+      "polygon-pos": "0x20d3922b4a1a8560e1ac99fba4fade0c849e2142",
+    },
+  },
+  {
+    id: "matic-aave-link",
+    symbol: "malink",
+    name: "Matic Aave Interest Bearing LINK",
+    image:
+      "https://assets.coingecko.com/coins/images/14082/large/maLINK.png?1614164913",
+    contracts: {
+      "polygon-pos": "0x98ea609569bd25119707451ef982b90e3eb719cd",
+    },
+  },
+  {
+    id: "matic-aave-usdc",
+    symbol: "mausdc",
+    name: "Matic Aave Interest Bearing USDC",
+    image:
+      "https://assets.coingecko.com/coins/images/14074/large/maUSDC.png?1614156225",
+    contracts: {
+      "polygon-pos": "0x9719d867a500ef117cc201206b8ab51e794d3f82",
+    },
+  },
+  {
+    id: "matic-aave-tusd",
+    symbol: "matusd",
+    name: "Matic Aave interest bearing TUSD",
+    image:
+      "https://assets.coingecko.com/coins/images/14083/large/maTUSD.png?1614165205",
+    contracts: {
+      "polygon-pos": "0xf4b8888427b00d7caf21654408b7cba2ecf4ebd9",
+    },
+  },
+  {
+    id: "matic-aave-uni",
+    symbol: "mauni",
+    name: "Matic Aave Interest Bearing UNI",
+    image:
+      "https://assets.coingecko.com/coins/images/14079/large/maUNI.png?1614163756",
+    contracts: {
+      "polygon-pos": "0x8c8bdbe9cee455732525086264a4bf9cf821c498",
+    },
+  },
+  {
     id: "matic-aave-yfi",
     symbol: "mayfi",
     name: "Matic Aave Interest Bearing YFI",
@@ -65713,16 +65644,6 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/14077/large/maAAVE.png?1614158144",
     contracts: {
       "polygon-pos": "0x823cd4264c1b951c9209ad0deaea9988fe8429bf",
-    },
-  },
-  {
-    id: "matic-aave-tusd",
-    symbol: "matusd",
-    name: "Matic Aave interest bearing TUSD",
-    image:
-      "https://assets.coingecko.com/coins/images/14083/large/maTUSD.png?1614165205",
-    contracts: {
-      "polygon-pos": "0xf4b8888427b00d7caf21654408b7cba2ecf4ebd9",
     },
   },
   {
@@ -67076,9 +66997,9 @@ export const tokens: TokenD[] = [
   {
     id: "envoy-network",
     symbol: "env",
-    name: "ENVOY",
+    name: "Envoy",
     image:
-      "https://assets.coingecko.com/coins/images/19631/large/env.png?1635844823",
+      "https://assets.coingecko.com/coins/images/19631/large/env.png?1638148461",
     contracts: {
       ethereum: "0xf1d1a5306daae314af6c5d027a492b313e07e1a0",
       "binance-smart-chain": "0x4d6b129db8a502b85fedc3443fa4f58b50327238",
@@ -67273,13 +67194,13 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "eth-btc-rsi-ratio-trading-set",
-    symbol: "ethbtcrsi",
-    name: "ETH/BTC RSI Ratio Trading Set",
+    id: "btc-network-demand-set-ii",
+    symbol: "byte",
+    name: "BTC Network Demand Set II",
     image:
-      "https://assets.coingecko.com/coins/images/10605/large/ethbtc-rsi-ratio-set.png?1580970413",
+      "https://assets.coingecko.com/coins/images/10929/large/bytetree_set_1.png?1585894918",
     contracts: {
-      ethereum: "0xbf70a33a13fbe8d0106df321da0cf654d2e9ab50",
+      ethereum: "0xac8ea871e2d5f4be618905f36f73c760f8cfdc8e",
     },
   },
   {
@@ -67303,13 +67224,13 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "btc-network-demand-set-ii",
-    symbol: "byte",
-    name: "BTC Network Demand Set II",
+    id: "eth-btc-rsi-ratio-trading-set",
+    symbol: "ethbtcrsi",
+    name: "ETH/BTC RSI Ratio Trading Set",
     image:
-      "https://assets.coingecko.com/coins/images/10929/large/bytetree_set_1.png?1585894918",
+      "https://assets.coingecko.com/coins/images/10605/large/ethbtc-rsi-ratio-set.png?1580970413",
     contracts: {
-      ethereum: "0xac8ea871e2d5f4be618905f36f73c760f8cfdc8e",
+      ethereum: "0xbf70a33a13fbe8d0106df321da0cf654d2e9ab50",
     },
   },
   {
@@ -67505,26 +67426,6 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "london-vault-nftx",
-    symbol: "london",
-    name: "LONDON Vault (NFTX)",
-    image:
-      "https://assets.coingecko.com/coins/images/18353/large/london.png?1631604422",
-    contracts: {
-      ethereum: "0x295fc05d34fa93e92370c7706043e0705fc6acaa",
-    },
-  },
-  {
-    id: "duck-vault-nftx",
-    symbol: "duck",
-    name: "DUCK Vault (NFTX)",
-    image:
-      "https://assets.coingecko.com/coins/images/18346/large/duck.png?1631603088",
-    contracts: {
-      ethereum: "0xffe136de12a2cd95f64cef9f36414c93e9003959",
-    },
-  },
-  {
     id: "uwu-vault-nftx",
     symbol: "uwu",
     name: "UWU Vault (NFTX)",
@@ -67545,23 +67446,23 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "sqgl-vault-nftx",
-    symbol: "sqgl",
-    name: "SQGL Vault (NFTX)",
+    id: "london-vault-nftx",
+    symbol: "london",
+    name: "LONDON Vault (NFTX)",
     image:
-      "https://assets.coingecko.com/coins/images/17041/large/SQGL.png?1626147070",
+      "https://assets.coingecko.com/coins/images/18353/large/london.png?1631604422",
     contracts: {
-      ethereum: "0x8d137e3337eb1b58a222fef2b2cc7c423903d9cf",
+      ethereum: "0x295fc05d34fa93e92370c7706043e0705fc6acaa",
     },
   },
   {
-    id: "pasta-vault-nftx",
-    symbol: "pasta",
-    name: "PASTA Vault (NFTX)",
+    id: "duck-vault-nftx",
+    symbol: "duck",
+    name: "DUCK Vault (NFTX)",
     image:
-      "https://assets.coingecko.com/coins/images/17067/large/PASTA.png?1626151064",
+      "https://assets.coingecko.com/coins/images/18346/large/duck.png?1631603088",
     contracts: {
-      ethereum: "0xea6c27d11ccb9306154f87d47dc1405c37242081",
+      ethereum: "0xffe136de12a2cd95f64cef9f36414c93e9003959",
     },
   },
   {
@@ -67575,53 +67476,13 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "mask-vault-nftx",
-    symbol: "mask",
-    name: "MASK Vault (NFTX)",
+    id: "wizard-vault-nftx",
+    symbol: "wizard",
+    name: "WIZARD Vault (NFTX)",
     image:
-      "https://assets.coingecko.com/coins/images/17046/large/Hashie.png?1626147674",
+      "https://assets.coingecko.com/coins/images/17068/large/Wizards.png?1626151233",
     contracts: {
-      ethereum: "0xc7a8b45e184138114e6085c82936a8db93dd156a",
-    },
-  },
-  {
-    id: "meeb-vault-nftx",
-    symbol: "meeb",
-    name: "MEEB Vault (NFTX)",
-    image:
-      "https://assets.coingecko.com/coins/images/17044/large/Meebs.png?1626147616",
-    contracts: {
-      ethereum: "0x641927e970222b10b2e8cdbc96b1b4f427316f16",
-    },
-  },
-  {
-    id: "bayc-vault-nftx",
-    symbol: "bayc",
-    name: "BAYC Vault (NFTX)",
-    image:
-      "https://assets.coingecko.com/coins/images/17035/large/BAYC.png?1626142944",
-    contracts: {
-      ethereum: "0xea47b64e1bfccb773a0420247c0aa0a3c1d2e5c5",
-    },
-  },
-  {
-    id: "hdpunk-vault-nftx",
-    symbol: "hdpunk",
-    name: "HDPUNK Vault (NFTX)",
-    image:
-      "https://assets.coingecko.com/coins/images/17069/large/HDPunks.png?1626151243",
-    contracts: {
-      ethereum: "0x42b4df7e402a71eae743c6c5410ce3bbb63aef22",
-    },
-  },
-  {
-    id: "bgan-vault-nftx",
-    symbol: "bgan",
-    name: "BGAN Vault (NFTX)",
-    image:
-      "https://assets.coingecko.com/coins/images/17051/large/bgan.png?1626149084",
-    contracts: {
-      ethereum: "0xc3b5284b2c0cfa1871a6ac63b6d6ee43c08bdc79",
+      ethereum: "0x87931e7ad81914e7898d07c68f145fc0a553d8fb",
     },
   },
   {
@@ -67635,6 +67496,36 @@ export const tokens: TokenD[] = [
     },
   },
   {
+    id: "bgan-vault-nftx",
+    symbol: "bgan",
+    name: "BGAN Vault (NFTX)",
+    image:
+      "https://assets.coingecko.com/coins/images/17051/large/bgan.png?1626149084",
+    contracts: {
+      ethereum: "0xc3b5284b2c0cfa1871a6ac63b6d6ee43c08bdc79",
+    },
+  },
+  {
+    id: "mask-vault-nftx",
+    symbol: "mask",
+    name: "MASK Vault (NFTX)",
+    image:
+      "https://assets.coingecko.com/coins/images/17046/large/Hashie.png?1626147674",
+    contracts: {
+      ethereum: "0xc7a8b45e184138114e6085c82936a8db93dd156a",
+    },
+  },
+  {
+    id: "bayc-vault-nftx",
+    symbol: "bayc",
+    name: "BAYC Vault (NFTX)",
+    image:
+      "https://assets.coingecko.com/coins/images/17035/large/BAYC.png?1626142944",
+    contracts: {
+      ethereum: "0xea47b64e1bfccb773a0420247c0aa0a3c1d2e5c5",
+    },
+  },
+  {
     id: "glyph-vault-nftx",
     symbol: "glyph",
     name: "GLYPH Vault (NFTX)",
@@ -67645,13 +67536,43 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "wizard-vault-nftx",
-    symbol: "wizard",
-    name: "WIZARD Vault (NFTX)",
+    id: "hdpunk-vault-nftx",
+    symbol: "hdpunk",
+    name: "HDPUNK Vault (NFTX)",
     image:
-      "https://assets.coingecko.com/coins/images/17068/large/Wizards.png?1626151233",
+      "https://assets.coingecko.com/coins/images/17069/large/HDPunks.png?1626151243",
     contracts: {
-      ethereum: "0x87931e7ad81914e7898d07c68f145fc0a553d8fb",
+      ethereum: "0x42b4df7e402a71eae743c6c5410ce3bbb63aef22",
+    },
+  },
+  {
+    id: "pasta-vault-nftx",
+    symbol: "pasta",
+    name: "PASTA Vault (NFTX)",
+    image:
+      "https://assets.coingecko.com/coins/images/17067/large/PASTA.png?1626151064",
+    contracts: {
+      ethereum: "0xea6c27d11ccb9306154f87d47dc1405c37242081",
+    },
+  },
+  {
+    id: "meeb-vault-nftx",
+    symbol: "meeb",
+    name: "MEEB Vault (NFTX)",
+    image:
+      "https://assets.coingecko.com/coins/images/17044/large/Meebs.png?1626147616",
+    contracts: {
+      ethereum: "0x641927e970222b10b2e8cdbc96b1b4f427316f16",
+    },
+  },
+  {
+    id: "sqgl-vault-nftx",
+    symbol: "sqgl",
+    name: "SQGL Vault (NFTX)",
+    image:
+      "https://assets.coingecko.com/coins/images/17041/large/SQGL.png?1626147070",
+    contracts: {
+      ethereum: "0x8d137e3337eb1b58a222fef2b2cc7c423903d9cf",
     },
   },
   {
@@ -67764,16 +67685,6 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/18438/large/Nucleus.png?1631973606",
     contracts: {
       ethereum: "0xd56736e79093d31be093ba1b5a5fe32e054b9592",
-    },
-  },
-  {
-    id: "goldfinx",
-    symbol: "gix",
-    name: "GoldFinX",
-    image:
-      "https://assets.coingecko.com/coins/images/13292/large/nDyBmnHW_400x400.jpg?1607063929",
-    contracts: {
-      ethereum: "0xbd434a09191d401da3283a5545bb3515d033b8c4",
     },
   },
   {
@@ -68403,16 +68314,6 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "reth",
-    symbol: "reth",
-    name: "rETH",
-    image:
-      "https://assets.coingecko.com/coins/images/14452/large/rETH.png?1616660903",
-    contracts: {
-      ethereum: "0x9559aaa82d9649c7a7b220e7c461d2e74c9a3593",
-    },
-  },
-  {
     id: "rfis",
     symbol: "rfis",
     name: "rFIS",
@@ -68420,6 +68321,16 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/14453/large/rFIS.png?1616660913",
     contracts: {
       ethereum: "0xc82eb6dea0c93edb8b697b89ad1b13d19469d635",
+    },
+  },
+  {
+    id: "reth",
+    symbol: "reth",
+    name: "rETH",
+    image:
+      "https://assets.coingecko.com/coins/images/14452/large/rETH.png?1616660903",
+    contracts: {
+      ethereum: "0x9559aaa82d9649c7a7b220e7c461d2e74c9a3593",
     },
   },
   {
@@ -69221,16 +69132,6 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "represent",
-    symbol: "rpt",
-    name: "Represent",
-    image:
-      "https://assets.coingecko.com/coins/images/18456/large/NmHcS53-_400x400.jpg?1632106591",
-    contracts: {
-      "binance-smart-chain": "0x6e9a01f93ff2634f3296c536738dd593b10c524f",
-    },
-  },
-  {
     id: "mystic-warrior",
     symbol: "mystic",
     name: "Mystic Warrior",
@@ -69238,6 +69139,16 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/19706/large/mystic.PNG?1635754444",
     contracts: {
       "binance-smart-chain": "0x56ac025dd322eaab069d7193b4401181adfdd83e",
+    },
+  },
+  {
+    id: "represent",
+    symbol: "rpt",
+    name: "Represent",
+    image:
+      "https://assets.coingecko.com/coins/images/18456/large/NmHcS53-_400x400.jpg?1632106591",
+    contracts: {
+      "binance-smart-chain": "0x6e9a01f93ff2634f3296c536738dd593b10c524f",
     },
   },
   {
@@ -69421,16 +69332,6 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "bitget-token",
-    symbol: "bgb",
-    name: "Bitget Token",
-    image:
-      "https://assets.coingecko.com/coins/images/11610/large/bitget-logo-1.png?1591831987",
-    contracts: {
-      ethereum: "0x19de6b897ed14a376dda0fe53a5420d2ac828a28",
-    },
-  },
-  {
     id: "wallet-swap",
     symbol: "wswap",
     name: "Wallet Swap",
@@ -69508,16 +69409,6 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/18560/large/cdz.PNG?1632435088",
     contracts: {
       "binance-smart-chain": "0x17acc21da1cd31d273c3f54b7d5dd556c8715b79",
-    },
-  },
-  {
-    id: "polkalab-token",
-    symbol: "pbl",
-    name: "Polkalab Token",
-    image:
-      "https://assets.coingecko.com/coins/images/15885/large/20210514_163859.png?1622192867",
-    contracts: {
-      "binance-smart-chain": "0x39a2ce8187119c564b71f8bdff93ce01662d2d1c",
     },
   },
   {
@@ -69615,7 +69506,9 @@ export const tokens: TokenD[] = [
     name: "OneRare",
     image:
       "https://assets.coingecko.com/coins/images/19696/large/Thumbnail_-_500_px_-_Black.png?1635751681",
-    contracts: {},
+    contracts: {
+      "polygon-pos": "0xff2382bd52efacef02cc895bcbfc4618608aa56f",
+    },
   },
   {
     id: "amy-finance",
@@ -70479,542 +70372,14 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "14231-strathmoor",
-    symbol: "realtoken-s-14231-strathmoor-st-detroit-mi",
-    name: "RealT Token - 14231 Strathmoor St, Detroit, MI 48227",
+    id: "14494-chelsea",
+    symbol: "realtoken-s-14494-chelsea-ave-detroit-mi",
+    name: "RealT Token - 14494 Chelsea Ave, Detroit, MI 48213",
     image:
-      "https://assets.coingecko.com/coins/images/16563/large/14231-Strathmoor-hero-1.jpg?1624459471",
+      "https://assets.coingecko.com/coins/images/16618/large/14494-Chelsea-hero-1.jpg?1624550267",
     contracts: {
-      xdai: "0x9528a7402c0fe85b817aa6e106eafa03a02924c4",
-      ethereum: "0x9528a7402c0fe85b817aa6e106eafa03a02924c4",
-    },
-  },
-  {
-    id: "18776-sunderland",
-    symbol: "realtoken-s-18776-sunderland-rd-detroit-mi",
-    name: "RealT Token - 18776 Sunderland Rd, Detroit, MI 48219",
-    image:
-      "https://assets.coingecko.com/coins/images/16602/large/18776-Sunderland-hero-1.jpg?1624543588",
-    contracts: {
-      xdai: "0xba07997f594a52df179620284b52b50a4e66227d",
-      ethereum: "0x2c6f00a020b613c9419bb6c1ac220036dbe9e622",
-    },
-  },
-  {
-    id: "19596-goulburn",
-    symbol: "realtoken-s-19596-goulburn-st-detroit-mi",
-    name: "RealT Token - 19596 Goulburn Ave, Detroit, MI 48205",
-    image:
-      "https://assets.coingecko.com/coins/images/16608/large/19596-Goulburn-hero-1.jpg?1624544786",
-    contracts: {
-      xdai: "0x3150f0ebc0efee280b5348b9c8c271ad44eb8b13",
-      ethereum: "0x3150f0ebc0efee280b5348b9c8c271ad44eb8b13",
-    },
-  },
-  {
-    id: "4380-beaconsfield",
-    symbol: "realtoken-s-4380-beaconsfield-st-detroit-mi",
-    name: "RealT Token - 4380 Beaconsfield St, Detroit, MI 48224",
-    image:
-      "https://assets.coingecko.com/coins/images/16603/large/4380-Beaconsfield-hero-1.jpeg?1624543909",
-    contracts: {
-      ethereum: "0x96700ffae33c651bc329c3f3fbfe56e1f291f117",
-      xdai: "0x96700ffae33c651bc329c3f3fbfe56e1f291f117",
-    },
-  },
-  {
-    id: "15373-parkside",
-    symbol: "realtoken-s-15373-parkside-st-detroit-mi",
-    name: "RealT Token - 15373 Parkside St, Detroit, MI 48238",
-    image:
-      "https://assets.coingecko.com/coins/images/16562/large/15373-Parkside-hero-1.jpg?1624458568",
-    contracts: {
-      xdai: "0x4d0da4e75d40bd7d9c4f7a292bf883bcdf38c45d",
-      ethereum: "0x4d0da4e75d40bd7d9c4f7a292bf883bcdf38c45d",
-    },
-  },
-  {
-    id: "9309-courville",
-    symbol: "realtoken-s-9309-courville-st-detroit-mi",
-    name: "RealT Token - 9309 Courville St, Detroit, MI 48224",
-    image:
-      "https://assets.coingecko.com/coins/images/16686/large/9309x-1.jpeg?1624634539",
-    contracts: {
-      ethereum: "0x67a83b28f6dd8c07301495ee2c6f83b73fd21092",
-      xdai: "0x67a83b28f6dd8c07301495ee2c6f83b73fd21092",
-    },
-  },
-  {
-    id: "1244-s-avers",
-    symbol: "realtoken-s-1244-s.avers-st-chicago-il",
-    name: "RealT Token - 1244 S. Avers St, Chicago, IL 60623",
-    image:
-      "https://assets.coingecko.com/coins/images/16634/large/1244-S-Avers-hero-3.jpeg?1624555551",
-    contracts: {
-      ethereum: "0x94fa7f8cb8453ad57cd133363b3012044647078c",
-      xdai: "0x94fa7f8cb8453ad57cd133363b3012044647078c",
-    },
-  },
-  {
-    id: "realtoken-s-13895-saratoga-st-detroit-mi",
-    symbol: "realtoken-s-13895-saratoga-st-detroit-mi",
-    name: "RealT Token - 13895 Saratoga St, Detroit, MI 48205",
-    image:
-      "https://assets.coingecko.com/coins/images/16599/large/13895-Saratoga-hero-1.jpeg?1624541955",
-    contracts: {
-      ethereum: "0x6f442da588232dc57bf0096e8de48d6961d5cc83",
-      xdai: "0x6f442da588232dc57bf0096e8de48d6961d5cc83",
-    },
-  },
-  {
-    id: "10700-whittier",
-    symbol: "realtoken-s-10700-whittier-ave-detroit-mi",
-    name: "RealT Token - 10700 Whittier Ave, Detroit, MI 48224",
-    image:
-      "https://assets.coingecko.com/coins/images/16625/large/10700-Whittier-hero-2.jpg?1624552489",
-    contracts: {
-      xdai: "0xe82cbb7c29d00a4296ee505d12a473c26cd9c423",
-      ethereum: "0xe82cbb7c29d00a4296ee505d12a473c26cd9c423",
-    },
-  },
-  {
-    id: "10084-grayton",
-    symbol: "realtoken-s-10084-grayton-st-detroit-mi",
-    name: "RealT Token - 10084 Grayton St, Detroit, MI 48224",
-    image:
-      "https://assets.coingecko.com/coins/images/16693/large/Grayton_84_side1x.jpeg?1624638633",
-    contracts: {
-      ethereum: "0x92161385c9de8798ad5fb01c0be99ffcbc84dfd8",
-      xdai: "0x92161385c9de8798ad5fb01c0be99ffcbc84dfd8",
-    },
-  },
-  {
-    id: "15796-hartwell",
-    symbol: "realtoken-s-15796-hartwell-st-detroit-mi",
-    name: "RealT Token - 15796 Hartwell St, Detroit, MI 48227",
-    image:
-      "https://assets.coingecko.com/coins/images/16607/large/15796-Hartwell-hero-1.jpeg?1624545151",
-    contracts: {
-      ethereum: "0xb3d3c1bbcef737204aadb4fa6d90e974bc262197",
-      xdai: "0xb3d3c1bbcef737204aadb4fa6d90e974bc262197",
-    },
-  },
-  {
-    id: "4852-4854-w-cortez",
-    symbol: "realtoken-s-4852-4854-w.cortez-st-chicago-il",
-    name: "RealT Token - 4852-4854 W Cortez St, Chicago, IL 60651",
-    image:
-      "https://assets.coingecko.com/coins/images/16670/large/Cortez-facade-1.jpg?1624627398",
-    contracts: {
-      xdai: "0xe7b6de709ffc3bd237c2f2c800e1002f97a760f3",
-      ethereum: "0xe7b6de709ffc3bd237c2f2c800e1002f97a760f3",
-    },
-  },
-  {
-    id: "19333-moenart",
-    symbol: "realtoken-s-19333-moenart-st-detroit-mi",
-    name: "RealT Token - 19333 Moenart St, Detroit MI 48234",
-    image:
-      "https://assets.coingecko.com/coins/images/16593/large/19333-Moenart-hero-1.jpg?1624539310",
-    contracts: {
-      xdai: "0x24293ab20159cfc0f3d7c8727cd827fba63d4f64",
-      ethereum: "0x24293ab20159cfc0f3d7c8727cd827fba63d4f64",
-    },
-  },
-  {
-    id: "1000-florida",
-    symbol: "realtoken-s-1000-florida-ave-akron-oh",
-    name: "RealT Token - 1000 Florida Ave, Akron, OH 44314",
-    image:
-      "https://assets.coingecko.com/coins/images/16661/large/1000-florida-1.jpeg?1624623840",
-    contracts: {
-      ethereum: "0x1eb16ec378f0ce8f81449120629f52ba28961d47",
-      xdai: "0x1eb16ec378f0ce8f81449120629f52ba28961d47",
-    },
-  },
-  {
-    id: "11653-nottingham",
-    symbol: "realtoken-s-11653-nottingham-rd-detroit-mi",
-    name: "RealT Token - 11653 Nottingham Rd, Detroit, MI 48224",
-    image:
-      "https://assets.coingecko.com/coins/images/16622/large/11653-Nottingham-hero-1.jpg?1624551450",
-    contracts: {
-      xdai: "0x31820af2d43c08bd82bd94b08974062482bd98d3",
-      ethereum: "0x31820af2d43c08bd82bd94b08974062482bd98d3",
-    },
-  },
-  {
-    id: "12409-whitehill",
-    symbol: "realtoken-s-12409-whitehill-st-detroit-mi",
-    name: "RealT Token - 12409 Whitehill St, Detroit, MI 48224",
-    image:
-      "https://assets.coingecko.com/coins/images/16668/large/12409-Whitehill-hero-1.jpg?1624627067",
-    contracts: {
-      xdai: "0x969d42ad7008e6651e1fd52742153f8743225d98",
-      ethereum: "0x969d42ad7008e6651e1fd52742153f8743225d98",
-    },
-  },
-  {
-    id: "1815-s-avers",
-    symbol: "realtoken-s-1815-s.avers-ave-chicago-il",
-    name: "RealT Token - 1815 S Avers Ave, Chicago, IL 60623",
-    image:
-      "https://assets.coingecko.com/coins/images/16674/large/1815-S-Avers-hero-1.5.jpg?1624628519",
-    contracts: {
-      xdai: "0x8fcb39a25e639c8fbd28e8a018227d6570e02352",
-      ethereum: "0x8fcb39a25e639c8fbd28e8a018227d6570e02352",
-    },
-  },
-  {
-    id: "5942-audubon",
-    symbol: "realtoken-s-5942-audubon-rd-detroit-mi",
-    name: "RealT Token - 5942 Audubon Rd, Detroit, MI 48224",
-    image:
-      "https://assets.coingecko.com/coins/images/16699/large/5942-Audubon-HERO-2.jpeg?1624641512",
-    contracts: {
-      ethereum: "0x6db6d540f5614e6bab7475af3f430f46a0b083e2",
-      xdai: "0x6db6d540f5614e6bab7475af3f430f46a0b083e2",
-    },
-  },
-  {
-    id: "14229-wilshire",
-    symbol: "realtoken-s-14229-wilshire-dr-detroit-mi",
-    name: "RealT Token - 14229 Wilshire Dr, Detroit, MI 48213",
-    image:
-      "https://assets.coingecko.com/coins/images/16604/large/14229-Wilshire-hero-1.jpg?1624543967",
-    contracts: {
-      xdai: "0xb09850e2b93aa3aaa1476bf0c007cfc960e2de79",
-      ethereum: "0xb09850e2b93aa3aaa1476bf0c007cfc960e2de79",
-    },
-  },
-  {
-    id: "9465-beaconsfield",
-    symbol: "realtoken-s-9465-beaconsfield-st-detroit-mi",
-    name: "RealT Token - 9465 Beaconsfield St, Detroit, MI 48224",
-    image:
-      "https://assets.coingecko.com/coins/images/16707/large/9465-Beaconsfield-hero-1c.jpeg?1624645510",
-    contracts: {
-      ethereum: "0x750fa12ae51d1515c893c1aaabe2c135937a2c8b",
-      xdai: "0x750fa12ae51d1515c893c1aaabe2c135937a2c8b",
-    },
-  },
-  {
-    id: "12334-lansdowne",
-    symbol: "realtoken-s-12334-lansdowne-street-detroit-mi",
-    name: "RealT Token - 12334 Lansdowne Street, Detroit, MI 48224",
-    image:
-      "https://assets.coingecko.com/coins/images/16692/large/Landsdowne-hero.jpeg?1624638212",
-    contracts: {
-      ethereum: "0xee2f2212a64ec3f6bc0f7580e10c53cb38b57508",
-      xdai: "0xee2f2212a64ec3f6bc0f7580e10c53cb38b57508",
-    },
-  },
-  {
-    id: "10604-somerset",
-    symbol: "realtoken-s-10604-somerset-ave-detroit-mi",
-    name: "RealT Token - 10604 Somerset Ave, Detroit, MI 48224",
-    image:
-      "https://assets.coingecko.com/coins/images/16682/large/10604-Somerset-hero-1.jpeg?1624632454",
-    contracts: {
-      ethereum: "0x8626b38267e4fc0d8c92e0bb86f97acab3f6aa05",
-      xdai: "0x8626b38267e4fc0d8c92e0bb86f97acab3f6aa05",
-    },
-  },
-  {
-    id: "10617-hathaway",
-    symbol: "realtoken-s-10617-hathaway-ave-cleveland-oh",
-    name: "RealT Token - 10617 Hathaway Ave, Cleveland, OH 44108",
-    image:
-      "https://assets.coingecko.com/coins/images/16709/large/10617-Hathaway-hero-1.jpeg?1624647056",
-    contracts: {
-      ethereum: "0x06d0e5aee443093ac5635b709c8a01342e59df19",
-      xdai: "0x06d0e5aee443093ac5635b709c8a01342e59df19",
-    },
-  },
-  {
-    id: "19020-rosemont",
-    symbol: "realtoken-s-19020-rosemont-ave-detroit-mi",
-    name: "RealT Token - 19020 Rosemont Ave, Detroit, MI 48219",
-    image:
-      "https://assets.coingecko.com/coins/images/16705/large/19020-Rosemont-hero-1.jpeg?1624644549",
-    contracts: {
-      ethereum: "0x280e9ed3b20c580a2f4219657bb9332d80bc01f1",
-      xdai: "0x280e9ed3b20c580a2f4219657bb9332d80bc01f1",
-    },
-  },
-  {
-    id: "1542-s-ridgeway",
-    symbol: "realtoken-s-1542-s.ridgeway-ave-chicago-il",
-    name: "RealT Token - 1542 S Ridgeway Ave, Chicago, IL 60623",
-    image:
-      "https://assets.coingecko.com/coins/images/16628/large/1542-S-Ridgeway-hero-2.5.jpg?1624553308",
-    contracts: {
-      xdai: "0x69d1b42b20f3ded07bec322253d0140b04cbb6f5",
-      ethereum: "0x69d1b42b20f3ded07bec322253d0140b04cbb6f5",
-    },
-  },
-  {
-    id: "18900-mansfield",
-    symbol: "realtoken-s-18900-mansfield-st-detroit-mi",
-    name: "RealT Token - 18900 Mansfield St, Detroit, MI 48235",
-    image:
-      "https://assets.coingecko.com/coins/images/16697/large/18900-Mansfield-flowers.jpeg?1624640555",
-    contracts: {
-      ethereum: "0x9eb90ec3faafc22092c9b91559fddde538042093",
-      xdai: "0x9eb90ec3faafc22092c9b91559fddde538042093",
-    },
-  },
-  {
-    id: "11078-longview",
-    symbol: "realtoken-s-11078-longview-st-detroit-mi",
-    name: "RealT Token - 11078 Longview St, Detroit, MI 48213",
-    image:
-      "https://assets.coingecko.com/coins/images/16630/large/11078-Longview-hero-2.5.jpg?1624553559",
-    contracts: {
-      xdai: "0xd5fc0c4c4c5ff316e1e91494d963ff1d52ba25ff",
-      ethereum: "0xd5fc0c4c4c5ff316e1e91494d963ff1d52ba25ff",
-    },
-  },
-  {
-    id: "581-587-jefferson",
-    symbol: "realtoken-s-581-587-jefferson-ave-rochester-ny",
-    name: "RealT Token - 581-587 Jefferson Ave, Rochester, NY 14611",
-    image:
-      "https://assets.coingecko.com/coins/images/16637/large/571-jefferson-corner-1.1.jpg?1624557964",
-    contracts: {
-      ethereum: "0xa29ae272bc89e5f315b2793925f700045f845d82",
-      xdai: "0xa29ae272bc89e5f315b2793925f700045f845d82",
-    },
-  },
-  {
-    id: "18433-faust",
-    symbol: "realtoken-s-18433-faust-ave-detroit-mi",
-    name: "RealT Token - 18433 Faust Ave, Detroit, MI, 48219",
-    image:
-      "https://assets.coingecko.com/coins/images/16684/large/Faust-1.jpeg?1624633417",
-    contracts: {
-      ethereum: "0x46f8a600337dec5cab03aa9b8f67f1d5b788ce28",
-      xdai: "0x46f8a600337dec5cab03aa9b8f67f1d5b788ce28",
-    },
-  },
-  {
-    id: "11300-roxbury",
-    symbol: "realtoken-s-11300-roxbury-st-detroit-mi",
-    name: "RealT Token - 11300 Roxbury St, Detroit, MI 48224",
-    image:
-      "https://assets.coingecko.com/coins/images/16610/large/11300-Roxbury-hero-1.jpg?1624545386",
-    contracts: {
-      xdai: "0x9b5b4886033b4abc5eb0552fff7c15a67c3c47c7",
-      ethereum: "0x9b5b4886033b4abc5eb0552fff7c15a67c3c47c7",
-    },
-  },
-  {
-    id: "9165-kensington",
-    symbol: "realtoken-s-9165-kensington-ave-detroit-mi",
-    name: "RealT Token - 9165 Kensington Ave, Detroit, MI 48224",
-    image:
-      "https://assets.coingecko.com/coins/images/16687/large/9165-Kensington-hero-1.jpeg?1624634948",
-    contracts: {
-      ethereum: "0x3c56d5e887d8fa7ae1ba65bf7eccc25ec09eaf18",
-      xdai: "0x3c56d5e887d8fa7ae1ba65bf7eccc25ec09eaf18",
-    },
-  },
-  {
-    id: "5601-s-wood",
-    symbol: "realtoken-s-5601-s.wood-st-chicago-il",
-    name: "RealT Token - 5601 S Wood St, Chicago, IL 60636",
-    image:
-      "https://assets.coingecko.com/coins/images/16605/large/5601-S-Wood-hero-1.jpg?1624544382",
-    contracts: {
-      xdai: "0xa137d82197ea4cdfd5f008a91ba816b8324f59e1",
-      ethereum: "0xa137d82197ea4cdfd5f008a91ba816b8324f59e1",
-    },
-  },
-  {
-    id: "19200-strasburg",
-    symbol: "realtoken-s-19200-strasburg-st-detroit-mi",
-    name: "RealT Token - 19200 Strasburg St, Detroit, MI 48205",
-    image:
-      "https://assets.coingecko.com/coins/images/16620/large/19200-Strasburg-hero-1.jpg?1624550918",
-    contracts: {
-      xdai: "0x211618fa0934910666f2c2731101f5a3ac013fd8",
-      ethereum: "0x211618fa0934910666f2c2731101f5a3ac013fd8",
-    },
-  },
-  {
-    id: "9481-wayburn",
-    symbol: "realtoken-s-9481-wayburn-st-detroit-mi",
-    name: "RealT Token - 9481 Wayburn St, Detroit, MI 48224",
-    image:
-      "https://assets.coingecko.com/coins/images/16609/large/9481-Wayburn-hero-1.jpg?1624545084",
-    contracts: {
-      xdai: "0x1e001730a23c7ebaff35bc8bc90da5a9b20804a4",
-      ethereum: "0x1e001730a23c7ebaff35bc8bc90da5a9b20804a4",
-    },
-  },
-  {
-    id: "4061-grand",
-    symbol: "realtoken-s-4061-grand-st-detroit-mi",
-    name: "RealT Token - 4061 Grand St, Detroit, MI 48238",
-    image:
-      "https://assets.coingecko.com/coins/images/16616/large/4061-Grand-hero-1.jpeg?1624551866",
-    contracts: {
-      ethereum: "0xd9e89bfebae447b42c1fa85c590716ec8820f737",
-      xdai: "0xd9e89bfebae447b42c1fa85c590716ec8820f737",
-    },
-  },
-  {
-    id: "10629-mckinney",
-    symbol: "realtoken-s-10629-mckinney-st-detroit-mi",
-    name: "RealT Token - 10629 McKinney St, Detroit, MI 48224",
-    image:
-      "https://assets.coingecko.com/coins/images/16611/large/10629-McKinney-hero-1.jpg?1624545790",
-    contracts: {
-      xdai: "0xd5d1adf54fbf73a00b197ddcfdad7cc27d93002f",
-      ethereum: "0xd5d1adf54fbf73a00b197ddcfdad7cc27d93002f",
-    },
-  },
-  {
-    id: "1617-s-avers",
-    symbol: "realtoken-s-1617-s.avers-ave-chicago-il",
-    name: "RealT Token - 1617 S Avers Ave, Chicago, IL 60623",
-    image:
-      "https://assets.coingecko.com/coins/images/16675/large/1617-S-Avers-hero-1.jpg?1624628860",
-    contracts: {
-      xdai: "0xf4657ab08681214bcb1893aa8e9c7613459250ec",
-      ethereum: "0xf4657ab08681214bcb1893aa8e9c7613459250ec",
-    },
-  },
-  {
-    id: "10616-mckinney",
-    symbol: "realtoken-s-10616-mckinney-st-detroit-mi",
-    name: "RealT Token - 10616 McKinney St, Detroit, MI 48224",
-    image:
-      "https://assets.coingecko.com/coins/images/16685/large/Mkinney-hero.jpeg?1624634131",
-    contracts: {
-      ethereum: "0xe5ce63ac9a08c1eb160889151cd84855f16c94d2",
-      xdai: "0xe5ce63ac9a08c1eb160889151cd84855f16c94d2",
-    },
-  },
-  {
-    id: "11078-wayburn",
-    symbol: "realtoken-s-11078-wayburn-st-detroit-mi",
-    name: "RealT Token - 11078 Wayburn St, Detroit, MI 48224",
-    image:
-      "https://assets.coingecko.com/coins/images/16596/large/11078-Wayburn-hero-1.jpg?1624541135",
-    contracts: {
-      xdai: "0xb8403b7730368942a5bfe5aac04a31b44015b1cc",
-      ethereum: "0xb8403b7730368942a5bfe5aac04a31b44015b1cc",
-    },
-  },
-  {
-    id: "18273-monte-vista",
-    symbol: "realtoken-s-18273-monte-vista-st-detroit-mi",
-    name: "RealT Token - 18273 Monte Vista St, Detroit, MI 48221",
-    image:
-      "https://assets.coingecko.com/coins/images/16665/large/18273-Monte-Vista-hero-1b.jpeg?1624626435",
-    contracts: {
-      ethereum: "0x9856c5ca15a4ac9c65aac090c38a9f39eb3b5eec",
-      xdai: "0x9856c5ca15a4ac9c65aac090c38a9f39eb3b5eec",
-    },
-  },
-  {
-    id: "19163-mitchell",
-    symbol: "realtoken-s-19163-mitchell-st-detroit-mi",
-    name: "RealT Token - 19163 Mitchell St, Detroit, MI 48234",
-    image:
-      "https://assets.coingecko.com/coins/images/16614/large/19163-Mitchell-hero-1.jpeg?1624548736",
-    contracts: {
-      ethereum: "0x4cc53ee5ef306a95d407321d4b4acc30814c04ee",
-      xdai: "0x4cc53ee5ef306a95d407321d4b4acc30814c04ee",
-    },
-  },
-  {
-    id: "10024-10028-appoline",
-    symbol: "realtoken-s-10024-10028-appoline-st-detroit-mi",
-    name: "RealT Token -10024-10028 Appoline St, Detroit, MI 48227",
-    image:
-      "https://assets.coingecko.com/coins/images/16639/large/appoline-hero.jpeg?1624559019",
-    contracts: {
-      ethereum: "0xb5d30c28f87acf675ed5b9f343e5fff39ec9942c",
-      xdai: "0xb5d30c28f87acf675ed5b9f343e5fff39ec9942c",
-    },
-  },
-  {
-    id: "9166-devonshire",
-    symbol: "realtoken-s-9166-devonshire-rd-detroit-mi",
-    name: "RealT Token - 9166 Devonshire Rd, Detroit MI 48224",
-    image:
-      "https://assets.coingecko.com/coins/images/16690/large/Devonshire-3x.jpeg?1624636640",
-    contracts: {
-      ethereum: "0xa69d7d4ddf397f3d1e7ebaf108555d1107b3b117",
-      xdai: "0xa69d7d4ddf397f3d1e7ebaf108555d1107b3b117",
-    },
-  },
-  {
-    id: "15039-ward",
-    symbol: "realtoken-s-15039-ward-ave-detroit-mi",
-    name: "RealT Token - 15039 Ward Ave, Detroit, MI 48227",
-    image:
-      "https://assets.coingecko.com/coins/images/16632/large/15039-Ward-hero-1.jpeg?1624554456",
-    contracts: {
-      ethereum: "0x7e95b310724334ff74537dc08bfd3377d25e65ce",
-      xdai: "0x7e95b310724334ff74537dc08bfd3377d25e65ce",
-    },
-  },
-  {
-    id: "19311-keystone",
-    symbol: "realtoken-s-19311-keystone-st-detroit-mi",
-    name: "RealT Token - 19311 Keystone St, Detroit, MI 48234",
-    image:
-      "https://assets.coingecko.com/coins/images/16631/large/19311-Keystone-hero-1.jpeg?1624554016",
-    contracts: {
-      ethereum: "0x8a9f904b4ead6a97f3ab304d0d2196f5c602c807",
-      xdai: "0x8a9f904b4ead6a97f3ab304d0d2196f5c602c807",
-    },
-  },
-  {
-    id: "14825-wilfred",
-    symbol: "realtoken-s-14825-wilfried-st-detroit-mi",
-    name: "RealT Token - 14825 Wilfred St, Detroit, MI 48213",
-    image:
-      "https://assets.coingecko.com/coins/images/16598/large/14825-Wilfried-hero-1.jpg?1624541680",
-    contracts: {
-      xdai: "0x43fed9f9bf7deedcb314b432a8e38219dd62ce9e",
-      ethereum: "0x43fed9f9bf7deedcb314b432a8e38219dd62ce9e",
-    },
-  },
-  {
-    id: "3432-harding",
-    symbol: "realtoken-s-3432-harding-street-detroit-mi",
-    name: "RealT Token - 3432 Harding Street, Detroit, MI, 48214",
-    image:
-      "https://assets.coingecko.com/coins/images/16694/large/Hardy_front.jpeg?1624639158",
-    contracts: {
-      ethereum: "0x400b5716b0c23b6f1f0f2a5fdb038949962b803e",
-      xdai: "0x400b5716b0c23b6f1f0f2a5fdb038949962b803e",
-    },
-  },
-  {
-    id: "17500-evergreen",
-    symbol: "realtoken-s-17500-evergreen-rd-detroit-mi",
-    name: "RealT Token - 17500 Evergreen Rd, Detroit, MI 48219",
-    image:
-      "https://assets.coingecko.com/coins/images/16624/large/17500-Evergreen-hero-1.jpg?1624552051",
-    contracts: {
-      xdai: "0x1fdb4015fd5e031c5641752c1e03b973ad5ea168",
-      ethereum: "0x1fdb4015fd5e031c5641752c1e03b973ad5ea168",
-    },
-  },
-  {
-    id: "12405-santa-rosa",
-    symbol: "realtoken-s-12405-santa-rosa-dr-detroit-mi",
-    name: "RealT Token - 12405 Santa Rosa Dr, Detroit, MI 48204",
-    image:
-      "https://assets.coingecko.com/coins/images/16671/large/12405-Santa-Rosa-hero-1.jpg?1624627801",
-    contracts: {
-      xdai: "0x9d918ee39a356be8ef99734599c7e70160db4db6",
-      ethereum: "0x9d918ee39a356be8ef99734599c7e70160db4db6",
+      xdai: "0x2adc1cfa726a45264a328d9d2e2c692ceac97458",
+      ethereum: "0x2adc1cfa726a45264a328d9d2e2c692ceac97458",
     },
   },
   {
@@ -71029,69 +70394,179 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "17813-bradford",
-    symbol: "realtoken-s-17813-bradford-st-detroit-mi",
-    name: "RealT Token - 17813 Bradford St, Detroit, MI 48205",
+    id: "4852-4854-w-cortez",
+    symbol: "realtoken-s-4852-4854-w.cortez-st-chicago-il",
+    name: "RealT Token - 4852-4854 W Cortez St, Chicago, IL 60651",
     image:
-      "https://assets.coingecko.com/coins/images/16606/large/17813-Bradford-hero-1.jpeg?1624544519",
+      "https://assets.coingecko.com/coins/images/16670/large/Cortez-facade-1.jpg?1624627398",
     contracts: {
-      ethereum: "0x499a6c19f5537dd6005e2b5c6e1263103f558ba4",
-      xdai: "0x499a6c19f5537dd6005e2b5c6e1263103f558ba4",
+      xdai: "0xe7b6de709ffc3bd237c2f2c800e1002f97a760f3",
+      ethereum: "0xe7b6de709ffc3bd237c2f2c800e1002f97a760f3",
     },
   },
   {
-    id: "14319-rosemary",
-    symbol: "realtoken-s-14319-rosemary-st-detroit-mi",
-    name: "RealT Token - 14319 Rosemary St, Detroit, MI 48213",
+    id: "12405-santa-rosa",
+    symbol: "realtoken-s-12405-santa-rosa-dr-detroit-mi",
+    name: "RealT Token - 12405 Santa Rosa Dr, Detroit, MI 48204",
     image:
-      "https://assets.coingecko.com/coins/images/16592/large/14319-Rosemary-hero-1-800x600.jpeg?1624539171",
+      "https://assets.coingecko.com/coins/images/16671/large/12405-Santa-Rosa-hero-1.jpg?1624627801",
     contracts: {
-      ethereum: "0x41599149f1b52035392402f9e311b1edb0c9f699",
-      xdai: "0x41599149f1b52035392402f9e311b1edb0c9f699",
+      xdai: "0x9d918ee39a356be8ef99734599c7e70160db4db6",
+      ethereum: "0x9d918ee39a356be8ef99734599c7e70160db4db6",
     },
   },
   {
-    id: "19218-houghton",
-    symbol: "realtoken-s-19218-houghton-st-detroit-mi",
-    name: "RealT Token - 19218 Houghton St, Detroit, MI 48219",
+    id: "15796-hartwell",
+    symbol: "realtoken-s-15796-hartwell-st-detroit-mi",
+    name: "RealT Token - 15796 Hartwell St, Detroit, MI 48227",
     image:
-      "https://assets.coingecko.com/coins/images/16708/large/19218-Houghton-hero-1.jpeg?1624646592",
+      "https://assets.coingecko.com/coins/images/16607/large/15796-Hartwell-hero-1.jpeg?1624545151",
     contracts: {
-      ethereum: "0xc731eca970979cd2da2a1094a808f49894070d35",
-      xdai: "0xc731eca970979cd2da2a1094a808f49894070d35",
+      ethereum: "0xb3d3c1bbcef737204aadb4fa6d90e974bc262197",
+      xdai: "0xb3d3c1bbcef737204aadb4fa6d90e974bc262197",
     },
   },
   {
-    id: "18481-westphalia",
-    symbol: "realtoken-s-18481-westphalia-st-detroit-mi",
-    name: "RealT Token - 18481 Westphalia St, Detroit, MI 48205",
+    id: "17500-evergreen",
+    symbol: "realtoken-s-17500-evergreen-rd-detroit-mi",
+    name: "RealT Token - 17500 Evergreen Rd, Detroit, MI 48219",
     image:
-      "https://assets.coingecko.com/coins/images/16633/large/18481-Westphalia-hero-1.jpeg?1624554981",
+      "https://assets.coingecko.com/coins/images/16624/large/17500-Evergreen-hero-1.jpg?1624552051",
     contracts: {
-      ethereum: "0x75f06b482adbfb04b877d8ee683e2fcdf18ad153",
-      xdai: "0x75f06b482adbfb04b877d8ee683e2fcdf18ad153",
+      xdai: "0x1fdb4015fd5e031c5641752c1e03b973ad5ea168",
+      ethereum: "0x1fdb4015fd5e031c5641752c1e03b973ad5ea168",
     },
   },
   {
-    id: "402-s-kostner",
-    symbol: "realtoken-s-402-s.kostner-ave-chicago-il",
-    name: "RealT Token - 402 S Kostner Ave, Chicago, IL 60624",
+    id: "13116-kilbourne",
+    symbol: "realtoken-s-13116-kilbourne-ave-detroit-mi",
+    name: "RealT Token - 13116 Kilbourne Ave, Detroit, MI 48213",
     image:
-      "https://assets.coingecko.com/coins/images/16627/large/402-S-Kostner-hero-1.jpg?1624553033",
+      "https://assets.coingecko.com/coins/images/16679/large/13116-Kilbourne-hero-1.jpeg?1624630007",
     contracts: {
-      xdai: "0xe255caf8893382465368b8e1cd4ef8436acf0ade",
-      ethereum: "0xe255caf8893382465368b8e1cd4ef8436acf0ade",
+      ethereum: "0x08ad1f3a48be1d23c723a6cc8486b247f5de935a",
+      xdai: "0x08ad1f3a48be1d23c723a6cc8486b247f5de935a",
     },
   },
   {
-    id: "19996-joann",
-    symbol: "realtoken-s-19996-joann-ave-detroit-mi",
-    name: "RealT Token - 19996 Joann Ave, Detroit, MI 48205",
+    id: "9943-marlowe",
+    symbol: "realtoken-s-9943-marlowe-st-detroit-mi",
+    name: "RealT Token - 9943 Marlowe St, Detroit, MI 48227",
     image:
-      "https://assets.coingecko.com/coins/images/16666/large/19996-Joanne-hero-1.jpg?1624626495",
+      "https://assets.coingecko.com/coins/images/16695/large/9943-Marlowe-HERO-2.jpeg?1624639568",
     contracts: {
-      xdai: "0x311fc485f1fea0c8cc9b5c783e79f4313ddfa720",
-      ethereum: "0x311fc485f1fea0c8cc9b5c783e79f4313ddfa720",
+      ethereum: "0x57eadd2a542cfe9f00a37f55df4d5062f857c0e8",
+      xdai: "0x57eadd2a542cfe9f00a37f55df4d5062f857c0e8",
+    },
+  },
+  {
+    id: "13606-winthrop",
+    symbol: "realtoken-s-13606-winthrop-st-detroit-mi",
+    name: "RealT Token - 13606 Winthrop St, Detroit, MI 48227",
+    image:
+      "https://assets.coingecko.com/coins/images/16667/large/13606-Winthrop-hero-1.jpg?1624626772",
+    contracts: {
+      xdai: "0x804f6baa10615c85e4b4a5bc4efe516d9f7a4365",
+      ethereum: "0x804f6baa10615c85e4b4a5bc4efe516d9f7a4365",
+    },
+  },
+  {
+    id: "1617-s-avers",
+    symbol: "realtoken-s-1617-s.avers-ave-chicago-il",
+    name: "RealT Token - 1617 S Avers Ave, Chicago, IL 60623",
+    image:
+      "https://assets.coingecko.com/coins/images/16675/large/1617-S-Avers-hero-1.jpg?1624628860",
+    contracts: {
+      xdai: "0xf4657ab08681214bcb1893aa8e9c7613459250ec",
+      ethereum: "0xf4657ab08681214bcb1893aa8e9c7613459250ec",
+    },
+  },
+  {
+    id: "10024-10028-appoline",
+    symbol: "realtoken-s-10024-10028-appoline-st-detroit-mi",
+    name: "RealT Token -10024-10028 Appoline St, Detroit, MI 48227",
+    image:
+      "https://assets.coingecko.com/coins/images/16639/large/appoline-hero.jpeg?1624559019",
+    contracts: {
+      ethereum: "0xb5d30c28f87acf675ed5b9f343e5fff39ec9942c",
+      xdai: "0xb5d30c28f87acf675ed5b9f343e5fff39ec9942c",
+    },
+  },
+  {
+    id: "10612-somerset",
+    symbol: "realtoken-s-10612-somerset-ave-detroit-mi",
+    name: "RealT Token - 10612 Somerset Ave, Detroit, MI 48224",
+    image:
+      "https://assets.coingecko.com/coins/images/16680/large/Somerset-3.jpeg?1624630432",
+    contracts: {
+      ethereum: "0xd1c15cebfdcd16f00d91666bf64c8b66cbf5e9b5",
+      xdai: "0xd1c15cebfdcd16f00d91666bf64c8b66cbf5e9b5",
+    },
+  },
+  {
+    id: "15777-ardmore",
+    symbol: "realtoken-s-15777-ardmore-st-detroit-mi",
+    name: "RealT Token - 15777 Ardmore St, Detroit, MI 48227",
+    image:
+      "https://assets.coingecko.com/coins/images/16542/large/15777-Ardmore-hero-2.jpg?1624371814",
+    contracts: {
+      ethereum: "0xfe17c3c0b6f38cf3bd8ba872bee7a18ab16b43fb",
+      xdai: "0xfe17c3c0b6f38cf3bd8ba872bee7a18ab16b43fb",
+    },
+  },
+  {
+    id: "1000-florida",
+    symbol: "realtoken-s-1000-florida-ave-akron-oh",
+    name: "RealT Token - 1000 Florida Ave, Akron, OH 44314",
+    image:
+      "https://assets.coingecko.com/coins/images/16661/large/1000-florida-1.jpeg?1624623840",
+    contracts: {
+      ethereum: "0x1eb16ec378f0ce8f81449120629f52ba28961d47",
+      xdai: "0x1eb16ec378f0ce8f81449120629f52ba28961d47",
+    },
+  },
+  {
+    id: "14066-santa-rosa",
+    symbol: "realtoken-s-14066-santa-rosa-dr-detroit-mi",
+    name: "RealT Token - 14066 Santa Rosa Dr, Detroit, MI 48238",
+    image:
+      "https://assets.coingecko.com/coins/images/16677/large/14066-Santa-Rosa-hero-1.5.jpg?1624629250",
+    contracts: {
+      xdai: "0xe887dc4fcb5240c0c080aeab8870421d3ebd0b28",
+      ethereum: "0xe887dc4fcb5240c0c080aeab8870421d3ebd0b28",
+    },
+  },
+  {
+    id: "15095-hartwell",
+    symbol: "realtoken-s-15095-hartwell-st-detroit-mi",
+    name: "RealT Token -15095 Hartwell St, Detroit, MI 48227",
+    image:
+      "https://assets.coingecko.com/coins/images/16664/large/15095-Hartwell-hero-1.jpeg?1624625590",
+    contracts: {
+      ethereum: "0x9fef44fc4c571010bccd5b63e1cdc807d3b347bf",
+      xdai: "0x9fef44fc4c571010bccd5b63e1cdc807d3b347bf",
+    },
+  },
+  {
+    id: "18276-appoline",
+    symbol: "realtoken-s-18276-appoline-st-detroit-mi",
+    name: "RealT Token - 18276 Appoline St, Detroit, MI 48235",
+    image:
+      "https://assets.coingecko.com/coins/images/16696/large/Appoline-18267_jpg__3760%C3%973754_.png?1624640149",
+    contracts: {
+      ethereum: "0x21f1af3e751317a2f7de7df31d5d092e6a907bde",
+      xdai: "0x21f1af3e751317a2f7de7df31d5d092e6a907bde",
+    },
+  },
+  {
+    id: "1244-s-avers",
+    symbol: "realtoken-s-1244-s.avers-st-chicago-il",
+    name: "RealT Token - 1244 S. Avers St, Chicago, IL 60623",
+    image:
+      "https://assets.coingecko.com/coins/images/16634/large/1244-S-Avers-hero-3.jpeg?1624555551",
+    contracts: {
+      ethereum: "0x94fa7f8cb8453ad57cd133363b3012044647078c",
+      xdai: "0x94fa7f8cb8453ad57cd133363b3012044647078c",
     },
   },
   {
@@ -71106,36 +70581,69 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "15784-monte-vista",
-    symbol: "realtoken-s-15784-monte-vista-st-detroit-mi",
-    name: "RealT Token - 15784 Monte Vista St, Detroit, MI 48238",
+    id: "1815-s-avers",
+    symbol: "realtoken-s-1815-s.avers-ave-chicago-il",
+    name: "RealT Token - 1815 S Avers Ave, Chicago, IL 60623",
     image:
-      "https://assets.coingecko.com/coins/images/16673/large/15784-monte-vista-hero-1.jpeg?1624628466",
+      "https://assets.coingecko.com/coins/images/16674/large/1815-S-Avers-hero-1.5.jpg?1624628519",
     contracts: {
-      ethereum: "0x7f940b5509a22e81d29167581bdeea3fa5a0abee",
-      xdai: "0x7f940b5509a22e81d29167581bdeea3fa5a0abee",
+      xdai: "0x8fcb39a25e639c8fbd28e8a018227d6570e02352",
+      ethereum: "0x8fcb39a25e639c8fbd28e8a018227d6570e02352",
     },
   },
   {
-    id: "8342-schaefer",
-    symbol: "realtoken-s-8342-schaefer-highway-detroit-mi",
-    name: "RealT Token - 8342 Schaefer Highway, Detroit, MI 48228",
+    id: "11201-college",
+    symbol: "realtoken-s-11201-college-st-detroit-mi",
+    name: "RealT Token - 11201 College St, Detroit, MI 48205",
     image:
-      "https://assets.coingecko.com/coins/images/16700/large/Schaefer-1.jpeg?1624642033",
+      "https://assets.coingecko.com/coins/images/16594/large/11201-College-hero-1.jpg?1624540102",
     contracts: {
-      ethereum: "0x741857c07b100c9c0c1272d95845dddc4f1b67cb",
-      xdai: "0x741857c07b100c9c0c1272d95845dddc4f1b67cb",
+      xdai: "0x5e2a09064b2dca8c44aad8a5b69a69bb1854fe72",
+      ethereum: "0x5e2a09064b2dca8c44aad8a5b69a69bb1854fe72",
     },
   },
   {
-    id: "13045-wade",
-    symbol: "realtoken-s-13045-wade-st-detroit-mi",
-    name: "RealT Token - 13045 Wade St, Detroit, MI 48213",
+    id: "9465-beaconsfield",
+    symbol: "realtoken-s-9465-beaconsfield-st-detroit-mi",
+    name: "RealT Token - 9465 Beaconsfield St, Detroit, MI 48224",
     image:
-      "https://assets.coingecko.com/coins/images/16617/large/13045-Wade-hero-1.jpg?1624549855",
+      "https://assets.coingecko.com/coins/images/16707/large/9465-Beaconsfield-hero-1c.jpeg?1624645510",
     contracts: {
-      xdai: "0x5600e25b4f24c63afa655c3bd96e3c178b654fa1",
-      ethereum: "0x5600e25b4f24c63afa655c3bd96e3c178b654fa1",
+      ethereum: "0x750fa12ae51d1515c893c1aaabe2c135937a2c8b",
+      xdai: "0x750fa12ae51d1515c893c1aaabe2c135937a2c8b",
+    },
+  },
+  {
+    id: "9133-devonshire",
+    symbol: "realtoken-s-9133-devonshire-rd-detroit-mi",
+    name: "RealT Token - 9133 Devonshire Rd, Detroit, MI 48224",
+    image:
+      "https://assets.coingecko.com/coins/images/16683/large/9133-Devonshire-hero.jpeg?1624632898",
+    contracts: {
+      ethereum: "0x76dbeb740ecd1f3b052a9afa302abc7eb4fb5390",
+      xdai: "0x76dbeb740ecd1f3b052a9afa302abc7eb4fb5390",
+    },
+  },
+  {
+    id: "16200-fullerton",
+    symbol: "realtoken-s-16200-fullerton-ave-detroit-mi",
+    name: "RealT Token - 16200 Fullerton Ave, Detroit, MI 48227",
+    image:
+      "https://assets.coingecko.com/coins/images/16704/large/16200-Fullerton-HERO.jpeg?1624644084",
+    contracts: {
+      ethereum: "0x021bb23a45e9fc824260435e670fc383b7b8cbbb",
+      xdai: "0x021bb23a45e9fc824260435e670fc383b7b8cbbb",
+    },
+  },
+  {
+    id: "19136-tracey",
+    symbol: "realtoken-s-19136-tracey-st-detroit-mi",
+    name: "RealT Token - 19136 Tracey St, Detroit MI 48235",
+    image:
+      "https://assets.coingecko.com/coins/images/16706/large/19136-Tracey-hero-1.jpeg?1624644977",
+    contracts: {
+      ethereum: "0x33722ea778df197f1b7b1cf0b124d7a962181d65",
+      xdai: "0x33722ea778df197f1b7b1cf0b124d7a962181d65",
     },
   },
   {
@@ -71150,14 +70658,201 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "12866-lauder",
-    symbol: "realtoken-s-12866-lauder-st-detroit-mi",
-    name: "RealT Token - 12866 Lauder St, Detroit, MI 48227",
+    id: "11078-longview",
+    symbol: "realtoken-s-11078-longview-st-detroit-mi",
+    name: "RealT Token - 11078 Longview St, Detroit, MI 48213",
     image:
-      "https://assets.coingecko.com/coins/images/16565/large/12866-Lauder-hero-1.jpg?1624460677",
+      "https://assets.coingecko.com/coins/images/16630/large/11078-Longview-hero-2.5.jpg?1624553559",
     contracts: {
-      xdai: "0xb5dd2b6e0a0422e069e1d2cc3ed16533488a05e3",
-      ethereum: "0xb5dd2b6e0a0422e069e1d2cc3ed16533488a05e3",
+      xdai: "0xd5fc0c4c4c5ff316e1e91494d963ff1d52ba25ff",
+      ethereum: "0xd5fc0c4c4c5ff316e1e91494d963ff1d52ba25ff",
+    },
+  },
+  {
+    id: "10617-hathaway",
+    symbol: "realtoken-s-10617-hathaway-ave-cleveland-oh",
+    name: "RealT Token - 10617 Hathaway Ave, Cleveland, OH 44108",
+    image:
+      "https://assets.coingecko.com/coins/images/16709/large/10617-Hathaway-hero-1.jpeg?1624647056",
+    contracts: {
+      ethereum: "0x06d0e5aee443093ac5635b709c8a01342e59df19",
+      xdai: "0x06d0e5aee443093ac5635b709c8a01342e59df19",
+    },
+  },
+  {
+    id: "18776-sunderland",
+    symbol: "realtoken-s-18776-sunderland-rd-detroit-mi",
+    name: "RealT Token - 18776 Sunderland Rd, Detroit, MI 48219",
+    image:
+      "https://assets.coingecko.com/coins/images/16602/large/18776-Sunderland-hero-1.jpg?1624543588",
+    contracts: {
+      xdai: "0xba07997f594a52df179620284b52b50a4e66227d",
+      ethereum: "0x2c6f00a020b613c9419bb6c1ac220036dbe9e622",
+    },
+  },
+  {
+    id: "15350-greydale",
+    symbol: "realtoken-s-15350-greydale-st-detroit-mi",
+    name: "RealT Token - 15350 Greydale St, Detroit, MI 48223",
+    image:
+      "https://assets.coingecko.com/coins/images/16564/large/15350-Greydale-hero-1.jpg?1624460101",
+    contracts: {
+      xdai: "0xda47bd33e8f5d17bb81b8752784bfb46c1c44b2a",
+      ethereum: "0xda47bd33e8f5d17bb81b8752784bfb46c1c44b2a",
+    },
+  },
+  {
+    id: "19200-strasburg",
+    symbol: "realtoken-s-19200-strasburg-st-detroit-mi",
+    name: "RealT Token - 19200 Strasburg St, Detroit, MI 48205",
+    image:
+      "https://assets.coingecko.com/coins/images/16620/large/19200-Strasburg-hero-1.jpg?1624550918",
+    contracts: {
+      xdai: "0x211618fa0934910666f2c2731101f5a3ac013fd8",
+      ethereum: "0x211618fa0934910666f2c2731101f5a3ac013fd8",
+    },
+  },
+  {
+    id: "8342-schaefer",
+    symbol: "realtoken-s-8342-schaefer-highway-detroit-mi",
+    name: "RealT Token - 8342 Schaefer Highway, Detroit, MI 48228",
+    image:
+      "https://assets.coingecko.com/coins/images/16700/large/Schaefer-1.jpeg?1624642033",
+    contracts: {
+      ethereum: "0x741857c07b100c9c0c1272d95845dddc4f1b67cb",
+      xdai: "0x741857c07b100c9c0c1272d95845dddc4f1b67cb",
+    },
+  },
+  {
+    id: "10974-worden",
+    symbol: "realtoken-s-10974-worden-st-detroit-mi",
+    name: "RealT Token - 10974 Worden St, Detroit, MI 48224",
+    image:
+      "https://assets.coingecko.com/coins/images/16688/large/Worden-hero-site.jpeg?1624635525",
+    contracts: {
+      ethereum: "0x42b387cdf0951a0e08336d35651544c47cd05c95",
+      xdai: "0x537dc65657ed455d1c17e319fe6f4926d6033f2b",
+    },
+  },
+  {
+    id: "15860-hartwell",
+    symbol: "realtoken-s-15860-hartwell-st-detroit-mi",
+    name: "RealT Token - 15860 Hartwell St, Detroit, MI 48227",
+    image:
+      "https://assets.coingecko.com/coins/images/16595/large/15860-Hartwell-hero-1.jpg?1624540454",
+    contracts: {
+      xdai: "0xa9f30c907321718e655b74463ca665b690b78894",
+      ethereum: "0xa9f30c907321718e655b74463ca665b690b78894",
+    },
+  },
+  {
+    id: "14825-wilfred",
+    symbol: "realtoken-s-14825-wilfried-st-detroit-mi",
+    name: "RealT Token - 14825 Wilfred St, Detroit, MI 48213",
+    image:
+      "https://assets.coingecko.com/coins/images/16598/large/14825-Wilfried-hero-1.jpg?1624541680",
+    contracts: {
+      xdai: "0x43fed9f9bf7deedcb314b432a8e38219dd62ce9e",
+      ethereum: "0x43fed9f9bf7deedcb314b432a8e38219dd62ce9e",
+    },
+  },
+  {
+    id: "10604-somerset",
+    symbol: "realtoken-s-10604-somerset-ave-detroit-mi",
+    name: "RealT Token - 10604 Somerset Ave, Detroit, MI 48224",
+    image:
+      "https://assets.coingecko.com/coins/images/16682/large/10604-Somerset-hero-1.jpeg?1624632454",
+    contracts: {
+      ethereum: "0x8626b38267e4fc0d8c92e0bb86f97acab3f6aa05",
+      xdai: "0x8626b38267e4fc0d8c92e0bb86f97acab3f6aa05",
+    },
+  },
+  {
+    id: "4680-buckingham",
+    symbol: "realtoken-s-4680-buckingham-ave-detroit-mi",
+    name: "RealT Token - 4680 Buckingham Ave, Detroit, MI 48224",
+    image:
+      "https://assets.coingecko.com/coins/images/16629/large/4680-Buckingham-hero-1.jpeg?1624553513",
+    contracts: {
+      ethereum: "0xefe82d6baf0db71f92889eb9d00721bd49121316",
+      xdai: "0xefe82d6baf0db71f92889eb9d00721bd49121316",
+    },
+  },
+  {
+    id: "18273-monte-vista",
+    symbol: "realtoken-s-18273-monte-vista-st-detroit-mi",
+    name: "RealT Token - 18273 Monte Vista St, Detroit, MI 48221",
+    image:
+      "https://assets.coingecko.com/coins/images/16665/large/18273-Monte-Vista-hero-1b.jpeg?1624626435",
+    contracts: {
+      ethereum: "0x9856c5ca15a4ac9c65aac090c38a9f39eb3b5eec",
+      xdai: "0x9856c5ca15a4ac9c65aac090c38a9f39eb3b5eec",
+    },
+  },
+  {
+    id: "9920-bishop",
+    symbol: "realtoken-s-9920-bishop-st-detroit-mi",
+    name: "RealT Token - 9920 Bishop St, Detroit, MI 48224",
+    image:
+      "https://assets.coingecko.com/coins/images/16615/large/9920-Bishop-hero-1.jpg?1624549554",
+    contracts: {
+      xdai: "0xa2b2ae397492c7ed8a4c1e751ac72d2b59947e6b",
+      ethereum: "0xa2b2ae397492c7ed8a4c1e751ac72d2b59947e6b",
+    },
+  },
+  {
+    id: "13991-warwick",
+    symbol: "realtoken-s-13991-warwick-st-detroit-mi",
+    name: "RealT Token -13991 Warwick St, Detroit, MI, 48223",
+    image:
+      "https://assets.coingecko.com/coins/images/16662/large/Warwick-hero.jpeg?1624624485",
+    contracts: {
+      ethereum: "0x4e98493920b16dd6642e9d48497c8d0a49150f6f",
+      xdai: "0x4e98493920b16dd6642e9d48497c8d0a49150f6f",
+    },
+  },
+  {
+    id: "9481-wayburn",
+    symbol: "realtoken-s-9481-wayburn-st-detroit-mi",
+    name: "RealT Token - 9481 Wayburn St, Detroit, MI 48224",
+    image:
+      "https://assets.coingecko.com/coins/images/16609/large/9481-Wayburn-hero-1.jpg?1624545084",
+    contracts: {
+      xdai: "0x1e001730a23c7ebaff35bc8bc90da5a9b20804a4",
+      ethereum: "0x1e001730a23c7ebaff35bc8bc90da5a9b20804a4",
+    },
+  },
+  {
+    id: "9336-patton",
+    symbol: "realtoken-s-9336-patton-st-detroit-mi",
+    name: "RealT Token - 9336 Patton St, Detroit, MI 48228",
+    image:
+      "https://assets.coingecko.com/coins/images/16701/large/9336-Patton-HERO-2.jpeg?1624642655",
+    contracts: {
+      ethereum: "0x23684569c0636c9aea246551879d457d0a0e6f58",
+      xdai: "0x23684569c0636c9aea246551879d457d0a0e6f58",
+    },
+  },
+  {
+    id: "402-s-kostner",
+    symbol: "realtoken-s-402-s.kostner-ave-chicago-il",
+    name: "RealT Token - 402 S Kostner Ave, Chicago, IL 60624",
+    image:
+      "https://assets.coingecko.com/coins/images/16627/large/402-S-Kostner-hero-1.jpg?1624553033",
+    contracts: {
+      xdai: "0xe255caf8893382465368b8e1cd4ef8436acf0ade",
+      ethereum: "0xe255caf8893382465368b8e1cd4ef8436acf0ade",
+    },
+  },
+  {
+    id: "9717-everts",
+    symbol: "realtoken-s-9717-everts-st-detroit-mi",
+    name: "RealT Token - 9717 Everts St, Detroit, MI 48224",
+    image:
+      "https://assets.coingecko.com/coins/images/16612/large/9717-Everts-hero-1.jpeg?1624546272",
+    contracts: {
+      ethereum: "0x73bde888664df8ddfd156b52e6999eeabab57c94",
+      xdai: "0x73bde888664df8ddfd156b52e6999eeabab57c94",
     },
   },
   {
@@ -71172,14 +70867,475 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "9943-marlowe",
-    symbol: "realtoken-s-9943-marlowe-st-detroit-mi",
-    name: "RealT Token - 9943 Marlowe St, Detroit, MI 48227",
+    id: "10700-whittier",
+    symbol: "realtoken-s-10700-whittier-ave-detroit-mi",
+    name: "RealT Token - 10700 Whittier Ave, Detroit, MI 48224",
     image:
-      "https://assets.coingecko.com/coins/images/16695/large/9943-Marlowe-HERO-2.jpeg?1624639568",
+      "https://assets.coingecko.com/coins/images/16625/large/10700-Whittier-hero-2.jpg?1624552489",
     contracts: {
-      ethereum: "0x57eadd2a542cfe9f00a37f55df4d5062f857c0e8",
-      xdai: "0x57eadd2a542cfe9f00a37f55df4d5062f857c0e8",
+      xdai: "0xe82cbb7c29d00a4296ee505d12a473c26cd9c423",
+      ethereum: "0xe82cbb7c29d00a4296ee505d12a473c26cd9c423",
+    },
+  },
+  {
+    id: "19317-gable",
+    symbol: "realtoken-s-19317-gable-st-detroit-mi",
+    name: "RealT Token - 19317 Gable St, Detroit, MI 48234",
+    image:
+      "https://assets.coingecko.com/coins/images/16638/large/19317-Gable-hero-1.jpeg?1624558479",
+    contracts: {
+      ethereum: "0x34ed9e71449529e034d0326cfbb3b5ccdca00cbc",
+      xdai: "0x34ed9e71449529e034d0326cfbb3b5ccdca00cbc",
+    },
+  },
+  {
+    id: "19201-westphalia",
+    symbol: "realtoken-s-19201-westphalia-st-detroit-mi",
+    name: "RealT Token - 19201 Westphalia St, Detroit, MI 48205",
+    image:
+      "https://assets.coingecko.com/coins/images/16613/large/19201-Westphalia-hero-1.jpeg?1624547689",
+    contracts: {
+      ethereum: "0x830b0e9a5ecf36d0a886d21e1c20043cd2d16515",
+      xdai: "0x830b0e9a5ecf36d0a886d21e1c20043cd2d16515",
+    },
+  },
+  {
+    id: "15634-liberal",
+    symbol: "realtoken-s-15634-liberal-st-detroit-mi",
+    name: "RealT Token - 15634 Liberal St, Detroit, MI 48205",
+    image:
+      "https://assets.coingecko.com/coins/images/16703/large/Liberal-1.png?1624643634",
+    contracts: {
+      ethereum: "0xa81f77e8988b28fb74243b907ace3c83353dc80a",
+      xdai: "0xa81f77e8988b28fb74243b907ace3c83353dc80a",
+    },
+  },
+  {
+    id: "3432-harding",
+    symbol: "realtoken-s-3432-harding-street-detroit-mi",
+    name: "RealT Token - 3432 Harding Street, Detroit, MI, 48214",
+    image:
+      "https://assets.coingecko.com/coins/images/16694/large/Hardy_front.jpeg?1624639158",
+    contracts: {
+      ethereum: "0x400b5716b0c23b6f1f0f2a5fdb038949962b803e",
+      xdai: "0x400b5716b0c23b6f1f0f2a5fdb038949962b803e",
+    },
+  },
+  {
+    id: "17809-charest",
+    symbol: "realtoken-s-17809-charest-st-detroit-mi",
+    name: "RealT Token - 17809 Charest St, Detroit, MI 48212",
+    image:
+      "https://assets.coingecko.com/coins/images/16601/large/17809-Charest-hero-1.jpg?1624543227",
+    contracts: {
+      xdai: "0x31aa5fa895fd186fde12347a6fcaf540875b6434",
+      ethereum: "0xba07997f594a52df179620284b52b50a4e66227d",
+    },
+  },
+  {
+    id: "11078-wayburn",
+    symbol: "realtoken-s-11078-wayburn-st-detroit-mi",
+    name: "RealT Token - 11078 Wayburn St, Detroit, MI 48224",
+    image:
+      "https://assets.coingecko.com/coins/images/16596/large/11078-Wayburn-hero-1.jpg?1624541135",
+    contracts: {
+      xdai: "0xb8403b7730368942a5bfe5aac04a31b44015b1cc",
+      ethereum: "0xb8403b7730368942a5bfe5aac04a31b44015b1cc",
+    },
+  },
+  {
+    id: "12334-lansdowne",
+    symbol: "realtoken-s-12334-lansdowne-street-detroit-mi",
+    name: "RealT Token - 12334 Lansdowne Street, Detroit, MI 48224",
+    image:
+      "https://assets.coingecko.com/coins/images/16692/large/Landsdowne-hero.jpeg?1624638212",
+    contracts: {
+      ethereum: "0xee2f2212a64ec3f6bc0f7580e10c53cb38b57508",
+      xdai: "0xee2f2212a64ec3f6bc0f7580e10c53cb38b57508",
+    },
+  },
+  {
+    id: "12866-lauder",
+    symbol: "realtoken-s-12866-lauder-st-detroit-mi",
+    name: "RealT Token - 12866 Lauder St, Detroit, MI 48227",
+    image:
+      "https://assets.coingecko.com/coins/images/16565/large/12866-Lauder-hero-1.jpg?1624460677",
+    contracts: {
+      xdai: "0xb5dd2b6e0a0422e069e1d2cc3ed16533488a05e3",
+      ethereum: "0xb5dd2b6e0a0422e069e1d2cc3ed16533488a05e3",
+    },
+  },
+  {
+    id: "10629-mckinney",
+    symbol: "realtoken-s-10629-mckinney-st-detroit-mi",
+    name: "RealT Token - 10629 McKinney St, Detroit, MI 48224",
+    image:
+      "https://assets.coingecko.com/coins/images/16611/large/10629-McKinney-hero-1.jpg?1624545790",
+    contracts: {
+      xdai: "0xd5d1adf54fbf73a00b197ddcfdad7cc27d93002f",
+      ethereum: "0xd5d1adf54fbf73a00b197ddcfdad7cc27d93002f",
+    },
+  },
+  {
+    id: "14231-strathmoor",
+    symbol: "realtoken-s-14231-strathmoor-st-detroit-mi",
+    name: "RealT Token - 14231 Strathmoor St, Detroit, MI 48227",
+    image:
+      "https://assets.coingecko.com/coins/images/16563/large/14231-Strathmoor-hero-1.jpg?1624459471",
+    contracts: {
+      xdai: "0x9528a7402c0fe85b817aa6e106eafa03a02924c4",
+      ethereum: "0x9528a7402c0fe85b817aa6e106eafa03a02924c4",
+    },
+  },
+  {
+    id: "13045-wade",
+    symbol: "realtoken-s-13045-wade-st-detroit-mi",
+    name: "RealT Token - 13045 Wade St, Detroit, MI 48213",
+    image:
+      "https://assets.coingecko.com/coins/images/16617/large/13045-Wade-hero-1.jpg?1624549855",
+    contracts: {
+      xdai: "0x5600e25b4f24c63afa655c3bd96e3c178b654fa1",
+      ethereum: "0x5600e25b4f24c63afa655c3bd96e3c178b654fa1",
+    },
+  },
+  {
+    id: "11300-roxbury",
+    symbol: "realtoken-s-11300-roxbury-st-detroit-mi",
+    name: "RealT Token - 11300 Roxbury St, Detroit, MI 48224",
+    image:
+      "https://assets.coingecko.com/coins/images/16610/large/11300-Roxbury-hero-1.jpg?1624545386",
+    contracts: {
+      xdai: "0x9b5b4886033b4abc5eb0552fff7c15a67c3c47c7",
+      ethereum: "0x9b5b4886033b4abc5eb0552fff7c15a67c3c47c7",
+    },
+  },
+  {
+    id: "9309-courville",
+    symbol: "realtoken-s-9309-courville-st-detroit-mi",
+    name: "RealT Token - 9309 Courville St, Detroit, MI 48224",
+    image:
+      "https://assets.coingecko.com/coins/images/16686/large/9309x-1.jpeg?1624634539",
+    contracts: {
+      ethereum: "0x67a83b28f6dd8c07301495ee2c6f83b73fd21092",
+      xdai: "0x67a83b28f6dd8c07301495ee2c6f83b73fd21092",
+    },
+  },
+  {
+    id: "18433-faust",
+    symbol: "realtoken-s-18433-faust-ave-detroit-mi",
+    name: "RealT Token - 18433 Faust Ave, Detroit, MI, 48219",
+    image:
+      "https://assets.coingecko.com/coins/images/16684/large/Faust-1.jpeg?1624633417",
+    contracts: {
+      ethereum: "0x46f8a600337dec5cab03aa9b8f67f1d5b788ce28",
+      xdai: "0x46f8a600337dec5cab03aa9b8f67f1d5b788ce28",
+    },
+  },
+  {
+    id: "581-587-jefferson",
+    symbol: "realtoken-s-581-587-jefferson-ave-rochester-ny",
+    name: "RealT Token - 581-587 Jefferson Ave, Rochester, NY 14611",
+    image:
+      "https://assets.coingecko.com/coins/images/16637/large/571-jefferson-corner-1.1.jpg?1624557964",
+    contracts: {
+      ethereum: "0xa29ae272bc89e5f315b2793925f700045f845d82",
+      xdai: "0xa29ae272bc89e5f315b2793925f700045f845d82",
+    },
+  },
+  {
+    id: "19333-moenart",
+    symbol: "realtoken-s-19333-moenart-st-detroit-mi",
+    name: "RealT Token - 19333 Moenart St, Detroit MI 48234",
+    image:
+      "https://assets.coingecko.com/coins/images/16593/large/19333-Moenart-hero-1.jpg?1624539310",
+    contracts: {
+      xdai: "0x24293ab20159cfc0f3d7c8727cd827fba63d4f64",
+      ethereum: "0x24293ab20159cfc0f3d7c8727cd827fba63d4f64",
+    },
+  },
+  {
+    id: "10639-stratman",
+    symbol: "realtoken-s-10639-stratman-st-detroit-mi",
+    name: "RealT Token - 10639 Stratman St, Detroit, MI 48224",
+    image:
+      "https://assets.coingecko.com/coins/images/16621/large/10639-Stratman-hero-1.jpg?1624551202",
+    contracts: {
+      xdai: "0x4a99cc509f7facf58d7b67e99236db5e0921ef81",
+      ethereum: "0x4a99cc509f7facf58d7b67e99236db5e0921ef81",
+    },
+  },
+  {
+    id: "5942-audubon",
+    symbol: "realtoken-s-5942-audubon-rd-detroit-mi",
+    name: "RealT Token - 5942 Audubon Rd, Detroit, MI 48224",
+    image:
+      "https://assets.coingecko.com/coins/images/16699/large/5942-Audubon-HERO-2.jpeg?1624641512",
+    contracts: {
+      ethereum: "0x6db6d540f5614e6bab7475af3f430f46a0b083e2",
+      xdai: "0x6db6d540f5614e6bab7475af3f430f46a0b083e2",
+    },
+  },
+  {
+    id: "realtoken-s-13895-saratoga-st-detroit-mi",
+    symbol: "realtoken-s-13895-saratoga-st-detroit-mi",
+    name: "RealT Token - 13895 Saratoga St, Detroit, MI 48205",
+    image:
+      "https://assets.coingecko.com/coins/images/16599/large/13895-Saratoga-hero-1.jpeg?1624541955",
+    contracts: {
+      ethereum: "0x6f442da588232dc57bf0096e8de48d6961d5cc83",
+      xdai: "0x6f442da588232dc57bf0096e8de48d6961d5cc83",
+    },
+  },
+  {
+    id: "19996-joann",
+    symbol: "realtoken-s-19996-joann-ave-detroit-mi",
+    name: "RealT Token - 19996 Joann Ave, Detroit, MI 48205",
+    image:
+      "https://assets.coingecko.com/coins/images/16666/large/19996-Joanne-hero-1.jpg?1624626495",
+    contracts: {
+      xdai: "0x311fc485f1fea0c8cc9b5c783e79f4313ddfa720",
+      ethereum: "0x311fc485f1fea0c8cc9b5c783e79f4313ddfa720",
+    },
+  },
+  {
+    id: "8181-bliss",
+    symbol: "realtoken-s-8181-bliss-st-detroit-mi",
+    name: "RealT Token - 8181 Bliss St, Detroit, MI 48234",
+    image:
+      "https://assets.coingecko.com/coins/images/16566/large/8181-Bliss-hero-1.jpg?1624461101",
+    contracts: {
+      xdai: "0x92d31e19f88597f368825ba16410f263a844527a",
+      ethereum: "0x92d31e19f88597f368825ba16410f263a844527a",
+    },
+  },
+  {
+    id: "15048-freeland",
+    symbol: "realtoken-s-15048-freeland-st-detroit-mi",
+    name: "RealT Token - 15048 Freeland St, Detroit, MI, 48227",
+    image:
+      "https://assets.coingecko.com/coins/images/16669/large/Freeland-8_jpeg.png?1624627336",
+    contracts: {
+      xdai: "0xe3902e329ef2d3fd7666022c139d75bcc984b7a5",
+    },
+  },
+  {
+    id: "14229-wilshire",
+    symbol: "realtoken-s-14229-wilshire-dr-detroit-mi",
+    name: "RealT Token - 14229 Wilshire Dr, Detroit, MI 48213",
+    image:
+      "https://assets.coingecko.com/coins/images/16604/large/14229-Wilshire-hero-1.jpg?1624543967",
+    contracts: {
+      xdai: "0xb09850e2b93aa3aaa1476bf0c007cfc960e2de79",
+      ethereum: "0xb09850e2b93aa3aaa1476bf0c007cfc960e2de79",
+    },
+  },
+  {
+    id: "19311-keystone",
+    symbol: "realtoken-s-19311-keystone-st-detroit-mi",
+    name: "RealT Token - 19311 Keystone St, Detroit, MI 48234",
+    image:
+      "https://assets.coingecko.com/coins/images/16631/large/19311-Keystone-hero-1.jpeg?1624554016",
+    contracts: {
+      ethereum: "0x8a9f904b4ead6a97f3ab304d0d2196f5c602c807",
+      xdai: "0x8a9f904b4ead6a97f3ab304d0d2196f5c602c807",
+    },
+  },
+  {
+    id: "19163-mitchell",
+    symbol: "realtoken-s-19163-mitchell-st-detroit-mi",
+    name: "RealT Token - 19163 Mitchell St, Detroit, MI 48234",
+    image:
+      "https://assets.coingecko.com/coins/images/16614/large/19163-Mitchell-hero-1.jpeg?1624548736",
+    contracts: {
+      ethereum: "0x4cc53ee5ef306a95d407321d4b4acc30814c04ee",
+      xdai: "0x4cc53ee5ef306a95d407321d4b4acc30814c04ee",
+    },
+  },
+  {
+    id: "4061-grand",
+    symbol: "realtoken-s-4061-grand-st-detroit-mi",
+    name: "RealT Token - 4061 Grand St, Detroit, MI 48238",
+    image:
+      "https://assets.coingecko.com/coins/images/16616/large/4061-Grand-hero-1.jpeg?1624551866",
+    contracts: {
+      ethereum: "0xd9e89bfebae447b42c1fa85c590716ec8820f737",
+      xdai: "0xd9e89bfebae447b42c1fa85c590716ec8820f737",
+    },
+  },
+  {
+    id: "9166-devonshire",
+    symbol: "realtoken-s-9166-devonshire-rd-detroit-mi",
+    name: "RealT Token - 9166 Devonshire Rd, Detroit MI 48224",
+    image:
+      "https://assets.coingecko.com/coins/images/16690/large/Devonshire-3x.jpeg?1624636640",
+    contracts: {
+      ethereum: "0xa69d7d4ddf397f3d1e7ebaf108555d1107b3b117",
+      xdai: "0xa69d7d4ddf397f3d1e7ebaf108555d1107b3b117",
+    },
+  },
+  {
+    id: "4380-beaconsfield",
+    symbol: "realtoken-s-4380-beaconsfield-st-detroit-mi",
+    name: "RealT Token - 4380 Beaconsfield St, Detroit, MI 48224",
+    image:
+      "https://assets.coingecko.com/coins/images/16603/large/4380-Beaconsfield-hero-1.jpeg?1624543909",
+    contracts: {
+      ethereum: "0x96700ffae33c651bc329c3f3fbfe56e1f291f117",
+      xdai: "0x96700ffae33c651bc329c3f3fbfe56e1f291f117",
+    },
+  },
+  {
+    id: "6923-greenview",
+    symbol: "realtoken-s-6923-greenview-ave-detroit-mi",
+    name: "RealT Token - 6923 Greenview Ave, Detroit, MI 48228",
+    image:
+      "https://assets.coingecko.com/coins/images/16676/large/6923-Greenview.jpeg?1624629085",
+    contracts: {
+      ethereum: "0xd08d2b199e9e5df407427d4085877d1fdff3b1d6",
+      xdai: "0xd08d2b199e9e5df407427d4085877d1fdff3b1d6",
+    },
+  },
+  {
+    id: "18481-westphalia",
+    symbol: "realtoken-s-18481-westphalia-st-detroit-mi",
+    name: "RealT Token - 18481 Westphalia St, Detroit, MI 48205",
+    image:
+      "https://assets.coingecko.com/coins/images/16633/large/18481-Westphalia-hero-1.jpeg?1624554981",
+    contracts: {
+      ethereum: "0x75f06b482adbfb04b877d8ee683e2fcdf18ad153",
+      xdai: "0x75f06b482adbfb04b877d8ee683e2fcdf18ad153",
+    },
+  },
+  {
+    id: "5601-s-wood",
+    symbol: "realtoken-s-5601-s.wood-st-chicago-il",
+    name: "RealT Token - 5601 S Wood St, Chicago, IL 60636",
+    image:
+      "https://assets.coingecko.com/coins/images/16605/large/5601-S-Wood-hero-1.jpg?1624544382",
+    contracts: {
+      xdai: "0xa137d82197ea4cdfd5f008a91ba816b8324f59e1",
+      ethereum: "0xa137d82197ea4cdfd5f008a91ba816b8324f59e1",
+    },
+  },
+  {
+    id: "15373-parkside",
+    symbol: "realtoken-s-15373-parkside-st-detroit-mi",
+    name: "RealT Token - 15373 Parkside St, Detroit, MI 48238",
+    image:
+      "https://assets.coingecko.com/coins/images/16562/large/15373-Parkside-hero-1.jpg?1624458568",
+    contracts: {
+      xdai: "0x4d0da4e75d40bd7d9c4f7a292bf883bcdf38c45d",
+      ethereum: "0x4d0da4e75d40bd7d9c4f7a292bf883bcdf38c45d",
+    },
+  },
+  {
+    id: "19596-goulburn",
+    symbol: "realtoken-s-19596-goulburn-st-detroit-mi",
+    name: "RealT Token - 19596 Goulburn Ave, Detroit, MI 48205",
+    image:
+      "https://assets.coingecko.com/coins/images/16608/large/19596-Goulburn-hero-1.jpg?1624544786",
+    contracts: {
+      xdai: "0x3150f0ebc0efee280b5348b9c8c271ad44eb8b13",
+      ethereum: "0x3150f0ebc0efee280b5348b9c8c271ad44eb8b13",
+    },
+  },
+  {
+    id: "11653-nottingham",
+    symbol: "realtoken-s-11653-nottingham-rd-detroit-mi",
+    name: "RealT Token - 11653 Nottingham Rd, Detroit, MI 48224",
+    image:
+      "https://assets.coingecko.com/coins/images/16622/large/11653-Nottingham-hero-1.jpg?1624551450",
+    contracts: {
+      xdai: "0x31820af2d43c08bd82bd94b08974062482bd98d3",
+      ethereum: "0x31820af2d43c08bd82bd94b08974062482bd98d3",
+    },
+  },
+  {
+    id: "14319-rosemary",
+    symbol: "realtoken-s-14319-rosemary-st-detroit-mi",
+    name: "RealT Token - 14319 Rosemary St, Detroit, MI 48213",
+    image:
+      "https://assets.coingecko.com/coins/images/16592/large/14319-Rosemary-hero-1-800x600.jpeg?1624539171",
+    contracts: {
+      ethereum: "0x41599149f1b52035392402f9e311b1edb0c9f699",
+      xdai: "0x41599149f1b52035392402f9e311b1edb0c9f699",
+    },
+  },
+  {
+    id: "14078-carlisle",
+    symbol: "realtoken-s-14078-carlisle-st-detroit-mi",
+    name: "RealT Token - 14078 Carlisle St, Detroit, MI 48205",
+    image:
+      "https://assets.coingecko.com/coins/images/16597/large/14078-Carlisle-hero-1-800x600.jpeg?1624541175",
+    contracts: {
+      ethereum: "0x315699f1ba88383cff2f2f30fcad187adb2e4d72",
+      xdai: "0x315699f1ba88383cff2f2f30fcad187adb2e4d72",
+    },
+  },
+  {
+    id: "17813-bradford",
+    symbol: "realtoken-s-17813-bradford-st-detroit-mi",
+    name: "RealT Token - 17813 Bradford St, Detroit, MI 48205",
+    image:
+      "https://assets.coingecko.com/coins/images/16606/large/17813-Bradford-hero-1.jpeg?1624544519",
+    contracts: {
+      ethereum: "0x499a6c19f5537dd6005e2b5c6e1263103f558ba4",
+      xdai: "0x499a6c19f5537dd6005e2b5c6e1263103f558ba4",
+    },
+  },
+  {
+    id: "19218-houghton",
+    symbol: "realtoken-s-19218-houghton-st-detroit-mi",
+    name: "RealT Token - 19218 Houghton St, Detroit, MI 48219",
+    image:
+      "https://assets.coingecko.com/coins/images/16708/large/19218-Houghton-hero-1.jpeg?1624646592",
+    contracts: {
+      ethereum: "0xc731eca970979cd2da2a1094a808f49894070d35",
+      xdai: "0xc731eca970979cd2da2a1094a808f49894070d35",
+    },
+  },
+  {
+    id: "19020-rosemont",
+    symbol: "realtoken-s-19020-rosemont-ave-detroit-mi",
+    name: "RealT Token - 19020 Rosemont Ave, Detroit, MI 48219",
+    image:
+      "https://assets.coingecko.com/coins/images/16705/large/19020-Rosemont-hero-1.jpeg?1624644549",
+    contracts: {
+      ethereum: "0x280e9ed3b20c580a2f4219657bb9332d80bc01f1",
+      xdai: "0x280e9ed3b20c580a2f4219657bb9332d80bc01f1",
+    },
+  },
+  {
+    id: "10084-grayton",
+    symbol: "realtoken-s-10084-grayton-st-detroit-mi",
+    name: "RealT Token - 10084 Grayton St, Detroit, MI 48224",
+    image:
+      "https://assets.coingecko.com/coins/images/16693/large/Grayton_84_side1x.jpeg?1624638633",
+    contracts: {
+      ethereum: "0x92161385c9de8798ad5fb01c0be99ffcbc84dfd8",
+      xdai: "0x92161385c9de8798ad5fb01c0be99ffcbc84dfd8",
+    },
+  },
+  {
+    id: "20200-lesure",
+    symbol: "realtoken-s-20200-lesure-st-detroit-mi",
+    name: "RealT Token - 20200 Lesure St, Detroit, MI 48235",
+    image:
+      "https://assets.coingecko.com/coins/images/16702/large/20200-Lesure-003.jpeg?1624643190",
+    contracts: {
+      ethereum: "0xeedc2f5f4d1226759b1acf9efa23a99661de6663",
+      xdai: "0xeedc2f5f4d1226759b1acf9efa23a99661de6663",
+    },
+  },
+  {
+    id: "1542-s-ridgeway",
+    symbol: "realtoken-s-1542-s.ridgeway-ave-chicago-il",
+    name: "RealT Token - 1542 S Ridgeway Ave, Chicago, IL 60623",
+    image:
+      "https://assets.coingecko.com/coins/images/16628/large/1542-S-Ridgeway-hero-2.5.jpg?1624553308",
+    contracts: {
+      xdai: "0x69d1b42b20f3ded07bec322253d0140b04cbb6f5",
+      ethereum: "0x69d1b42b20f3ded07bec322253d0140b04cbb6f5",
     },
   },
   {
@@ -71205,25 +71361,47 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "4680-buckingham",
-    symbol: "realtoken-s-4680-buckingham-ave-detroit-mi",
-    name: "RealT Token - 4680 Buckingham Ave, Detroit, MI 48224",
+    id: "14918-joy",
+    symbol: "realtoken-s-14918-joy-rd-detroit-mi",
+    name: "RealT Token - 14918 Joy Rd, Detroit, MI 48228",
     image:
-      "https://assets.coingecko.com/coins/images/16629/large/4680-Buckingham-hero-1.jpeg?1624553513",
+      "https://assets.coingecko.com/coins/images/16626/large/14918-Joy-hero-1.jpg?1624552732",
     contracts: {
-      ethereum: "0xefe82d6baf0db71f92889eb9d00721bd49121316",
-      xdai: "0xefe82d6baf0db71f92889eb9d00721bd49121316",
+      xdai: "0x63a1849b47ef5913ccc5adb0e2708b11a4ba6972",
+      ethereum: "0x63a1849b47ef5913ccc5adb0e2708b11a4ba6972",
     },
   },
   {
-    id: "15095-hartwell",
-    symbol: "realtoken-s-15095-hartwell-st-detroit-mi",
-    name: "RealT Token -15095 Hartwell St, Detroit, MI 48227",
+    id: "15039-ward",
+    symbol: "realtoken-s-15039-ward-ave-detroit-mi",
+    name: "RealT Token - 15039 Ward Ave, Detroit, MI 48227",
     image:
-      "https://assets.coingecko.com/coins/images/16664/large/15095-Hartwell-hero-1.jpeg?1624625590",
+      "https://assets.coingecko.com/coins/images/16632/large/15039-Ward-hero-1.jpeg?1624554456",
     contracts: {
-      ethereum: "0x9fef44fc4c571010bccd5b63e1cdc807d3b347bf",
-      xdai: "0x9fef44fc4c571010bccd5b63e1cdc807d3b347bf",
+      ethereum: "0x7e95b310724334ff74537dc08bfd3377d25e65ce",
+      xdai: "0x7e95b310724334ff74537dc08bfd3377d25e65ce",
+    },
+  },
+  {
+    id: "9165-kensington",
+    symbol: "realtoken-s-9165-kensington-ave-detroit-mi",
+    name: "RealT Token - 9165 Kensington Ave, Detroit, MI 48224",
+    image:
+      "https://assets.coingecko.com/coins/images/16687/large/9165-Kensington-hero-1.jpeg?1624634948",
+    contracts: {
+      ethereum: "0x3c56d5e887d8fa7ae1ba65bf7eccc25ec09eaf18",
+      xdai: "0x3c56d5e887d8fa7ae1ba65bf7eccc25ec09eaf18",
+    },
+  },
+  {
+    id: "12409-whitehill",
+    symbol: "realtoken-s-12409-whitehill-st-detroit-mi",
+    name: "RealT Token - 12409 Whitehill St, Detroit, MI 48224",
+    image:
+      "https://assets.coingecko.com/coins/images/16668/large/12409-Whitehill-hero-1.jpg?1624627067",
+    contracts: {
+      xdai: "0x969d42ad7008e6651e1fd52742153f8743225d98",
+      ethereum: "0x969d42ad7008e6651e1fd52742153f8743225d98",
     },
   },
   {
@@ -71238,124 +71416,36 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "19136-tracey",
-    symbol: "realtoken-s-19136-tracey-st-detroit-mi",
-    name: "RealT Token - 19136 Tracey St, Detroit MI 48235",
+    id: "18900-mansfield",
+    symbol: "realtoken-s-18900-mansfield-st-detroit-mi",
+    name: "RealT Token - 18900 Mansfield St, Detroit, MI 48235",
     image:
-      "https://assets.coingecko.com/coins/images/16706/large/19136-Tracey-hero-1.jpeg?1624644977",
+      "https://assets.coingecko.com/coins/images/16697/large/18900-Mansfield-flowers.jpeg?1624640555",
     contracts: {
-      ethereum: "0x33722ea778df197f1b7b1cf0b124d7a962181d65",
-      xdai: "0x33722ea778df197f1b7b1cf0b124d7a962181d65",
+      ethereum: "0x9eb90ec3faafc22092c9b91559fddde538042093",
+      xdai: "0x9eb90ec3faafc22092c9b91559fddde538042093",
     },
   },
   {
-    id: "19201-westphalia",
-    symbol: "realtoken-s-19201-westphalia-st-detroit-mi",
-    name: "RealT Token - 19201 Westphalia St, Detroit, MI 48205",
+    id: "15784-monte-vista",
+    symbol: "realtoken-s-15784-monte-vista-st-detroit-mi",
+    name: "RealT Token - 15784 Monte Vista St, Detroit, MI 48238",
     image:
-      "https://assets.coingecko.com/coins/images/16613/large/19201-Westphalia-hero-1.jpeg?1624547689",
+      "https://assets.coingecko.com/coins/images/16673/large/15784-monte-vista-hero-1.jpeg?1624628466",
     contracts: {
-      ethereum: "0x830b0e9a5ecf36d0a886d21e1c20043cd2d16515",
-      xdai: "0x830b0e9a5ecf36d0a886d21e1c20043cd2d16515",
+      ethereum: "0x7f940b5509a22e81d29167581bdeea3fa5a0abee",
+      xdai: "0x7f940b5509a22e81d29167581bdeea3fa5a0abee",
     },
   },
   {
-    id: "18276-appoline",
-    symbol: "realtoken-s-18276-appoline-st-detroit-mi",
-    name: "RealT Token - 18276 Appoline St, Detroit, MI 48235",
+    id: "10616-mckinney",
+    symbol: "realtoken-s-10616-mckinney-st-detroit-mi",
+    name: "RealT Token - 10616 McKinney St, Detroit, MI 48224",
     image:
-      "https://assets.coingecko.com/coins/images/16696/large/Appoline-18267_jpg__3760%C3%973754_.png?1624640149",
+      "https://assets.coingecko.com/coins/images/16685/large/Mkinney-hero.jpeg?1624634131",
     contracts: {
-      ethereum: "0x21f1af3e751317a2f7de7df31d5d092e6a907bde",
-      xdai: "0x21f1af3e751317a2f7de7df31d5d092e6a907bde",
-    },
-  },
-  {
-    id: "9133-devonshire",
-    symbol: "realtoken-s-9133-devonshire-rd-detroit-mi",
-    name: "RealT Token - 9133 Devonshire Rd, Detroit, MI 48224",
-    image:
-      "https://assets.coingecko.com/coins/images/16683/large/9133-Devonshire-hero.jpeg?1624632898",
-    contracts: {
-      ethereum: "0x76dbeb740ecd1f3b052a9afa302abc7eb4fb5390",
-      xdai: "0x76dbeb740ecd1f3b052a9afa302abc7eb4fb5390",
-    },
-  },
-  {
-    id: "11201-college",
-    symbol: "realtoken-s-11201-college-st-detroit-mi",
-    name: "RealT Token - 11201 College St, Detroit, MI 48205",
-    image:
-      "https://assets.coingecko.com/coins/images/16594/large/11201-College-hero-1.jpg?1624540102",
-    contracts: {
-      xdai: "0x5e2a09064b2dca8c44aad8a5b69a69bb1854fe72",
-      ethereum: "0x5e2a09064b2dca8c44aad8a5b69a69bb1854fe72",
-    },
-  },
-  {
-    id: "9920-bishop",
-    symbol: "realtoken-s-9920-bishop-st-detroit-mi",
-    name: "RealT Token - 9920 Bishop St, Detroit, MI 48224",
-    image:
-      "https://assets.coingecko.com/coins/images/16615/large/9920-Bishop-hero-1.jpg?1624549554",
-    contracts: {
-      xdai: "0xa2b2ae397492c7ed8a4c1e751ac72d2b59947e6b",
-      ethereum: "0xa2b2ae397492c7ed8a4c1e751ac72d2b59947e6b",
-    },
-  },
-  {
-    id: "15777-ardmore",
-    symbol: "realtoken-s-15777-ardmore-st-detroit-mi",
-    name: "RealT Token - 15777 Ardmore St, Detroit, MI 48227",
-    image:
-      "https://assets.coingecko.com/coins/images/16542/large/15777-Ardmore-hero-2.jpg?1624371814",
-    contracts: {
-      ethereum: "0xfe17c3c0b6f38cf3bd8ba872bee7a18ab16b43fb",
-      xdai: "0xfe17c3c0b6f38cf3bd8ba872bee7a18ab16b43fb",
-    },
-  },
-  {
-    id: "17809-charest",
-    symbol: "realtoken-s-17809-charest-st-detroit-mi",
-    name: "RealT Token - 17809 Charest St, Detroit, MI 48212",
-    image:
-      "https://assets.coingecko.com/coins/images/16601/large/17809-Charest-hero-1.jpg?1624543227",
-    contracts: {
-      xdai: "0x31aa5fa895fd186fde12347a6fcaf540875b6434",
-      ethereum: "0xba07997f594a52df179620284b52b50a4e66227d",
-    },
-  },
-  {
-    id: "15350-greydale",
-    symbol: "realtoken-s-15350-greydale-st-detroit-mi",
-    name: "RealT Token - 15350 Greydale St, Detroit, MI 48223",
-    image:
-      "https://assets.coingecko.com/coins/images/16564/large/15350-Greydale-hero-1.jpg?1624460101",
-    contracts: {
-      xdai: "0xda47bd33e8f5d17bb81b8752784bfb46c1c44b2a",
-      ethereum: "0xda47bd33e8f5d17bb81b8752784bfb46c1c44b2a",
-    },
-  },
-  {
-    id: "8181-bliss",
-    symbol: "realtoken-s-8181-bliss-st-detroit-mi",
-    name: "RealT Token - 8181 Bliss St, Detroit, MI 48234",
-    image:
-      "https://assets.coingecko.com/coins/images/16566/large/8181-Bliss-hero-1.jpg?1624461101",
-    contracts: {
-      xdai: "0x92d31e19f88597f368825ba16410f263a844527a",
-      ethereum: "0x92d31e19f88597f368825ba16410f263a844527a",
-    },
-  },
-  {
-    id: "10974-worden",
-    symbol: "realtoken-s-10974-worden-st-detroit-mi",
-    name: "RealT Token - 10974 Worden St, Detroit, MI 48224",
-    image:
-      "https://assets.coingecko.com/coins/images/16688/large/Worden-hero-site.jpeg?1624635525",
-    contracts: {
-      ethereum: "0x42b387cdf0951a0e08336d35651544c47cd05c95",
-      xdai: "0x537dc65657ed455d1c17e319fe6f4926d6033f2b",
+      ethereum: "0xe5ce63ac9a08c1eb160889151cd84855f16c94d2",
+      xdai: "0xe5ce63ac9a08c1eb160889151cd84855f16c94d2",
     },
   },
   {
@@ -71370,203 +71460,6 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "9717-everts",
-    symbol: "realtoken-s-9717-everts-st-detroit-mi",
-    name: "RealT Token - 9717 Everts St, Detroit, MI 48224",
-    image:
-      "https://assets.coingecko.com/coins/images/16612/large/9717-Everts-hero-1.jpeg?1624546272",
-    contracts: {
-      ethereum: "0x73bde888664df8ddfd156b52e6999eeabab57c94",
-      xdai: "0x73bde888664df8ddfd156b52e6999eeabab57c94",
-    },
-  },
-  {
-    id: "13991-warwick",
-    symbol: "realtoken-s-13991-warwick-st-detroit-mi",
-    name: "RealT Token -13991 Warwick St, Detroit, MI, 48223",
-    image:
-      "https://assets.coingecko.com/coins/images/16662/large/Warwick-hero.jpeg?1624624485",
-    contracts: {
-      ethereum: "0x4e98493920b16dd6642e9d48497c8d0a49150f6f",
-      xdai: "0x4e98493920b16dd6642e9d48497c8d0a49150f6f",
-    },
-  },
-  {
-    id: "9336-patton",
-    symbol: "realtoken-s-9336-patton-st-detroit-mi",
-    name: "RealT Token - 9336 Patton St, Detroit, MI 48228",
-    image:
-      "https://assets.coingecko.com/coins/images/16701/large/9336-Patton-HERO-2.jpeg?1624642655",
-    contracts: {
-      ethereum: "0x23684569c0636c9aea246551879d457d0a0e6f58",
-      xdai: "0x23684569c0636c9aea246551879d457d0a0e6f58",
-    },
-  },
-  {
-    id: "10612-somerset",
-    symbol: "realtoken-s-10612-somerset-ave-detroit-mi",
-    name: "RealT Token - 10612 Somerset Ave, Detroit, MI 48224",
-    image:
-      "https://assets.coingecko.com/coins/images/16680/large/Somerset-3.jpeg?1624630432",
-    contracts: {
-      ethereum: "0xd1c15cebfdcd16f00d91666bf64c8b66cbf5e9b5",
-      xdai: "0xd1c15cebfdcd16f00d91666bf64c8b66cbf5e9b5",
-    },
-  },
-  {
-    id: "15860-hartwell",
-    symbol: "realtoken-s-15860-hartwell-st-detroit-mi",
-    name: "RealT Token - 15860 Hartwell St, Detroit, MI 48227",
-    image:
-      "https://assets.coingecko.com/coins/images/16595/large/15860-Hartwell-hero-1.jpg?1624540454",
-    contracts: {
-      xdai: "0xa9f30c907321718e655b74463ca665b690b78894",
-      ethereum: "0xa9f30c907321718e655b74463ca665b690b78894",
-    },
-  },
-  {
-    id: "6923-greenview",
-    symbol: "realtoken-s-6923-greenview-ave-detroit-mi",
-    name: "RealT Token - 6923 Greenview Ave, Detroit, MI 48228",
-    image:
-      "https://assets.coingecko.com/coins/images/16676/large/6923-Greenview.jpeg?1624629085",
-    contracts: {
-      ethereum: "0xd08d2b199e9e5df407427d4085877d1fdff3b1d6",
-      xdai: "0xd08d2b199e9e5df407427d4085877d1fdff3b1d6",
-    },
-  },
-  {
-    id: "15048-freeland",
-    symbol: "realtoken-s-15048-freeland-st-detroit-mi",
-    name: "RealT Token - 15048 Freeland St, Detroit, MI, 48227",
-    image:
-      "https://assets.coingecko.com/coins/images/16669/large/Freeland-8_jpeg.png?1624627336",
-    contracts: {
-      xdai: "0xe3902e329ef2d3fd7666022c139d75bcc984b7a5",
-    },
-  },
-  {
-    id: "13606-winthrop",
-    symbol: "realtoken-s-13606-winthrop-st-detroit-mi",
-    name: "RealT Token - 13606 Winthrop St, Detroit, MI 48227",
-    image:
-      "https://assets.coingecko.com/coins/images/16667/large/13606-Winthrop-hero-1.jpg?1624626772",
-    contracts: {
-      xdai: "0x804f6baa10615c85e4b4a5bc4efe516d9f7a4365",
-      ethereum: "0x804f6baa10615c85e4b4a5bc4efe516d9f7a4365",
-    },
-  },
-  {
-    id: "10639-stratman",
-    symbol: "realtoken-s-10639-stratman-st-detroit-mi",
-    name: "RealT Token - 10639 Stratman St, Detroit, MI 48224",
-    image:
-      "https://assets.coingecko.com/coins/images/16621/large/10639-Stratman-hero-1.jpg?1624551202",
-    contracts: {
-      xdai: "0x4a99cc509f7facf58d7b67e99236db5e0921ef81",
-      ethereum: "0x4a99cc509f7facf58d7b67e99236db5e0921ef81",
-    },
-  },
-  {
-    id: "13116-kilbourne",
-    symbol: "realtoken-s-13116-kilbourne-ave-detroit-mi",
-    name: "RealT Token - 13116 Kilbourne Ave, Detroit, MI 48213",
-    image:
-      "https://assets.coingecko.com/coins/images/16679/large/13116-Kilbourne-hero-1.jpeg?1624630007",
-    contracts: {
-      ethereum: "0x08ad1f3a48be1d23c723a6cc8486b247f5de935a",
-      xdai: "0x08ad1f3a48be1d23c723a6cc8486b247f5de935a",
-    },
-  },
-  {
-    id: "14494-chelsea",
-    symbol: "realtoken-s-14494-chelsea-ave-detroit-mi",
-    name: "RealT Token - 14494 Chelsea Ave, Detroit, MI 48213",
-    image:
-      "https://assets.coingecko.com/coins/images/16618/large/14494-Chelsea-hero-1.jpg?1624550267",
-    contracts: {
-      xdai: "0x2adc1cfa726a45264a328d9d2e2c692ceac97458",
-      ethereum: "0x2adc1cfa726a45264a328d9d2e2c692ceac97458",
-    },
-  },
-  {
-    id: "15634-liberal",
-    symbol: "realtoken-s-15634-liberal-st-detroit-mi",
-    name: "RealT Token - 15634 Liberal St, Detroit, MI 48205",
-    image:
-      "https://assets.coingecko.com/coins/images/16703/large/Liberal-1.png?1624643634",
-    contracts: {
-      ethereum: "0xa81f77e8988b28fb74243b907ace3c83353dc80a",
-      xdai: "0xa81f77e8988b28fb74243b907ace3c83353dc80a",
-    },
-  },
-  {
-    id: "14078-carlisle",
-    symbol: "realtoken-s-14078-carlisle-st-detroit-mi",
-    name: "RealT Token - 14078 Carlisle St, Detroit, MI 48205",
-    image:
-      "https://assets.coingecko.com/coins/images/16597/large/14078-Carlisle-hero-1-800x600.jpeg?1624541175",
-    contracts: {
-      ethereum: "0x315699f1ba88383cff2f2f30fcad187adb2e4d72",
-      xdai: "0x315699f1ba88383cff2f2f30fcad187adb2e4d72",
-    },
-  },
-  {
-    id: "16200-fullerton",
-    symbol: "realtoken-s-16200-fullerton-ave-detroit-mi",
-    name: "RealT Token - 16200 Fullerton Ave, Detroit, MI 48227",
-    image:
-      "https://assets.coingecko.com/coins/images/16704/large/16200-Fullerton-HERO.jpeg?1624644084",
-    contracts: {
-      ethereum: "0x021bb23a45e9fc824260435e670fc383b7b8cbbb",
-      xdai: "0x021bb23a45e9fc824260435e670fc383b7b8cbbb",
-    },
-  },
-  {
-    id: "14918-joy",
-    symbol: "realtoken-s-14918-joy-rd-detroit-mi",
-    name: "RealT Token - 14918 Joy Rd, Detroit, MI 48228",
-    image:
-      "https://assets.coingecko.com/coins/images/16626/large/14918-Joy-hero-1.jpg?1624552732",
-    contracts: {
-      xdai: "0x63a1849b47ef5913ccc5adb0e2708b11a4ba6972",
-      ethereum: "0x63a1849b47ef5913ccc5adb0e2708b11a4ba6972",
-    },
-  },
-  {
-    id: "14066-santa-rosa",
-    symbol: "realtoken-s-14066-santa-rosa-dr-detroit-mi",
-    name: "RealT Token - 14066 Santa Rosa Dr, Detroit, MI 48238",
-    image:
-      "https://assets.coingecko.com/coins/images/16677/large/14066-Santa-Rosa-hero-1.5.jpg?1624629250",
-    contracts: {
-      xdai: "0xe887dc4fcb5240c0c080aeab8870421d3ebd0b28",
-      ethereum: "0xe887dc4fcb5240c0c080aeab8870421d3ebd0b28",
-    },
-  },
-  {
-    id: "20200-lesure",
-    symbol: "realtoken-s-20200-lesure-st-detroit-mi",
-    name: "RealT Token - 20200 Lesure St, Detroit, MI 48235",
-    image:
-      "https://assets.coingecko.com/coins/images/16702/large/20200-Lesure-003.jpeg?1624643190",
-    contracts: {
-      ethereum: "0xeedc2f5f4d1226759b1acf9efa23a99661de6663",
-      xdai: "0xeedc2f5f4d1226759b1acf9efa23a99661de6663",
-    },
-  },
-  {
-    id: "19317-gable",
-    symbol: "realtoken-s-19317-gable-st-detroit-mi",
-    name: "RealT Token - 19317 Gable St, Detroit, MI 48234",
-    image:
-      "https://assets.coingecko.com/coins/images/16638/large/19317-Gable-hero-1.jpeg?1624558479",
-    contracts: {
-      ethereum: "0x34ed9e71449529e034d0326cfbb3b5ccdca00cbc",
-      xdai: "0x34ed9e71449529e034d0326cfbb3b5ccdca00cbc",
-    },
-  },
-  {
     id: "18466-fielding",
     symbol: "realtoken-s-18466-fielding-st-detroit-mi",
     name: "RealT Token -18466 Fielding St, Detroit, MI 48219",
@@ -71578,17 +71471,6 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "13114-glenfield",
-    symbol: "realtoken-s-13114-glenfield-ave-detroit-mi",
-    name: "RealT Token - 13114 Glenfield Ave, Detroit, MI 48213",
-    image:
-      "https://assets.coingecko.com/coins/images/16678/large/13114-Glenfield-Ave.jpeg?1624629523",
-    contracts: {
-      ethereum: "0x9f923653a19537b5a1b003854a1920fe67a8ffeb",
-      xdai: "0x9f923653a19537b5a1b003854a1920fe67a8ffeb",
-    },
-  },
-  {
     id: "14882-troester",
     symbol: "realtoken-s-14882-troester-st-detroit-mi",
     name: "RealT Token - 14882 Troester St, Detroit, MI 48205",
@@ -71597,6 +71479,17 @@ export const tokens: TokenD[] = [
     contracts: {
       xdai: "0xff1b4d71ae12538d86777a954b136cf723fccefd",
       ethereum: "0x31aa5fa895fd186fde12347a6fcaf540875b6434",
+    },
+  },
+  {
+    id: "13114-glenfield",
+    symbol: "realtoken-s-13114-glenfield-ave-detroit-mi",
+    name: "RealT Token - 13114 Glenfield Ave, Detroit, MI 48213",
+    image:
+      "https://assets.coingecko.com/coins/images/16678/large/13114-Glenfield-Ave.jpeg?1624629523",
+    contracts: {
+      ethereum: "0x9f923653a19537b5a1b003854a1920fe67a8ffeb",
+      xdai: "0x9f923653a19537b5a1b003854a1920fe67a8ffeb",
     },
   },
   {
@@ -71719,16 +71612,6 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "elonballs",
-    symbol: "elonballs",
-    name: "ELONBALLS",
-    image:
-      "https://assets.coingecko.com/coins/images/19373/large/elonballs.png?1635134418",
-    contracts: {
-      "binance-smart-chain": "0xc6015d6e1b4a002280fb93eb9ac39e2461ff9495",
-    },
-  },
-  {
     id: "safe-trip-finance",
     symbol: "stf",
     name: "Safe Trip Finance",
@@ -71736,6 +71619,16 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/17313/large/ADDBEF2-B-BF9-E-4641-B00-C-98351868-B30-E.png?1627567250",
     contracts: {
       "binance-smart-chain": "0xe3916a4dc3c952c78348379a62d66869d9b59942",
+    },
+  },
+  {
+    id: "elonballs",
+    symbol: "elonballs",
+    name: "ELONBALLS",
+    image:
+      "https://assets.coingecko.com/coins/images/19373/large/elonballs.png?1635134418",
+    contracts: {
+      "binance-smart-chain": "0xc6015d6e1b4a002280fb93eb9ac39e2461ff9495",
     },
   },
   {
@@ -72189,16 +72082,6 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "ethereum-volatility-index-token",
-    symbol: "ethv",
-    name: "Ethereum Volatility Index Token",
-    image:
-      "https://assets.coingecko.com/coins/images/16716/large/logo_-_2021-06-28T092549.772.png?1624843558",
-    contracts: {
-      ethereum: "0xc53342fd7575f572b0ff4569e31941a5b821ac76",
-    },
-  },
-  {
     id: "inverse-ethereum-volatility-index-token",
     symbol: "iethv",
     name: "Inverse Ethereum Volatility Index Token",
@@ -72206,6 +72089,16 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/16715/large/logo_-_2021-06-28T085526.083.png?1624841740",
     contracts: {
       ethereum: "0x3a707d56d538e85b783e8ce12b346e7fb6511f90",
+    },
+  },
+  {
+    id: "ethereum-volatility-index-token",
+    symbol: "ethv",
+    name: "Ethereum Volatility Index Token",
+    image:
+      "https://assets.coingecko.com/coins/images/16716/large/logo_-_2021-06-28T092549.772.png?1624843558",
+    contracts: {
+      ethereum: "0xc53342fd7575f572b0ff4569e31941a5b821ac76",
     },
   },
   {
@@ -72277,16 +72170,6 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/14983/large/moonmoontoken.png?1619249383",
     contracts: {
       "binance-smart-chain": "0x0e0e877894a101ad8711ae3a0194fa44ca837a79",
-    },
-  },
-  {
-    id: "gocerberus",
-    symbol: "cerberus",
-    name: "GoCerberus",
-    image:
-      "https://assets.coingecko.com/coins/images/15913/large/Cerberus_200x200.png?1622421067",
-    contracts: {
-      "binance-smart-chain": "0x8b3268a23131dafbd77165690767f285c1aac6c5",
     },
   },
   {
@@ -72553,43 +72436,13 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "eth-price-action-candlestick-set",
-    symbol: "ethpa",
-    name: "ETH Price Action Candlestick Set",
+    id: "money-printer-go-brrr-set",
+    symbol: "brrr",
+    name: "Money Printer Go Brrr Set",
     image:
-      "https://assets.coingecko.com/coins/images/10905/large/eth_price_action_candlestick_set.png?1585731504",
+      "https://assets.coingecko.com/coins/images/10904/large/ethbtc_adl_2h.png?1585731253",
     contracts: {
-      ethereum: "0x09e4bdfb273245063ef5e800d891eff7d04f9b83",
-    },
-  },
-  {
-    id: "intelligent-ratio-set",
-    symbol: "intratio",
-    name: "Intelligent Ratio Set",
-    image:
-      "https://assets.coingecko.com/coins/images/10900/large/the_intelligent_ratio_set.png?1585730413",
-    contracts: {
-      ethereum: "0xba8ea15b647f54d9ff849670fcaacf35df21a457",
-    },
-  },
-  {
-    id: "eth-trending-alpha-st-set-ii",
-    symbol: "etas",
-    name: "ETH Trending Alpha ST Set II",
-    image:
-      "https://assets.coingecko.com/coins/images/10925/large/alphachain_set_2.png?1585894153",
-    contracts: {
-      ethereum: "0x856c4388c56c2a613c60507a4701af627157fed6",
-    },
-  },
-  {
-    id: "eth-26-day-ema-crossover-set",
-    symbol: "eth26emaco",
-    name: "ETH 26 Day EMA Crossover Set",
-    image:
-      "https://assets.coingecko.com/coins/images/10613/large/eth-26-day-exponential-moving-average-set.png?1580971494",
-    contracts: {
-      ethereum: "0x614857c755739354d68ae0abd53849cf45d6a41d",
+      ethereum: "0x8abf3a95862619a55fa00cb3e4eedbe113ff468c",
     },
   },
   {
@@ -72613,36 +72466,6 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "money-printer-go-brrr-set",
-    symbol: "brrr",
-    name: "Money Printer Go Brrr Set",
-    image:
-      "https://assets.coingecko.com/coins/images/10904/large/ethbtc_adl_2h.png?1585731253",
-    contracts: {
-      ethereum: "0x8abf3a95862619a55fa00cb3e4eedbe113ff468c",
-    },
-  },
-  {
-    id: "link-rsi-crossover-set",
-    symbol: "linkrsico",
-    name: "LINK RSI Crossover Set",
-    image:
-      "https://assets.coingecko.com/coins/images/10723/large/link_rsi_set.png?1582614765",
-    contracts: {
-      ethereum: "0x0329d23fc7b1b1e6cca57afa3f0090f1189069e8",
-    },
-  },
-  {
-    id: "link-eth-rsi-ratio-trading-set",
-    symbol: "linkethrsi",
-    name: "LINK/ETH RSI Ratio Trading Set",
-    image:
-      "https://assets.coingecko.com/coins/images/10927/large/linketh_rsi_ratio.png?1585894605",
-    contracts: {
-      ethereum: "0x8933ea1ce67b946bdf2436ce860ffbb53ce814d2",
-    },
-  },
-  {
     id: "eth-rsi-60-40-yield-set",
     symbol: "ethrsiapy",
     name: "ETH RSI 60/40 Yield Set",
@@ -72660,6 +72483,66 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/10587/large/ethusd_adl_4h.png?1580962139",
     contracts: {
       ethereum: "0xb8243b4eeca27a4191e879760b88fe2270561796",
+    },
+  },
+  {
+    id: "eth-price-action-candlestick-set",
+    symbol: "ethpa",
+    name: "ETH Price Action Candlestick Set",
+    image:
+      "https://assets.coingecko.com/coins/images/10905/large/eth_price_action_candlestick_set.png?1585731504",
+    contracts: {
+      ethereum: "0x09e4bdfb273245063ef5e800d891eff7d04f9b83",
+    },
+  },
+  {
+    id: "link-eth-rsi-ratio-trading-set",
+    symbol: "linkethrsi",
+    name: "LINK/ETH RSI Ratio Trading Set",
+    image:
+      "https://assets.coingecko.com/coins/images/10927/large/linketh_rsi_ratio.png?1585894605",
+    contracts: {
+      ethereum: "0x8933ea1ce67b946bdf2436ce860ffbb53ce814d2",
+    },
+  },
+  {
+    id: "intelligent-ratio-set",
+    symbol: "intratio",
+    name: "Intelligent Ratio Set",
+    image:
+      "https://assets.coingecko.com/coins/images/10900/large/the_intelligent_ratio_set.png?1585730413",
+    contracts: {
+      ethereum: "0xba8ea15b647f54d9ff849670fcaacf35df21a457",
+    },
+  },
+  {
+    id: "eth-trending-alpha-st-set-ii",
+    symbol: "etas",
+    name: "ETH Trending Alpha ST Set II",
+    image:
+      "https://assets.coingecko.com/coins/images/10925/large/alphachain_set_2.png?1585894153",
+    contracts: {
+      ethereum: "0x856c4388c56c2a613c60507a4701af627157fed6",
+    },
+  },
+  {
+    id: "link-rsi-crossover-set",
+    symbol: "linkrsico",
+    name: "LINK RSI Crossover Set",
+    image:
+      "https://assets.coingecko.com/coins/images/10723/large/link_rsi_set.png?1582614765",
+    contracts: {
+      ethereum: "0x0329d23fc7b1b1e6cca57afa3f0090f1189069e8",
+    },
+  },
+  {
+    id: "eth-26-day-ema-crossover-set",
+    symbol: "eth26emaco",
+    name: "ETH 26 Day EMA Crossover Set",
+    image:
+      "https://assets.coingecko.com/coins/images/10613/large/eth-26-day-exponential-moving-average-set.png?1580971494",
+    contracts: {
+      ethereum: "0x614857c755739354d68ae0abd53849cf45d6a41d",
     },
   },
   {
@@ -72993,13 +72876,13 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "clock-vault-nftx",
-    symbol: "clock",
-    name: "CLOCK Vault (NFTX)",
+    id: "whale-vault-nftx",
+    symbol: "whale",
+    name: "WHALE Vault (NFTX)",
     image:
-      "https://assets.coingecko.com/coins/images/18345/large/clock.png?1631602750",
+      "https://assets.coingecko.com/coins/images/18347/large/whale.png?1631603573",
     contracts: {
-      ethereum: "0xa4e4ff5a3aea352378a3bfefef13765130909376",
+      ethereum: "0x8b7c94bc9ec137d67fbddb203b2814f0f1f9b377",
     },
   },
   {
@@ -73023,123 +72906,13 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "whale-vault-nftx",
-    symbol: "whale",
-    name: "WHALE Vault (NFTX)",
+    id: "clock-vault-nftx",
+    symbol: "clock",
+    name: "CLOCK Vault (NFTX)",
     image:
-      "https://assets.coingecko.com/coins/images/18347/large/whale.png?1631603573",
+      "https://assets.coingecko.com/coins/images/18345/large/clock.png?1631602750",
     contracts: {
-      ethereum: "0x8b7c94bc9ec137d67fbddb203b2814f0f1f9b377",
-    },
-  },
-  {
-    id: "kamax-vault-nftx",
-    symbol: "kamax",
-    name: "KAMAX Vault (NFTX)",
-    image:
-      "https://assets.coingecko.com/coins/images/17079/large/KAMAX.png?1626154307",
-    contracts: {
-      ethereum: "0xb2c62e0a1f5837356e399359ecc34fcc49a02093",
-    },
-  },
-  {
-    id: "avastr-vault-nftx",
-    symbol: "avastr",
-    name: "AVASTR Vault (NFTX)",
-    image:
-      "https://assets.coingecko.com/coins/images/17034/large/AVASTR.png?1626142802",
-    contracts: {
-      ethereum: "0xdcdc1c1cc33aa817cbdbe8f5e2390bf7cc43dc4b",
-    },
-  },
-  {
-    id: "berry-vault-nftx",
-    symbol: "berry",
-    name: "BERRY Vault (NFTX)",
-    image:
-      "https://assets.coingecko.com/coins/images/17038/large/BERRY.png?1626146080",
-    contracts: {
-      ethereum: "0xe944f2b46fcfc9d0e887bbeaad95268d9416d0fd",
-    },
-  },
-  {
-    id: "topdog-vault-nftx",
-    symbol: "topdog",
-    name: "TOPDOG Vault (NFTX)",
-    image:
-      "https://assets.coingecko.com/coins/images/17080/large/TOPDOG.png?1626154411",
-    contracts: {
-      ethereum: "0xc57baa24f72037c21f9c0d345bb6f19f47407447",
-    },
-  },
-  {
-    id: "path-vault-nftx",
-    symbol: "path",
-    name: "PATH Vault (NFTX)",
-    image:
-      "https://assets.coingecko.com/coins/images/17048/large/PATH.png?1626148660",
-    contracts: {
-      ethereum: "0x478e677c0bd24c848bd591cc5273383dd5f30e4a",
-    },
-  },
-  {
-    id: "minute-vault-nftx",
-    symbol: "minute",
-    name: "MINUTE Vault (NFTX)",
-    image:
-      "https://assets.coingecko.com/coins/images/17047/large/MINUTE.png?1626148533",
-    contracts: {
-      ethereum: "0xcda16f62a8d3127ea0aebfacb221c1cc41b8e488",
-    },
-  },
-  {
-    id: "dfnorm-vault-nftx",
-    symbol: "dfnorm",
-    name: "DFNORM Vault (NFTX)",
-    image:
-      "https://assets.coingecko.com/coins/images/17078/large/DFNORM.png?1626154202",
-    contracts: {
-      ethereum: "0x1ee01654665303a5dd2744e30b576941880e3a73",
-    },
-  },
-  {
-    id: "ringer-vault-nftx",
-    symbol: "ringer",
-    name: "RINGER Vault (NFTX)",
-    image:
-      "https://assets.coingecko.com/coins/images/17060/large/RINGER.png?1626150396",
-    contracts: {
-      ethereum: "0x13edcc775f8895961b81db5c0205889b3afb3a16",
-    },
-  },
-  {
-    id: "bonsai-vault-nftx",
-    symbol: "bonsai",
-    name: "BONSAI Vault (NFTX)",
-    image:
-      "https://assets.coingecko.com/coins/images/17054/large/bonsai.png?1626149555",
-    contracts: {
-      ethereum: "0xf0fe1a87abf12099b77352bdcc10f5a87067b290",
-    },
-  },
-  {
-    id: "bunny-vault-nftx",
-    symbol: "bunny",
-    name: "BUNNY Vault (NFTX)",
-    image:
-      "https://assets.coingecko.com/coins/images/17049/large/BUNNY.png?1626148809",
-    contracts: {
-      ethereum: "0x33e70c9efabdf151f5c674a4addc104874980c3f",
-    },
-  },
-  {
-    id: "alpaca-vault-nftx",
-    symbol: "alpaca",
-    name: "ALPACA Vault (NFTX)",
-    image:
-      "https://assets.coingecko.com/coins/images/17042/large/ALPACA.png?1626147234",
-    contracts: {
-      ethereum: "0x413f6a89ddb823974f24f2e3cd3b4f467d3bbb38",
+      ethereum: "0xa4e4ff5a3aea352378a3bfefef13765130909376",
     },
   },
   {
@@ -73153,53 +72926,13 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "kongz-vault-nftx",
-    symbol: "kongz",
-    name: "KONGZ Vault (NFTX)",
+    id: "bakc-vault-nftx",
+    symbol: "bakc",
+    name: "BAKC Vault (NFTX)",
     image:
-      "https://assets.coingecko.com/coins/images/17061/large/kongz.png?1626150650",
+      "https://assets.coingecko.com/coins/images/17052/large/BYAC.png?1626149096",
     contracts: {
-      ethereum: "0x5a235c0b4cb8d0e80a5c3bf4d2fad5c32e440884",
-    },
-  },
-  {
-    id: "sodium-vault-nftx",
-    symbol: "sodium",
-    name: "SODIUM Vault (NFTX)",
-    image:
-      "https://assets.coingecko.com/coins/images/17071/large/MFPickles.png?1626152045",
-    contracts: {
-      ethereum: "0xc443930ecd59e55e42efe976b8a4ba0658f5c50a",
-    },
-  },
-  {
-    id: "hyper-vault-nftx",
-    symbol: "hyper",
-    name: "HYPER Vault (NFTX)",
-    image:
-      "https://assets.coingecko.com/coins/images/17043/large/HYPER.png?1626147576",
-    contracts: {
-      ethereum: "0xeb5a8eefdae23a815072bf28de8114a825c27876",
-    },
-  },
-  {
-    id: "pups-vault-nftx",
-    symbol: "pups",
-    name: "PUPS Vault (NFTX)",
-    image:
-      "https://assets.coingecko.com/coins/images/17072/large/Pups.png?1626152049",
-    contracts: {
-      ethereum: "0xd53998c536fc8b59b38aa0b49dbd8170d5ebf4c2",
-    },
-  },
-  {
-    id: "card-vaulti-nftx",
-    symbol: "card",
-    name: "CARD Vault (NFTX)",
-    image:
-      "https://assets.coingecko.com/coins/images/17056/large/EtherCards.png?1626149572",
-    contracts: {
-      ethereum: "0xd6f7db7db116170ecb1c3b35f12c1e693ba70586",
+      ethereum: "0xe632e1ea781df32c60ab11052958744cbfbc439a",
     },
   },
   {
@@ -73213,53 +72946,13 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "face-vault-nftx",
-    symbol: "face",
-    name: "FACE Vault (NFTX)",
+    id: "pups-vault-nftx",
+    symbol: "pups",
+    name: "PUPS Vault (NFTX)",
     image:
-      "https://assets.coingecko.com/coins/images/17039/large/FACE.png?1626146356",
+      "https://assets.coingecko.com/coins/images/17072/large/Pups.png?1626152049",
     contracts: {
-      ethereum: "0xcd46d92c46be1dbbd5ccc497e95611abe9d507bc",
-    },
-  },
-  {
-    id: "collective-vault-nftx",
-    symbol: "collective",
-    name: "COLLECTIVE Vault (NFTX)",
-    image:
-      "https://assets.coingecko.com/coins/images/17073/large/collective.png?1626152053",
-    contracts: {
-      ethereum: "0xb3b4431f812a74bdfc148d6bddfadecdc63fc083",
-    },
-  },
-  {
-    id: "energy-vault-nftx",
-    symbol: "energy",
-    name: "ENERGY Vault (NFTX)",
-    image:
-      "https://assets.coingecko.com/coins/images/17057/large/ENERGY.png?1626149631",
-    contracts: {
-      ethereum: "0xfde98a3bf5c7f6336ae4ce1b43148aeab7b7c89a",
-    },
-  },
-  {
-    id: "mooncat-vault-nftx",
-    symbol: "mooncat",
-    name: "MOONCAT Vault (NFTX)",
-    image:
-      "https://assets.coingecko.com/coins/images/17055/large/Mooncats.png?1626149563",
-    contracts: {
-      ethereum: "0x98968f0747e0a261532cacc0be296375f5c08398",
-    },
-  },
-  {
-    id: "chainlink-nft-vault-nftx",
-    symbol: "cnhpd",
-    name: "Chainlink NFT Vault (NFTX)",
-    image:
-      "https://assets.coingecko.com/coins/images/17064/large/CHAINLINK.png?1626150809",
-    contracts: {
-      ethereum: "0x6443e507f53b526042d0054867a60a4c0409cb4b",
+      ethereum: "0xd53998c536fc8b59b38aa0b49dbd8170d5ebf4c2",
     },
   },
   {
@@ -73273,13 +72966,93 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "meta-vault-nftx",
-    symbol: "meta",
-    name: "META Vault (NFTX)",
+    id: "waifu-vault-nftx",
+    symbol: "waifu",
+    name: "WAIFU Vault (NFTX)",
     image:
-      "https://assets.coingecko.com/coins/images/17065/large/META.png?1626150949",
+      "https://assets.coingecko.com/coins/images/17045/large/waifu.png?1626147639",
     contracts: {
-      ethereum: "0x2f5c3dd519e8a502c48c9fc104eee64fdff05f03",
+      ethereum: "0xe7f4c89032a2488d327323548ab0459676269331",
+    },
+  },
+  {
+    id: "path-vault-nftx",
+    symbol: "path",
+    name: "PATH Vault (NFTX)",
+    image:
+      "https://assets.coingecko.com/coins/images/17048/large/PATH.png?1626148660",
+    contracts: {
+      ethereum: "0x478e677c0bd24c848bd591cc5273383dd5f30e4a",
+    },
+  },
+  {
+    id: "avastr-vault-nftx",
+    symbol: "avastr",
+    name: "AVASTR Vault (NFTX)",
+    image:
+      "https://assets.coingecko.com/coins/images/17034/large/AVASTR.png?1626142802",
+    contracts: {
+      ethereum: "0xdcdc1c1cc33aa817cbdbe8f5e2390bf7cc43dc4b",
+    },
+  },
+  {
+    id: "topdog-vault-nftx",
+    symbol: "topdog",
+    name: "TOPDOG Vault (NFTX)",
+    image:
+      "https://assets.coingecko.com/coins/images/17080/large/TOPDOG.png?1626154411",
+    contracts: {
+      ethereum: "0xc57baa24f72037c21f9c0d345bb6f19f47407447",
+    },
+  },
+  {
+    id: "berry-vault-nftx",
+    symbol: "berry",
+    name: "BERRY Vault (NFTX)",
+    image:
+      "https://assets.coingecko.com/coins/images/17038/large/BERRY.png?1626146080",
+    contracts: {
+      ethereum: "0xe944f2b46fcfc9d0e887bbeaad95268d9416d0fd",
+    },
+  },
+  {
+    id: "bonsai-vault-nftx",
+    symbol: "bonsai",
+    name: "BONSAI Vault (NFTX)",
+    image:
+      "https://assets.coingecko.com/coins/images/17054/large/bonsai.png?1626149555",
+    contracts: {
+      ethereum: "0xf0fe1a87abf12099b77352bdcc10f5a87067b290",
+    },
+  },
+  {
+    id: "kamax-vault-nftx",
+    symbol: "kamax",
+    name: "KAMAX Vault (NFTX)",
+    image:
+      "https://assets.coingecko.com/coins/images/17079/large/KAMAX.png?1626154307",
+    contracts: {
+      ethereum: "0xb2c62e0a1f5837356e399359ecc34fcc49a02093",
+    },
+  },
+  {
+    id: "ringer-vault-nftx",
+    symbol: "ringer",
+    name: "RINGER Vault (NFTX)",
+    image:
+      "https://assets.coingecko.com/coins/images/17060/large/RINGER.png?1626150396",
+    contracts: {
+      ethereum: "0x13edcc775f8895961b81db5c0205889b3afb3a16",
+    },
+  },
+  {
+    id: "card-vaulti-nftx",
+    symbol: "card",
+    name: "CARD Vault (NFTX)",
+    image:
+      "https://assets.coingecko.com/coins/images/17056/large/EtherCards.png?1626149572",
+    contracts: {
+      ethereum: "0xd6f7db7db116170ecb1c3b35f12c1e693ba70586",
     },
   },
   {
@@ -73303,23 +73076,133 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "waifu-vault-nftx",
-    symbol: "waifu",
-    name: "WAIFU Vault (NFTX)",
+    id: "mooncat-vault-nftx",
+    symbol: "mooncat",
+    name: "MOONCAT Vault (NFTX)",
     image:
-      "https://assets.coingecko.com/coins/images/17045/large/waifu.png?1626147639",
+      "https://assets.coingecko.com/coins/images/17055/large/Mooncats.png?1626149563",
     contracts: {
-      ethereum: "0xe7f4c89032a2488d327323548ab0459676269331",
+      ethereum: "0x98968f0747e0a261532cacc0be296375f5c08398",
     },
   },
   {
-    id: "bakc-vault-nftx",
-    symbol: "bakc",
-    name: "BAKC Vault (NFTX)",
+    id: "energy-vault-nftx",
+    symbol: "energy",
+    name: "ENERGY Vault (NFTX)",
     image:
-      "https://assets.coingecko.com/coins/images/17052/large/BYAC.png?1626149096",
+      "https://assets.coingecko.com/coins/images/17057/large/ENERGY.png?1626149631",
     contracts: {
-      ethereum: "0xe632e1ea781df32c60ab11052958744cbfbc439a",
+      ethereum: "0xfde98a3bf5c7f6336ae4ce1b43148aeab7b7c89a",
+    },
+  },
+  {
+    id: "dfnorm-vault-nftx",
+    symbol: "dfnorm",
+    name: "DFNORM Vault (NFTX)",
+    image:
+      "https://assets.coingecko.com/coins/images/17078/large/DFNORM.png?1626154202",
+    contracts: {
+      ethereum: "0x1ee01654665303a5dd2744e30b576941880e3a73",
+    },
+  },
+  {
+    id: "alpaca-vault-nftx",
+    symbol: "alpaca",
+    name: "ALPACA Vault (NFTX)",
+    image:
+      "https://assets.coingecko.com/coins/images/17042/large/ALPACA.png?1626147234",
+    contracts: {
+      ethereum: "0x413f6a89ddb823974f24f2e3cd3b4f467d3bbb38",
+    },
+  },
+  {
+    id: "bunny-vault-nftx",
+    symbol: "bunny",
+    name: "BUNNY Vault (NFTX)",
+    image:
+      "https://assets.coingecko.com/coins/images/17049/large/BUNNY.png?1626148809",
+    contracts: {
+      ethereum: "0x33e70c9efabdf151f5c674a4addc104874980c3f",
+    },
+  },
+  {
+    id: "kongz-vault-nftx",
+    symbol: "kongz",
+    name: "KONGZ Vault (NFTX)",
+    image:
+      "https://assets.coingecko.com/coins/images/17061/large/kongz.png?1626150650",
+    contracts: {
+      ethereum: "0x5a235c0b4cb8d0e80a5c3bf4d2fad5c32e440884",
+    },
+  },
+  {
+    id: "collective-vault-nftx",
+    symbol: "collective",
+    name: "COLLECTIVE Vault (NFTX)",
+    image:
+      "https://assets.coingecko.com/coins/images/17073/large/collective.png?1626152053",
+    contracts: {
+      ethereum: "0xb3b4431f812a74bdfc148d6bddfadecdc63fc083",
+    },
+  },
+  {
+    id: "minute-vault-nftx",
+    symbol: "minute",
+    name: "MINUTE Vault (NFTX)",
+    image:
+      "https://assets.coingecko.com/coins/images/17047/large/MINUTE.png?1626148533",
+    contracts: {
+      ethereum: "0xcda16f62a8d3127ea0aebfacb221c1cc41b8e488",
+    },
+  },
+  {
+    id: "hyper-vault-nftx",
+    symbol: "hyper",
+    name: "HYPER Vault (NFTX)",
+    image:
+      "https://assets.coingecko.com/coins/images/17043/large/HYPER.png?1626147576",
+    contracts: {
+      ethereum: "0xeb5a8eefdae23a815072bf28de8114a825c27876",
+    },
+  },
+  {
+    id: "sodium-vault-nftx",
+    symbol: "sodium",
+    name: "SODIUM Vault (NFTX)",
+    image:
+      "https://assets.coingecko.com/coins/images/17071/large/MFPickles.png?1626152045",
+    contracts: {
+      ethereum: "0xc443930ecd59e55e42efe976b8a4ba0658f5c50a",
+    },
+  },
+  {
+    id: "chainlink-nft-vault-nftx",
+    symbol: "cnhpd",
+    name: "Chainlink NFT Vault (NFTX)",
+    image:
+      "https://assets.coingecko.com/coins/images/17064/large/CHAINLINK.png?1626150809",
+    contracts: {
+      ethereum: "0x6443e507f53b526042d0054867a60a4c0409cb4b",
+    },
+  },
+  {
+    id: "meta-vault-nftx",
+    symbol: "meta",
+    name: "META Vault (NFTX)",
+    image:
+      "https://assets.coingecko.com/coins/images/17065/large/META.png?1626150949",
+    contracts: {
+      ethereum: "0x2f5c3dd519e8a502c48c9fc104eee64fdff05f03",
+    },
+  },
+  {
+    id: "face-vault-nftx",
+    symbol: "face",
+    name: "FACE Vault (NFTX)",
+    image:
+      "https://assets.coingecko.com/coins/images/17039/large/FACE.png?1626146356",
+    contracts: {
+      ethereum: "0xcd46d92c46be1dbbd5ccc497e95611abe9d507bc",
     },
   },
   {
@@ -73485,16 +73368,6 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "ot-eth-usdc",
-    symbol: "ot-ethusdc-29dec2022",
-    name: "OT-ETH/USDC",
-    image:
-      "https://assets.coingecko.com/coins/images/18137/large/ot-usdc_eth_slp.bb77cae4_%281%29.png?1630640729",
-    contracts: {
-      ethereum: "0x322d6c69048330247165231eb7848a5c80a48878",
-    },
-  },
-  {
     id: "ot-pendle-eth",
     symbol: "ot-pe-29dec2022",
     name: "OT-PENDLE/ETH",
@@ -73502,6 +73375,16 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/18136/large/ot-pendle_eth_slp.573d443c.png?1630640424",
     contracts: {
       ethereum: "0xbf682bd31a615123d28d611b38b0ae3d2b675c2c",
+    },
+  },
+  {
+    id: "ot-eth-usdc",
+    symbol: "ot-ethusdc-29dec2022",
+    name: "OT-ETH/USDC",
+    image:
+      "https://assets.coingecko.com/coins/images/18137/large/ot-usdc_eth_slp.bb77cae4_%281%29.png?1630640729",
+    contracts: {
+      ethereum: "0x322d6c69048330247165231eb7848a5c80a48878",
     },
   },
   {
@@ -73671,16 +73554,6 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/17609/large/another.png?1628658380",
     contracts: {
       "binance-smart-chain": "0xa060e0c0588d26caba4a0009513337ace50752dd",
-    },
-  },
-  {
-    id: "sphynx-token",
-    symbol: "SPHYNX",
-    name: "Sphynx Token",
-    image:
-      "https://assets.coingecko.com/coins/images/18556/large/Sphynx-Token-200x200.png?1632377797",
-    contracts: {
-      "binance-smart-chain": "0x2e121ed64eeeb58788ddb204627ccb7c7c59884c",
     },
   },
   {
@@ -73857,16 +73730,6 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "save-the-kids",
-    symbol: "kids",
-    name: "Save The Kids",
-    image:
-      "https://assets.coingecko.com/coins/images/16166/large/save_the_kids.PNG?1623189137",
-    contracts: {
-      "binance-smart-chain": "0x7acf49997e9598843cb9051389fa755969e551bb",
-    },
-  },
-  {
     id: "zombie-rising",
     symbol: "zomb",
     name: "Zombie Rising",
@@ -73874,6 +73737,16 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/18736/large/logo_%284%29.jpg?1633308871",
     contracts: {
       "binance-smart-chain": "0x608940b1061a1b277f0a27c30227f8f95c6fa14e",
+    },
+  },
+  {
+    id: "save-the-kids",
+    symbol: "kids",
+    name: "Save The Kids",
+    image:
+      "https://assets.coingecko.com/coins/images/16166/large/save_the_kids.PNG?1623189137",
+    contracts: {
+      "binance-smart-chain": "0x7acf49997e9598843cb9051389fa755969e551bb",
     },
   },
   {
@@ -74659,10 +74532,10 @@ export const tokens: TokenD[] = [
   },
   {
     id: "burgerburn",
-    symbol: "brbg",
+    symbol: "brgb",
     name: "BurgerBurn",
     image:
-      "https://assets.coingecko.com/coins/images/19804/large/burger.PNG?1635910469",
+      "https://assets.coingecko.com/coins/images/19804/large/brgb.png?1638346982",
     contracts: {
       "binance-smart-chain": "0xf594aacc5437a74591c8807b72acc6c160160015",
     },
@@ -75051,26 +74924,6 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "synthetic-eth",
-    symbol: "xeth",
-    name: "Synthetic ETH",
-    image:
-      "https://assets.coingecko.com/coins/images/20023/large/n7nBBNG.png?1636417821",
-    contracts: {
-      solana: "8bqjz8DeSuim1sEAsQatjJN4zseyxSPdhHQcuuhL8PCK",
-    },
-  },
-  {
-    id: "synthetic-ftt",
-    symbol: "xftt",
-    name: "Synthetic FTT",
-    image:
-      "https://assets.coingecko.com/coins/images/20025/large/BGYHyQ4.png?1636418021",
-    contracts: {
-      solana: "Fr3W7NPVvdVbwMcHgA7Gx2wUxP43txdsn3iULJGFbKz9",
-    },
-  },
-  {
     id: "synthetic-btc",
     symbol: "xbtc",
     name: "Synthetic BTC",
@@ -75088,6 +74941,26 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/20022/large/mmJpy6j.png?1636417738",
     contracts: {
       solana: "BdUJucPJyjkHxLMv6ipKNUhSeY3DWrVtgxAES1iSBAov",
+    },
+  },
+  {
+    id: "synthetic-ftt",
+    symbol: "xftt",
+    name: "Synthetic FTT",
+    image:
+      "https://assets.coingecko.com/coins/images/20025/large/BGYHyQ4.png?1636418021",
+    contracts: {
+      solana: "Fr3W7NPVvdVbwMcHgA7Gx2wUxP43txdsn3iULJGFbKz9",
+    },
+  },
+  {
+    id: "synthetic-eth",
+    symbol: "xeth",
+    name: "Synthetic ETH",
+    image:
+      "https://assets.coingecko.com/coins/images/20023/large/n7nBBNG.png?1636417821",
+    contracts: {
+      solana: "8bqjz8DeSuim1sEAsQatjJN4zseyxSPdhHQcuuhL8PCK",
     },
   },
   {
@@ -75508,7 +75381,7 @@ export const tokens: TokenD[] = [
     image:
       "https://assets.coingecko.com/coins/images/18321/large/dogedrinkslogo_200_%281%29.jpg?1631531742",
     contracts: {
-      "binance-smart-chain": "0x82ed5fe7e64875c30fe7faaf2bf04e3ba9f8f066",
+      ethereum: "0x071f637a1c3f2195082007255810b86ae7ddfc21",
     },
   },
   {
@@ -75652,17 +75525,6 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "dei-token",
-    symbol: "dei",
-    name: "DEI Token",
-    image:
-      "https://assets.coingecko.com/coins/images/18779/large/dei.png?1633403002",
-    contracts: {
-      ethereum: "0xde12c7959e1a72bbe8a5f7a1dc8f8eef9ab011b3",
-      "polygon-pos": "0xde12c7959e1a72bbe8a5f7a1dc8f8eef9ab011b3",
-    },
-  },
-  {
     id: "deus-finance-2",
     symbol: "deus",
     name: "DEUS Finance",
@@ -75671,6 +75533,17 @@ export const tokens: TokenD[] = [
     contracts: {
       ethereum: "0xde5ed76e7c05ec5e4572cfc88d1acea165109e44",
       "polygon-pos": "0xde5ed76e7c05ec5e4572cfc88d1acea165109e44",
+    },
+  },
+  {
+    id: "dei-token",
+    symbol: "dei",
+    name: "DEI Token",
+    image:
+      "https://assets.coingecko.com/coins/images/18779/large/dei.png?1633403002",
+    contracts: {
+      ethereum: "0xde12c7959e1a72bbe8a5f7a1dc8f8eef9ab011b3",
+      "polygon-pos": "0xde12c7959e1a72bbe8a5f7a1dc8f8eef9ab011b3",
     },
   },
   {
@@ -75742,16 +75615,6 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "silver-token",
-    symbol: "silver",
-    name: "Silver Token",
-    image:
-      "https://assets.coingecko.com/coins/images/18104/large/LYq7H0g.png?1630484406",
-    contracts: {
-      "polygon-pos": "0xbc7cb585346f4f59d07121bb9ed7358076243539",
-    },
-  },
-  {
     id: "advar-protocol",
     symbol: "advar",
     name: "Advar Protocol",
@@ -75759,6 +75622,16 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/19352/large/np3gzv2.png?1635127883",
     contracts: {
       "binance-smart-chain": "0x85ce1f8daf297a2207aafbb5506fecd9768632d7",
+    },
+  },
+  {
+    id: "silver-token",
+    symbol: "silver",
+    name: "Silver Token",
+    image:
+      "https://assets.coingecko.com/coins/images/18104/large/LYq7H0g.png?1630484406",
+    contracts: {
+      "polygon-pos": "0xbc7cb585346f4f59d07121bb9ed7358076243539",
     },
   },
   {
@@ -76462,16 +76335,6 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "yield-farming-known-as-ash",
-    symbol: "yfka",
-    name: "Yield Farming Known as Ash",
-    image:
-      "https://assets.coingecko.com/coins/images/12459/large/5f5cfce7b7b794f5e1e4c6b5_logo200.jpg?1599982854",
-    contracts: {
-      ethereum: "0x4086692d53262b2be0b13909d804f0491ff6ec3e",
-    },
-  },
-  {
     id: "boa",
     symbol: "boa",
     name: "BOA",
@@ -76479,6 +76342,16 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/12251/large/5f4336749313bc77f88e3927_the-ouroboros-or-uroborus-english-school-p-500.jpeg?1598515550",
     contracts: {
       ethereum: "0xf9c36c7ad7fa0f0862589c919830268d1a2581a1",
+    },
+  },
+  {
+    id: "yield-farming-known-as-ash",
+    symbol: "yfka",
+    name: "Yield Farming Known as Ash",
+    image:
+      "https://assets.coingecko.com/coins/images/12459/large/5f5cfce7b7b794f5e1e4c6b5_logo200.jpg?1599982854",
+    contracts: {
+      ethereum: "0x4086692d53262b2be0b13909d804f0491ff6ec3e",
     },
   },
   {
@@ -76632,16 +76505,6 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "rhinos-finance",
-    symbol: "rho",
-    name: "Rhinos Finance",
-    image:
-      "https://assets.coingecko.com/coins/images/17695/large/rhinos.PNG?1628978740",
-    contracts: {
-      "binance-smart-chain": "0xabd29a5a984c97737707cc68d38c2903b8811061",
-    },
-  },
-  {
     id: "instaraise",
     symbol: "insta",
     name: "Instaraise",
@@ -76649,6 +76512,16 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/18929/large/logo-png_%282%29.png?1633942527",
     contracts: {
       tezos: "KT19y6R8x53uDKiM46ahgguS6Tjqhdj2rSzZ",
+    },
+  },
+  {
+    id: "rhinos-finance",
+    symbol: "rho",
+    name: "Rhinos Finance",
+    image:
+      "https://assets.coingecko.com/coins/images/17695/large/rhinos.PNG?1628978740",
+    contracts: {
+      "binance-smart-chain": "0xabd29a5a984c97737707cc68d38c2903b8811061",
     },
   },
   {
@@ -77148,6 +77021,16 @@ export const tokens: TokenD[] = [
     },
   },
   {
+    id: "frosted-cake",
+    symbol: "FROSTEDCAKE",
+    name: "Frosted Cake",
+    image:
+      "https://assets.coingecko.com/coins/images/18935/large/photo_2021-08-01_17.54.47.jpeg?1633945998",
+    contracts: {
+      "binance-smart-chain": "0x94ba29d58d419bd798b282476db3dd9d97ba8c23",
+    },
+  },
+  {
     id: "digible",
     symbol: "digi",
     name: "Digible",
@@ -77156,16 +77039,6 @@ export const tokens: TokenD[] = [
     contracts: {
       ethereum: "0x3cbf23c081faa5419810ce0f6bc1ecb73006d848",
       "polygon-pos": "0x4d8181f051e617642e233be09cea71cc3308ffd4",
-    },
-  },
-  {
-    id: "frosted-cake",
-    symbol: "FROSTEDCAKE",
-    name: "Frosted Cake",
-    image:
-      "https://assets.coingecko.com/coins/images/18935/large/photo_2021-08-01_17.54.47.jpeg?1633945998",
-    contracts: {
-      "binance-smart-chain": "0x94ba29d58d419bd798b282476db3dd9d97ba8c23",
     },
   },
   {
@@ -77546,16 +77419,6 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/18594/large/NcAIaWlc_400x400_%281%29.jpg?1632608958",
     contracts: {
       "arbitrum-one": "0x9f20de1fc9b161b34089cbeae888168b44b03461",
-    },
-  },
-  {
-    id: "apwars",
-    symbol: "wgold",
-    name: "APWars",
-    image:
-      "https://assets.coingecko.com/coins/images/15912/large/8BtKnCYl_400x400.jpg?1622420018",
-    contracts: {
-      "binance-smart-chain": "0x7ab6eedd9443e0e98e5ea93667ca5b250b8dda51",
     },
   },
   {
@@ -78177,16 +78040,6 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "bitcoin-volatility-index-token",
-    symbol: "btcv",
-    name: "Bitcoin Volatility Index Token",
-    image:
-      "https://assets.coingecko.com/coins/images/16717/large/logo_-_2021-06-28T092740.647.png?1624843667",
-    contracts: {
-      ethereum: "0x51b0bcbeff204b39ce792d1e16767fe6f7631970",
-    },
-  },
-  {
     id: "inverse-bitcoin-volatility-index-token",
     symbol: "ibtcv",
     name: "Inverse Bitcoin Volatility Index Token",
@@ -78194,6 +78047,16 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/16718/large/logo_-_2021-06-28T093119.133.png?1624843921",
     contracts: {
       ethereum: "0x2590f1fd14ef8bb0a46c7a889c4cbc146510f9c3",
+    },
+  },
+  {
+    id: "bitcoin-volatility-index-token",
+    symbol: "btcv",
+    name: "Bitcoin Volatility Index Token",
+    image:
+      "https://assets.coingecko.com/coins/images/16717/large/logo_-_2021-06-28T092740.647.png?1624843667",
+    contracts: {
+      ethereum: "0x51b0bcbeff204b39ce792d1e16767fe6f7631970",
     },
   },
   {
@@ -78207,16 +78070,6 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "defi-city",
-    symbol: "dfc",
-    name: "DeFi City",
-    image:
-      "https://assets.coingecko.com/coins/images/16945/large/DFC_LOGO-e1625509494236.png?1625720160",
-    contracts: {
-      "binance-smart-chain": "0x09890edff4b2445cb5d8121fdf2aec5003fb00c4",
-    },
-  },
-  {
     id: "mycro-ico",
     symbol: "myo",
     name: "Mycro",
@@ -78224,6 +78077,16 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/7035/large/130619_MYO_Icon_final.png?1560931928",
     contracts: {
       ethereum: "0x50987e6be405ebac691f8988304562e5efc3b2ea",
+    },
+  },
+  {
+    id: "defi-city",
+    symbol: "dfc",
+    name: "DeFi City",
+    image:
+      "https://assets.coingecko.com/coins/images/16945/large/DFC_LOGO-e1625509494236.png?1625720160",
+    contracts: {
+      "binance-smart-chain": "0x09890edff4b2445cb5d8121fdf2aec5003fb00c4",
     },
   },
   {
@@ -78251,7 +78114,7 @@ export const tokens: TokenD[] = [
     symbol: "ape",
     name: "APEcoin",
     image:
-      "https://assets.coingecko.com/coins/images/12665/large/apecoin_logo.jpg?1601459267",
+      "https://assets.coingecko.com/coins/images/12665/large/ape.png?1638345530",
     contracts: {
       "binance-smart-chain": "0xa9ea4b786ee5b7a733c035564bfd9341a4c9fc1e",
     },
@@ -78328,6 +78191,16 @@ export const tokens: TokenD[] = [
     },
   },
   {
+    id: "bolt-true-share",
+    symbol: "bts",
+    name: "Bolt Share",
+    image:
+      "https://assets.coingecko.com/coins/images/13623/large/akd2ynA9.png?1615541286",
+    contracts: {
+      "binance-smart-chain": "0xc2e1acef50ae55661855e8dcb72adb182a3cc259",
+    },
+  },
+  {
     id: "bolt-true-dollar",
     symbol: "btd",
     name: "Bolt Dollar",
@@ -78336,16 +78209,6 @@ export const tokens: TokenD[] = [
     contracts: {
       "binance-smart-chain": "0xd1102332a213e21faf78b69c03572031f3552c33",
       fantom: "0x4792c1ecb969b036eb51330c63bd27899a13d84e",
-    },
-  },
-  {
-    id: "bolt-true-share",
-    symbol: "bts",
-    name: "Bolt Share",
-    image:
-      "https://assets.coingecko.com/coins/images/13623/large/akd2ynA9.png?1615541286",
-    contracts: {
-      "binance-smart-chain": "0xc2e1acef50ae55661855e8dcb72adb182a3cc259",
     },
   },
   {
@@ -78680,7 +78543,7 @@ export const tokens: TokenD[] = [
     symbol: "myl",
     name: "My Lotto Coin",
     image:
-      "https://assets.coingecko.com/coins/images/17740/large/myl_coins_200x200.png?1629121916",
+      "https://assets.coingecko.com/coins/images/17740/large/v4WUWbDz_400x400.jpg?1638365236",
     contracts: {
       "binance-smart-chain": "0xc110e8d4d7f4a319a1a8f16ca94b3afde7665595",
     },
@@ -78920,16 +78783,6 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "cexlt",
-    symbol: "clt",
-    name: "Cexlt",
-    image:
-      "https://assets.coingecko.com/coins/images/13171/large/clt_logo.png?1605855281",
-    contracts: {
-      ethereum: "0xa69f7a10df90c4d6710588bc18ad9bf08081f545",
-    },
-  },
-  {
     id: "cocoin",
     symbol: "cocoin",
     name: "Cocoin",
@@ -78937,6 +78790,16 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/16589/large/p4THfYl.png?1624523489",
     contracts: {
       "binance-smart-chain": "0x9ffafc014832b803aaaab0d2e4d9c127eca0e034",
+    },
+  },
+  {
+    id: "cexlt",
+    symbol: "clt",
+    name: "Cexlt",
+    image:
+      "https://assets.coingecko.com/coins/images/13171/large/clt_logo.png?1605855281",
+    contracts: {
+      ethereum: "0xa69f7a10df90c4d6710588bc18ad9bf08081f545",
     },
   },
   {
@@ -79056,16 +78919,6 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "poordoge",
-    symbol: "poordoge",
-    name: "PoorDoge",
-    image:
-      "https://assets.coingecko.com/coins/images/20112/large/poordoge_logo.png?1636513927",
-    contracts: {
-      "binance-smart-chain": "0x4a5eb6574fe68c55362fc73b9ea76953d837985b",
-    },
-  },
-  {
     id: "kingdoge",
     symbol: "kdoge",
     name: "KingDoge",
@@ -79083,6 +78936,16 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/16804/large/LORY.png?1625113802",
     contracts: {
       "binance-smart-chain": "0xcd5d75dbe75449a9021b6c570a41959eb571c751",
+    },
+  },
+  {
+    id: "poordoge",
+    symbol: "poordoge",
+    name: "PoorDoge",
+    image:
+      "https://assets.coingecko.com/coins/images/20112/large/poordoge_logo.png?1636513927",
+    contracts: {
+      "binance-smart-chain": "0x4a5eb6574fe68c55362fc73b9ea76953d837985b",
     },
   },
   {
@@ -79504,16 +79367,6 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "crypto-puffs",
-    symbol: "puffs",
-    name: "Crypto Puffs",
-    image:
-      "https://assets.coingecko.com/coins/images/17672/large/puff.PNG?1628829844",
-    contracts: {
-      "binance-smart-chain": "0xee11db54b66e4dbb99d497573106615bb6ac03ab",
-    },
-  },
-  {
     id: "codex-finance",
     symbol: "codex",
     name: "CODEX Finance",
@@ -79521,6 +79374,16 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/14723/large/TWmfx9J.png?1626961475",
     contracts: {
       "binance-smart-chain": "0x9e95cb3d0560f9cba88991f828322526851bfb56",
+    },
+  },
+  {
+    id: "crypto-puffs",
+    symbol: "puffs",
+    name: "Crypto Puffs",
+    image:
+      "https://assets.coingecko.com/coins/images/17672/large/puff.PNG?1628829844",
+    contracts: {
+      "binance-smart-chain": "0xee11db54b66e4dbb99d497573106615bb6ac03ab",
     },
   },
   {
@@ -79584,16 +79447,6 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "shibanaut",
-    symbol: "snaut",
-    name: "Shibanaut",
-    image:
-      "https://assets.coingecko.com/coins/images/16316/large/shibanaut.PNG?1623735503",
-    contracts: {
-      "binance-smart-chain": "0xb35d5173e0cc3ff5c73afe17a7dd14a0e4f0cce3",
-    },
-  },
-  {
     id: "alpha5",
     symbol: "a5t",
     name: "Alpha5",
@@ -79601,6 +79454,16 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/13848/large/a5t.jpg?1614652988",
     contracts: {
       ethereum: "0xe8272210954ea85de6d2ae739806ab593b5d9c51",
+    },
+  },
+  {
+    id: "shibanaut",
+    symbol: "snaut",
+    name: "Shibanaut",
+    image:
+      "https://assets.coingecko.com/coins/images/16316/large/shibanaut.PNG?1623735503",
+    contracts: {
+      "binance-smart-chain": "0xb35d5173e0cc3ff5c73afe17a7dd14a0e4f0cce3",
     },
   },
   {
@@ -79679,7 +79542,7 @@ export const tokens: TokenD[] = [
     symbol: "doken",
     name: "DoKEN",
     image:
-      "https://assets.coingecko.com/coins/images/20283/large/0xf9a2d40589271be17612a3f57a9028a568f56e3d.png?1636795440",
+      "https://assets.coingecko.com/coins/images/20283/large/Qu5sof9.png?1638363195",
     contracts: {
       "binance-smart-chain": "0xf9a2d40589271be17612a3f57a9028a568f56e3d",
     },
@@ -79786,14 +79649,6 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "ibithub",
-    symbol: "ibh",
-    name: "iBitHub",
-    image:
-      "https://assets.coingecko.com/coins/images/7900/large/kNB221Sz_400x400.jpg?1551662265",
-    contracts: {},
-  },
-  {
     id: "tengu",
     symbol: "tengu",
     name: "Tengu",
@@ -79802,6 +79657,14 @@ export const tokens: TokenD[] = [
     contracts: {
       "binance-smart-chain": "0x6f6350d5d347aa8f7e9731756b60b774a7acf95b",
     },
+  },
+  {
+    id: "ibithub",
+    symbol: "ibh",
+    name: "iBitHub",
+    image:
+      "https://assets.coingecko.com/coins/images/7900/large/kNB221Sz_400x400.jpg?1551662265",
+    contracts: {},
   },
   {
     id: "sidekick-token",
@@ -80246,6 +80109,16 @@ export const tokens: TokenD[] = [
     },
   },
   {
+    id: "ftm-pup-token",
+    symbol: "fpup",
+    name: "FTM PUP Token",
+    image:
+      "https://assets.coingecko.com/coins/images/19949/large/coingecko_%284%29.png?1636337746",
+    contracts: {
+      fantom: "0x900825ea297c7c5d1f6fa54146849bc41eddaf29",
+    },
+  },
+  {
     id: "polypup",
     symbol: "pup",
     name: "PolyPup",
@@ -80263,16 +80136,6 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/16819/large/9.png?1625176517",
     contracts: {
       "polygon-pos": "0x6bb45ceac714c52342ef73ec663479da35934bf7",
-    },
-  },
-  {
-    id: "ftm-pup-token",
-    symbol: "fpup",
-    name: "FTM PUP Token",
-    image:
-      "https://assets.coingecko.com/coins/images/19949/large/coingecko_%284%29.png?1636337746",
-    contracts: {
-      fantom: "0x900825ea297c7c5d1f6fa54146849bc41eddaf29",
     },
   },
   {
@@ -80495,6 +80358,16 @@ export const tokens: TokenD[] = [
     },
   },
   {
+    id: "calcifer",
+    symbol: "CALCIFER",
+    name: "Calcifer",
+    image:
+      "https://assets.coingecko.com/coins/images/18771/large/calcifer_200x200.png?1633357656",
+    contracts: {
+      "binance-smart-chain": "0x9d13cc6fabde882e059413c524a32ba5befebd8b",
+    },
+  },
+  {
     id: "staker-dao",
     symbol: "stkr",
     name: "Staker DAO",
@@ -80503,16 +80376,6 @@ export const tokens: TokenD[] = [
     contracts: {
       ethereum: "0x89dcff5fd892f2bfc8b75dba12804b651f769579",
       tezos: "KT1AEfeckNbdEYwaMKkytBwPJPycz7jdSGea",
-    },
-  },
-  {
-    id: "calcifer",
-    symbol: "CALCIFER",
-    name: "Calcifer",
-    image:
-      "https://assets.coingecko.com/coins/images/18771/large/calcifer_200x200.png?1633357656",
-    contracts: {
-      "binance-smart-chain": "0x9d13cc6fabde882e059413c524a32ba5befebd8b",
     },
   },
   {
@@ -81433,16 +81296,6 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "sakura-neko",
-    symbol: "neko",
-    name: "Sakura Neko",
-    image:
-      "https://assets.coingecko.com/coins/images/19765/large/neko.jpeg?1635833808",
-    contracts: {
-      "binance-smart-chain": "0x2c5f1769b819b5e70aa7106c989d38ad71ba2546",
-    },
-  },
-  {
     id: "caietf-finance",
     symbol: "cai",
     name: "CAIETF.Finance",
@@ -81450,6 +81303,16 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/20198/large/cai.PNG?1636615663",
     contracts: {
       "binance-smart-chain": "0x93d04d21fcb5545330817c9c0e54a61c9e14d662",
+    },
+  },
+  {
+    id: "sakura-neko",
+    symbol: "neko",
+    name: "Sakura Neko",
+    image:
+      "https://assets.coingecko.com/coins/images/19765/large/neko.jpeg?1635833808",
+    contracts: {
+      "binance-smart-chain": "0x2c5f1769b819b5e70aa7106c989d38ad71ba2546",
     },
   },
   {
@@ -81718,16 +81581,6 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "xinchb",
-    symbol: "xINCHb",
-    name: "xINCHb",
-    image:
-      "https://assets.coingecko.com/coins/images/13800/large/xINCH-2.png?1611978606",
-    contracts: {
-      ethereum: "0x6b33f15360cedbfb8f60539ec828ef52910aca9b",
-    },
-  },
-  {
     id: "xincha",
     symbol: "xINCHa",
     name: "xINCHa",
@@ -81735,6 +81588,16 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/13799/large/xINCH.png?1611978456",
     contracts: {
       ethereum: "0x8f6a193c8b3c949e1046f1547c3a3f0836944e4b",
+    },
+  },
+  {
+    id: "xinchb",
+    symbol: "xINCHb",
+    name: "xINCHb",
+    image:
+      "https://assets.coingecko.com/coins/images/13800/large/xINCH-2.png?1611978606",
+    contracts: {
+      ethereum: "0x6b33f15360cedbfb8f60539ec828ef52910aca9b",
     },
   },
   {
@@ -81818,16 +81681,6 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "smart-payment",
-    symbol: "spay",
-    name: "Smart Payment",
-    image:
-      "https://assets.coingecko.com/coins/images/19293/large/spaylogo.png?1634874197",
-    contracts: {
-      "binance-smart-chain": "0xb21225f833f2fb1be7d88ee5347aae001f5b5db1",
-    },
-  },
-  {
     id: "oink-token",
     symbol: "oink",
     name: "Oink Token",
@@ -81835,6 +81688,16 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/19694/large/LOGOPNG_%281%29.png?1635749921",
     contracts: {
       solana: "Aojru8bfwZK6sgrx6exNazxASFZUjPpRY59byMrs6izt",
+    },
+  },
+  {
+    id: "smart-payment",
+    symbol: "spay",
+    name: "Smart Payment",
+    image:
+      "https://assets.coingecko.com/coins/images/19293/large/spaylogo.png?1634874197",
+    contracts: {
+      "binance-smart-chain": "0xb21225f833f2fb1be7d88ee5347aae001f5b5db1",
     },
   },
   {
@@ -82123,16 +81986,6 @@ export const tokens: TokenD[] = [
     contracts: {},
   },
   {
-    id: "klondike-btc",
-    symbol: "kbtc",
-    name: "Klondike BTC",
-    image:
-      "https://assets.coingecko.com/coins/images/13789/large/klondike.jpg?1611759492",
-    contracts: {
-      ethereum: "0xe6c3502997f97f9bde34cb165fbce191065e068f",
-    },
-  },
-  {
     id: "bake-up",
     symbol: "$bakeup",
     name: "Bake Up",
@@ -82140,6 +81993,16 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/19864/large/bake.jpeg?1636079108",
     contracts: {
       "binance-smart-chain": "0x101c35e6eed9ca13046f1de0487388cdff6943a8",
+    },
+  },
+  {
+    id: "klondike-btc",
+    symbol: "kbtc",
+    name: "Klondike BTC",
+    image:
+      "https://assets.coingecko.com/coins/images/13789/large/klondike.jpg?1611759492",
+    contracts: {
+      ethereum: "0xe6c3502997f97f9bde34cb165fbce191065e068f",
     },
   },
   {
@@ -82221,16 +82084,6 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "black-market-gaming",
-    symbol: "bmg",
-    name: "Black Market Gaming",
-    image:
-      "https://assets.coingecko.com/coins/images/18127/large/black_market.PNG?1630622186",
-    contracts: {
-      "polygon-pos": "0xc7d5a5df6ae030520366ef8a300543941b99e843",
-    },
-  },
-  {
     id: "fantom-oasis",
     symbol: "ftmo",
     name: "Fantom Oasis",
@@ -82238,6 +82091,16 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/18359/large/59qa0dJ.png?1631605572",
     contracts: {
       fantom: "0x9bd0611610a0f5133e4dd1bfdd71c5479ee77f37",
+    },
+  },
+  {
+    id: "black-market-gaming",
+    symbol: "bmg",
+    name: "Black Market Gaming",
+    image:
+      "https://assets.coingecko.com/coins/images/18127/large/black_market.PNG?1630622186",
+    contracts: {
+      "polygon-pos": "0xc7d5a5df6ae030520366ef8a300543941b99e843",
     },
   },
   {
@@ -82829,16 +82692,6 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "etherean-socks",
-    symbol: "eth2socks",
-    name: "Etherean Socks",
-    image:
-      "https://assets.coingecko.com/coins/images/17714/large/Q4NQZWp.png?1629083998",
-    contracts: {
-      ethereum: "0xd80776bbf68cde466900a7214c772a7d179c420f",
-    },
-  },
-  {
     id: "gif-dao",
     symbol: "gif",
     name: "GIF DAO",
@@ -82846,6 +82699,16 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/19470/large/gif.png?1635255734",
     contracts: {
       tezos: "KT1XTxpQvo7oRCqp85LikEZgAZ22uDxhbWJv",
+    },
+  },
+  {
+    id: "etherean-socks",
+    symbol: "eth2socks",
+    name: "Etherean Socks",
+    image:
+      "https://assets.coingecko.com/coins/images/17714/large/Q4NQZWp.png?1629083998",
+    contracts: {
+      ethereum: "0xd80776bbf68cde466900a7214c772a7d179c420f",
     },
   },
   {
@@ -82978,33 +82841,12 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "wrapped-dai",
-    symbol: "wdai",
-    name: "Wrapped DAI",
-    image:
-      "https://assets.coingecko.com/coins/images/19506/large/wdai.png?1635314770",
+    id: "wrapped-weth",
+    symbol: "wweth",
+    name: "Wrapped WETH",
+    image: "missing_large.png",
     contracts: {
-      tezos: "KT18FP5RCTW7MBWDMZFWJLDUHS5MEJMAGDSZ_5",
-    },
-  },
-  {
-    id: "wrapped-usdt",
-    symbol: "wusdt",
-    name: "Wrapped USDT",
-    image:
-      "https://assets.coingecko.com/coins/images/19507/large/wusdt.png?1635315186",
-    contracts: {
-      tezos: "KT18FP5RCTW7MBWDMZFWJLDUHS5MEJMAGDSZ_18",
-    },
-  },
-  {
-    id: "wrap-governance-token",
-    symbol: "wrap",
-    name: "WRAP Governance Token",
-    image:
-      "https://assets.coingecko.com/coins/images/19465/large/wrap.png?1635252644",
-    contracts: {
-      tezos: "KT1LRboPna9yQY9BrjtQYDS1DVxhKESK4VVd",
+      tezos: "KT18FP5RCTW7MBWDMZFWJLDUHS5MEJMAGDSZ_20",
     },
   },
   {
@@ -83028,6 +82870,16 @@ export const tokens: TokenD[] = [
     },
   },
   {
+    id: "wrap-governance-token",
+    symbol: "wrap",
+    name: "WRAP Governance Token",
+    image:
+      "https://assets.coingecko.com/coins/images/19465/large/wrap.png?1635252644",
+    contracts: {
+      tezos: "KT1LRboPna9yQY9BrjtQYDS1DVxhKESK4VVd",
+    },
+  },
+  {
     id: "wrapped-link",
     symbol: "wlink",
     name: "Wrapped Link",
@@ -83038,12 +82890,23 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "wrapped-weth",
-    symbol: "wweth",
-    name: "Wrapped WETH",
-    image: "missing_large.png",
+    id: "wrapped-dai",
+    symbol: "wdai",
+    name: "Wrapped DAI",
+    image:
+      "https://assets.coingecko.com/coins/images/19506/large/wdai.png?1635314770",
     contracts: {
-      tezos: "KT18FP5RCTW7MBWDMZFWJLDUHS5MEJMAGDSZ_20",
+      tezos: "KT18FP5RCTW7MBWDMZFWJLDUHS5MEJMAGDSZ_5",
+    },
+  },
+  {
+    id: "wrapped-usdt",
+    symbol: "wusdt",
+    name: "Wrapped USDT",
+    image:
+      "https://assets.coingecko.com/coins/images/19507/large/wusdt.png?1635315186",
+    contracts: {
+      tezos: "KT18FP5RCTW7MBWDMZFWJLDUHS5MEJMAGDSZ_18",
     },
   },
   {
@@ -83117,16 +82980,6 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "automaticup",
-    symbol: "atmup",
-    name: "AutoMaticUp",
-    image:
-      "https://assets.coingecko.com/coins/images/19866/large/atmup.jpeg?1636079855",
-    contracts: {
-      "binance-smart-chain": "0xd8e4f8b3adc0dc6ccd90efe8b1ed706d398f81bc",
-    },
-  },
-  {
     id: "wealth-locks",
     symbol: "wlt",
     name: "Wealth Locks",
@@ -83137,13 +82990,13 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "nerdy-inu",
-    symbol: "nerdy",
-    name: "Nerdy Inu",
+    id: "automaticup",
+    symbol: "atmup",
+    name: "AutoMaticUp",
     image:
-      "https://assets.coingecko.com/coins/images/19517/large/nerdy.jpeg?1635322382",
+      "https://assets.coingecko.com/coins/images/19866/large/atmup.jpeg?1636079855",
     contracts: {
-      ethereum: "0x5b0f6ad5875da96ac224ba797c6f362f4c3a2b3b",
+      "binance-smart-chain": "0xd8e4f8b3adc0dc6ccd90efe8b1ed706d398f81bc",
     },
   },
   {
@@ -83154,6 +83007,16 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/6664/large/boidlogo.png?1547042867",
     contracts: {
       eos: null,
+    },
+  },
+  {
+    id: "nerdy-inu",
+    symbol: "nerdy",
+    name: "Nerdy Inu",
+    image:
+      "https://assets.coingecko.com/coins/images/19517/large/nerdy.jpeg?1635322382",
+    contracts: {
+      ethereum: "0x5b0f6ad5875da96ac224ba797c6f362f4c3a2b3b",
     },
   },
   {
@@ -83207,16 +83070,6 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "online-expo",
-    symbol: "expo",
-    name: "Expo Token",
-    image:
-      "https://assets.coingecko.com/coins/images/6548/large/t4GE48eH_400x400.png?1547042762",
-    contracts: {
-      ethereum: "0x7acb51e690301b114a2a65b2e557cc1b7e644ba8",
-    },
-  },
-  {
     id: "nil-dao",
     symbol: "nil",
     name: "Nil DAO",
@@ -83224,6 +83077,16 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/19667/large/_AoPtxGt_400x400.jpg?1635737598",
     contracts: {
       ethereum: "0x47252a63c723889814aebcac0683e615624cec64",
+    },
+  },
+  {
+    id: "online-expo",
+    symbol: "expo",
+    name: "Expo Token",
+    image:
+      "https://assets.coingecko.com/coins/images/6548/large/t4GE48eH_400x400.png?1547042762",
+    contracts: {
+      ethereum: "0x7acb51e690301b114a2a65b2e557cc1b7e644ba8",
     },
   },
   {
@@ -83701,16 +83564,6 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "polysage",
-    symbol: "sage",
-    name: "Polysage",
-    image:
-      "https://assets.coingecko.com/coins/images/18967/large/polysage.PNG?1634027493",
-    contracts: {
-      "polygon-pos": "0x2ed945dc703d85c80225d95abde41cdee14e1992",
-    },
-  },
-  {
     id: "wiseavax",
     symbol: "wiseavax",
     name: "WiseAvax",
@@ -83718,6 +83571,16 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/19471/large/logo-200x200.png?1635261869",
     contracts: {
       avalanche: "0xb86688eb60be8c6fc09afcc32a9cf4b0b6decffd",
+    },
+  },
+  {
+    id: "polysage",
+    symbol: "sage",
+    name: "Polysage",
+    image:
+      "https://assets.coingecko.com/coins/images/18967/large/polysage.PNG?1634027493",
+    contracts: {
+      "polygon-pos": "0x2ed945dc703d85c80225d95abde41cdee14e1992",
     },
   },
   {
@@ -83757,16 +83620,6 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "redzilla",
-    symbol: "redzilla",
-    name: "RedZilla",
-    image:
-      "https://assets.coingecko.com/coins/images/19915/large/redzilla.png?1636124746",
-    contracts: {
-      "binance-smart-chain": "0xf9e45bf69d369d3e1ad2e16bd3ec4006c330f33a",
-    },
-  },
-  {
     id: "gooreo",
     symbol: "gooreo",
     name: "Gooreo",
@@ -83774,6 +83627,16 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/18855/large/1_lNtkovXCpGAi7XBpgNRXSw.png?1633596366",
     contracts: {
       "binance-smart-chain": "0x7156fc3db62cce82eaa7163279d9f99644257539",
+    },
+  },
+  {
+    id: "redzilla",
+    symbol: "redzilla",
+    name: "RedZilla",
+    image:
+      "https://assets.coingecko.com/coins/images/19915/large/redzilla.png?1636124746",
+    contracts: {
+      "binance-smart-chain": "0xf9e45bf69d369d3e1ad2e16bd3ec4006c330f33a",
     },
   },
   {
@@ -83907,16 +83770,6 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "chubbyakita",
-    symbol: "cakita",
-    name: "ChubbyAkita",
-    image:
-      "https://assets.coingecko.com/coins/images/15563/large/cakita.jpg?1621217438",
-    contracts: {
-      "binance-smart-chain": "0xca3c1dc12b0dd0d65964abaa533106cf4f372c78",
-    },
-  },
-  {
     id: "mytracknet-token",
     symbol: "mtnt",
     name: "Mytracknet Token",
@@ -83924,6 +83777,16 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/8742/large/MytracknetLogo256x256.png?1617701032",
     contracts: {
       waves: "0x6ac44278cd0a843caeb95a5f0aa852f44b9015af",
+    },
+  },
+  {
+    id: "chubbyakita",
+    symbol: "cakita",
+    name: "ChubbyAkita",
+    image:
+      "https://assets.coingecko.com/coins/images/15563/large/cakita.jpg?1621217438",
+    contracts: {
+      "binance-smart-chain": "0xca3c1dc12b0dd0d65964abaa533106cf4f372c78",
     },
   },
   {
@@ -84396,7 +84259,7 @@ export const tokens: TokenD[] = [
     symbol: "spidey inu",
     name: "Spidey Inu",
     image:
-      "https://assets.coingecko.com/coins/images/20191/large/8hNDucJ.jpeg?1636613934",
+      "https://assets.coingecko.com/coins/images/20191/large/spidey_inu.png?1638351198",
     contracts: {
       ethereum: "0x6ff952aef0c0f7c7e20cc396b798daddf6561f18",
     },
@@ -84830,16 +84693,6 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "2goshi",
-    symbol: "2goshi",
-    name: "2GoShi",
-    image:
-      "https://assets.coingecko.com/coins/images/15148/large/2goshi_logo.jpg?1619887371",
-    contracts: {
-      "binance-smart-chain": "0x70e132641d6f1bd787b119a289fee544fbb2f316",
-    },
-  },
-  {
     id: "puglife",
     symbol: "pugl",
     name: "PugLife",
@@ -84847,6 +84700,16 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/16105/large/puglife.png?1625756103",
     contracts: {
       ethereum: "0xdb69c3f8977f78952303987e87153c1988cf65a9",
+    },
+  },
+  {
+    id: "2goshi",
+    symbol: "2goshi",
+    name: "2GoShi",
+    image:
+      "https://assets.coingecko.com/coins/images/15148/large/2goshi_logo.jpg?1619887371",
+    contracts: {
+      "binance-smart-chain": "0x70e132641d6f1bd787b119a289fee544fbb2f316",
     },
   },
   {
@@ -85003,16 +84866,6 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "anti-lockdown",
-    symbol: "free",
-    name: "Anti-Lockdown",
-    image:
-      "https://assets.coingecko.com/coins/images/15204/large/FREE.jpg?1620097136",
-    contracts: {
-      ethereum: "0xc2bd7a597391f31d2e36c2cb769fce0e5bd6d482",
-    },
-  },
-  {
     id: "safedog-protocol",
     symbol: "safedog",
     name: "Safedog Protocol",
@@ -85023,13 +84876,13 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "zafira",
-    symbol: "zfai",
-    name: "Zafira",
+    id: "anti-lockdown",
+    symbol: "free",
+    name: "Anti-Lockdown",
     image:
-      "https://assets.coingecko.com/coins/images/18773/large/UGjd_h40_400x400.jpg?1633393158",
+      "https://assets.coingecko.com/coins/images/15204/large/FREE.jpg?1620097136",
     contracts: {
-      "binance-smart-chain": "0x205cd59eea8e8c5083f16d20e1050fd4a7d72037",
+      ethereum: "0xc2bd7a597391f31d2e36c2cb769fce0e5bd6d482",
     },
   },
   {
@@ -85040,6 +84893,16 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/19167/large/zaif.PNG?1634603629",
     contracts: {
       "binance-smart-chain": "0x280c3fc949b1a1d7a470067ca6f7b48b3cb219c5",
+    },
+  },
+  {
+    id: "zafira",
+    symbol: "zfai",
+    name: "Zafira",
+    image:
+      "https://assets.coingecko.com/coins/images/18773/large/UGjd_h40_400x400.jpg?1633393158",
+    contracts: {
+      "binance-smart-chain": "0x205cd59eea8e8c5083f16d20e1050fd4a7d72037",
     },
   },
   {
@@ -85584,16 +85447,6 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "utopia-2",
-    symbol: "UTOPIA",
-    name: "Utopia",
-    image:
-      "https://assets.coingecko.com/coins/images/18886/large/UtopiaCGLogo.png?1636636982",
-    contracts: {
-      "binance-smart-chain": "0x1a1d7c7a92e8d7f0de10ae532ecd9f63b7eaf67c",
-    },
-  },
-  {
     id: "green-flow",
     symbol: "grc",
     name: "Green Flow",
@@ -85601,6 +85454,16 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/18376/large/Untitled-design-2-removebg-preview.png?1631692214",
     contracts: {
       ethereum: "0x46d886887b6908183032c75dee1b731b26d653c6",
+    },
+  },
+  {
+    id: "utopia-2",
+    symbol: "UTOPIA",
+    name: "Utopia",
+    image:
+      "https://assets.coingecko.com/coins/images/18886/large/UtopiaCGLogo.png?1636636982",
+    contracts: {
+      "binance-smart-chain": "0x1a1d7c7a92e8d7f0de10ae532ecd9f63b7eaf67c",
     },
   },
   {
@@ -86185,6 +86048,14 @@ export const tokens: TokenD[] = [
     contracts: {},
   },
   {
+    id: "kala",
+    symbol: "kala",
+    name: "Kala",
+    image:
+      "https://assets.coingecko.com/coins/images/2043/large/JBEOkcx8_400x400.jpg?1622283469",
+    contracts: {},
+  },
+  {
     id: "pampther",
     symbol: "pampther",
     name: "Pampther",
@@ -86193,14 +86064,6 @@ export const tokens: TokenD[] = [
     contracts: {
       "binance-smart-chain": "0xaf6f4e5430f6739f85a1863434a17b9fcd4322b4",
     },
-  },
-  {
-    id: "kala",
-    symbol: "kala",
-    name: "Kala",
-    image:
-      "https://assets.coingecko.com/coins/images/2043/large/JBEOkcx8_400x400.jpg?1622283469",
-    contracts: {},
   },
   {
     id: "pamp-cc",
@@ -86273,16 +86136,6 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "peos",
-    symbol: "peos",
-    name: "pEOS",
-    image:
-      "https://assets.coingecko.com/coins/images/8366/large/AHBvYJJV_400x400.png?1557801507",
-    contracts: {
-      eos: null,
-    },
-  },
-  {
     id: "aqua",
     symbol: "aqua",
     name: "Aqua",
@@ -86290,6 +86143,16 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/13455/large/aqua10-white-round.png?1608712198",
     contracts: {
       ethereum: "0x7e32c8727cc19dd59a7a4d01b95ae1cbfc8f4c77",
+    },
+  },
+  {
+    id: "peos",
+    symbol: "peos",
+    name: "pEOS",
+    image:
+      "https://assets.coingecko.com/coins/images/8366/large/AHBvYJJV_400x400.png?1557801507",
+    contracts: {
+      eos: null,
     },
   },
   {
@@ -86417,7 +86280,7 @@ export const tokens: TokenD[] = [
     symbol: "4stc",
     name: "4-Stock",
     image:
-      "https://assets.coingecko.com/coins/images/18976/large/4stock.PNG?1634095435",
+      "https://assets.coingecko.com/coins/images/18976/large/4stc.png?1638181789",
     contracts: {
       "binance-smart-chain": "0x8a4840dc5975e424ec530ec88a8f27910a3cef51",
     },
@@ -86522,16 +86385,6 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "pitch-finance-token",
-    symbol: "pft",
-    name: "Pitch Finance Token",
-    image:
-      "https://assets.coingecko.com/coins/images/19180/large/Pitch_Finance_Logo_200x200.png?1634613313",
-    contracts: {
-      "binance-smart-chain": "0x8806a68bc665baaefae1f716da42a2443c15bb2f",
-    },
-  },
-  {
     id: "soft-yearn",
     symbol: "syfi",
     name: "Soft Yearn",
@@ -86539,6 +86392,16 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/12320/large/soft_yearn.png?1599094189",
     contracts: {
       ethereum: "0x322124122df407b0d0d902cb713b3714fb2e2e1f",
+    },
+  },
+  {
+    id: "pitch-finance-token",
+    symbol: "pft",
+    name: "Pitch Finance Token",
+    image:
+      "https://assets.coingecko.com/coins/images/19180/large/Pitch_Finance_Logo_200x200.png?1634613313",
+    contracts: {
+      "binance-smart-chain": "0x8806a68bc665baaefae1f716da42a2443c15bb2f",
     },
   },
   {
@@ -86633,6 +86496,14 @@ export const tokens: TokenD[] = [
     },
   },
   {
+    id: "filenet",
+    symbol: "fn",
+    name: "Filenet",
+    image:
+      "https://assets.coingecko.com/coins/images/7549/large/Rg9e22UlZhD77rd8p89E_ZPVm7lJoXxOd6ffk_wM5Ipi_pn_b-JZmTf6attfSa8oaoq4J5vPbKqbNdPd72RAbBW-fFRPBvjzMWFb2PkTUHoUXhjX4h97w0yoPEojovbsyqDwoG0eYGeI2xcKo9UsMOadELNseP15avkvOgOZp0P-2EYLkS9zM8SO3C6rUpmAd2kglalvB1nnQvG.jpg?1575926586",
+    contracts: {},
+  },
+  {
     id: "esportspro",
     symbol: "espro",
     name: "EsportsPro",
@@ -86642,14 +86513,6 @@ export const tokens: TokenD[] = [
       ethereum: "0x29c56e7cb9c840d2b2371b17e28bab44ad3c3ead",
       "binance-smart-chain": "0x5304adfd82e5a24b70fe7ac1f45fe50b1ab4cb1d",
     },
-  },
-  {
-    id: "filenet",
-    symbol: "fn",
-    name: "Filenet",
-    image:
-      "https://assets.coingecko.com/coins/images/7549/large/Rg9e22UlZhD77rd8p89E_ZPVm7lJoXxOd6ffk_wM5Ipi_pn_b-JZmTf6attfSa8oaoq4J5vPbKqbNdPd72RAbBW-fFRPBvjzMWFb2PkTUHoUXhjX4h97w0yoPEojovbsyqDwoG0eYGeI2xcKo9UsMOadELNseP15avkvOgOZp0P-2EYLkS9zM8SO3C6rUpmAd2kglalvB1nnQvG.jpg?1575926586",
-    contracts: {},
   },
   {
     id: "dogekwon-terra",
@@ -86702,6 +86565,14 @@ export const tokens: TokenD[] = [
     },
   },
   {
+    id: "spectresecuritycoin",
+    symbol: "xspc",
+    name: "SpectreSecurityCoin",
+    image:
+      "https://assets.coingecko.com/coins/images/7540/large/Spectre_Security.png?1552452689",
+    contracts: {},
+  },
+  {
     id: "genes-chain",
     symbol: "genes",
     name: "GENES Chain",
@@ -86720,14 +86591,6 @@ export const tokens: TokenD[] = [
     contracts: {
       ethereum: "0x7d2ee0a3856cffd58fb0963c0e24bf1277a0be0e",
     },
-  },
-  {
-    id: "spectresecuritycoin",
-    symbol: "xspc",
-    name: "SpectreSecurityCoin",
-    image:
-      "https://assets.coingecko.com/coins/images/7540/large/Spectre_Security.png?1552452689",
-    contracts: {},
   },
   {
     id: "beshare-token",
@@ -87104,7 +86967,7 @@ export const tokens: TokenD[] = [
     symbol: "nausicaa",
     name: "Nausicaa-Inu",
     image:
-      "https://assets.coingecko.com/coins/images/19434/large/eLqx9UL.png?1635218076",
+      "https://assets.coingecko.com/coins/images/19434/large/nausicaa.png?1638181560",
     contracts: {
       ethereum: "0xc851a9b5808c46ee93a360f1b33f7409eee5df9f",
     },
@@ -87246,16 +87109,6 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "acuity-token",
-    symbol: "acu",
-    name: "Acuity",
-    image:
-      "https://assets.coingecko.com/coins/images/12572/large/toQKnif__400x400.png?1600845704",
-    contracts: {
-      polkadot: "",
-    },
-  },
-  {
     id: "btcmoon",
     symbol: "btcm",
     name: "BTCMoon",
@@ -87263,6 +87116,16 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/1081/large/btcmoon.png?1547035045",
     contracts: {
       ethereum: "0xa9aad2dc3a8315caeee5f458b1d8edc31d8467bd",
+    },
+  },
+  {
+    id: "acuity-token",
+    symbol: "acu",
+    name: "Acuity",
+    image:
+      "https://assets.coingecko.com/coins/images/12572/large/toQKnif__400x400.png?1600845704",
+    contracts: {
+      polkadot: "",
     },
   },
   {
@@ -87627,16 +87490,6 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "stakedxem",
-    symbol: "stxem",
-    name: "stakedXEM",
-    image:
-      "https://assets.coingecko.com/coins/images/13417/large/stakedXEM_high_res.png?1608389932",
-    contracts: {
-      ethereum: "0x0c63cae5fcc2ca3dde60a35e50362220651ebec8",
-    },
-  },
-  {
     id: "stakehound",
     symbol: "stfiro",
     name: "StakedFIRO",
@@ -87644,6 +87497,16 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/12985/large/stFIRO_high_res.png?1606234476",
     contracts: {
       ethereum: "0x160b1e5aabfd70b2fc40af815014925d71ceed7e",
+    },
+  },
+  {
+    id: "stakedxem",
+    symbol: "stxem",
+    name: "stakedXEM",
+    image:
+      "https://assets.coingecko.com/coins/images/13417/large/stakedXEM_high_res.png?1608389932",
+    contracts: {
+      ethereum: "0x0c63cae5fcc2ca3dde60a35e50362220651ebec8",
     },
   },
   {
@@ -87831,16 +87694,6 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "hub-token",
-    symbol: "hub",
-    name: "Hub Token",
-    image:
-      "https://assets.coingecko.com/coins/images/13345/large/Hub-Logo-Transparent-BG-200x200_%281%29.png?1607661813",
-    contracts: {
-      ethereum: "0xba358b6f5b4c0215650444b8c30d870b55050d2d",
-    },
-  },
-  {
     id: "lil-doge-floki-token",
     symbol: "ldf",
     name: "Lil Doge Floki Token",
@@ -87851,13 +87704,13 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "basis-coin-cash",
-    symbol: "bcc",
-    name: "Basis Coin Cash",
+    id: "hub-token",
+    symbol: "hub",
+    name: "Hub Token",
     image:
-      "https://assets.coingecko.com/coins/images/13535/large/yiu47vtN_400x400.jpg?1609541472",
+      "https://assets.coingecko.com/coins/images/13345/large/Hub-Logo-Transparent-BG-200x200_%281%29.png?1607661813",
     contracts: {
-      ethereum: "0xae17f4f5ca32f77ea8e3786db7c0b2fe877ac176",
+      ethereum: "0xba358b6f5b4c0215650444b8c30d870b55050d2d",
     },
   },
   {
@@ -87868,6 +87721,16 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/13530/large/Basiscoin_Share.png?1609406623",
     contracts: {
       ethereum: "0x03066da434e5264ef0b32f787923f974a5726fdc",
+    },
+  },
+  {
+    id: "basis-coin-cash",
+    symbol: "bcc",
+    name: "Basis Coin Cash",
+    image:
+      "https://assets.coingecko.com/coins/images/13535/large/yiu47vtN_400x400.jpg?1609541472",
+    contracts: {
+      ethereum: "0xae17f4f5ca32f77ea8e3786db7c0b2fe877ac176",
     },
   },
   {
@@ -87921,16 +87784,6 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "shiwbawitch-token",
-    symbol: "shibawitch",
-    name: "SHIWBAWITCH TOKEN",
-    image:
-      "https://assets.coingecko.com/coins/images/19541/large/shibawitch.png?1635387469",
-    contracts: {
-      "binance-smart-chain": "0x0484fbca58ad880f2232b9ef7bc1d23206236bbd",
-    },
-  },
-  {
     id: "catchy",
     symbol: "catchy",
     name: "Catchy",
@@ -87938,6 +87791,16 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/20252/large/Catchy-200x200.png?1636701403",
     contracts: {
       "binance-smart-chain": "0x2789604fe261adc1aed3927f41277d8bffe33c36",
+    },
+  },
+  {
+    id: "shiwbawitch-token",
+    symbol: "shibawitch",
+    name: "SHIWBAWITCH TOKEN",
+    image:
+      "https://assets.coingecko.com/coins/images/19541/large/shibawitch.png?1635387469",
+    contracts: {
+      "binance-smart-chain": "0x0484fbca58ad880f2232b9ef7bc1d23206236bbd",
     },
   },
   {
@@ -88041,16 +87904,6 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "zilwall",
-    symbol: "zwall",
-    name: "ZilWall",
-    image:
-      "https://assets.coingecko.com/coins/images/19477/large/4U3lsZWG_400x400_%281%29.jpg?1635282713",
-    contracts: {
-      zilliqa: "zil1xswavlggsqmkd9kddcp0ulceqm9ht36gqkt8ua",
-    },
-  },
-  {
     id: "zilwall-paint",
     symbol: "zpaint",
     name: "ZilWall Paint",
@@ -88058,6 +87911,16 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/19472/large/4U3lsZWG_400x400.jpg?1635281734",
     contracts: {
       zilliqa: "zil1qldr63ds7yuspqcf02263y2lctmtqmr039vrht",
+    },
+  },
+  {
+    id: "zilwall",
+    symbol: "zwall",
+    name: "ZilWall",
+    image:
+      "https://assets.coingecko.com/coins/images/19477/large/4U3lsZWG_400x400_%281%29.jpg?1635282713",
+    contracts: {
+      zilliqa: "zil1xswavlggsqmkd9kddcp0ulceqm9ht36gqkt8ua",
     },
   },
   {
@@ -88071,16 +87934,6 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "fungie-dao",
-    symbol: "fng",
-    name: "Fungie DAO",
-    image:
-      "https://assets.coingecko.com/coins/images/18305/large/Fungie-DAO.png?1631507548",
-    contracts: {
-      "binance-smart-chain": "0x8918bb91882ce41d9d9892246e4b56e4571a9fd5",
-    },
-  },
-  {
     id: "astrofarms",
     symbol: "leo",
     name: "AstroFarms",
@@ -88088,6 +87941,16 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/18079/large/LEO.jpg?1630392995",
     contracts: {
       "polygon-pos": "0xbe8dab8ce8521ecfde43a8ff8d5c6644f4dcecb7",
+    },
+  },
+  {
+    id: "fungie-dao",
+    symbol: "fng",
+    name: "Fungie DAO",
+    image:
+      "https://assets.coingecko.com/coins/images/18305/large/Fungie-DAO.png?1631507548",
+    contracts: {
+      "binance-smart-chain": "0x8918bb91882ce41d9d9892246e4b56e4571a9fd5",
     },
   },
   {
@@ -88233,16 +88096,6 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "kronobit",
-    symbol: "knb",
-    name: "Kronobit",
-    image:
-      "https://assets.coingecko.com/coins/images/18083/large/knb.png?1635004717",
-    contracts: {
-      "binance-smart-chain": "0x197dc4bfc82ad08e3fbaa930a869485236e6a792",
-    },
-  },
-  {
     id: "god-shiba-token",
     symbol: "gshib",
     name: "God Shiba Token",
@@ -88250,6 +88103,16 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/19815/large/C9dZz9tW_400x400_%281%29.jpg?1635924802",
     contracts: {
       "binance-smart-chain": "0xe38928cd467ad7347465048b3637893124187d02",
+    },
+  },
+  {
+    id: "kronobit",
+    symbol: "knb",
+    name: "Kronobit",
+    image:
+      "https://assets.coingecko.com/coins/images/18083/large/knb.png?1635004717",
+    contracts: {
+      "binance-smart-chain": "0x197dc4bfc82ad08e3fbaa930a869485236e6a792",
     },
   },
   {
@@ -88343,16 +88206,6 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "noa-play",
-    symbol: "noa",
-    name: "NOA PLAY",
-    image:
-      "https://assets.coingecko.com/coins/images/15723/large/XHFjmBTx_400x400.png?1621635644",
-    contracts: {
-      ethereum: "0x0fd3822072ad001aac1c90a09d9506f097f24458",
-    },
-  },
-  {
     id: "sad-cat-token",
     symbol: "scat",
     name: "Sad Cat Token",
@@ -88360,6 +88213,16 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/14390/large/sadcat_icon.png?1615967385",
     contracts: {
       ethereum: "0x8424c5ac326834b404742de0067bcb654e86be30",
+    },
+  },
+  {
+    id: "noa-play",
+    symbol: "noa",
+    name: "NOA PLAY",
+    image:
+      "https://assets.coingecko.com/coins/images/15723/large/XHFjmBTx_400x400.png?1621635644",
+    contracts: {
+      ethereum: "0x0fd3822072ad001aac1c90a09d9506f097f24458",
     },
   },
   {
@@ -88371,16 +88234,6 @@ export const tokens: TokenD[] = [
     contracts: {},
   },
   {
-    id: "pixiu-finance",
-    symbol: "pixiu",
-    name: "Pixiu Finance",
-    image:
-      "https://assets.coingecko.com/coins/images/17297/large/pixiu_picture_.png?1627264684",
-    contracts: {
-      ethereum: "0x37a15c92e67686aa268df03d4c881a76340907e8",
-    },
-  },
-  {
     id: "ally",
     symbol: "aly",
     name: "Ally",
@@ -88388,6 +88241,16 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/9619/large/BTf_sTXi_400x400.jpg?1569854715",
     contracts: {
       ethereum: "0xf2cdf38e24738ba379ffa38d47bc88a941df5627",
+    },
+  },
+  {
+    id: "pixiu-finance",
+    symbol: "pixiu",
+    name: "Pixiu Finance",
+    image:
+      "https://assets.coingecko.com/coins/images/17297/large/pixiu_picture_.png?1627264684",
+    contracts: {
+      ethereum: "0x37a15c92e67686aa268df03d4c881a76340907e8",
     },
   },
   {
@@ -88777,16 +88640,6 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "arbidoge",
-    symbol: "adoge",
-    name: "ArbiDoge",
-    image:
-      "https://assets.coingecko.com/coins/images/18333/large/Screen-Shot-2021-09-04-at-11-59-16-AM.png?1631584395",
-    contracts: {
-      "arbitrum-one": "0x155f0dd04424939368972f4e1838687d6a831151",
-    },
-  },
-  {
     id: "1tronic",
     symbol: "1trc",
     name: "1TRONIC",
@@ -88794,6 +88647,16 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/17118/large/1tronic-logo_cg.png?1629464465",
     contracts: {
       "binance-smart-chain": "0x97300a4f628701672096460b5469c41a8d3ecb1a",
+    },
+  },
+  {
+    id: "arbidoge",
+    symbol: "adoge",
+    name: "ArbiDoge",
+    image:
+      "https://assets.coingecko.com/coins/images/18333/large/Screen-Shot-2021-09-04-at-11-59-16-AM.png?1631584395",
+    contracts: {
+      "arbitrum-one": "0x155f0dd04424939368972f4e1838687d6a831151",
     },
   },
   {
@@ -88815,6 +88678,14 @@ export const tokens: TokenD[] = [
     },
   },
   {
+    id: "hash-bridge-oracle",
+    symbol: "hbo",
+    name: "Hash Bridge Oracle",
+    image:
+      "https://assets.coingecko.com/coins/images/14034/large/hashbridge.png?1613947049",
+    contracts: {},
+  },
+  {
     id: "bito-coin",
     symbol: "bito",
     name: "BITO Coin",
@@ -88823,14 +88694,6 @@ export const tokens: TokenD[] = [
     contracts: {
       ethereum: "0x93b1e78a3e652cd2e71c4a767595b77282344932",
     },
-  },
-  {
-    id: "hash-bridge-oracle",
-    symbol: "hbo",
-    name: "Hash Bridge Oracle",
-    image:
-      "https://assets.coingecko.com/coins/images/14034/large/hashbridge.png?1613947049",
-    contracts: {},
   },
   {
     id: "alvarenet",
@@ -88929,13 +88792,13 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "onevbtc",
-    symbol: "onevbtc",
-    name: "oneVBTC",
+    id: "onebtc",
+    symbol: "onebtc",
+    name: "oneBTC",
     image:
-      "https://assets.coingecko.com/coins/images/15104/large/logo_200_vBTC.png?1619732117",
+      "https://assets.coingecko.com/coins/images/15082/large/G9oJy1-R.png?1619660359",
     contracts: {
-      ethereum: "0x7bd198b9107496fd5cc3d7655af52f43a8edbc4c",
+      ethereum: "0xc88f47067db2e25851317a2fdae73a22c0777c37",
     },
   },
   {
@@ -88949,13 +88812,13 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "onebtc",
-    symbol: "onebtc",
-    name: "oneBTC",
+    id: "onevbtc",
+    symbol: "onevbtc",
+    name: "oneVBTC",
     image:
-      "https://assets.coingecko.com/coins/images/15082/large/G9oJy1-R.png?1619660359",
+      "https://assets.coingecko.com/coins/images/15104/large/logo_200_vBTC.png?1619732117",
     contracts: {
-      ethereum: "0xc88f47067db2e25851317a2fdae73a22c0777c37",
+      ethereum: "0x7bd198b9107496fd5cc3d7655af52f43a8edbc4c",
     },
   },
   {
@@ -89105,16 +88968,6 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "rare-pepe",
-    symbol: "rpepe",
-    name: "Rare Pepe",
-    image:
-      "https://assets.coingecko.com/coins/images/12575/large/rare_pepe_logo.png?1600856124",
-    contracts: {
-      ethereum: "0x0e9b56d2233ea2b5883861754435f9c51dbca141",
-    },
-  },
-  {
     id: "paul-token",
     symbol: "paul",
     name: "PAUL Token",
@@ -89122,6 +88975,16 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/19494/large/paul.png?1635304093",
     contracts: {
       tezos: "KT19DUSZw7mfeEATrbWVPHRrWNVbNnmfFAE6",
+    },
+  },
+  {
+    id: "rare-pepe",
+    symbol: "rpepe",
+    name: "Rare Pepe",
+    image:
+      "https://assets.coingecko.com/coins/images/12575/large/rare_pepe_logo.png?1600856124",
+    contracts: {
+      ethereum: "0x0e9b56d2233ea2b5883861754435f9c51dbca141",
     },
   },
   {
@@ -89145,14 +89008,6 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "tictalk",
-    symbol: "tic",
-    name: "TicTalk",
-    image:
-      "https://assets.coingecko.com/coins/images/8630/large/dpkl6Jq5_400x400.jpg?1559791300",
-    contracts: {},
-  },
-  {
     id: "zer-dex",
     symbol: "zdx",
     name: "Zer-Dex",
@@ -89169,6 +89024,14 @@ export const tokens: TokenD[] = [
     contracts: {
       fantom: "0x12e62ceca188e4bc266d3844781c619638eccf29",
     },
+  },
+  {
+    id: "tictalk",
+    symbol: "tic",
+    name: "TicTalk",
+    image:
+      "https://assets.coingecko.com/coins/images/8630/large/dpkl6Jq5_400x400.jpg?1559791300",
+    contracts: {},
   },
   {
     id: "dog-landing-on-the-moon",
@@ -89368,14 +89231,13 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "cforforum-token",
-    symbol: "cfo",
-    name: "Cfoforum Token",
+    id: "kombai-inu",
+    symbol: "kombai",
+    name: "Kombai Inu",
     image:
-      "https://assets.coingecko.com/coins/images/17592/large/CFO_logo_200_200px.png?1628580306",
+      "https://assets.coingecko.com/coins/images/19101/large/kombai_logo.jpg?1634461196",
     contracts: {
-      "polygon-pos": "0x0e2a70c08e884ea76116fccdc8b8be559162f08e",
-      ethereum: "0xb8981acbbf7da95a8ff6df79aab935ce63434fc8",
+      ethereum: "0x3fce6ae1f55656663ba6a5b0e0812463cf45c2ee",
     },
   },
   {
@@ -89387,13 +89249,14 @@ export const tokens: TokenD[] = [
     contracts: {},
   },
   {
-    id: "kombai-inu",
-    symbol: "kombai",
-    name: "Kombai Inu",
+    id: "cforforum-token",
+    symbol: "cfo",
+    name: "Cfoforum Token",
     image:
-      "https://assets.coingecko.com/coins/images/19101/large/kombai_logo.jpg?1634461196",
+      "https://assets.coingecko.com/coins/images/17592/large/CFO_logo_200_200px.png?1628580306",
     contracts: {
-      ethereum: "0x3fce6ae1f55656663ba6a5b0e0812463cf45c2ee",
+      "polygon-pos": "0x0e2a70c08e884ea76116fccdc8b8be559162f08e",
+      ethereum: "0xb8981acbbf7da95a8ff6df79aab935ce63434fc8",
     },
   },
   {
@@ -89746,16 +89609,6 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "gummy-bull-token",
-    symbol: "GUMMY",
-    name: "Gummy Bull Token",
-    image:
-      "https://assets.coingecko.com/coins/images/18646/large/IS_mot0y.jpg?1632754187",
-    contracts: {
-      "binance-smart-chain": "0x10d3e0c38c286a04aee44d9b01cac916b56ee05a",
-    },
-  },
-  {
     id: "onlyup",
     symbol: "$UP",
     name: "OnlyUp",
@@ -89763,6 +89616,16 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/18722/large/200-LOGO-FILE.png?1633152394",
     contracts: {
       "binance-smart-chain": "0x5e12bb6ddd9214923d6c837ddf1ffb9c90f18883",
+    },
+  },
+  {
+    id: "gummy-bull-token",
+    symbol: "GUMMY",
+    name: "Gummy Bull Token",
+    image:
+      "https://assets.coingecko.com/coins/images/18646/large/IS_mot0y.jpg?1632754187",
+    contracts: {
+      "binance-smart-chain": "0x10d3e0c38c286a04aee44d9b01cac916b56ee05a",
     },
   },
   {
@@ -89816,16 +89679,6 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "contribute",
-    symbol: "trib",
-    name: "Contribute",
-    image:
-      "https://assets.coingecko.com/coins/images/12576/large/New_logo_circle.png?1604214723",
-    contracts: {
-      ethereum: "0xe09216f1d343dd39d6aa732a08036fee48555af0",
-    },
-  },
-  {
     id: "pazzy",
     symbol: "pazzy",
     name: "Pazzy",
@@ -89833,6 +89686,16 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/13949/large/copred.png?1613205149",
     contracts: {
       ethereum: "0x74c287ad5328daca276c6a1c1f149415b12c148d",
+    },
+  },
+  {
+    id: "contribute",
+    symbol: "trib",
+    name: "Contribute",
+    image:
+      "https://assets.coingecko.com/coins/images/12576/large/New_logo_circle.png?1604214723",
+    contracts: {
+      ethereum: "0xe09216f1d343dd39d6aa732a08036fee48555af0",
     },
   },
   {
@@ -90220,6 +90083,16 @@ export const tokens: TokenD[] = [
     },
   },
   {
+    id: "prize-coin",
+    symbol: "prz",
+    name: "Prize Coin",
+    image:
+      "https://assets.coingecko.com/coins/images/17741/large/prizecoinlogo.png?1629123097",
+    contracts: {
+      tron: "TBBhEDoFpEZhF1GH6UXYMY3mc7a6ihGPSL",
+    },
+  },
+  {
     id: "solarite",
     symbol: "solarite",
     name: "Solarite",
@@ -90237,16 +90110,6 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/18965/large/84LW_JDl_400x400.jpg?1634026724",
     contracts: {
       ethereum: "0xaf43fd1cbc516229cd6dfeb04e6e9f0e34e0df8c",
-    },
-  },
-  {
-    id: "prize-coin",
-    symbol: "prz",
-    name: "Prize Coin",
-    image:
-      "https://assets.coingecko.com/coins/images/17741/large/prizecoinlogo.png?1629123097",
-    contracts: {
-      tron: "TBBhEDoFpEZhF1GH6UXYMY3mc7a6ihGPSL",
     },
   },
   {
@@ -90270,16 +90133,6 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "linfinity",
-    symbol: "lfc",
-    name: "Linfinity",
-    image:
-      "https://assets.coingecko.com/coins/images/5364/large/Linfinity-logo.jpg?1547040963",
-    contracts: {
-      ethereum: "0xe0c8087ce1a17bdd5d6c12eb52f8d7eff7791987",
-    },
-  },
-  {
     id: "codeo-token",
     symbol: "codeo",
     name: "CODEO TOKEN",
@@ -90287,6 +90140,16 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/9890/large/codeo.png?1592404070",
     contracts: {
       ethereum: "0x46b4a7d906f1a943b7744df23625e63726d79035",
+    },
+  },
+  {
+    id: "linfinity",
+    symbol: "lfc",
+    name: "Linfinity",
+    image:
+      "https://assets.coingecko.com/coins/images/5364/large/Linfinity-logo.jpg?1547040963",
+    contracts: {
+      ethereum: "0xe0c8087ce1a17bdd5d6c12eb52f8d7eff7791987",
     },
   },
   {
@@ -90354,16 +90217,6 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "pumpkin-inu",
-    symbol: "pumpkin",
-    name: "Pumpkin Inu",
-    image:
-      "https://assets.coingecko.com/coins/images/19447/large/pumpkin.png?1635236659",
-    contracts: {
-      "binance-smart-chain": "0x5619c8eaa4b45af1199c179a6ec77bceb7c38103",
-    },
-  },
-  {
     id: "8ball-finance",
     symbol: "8ball",
     name: "8Ball Finance",
@@ -90371,6 +90224,16 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/16531/large/932-ABB99-78-DF-4-DD1-A6-B7-E7-DC9-C7-DB6-E6.png?1624343328",
     contracts: {
       "polygon-pos": "0xa88b4ce79c5814fb7df5cc53a46bdf8e485168f9",
+    },
+  },
+  {
+    id: "pumpkin-inu",
+    symbol: "pumpkin",
+    name: "Pumpkin Inu",
+    image:
+      "https://assets.coingecko.com/coins/images/19447/large/pumpkin.png?1635236659",
+    contracts: {
+      "binance-smart-chain": "0x5619c8eaa4b45af1199c179a6ec77bceb7c38103",
     },
   },
   {
@@ -90629,16 +90492,6 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "r64x",
-    symbol: "r64x",
-    name: "R64X",
-    image:
-      "https://assets.coingecko.com/coins/images/15047/large/6n1esfz.png?1631268733",
-    contracts: {
-      ethereum: "0xf3110b27f481f9ac3c1ba3c54de542accb2d913c",
-    },
-  },
-  {
     id: "foreverup",
     symbol: "foreverup",
     name: "ForeverUp",
@@ -90646,6 +90499,16 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/16743/large/iBcU7sK.png?1624872315",
     contracts: {
       ethereum: "0x81afa8aca19d5693883b0b1e10ae1ccaf2f42781",
+    },
+  },
+  {
+    id: "r64x",
+    symbol: "r64x",
+    name: "R64X",
+    image:
+      "https://assets.coingecko.com/coins/images/15047/large/6n1esfz.png?1631268733",
+    contracts: {
+      ethereum: "0xf3110b27f481f9ac3c1ba3c54de542accb2d913c",
     },
   },
   {
@@ -90787,16 +90650,6 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "wenwen-eurn",
-    symbol: "eurn",
-    name: "WENWEN EURN",
-    image:
-      "https://assets.coingecko.com/coins/images/19018/large/rTuKxuC.png?1634183353",
-    contracts: {
-      ethereum: "0x96dc9e0fe87eef0b48f88d6ac541ba4f9992aac6",
-    },
-  },
-  {
     id: "wenwen-jpyn",
     symbol: "jpyn",
     name: "WENWEN JPYN",
@@ -90804,6 +90657,16 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/19016/large/YKMQO82.png?1634182934",
     contracts: {
       ethereum: "0x95e91a76f225612995043ab26a98e6a4e3e1999b",
+    },
+  },
+  {
+    id: "wenwen-eurn",
+    symbol: "eurn",
+    name: "WENWEN EURN",
+    image:
+      "https://assets.coingecko.com/coins/images/19018/large/rTuKxuC.png?1634183353",
+    contracts: {
+      ethereum: "0x96dc9e0fe87eef0b48f88d6ac541ba4f9992aac6",
     },
   },
   {
@@ -90851,7 +90714,7 @@ export const tokens: TokenD[] = [
     symbol: "obs",
     name: "Obsidium",
     image:
-      "https://assets.coingecko.com/coins/images/19499/large/Obsidium_Logo_200.png?1635305531",
+      "https://assets.coingecko.com/coins/images/19499/large/obs.png?1638344944",
     contracts: {
       "binance-smart-chain": "0xc6f509274fcc1f485644167cb911fd0c61545e6c",
     },
@@ -90984,16 +90847,6 @@ export const tokens: TokenD[] = [
     contracts: {},
   },
   {
-    id: "ifoswap-token",
-    symbol: "h2o",
-    name: "IFOSwap Token",
-    image:
-      "https://assets.coingecko.com/coins/images/18246/large/H2o.png?1631089687",
-    contracts: {
-      "binance-smart-chain": "0x97641c20355571820f591839d972ad2d38ad9f00",
-    },
-  },
-  {
     id: "minibitcoin",
     symbol: "mbtc",
     name: "MiniBitcoin",
@@ -91001,6 +90854,16 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/7180/large/logo_brown.png?1547043731",
     contracts: {
       ethereum: "0x7e8c149f70437eba6785f9059190a5b08abf03de",
+    },
+  },
+  {
+    id: "ifoswap-token",
+    symbol: "h2o",
+    name: "IFOSwap Token",
+    image:
+      "https://assets.coingecko.com/coins/images/18246/large/H2o.png?1631089687",
+    contracts: {
+      "binance-smart-chain": "0x97641c20355571820f591839d972ad2d38ad9f00",
     },
   },
   {
@@ -91204,16 +91067,6 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "bitcoin-sb",
-    symbol: "bsb",
-    name: "Bitcoin SB",
-    image:
-      "https://assets.coingecko.com/coins/images/19025/large/bsb.png?1634191848",
-    contracts: {
-      ethereum: "0xa478a13242b64629bff309125770b69f75bd77cb",
-    },
-  },
-  {
     id: "youlive-coin",
     symbol: "uc",
     name: "YouLive Coin",
@@ -91221,6 +91074,16 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/6042/large/youlive.png?1547041988",
     contracts: {
       ethereum: "0xf84df2db2c87dd650641f8904af71ebfc3dde0ea",
+    },
+  },
+  {
+    id: "bitcoin-sb",
+    symbol: "bsb",
+    name: "Bitcoin SB",
+    image:
+      "https://assets.coingecko.com/coins/images/19025/large/bsb.png?1634191848",
+    contracts: {
+      ethereum: "0xa478a13242b64629bff309125770b69f75bd77cb",
     },
   },
   {
@@ -91364,16 +91227,6 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "shiba-chocolate",
-    symbol: "shoco",
-    name: "Shiba Chocolate",
-    image:
-      "https://assets.coingecko.com/coins/images/17690/large/shoco_logo.jpg?1628931400",
-    contracts: {
-      ethereum: "0x322080dae6752ee02f2fb8850bd4a75b9f3c1371",
-    },
-  },
-  {
     id: "7plus-coin",
     symbol: "sv7",
     name: "7Plus Coin",
@@ -91381,6 +91234,16 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/14922/large/K-s1DLEA_400x400.jpg?1619059570",
     contracts: {
       ethereum: "0x676a32b50e58924effad343f1d4d3c8dd0128889",
+    },
+  },
+  {
+    id: "shiba-chocolate",
+    symbol: "shoco",
+    name: "Shiba Chocolate",
+    image:
+      "https://assets.coingecko.com/coins/images/17690/large/shoco_logo.jpg?1628931400",
+    contracts: {
+      ethereum: "0x322080dae6752ee02f2fb8850bd4a75b9f3c1371",
     },
   },
   {
@@ -91394,16 +91257,6 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "vanilla",
-    symbol: "vnl",
-    name: "Vanilla",
-    image:
-      "https://assets.coingecko.com/coins/images/14679/large/vnl_logo.jpg?1635746910",
-    contracts: {
-      ethereum: "0xbf900809f4c73e5a3476eb183d8b06a27e61f8e5",
-    },
-  },
-  {
     id: "trip-leverage-token",
     symbol: "tlt",
     name: "Trip Leverage Token",
@@ -91414,13 +91267,13 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "ghostface-shiba",
-    symbol: "gfshib",
-    name: "Ghostface Shiba",
+    id: "vanilla",
+    symbol: "vnl",
+    name: "Vanilla",
     image:
-      "https://assets.coingecko.com/coins/images/19559/large/gfshiba.jpeg?1635403539",
+      "https://assets.coingecko.com/coins/images/14679/large/vnl_logo.jpg?1635746910",
     contracts: {
-      ethereum: "0xca96dcc988ec155a30eb78f45fccb968e2ebf5fd",
+      ethereum: "0xbf900809f4c73e5a3476eb183d8b06a27e61f8e5",
     },
   },
   {
@@ -91430,6 +91283,16 @@ export const tokens: TokenD[] = [
     image:
       "https://assets.coingecko.com/coins/images/15397/large/vyndaopoolicon.png?1620713982",
     contracts: {},
+  },
+  {
+    id: "ghostface-shiba",
+    symbol: "gfshib",
+    name: "Ghostface Shiba",
+    image:
+      "https://assets.coingecko.com/coins/images/19559/large/gfshiba.jpeg?1635403539",
+    contracts: {
+      ethereum: "0xca96dcc988ec155a30eb78f45fccb968e2ebf5fd",
+    },
   },
   {
     id: "blackfisk",
@@ -91488,14 +91351,6 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "bellcoin",
-    symbol: "bell",
-    name: "Bellcoin",
-    image:
-      "https://assets.coingecko.com/coins/images/8290/large/bitcoin256.png?1557280086",
-    contracts: {},
-  },
-  {
     id: "earthchain",
     symbol: "earth",
     name: "EarthChain",
@@ -91504,6 +91359,14 @@ export const tokens: TokenD[] = [
     contracts: {
       "binance-smart-chain": "0xc5ededb242e20d3fa5ee0c4cbd4de909f22395e9",
     },
+  },
+  {
+    id: "bellcoin",
+    symbol: "bell",
+    name: "Bellcoin",
+    image:
+      "https://assets.coingecko.com/coins/images/8290/large/bitcoin256.png?1557280086",
+    contracts: {},
   },
   {
     id: "oec-bch",
@@ -91631,16 +91494,6 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "lucky-token",
-    symbol: "lucky",
-    name: "Lucky Token",
-    image:
-      "https://assets.coingecko.com/coins/images/16642/large/LuckyToken200x200.png?1624586670",
-    contracts: {
-      "binance-smart-chain": "0xe0d02c755cf7bb93772b8874b4df672a5e88041f",
-    },
-  },
-  {
     id: "rocks-idle-game",
     symbol: "rocks",
     name: "Rocks Idle Game",
@@ -91658,6 +91511,16 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/8889/large/1QdEK96k_400x400.png?1562574531",
     contracts: {
       ethereum: "0x8e87f1811de0025d2335174dbc7338a43df6d7cc",
+    },
+  },
+  {
+    id: "lucky-token",
+    symbol: "lucky",
+    name: "Lucky Token",
+    image:
+      "https://assets.coingecko.com/coins/images/16642/large/LuckyToken200x200.png?1624586670",
+    contracts: {
+      "binance-smart-chain": "0xe0d02c755cf7bb93772b8874b4df672a5e88041f",
     },
   },
   {
@@ -91721,6 +91584,14 @@ export const tokens: TokenD[] = [
     },
   },
   {
+    id: "dreamteam3",
+    symbol: "dt3",
+    name: "DreamTeam3",
+    image:
+      "https://assets.coingecko.com/coins/images/7839/large/1-DT3-new.png?1554887917",
+    contracts: {},
+  },
+  {
     id: "africa-trading-chain",
     symbol: "att",
     name: "Africa Trading Chain",
@@ -91729,14 +91600,6 @@ export const tokens: TokenD[] = [
     contracts: {
       tron: "TVwXxvyYawS21PT1B7XZxBZCMbQZLUENoE",
     },
-  },
-  {
-    id: "dreamteam3",
-    symbol: "dt3",
-    name: "DreamTeam3",
-    image:
-      "https://assets.coingecko.com/coins/images/7839/large/1-DT3-new.png?1554887917",
-    contracts: {},
   },
   {
     id: "mud-guild-game",
@@ -91749,16 +91612,6 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "bdollar-share",
-    symbol: "sbdo",
-    name: "bDollar Share",
-    image:
-      "https://assets.coingecko.com/coins/images/13511/large/bdollar-sbdo.png?1609281302",
-    contracts: {
-      "binance-smart-chain": "0x0d9319565be7f53cefe84ad201be3f40feae2740",
-    },
-  },
-  {
     id: "bdollar",
     symbol: "bdo",
     name: "bDollar",
@@ -91766,6 +91619,16 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/13487/large/bdollar-yellow.png?1609291587",
     contracts: {
       "binance-smart-chain": "0x190b589cf9fb8ddeabbfeae36a813ffb2a702454",
+    },
+  },
+  {
+    id: "bdollar-share",
+    symbol: "sbdo",
+    name: "bDollar Share",
+    image:
+      "https://assets.coingecko.com/coins/images/13511/large/bdollar-sbdo.png?1609281302",
+    contracts: {
+      "binance-smart-chain": "0x0d9319565be7f53cefe84ad201be3f40feae2740",
     },
   },
   {
@@ -91829,16 +91692,6 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "ecoreal-estate",
-    symbol: "ecoreal",
-    name: "Ecoreal Estate",
-    image:
-      "https://assets.coingecko.com/coins/images/6431/large/ecoreal-estate.png?1547224672",
-    contracts: {
-      ethereum: "0xb052f8a33d8bb068414eade06af6955199f9f010",
-    },
-  },
-  {
     id: "syndex",
     symbol: "synd",
     name: "SynDEX",
@@ -91846,6 +91699,16 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/16112/large/syndex.JPG?1623026844",
     contracts: {
       "binance-smart-chain": "0xe2fd51755e84d01d865e869f284ae03c995f8f2c",
+    },
+  },
+  {
+    id: "ecoreal-estate",
+    symbol: "ecoreal",
+    name: "Ecoreal Estate",
+    image:
+      "https://assets.coingecko.com/coins/images/6431/large/ecoreal-estate.png?1547224672",
+    contracts: {
+      ethereum: "0xb052f8a33d8bb068414eade06af6955199f9f010",
     },
   },
   {
@@ -92087,16 +91950,6 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "shokky",
-    symbol: "shokky",
-    name: "SHOKKY",
-    image:
-      "https://assets.coingecko.com/coins/images/19797/large/shokky.jpeg?1635908024",
-    contracts: {
-      ethereum: "0xb02db7bd0cbc93a31f3c92349b4a206368174fc0",
-    },
-  },
-  {
     id: "community-coin-token",
     symbol: "cmc",
     name: "Community Coin",
@@ -92104,6 +91957,16 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/18078/large/logocmc200x200.png?1630392156",
     contracts: {
       "binance-smart-chain": "0x2881a6bd504e323f70159d032f89374222e40d22",
+    },
+  },
+  {
+    id: "shokky",
+    symbol: "shokky",
+    name: "SHOKKY",
+    image:
+      "https://assets.coingecko.com/coins/images/19797/large/shokky.jpeg?1635908024",
+    contracts: {
+      ethereum: "0xb02db7bd0cbc93a31f3c92349b4a206368174fc0",
     },
   },
   {
@@ -92117,6 +91980,14 @@ export const tokens: TokenD[] = [
     },
   },
   {
+    id: "sprink",
+    symbol: "sprink",
+    name: "Sprink",
+    image:
+      "https://assets.coingecko.com/coins/images/14345/large/sprink200_200.png?1615503800",
+    contracts: {},
+  },
+  {
     id: "khalifa-finance",
     symbol: "khalifa",
     name: "Khalifa Finance",
@@ -92124,16 +91995,6 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/18944/large/khalifa.png?1635737585",
     contracts: {
       "binance-smart-chain": "0xdae7238a7e83b439673a7900fa3bae2108c6ec12",
-    },
-  },
-  {
-    id: "shitcoin",
-    symbol: "shit",
-    name: "ShitCoin",
-    image:
-      "https://assets.coingecko.com/coins/images/9472/large/ShitCoin_200x200.png?1567723695",
-    contracts: {
-      ethereum: "0xaa7fb1c8ce6f18d4fd4aabb61a2193d4d441c54f",
     },
   },
   {
@@ -92145,12 +92006,14 @@ export const tokens: TokenD[] = [
     contracts: {},
   },
   {
-    id: "sprink",
-    symbol: "sprink",
-    name: "Sprink",
+    id: "shitcoin",
+    symbol: "shit",
+    name: "ShitCoin",
     image:
-      "https://assets.coingecko.com/coins/images/14345/large/sprink200_200.png?1615503800",
-    contracts: {},
+      "https://assets.coingecko.com/coins/images/9472/large/ShitCoin_200x200.png?1567723695",
+    contracts: {
+      ethereum: "0xaa7fb1c8ce6f18d4fd4aabb61a2193d4d441c54f",
+    },
   },
   {
     id: "yuno-finance",
@@ -92179,16 +92042,6 @@ export const tokens: TokenD[] = [
     image:
       "https://assets.coingecko.com/coins/images/11171/large/cjODcRd.png?1589439645",
     contracts: {},
-  },
-  {
-    id: "edumetrix-coin",
-    symbol: "emc",
-    name: "EduMetrix Coin",
-    image:
-      "https://assets.coingecko.com/coins/images/12909/large/Coin_PNG.png?1603421187",
-    contracts: {
-      ethereum: "0x0a425122852ed351946a828b348bfdcda51effd8",
-    },
   },
   {
     id: "polyvertex",
@@ -92267,6 +92120,16 @@ export const tokens: TokenD[] = [
     },
   },
   {
+    id: "shikokuaido",
+    symbol: "shokk",
+    name: "Shikokuaido",
+    image:
+      "https://assets.coingecko.com/coins/images/15437/large/icon.jpg?1620801547",
+    contracts: {
+      ethereum: "0xec0bf0e934d092d31e769e8c9722ffbaa582db3b",
+    },
+  },
+  {
     id: "gma",
     symbol: "gma",
     name: "GMA",
@@ -92283,16 +92146,6 @@ export const tokens: TokenD[] = [
     image:
       "https://assets.coingecko.com/coins/images/12272/large/52787746.png?1598655013",
     contracts: {},
-  },
-  {
-    id: "shikokuaido",
-    symbol: "shokk",
-    name: "Shikokuaido",
-    image:
-      "https://assets.coingecko.com/coins/images/15437/large/icon.jpg?1620801547",
-    contracts: {
-      ethereum: "0xec0bf0e934d092d31e769e8c9722ffbaa582db3b",
-    },
   },
   {
     id: "mintswap",
@@ -92345,16 +92198,6 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "pantheon-x",
-    symbol: "xpn",
-    name: "PANTHEON X",
-    image:
-      "https://assets.coingecko.com/coins/images/8297/large/Hr9wHItp_400x400.jpg?1557307478",
-    contracts: {
-      ethereum: "0x3b9e094d56103611f0acefdab43182347ba60df4",
-    },
-  },
-  {
     id: "polymoon",
     symbol: "polymoon",
     name: "PolyMoon",
@@ -92362,6 +92205,16 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/15299/large/polymoon.png?1620368228",
     contracts: {
       "polygon-pos": "0xefb3009ddac87e8144803d78e235e7fb4cd36e61",
+    },
+  },
+  {
+    id: "pantheon-x",
+    symbol: "xpn",
+    name: "PANTHEON X",
+    image:
+      "https://assets.coingecko.com/coins/images/8297/large/Hr9wHItp_400x400.jpg?1557307478",
+    contracts: {
+      ethereum: "0x3b9e094d56103611f0acefdab43182347ba60df4",
     },
   },
   {
@@ -92393,13 +92246,13 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "mkreth-1x-short",
-    symbol: "mkrethdoom",
-    name: "MKRETH 1x Short",
+    id: "linketh-2x-token",
+    symbol: "linkethmoon",
+    name: "LINKETH 2x Token",
     image:
-      "https://assets.coingecko.com/coins/images/20055/large/beverage-ethmkr.png?1636444713",
+      "https://assets.coingecko.com/coins/images/20039/large/beverage-linketh.png?1636424995",
     contracts: {
-      ethereum: "0x030ed557a0775e110394c1a543f3eb181aeea05f",
+      ethereum: "0x70cdd88638cb569f1ae1d4bd3529cc7fb331cbab",
     },
   },
   {
@@ -92413,6 +92266,16 @@ export const tokens: TokenD[] = [
     },
   },
   {
+    id: "mkreth-1x-short",
+    symbol: "mkrethdoom",
+    name: "MKRETH 1x Short",
+    image:
+      "https://assets.coingecko.com/coins/images/20055/large/beverage-ethmkr.png?1636444713",
+    contracts: {
+      ethereum: "0x030ed557a0775e110394c1a543f3eb181aeea05f",
+    },
+  },
+  {
     id: "ethbtc-2x-long-token",
     symbol: "ethbtcmoon",
     name: "ETHBTC 2x Long Token",
@@ -92423,13 +92286,13 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "linketh-2x-token",
-    symbol: "linkethmoon",
-    name: "LINKETH 2x Token",
+    id: "akira",
+    symbol: "akira",
+    name: "Akira",
     image:
-      "https://assets.coingecko.com/coins/images/20039/large/beverage-linketh.png?1636424995",
+      "https://assets.coingecko.com/coins/images/19322/large/akira_logo.png?1635073081",
     contracts: {
-      ethereum: "0x70cdd88638cb569f1ae1d4bd3529cc7fb331cbab",
+      ethereum: "0x06ef980d0423c096da3d3884c071372f2206306d",
     },
   },
   {
@@ -92439,16 +92302,6 @@ export const tokens: TokenD[] = [
     image:
       "https://assets.coingecko.com/coins/images/11580/large/cash-200x200.png?1591318270",
     contracts: {},
-  },
-  {
-    id: "akira",
-    symbol: "akira",
-    name: "Akira",
-    image:
-      "https://assets.coingecko.com/coins/images/19322/large/akira_logo.png?1635073081",
-    contracts: {
-      ethereum: "0x06ef980d0423c096da3d3884c071372f2206306d",
-    },
   },
   {
     id: "doren",
@@ -92491,16 +92344,6 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "ubiquity-algorithmic-dollar",
-    symbol: "uad",
-    name: "Ubiquity Algorithmic Dollar",
-    image:
-      "https://assets.coingecko.com/coins/images/19264/large/Screenshot_2021-10-21_at_8.30.40_PM.png?1634819623",
-    contracts: {
-      ethereum: "0x0f644658510c95cb46955e55d7ba9dda9e9fbec6",
-    },
-  },
-  {
     id: "ubiquity",
     symbol: "ubq",
     name: "Ubiquity",
@@ -92508,6 +92351,16 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/19257/large/_0094-UBQY__UBQ-256.png?1636385190",
     contracts: {
       ethereum: "0x4e38d89362f7e5db0096ce44ebd021c3962aa9a0",
+    },
+  },
+  {
+    id: "ubiquity-algorithmic-dollar",
+    symbol: "uad",
+    name: "Ubiquity Algorithmic Dollar",
+    image:
+      "https://assets.coingecko.com/coins/images/19264/large/Screenshot_2021-10-21_at_8.30.40_PM.png?1634819623",
+    contracts: {
+      ethereum: "0x0f644658510c95cb46955e55d7ba9dda9e9fbec6",
     },
   },
   {
@@ -92558,14 +92411,6 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "safe-seafood-coin",
-    symbol: "ssf",
-    name: "Safe SeaFood Coin",
-    image:
-      "https://assets.coingecko.com/coins/images/9640/large/SSFLOGO.png?1570138756",
-    contracts: {},
-  },
-  {
     id: "storichain-token",
     symbol: "tori",
     name: "Storichain Token",
@@ -92574,6 +92419,14 @@ export const tokens: TokenD[] = [
     contracts: {
       ethereum: "0xc71e20e54adfc415f79bf0a8f11122917920050e",
     },
+  },
+  {
+    id: "safe-seafood-coin",
+    symbol: "ssf",
+    name: "Safe SeaFood Coin",
+    image:
+      "https://assets.coingecko.com/coins/images/9640/large/SSFLOGO.png?1570138756",
+    contracts: {},
   },
   {
     id: "lumi-credits",
@@ -92682,16 +92535,6 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "bored-museum",
-    symbol: "bored",
-    name: "Bored Museum",
-    image:
-      "https://assets.coingecko.com/coins/images/17911/large/logo_transparent-01.png?1629776364",
-    contracts: {
-      ethereum: "0xfac917971ce50849502022b40aa8a12843f022c0",
-    },
-  },
-  {
     id: "bored-ark",
     symbol: "bark",
     name: "Bored Ark",
@@ -92699,6 +92542,16 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/18169/large/bark.PNG?1630887963",
     contracts: {
       ethereum: "0x4a1d0c737748305ad12f59157f0c17c2f6f31c8b",
+    },
+  },
+  {
+    id: "bored-museum",
+    symbol: "bored",
+    name: "Bored Museum",
+    image:
+      "https://assets.coingecko.com/coins/images/17911/large/logo_transparent-01.png?1629776364",
+    contracts: {
+      ethereum: "0xfac917971ce50849502022b40aa8a12843f022c0",
     },
   },
   {
@@ -92887,16 +92740,6 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "tomatotoken",
-    symbol: "tomato",
-    name: "TomatoToken",
-    image:
-      "https://assets.coingecko.com/coins/images/16723/large/Tomatotoken_Icon_200x200.png?1624849719",
-    contracts: {
-      ethereum: "0x82bd290afa5cc1b75f46822fec415e2be51d7d46",
-    },
-  },
-  {
     id: "metashib-token",
     symbol: "metashib",
     name: "MetaShib Token",
@@ -92904,6 +92747,16 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/19763/large/metashib.png?1636252136",
     contracts: {
       ethereum: "0x181c94a45ed257baf2211d4ff7e1f49a5964134a",
+    },
+  },
+  {
+    id: "tomatotoken",
+    symbol: "tomato",
+    name: "TomatoToken",
+    image:
+      "https://assets.coingecko.com/coins/images/16723/large/Tomatotoken_Icon_200x200.png?1624849719",
+    contracts: {
+      ethereum: "0x82bd290afa5cc1b75f46822fec415e2be51d7d46",
     },
   },
   {
@@ -93059,11 +92912,11 @@ export const tokens: TokenD[] = [
     contracts: {},
   },
   {
-    id: "omotenashicoin",
-    symbol: "mtns",
-    name: "OmotenashiCoin",
+    id: "voytek-bear-coin",
+    symbol: "bear",
+    name: "BEAR Coin",
     image:
-      "https://assets.coingecko.com/coins/images/9787/large/mylogo.png?1571872412",
+      "https://assets.coingecko.com/coins/images/7933/large/BEAR_oryginal_color-notransparent_.png?1599483558",
     contracts: {},
   },
   {
@@ -93077,11 +92930,11 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "voytek-bear-coin",
-    symbol: "bear",
-    name: "BEAR Coin",
+    id: "omotenashicoin",
+    symbol: "mtns",
+    name: "OmotenashiCoin",
     image:
-      "https://assets.coingecko.com/coins/images/7933/large/BEAR_oryginal_color-notransparent_.png?1599483558",
+      "https://assets.coingecko.com/coins/images/9787/large/mylogo.png?1571872412",
     contracts: {},
   },
   {
@@ -93135,16 +92988,6 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "scc",
-    symbol: "scc",
-    name: "SCC",
-    image:
-      "https://assets.coingecko.com/coins/images/10019/large/scc.png?1588748297",
-    contracts: {
-      tron: "1002670",
-    },
-  },
-  {
     id: "peaches-finance",
     symbol: "pchs",
     name: "Peaches.Finance",
@@ -93152,6 +92995,16 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/17361/large/peaches200x200.png?1627372741",
     contracts: {
       ethereum: "0xa4c6984e817c086ddc3ebaeedbdcc01469586918",
+    },
+  },
+  {
+    id: "scc",
+    symbol: "scc",
+    name: "SCC",
+    image:
+      "https://assets.coingecko.com/coins/images/10019/large/scc.png?1588748297",
+    contracts: {
+      tron: "1002670",
     },
   },
   {
@@ -93163,14 +93016,6 @@ export const tokens: TokenD[] = [
     contracts: {},
   },
   {
-    id: "oculor",
-    symbol: "ocul",
-    name: "Oculor",
-    image:
-      "https://assets.coingecko.com/coins/images/7971/large/IMG_2370.JPG?1552552875",
-    contracts: {},
-  },
-  {
     id: "tokemon",
     symbol: "tkmn",
     name: "Tokemon",
@@ -93179,6 +93024,14 @@ export const tokens: TokenD[] = [
     contracts: {
       ethereum: "0x2b5016cea1c425f915e13727f7657025de3208fe",
     },
+  },
+  {
+    id: "oculor",
+    symbol: "ocul",
+    name: "Oculor",
+    image:
+      "https://assets.coingecko.com/coins/images/7971/large/IMG_2370.JPG?1552552875",
+    contracts: {},
   },
   {
     id: "cryptoenergy",
@@ -93231,6 +93084,14 @@ export const tokens: TokenD[] = [
     },
   },
   {
+    id: "soga-project",
+    symbol: "soga",
+    name: "SOGA Project",
+    image:
+      "https://assets.coingecko.com/coins/images/8967/large/O-rsO7g2_400x400.jpg?1563336677",
+    contracts: {},
+  },
+  {
     id: "baby-shark-inu",
     symbol: "dododo",
     name: "Baby Shark Inu",
@@ -93239,14 +93100,6 @@ export const tokens: TokenD[] = [
     contracts: {
       ethereum: "0xf017df6d543904687cc17e7aec043ccbe9d85ba1",
     },
-  },
-  {
-    id: "soga-project",
-    symbol: "soga",
-    name: "SOGA Project",
-    image:
-      "https://assets.coingecko.com/coins/images/8967/large/O-rsO7g2_400x400.jpg?1563336677",
-    contracts: {},
   },
   {
     id: "bare",
@@ -93476,16 +93329,6 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "zcnox-coin",
-    symbol: "zcnox",
-    name: "ZCNOX Coin",
-    image:
-      "https://assets.coingecko.com/coins/images/10857/large/QP1B-kMg_400x400_%281%29.jpg?1585523407",
-    contracts: {
-      ethereum: "0x8b83116e05f722554e1089b9850e731ee20dd692",
-    },
-  },
-  {
     id: "cyber-doge",
     symbol: "cyberd",
     name: "Cyber Doge",
@@ -93493,6 +93336,16 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/15508/large/PdaUeMH1_400x400.png?1621097475",
     contracts: {
       ethereum: "0x481578423221a35b9358cfe5400d202d2bdc66f1",
+    },
+  },
+  {
+    id: "zcnox-coin",
+    symbol: "zcnox",
+    name: "ZCNOX Coin",
+    image:
+      "https://assets.coingecko.com/coins/images/10857/large/QP1B-kMg_400x400_%281%29.jpg?1585523407",
+    contracts: {
+      ethereum: "0x8b83116e05f722554e1089b9850e731ee20dd692",
     },
   },
   {
@@ -93514,13 +93367,13 @@ export const tokens: TokenD[] = [
     contracts: {},
   },
   {
-    id: "sakata-inu",
-    symbol: "sakata",
-    name: "Sakata Inu",
+    id: "digies-coin",
+    symbol: "digs",
+    name: "Digies Coin",
     image:
-      "https://assets.coingecko.com/coins/images/19458/large/sakata.png?1635240088",
+      "https://assets.coingecko.com/coins/images/17148/large/Digs.png?1626665918",
     contracts: {
-      ethereum: "0xcfe6f0b007e817ca0ed2f1b7581d1dea213d07ae",
+      ethereum: "0x7333cbf5b0b843b4129e234f791b0058347f671a",
     },
   },
   {
@@ -93530,6 +93383,16 @@ export const tokens: TokenD[] = [
     image:
       "https://assets.coingecko.com/coins/images/7412/large/25354097_138346030206993_1134755924546955396_n.png?1547112675",
     contracts: {},
+  },
+  {
+    id: "sakata-inu",
+    symbol: "sakata",
+    name: "Sakata Inu",
+    image:
+      "https://assets.coingecko.com/coins/images/19458/large/sakata.png?1635240088",
+    contracts: {
+      ethereum: "0xcfe6f0b007e817ca0ed2f1b7581d1dea213d07ae",
+    },
   },
   {
     id: "pamp-network",
@@ -93542,21 +93405,19 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "digies-coin",
-    symbol: "digs",
-    name: "Digies Coin",
-    image:
-      "https://assets.coingecko.com/coins/images/17148/large/Digs.png?1626665918",
-    contracts: {
-      ethereum: "0x7333cbf5b0b843b4129e234f791b0058347f671a",
-    },
-  },
-  {
     id: "cirquity",
     symbol: "cirq",
     name: "Cirquity",
     image:
       "https://assets.coingecko.com/coins/images/10739/large/CIRQUITY-ICON.png?1582778827",
+    contracts: {},
+  },
+  {
+    id: "gold-cash",
+    symbol: "gold",
+    name: "Gold Cash",
+    image:
+      "https://assets.coingecko.com/coins/images/11829/large/coin-compressed.png?1594764182",
     contracts: {},
   },
   {
@@ -93579,14 +93440,6 @@ export const tokens: TokenD[] = [
       ethereum: "0x949bed886c739f1a3273629b3320db0c5024c719",
       xdai: "0xd51e1ddd116fff9a71c1b8feeb58113afa2b4d93",
     },
-  },
-  {
-    id: "gold-cash",
-    symbol: "gold",
-    name: "Gold Cash",
-    image:
-      "https://assets.coingecko.com/coins/images/11829/large/coin-compressed.png?1594764182",
-    contracts: {},
   },
   {
     id: "meowcat",
@@ -93627,16 +93480,6 @@ export const tokens: TokenD[] = [
     contracts: {},
   },
   {
-    id: "tbc-mart-token",
-    symbol: "tmt",
-    name: "The Mart Token",
-    image:
-      "https://assets.coingecko.com/coins/images/9963/large/tmt.png?1585317430",
-    contracts: {
-      ethereum: "0x6f02055e3541dd74a1abd8692116c22ffafadc5d",
-    },
-  },
-  {
     id: "whale-coin",
     symbol: "whale",
     name: "Whale Coin",
@@ -93675,16 +93518,6 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "unoswap",
-    symbol: "unos",
-    name: "UnoSwap",
-    image:
-      "https://assets.coingecko.com/coins/images/13194/large/slazzer-edit-image.png?1606115031",
-    contracts: {
-      ethereum: "0xd18a8abed9274edbeace4b12d86a8633283435da",
-    },
-  },
-  {
     id: "simracer-coin",
     symbol: "src",
     name: "Simracer Coin",
@@ -93692,6 +93525,16 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/13027/large/SimRacer-500px.png?1604456794",
     contracts: {
       ethereum: "0x16587cf43f044aba0165ffa00acf412631194e4b",
+    },
+  },
+  {
+    id: "unoswap",
+    symbol: "unos",
+    name: "UnoSwap",
+    image:
+      "https://assets.coingecko.com/coins/images/13194/large/slazzer-edit-image.png?1606115031",
+    contracts: {
+      ethereum: "0xd18a8abed9274edbeace4b12d86a8633283435da",
     },
   },
   {
@@ -93869,16 +93712,6 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "feedeveryshiba",
-    symbol: "fes",
-    name: "FeedEveryShiba",
-    image:
-      "https://assets.coingecko.com/coins/images/19685/large/13559.png?1635745947",
-    contracts: {
-      "binance-smart-chain": "0xcdfb8ddcf29a843590f5a8a212678ab38863167e",
-    },
-  },
-  {
     id: "follow-friday",
     symbol: "ff",
     name: "Follow Friday",
@@ -93886,6 +93719,16 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/20258/large/logo_200_%285%29.png?1636702199",
     contracts: {
       ethereum: "0x086c2263e17b06cb5399c997c6aef3c93f789c82",
+    },
+  },
+  {
+    id: "feedeveryshiba",
+    symbol: "fes",
+    name: "FeedEveryShiba",
+    image:
+      "https://assets.coingecko.com/coins/images/19685/large/13559.png?1635745947",
+    contracts: {
+      "binance-smart-chain": "0xcdfb8ddcf29a843590f5a8a212678ab38863167e",
     },
   },
   {
@@ -93899,6 +93742,14 @@ export const tokens: TokenD[] = [
     },
   },
   {
+    id: "zarcash",
+    symbol: "zarh",
+    name: "Zarhexcash",
+    image:
+      "https://assets.coingecko.com/coins/images/8444/large/bmdDuMV.png?1558563166",
+    contracts: {},
+  },
+  {
     id: "zigzag",
     symbol: "zag",
     name: "ZigZag",
@@ -93907,14 +93758,6 @@ export const tokens: TokenD[] = [
     contracts: {
       eos: null,
     },
-  },
-  {
-    id: "zarcash",
-    symbol: "zarh",
-    name: "Zarhexcash",
-    image:
-      "https://assets.coingecko.com/coins/images/8444/large/bmdDuMV.png?1558563166",
-    contracts: {},
   },
   {
     id: "dollar-online",
@@ -93935,19 +93778,19 @@ export const tokens: TokenD[] = [
     contracts: {},
   },
   {
-    id: "trinity",
-    symbol: "tty",
-    name: "Trinity",
-    image:
-      "https://assets.coingecko.com/coins/images/6128/large/AdeZHR8__400x400.png?1547042154",
-    contracts: {},
-  },
-  {
     id: "catscoin",
     symbol: "cats",
     name: "Catscoin",
     image:
       "https://assets.coingecko.com/coins/images/11801/large/7p50xG.png?1594361354",
+    contracts: {},
+  },
+  {
+    id: "trinity",
+    symbol: "tty",
+    name: "Trinity",
+    image:
+      "https://assets.coingecko.com/coins/images/6128/large/AdeZHR8__400x400.png?1547042154",
     contracts: {},
   },
   {
@@ -93991,14 +93834,6 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "0cash",
-    symbol: "zch",
-    name: "0cash",
-    image:
-      "https://assets.coingecko.com/coins/images/10838/large/0cash.png?1584596732",
-    contracts: {},
-  },
-  {
     id: "pollux-coin",
     symbol: "pox",
     name: "Pollux Coin",
@@ -94007,6 +93842,14 @@ export const tokens: TokenD[] = [
     contracts: {
       tron: "TMnqP8yuZrKJFXN59KoVDthkmM3LRkiZXP",
     },
+  },
+  {
+    id: "0cash",
+    symbol: "zch",
+    name: "0cash",
+    image:
+      "https://assets.coingecko.com/coins/images/10838/large/0cash.png?1584596732",
+    contracts: {},
   },
   {
     id: "payship",
@@ -94273,19 +94116,19 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "bsha3",
-    symbol: "bsha3",
-    name: "BSHA3",
-    image:
-      "https://assets.coingecko.com/coins/images/10572/large/43217235.png?1580942584",
-    contracts: {},
-  },
-  {
     id: "spots",
     symbol: "spt",
     name: "Spots",
     image:
       "https://assets.coingecko.com/coins/images/2748/large/075.png?1568352514",
+    contracts: {},
+  },
+  {
+    id: "bsha3",
+    symbol: "bsha3",
+    name: "BSHA3",
+    image:
+      "https://assets.coingecko.com/coins/images/10572/large/43217235.png?1580942584",
     contracts: {},
   },
   {
@@ -94319,6 +94162,16 @@ export const tokens: TokenD[] = [
     },
   },
   {
+    id: "gold-sonic",
+    symbol: "gsonic",
+    name: "Gold Sonic",
+    image:
+      "https://assets.coingecko.com/coins/images/19377/large/GSonic_200.png?1635137365",
+    contracts: {
+      ethereum: "0x3533a53bf6490596d97f9b39d94dbdfcf1ab3dcb",
+    },
+  },
+  {
     id: "rdctoken",
     symbol: "rdct",
     name: "RDCToken",
@@ -94334,16 +94187,6 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/19518/large/aang.jpeg?1635322633",
     contracts: {
       ethereum: "0xd655c864ddb738062819d8864951f77251ff8910",
-    },
-  },
-  {
-    id: "gold-sonic",
-    symbol: "gsonic",
-    name: "Gold Sonic",
-    image:
-      "https://assets.coingecko.com/coins/images/19377/large/GSonic_200.png?1635137365",
-    contracts: {
-      ethereum: "0x3533a53bf6490596d97f9b39d94dbdfcf1ab3dcb",
     },
   },
   {
@@ -94413,16 +94256,6 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "rijent-coin",
-    symbol: "rtc",
-    name: "Rijent Coin",
-    image:
-      "https://assets.coingecko.com/coins/images/19024/large/rijent.jpg?1634191446",
-    contracts: {
-      "binance-smart-chain": "0x75ee98694f35033d5982ace93e44d438989e003a",
-    },
-  },
-  {
     id: "looks-rare",
     symbol: "lr",
     name: "Looks Rare",
@@ -94430,6 +94263,16 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/20253/large/CGLRLOGO.png?1636701518",
     contracts: {
       ethereum: "0x30abb1a1e2913d0991bbf06dd79dfcc224361de9",
+    },
+  },
+  {
+    id: "rijent-coin",
+    symbol: "rtc",
+    name: "Rijent Coin",
+    image:
+      "https://assets.coingecko.com/coins/images/19024/large/rijent.jpg?1634191446",
+    contracts: {
+      "binance-smart-chain": "0x75ee98694f35033d5982ace93e44d438989e003a",
     },
   },
   {
@@ -94463,16 +94306,6 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "tcoin-fun",
-    symbol: "tco",
-    name: "Tcoin.fun",
-    image:
-      "https://assets.coingecko.com/coins/images/13811/large/logo200_%289%29.png?1612047833",
-    contracts: {
-      ethereum: "0x00ff902d4b2bfdbd0db38887412447c30b565aa0",
-    },
-  },
-  {
     id: "polyvolve-finance",
     symbol: "spr",
     name: "PolyVolve Finance",
@@ -94480,6 +94313,16 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/15198/large/spear.png?1620088203",
     contracts: {
       "polygon-pos": "0x9d3ad47f8ddcbca3d72b3f36671a353379309042",
+    },
+  },
+  {
+    id: "tcoin-fun",
+    symbol: "tco",
+    name: "Tcoin.fun",
+    image:
+      "https://assets.coingecko.com/coins/images/13811/large/logo200_%289%29.png?1612047833",
+    contracts: {
+      ethereum: "0x00ff902d4b2bfdbd0db38887412447c30b565aa0",
     },
   },
   {
@@ -94499,6 +94342,26 @@ export const tokens: TokenD[] = [
     image:
       "https://assets.coingecko.com/coins/images/9221/large/k9CCKIIr_200x200.jpg?1565172367",
     contracts: {},
+  },
+  {
+    id: "joker-token",
+    symbol: "joker",
+    name: "Joker Token",
+    image:
+      "https://assets.coingecko.com/coins/images/20058/large/joker.png?1636445471",
+    contracts: {
+      ethereum: "0xb1f5d869323e50d1981c88e3e5a2b720a0e4bc02",
+    },
+  },
+  {
+    id: "super-heavy-booster-4",
+    symbol: "shb4",
+    name: "Super Heavy Booster 4",
+    image:
+      "https://assets.coingecko.com/coins/images/17543/large/shb4.PNG?1628150507",
+    contracts: {
+      ethereum: "0xd0f57b427971ea60909a28648987141a81f8dc03",
+    },
   },
   {
     id: "risecointoken",
@@ -94521,26 +94384,6 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "super-heavy-booster-4",
-    symbol: "shb4",
-    name: "Super Heavy Booster 4",
-    image:
-      "https://assets.coingecko.com/coins/images/17543/large/shb4.PNG?1628150507",
-    contracts: {
-      ethereum: "0xd0f57b427971ea60909a28648987141a81f8dc03",
-    },
-  },
-  {
-    id: "joker-token",
-    symbol: "joker",
-    name: "Joker Token",
-    image:
-      "https://assets.coingecko.com/coins/images/20058/large/joker.png?1636445471",
-    contracts: {
-      ethereum: "0xb1f5d869323e50d1981c88e3e5a2b720a0e4bc02",
-    },
-  },
-  {
     id: "value-set-dollar",
     symbol: "vsd",
     name: "Value Set Dollar",
@@ -94551,13 +94394,13 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "dsys",
-    symbol: "dsys",
-    name: "DSYS",
+    id: "cryptid",
+    symbol: "cid",
+    name: "Cryptid",
     image:
-      "https://assets.coingecko.com/coins/images/10478/large/4PvxXDdP_400x400.jpg?1579844065",
+      "https://assets.coingecko.com/coins/images/11692/large/yWrCHzW.png?1592799534",
     contracts: {
-      ethereum: "0x10a34bbe9b3c5ad536ca23d5eefa81ca448e92ff",
+      ethereum: "0x4599836c212cd988eaccc54c820ee9261cdaac71",
     },
   },
   {
@@ -94571,6 +94414,16 @@ export const tokens: TokenD[] = [
     },
   },
   {
+    id: "dsys",
+    symbol: "dsys",
+    name: "DSYS",
+    image:
+      "https://assets.coingecko.com/coins/images/10478/large/4PvxXDdP_400x400.jpg?1579844065",
+    contracts: {
+      ethereum: "0x10a34bbe9b3c5ad536ca23d5eefa81ca448e92ff",
+    },
+  },
+  {
     id: "bsys",
     symbol: "bsys",
     name: "BSYS",
@@ -94578,16 +94431,6 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/11532/large/4PvxXDdP_400x400_%281%29.jpg?1590720588",
     contracts: {
       ethereum: "0x3004cf8b4e28d60f4e305df25a57cd5faf37b8d5",
-    },
-  },
-  {
-    id: "cryptid",
-    symbol: "cid",
-    name: "Cryptid",
-    image:
-      "https://assets.coingecko.com/coins/images/11692/large/yWrCHzW.png?1592799534",
-    contracts: {
-      ethereum: "0x4599836c212cd988eaccc54c820ee9261cdaac71",
     },
   },
   {
@@ -94717,19 +94560,19 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "dequant",
-    symbol: "deq",
-    name: "Dequant",
-    image:
-      "https://assets.coingecko.com/coins/images/8131/large/logo_%285%29.png?1555292338",
-    contracts: {},
-  },
-  {
     id: "cowry",
     symbol: "cow",
     name: "COWRY",
     image:
       "https://assets.coingecko.com/coins/images/8142/large/logo_size_icon.jpg?1555551236",
+    contracts: {},
+  },
+  {
+    id: "dequant",
+    symbol: "deq",
+    name: "Dequant",
+    image:
+      "https://assets.coingecko.com/coins/images/8131/large/logo_%285%29.png?1555292338",
     contracts: {},
   },
   {
@@ -94759,16 +94602,6 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "venjocoin",
-    symbol: "vjc",
-    name: "VENJOCOIN",
-    image:
-      "https://assets.coingecko.com/coins/images/8088/large/vjc-logo.jpg?1554454773",
-    contracts: {
-      ethereum: "0x5c62da804298d5972a323c80b539b8e7517a0dde",
-    },
-  },
-  {
     id: "rocket-shib",
     symbol: "rocketshib",
     name: "Rocket Shib",
@@ -94776,6 +94609,16 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/19632/large/rocketshib.jpeg?1635690442",
     contracts: {
       ethereum: "0xfa3f495366c6f986cf178e198e71794c79822243",
+    },
+  },
+  {
+    id: "venjocoin",
+    symbol: "vjc",
+    name: "VENJOCOIN",
+    image:
+      "https://assets.coingecko.com/coins/images/8088/large/vjc-logo.jpg?1554454773",
+    contracts: {
+      ethereum: "0x5c62da804298d5972a323c80b539b8e7517a0dde",
     },
   },
   {
@@ -94807,19 +94650,19 @@ export const tokens: TokenD[] = [
     contracts: {},
   },
   {
-    id: "speed-coin",
-    symbol: "speed",
-    name: "Speed Coin",
-    image:
-      "https://assets.coingecko.com/coins/images/12866/large/logo-top.png?1603163665",
-    contracts: {},
-  },
-  {
     id: "evrice",
     symbol: "evc",
     name: "Evrice",
     image:
       "https://assets.coingecko.com/coins/images/14281/large/evc-round.png?1615255180",
+    contracts: {},
+  },
+  {
+    id: "speed-coin",
+    symbol: "speed",
+    name: "Speed Coin",
+    image:
+      "https://assets.coingecko.com/coins/images/12866/large/logo-top.png?1603163665",
     contracts: {},
   },
   {
@@ -94945,16 +94788,6 @@ export const tokens: TokenD[] = [
     contracts: {},
   },
   {
-    id: "polyshiba",
-    symbol: "polyshiba",
-    name: "PolyShiba",
-    image:
-      "https://assets.coingecko.com/coins/images/15248/large/Poly-Shiba.png?1637160972",
-    contracts: {
-      "polygon-pos": "0x9240d4bfa7f1d64bec2fdc8af2f70c04aec4293b",
-    },
-  },
-  {
     id: "yfet",
     symbol: "yfet",
     name: "YFET",
@@ -94975,6 +94808,16 @@ export const tokens: TokenD[] = [
     },
   },
   {
+    id: "polyshiba",
+    symbol: "polyshiba",
+    name: "PolyShiba",
+    image:
+      "https://assets.coingecko.com/coins/images/15248/large/Poly-Shiba.png?1637160972",
+    contracts: {
+      "polygon-pos": "0x9240d4bfa7f1d64bec2fdc8af2f70c04aec4293b",
+    },
+  },
+  {
     id: "lightforge",
     symbol: "ltfg",
     name: "Lightforge",
@@ -94991,16 +94834,6 @@ export const tokens: TokenD[] = [
     contracts: {},
   },
   {
-    id: "novax-coin",
-    symbol: "nvx",
-    name: "Novax Coin",
-    image:
-      "https://assets.coingecko.com/coins/images/17144/large/logo-icon.png?1626659062",
-    contracts: {
-      tron: "TUbzQMXMRgH1vDJShnL6ik4wzPRTWPt4KW",
-    },
-  },
-  {
     id: "generation-of-yield",
     symbol: "ygy",
     name: "Generation of Yield",
@@ -95008,6 +94841,16 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/12798/large/ygycg.png?1602643175",
     contracts: {
       ethereum: "0x11b0a8c0fa626627601ed518c3538a39d92d609e",
+    },
+  },
+  {
+    id: "novax-coin",
+    symbol: "nvx",
+    name: "Novax Coin",
+    image:
+      "https://assets.coingecko.com/coins/images/17144/large/logo-icon.png?1626659062",
+    contracts: {
+      tron: "TUbzQMXMRgH1vDJShnL6ik4wzPRTWPt4KW",
     },
   },
   {
@@ -95067,13 +94910,13 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "stonkbase",
-    symbol: "sbf",
-    name: "StonkBase",
+    id: "ans-crypto-coin",
+    symbol: "ans",
+    name: "ANS Crypto Coin",
     image:
-      "https://assets.coingecko.com/coins/images/19144/large/stonkbase_32.png?1634530749",
+      "https://assets.coingecko.com/coins/images/14837/large/6a8x2wYv_400x400.png?1618612594",
     contracts: {
-      ethereum: "0x2697e0974e4fd348869d9cd414b7eaad8ee35c6e",
+      waves: "6hTRWVfibX1BmDveEtZtDZLJNWzAbDx19pky4stNM1D1",
     },
   },
   {
@@ -95087,13 +94930,13 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "ans-crypto-coin",
-    symbol: "ans",
-    name: "ANS Crypto Coin",
+    id: "stonkbase",
+    symbol: "sbf",
+    name: "StonkBase",
     image:
-      "https://assets.coingecko.com/coins/images/14837/large/6a8x2wYv_400x400.png?1618612594",
+      "https://assets.coingecko.com/coins/images/19144/large/stonkbase_32.png?1634530749",
     contracts: {
-      waves: "6hTRWVfibX1BmDveEtZtDZLJNWzAbDx19pky4stNM1D1",
+      ethereum: "0x2697e0974e4fd348869d9cd414b7eaad8ee35c6e",
     },
   },
   {
@@ -95147,16 +94990,6 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "eox",
-    symbol: "eox",
-    name: "EOX",
-    image:
-      "https://assets.coingecko.com/coins/images/13754/large/Untitled-design-5-removebg-preview.png?1611552355",
-    contracts: {
-      tron: "TFRpLKuyB3LastNZpdNkQJz8G98asXbw2B",
-    },
-  },
-  {
     id: "exgold",
     symbol: "exg",
     name: "Exgold",
@@ -95167,13 +95000,13 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "epluscoin",
-    symbol: "eplus",
-    name: "Epluscoin",
+    id: "eox",
+    symbol: "eox",
+    name: "EOX",
     image:
-      "https://assets.coingecko.com/coins/images/4741/large/epluscoin-logo.png?1547040052",
+      "https://assets.coingecko.com/coins/images/13754/large/Untitled-design-5-removebg-preview.png?1611552355",
     contracts: {
-      ethereum: "0x02e3083a51e8632e571fbd6a62ac396c10c653ba",
+      tron: "TFRpLKuyB3LastNZpdNkQJz8G98asXbw2B",
     },
   },
   {
@@ -95184,6 +95017,16 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/12395/large/Kinglog_200px.png?1599550956",
     contracts: {
       ethereum: "0x5f7fa1a0ae94b5dd6bb6bd1708b5f3af01b57908",
+    },
+  },
+  {
+    id: "epluscoin",
+    symbol: "eplus",
+    name: "Epluscoin",
+    image:
+      "https://assets.coingecko.com/coins/images/4741/large/epluscoin-logo.png?1547040052",
+    contracts: {
+      ethereum: "0x02e3083a51e8632e571fbd6a62ac396c10c653ba",
     },
   },
   {
@@ -95281,16 +95124,6 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "odop",
-    symbol: "odop",
-    name: "oDOP",
-    image:
-      "https://assets.coingecko.com/coins/images/15781/large/odop.PNG?1621843047",
-    contracts: {
-      solana: "4pk3pf9nJDN1im1kNwWJN1ThjE8pCYCTexXYGyFjqKVf",
-    },
-  },
-  {
     id: "dappatoz",
     symbol: "dcash",
     name: "Dappatoz",
@@ -95298,6 +95131,16 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/17330/large/dcash.jpeg?1627315464",
     contracts: {
       ethereum: "",
+    },
+  },
+  {
+    id: "odop",
+    symbol: "odop",
+    name: "oDOP",
+    image:
+      "https://assets.coingecko.com/coins/images/15781/large/odop.PNG?1621843047",
+    contracts: {
+      solana: "4pk3pf9nJDN1im1kNwWJN1ThjE8pCYCTexXYGyFjqKVf",
     },
   },
   {
@@ -95311,14 +95154,6 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "simplicity-coin",
-    symbol: "spl",
-    name: "Simplicity Coin",
-    image:
-      "https://assets.coingecko.com/coins/images/9973/large/simplicity_logo.png?1574317662",
-    contracts: {},
-  },
-  {
     id: "daddybezos",
     symbol: "djbz",
     name: "DaddyBezos",
@@ -95329,14 +95164,12 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "blueshare-token",
-    symbol: "bst1",
-    name: "Blueshare Token",
+    id: "simplicity-coin",
+    symbol: "spl",
+    name: "Simplicity Coin",
     image:
-      "https://assets.coingecko.com/coins/images/13071/large/blueshare-token-removebg-preview.png?1604897237",
-    contracts: {
-      ethereum: "0x336492a0601cc85e08c14d390bf07d960328aaf4",
-    },
+      "https://assets.coingecko.com/coins/images/9973/large/simplicity_logo.png?1574317662",
+    contracts: {},
   },
   {
     id: "token-of-power",
@@ -95346,6 +95179,16 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/14623/large/top.jpeg?1617279944",
     contracts: {
       ethereum: "0x0ebd5ec91680d3b0cedbb1d5bb61851154d3edb6",
+    },
+  },
+  {
+    id: "blueshare-token",
+    symbol: "bst1",
+    name: "Blueshare Token",
+    image:
+      "https://assets.coingecko.com/coins/images/13071/large/blueshare-token-removebg-preview.png?1604897237",
+    contracts: {
+      ethereum: "0x336492a0601cc85e08c14d390bf07d960328aaf4",
     },
   },
   {
@@ -95379,6 +95222,14 @@ export const tokens: TokenD[] = [
     },
   },
   {
+    id: "chesscoin-0-32",
+    symbol: "chess",
+    name: "ChessCoin 0.32%",
+    image:
+      "https://assets.coingecko.com/coins/images/12945/large/Chess_token.png?1603774403",
+    contracts: {},
+  },
+  {
     id: "starship-token",
     symbol: "stars",
     name: "StarShip Token",
@@ -95397,14 +95248,6 @@ export const tokens: TokenD[] = [
     contracts: {
       ethereum: "0x5322a3556f979ce2180b30e689a9436fddcb1021",
     },
-  },
-  {
-    id: "chesscoin-0-32",
-    symbol: "chess",
-    name: "ChessCoin 0.32%",
-    image:
-      "https://assets.coingecko.com/coins/images/12945/large/Chess_token.png?1603774403",
-    contracts: {},
   },
   {
     id: "bee-coin",
@@ -95467,14 +95310,12 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "topia",
-    symbol: "topia",
-    name: "TOPIA",
+    id: "ecodollar",
+    symbol: "ecos",
+    name: "EcoDollar",
     image:
-      "https://assets.coingecko.com/coins/images/9414/large/topia_200.png?1567030567",
-    contracts: {
-      tron: "TGpP9GPsjyq2yo4WrwSJvqYwqZLKRnSzE8",
-    },
+      "https://assets.coingecko.com/coins/images/11892/large/76924843_107011987442370_399404981838413824_o.png?1595815679",
+    contracts: {},
   },
   {
     id: "i9-coin",
@@ -95487,12 +95328,14 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "ecodollar",
-    symbol: "ecos",
-    name: "EcoDollar",
+    id: "topia",
+    symbol: "topia",
+    name: "TOPIA",
     image:
-      "https://assets.coingecko.com/coins/images/11892/large/76924843_107011987442370_399404981838413824_o.png?1595815679",
-    contracts: {},
+      "https://assets.coingecko.com/coins/images/9414/large/topia_200.png?1567030567",
+    contracts: {
+      tron: "TGpP9GPsjyq2yo4WrwSJvqYwqZLKRnSzE8",
+    },
   },
   {
     id: "peaq",
@@ -95500,6 +95343,24 @@ export const tokens: TokenD[] = [
     name: "peaq",
     image:
       "https://assets.coingecko.com/coins/images/19953/large/8GvoXgZ9_400x400.jpg?1636339027",
+    contracts: {},
+  },
+  {
+    id: "l-inu",
+    symbol: "l",
+    name: "L inu",
+    image:
+      "https://assets.coingecko.com/coins/images/19565/large/cbRZHKR.png?1635411465",
+    contracts: {
+      ethereum: "0x4cdb72fa315a7224c8da92449a4951f3daa1d362",
+    },
+  },
+  {
+    id: "ballotbox",
+    symbol: "bbx",
+    name: "Ballotbox",
+    image:
+      "https://assets.coingecko.com/coins/images/13202/large/ballotbox.png?1606192412",
     contracts: {},
   },
   {
@@ -95513,24 +95374,6 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "nitrous-finance",
-    symbol: "nos",
-    name: "Nitrous Finance",
-    image:
-      "https://assets.coingecko.com/coins/images/13994/large/nos_logo.png?1613541619",
-    contracts: {
-      ethereum: "0x7061ee0896ab2c1865078b6c91731f67a89ea6a4",
-    },
-  },
-  {
-    id: "ballotbox",
-    symbol: "bbx",
-    name: "Ballotbox",
-    image:
-      "https://assets.coingecko.com/coins/images/13202/large/ballotbox.png?1606192412",
-    contracts: {},
-  },
-  {
     id: "sorachancoin",
     symbol: "sora",
     name: "SorachanCoin",
@@ -95539,13 +95382,13 @@ export const tokens: TokenD[] = [
     contracts: {},
   },
   {
-    id: "l-inu",
-    symbol: "l",
-    name: "L inu",
+    id: "nitrous-finance",
+    symbol: "nos",
+    name: "Nitrous Finance",
     image:
-      "https://assets.coingecko.com/coins/images/19565/large/cbRZHKR.png?1635411465",
+      "https://assets.coingecko.com/coins/images/13994/large/nos_logo.png?1613541619",
     contracts: {
-      ethereum: "0x4cdb72fa315a7224c8da92449a4951f3daa1d362",
+      ethereum: "0x7061ee0896ab2c1865078b6c91731f67a89ea6a4",
     },
   },
   {
@@ -95709,16 +95552,6 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "gameonetoken",
-    symbol: "GameOne",
-    name: "GameoneToken",
-    image:
-      "https://assets.coingecko.com/coins/images/18934/large/GFpV-u_-_400x400.jpg?1633945662",
-    contracts: {
-      ethereum: "0x358286b9573e76d44a78948341e2ab5f69cfac3a",
-    },
-  },
-  {
     id: "shiba-cosmos",
     symbol: "shibco",
     name: "Shiba Cosmos",
@@ -95726,6 +95559,16 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/15509/large/zkJObpDk_400x400.jpg?1621098100",
     contracts: {
       ethereum: "0xc5c43ad81e6c76eaa1f2dd92cb6a11ff6b6d09ea",
+    },
+  },
+  {
+    id: "gameonetoken",
+    symbol: "GameOne",
+    name: "GameoneToken",
+    image:
+      "https://assets.coingecko.com/coins/images/18934/large/GFpV-u_-_400x400.jpg?1633945662",
+    contracts: {
+      ethereum: "0x358286b9573e76d44a78948341e2ab5f69cfac3a",
     },
   },
   {
@@ -95746,16 +95589,6 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/8378/large/61B3F6DFA9584DDAA760E74B12D6FAD3.png?1557823748",
     contracts: {
       ethereum: "0x3c76ef53be46ed2e9be224e8f0b92e8acbc24ea0",
-    },
-  },
-  {
-    id: "holdtowin",
-    symbol: "7add",
-    name: "Holdtowin",
-    image:
-      "https://assets.coingecko.com/coins/images/13213/large/logo256_%281%29.png?1606276280",
-    contracts: {
-      ethereum: "0xed36482c7f8e5850e91ac0cf6bf2130a1aa2df92",
     },
   },
   {
@@ -95845,14 +95678,6 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "mttcoin",
-    symbol: "mttcoin",
-    name: "MTTCoin",
-    image:
-      "https://assets.coingecko.com/coins/images/13228/large/mtt.png?1606445355",
-    contracts: {},
-  },
-  {
     id: "project-dogex",
     symbol: "dogex",
     name: "Project DogeX",
@@ -95863,11 +95688,11 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "antra",
-    symbol: "antr",
-    name: "Antra",
+    id: "mttcoin",
+    symbol: "mttcoin",
+    name: "MTTCoin",
     image:
-      "https://assets.coingecko.com/coins/images/9093/large/l9aNfNW_%281%29.png?1564126768",
+      "https://assets.coingecko.com/coins/images/13228/large/mtt.png?1606445355",
     contracts: {},
   },
   {
@@ -95887,6 +95712,14 @@ export const tokens: TokenD[] = [
     contracts: {
       ethereum: "0x8811e4dd5ec5eb8764b97cc814b1339089717ada",
     },
+  },
+  {
+    id: "antra",
+    symbol: "antr",
+    name: "Antra",
+    image:
+      "https://assets.coingecko.com/coins/images/9093/large/l9aNfNW_%281%29.png?1564126768",
+    contracts: {},
   },
   {
     id: "flat-earth-token",
@@ -96007,12 +95840,14 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "heptafranc",
-    symbol: "hptf",
-    name: "HEPTAFRANC",
+    id: "wiix-coin",
+    symbol: "wxc",
+    name: "WIIX Coin",
     image:
-      "https://assets.coingecko.com/coins/images/10388/large/Heptafranc_200_x_200_.png?1578868331",
-    contracts: {},
+      "https://assets.coingecko.com/coins/images/10386/large/a2a4Vr1__400x400.jpg?1578783194",
+    contracts: {
+      ethereum: "0x86225481747c774b24c7c3bac4c1b7382f787c7f",
+    },
   },
   {
     id: "iceslush-finance",
@@ -96025,14 +95860,12 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "wiix-coin",
-    symbol: "wxc",
-    name: "WIIX Coin",
+    id: "heptafranc",
+    symbol: "hptf",
+    name: "HEPTAFRANC",
     image:
-      "https://assets.coingecko.com/coins/images/10386/large/a2a4Vr1__400x400.jpg?1578783194",
-    contracts: {
-      ethereum: "0x86225481747c774b24c7c3bac4c1b7382f787c7f",
-    },
+      "https://assets.coingecko.com/coins/images/10388/large/Heptafranc_200_x_200_.png?1578868331",
+    contracts: {},
   },
   {
     id: "k-9-inu",
@@ -96045,6 +95878,14 @@ export const tokens: TokenD[] = [
     },
   },
   {
+    id: "hashshare",
+    symbol: "hss",
+    name: "Hashshare",
+    image:
+      "https://assets.coingecko.com/coins/images/9774/large/KakaoTalk_20191027_191126349.png?1572418561",
+    contracts: {},
+  },
+  {
     id: "dipper",
     symbol: "dip",
     name: "Dipper",
@@ -96055,14 +95896,6 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "hashshare",
-    symbol: "hss",
-    name: "Hashshare",
-    image:
-      "https://assets.coingecko.com/coins/images/9774/large/KakaoTalk_20191027_191126349.png?1572418561",
-    contracts: {},
-  },
-  {
     id: "worthwhile",
     symbol: "whe",
     name: "Worthwhile",
@@ -96070,16 +95903,6 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/19056/large/whe.jpg?1634265192",
     contracts: {
       "binance-smart-chain": "0x2decb6d8789777910ca5e425370bc9b6e5eb7b9c",
-    },
-  },
-  {
-    id: "balls-health",
-    symbol: "balls",
-    name: "Balls Health",
-    image:
-      "https://assets.coingecko.com/coins/images/15961/large/balls.PNG?1622519010",
-    contracts: {
-      "binance-smart-chain": "0x06454b893dadf2bb5cc00d3cadd5905cdb6ac102",
     },
   },
   {
@@ -96101,11 +95924,11 @@ export const tokens: TokenD[] = [
     contracts: {},
   },
   {
-    id: "emoji",
-    symbol: "emoj",
-    name: "Emoji",
+    id: "bitcoinmoney",
+    symbol: "bcm",
+    name: "BitcoinMoney",
     image:
-      "https://assets.coingecko.com/coins/images/14278/large/emo_red2_300.png?1615250334",
+      "https://assets.coingecko.com/coins/images/9322/large/ZdoYrfw.png?1566256380",
     contracts: {},
   },
   {
@@ -96119,11 +95942,11 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "bitcoinmoney",
-    symbol: "bcm",
-    name: "BitcoinMoney",
+    id: "emoji",
+    symbol: "emoj",
+    name: "Emoji",
     image:
-      "https://assets.coingecko.com/coins/images/9322/large/ZdoYrfw.png?1566256380",
+      "https://assets.coingecko.com/coins/images/14278/large/emo_red2_300.png?1615250334",
     contracts: {},
   },
   {
@@ -96185,16 +96008,6 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "888-infinity",
-    symbol: "888",
-    name: "888 Infinity",
-    image:
-      "https://assets.coingecko.com/coins/images/18469/large/8QaCZIj.png?1632121687",
-    contracts: {
-      ethereum: "0xf65b639cd872217a5cf224e34e28320b06ef317f",
-    },
-  },
-  {
     id: "shill",
     symbol: "posh",
     name: "Shill",
@@ -96202,6 +96015,16 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/12548/large/alone.png?1600676559",
     contracts: {
       ethereum: "0x685aea4f02e39e5a5bb7f7117e88db1151f38364",
+    },
+  },
+  {
+    id: "888-infinity",
+    symbol: "888",
+    name: "888 Infinity",
+    image:
+      "https://assets.coingecko.com/coins/images/18469/large/8QaCZIj.png?1632121687",
+    contracts: {
+      ethereum: "0xf65b639cd872217a5cf224e34e28320b06ef317f",
     },
   },
   {
@@ -96225,19 +96048,19 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "predator-coin",
-    symbol: "prd",
-    name: "Predator Coin",
-    image:
-      "https://assets.coingecko.com/coins/images/8575/large/E099NqJx_400x400.jpg?1559293500",
-    contracts: {},
-  },
-  {
     id: "ball-coin",
     symbol: "ball",
     name: "BALL Coin",
     image:
       "https://assets.coingecko.com/coins/images/12927/large/logo.png?1603690342",
+    contracts: {},
+  },
+  {
+    id: "predator-coin",
+    symbol: "prd",
+    name: "Predator Coin",
+    image:
+      "https://assets.coingecko.com/coins/images/8575/large/E099NqJx_400x400.jpg?1559293500",
     contracts: {},
   },
   {
@@ -96259,14 +96082,6 @@ export const tokens: TokenD[] = [
     contracts: {},
   },
   {
-    id: "eazypayza",
-    symbol: "ezpay",
-    name: "EazyPayZa",
-    image:
-      "https://assets.coingecko.com/coins/images/10043/large/Screenshot_2019-12-02_at_6.24.52_AM.png?1575239110",
-    contracts: {},
-  },
-  {
     id: "yfc",
     symbol: "yfc",
     name: "YFC",
@@ -96275,6 +96090,14 @@ export const tokens: TokenD[] = [
     contracts: {
       ethereum: "0xc6ff7eac464c99ff0e1ad8bcfd0ab0cebe08c9a3",
     },
+  },
+  {
+    id: "eazypayza",
+    symbol: "ezpay",
+    name: "EazyPayZa",
+    image:
+      "https://assets.coingecko.com/coins/images/10043/large/Screenshot_2019-12-02_at_6.24.52_AM.png?1575239110",
+    contracts: {},
   },
   {
     id: "fountain",
@@ -96287,6 +96110,14 @@ export const tokens: TokenD[] = [
     },
   },
   {
+    id: "game-frag",
+    symbol: "frag",
+    name: "Game-Frag",
+    image:
+      "https://assets.coingecko.com/coins/images/16778/large/gamefrag256.png?1624949444",
+    contracts: {},
+  },
+  {
     id: "dunes",
     symbol: "dunes",
     name: "Dunes",
@@ -96295,14 +96126,6 @@ export const tokens: TokenD[] = [
     contracts: {
       ethereum: "0xcbfd3340a21694ecd3812ff6affc4dec9dc2c6dc",
     },
-  },
-  {
-    id: "game-frag",
-    symbol: "frag",
-    name: "Game-Frag",
-    image:
-      "https://assets.coingecko.com/coins/images/16778/large/gamefrag256.png?1624949444",
-    contracts: {},
   },
   {
     id: "dulcet",
@@ -96371,16 +96194,6 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "elis",
-    symbol: "xls",
-    name: "ELIS",
-    image:
-      "https://assets.coingecko.com/coins/images/13613/large/Elis-Symbol-Green.png?1610285892",
-    contracts: {
-      ethereum: "0x6c862f803ff42a97d4a483ab761256ad8c90f4f8",
-    },
-  },
-  {
     id: "blockchain-based-distributed-super-computing-platform",
     symbol: "mbcc",
     name: "Blockchain-Based Distributed Super Computing Platform",
@@ -96388,6 +96201,16 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/17328/large/mbcc.jpeg?1627314219",
     contracts: {
       ethereum: "",
+    },
+  },
+  {
+    id: "elis",
+    symbol: "xls",
+    name: "ELIS",
+    image:
+      "https://assets.coingecko.com/coins/images/13613/large/Elis-Symbol-Green.png?1610285892",
+    contracts: {
+      ethereum: "0x6c862f803ff42a97d4a483ab761256ad8c90f4f8",
     },
   },
   {
@@ -96411,16 +96234,6 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "moon-chain",
-    symbol: "mcf",
-    name: "Moon Chain",
-    image:
-      "https://assets.coingecko.com/coins/images/15516/large/eEdclDF.png?1621117656",
-    contracts: {
-      "binance-smart-chain": "0x6fc015dc3283369125cc31907eef990b8f67a7a1",
-    },
-  },
-  {
     id: "hatch-dao",
     symbol: "hatch",
     name: "Hatch DAO",
@@ -96431,13 +96244,13 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "newsolution-2-0",
-    symbol: "nste",
-    name: "NewSolution 2.0",
+    id: "moon-chain",
+    symbol: "mcf",
+    name: "Moon Chain",
     image:
-      "https://assets.coingecko.com/coins/images/19142/large/nst.jpg?1634529544",
+      "https://assets.coingecko.com/coins/images/15516/large/eEdclDF.png?1621117656",
     contracts: {
-      "binance-smart-chain": "0xd60340b120e144bcc6fd63e013f5f83c8edcf7d2",
+      "binance-smart-chain": "0x6fc015dc3283369125cc31907eef990b8f67a7a1",
     },
   },
   {
@@ -96448,6 +96261,16 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/20300/large/dct200.png?1636816972",
     contracts: {
       tron: "TUKxxRkFi21d6KnqUi7aNsbA2So91xMDFG",
+    },
+  },
+  {
+    id: "newsolution-2-0",
+    symbol: "nste",
+    name: "NewSolution 2.0",
+    image:
+      "https://assets.coingecko.com/coins/images/19142/large/nst.jpg?1634529544",
+    contracts: {
+      "binance-smart-chain": "0xd60340b120e144bcc6fd63e013f5f83c8edcf7d2",
     },
   },
   {
@@ -96491,13 +96314,13 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "kompass",
-    symbol: "komp",
-    name: "Kompass",
+    id: "case-closed",
+    symbol: "$caseclosed",
+    name: "Case Closed",
     image:
-      "https://assets.coingecko.com/coins/images/12655/large/kompass_symbol.png?1601436438",
+      "https://assets.coingecko.com/coins/images/19435/large/caseclosed200x200.png?1635218328",
     contracts: {
-      ethereum: "0x41bc0913ed789428e107c4ea9ed007815c5a8230",
+      ethereum: "0xf9dbf4ca505b7a3285dcd0b8fdb2b4229de7d238",
     },
   },
   {
@@ -96529,16 +96352,6 @@ export const tokens: TokenD[] = [
     contracts: {},
   },
   {
-    id: "stable-asset",
-    symbol: "sta",
-    name: "STABLE ASSET",
-    image:
-      "https://assets.coingecko.com/coins/images/12313/large/stable_200x200.png?1599083938",
-    contracts: {
-      ethereum: "0xd7d05bda4bf5876ba1254b3eaaf8b47d2f5676eb",
-    },
-  },
-  {
     id: "make-more-money",
     symbol: "M3C",
     name: "Make More Money",
@@ -96556,6 +96369,16 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/16821/large/justmoney-200px.png?1625176994",
     contracts: {
       tron: "TT8VkSkW6igkiRsV5WiJgLrsbVwY5bLLjA",
+    },
+  },
+  {
+    id: "stable-asset",
+    symbol: "sta",
+    name: "STABLE ASSET",
+    image:
+      "https://assets.coingecko.com/coins/images/12313/large/stable_200x200.png?1599083938",
+    contracts: {
+      ethereum: "0xd7d05bda4bf5876ba1254b3eaaf8b47d2f5676eb",
     },
   },
   {
@@ -96587,11 +96410,11 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "rocket-fund",
-    symbol: "rkt",
-    name: "Rocket Fund",
+    id: "chbt",
+    symbol: "chbt",
+    name: "CHBT",
     image:
-      "https://assets.coingecko.com/coins/images/10028/large/hxAEFPP.jpg?1574895445",
+      "https://assets.coingecko.com/coins/images/10907/large/chbt.png?1585794789",
     contracts: {},
   },
   {
@@ -96605,11 +96428,11 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "chbt",
-    symbol: "chbt",
-    name: "CHBT",
+    id: "rocket-fund",
+    symbol: "rkt",
+    name: "Rocket Fund",
     image:
-      "https://assets.coingecko.com/coins/images/10907/large/chbt.png?1585794789",
+      "https://assets.coingecko.com/coins/images/10028/large/hxAEFPP.jpg?1574895445",
     contracts: {},
   },
   {
@@ -96741,13 +96564,13 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "hplus",
-    symbol: "hplus",
-    name: "HPLUS",
+    id: "defihelper-governance-token",
+    symbol: "dfh",
+    name: "DeFiHelper Governance Token",
     image:
-      "https://assets.coingecko.com/coins/images/13859/large/HPLUS.jpg?1612409678",
+      "https://assets.coingecko.com/coins/images/20270/large/dfh-d-ava-main-cgb.png?1636706501",
     contracts: {
-      ethereum: "0xff744f2315c9d61d825b581c973576055c3da07e",
+      ethereum: "0x5f2080542ab6ae7e0b06778f0b2d263006297840",
     },
   },
   {
@@ -96761,22 +96584,14 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "defihelper-governance-token",
-    symbol: "dfh",
-    name: "DeFiHelper Governance Token",
+    id: "hplus",
+    symbol: "hplus",
+    name: "HPLUS",
     image:
-      "https://assets.coingecko.com/coins/images/20270/large/dfh-d-ava-main-cgb.png?1636706501",
+      "https://assets.coingecko.com/coins/images/13859/large/HPLUS.jpg?1612409678",
     contracts: {
-      ethereum: "0x5f2080542ab6ae7e0b06778f0b2d263006297840",
+      ethereum: "0xff744f2315c9d61d825b581c973576055c3da07e",
     },
-  },
-  {
-    id: "mrv",
-    symbol: "mrv",
-    name: "MRV",
-    image:
-      "https://assets.coingecko.com/coins/images/12102/large/rS99LT1u_400x400.jpg?1597274754",
-    contracts: {},
   },
   {
     id: "snp-token",
@@ -96787,6 +96602,14 @@ export const tokens: TokenD[] = [
     contracts: {
       ethereum: "0x795dbf627484f8248d3d6c09c309825c1563e873",
     },
+  },
+  {
+    id: "mrv",
+    symbol: "mrv",
+    name: "MRV",
+    image:
+      "https://assets.coingecko.com/coins/images/12102/large/rS99LT1u_400x400.jpg?1597274754",
+    contracts: {},
   },
   {
     id: "ror-universe",
@@ -96837,6 +96660,14 @@ export const tokens: TokenD[] = [
     },
   },
   {
+    id: "fuzzballs",
+    symbol: "fuzz",
+    name: "FuzzBalls",
+    image:
+      "https://assets.coingecko.com/coins/images/2718/large/fuzzballs.png?1547484408",
+    contracts: {},
+  },
+  {
     id: "momocash",
     symbol: "moc",
     name: "MomoCash",
@@ -96850,14 +96681,6 @@ export const tokens: TokenD[] = [
     name: "Xiropht",
     image:
       "https://assets.coingecko.com/coins/images/8995/large/37265696.png?1563525277",
-    contracts: {},
-  },
-  {
-    id: "fuzzballs",
-    symbol: "fuzz",
-    name: "FuzzBalls",
-    image:
-      "https://assets.coingecko.com/coins/images/2718/large/fuzzballs.png?1547484408",
     contracts: {},
   },
   {
@@ -96881,6 +96704,15 @@ export const tokens: TokenD[] = [
     },
   },
   {
+    id: "fluxchain",
+    symbol: "flx",
+    name: "FLUXchain",
+    image: "missing_large.png",
+    contracts: {
+      ethereum: "0x54735d716995071585a4f6ba341a6ded79756f09",
+    },
+  },
+  {
     id: "mnmcoin",
     symbol: "mnmc",
     name: "MNMCoin",
@@ -96888,15 +96720,6 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/11163/large/MNMC.png?1589280919",
     contracts: {
       ethereum: "0xf45091f25d374bbe956c0bb64bb85e02d07aa741",
-    },
-  },
-  {
-    id: "flux-token",
-    symbol: "flx",
-    name: "FLUX Token",
-    image: "missing_large.png",
-    contracts: {
-      ethereum: "0x54735d716995071585a4f6ba341a6ded79756f09",
     },
   },
   {
@@ -96950,6 +96773,16 @@ export const tokens: TokenD[] = [
     },
   },
   {
+    id: "aisf",
+    symbol: "agt",
+    name: "AISF",
+    image:
+      "https://assets.coingecko.com/coins/images/12859/large/AISF_token.jpg?1603095207",
+    contracts: {
+      ethereum: "0x8d2fab1ff34f1c545673a816f1438b02d0a2e32d",
+    },
+  },
+  {
     id: "i9x-coin",
     symbol: "i9x",
     name: "i9X Coin",
@@ -96970,16 +96803,6 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "aisf",
-    symbol: "agt",
-    name: "AISF",
-    image:
-      "https://assets.coingecko.com/coins/images/12859/large/AISF_token.jpg?1603095207",
-    contracts: {
-      ethereum: "0x8d2fab1ff34f1c545673a816f1438b02d0a2e32d",
-    },
-  },
-  {
     id: "give-global",
     symbol: "give",
     name: "Give Global",
@@ -96987,24 +96810,6 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/16070/large/give.PNG?1622767166",
     contracts: {
       ethereum: "0xba8e5a4c64c1be42230910f7b39a6388f3d4297c",
-    },
-  },
-  {
-    id: "olo",
-    symbol: "olo",
-    name: "OLO",
-    image:
-      "https://assets.coingecko.com/coins/images/13160/large/WechatIMG66.png?1605770275",
-    contracts: {},
-  },
-  {
-    id: "tits-token",
-    symbol: "tits",
-    name: "TITS Token",
-    image:
-      "https://assets.coingecko.com/coins/images/19769/large/xaTOSku.png?1635837584",
-    contracts: {
-      ethereum: "0x5831be7c2429e886013124fd119dcda7ec4c750e",
     },
   },
   {
@@ -97018,12 +96823,14 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "bittracksystems",
-    symbol: "bttr",
-    name: "BittrackSystems",
+    id: "bitroncoin",
+    symbol: "btrn",
+    name: "BitronCoin",
     image:
-      "https://assets.coingecko.com/coins/images/8188/large/bttr2001.png?1556156727",
-    contracts: {},
+      "https://assets.coingecko.com/coins/images/17134/large/bitroncoin-logo-200x200.png?1626617844",
+    contracts: {
+      tron: "",
+    },
   },
   {
     id: "rheaprotocol",
@@ -97036,13 +96843,21 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "bitroncoin",
-    symbol: "btrn",
-    name: "BitronCoin",
+    id: "bittracksystems",
+    symbol: "bttr",
+    name: "BittrackSystems",
     image:
-      "https://assets.coingecko.com/coins/images/17134/large/bitroncoin-logo-200x200.png?1626617844",
+      "https://assets.coingecko.com/coins/images/8188/large/bttr2001.png?1556156727",
+    contracts: {},
+  },
+  {
+    id: "tits-token",
+    symbol: "tits",
+    name: "TITS Token",
+    image:
+      "https://assets.coingecko.com/coins/images/19769/large/xaTOSku.png?1635837584",
     contracts: {
-      tron: "",
+      ethereum: "0x5831be7c2429e886013124fd119dcda7ec4c750e",
     },
   },
   {
@@ -97066,16 +96881,6 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "xchain-token",
-    symbol: "nxct",
-    name: "XChain Token",
-    image:
-      "https://assets.coingecko.com/coins/images/7473/large/rSDrnQ3f_400x400.jpg?1547690137",
-    contracts: {
-      ethereum: "0x41ab75435668919bb507f871dd01e9762c2d173a",
-    },
-  },
-  {
     id: "kirby-reloaded",
     symbol: "$kirbyreloaded",
     name: "Kirby Reloaded",
@@ -97086,13 +96891,13 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "littlesesame",
-    symbol: "lsc",
-    name: "Littlesesame",
+    id: "xchain-token",
+    symbol: "nxct",
+    name: "XChain Token",
     image:
-      "https://assets.coingecko.com/coins/images/8893/large/5yIumMGs_400x400.png?1562579316",
+      "https://assets.coingecko.com/coins/images/7473/large/rSDrnQ3f_400x400.jpg?1547690137",
     contracts: {
-      ethereum: "0xc77d7e0dd7b2a01b990e866feb21d031f1418c2e",
+      ethereum: "0x41ab75435668919bb507f871dd01e9762c2d173a",
     },
   },
   {
@@ -97102,6 +96907,16 @@ export const tokens: TokenD[] = [
     image:
       "https://assets.coingecko.com/coins/images/19454/large/-HoKp1Fl_400x400.jpg?1635239421",
     contracts: {},
+  },
+  {
+    id: "littlesesame",
+    symbol: "lsc",
+    name: "Littlesesame",
+    image:
+      "https://assets.coingecko.com/coins/images/8893/large/5yIumMGs_400x400.png?1562579316",
+    contracts: {
+      ethereum: "0xc77d7e0dd7b2a01b990e866feb21d031f1418c2e",
+    },
   },
   {
     id: "odin-token",
@@ -97172,16 +96987,6 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "doch-coin",
-    symbol: "dch",
-    name: "Doch Coin",
-    image:
-      "https://assets.coingecko.com/coins/images/11598/large/dzRvyTsj_400x400_%281%29.jpg?1591668799",
-    contracts: {
-      ethereum: "0x4a73e60adbb8575500ffc6aaea6128954011c8af",
-    },
-  },
-  {
     id: "oviex",
     symbol: "ovi",
     name: "Oviex",
@@ -97189,6 +96994,16 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/15235/large/oviex-token-logo.png?1620192449",
     contracts: {
       ethereum: "0x6b3760facdeb7f798cd13c0af2e4cd9ddc085122",
+    },
+  },
+  {
+    id: "doch-coin",
+    symbol: "dch",
+    name: "Doch Coin",
+    image:
+      "https://assets.coingecko.com/coins/images/11598/large/dzRvyTsj_400x400_%281%29.jpg?1591668799",
+    contracts: {
+      ethereum: "0x4a73e60adbb8575500ffc6aaea6128954011c8af",
     },
   },
   {
@@ -97286,14 +97101,6 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "trust-ether-reorigin",
-    symbol: "teo",
-    name: "Trust Ether ReOrigin",
-    image:
-      "https://assets.coingecko.com/coins/images/8427/large/TEO_512x512.png?1558418206",
-    contracts: {},
-  },
-  {
     id: "dessfi",
     symbol: "dess",
     name: "Dessfi",
@@ -97302,6 +97109,14 @@ export const tokens: TokenD[] = [
     contracts: {
       ethereum: "0x5a80b50a0420a2507e33508a93e0aa037fc90636",
     },
+  },
+  {
+    id: "trust-ether-reorigin",
+    symbol: "teo",
+    name: "Trust Ether ReOrigin",
+    image:
+      "https://assets.coingecko.com/coins/images/8427/large/TEO_512x512.png?1558418206",
+    contracts: {},
   },
   {
     id: "fear-uncertainty-doubt",
@@ -97412,16 +97227,6 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "sapchain",
-    symbol: "sap",
-    name: "Sapchain",
-    image:
-      "https://assets.coingecko.com/coins/images/9109/large/sap.PNG?1564433894",
-    contracts: {
-      ethereum: "0x91f529e972d6cf43d36abfa91c1118122ff7f16c",
-    },
-  },
-  {
     id: "hidden-coin",
     symbol: "hdn",
     name: "Hidden Coin",
@@ -97437,6 +97242,16 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/13170/large/1528717728file.png?1605855085",
     contracts: {
       ethereum: "0x0fbe9cc858d7ad6e246fe9d01aed22abd2a66f0b",
+    },
+  },
+  {
+    id: "sapchain",
+    symbol: "sap",
+    name: "Sapchain",
+    image:
+      "https://assets.coingecko.com/coins/images/9109/large/sap.PNG?1564433894",
+    contracts: {
+      ethereum: "0x91f529e972d6cf43d36abfa91c1118122ff7f16c",
     },
   },
   {
@@ -97548,16 +97363,6 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "coinnec",
-    symbol: "coi",
-    name: "Coinnec",
-    image:
-      "https://assets.coingecko.com/coins/images/2561/large/coi.png?1547036684",
-    contracts: {
-      ethereum: "0x8a1a9477a710d470575b1da335e524b27e8091ab",
-    },
-  },
-  {
     id: "jejudoge-bsc",
     symbol: "jejudoge",
     name: "Jejudoge BSC",
@@ -97565,6 +97370,16 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/16411/large/hWRiE13V_200x200.jpg?1623945248",
     contracts: {
       "binance-smart-chain": "0x2020eb9e26aa49c27ebb72c174cfbab851f7dde0",
+    },
+  },
+  {
+    id: "coinnec",
+    symbol: "coi",
+    name: "Coinnec",
+    image:
+      "https://assets.coingecko.com/coins/images/2561/large/coi.png?1547036684",
+    contracts: {
+      ethereum: "0x8a1a9477a710d470575b1da335e524b27e8091ab",
     },
   },
   {
@@ -97586,16 +97401,6 @@ export const tokens: TokenD[] = [
     contracts: {},
   },
   {
-    id: "marvel",
-    symbol: "mrvl",
-    name: "Marvel",
-    image:
-      "https://assets.coingecko.com/coins/images/17102/large/200x_%281%29.png?1626241284",
-    contracts: {
-      "binance-smart-chain": "0x572181eccaf3394b58d52142f5c3b89a28e5bcbc",
-    },
-  },
-  {
     id: "etor",
     symbol: "etor",
     name: "etor",
@@ -97603,6 +97408,16 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/7897/large/O0gpmBh.jpg?1551660695",
     contracts: {
       ethereum: "0x32163c2d2d313c73279e87398e7f84bb9f537e9d",
+    },
+  },
+  {
+    id: "marvel",
+    symbol: "mrvl",
+    name: "Marvel",
+    image:
+      "https://assets.coingecko.com/coins/images/17102/large/200x_%281%29.png?1626241284",
+    contracts: {
+      "binance-smart-chain": "0x572181eccaf3394b58d52142f5c3b89a28e5bcbc",
     },
   },
   {
@@ -97819,16 +97634,6 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "e2p-group",
-    symbol: "e2p",
-    name: "E2P Group",
-    image:
-      "https://assets.coingecko.com/coins/images/15966/large/78312d_130e19a85eae4c40b00257a016da7ff0_mv2.png?1622520328",
-    contracts: {
-      ethereum: "0xa0b84460a1e78339692c7463009c35f0b9a6ae4c",
-    },
-  },
-  {
     id: "blink",
     symbol: "blk",
     name: "BLink",
@@ -98005,696 +97810,139 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "goforit",
-    symbol: "goi",
-    name: "GoForIt Walk&Win",
+    id: "duxdoge",
+    symbol: "ddc",
+    name: "DuxDoge",
     image:
-      "https://assets.coingecko.com/coins/images/9564/large/E5q4JAYW_400x400.jpg?1568849486",
+      "https://assets.coingecko.com/coins/images/18156/large/o6uUXqV.png?1630742079",
     contracts: {
-      ethereum: "0x2f34dd3d46855277eee79a1d724c2249f770054b",
+      "binance-smart-chain": "0x418236ca7c807cfc1d04eb64475df7ce17c2f218",
     },
   },
   {
-    id: "oec-zks",
-    symbol: "zksk",
-    name: "OEC ZKS",
+    id: "versewar",
+    symbol: "verse",
+    name: "VerseWar",
     image:
-      "https://assets.coingecko.com/coins/images/18600/large/zksk.png?1632653846",
+      "https://assets.coingecko.com/coins/images/18206/large/LOGO_1-01.png?1630978745",
     contracts: {
-      "okex-chain": "0xcd08d321f6bc10a10f094e4b2e6c9b8bf9906401",
+      "binance-smart-chain": "0x3963df5ba3cf7a579ed4a5ff81084e059a32bda0",
     },
   },
   {
-    id: "dreamscoin",
-    symbol: "dream",
-    name: "DreamsCoin",
+    id: "giftbag",
+    symbol: "gbag",
+    name: "Giftbag",
     image:
-      "https://assets.coingecko.com/coins/images/10675/large/aHon0cqNuXUTYB2MO4DYmM4fmEMDqIXeXvP38dKRaKspANDniVJbmYUU2tVZlyMBYQ9GMHHBHL-YbkIGQDMwnO1QN1VNia1kh_QB6h9je3XwzCmDLP_HKusR1c7kExITpt4BXoGCnsj19wyjY_NywMLGrB1C0f9LrLJJZxNo_pUJNw7D8Cw4tFKUtdVe8B7_pgpb8ngd8aAKi_H.jpg?1581632126",
+      "https://assets.coingecko.com/coins/images/20593/large/oqwoymka_400x400.jpg?1637285892",
     contracts: {
-      waves: "",
+      "binance-smart-chain": "0x6820f244b81d0906d70266cc9bccc2a8eaa5464c",
     },
   },
   {
-    id: "autostake",
-    symbol: "auto",
-    name: "Autostake",
+    id: "bestay",
+    symbol: "bsy",
+    name: "Bestay",
     image:
-      "https://assets.coingecko.com/coins/images/17720/large/1lxasDg.png?1629089519",
+      "https://assets.coingecko.com/coins/images/12166/large/photo-2019-07-04-17-03-29.jpg?1597787199",
     contracts: {
-      "binance-smart-chain": "0x1cff458b364d0d328d4c9d59d10be7d22d01953d",
+      ethereum: "0x7a647637e75d34a7798ba06bd1adf5c084bb5dd5",
     },
   },
   {
-    id: "aave-balancer-pool-token",
-    symbol: "abpt",
-    name: "Aave Balancer Pool Token",
+    id: "3x-long-kyber-network-token",
+    symbol: "kncbull",
+    name: "3X Long Kyber Network Token",
     image:
-      "https://assets.coingecko.com/coins/images/16788/large/ABPT_2x.png?1625046056",
-    contracts: {
-      ethereum: "0x41a08648c3766f9f9d85598ff102a08f4ef84f84",
-    },
-  },
-  {
-    id: "revolt",
-    symbol: "revt",
-    name: "Revolt",
-    image:
-      "https://assets.coingecko.com/coins/images/15581/large/WhpwgTS.jpg?1621242127",
-    contracts: {
-      "binance-smart-chain": "0x87076dae0086d79873031e96a4b52c85f998ecb5",
-    },
-  },
-  {
-    id: "1x-short-btc-implied-volatility",
-    symbol: "ibvol",
-    name: "Inverse Bitcoin Volatility Token",
-    image:
-      "https://assets.coingecko.com/coins/images/11057/large/download_%2810%29.png?1587642128",
-    contracts: {
-      ethereum: "0x627e2ee3dbda546e168eaaff25a2c5212e4a95a0",
-    },
-  },
-  {
-    id: "3x-short-theta-network-token",
-    symbol: "thetabear",
-    name: "3X Short Theta Network Token",
-    image:
-      "https://assets.coingecko.com/coins/images/12052/large/683JEXMN_400x400__1_.png?1596702995",
+      "https://assets.coingecko.com/coins/images/12064/large/683JEXMN_400x400.png?1596708452",
     contracts: {
       ethereum: "",
     },
   },
   {
-    id: "3x-long-compound-usdt-token",
-    symbol: "cusdtbull",
-    name: "3X Long Compound USDT Token",
+    id: "nuvo-cash",
+    symbol: "nuvo",
+    name: "Nuvo Cash",
     image:
-      "https://assets.coingecko.com/coins/images/12069/large/683JEXMN_400x400__1_.png?1596709154",
+      "https://assets.coingecko.com/coins/images/11422/large/nuvo.png?1590109082",
     contracts: {
-      ethereum: "",
+      ethereum: "0xe2db94e8d4e4144c336e45668a792d17d48a482c",
     },
   },
   {
-    id: "ricefarm",
-    symbol: "rice",
-    name: "RiceFarm",
+    id: "iouni",
+    symbol: "iouni",
+    name: "ioUNI",
     image:
-      "https://assets.coingecko.com/coins/images/16727/large/RICE.png?1624855146",
+      "https://assets.coingecko.com/coins/images/19343/large/io1ahh04jn2zkqlug6feh7rpq75a75p3rj42hp4ch.png?1635125793",
     contracts: {
-      "binance-smart-chain": "0xc4eeff5aab678c3ff32362d80946a3f5de4a1861",
+      iotex: "0xedeefaca6a1581fe2349cdfc3083d4efa8188e55",
     },
   },
   {
-    id: "superskynet",
-    symbol: "ssn",
-    name: "SuperSkyNet",
+    id: "nfteez",
+    symbol: "nfteez",
+    name: "NFTeez",
     image:
-      "https://assets.coingecko.com/coins/images/8944/large/p3dTwXMK_400x400.jpg?1563153164",
+      "https://assets.coingecko.com/coins/images/19380/large/nfteez.PNG?1635142302",
     contracts: {
-      ethereum: "0xa5b46ff9a887180c8fb2d97146398ddfc5fef1cd",
+      "binance-smart-chain": "0x7c6da35b6e28c5e571026eb4f9605e35d79dcb4c",
     },
   },
   {
-    id: "sandman",
-    symbol: "sandman",
-    name: "SandMan",
+    id: "digi-dinar",
+    symbol: "ddr",
+    name: "Digi Dinar",
     image:
-      "https://assets.coingecko.com/coins/images/17872/large/sandman-large.png?1629695052",
-    contracts: {
-      "polygon-pos": "0xf9b4defdde04fe18f5ee6456607f8a2ec9ff6a75",
-    },
-  },
-  {
-    id: "buxcoin",
-    symbol: "bux",
-    name: "BUXCOIN",
-    image:
-      "https://assets.coingecko.com/coins/images/10414/large/logo-primary.jpg?1579128155",
+      "https://assets.coingecko.com/coins/images/8666/large/X02nUjMz_400x400.jpg?1560206597",
     contracts: {},
   },
   {
-    id: "nantrade",
-    symbol: "nan",
-    name: "NanTrade",
+    id: "cng-casino",
+    symbol: "cng",
+    name: "CNG Casino",
     image:
-      "https://assets.coingecko.com/coins/images/11049/large/logo_%2871%29.png?1587537446",
+      "https://assets.coingecko.com/coins/images/11573/large/cng_casino.png?1591230675",
     contracts: {
-      ethereum: "0xb393cd041afc1aca4c380c663793fe2c7b8a0212",
+      ethereum: "0x883a158c9b28f8d626acfcfbe1028f49e70c9d75",
     },
   },
   {
-    id: "usd-sports",
-    symbol: "usdsp",
-    name: "USD Sports",
+    id: "salmon",
+    symbol: "slm",
+    name: "Salmon",
     image:
-      "https://assets.coingecko.com/coins/images/15758/large/usdsp.PNG?1621824288",
+      "https://assets.coingecko.com/coins/images/12349/large/salmon_swap_logo.png?1599202737",
+    contracts: {
+      tron: "TXyrq6xE49dJhBGBYRH4pZzq9QdXNKWUQa",
+    },
+  },
+  {
+    id: "teto-inu",
+    symbol: "tetoinu",
+    name: "Teto Inu",
+    image:
+      "https://assets.coingecko.com/coins/images/19436/large/tnh7PUo.png?1635218560",
+    contracts: {
+      ethereum: "0x09dc17ad20e864f91951789c80785ae1ca024230",
+    },
+  },
+  {
+    id: "culture-ticket-chain",
+    symbol: "ctc",
+    name: "Culture Ticket Chain",
+    image:
+      "https://assets.coingecko.com/coins/images/6263/large/ctchain.png?1547042301",
     contracts: {},
   },
   {
-    id: "nova",
-    symbol: "nova",
-    name: "NOVA",
+    id: "famous-coin",
+    symbol: "famous",
+    name: "Famous Coin",
     image:
-      "https://assets.coingecko.com/coins/images/6545/large/N7d0x35q_400x400.jpg?1547042760",
+      "https://assets.coingecko.com/coins/images/14416/large/famouscoin.jpg?1615951801",
     contracts: {
-      ethereum: "0xb48b7e5bf6563b3e0a85055821a83deb8cfc12f6",
-    },
-  },
-  {
-    id: "ytho-online",
-    symbol: "ytho",
-    name: "YTHO Online",
-    image:
-      "https://assets.coingecko.com/coins/images/13130/large/photo_2020-10-06_11-28-28_%282%29.jpg?1609205097",
-    contracts: {
-      ethereum: "0x48cf0e2eca22eae0ad33fee16a5cb6e62207a8ab",
-    },
-  },
-  {
-    id: "mini-baby-doge",
-    symbol: "minibabydoge",
-    name: "Mini Baby Doge",
-    image:
-      "https://assets.coingecko.com/coins/images/16970/large/minibabydoge.PNG?1625808292",
-    contracts: {
-      "binance-smart-chain": "0xa3b89c5f75c530f33e612177001f5602e9c2830f",
-    },
-  },
-  {
-    id: "universal-euro",
-    symbol: "upeur",
-    name: "Universal Euro",
-    image:
-      "https://assets.coingecko.com/coins/images/11172/large/1_hxXrtjdwUeSTn67wA8nHQw.png?1589440779",
-    contracts: {
-      ethereum: "0x6c103d85c15107dce19f5a75fc746227e610aabd",
-    },
-  },
-  {
-    id: "3x-short-bitcoin-cash-token",
-    symbol: "bchbear",
-    name: "3X Short Bitcoin Cash Token",
-    image:
-      "https://assets.coingecko.com/coins/images/10268/large/683JEXMN_400x400_%281%29.png?1576835432",
-    contracts: {
-      ethereum: "0xa9fc65da36064ce545e87690e06f5de10c52c690",
-    },
-  },
-  {
-    id: "unicly-mooncats-collection",
-    symbol: "umoon",
-    name: "Unicly MoonCats Collection",
-    image:
-      "https://assets.coingecko.com/coins/images/15674/large/MoonCats.jpg?1621498102",
-    contracts: {
-      ethereum: "0x683239a4cab49642c6e025cf81d283f9c87bc07d",
-    },
-  },
-  {
-    id: "wenmoon",
-    symbol: "wm",
-    name: "WenMoon",
-    image:
-      "https://assets.coingecko.com/coins/images/20263/large/Wen-Moon200x200.png?1636704100",
-    contracts: {
-      ethereum: "0x750c83707112e9acc452692c190cb55e30f42510",
-    },
-  },
-  {
-    id: "arank",
-    symbol: "arank",
-    name: "Arank",
-    image:
-      "https://assets.coingecko.com/coins/images/19411/large/arank.PNG?1635211855",
-    contracts: {
-      "harmony-shard-0": "0xbd16b0b2eb520b7ff4a4156d367ee359ac19c531",
-    },
-  },
-  {
-    id: "0-5x-long-balancer-token",
-    symbol: "balhalf",
-    name: "0.5X Long Balancer Token",
-    image:
-      "https://assets.coingecko.com/coins/images/12022/large/683JEXMN_400x400.png?1596694142",
-    contracts: {
-      ethereum: "",
-    },
-  },
-  {
-    id: "viral-inu",
-    symbol: "vinu",
-    name: "Viral Inu",
-    image:
-      "https://assets.coingecko.com/coins/images/20698/large/logo_-_2021-11-22T151434.485.png?1637565282",
-    contracts: {
-      solana: "CgbJxXyaHeU8VsquBpySuFXA94b6LWXxioZ28wRr8fs9",
-    },
-  },
-  {
-    id: "baby-doge-cash",
-    symbol: "babydogecash",
-    name: "Baby Doge Cash",
-    image:
-      "https://assets.coingecko.com/coins/images/16846/large/babydogecash-cmc-logo.png?1625391403",
-    contracts: {
-      "binance-smart-chain": "0x4cda4daad72340b28925ccd6fa78db631267d3c4",
-    },
-  },
-  {
-    id: "uncle-doge",
-    symbol: "udoge",
-    name: "Uncle Doge",
-    image:
-      "https://assets.coingecko.com/coins/images/16880/large/CGK-logo.png?1626693097",
-    contracts: {
-      "binance-smart-chain": "0xd2618bc9c9cdc40ff19e200a7d14a09799c0a152",
-    },
-  },
-  {
-    id: "geist-fusdt",
-    symbol: "gfusdt",
-    name: "Geist fUSDT",
-    image:
-      "https://assets.coingecko.com/coins/images/19000/large/preview-gallery-gUSDTgecko_%281%29.png?1634790738",
-    contracts: {
-      fantom: "0x940f41f0ec9ba1a34cf001cc03347ac092f5f6b5",
-    },
-  },
-  {
-    id: "pixeos",
-    symbol: "pixeos",
-    name: "PixEOS",
-    image:
-      "https://assets.coingecko.com/coins/images/9116/large/57129657_1849603145145589_3936675094033596416_n.png?1564469512",
-    contracts: {
-      eos: null,
-    },
-  },
-  {
-    id: "cetf",
-    symbol: "cetf",
-    name: "Cell ETF",
-    image:
-      "https://assets.coingecko.com/coins/images/18191/large/cetf_logo.png?1630910561",
-    contracts: {
-      "huobi-token": "0x24ab27a7274de0ba5760bab804fe870bb572c510",
-    },
-  },
-  {
-    id: "netcoincapital",
-    symbol: "ncc",
-    name: "Netcoincapital",
-    image:
-      "https://assets.coingecko.com/coins/images/17956/large/ncc.jpeg?1629903347",
-    contracts: {
-      tron: "TWmocwvHpui48QXUVJeW2SvcFe8LyNgLCU",
-    },
-  },
-  {
-    id: "iten",
-    symbol: "iten",
-    name: "ITEN",
-    image:
-      "https://assets.coingecko.com/coins/images/12314/large/logo-light_%281%29.png?1599084234",
-    contracts: {
-      ethereum: "0x65b678936c489a2639036755aa2107ec09569198",
-    },
-  },
-  {
-    id: "sphinxel",
-    symbol: "spx",
-    name: "Sphinxel",
-    image:
-      "https://assets.coingecko.com/coins/images/20249/large/logo_-_2021-11-12T151134.139.png?1636701101",
-    contracts: {
-      solana: "H6JocWxg5g1Lcs4oPnBecmjQ4Y1bkZhGJHtjMunmjyrp",
-    },
-  },
-  {
-    id: "kingxchain",
-    symbol: "kxc",
-    name: "KingXChain",
-    image:
-      "https://assets.coingecko.com/coins/images/5690/large/kingxchain.png?1547975313",
-    contracts: {
-      ethereum: "0x016396044709eb3edc69c44f4d5fa6996917e4e8",
-    },
-  },
-  {
-    id: "joos-protocol",
-    symbol: "joos",
-    name: "JOOS Protocol",
-    image:
-      "https://assets.coingecko.com/coins/images/7819/large/unaAbzXx_400x400.jpg?1550816726",
-    contracts: {
-      ethereum: "0x05f9abf4b0c5661e83b92c056a8791d5ccd7ca52",
-    },
-  },
-  {
-    id: "ume-token",
-    symbol: "ume",
-    name: "UME Token",
-    image:
-      "https://assets.coingecko.com/coins/images/14348/large/UME_Logo.png?1615505886",
-    contracts: {
-      tron: "TRkuKAxmWZ4G74MvZnFpoosQZsfvtNpmwH",
-    },
-  },
-  {
-    id: "fawkes-mask",
-    symbol: "fmk",
-    name: "Fawkes Mask",
-    image:
-      "https://assets.coingecko.com/coins/images/16761/large/logo_-_2021-06-29T105437.526.png?1624935285",
-    contracts: {
-      "binance-smart-chain": "0xc2591d74cc6a0810847add242319d4b43c8e5f09",
-    },
-  },
-  {
-    id: "alrightcoin",
-    symbol: "alc",
-    name: "AlrightCoin",
-    image:
-      "https://assets.coingecko.com/coins/images/11611/large/34B2E0C6-DDCB-4F48-B6BE-A2D9FB8734A3.png?1591842917",
-    contracts: {
-      ethereum: "0x95d82ba91256db995c80bed690d0a779191af62b",
-    },
-  },
-  {
-    id: "geist-ftm",
-    symbol: "gftm",
-    name: "Geist FTM",
-    image:
-      "https://assets.coingecko.com/coins/images/18991/large/preview-gallery-gFTMgecko_%281%29.png?1634790810",
-    contracts: {
-      fantom: "0x39b3bd37208cbade74d0fcbdbb12d606295b430a",
-    },
-  },
-  {
-    id: "maximus",
-    symbol: "maxi",
-    name: "Maximus",
-    image:
-      "https://assets.coingecko.com/coins/images/20485/large/RH7DeA5K_400x400.jpg?1637118568",
-    contracts: {
-      avalanche: "0x885d748c00a279b67a7749ec6b03301700dd0455",
-    },
-  },
-  {
-    id: "help-coins",
-    symbol: "hcs",
-    name: "Help Coins",
-    image:
-      "https://assets.coingecko.com/coins/images/14927/large/HCS_200.png?1619068527",
-    contracts: {
-      "binance-smart-chain": "0x2c0af42e89b79b86050f11c47603c85c08da329a",
-    },
-  },
-  {
-    id: "viking-legend",
-    symbol: "viking",
-    name: "Viking Legend",
-    image:
-      "https://assets.coingecko.com/coins/images/17591/large/Viking_256.png?1628579292",
-    contracts: {
-      "binance-smart-chain": "0xb513e93ae939fa7346095ff0189ad31ab8864e97",
-    },
-  },
-  {
-    id: "ripple-alpha",
-    symbol: "xla",
-    name: "Ripple Alpha",
-    image:
-      "https://assets.coingecko.com/coins/images/11763/large/ripplealpha.png?1593654621",
-    contracts: {},
-  },
-  {
-    id: "cryptopunk-7171-hoodie",
-    symbol: "hoodie",
-    name: "CryptoPunk #7171",
-    image:
-      "https://assets.coingecko.com/coins/images/17842/large/cryptopunk-hoodie.png?1629468579",
-    contracts: {
-      ethereum: "0xdffa3a7f5b40789c7a437dbe7b31b47f9b08fe75",
-    },
-  },
-  {
-    id: "bullex",
-    symbol: "blx",
-    name: "BulleX",
-    image:
-      "https://assets.coingecko.com/coins/images/17066/large/blx.PNG?1626151063",
-    contracts: {
-      "binance-smart-chain": "0x9612f89f32c8a8419be7a65358e485b76db2d7f4",
-    },
-  },
-  {
-    id: "budacoin",
-    symbol: "buda",
-    name: "BudaCoin",
-    image:
-      "https://assets.coingecko.com/coins/images/16426/large/photo_2021-08-26_21-17-27.jpg?1629984206",
-    contracts: {
-      "binance-smart-chain": "0x4b63f8c52e3286ca871cd66b7c84e26556b2de8e",
-    },
-  },
-  {
-    id: "blockchain-exchange-alliance",
-    symbol: "bxa",
-    name: "Blockchain Exchange Alliance",
-    image:
-      "https://assets.coingecko.com/coins/images/7842/large/images.png?1551144999",
-    contracts: {
-      ethereum: "0x98d8d146e644171cd47ff8588987b7bdeef72a87",
-    },
-  },
-  {
-    id: "limon-group",
-    symbol: "limon",
-    name: "Limon Group",
-    image:
-      "https://assets.coingecko.com/coins/images/15905/large/83708837.png?1622514935",
-    contracts: {
-      "binance-smart-chain": "0x712c0a4659a7c31a81fd5a47a2d83c63a07d7d06",
-    },
-  },
-  {
-    id: "medium",
-    symbol: "mdm",
-    name: "MEDIUM",
-    image:
-      "https://assets.coingecko.com/coins/images/9961/large/VEEFC4sG.png?1574293042",
-    contracts: {
-      ethereum: "0xd24dff6117936b6ff97108cf26c1dd8865743d87",
-    },
-  },
-  {
-    id: "badger-sett-badger",
-    symbol: "bbadger",
-    name: "Badger Sett Badger",
-    image:
-      "https://assets.coingecko.com/coins/images/14502/large/BADGER_DAO.png?1616559959",
-    contracts: {
-      ethereum: "0x19d97d8fa813ee2f51ad4b4e04ea08baf4dffc28",
-      fantom: "0x1f7216fdb338247512ec99715587bb97bbf96eae",
-    },
-  },
-  {
-    id: "moby-dick",
-    symbol: "wot",
-    name: "Moby Dick",
-    image:
-      "https://assets.coingecko.com/coins/images/16539/large/wot.png?1634717207",
-    contracts: {
-      "binance-smart-chain": "0xe861dff2099d15185b50de380db8249984cb26ea",
-    },
-  },
-  {
-    id: "when-lambo",
-    symbol: "lmbo",
-    name: "When Lambo",
-    image:
-      "https://assets.coingecko.com/coins/images/16298/large/WHEN-LAMBO-LOGO-200px.png?1623681208",
-    contracts: {
-      "binance-smart-chain": "0x017a2a7808e4cf95e6c20c777c5ded01e3a2a9df",
-    },
-  },
-  {
-    id: "sybc-coin",
-    symbol: "sybc",
-    name: "SYBC Coin",
-    image:
-      "https://assets.coingecko.com/coins/images/12901/large/sybc.png?1603346599",
-    contracts: {
-      ethereum: "0xb74755f2896e088790f81205f7f3746e2a4b358b",
-    },
-  },
-  {
-    id: "piction-network",
-    symbol: "pxl",
-    name: "Piction Network",
-    image:
-      "https://assets.coingecko.com/coins/images/7870/large/4091.png?1562798644",
-    contracts: {
-      ethereum: "0xf88951d7b676798705fd3a362ba5b1dbca2b233b",
-    },
-  },
-  {
-    id: "ivy-mining",
-    symbol: "ivy",
-    name: "Ivy Mining",
-    image:
-      "https://assets.coingecko.com/coins/images/12756/large/ivymining.PNG?1602284897",
-    contracts: {
-      ethereum: "0x829067d40a8d1233927891d9b3381d6aecee1e80",
-    },
-  },
-  {
-    id: "1x-long-btc-implied-volatility-token",
-    symbol: "bvol",
-    name: "Bitcoin Volatility Token",
-    image:
-      "https://assets.coingecko.com/coins/images/11056/large/download_%2810%29.png?1587641855",
-    contracts: {
-      ethereum: "0x81824663353a9d29b01b2de9dd9a2bb271d298cd",
-    },
-  },
-  {
-    id: "historia",
-    symbol: "hta",
-    name: "Historia",
-    image:
-      "https://assets.coingecko.com/coins/images/10885/large/download_%283%29.png?1585551391",
-    contracts: {},
-  },
-  {
-    id: "talent-coin",
-    symbol: "tlnt",
-    name: "Talent Coin",
-    image:
-      "https://assets.coingecko.com/coins/images/13771/large/TLNT.png?1611698474",
-    contracts: {
-      ethereum: "0x9f300b4ac0bf94cad77e7e2d3f850352b8bb264c",
-    },
-  },
-  {
-    id: "space-monkey",
-    symbol: "spmk",
-    name: "Space Monkey",
-    image:
-      "https://assets.coingecko.com/coins/images/14776/large/ItWjW7D.png?1618372154",
-    contracts: {
-      ethereum: "0x51d3e4c0b2c83e62f5d517d250b3e856897d2052",
-    },
-  },
-  {
-    id: "baby-pancake",
-    symbol: "bpcake",
-    name: "Baby Pancake",
-    image:
-      "https://assets.coingecko.com/coins/images/17499/large/200x200-1.png?1627989735",
-    contracts: {
-      "binance-smart-chain": "0xd69573a37ef9708863d7cd82039f289dd9d04050",
-    },
-  },
-  {
-    id: "xenon-2",
-    symbol: "xen",
-    name: "Xenon",
-    image:
-      "https://assets.coingecko.com/coins/images/11105/large/DyNZKe79_400x400.jpg?1588568617",
-    contracts: {
-      ethereum: "0x5fbdb42bb048c685c990a37f2c87fe087c586655",
-    },
-  },
-  {
-    id: "super-shiba",
-    symbol: "$sshiba",
-    name: "Super Shiba",
-    image:
-      "https://assets.coingecko.com/coins/images/15869/large/SuperShibaLogoSmall.png?1622178165",
-    contracts: {
-      "binance-smart-chain": "0x922c77c7724d7b77fd7791be5cc5314b70c3a781",
-    },
-  },
-  {
-    id: "stellarpayglobal",
-    symbol: "xlpg",
-    name: "StellarPayGlobal",
-    image:
-      "https://assets.coingecko.com/coins/images/10908/large/pFKTJuPvxdFOaXCfwaQavhSLWhx9Je3xB93KSjCFrWaS7US-UdmZ5Lf64LZ_PiP5CPJyLP1ri9TLzI7REUYVrIcpyJeVL1sDwBPSwtqLmuurQJVXs4W6ocE0ydVxsS-6uYicwQDQxPgrGOWoko7WZG-qQIcSHlvPxly1uWXGJjfy-ofeJluDs-Q4XUJpRAZwQJygog9ny_jcLuj.jpg?1585796602",
-    contracts: {
-      stellar: "",
-    },
-  },
-  {
-    id: "noel-capital",
-    symbol: "noel",
-    name: "Noel Capital",
-    image:
-      "https://assets.coingecko.com/coins/images/13687/large/noelcapital.png?1610949504",
-    contracts: {
-      tron: "",
-    },
-  },
-  {
-    id: "arc-block-protocol",
-    symbol: "abp",
-    name: "Arc Block Protocol",
-    image:
-      "https://assets.coingecko.com/coins/images/14549/large/abp.png?1616988852",
-    contracts: {
-      "binance-smart-chain": "0x1afd7b4faf6940872f69e55237155c7b36fd5153",
-    },
-  },
-  {
-    id: "decenturion",
-    symbol: "dcnt",
-    name: "Decenturion",
-    image:
-      "https://assets.coingecko.com/coins/images/6195/large/X5_20dt1_400x400.jpg?1547042224",
-    contracts: {
-      ethereum: "0x0ce6d5a093d4166237c7a9ff8e0553b0293214a1",
-    },
-  },
-  {
-    id: "buckhath-coin",
-    symbol: "bhig",
-    name: "BuckHath Coin",
-    image:
-      "https://assets.coingecko.com/coins/images/7821/large/logstex.PNG?1585121237",
-    contracts: {
-      ethereum: "0x996229d0c6a485c7f4b52e092eaa907cb2def5c6",
-    },
-  },
-  {
-    id: "darkbuild",
-    symbol: "dark",
-    name: "Dark.Build v1",
-    image:
-      "https://assets.coingecko.com/coins/images/12716/large/DARK-circle_token_200px.png?1614850894",
-    contracts: {
-      ethereum: "0x3108ccfd96816f9e663baa0e8c5951d229e8c6da",
-    },
-  },
-  {
-    id: "caramelswap",
-    symbol: "mel",
-    name: "CaramelSwap",
-    image:
-      "https://assets.coingecko.com/coins/images/15167/large/Adobe-Stock-164869011-Convertido.png?1626097946",
-    contracts: {
-      "binance-smart-chain": "0x7d5bc7796fd62a9a27421198fc3c349b96cdd9dc",
-    },
-  },
-  {
-    id: "baby-akita",
-    symbol: "bkita",
-    name: "Baby Akita",
-    image:
-      "https://assets.coingecko.com/coins/images/15450/large/ycDKDtRt_400x400.jpg?1620836652",
-    contracts: {
-      ethereum: "0x0d6f6a130c3046713cba425f41a65c17205df6b5",
+      ethereum: "0x4838903d6319e483ab82ae3f09a1ec36489a4193",
     },
   },
   {
@@ -98708,13 +97956,794 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "0-5x-long-cosmos-token",
-    symbol: "atomhalf",
-    name: "0.5X Long Cosmos Token",
+    id: "rapidz",
+    symbol: "rpzx",
+    name: "Rapidz",
     image:
-      "https://assets.coingecko.com/coins/images/12007/large/683JEXMN_400x400.png?1596692188",
+      "https://assets.coingecko.com/coins/images/7663/large/rapidzpay-logo.jpg?1549038850",
+    contracts: {
+      ethereum: "0x68350d30d9f58c81aaaa41929f1bfc52fff4ea49",
+    },
+  },
+  {
+    id: "robo-token",
+    symbol: "robo",
+    name: "Robo Token",
+    image:
+      "https://assets.coingecko.com/coins/images/14611/large/rlogo200.jpg?1617247446",
+    contracts: {
+      ethereum: "0x6fc2f1044a3b9bb3e43a43ec8f840843ed753061",
+    },
+  },
+  {
+    id: "tokenasset",
+    symbol: "ntb",
+    name: "TokenAsset",
+    image:
+      "https://assets.coingecko.com/coins/images/13710/large/8284.png?1611097251",
+    contracts: {
+      ethereum: "0xbe393aa534f82c0ffac31bf06a23e283acb3352b",
+    },
+  },
+  {
+    id: "agricoin",
+    symbol: "AGN",
+    name: "Agricoin",
+    image:
+      "https://assets.coingecko.com/coins/images/2056/large/agricoin.png?1547036352",
+    contracts: {},
+  },
+  {
+    id: "3x-long-bitcoin-cash-token",
+    symbol: "bchbull",
+    name: "3X Long Bitcoin Cash Token",
+    image:
+      "https://assets.coingecko.com/coins/images/10306/large/683JEXMN_400x400.png?1577743740",
+    contracts: {
+      ethereum: "0x4c133e081dfb5858e39cca74e69bf603d409e57a",
+    },
+  },
+  {
+    id: "swaptoken",
+    symbol: "token",
+    name: "SwapToken",
+    image:
+      "https://assets.coingecko.com/coins/images/2214/large/token.png?1547036499",
+    contracts: {},
+  },
+  {
+    id: "3x-long-bilira-token",
+    symbol: "trybbull",
+    name: "3X Long BiLira Token",
+    image:
+      "https://assets.coingecko.com/coins/images/10449/large/683JEXMN_400x400.png?1579561683",
+    contracts: {
+      ethereum: "0xc7038ccf60e48c5b7119e55566a6ad9f2d66c7c2",
+    },
+  },
+  {
+    id: "ezdex",
+    symbol: "ezx",
+    name: "EZDex",
+    image:
+      "https://assets.coingecko.com/coins/images/17345/large/EZX-200.png?1627365170",
+    contracts: {
+      ethereum: "0x9e8bfe46f9af27c5ea5c9c72b86d71bb86953a0c",
+    },
+  },
+  {
+    id: "polypanda",
+    symbol: "bamboo",
+    name: "PolyPanda",
+    image:
+      "https://assets.coingecko.com/coins/images/15411/large/polypanda.PNG?1620771185",
+    contracts: {
+      "polygon-pos": "0x8095d18fb1e702d69402a6a8c7a56bc1cce6ecc2",
+    },
+  },
+  {
+    id: "1x-short-cardano-token",
+    symbol: "adahedge",
+    name: "1X Short Cardano Token",
+    image:
+      "https://assets.coingecko.com/coins/images/12053/large/683JEXMN_400x400.png?1596703208",
     contracts: {
       ethereum: "",
+    },
+  },
+  {
+    id: "afrodex",
+    symbol: "afrox",
+    name: "AfroDex",
+    image:
+      "https://assets.coingecko.com/coins/images/10047/large/AfroDex_LOGO.png?1575243022",
+    contracts: {
+      ethereum: "0x08130635368aa28b217a4dfb68e1bf8dc525621c",
+    },
+  },
+  {
+    id: "punk-floor",
+    symbol: "floor",
+    name: "PUNK Floor",
+    image:
+      "https://assets.coingecko.com/coins/images/18021/large/unnamed_%285%29.png?1630283171",
+    contracts: {
+      ethereum: "0xb35ed5c39f371f2cd4bc2edab1f8da314168186a",
+    },
+  },
+  {
+    id: "arc-block-protocol",
+    symbol: "abp",
+    name: "Arc Block Protocol",
+    image:
+      "https://assets.coingecko.com/coins/images/14549/large/abp.png?1616988852",
+    contracts: {
+      "binance-smart-chain": "0x1afd7b4faf6940872f69e55237155c7b36fd5153",
+    },
+  },
+  {
+    id: "sandman",
+    symbol: "sandman",
+    name: "SandMan",
+    image:
+      "https://assets.coingecko.com/coins/images/17872/large/sandman-large.png?1629695052",
+    contracts: {
+      "polygon-pos": "0xf9b4defdde04fe18f5ee6456607f8a2ec9ff6a75",
+    },
+  },
+  {
+    id: "ethereum-wrapped-filecoin",
+    symbol: "efil",
+    name: "Ethereum Wrapped Filecoin",
+    image:
+      "https://assets.coingecko.com/coins/images/18231/large/output-onlinepngtools_%287%29.png?1631060559",
+    contracts: {
+      ethereum: "0x4b7ee45f30767f36f06f79b32bf1fca6f726deda",
+    },
+  },
+  {
+    id: "arbys",
+    symbol: "arbys",
+    name: "Arbys Token",
+    image:
+      "https://assets.coingecko.com/coins/images/18332/large/arby.PNG?1631579212",
+    contracts: {
+      "arbitrum-one": "0x86a1012d437bbff84fbdf62569d12d4fd3396f8c",
+    },
+  },
+  {
+    id: "veraswap",
+    symbol: "vrap",
+    name: "VeraSwap",
+    image:
+      "https://assets.coingecko.com/coins/images/14324/large/2fde7Uc2_400x400.png?1615428194",
+    contracts: {
+      "binance-smart-chain": "0x271c418b045d05a1d52c6bf849d47b5b5b4d769e",
+    },
+  },
+  {
+    id: "3x-long-exchange-token-index-token",
+    symbol: "exchbull",
+    name: "3X Long Exchange Token Index Token",
+    image:
+      "https://assets.coingecko.com/coins/images/10436/large/683JEXMN_400x400.png?1579276837",
+    contracts: {
+      ethereum: "0x592ef68c18f05a22c5890263dea5d952dd140d2a",
+    },
+  },
+  {
+    id: "1x-short-bnb-token",
+    symbol: "bnbhedge",
+    name: "1X Short BNB Token",
+    image:
+      "https://assets.coingecko.com/coins/images/12062/large/683JEXMN_400x400.png?1596706881",
+    contracts: {
+      ethereum: "0x2840ad41cf25ad58303ba24c416e79dce4161b4f",
+    },
+  },
+  {
+    id: "1x-short-xrp-token",
+    symbol: "xrphedge",
+    name: "1X Short XRP Token",
+    image:
+      "https://assets.coingecko.com/coins/images/12059/large/683JEXMN_400x400.png?1596705201",
+    contracts: {
+      ethereum: "0x55b54d8fb1640d1321d5164590e7b020ba43def2",
+    },
+  },
+  {
+    id: "genwealth-coin",
+    symbol: "gwc",
+    name: "GenWealth Coin",
+    image:
+      "https://assets.coingecko.com/coins/images/16052/large/white_background___no_name.png?1622694393",
+    contracts: {
+      "binance-smart-chain": "0x280ce73a3a90b8aeb4ef7ed10c928c35ec5c0420",
+    },
+  },
+  {
+    id: "0-5x-long-bitcoin-token",
+    symbol: "half",
+    name: "0.5X Long Bitcoin Token",
+    image:
+      "https://assets.coingecko.com/coins/images/11996/large/683JEXMN_400x400.png?1596689733",
+    contracts: {
+      ethereum: "",
+    },
+  },
+  {
+    id: "3x-long-dragon-index-token",
+    symbol: "drgnbull",
+    name: "3X Long Dragon Index Token",
+    image:
+      "https://assets.coingecko.com/coins/images/10197/large/683JEXMN_400x400_%281%29.png?1576533729",
+    contracts: {
+      ethereum: "0x3335f16af9008bfd32f1ee6c2be5d4f84fa0b9da",
+    },
+  },
+  {
+    id: "3x-short-tezos-token",
+    symbol: "xtzbear",
+    name: "3X Short Tezos Token",
+    image:
+      "https://assets.coingecko.com/coins/images/10175/large/683JEXMN_400x400_%281%29.png?1576506808",
+    contracts: {
+      ethereum: "0xbc41d05287498dec58129560de6bd1b8d4e3ac1d",
+    },
+  },
+  {
+    id: "vn-token",
+    symbol: "vn",
+    name: "VN Token",
+    image:
+      "https://assets.coingecko.com/coins/images/11698/large/logo200_%287%29.png?1592962890",
+    contracts: {
+      tron: "",
+    },
+  },
+  {
+    id: "derivex",
+    symbol: "dvx",
+    name: "Derivex",
+    image:
+      "https://assets.coingecko.com/coins/images/11696/large/dvx.png?1592880992",
+    contracts: {
+      ethereum: "0x975769557510167d25beed6e32806537173e292c",
+    },
+  },
+  {
+    id: "superskynet",
+    symbol: "ssn",
+    name: "SuperSkyNet",
+    image:
+      "https://assets.coingecko.com/coins/images/8944/large/p3dTwXMK_400x400.jpg?1563153164",
+    contracts: {
+      ethereum: "0xa5b46ff9a887180c8fb2d97146398ddfc5fef1cd",
+    },
+  },
+  {
+    id: "1x-short-algorand-token",
+    symbol: "algohedge",
+    name: "1X Short Algorand Token",
+    image:
+      "https://assets.coingecko.com/coins/images/11987/large/683JEXMN_400x400.png?1596687107",
+    contracts: {
+      ethereum: "0xfdc3d57eb7839ca68a2fad7a93799c8e8afa61b7",
+    },
+  },
+  {
+    id: "glex",
+    symbol: "glex",
+    name: "GLEX",
+    image:
+      "https://assets.coingecko.com/coins/images/11609/large/1578901576974.png?1591777246",
+    contracts: {
+      ethereum: "0x0a0db74ef8b4480cc29b7d68647727feeb1ea4ec",
+    },
+  },
+  {
+    id: "roocoin",
+    symbol: "roo",
+    name: "RooCoin",
+    image:
+      "https://assets.coingecko.com/coins/images/15434/large/RooCoinLogo.png?1620799405",
+    contracts: {
+      "binance-smart-chain": "0x30b29c6c03546f6395ddb454538d0eb7e4a6e32f",
+    },
+  },
+  {
+    id: "usd-bancor",
+    symbol: "usdb",
+    name: "USD Bancor",
+    image:
+      "https://assets.coingecko.com/coins/images/10619/large/busd.png?1581026228",
+    contracts: {
+      ethereum: "0x309627af60f0926daa6041b8279484312f2bf060",
+    },
+  },
+  {
+    id: "meld-gold",
+    symbol: "mcau",
+    name: "Meld Gold",
+    image:
+      "https://assets.coingecko.com/coins/images/13149/large/meldgold.png?1605683396",
+    contracts: {
+      algorand: "",
+    },
+  },
+  {
+    id: "blaze-the-cat",
+    symbol: "$blaze",
+    name: "Blaze the cat",
+    image:
+      "https://assets.coingecko.com/coins/images/19980/large/TGGVsU4L_400x400.jpg?1636355972",
+    contracts: {
+      ethereum: "0xffa8b451f22ab4ceabdef3a9dc66aad3564c8829",
+    },
+  },
+  {
+    id: "1x-long-btc-implied-volatility-token",
+    symbol: "bvol",
+    name: "Bitcoin Volatility Token",
+    image:
+      "https://assets.coingecko.com/coins/images/11056/large/download_%2810%29.png?1587641855",
+    contracts: {
+      ethereum: "0x81824663353a9d29b01b2de9dd9a2bb271d298cd",
+    },
+  },
+  {
+    id: "riseupv2",
+    symbol: "riv2",
+    name: "RiseUpV2",
+    image:
+      "https://assets.coingecko.com/coins/images/20686/large/logo.png?1637557699",
+    contracts: {
+      "binance-smart-chain": "0x10c723d4a9180c468055a548bf58d7ab279fe4ac",
+    },
+  },
+  {
+    id: "mashima-inu",
+    symbol: "mashima",
+    name: "Mashima Inu",
+    image:
+      "https://assets.coingecko.com/coins/images/20061/large/WssfhdF.png?1636445904",
+    contracts: {
+      ethereum: "0xb2f8a70b09db0f7795a5f079b5021eb84aa59e28",
+    },
+  },
+  {
+    id: "mechashiba",
+    symbol: "mec",
+    name: "MechaShiba",
+    image:
+      "https://assets.coingecko.com/coins/images/16952/large/mechashiba.png?1625754833",
+    contracts: {
+      "binance-smart-chain": "0xc2d56d2d136f16ed1c3e219339b272feddf2a376",
+    },
+  },
+  {
+    id: "dogefather-ecosystem",
+    symbol: "dogefather",
+    name: "Dogefather Ecosystem",
+    image:
+      "https://assets.coingecko.com/coins/images/17138/large/Dogefather_EcoSystem_Logo.png?1626515748",
+    contracts: {
+      ethereum: "0x73c61dd9e121de834a4f3ed607263ee33b308c06",
+    },
+  },
+  {
+    id: "grill-farm",
+    symbol: "grill",
+    name: "Grill Farm",
+    image:
+      "https://assets.coingecko.com/coins/images/17958/large/HDcnXpY4_400x400.jpg?1629937487",
+    contracts: {
+      "binance-smart-chain": "0x7853401a1095dd0b04edb92366233c37fb511e89",
+    },
+  },
+  {
+    id: "3x-long-midcap-index-token",
+    symbol: "midbull",
+    name: "3X Long Midcap Index Token",
+    image:
+      "https://assets.coingecko.com/coins/images/10229/large/683JEXMN_400x400_%281%29.png?1576618503",
+    contracts: {
+      ethereum: "0x59db60bd41bbc8ca4c1efee6ea2a97eae1e30cf5",
+    },
+  },
+  {
+    id: "wrapped-polis",
+    symbol: "polis",
+    name: "Wrapped Polis",
+    image:
+      "https://assets.coingecko.com/coins/images/13377/large/polispay_logo.jpg?1608027141",
+    contracts: {
+      ethereum: "0x622f2962ae78e8686ecc1e30cf2f9a6e5ac35626",
+    },
+  },
+  {
+    id: "ponzicoin",
+    symbol: "ponzi",
+    name: "PonziCoin",
+    image:
+      "https://assets.coingecko.com/coins/images/3094/large/ponzicoin.png?1547037459",
+    contracts: {},
+  },
+  {
+    id: "scatter-cx",
+    symbol: "stt",
+    name: "Scatter.cx",
+    image:
+      "https://assets.coingecko.com/coins/images/10422/large/scatter.png?1580876890",
+    contracts: {
+      ethereum: "0xac9bb427953ac7fddc562adca86cf42d988047fd",
+    },
+  },
+  {
+    id: "sherlock-wallet",
+    symbol: "sher",
+    name: "Sherlock Wallet",
+    image:
+      "https://assets.coingecko.com/coins/images/20122/large/sherlock.PNG?1636523400",
+    contracts: {
+      "binance-smart-chain": "0xab896775c35ff4522fd285f7a7acbdaaca1fadd9",
+    },
+  },
+  {
+    id: "nkcl-classic",
+    symbol: "nkclc",
+    name: "NKCL Classic",
+    image:
+      "https://assets.coingecko.com/coins/images/17893/large/w02Nksm-.png?1629718144",
+    contracts: {
+      ethereum: "0xd1b624f07a4d9b3e3746e33cb58f42df079b5444",
+    },
+  },
+  {
+    id: "polygold",
+    symbol: "polygold",
+    name: "PolyGold",
+    image:
+      "https://assets.coingecko.com/coins/images/16055/large/wYRJKCT.png?1622699065",
+    contracts: {
+      "polygon-pos": "0x0184316f58b9a44acdd3e683257259dc0cf2202a",
+    },
+  },
+  {
+    id: "renrenbit",
+    symbol: "rrb",
+    name: "Renrenbit",
+    image:
+      "https://assets.coingecko.com/coins/images/9578/large/Renrenbit.png?1568961883",
+    contracts: {},
+  },
+  {
+    id: "stellarpayglobal",
+    symbol: "xlpg",
+    name: "StellarPayGlobal",
+    image:
+      "https://assets.coingecko.com/coins/images/10908/large/pFKTJuPvxdFOaXCfwaQavhSLWhx9Je3xB93KSjCFrWaS7US-UdmZ5Lf64LZ_PiP5CPJyLP1ri9TLzI7REUYVrIcpyJeVL1sDwBPSwtqLmuurQJVXs4W6ocE0ydVxsS-6uYicwQDQxPgrGOWoko7WZG-qQIcSHlvPxly1uWXGJjfy-ofeJluDs-Q4XUJpRAZwQJygog9ny_jcLuj.jpg?1585796602",
+    contracts: {
+      stellar: "",
+    },
+  },
+  {
+    id: "fk-coin",
+    symbol: "fk",
+    name: "FK Coin",
+    image:
+      "https://assets.coingecko.com/coins/images/9801/large/logo.e944e891.png?1571918228",
+    contracts: {
+      ethereum: "0x903d78ca7d892e4518586d0b64f418bd4ca9a82d",
+    },
+  },
+  {
+    id: "maximus",
+    symbol: "maxi",
+    name: "Maximus",
+    image:
+      "https://assets.coingecko.com/coins/images/20485/large/RH7DeA5K_400x400.jpg?1637118568",
+    contracts: {
+      avalanche: "0x885d748c00a279b67a7749ec6b03301700dd0455",
+    },
+  },
+  {
+    id: "noel-capital",
+    symbol: "noel",
+    name: "Noel Capital",
+    image:
+      "https://assets.coingecko.com/coins/images/13687/large/noelcapital.png?1610949504",
+    contracts: {
+      tron: "",
+    },
+  },
+  {
+    id: "topcat",
+    symbol: "topcat",
+    name: "TopCat",
+    image:
+      "https://assets.coingecko.com/coins/images/15898/large/topcat_logo.jpg?1622384510",
+    contracts: {
+      "binance-smart-chain": "0x78f87d1613b35468455e8379c94e9cc03d2b666f",
+    },
+  },
+  {
+    id: "ucx",
+    symbol: "ucx",
+    name: "UCX",
+    image:
+      "https://assets.coingecko.com/coins/images/10131/large/UCX_200200.png?1576186720",
+    contracts: {
+      ethereum: "0x3d3af44cf092a49280e316f09c8f20ecf97bc933",
+    },
+  },
+  {
+    id: "kurai-inu",
+    symbol: "kurai",
+    name: "Kurai Inu",
+    image:
+      "https://assets.coingecko.com/coins/images/20114/large/KuraiInu.png?1636514407",
+    contracts: {
+      "binance-smart-chain": "0x70c82588fcc570cd4885ca50b8d34c225f431ee8",
+    },
+  },
+  {
+    id: "recovery-right-token",
+    symbol: "rrt",
+    name: "Recovery Right Token",
+    image:
+      "https://assets.coingecko.com/coins/images/6502/large/Recovery_Right_Token.png?1547042730",
+    contracts: {},
+  },
+  {
+    id: "turkiye-basketbol-federasyonu-token",
+    symbol: "tbft",
+    name: "Turkiye Basketbol Federasyonu Token",
+    image:
+      "https://assets.coingecko.com/coins/images/17649/large/tbft.png?1628749628",
+    contracts: {
+      Bitcichain: "0xa3225ae74e9a92f8deef5b857100b31259b998db",
+    },
+  },
+  {
+    id: "oec-binance-coin",
+    symbol: "BNB",
+    name: "OEC Binance Coin",
+    image:
+      "https://assets.coingecko.com/coins/images/18711/large/Unknown.png?1633077622",
+    contracts: {
+      "okex-chain": "0x218c3c3d49d0e7b37aff0d8bb079de36ae61a4c0",
+    },
+  },
+  {
+    id: "ankaragucu-fan-token",
+    symbol: "anka",
+    name: "Ankaragücü Fan Tokens",
+    image:
+      "https://assets.coingecko.com/coins/images/17648/large/anka.png?1628748590",
+    contracts: {
+      Bitcichain: "0x38aa495ffa5ebe2f8f91004922650c29adf12083",
+    },
+  },
+  {
+    id: "fundin",
+    symbol: "fdn",
+    name: "FUNDIN",
+    image:
+      "https://assets.coingecko.com/coins/images/8576/large/3emFc3C__400x400.jpg?1559294128",
+    contracts: {},
+  },
+  {
+    id: "0-5x-long-matic-token",
+    symbol: "matichalf",
+    name: "0.5X Long Matic Token",
+    image:
+      "https://assets.coingecko.com/coins/images/11990/large/683JEXMN_400x400.png?1596688092",
+    contracts: {
+      ethereum: "",
+    },
+  },
+  {
+    id: "plateau-finance",
+    symbol: "plt",
+    name: "Plateau Finance",
+    image:
+      "https://assets.coingecko.com/coins/images/20504/large/6WQ1GHRR_400x400.jpg?1637143061",
+    contracts: {
+      avalanche: "0xecfe536a209e405db19887830b366e397f5b917a",
+    },
+  },
+  {
+    id: "rangers-fan-token",
+    symbol: "rft",
+    name: "Rangers Fan Token",
+    image:
+      "https://assets.coingecko.com/coins/images/17644/large/rft.png?1628745181",
+    contracts: {
+      Bitcichain: "0xf930a91a60deb0eb1fe9419a85f95d21badabd34",
+    },
+  },
+  {
+    id: "onlexpa-token",
+    symbol: "onlexpa",
+    name: "onLEXpa Token",
+    image:
+      "https://assets.coingecko.com/coins/images/10373/large/logo-text.png?1578675009",
+    contracts: {
+      ethereum: "0x33384af34b03eaca63fd153f59589f504772b570",
+    },
+  },
+  {
+    id: "nora-token",
+    symbol: "nra",
+    name: "Nora Token",
+    image:
+      "https://assets.coingecko.com/coins/images/20107/large/rQ5UNxnj_400x400.jpg?1636512610",
+    contracts: {
+      solana: "1C2EYVrwmoXAGbiKirFFBeDFDYUBHPhDeg9trhibTND",
+    },
+  },
+  {
+    id: "stadium-ape",
+    symbol: "SAPE",
+    name: "Stadium Ape",
+    image:
+      "https://assets.coingecko.com/coins/images/20507/large/APE_300.png?1637165745",
+    contracts: {
+      "binance-smart-chain": "0x8185a85946bbd6dc8db94d1967e89271ebbae8ac",
+    },
+  },
+  {
+    id: "buyucoin-token",
+    symbol: "buc",
+    name: "BuyUCoin Token",
+    image:
+      "https://assets.coingecko.com/coins/images/11561/large/XF7boZ2M_400x400.jpg?1591112316",
+    contracts: {},
+  },
+  {
+    id: "3x-short-bitcoin-cash-token",
+    symbol: "bchbear",
+    name: "3X Short Bitcoin Cash Token",
+    image:
+      "https://assets.coingecko.com/coins/images/10268/large/683JEXMN_400x400_%281%29.png?1576835432",
+    contracts: {
+      ethereum: "0xa9fc65da36064ce545e87690e06f5de10c52c690",
+    },
+  },
+  {
+    id: "humancoin-2",
+    symbol: "hmnc",
+    name: "HumanCoin",
+    image:
+      "https://assets.coingecko.com/coins/images/15079/large/HMNC.png?1619650086",
+    contracts: {
+      ethereum: "0x77e31d674a46d356b2e65892bde7758bb26238ca",
+    },
+  },
+  {
+    id: "aok",
+    symbol: "aok",
+    name: "AOK",
+    image:
+      "https://assets.coingecko.com/coins/images/20516/large/dFtBcV56_400x400.jpg?1637187888",
+    contracts: {},
+  },
+  {
+    id: "windswap",
+    symbol: "windy",
+    name: "WindSwap",
+    image:
+      "https://assets.coingecko.com/coins/images/14977/large/logo_-_2021-04-24T061145.384.png?1619216118",
+    contracts: {
+      "binance-smart-chain": "0xd1587ee50e0333f0c4adcf261379a61b1486c5d2",
+    },
+  },
+  {
+    id: "web-coin-pay",
+    symbol: "wec",
+    name: "Web Coin Pay",
+    image:
+      "https://assets.coingecko.com/coins/images/12728/large/logo_%281%29.png?1602055480",
+    contracts: {},
+  },
+  {
+    id: "3x-long-privacy-index-token",
+    symbol: "privbull",
+    name: "3X Long Privacy Index Token",
+    image:
+      "https://assets.coingecko.com/coins/images/12015/large/683JEXMN_400x400__1_.png?1596693428",
+    contracts: {
+      ethereum: "",
+    },
+  },
+  {
+    id: "3x-short-privacy-index-token",
+    symbol: "privbear",
+    name: "3X Short Privacy Index Token",
+    image:
+      "https://assets.coingecko.com/coins/images/12016/large/683JEXMN_400x400__1_.png?1596693544",
+    contracts: {
+      ethereum: "",
+    },
+  },
+  {
+    id: "staked-aave-balancer-pool-token",
+    symbol: "stkabpt",
+    name: "Staked Aave Balancer Pool Token",
+    image:
+      "https://assets.coingecko.com/coins/images/16789/large/StkABPT_2x.png?1625046066",
+    contracts: {
+      ethereum: "0xa1116930326d21fb917d5a27f1e9943a9595fb47",
+    },
+  },
+  {
+    id: "sbank",
+    symbol: "sts",
+    name: "SBank",
+    image:
+      "https://assets.coingecko.com/coins/images/10279/large/74302797_109806420469006_618028571075543040_o.png?1576971737",
+    contracts: {
+      ethereum: "0x4c14114c107d6374ec31981f5f6cc27a13e22f9a",
+    },
+  },
+  {
+    id: "baby-doge-cash",
+    symbol: "babydogecash",
+    name: "Baby Doge Cash",
+    image:
+      "https://assets.coingecko.com/coins/images/16846/large/babydogecash-cmc-logo.png?1625391403",
+    contracts: {
+      "binance-smart-chain": "0x4cda4daad72340b28925ccd6fa78db631267d3c4",
+    },
+  },
+  {
+    id: "fawkes-mask",
+    symbol: "fmk",
+    name: "Fawkes Mask",
+    image:
+      "https://assets.coingecko.com/coins/images/16761/large/logo_-_2021-06-29T105437.526.png?1624935285",
+    contracts: {
+      "binance-smart-chain": "0xc2591d74cc6a0810847add242319d4b43c8e5f09",
+    },
+  },
+  {
+    id: "3x-short-compound-usdt-token",
+    symbol: "cusdtbear",
+    name: "3X Short Compound USDT Token",
+    image:
+      "https://assets.coingecko.com/coins/images/12067/large/683JEXMN_400x400__1_.png?1596708852",
+    contracts: {
+      ethereum: "",
+    },
+  },
+  {
+    id: "xtrm",
+    symbol: "xtrm",
+    name: "XTRM",
+    image:
+      "https://assets.coingecko.com/coins/images/11078/large/xtrm.png?1592435046",
+    contracts: {},
+  },
+  {
+    id: "c-token",
+    symbol: "c",
+    name: "C Token",
+    image:
+      "https://assets.coingecko.com/coins/images/17484/large/lyuF5Ri.jpg?1627956870",
+    contracts: {
+      "huobi-token": "0xfed613cdd4182b73a032fe1f03bd7872465010f8",
+    },
+  },
+  {
+    id: "rocket-bunny",
+    symbol: "bunny",
+    name: "Rocket Bunny",
+    image:
+      "https://assets.coingecko.com/coins/images/14350/large/n8TgW06A_400x400.jpg?1615514406",
+    contracts: {
+      ethereum: "0x3ea50b7ef6a7eaf7e966e2cb72b519c16557497c",
+      "harmony-shard-0": "0x758765664769d82380c95cc3489d533fa21974fa",
     },
   },
   {
@@ -98728,167 +98757,41 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "sopay",
-    symbol: "sop",
-    name: "SoPay",
+    id: "financial-investment-token",
+    symbol: "fit",
+    name: "FINANCIAL INVESTMENT TOKEN",
     image:
-      "https://assets.coingecko.com/coins/images/6736/large/sopay.png?1548609877",
-    contracts: {
-      ethereum: "0x076641af1b8f06b7f8c92587156143c109002cbe",
-    },
-  },
-  {
-    id: "aelysir",
-    symbol: "ael",
-    name: "Aelysir",
-    image:
-      "https://assets.coingecko.com/coins/images/12955/large/ael_logo.png?1603794538",
-    contracts: {
-      ethereum: "0xd337382da15d12bb6e56498e91df64f86c8f1ea8",
-    },
-  },
-  {
-    id: "yi12-stfinance",
-    symbol: "yi12",
-    name: "Yield Stake Finance",
-    image:
-      "https://assets.coingecko.com/coins/images/12708/large/yi12_logo.jpg?1601894672",
-    contracts: {
-      ethereum: "0x03e4bdce611104289333f35c8177558b04cc99ff",
-    },
-  },
-  {
-    id: "nagaswap",
-    symbol: "bnw",
-    name: "NagaSwap",
-    image:
-      "https://assets.coingecko.com/coins/images/13828/large/1_dQKxZmGq8IWJAJHu6kDS5Q.png?1612157547",
-    contracts: {
-      "binance-smart-chain": "0xa15083664eb19899885ccc2b4fd03977b26d3a2d",
-    },
-  },
-  {
-    id: "mgc-token",
-    symbol: "mgc",
-    name: "MGC Token",
-    image:
-      "https://assets.coingecko.com/coins/images/8469/large/mgc.png?1558768022",
-    contracts: {
-      ethereum: "0x174bfa6600bf90c885c7c01c7031389ed1461ab9",
-    },
-  },
-  {
-    id: "xtrm",
-    symbol: "xtrm",
-    name: "XTRM",
-    image:
-      "https://assets.coingecko.com/coins/images/11078/large/xtrm.png?1592435046",
+      "https://assets.coingecko.com/coins/images/12426/large/Untitled-design-5.png?1599732573",
     contracts: {},
   },
   {
-    id: "xswap",
-    symbol: "xsp",
-    name: "XSwap",
+    id: "idle-tusd-yield",
+    symbol: "idleTUSDYield",
+    name: "IdleTUSD (Best Yield)",
     image:
-      "https://assets.coingecko.com/coins/images/12541/large/256x256_%282%29.png?1600645409",
+      "https://assets.coingecko.com/coins/images/11935/large/idletusdv3mMaxyield_32.png?1596263719",
     contracts: {
-      ethereum: "0x9b06d48e0529ecf05905ff52dd426ebec0ea3011",
+      ethereum: "0xc278041fdd8249fe4c1aad1193876857eea3d68c",
     },
   },
   {
-    id: "koel-coin",
-    symbol: "koel",
-    name: "Koel Coin",
+    id: "philips-pay-coin",
+    symbol: "ppc",
+    name: "PHILLIPS PAY COIN",
     image:
-      "https://assets.coingecko.com/coins/images/12816/large/cuckoo.png?1602740144",
-    contracts: {},
-  },
-  {
-    id: "quickchart",
-    symbol: "quickchart",
-    name: "QuickChart",
-    image:
-      "https://assets.coingecko.com/coins/images/15387/large/3-E7934-AD-31-CC-4-A62-8526-82-B0-DE53-BBFB.png?1620702415",
+      "https://assets.coingecko.com/coins/images/10311/large/ppc.PNG?1588127720",
     contracts: {
-      "polygon-pos": "0x99da82c5464c49962cdda44fe30d352bc5da0580",
+      ethereum: "0x84f710bae3316a74fb0fcb01904d2578a4cc6a26",
     },
   },
   {
-    id: "shipitpro",
-    symbol: "shpp",
-    name: "ShipItPro",
+    id: "6ix9ine-chain",
+    symbol: "69c",
+    name: "6ix9ine Chain",
     image:
-      "https://assets.coingecko.com/coins/images/14687/large/photo_2020-12-28_16-37-33.jpg?1617785737",
+      "https://assets.coingecko.com/coins/images/11260/large/6ix9ineChain.png?1589789641",
     contracts: {
-      ethereum: "0x13b1e6b036ac0a1495f876313f92a0706cc10871",
-    },
-  },
-  {
-    id: "moonpump",
-    symbol: "pump",
-    name: "MoonPump",
-    image:
-      "https://assets.coingecko.com/coins/images/16318/large/moonpump.PNG?1623736749",
-    contracts: {
-      "binance-smart-chain": "0x5610bf2bf5abe5750bdbce311631dee2afa2cd24",
-    },
-  },
-  {
-    id: "idle-usdc-risk-adjusted",
-    symbol: "idleUSDCSafe",
-    name: "IdleUSDC (Risk Adjusted)",
-    image:
-      "https://assets.coingecko.com/coins/images/11930/large/idleusdc-safe.png?1596263257",
-    contracts: {
-      ethereum: "0x3391bc034f2935ef0e1e41619445f998b2680d35",
-    },
-  },
-  {
-    id: "fomo-baby",
-    symbol: "fomobaby",
-    name: "FOMO BABY",
-    image:
-      "https://assets.coingecko.com/coins/images/20435/large/Artboard_29.png?1637037640",
-    contracts: {
-      "binance-smart-chain": "0x82d6e409438e9c2eaed8ceec4bd95918cbd17c87",
-    },
-  },
-  {
-    id: "1x-short-eos-token",
-    symbol: "eoshedge",
-    name: "1X Short EOS Token",
-    image:
-      "https://assets.coingecko.com/coins/images/10221/large/683JEXMN_400x400.png?1596706630",
-    contracts: {
-      ethereum: "0xb38f206615325306dddeb0794a6482486b6b78b8",
-    },
-  },
-  {
-    id: "memeflate",
-    symbol: "mflate",
-    name: "Memeflate",
-    image:
-      "https://assets.coingecko.com/coins/images/19598/large/mflate.PNG?1635489960",
-    contracts: {
-      "binance-smart-chain": "0xafe3321309a994831884fc1725f4c3236ac79f76",
-    },
-  },
-  {
-    id: "op-coin",
-    symbol: "opc",
-    name: "OP Coin",
-    image:
-      "https://assets.coingecko.com/coins/images/2447/large/op-coin.png?1548330224",
-    contracts: {},
-  },
-  {
-    id: "vn-token",
-    symbol: "vn",
-    name: "VN Token",
-    image:
-      "https://assets.coingecko.com/coins/images/11698/large/logo200_%287%29.png?1592962890",
-    contracts: {
-      tron: "",
+      ethereum: "0x02fdd6866333d8cd8b1ca022d382080698060bc2",
     },
   },
   {
@@ -98897,6 +98800,380 @@ export const tokens: TokenD[] = [
     name: "1X Short Swipe Token",
     image:
       "https://assets.coingecko.com/coins/images/12036/large/683JEXMN_400x400.png?1596700098",
+    contracts: {
+      ethereum: "",
+    },
+  },
+  {
+    id: "starblock",
+    symbol: "stb",
+    name: "StarBlock",
+    image:
+      "https://assets.coingecko.com/coins/images/8668/large/starblock-logo-for-coinmarketcap.png?1560207677",
+    contracts: {
+      ethereum: "0xc48b1ac1417db27c4e2c2ed3dae5a3d2fbb07dc5",
+    },
+  },
+  {
+    id: "mixty-finance",
+    symbol: "mxf",
+    name: "Mixty Finance",
+    image:
+      "https://assets.coingecko.com/coins/images/14627/large/mixty_finance.jpg?1617342977",
+    contracts: {
+      "binance-smart-chain": "0xdf065aa3a18ae67055ff44bd26506fde6ce13312",
+    },
+  },
+  {
+    id: "benepit",
+    symbol: "bnp",
+    name: "BenePit",
+    image:
+      "https://assets.coingecko.com/coins/images/6740/large/TEmrEC3Z_400x400.png?1570484295",
+    contracts: {
+      ethereum: "0xd27d76a1ba55ce5c0291ccd04febbe793d22ebf4",
+    },
+  },
+  {
+    id: "3x-long-compound-usdt-token",
+    symbol: "cusdtbull",
+    name: "3X Long Compound USDT Token",
+    image:
+      "https://assets.coingecko.com/coins/images/12069/large/683JEXMN_400x400__1_.png?1596709154",
+    contracts: {
+      ethereum: "",
+    },
+  },
+  {
+    id: "guss-one",
+    symbol: "guss",
+    name: "GUSS.ONE",
+    image:
+      "https://assets.coingecko.com/coins/images/8509/large/gussone_mid.png?1559030931",
+    contracts: {
+      ethereum: "0xdae6f68da3bab6866742a7f4050366f6ac48760d",
+    },
+  },
+  {
+    id: "gram",
+    symbol: "gram",
+    name: "OpenGram",
+    image:
+      "https://assets.coingecko.com/coins/images/6261/large/gram_token.png?1547042299",
+    contracts: {},
+  },
+  {
+    id: "ryze-inu",
+    symbol: "$ryzeinu",
+    name: "Ryze Inu",
+    image:
+      "https://assets.coingecko.com/coins/images/19801/large/ryzeinu.jpeg?1635909392",
+    contracts: {
+      ethereum: "0xa63deda2909a682ad6cc4558468cf2a64d90706e",
+    },
+  },
+  {
+    id: "3x-short-ethereum-classic-token",
+    symbol: "etcbear",
+    name: "3X Short Ethereum Classic Token",
+    image:
+      "https://assets.coingecko.com/coins/images/10328/large/683JEXMN_400x400_%281%29.png?1578051480",
+    contracts: {
+      ethereum: "0xa340f0937a8c00db11c83cc16cec12310160f0b6",
+    },
+  },
+  {
+    id: "glosfer-token",
+    symbol: "glo",
+    name: "Glosfer Token",
+    image:
+      "https://assets.coingecko.com/coins/images/9237/large/ItBMqQKt_400x400.jpg?1565336364",
+    contracts: {
+      ethereum: "0xc0e6737a29de7a00e2f6011924eb257106cb082f",
+    },
+  },
+  {
+    id: "thisoption",
+    symbol: "tons",
+    name: "Thisoption",
+    image:
+      "https://assets.coingecko.com/coins/images/12470/large/Tons_200px-01.png?1600117332",
+    contracts: {
+      tron: "THgLniqRhDg5zePSrDTdU9QwY8FjD9nLYt",
+    },
+  },
+  {
+    id: "karaganda-token",
+    symbol: "krg",
+    name: "Karaganda Token",
+    image:
+      "https://assets.coingecko.com/coins/images/12611/large/117756674_103472948138919_7691283516567887912_n.jpg?1601241618",
+    contracts: {
+      ethereum: "0x32a8cd4d04d5f2e5de30ad73ef0a377eca2fdd98",
+    },
+  },
+  {
+    id: "spookeletons-token",
+    symbol: "spkl",
+    name: "Spookeletons Token",
+    image:
+      "https://assets.coingecko.com/coins/images/20086/large/14169.png?1636458787",
+    contracts: {
+      solana: "31tCNEE6LiL9yW4Bu153Dq4vi2GuorXxCA9pW9aA6ecU",
+    },
+  },
+  {
+    id: "bayc-history",
+    symbol: "sweep",
+    name: "BAYC History -The Great Floor Sweep",
+    image:
+      "https://assets.coingecko.com/coins/images/18017/large/bayc.png?1630251628",
+    contracts: {
+      ethereum: "0xfe2a5b942083d92135c7fe364bb75218e547cc62",
+    },
+  },
+  {
+    id: "torchain",
+    symbol: "tor",
+    name: "Torchain",
+    image:
+      "https://assets.coingecko.com/coins/images/8636/large/Z01mRB2BHvjsIsR95aZ4l8UTF87S5JVTgTvvdC5PVpEPaFXOoXuYwdKvEDiK3o5s-tx-o-S5KW1y2zgwn-9ftk6QUfNQsc_gnzrbvfbIgbm-_FYNoTG50PHc59XU32p6vihaXFYUnHZ9cMCHzGvq9fSqKRul9AEiUe0M9SkS65UNuL--P1ulJtc7r-rQTZpPZ3TS0VhXSGPsdwMglbhIHQDs_.jpg?1566612218",
+    contracts: {
+      ethereum: "0x4f5f2eea4ed3485e5e23a39704d5fd9d0a423886",
+    },
+  },
+  {
+    id: "bunnycake",
+    symbol: "bunnycake",
+    name: "BunnyCake",
+    image:
+      "https://assets.coingecko.com/coins/images/17343/large/IMG_2046_%282%29.PNG?1627364095",
+    contracts: {
+      "binance-smart-chain": "0x4e50deb3270906ca77d0f1d4452212f9e71593e1",
+    },
+  },
+  {
+    id: "flex-finance",
+    symbol: "flex",
+    name: "Flex Finance",
+    image:
+      "https://assets.coingecko.com/coins/images/16763/large/flex.PNG?1624937361",
+    contracts: {
+      "binance-smart-chain": "0xa806c32e7d7324f8b0bdceb2209e3fc59d3926b2",
+    },
+  },
+  {
+    id: "0-5x-long-privacy-index-token",
+    symbol: "privhalf",
+    name: "0.5X Long Privacy Index Token",
+    image:
+      "https://assets.coingecko.com/coins/images/12017/large/683JEXMN_400x400__1_.png?1596693636",
+    contracts: {
+      ethereum: "",
+    },
+  },
+  {
+    id: "yfi-business",
+    symbol: "yfib",
+    name: "YFI Business",
+    image:
+      "https://assets.coingecko.com/coins/images/12346/large/fkPIR2pc_400x400.jpg?1599192901",
+    contracts: {
+      ethereum: "0x47632da9227e322eda59f9e7691eacc6430ac87c",
+    },
+  },
+  {
+    id: "force-for-fast",
+    symbol: "fff",
+    name: "Force For Fast",
+    image:
+      "https://assets.coingecko.com/coins/images/11718/large/fff2.PNG?1593073288",
+    contracts: {
+      ethereum: "0x22f098f08c4eda4be4ad6b4ba59866f3e98cef92",
+    },
+  },
+  {
+    id: "maze-token",
+    symbol: "mzr",
+    name: "Maze Token",
+    image:
+      "https://assets.coingecko.com/coins/images/16432/large/cropped-Sans-titre-15-2.png?1624007627",
+    contracts: {
+      "binance-smart-chain": "0x75c89548c91c9e38c0194110c7091dc2b6bfda61",
+    },
+  },
+  {
+    id: "minishib",
+    symbol: "minishib",
+    name: "MiniShib",
+    image:
+      "https://assets.coingecko.com/coins/images/16883/large/LOGO-2.jpg?1625547895",
+    contracts: {
+      "binance-smart-chain": "0xd099d6ebfe446c9e8342dffd8903109d890f73b7",
+    },
+  },
+  {
+    id: "0-5x-long-balancer-token",
+    symbol: "balhalf",
+    name: "0.5X Long Balancer Token",
+    image:
+      "https://assets.coingecko.com/coins/images/12022/large/683JEXMN_400x400.png?1596694142",
+    contracts: {
+      ethereum: "",
+    },
+  },
+  {
+    id: "moonwalk",
+    symbol: "moonwalk",
+    name: "MoonWalk",
+    image:
+      "https://assets.coingecko.com/coins/images/16102/large/moonwalk.jpg?1622995404",
+    contracts: {
+      "binance-smart-chain": "0xaab13c27aaa573b83bcb705ffe2d4858569b615c",
+    },
+  },
+  {
+    id: "1x-short-cosmos-token",
+    symbol: "atomhedge",
+    name: "1X Short Cosmos Token",
+    image:
+      "https://assets.coingecko.com/coins/images/12048/large/683JEXMN_400x400.png?1596702419",
+    contracts: {
+      ethereum: "",
+    },
+  },
+  {
+    id: "pixel-inu",
+    symbol: "pixu",
+    name: "Pixel Inu",
+    image:
+      "https://assets.coingecko.com/coins/images/16344/large/1623506553440.jpg?1623773176",
+    contracts: {
+      ethereum: "0xad4c6ad1f02def1710a2d06c875a31d4868bd70a",
+    },
+  },
+  {
+    id: "ethereum-chain-token",
+    symbol: "ect",
+    name: "Ethereum Chain Token",
+    image:
+      "https://assets.coingecko.com/coins/images/17196/large/ect.PNG?1626839747",
+    contracts: {
+      ethereum: "0x59d71082d8a5b18ebc6b653ae422ac4383cd2597",
+    },
+  },
+  {
+    id: "doge-zilla",
+    symbol: "DOGEZ",
+    name: "DogeZilla Token",
+    image:
+      "https://assets.coingecko.com/coins/images/20511/large/dogezilla.png?1637807027",
+    contracts: {
+      ethereum: "0x4d8046b2f7986feb5a4b0781ebf5fa2d7a808617",
+    },
+  },
+  {
+    id: "aster",
+    symbol: "atc",
+    name: "Aster",
+    image:
+      "https://assets.coingecko.com/coins/images/17325/large/atc.png?1627311439",
+    contracts: {
+      ethereum: "0x0eb3032bcac2be1fa95e296442f225edb80fc3cd",
+    },
+  },
+  {
+    id: "lapis",
+    symbol: "lps",
+    name: "Lapis",
+    image:
+      "https://assets.coingecko.com/coins/images/16272/large/lapis_logo_small.png?1623601845",
+    contracts: {
+      "binance-smart-chain": "0x698bf4f7e3afe0a1764c545ce005a269e4c20eaa",
+    },
+  },
+  {
+    id: "geist-ftm",
+    symbol: "gftm",
+    name: "Geist FTM",
+    image:
+      "https://assets.coingecko.com/coins/images/18991/large/preview-gallery-gFTMgecko_%281%29.png?1634790810",
+    contracts: {
+      fantom: "0x39b3bd37208cbade74d0fcbdbb12d606295b430a",
+    },
+  },
+  {
+    id: "vipcoin-gold",
+    symbol: "vcg",
+    name: "VipCoin.Gold",
+    image:
+      "https://assets.coingecko.com/coins/images/14276/large/LogoVip.png?1615242403",
+    contracts: {},
+  },
+  {
+    id: "royal-bet",
+    symbol: "rbet",
+    name: "Royal BET",
+    image:
+      "https://assets.coingecko.com/coins/images/20564/large/photo_2021-11-18_14.30.41.jpeg?1637217189",
+    contracts: {
+      "binance-smart-chain": "0x3753301611c7d2f352d28151d14d915492c6940f",
+    },
+  },
+  {
+    id: "acash-coin",
+    symbol: "aca",
+    name: "Acash Coin",
+    image:
+      "https://assets.coingecko.com/coins/images/9471/large/JxCQN9vthyjwGMcjPHzlYJwcu84LG-l3rFR3zgAOGd6BJTtxFVkmZt5PbUJytMa_RrZvYI5EeVm_vP89viF_hyFxwLGw6LlIkgSk32kGMnIy7o8zDkMBrO0wd-4zC--0Ulz9OUESJUOzy6cwH6xx7s5QbF0U3A3fVL9w4Q_jgcKJeM75iuaRMT8k6IhUq6GPiNe-vAyIjpQJI_407eFSeNyB5FVz7w4h5Lu10fLp5ti0mZZs.jpg?1575586540",
+    contracts: {
+      ethereum: "0x63d958d765f5bd88efdbd8afd32445393b24907f",
+    },
+  },
+  {
+    id: "rich-maker",
+    symbol: "rich",
+    name: "Rich Maker",
+    image:
+      "https://assets.coingecko.com/coins/images/14047/large/200.png?1615803353",
+    contracts: {
+      "binance-smart-chain": "0x0d94335595ae842890bec091ef8c47d62f545d99",
+    },
+  },
+  {
+    id: "neoworld-cash",
+    symbol: "nash",
+    name: "NeoWorld Cash",
+    image:
+      "https://assets.coingecko.com/coins/images/6737/large/D7F231BA7E294954A0C2C4EBA6BCEFEB.png?1547042977",
+    contracts: {
+      ethereum: "0x0a255f700b16c0acf5673565c757b94fb38b27f2",
+    },
+  },
+  {
+    id: "commons-earth",
+    symbol: "com",
+    name: "Commons Earth",
+    image:
+      "https://assets.coingecko.com/coins/images/14087/large/commons-earth.png?1614214707",
+    contracts: {
+      ethereum: "0xcae838187c1f813fc3bfae6387bf34aeacb5bef6",
+    },
+  },
+  {
+    id: "hicoin",
+    symbol: "xhi",
+    name: "HiCoin",
+    image:
+      "https://assets.coingecko.com/coins/images/572/large/hicoin.png?1547034251",
+    contracts: {},
+  },
+  {
+    id: "0-5x-long-cosmos-token",
+    symbol: "atomhalf",
+    name: "0.5X Long Cosmos Token",
+    image:
+      "https://assets.coingecko.com/coins/images/12007/large/683JEXMN_400x400.png?1596692188",
     contracts: {
       ethereum: "",
     },
@@ -98912,835 +99189,41 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "global-reserve-system",
-    symbol: "glob",
-    name: "Global Reserve System",
+    id: "voltz",
+    symbol: "voltz",
+    name: "Voltz",
     image:
-      "https://assets.coingecko.com/coins/images/10773/large/g20.png?1583379257",
+      "https://assets.coingecko.com/coins/images/8020/large/voltz.png?1553478253",
     contracts: {
-      ethereum: "0x45f2ab0ca2116b2e1a70bf5e13293947b25d0272",
+      ethereum: "0x60715e436c37444e29772c0d26a98ae1e8e1a989",
     },
   },
   {
-    id: "1x-short-vechain-token",
-    symbol: "vethedge",
-    name: "1X Short VeChain Token",
+    id: "seadex",
+    symbol: "sead",
+    name: "SEADEX",
     image:
-      "https://assets.coingecko.com/coins/images/12038/large/683JEXMN_400x400__1_.png?1596700312",
+      "https://assets.coingecko.com/coins/images/6571/large/M7boRCw1_400x400.jpg?1547042780",
     contracts: {
-      ethereum: "",
+      ethereum: "0x936862d34b930b85272f65e94d5b6ec469f95ff7",
     },
   },
   {
-    id: "solit",
-    symbol: "slt",
-    name: "Solit",
+    id: "alrightcoin",
+    symbol: "alc",
+    name: "AlrightCoin",
     image:
-      "https://assets.coingecko.com/coins/images/20553/large/logo_-_2021-11-18T112941.579.png?1637206190",
+      "https://assets.coingecko.com/coins/images/11611/large/34B2E0C6-DDCB-4F48-B6BE-A2D9FB8734A3.png?1591842917",
     contracts: {
-      solana: "SLT3iSYKeBuCyxvnfij4RUhMfKxZCY3s12Z5pfkTXhV",
+      ethereum: "0x95d82ba91256db995c80bed690d0a779191af62b",
     },
   },
   {
-    id: "whis-inu",
-    symbol: "whis",
-    name: "Whis Inu",
+    id: "0-5x-long-theta-network-token",
+    symbol: "thetahalf",
+    name: "0.5X Long Theta Network Token",
     image:
-      "https://assets.coingecko.com/coins/images/19519/large/whis.jpeg?1635322879",
-    contracts: {
-      ethereum: "0x95f95388d97002af8f5a5e4c2f308d91ee1914ec",
-    },
-  },
-  {
-    id: "bliss-2",
-    symbol: "bliss",
-    name: "Bliss",
-    image:
-      "https://assets.coingecko.com/coins/images/13762/large/eD2mpsGhthNTkzYlFjNACI_Oy8IwC9kh7TISfep2ZcaRYoNiVFOwiUprqlrzwVTHRddCUULAEQGyPPjaTqG2ZLCPvCX5ycQF3TMrffadkJGDKe_wQ0N8QT2MO4xXMJ4c6PJgi2MG0WySER24ZbvahGPjtxBBPIb3fS21Seydik57qQyJMYB73il_L636mqaIT1gc9h75K5uT8UK.jpg?1611695377",
-    contracts: {
-      ethereum: "0x50d2de5397d7c657c3d424634a2ddf4e0d73d789",
-    },
-  },
-  {
-    id: "tron-atm",
-    symbol: "tatm",
-    name: "TRON ATM",
-    image:
-      "https://assets.coingecko.com/coins/images/12159/large/45691608.png?1597703740",
-    contracts: {
-      tron: "TX8EdSeZQ99TvBbz8SXxxaBMTnEyV3Vmjw",
-    },
-  },
-  {
-    id: "matic-dai-stablecoin",
-    symbol: "dai-matic",
-    name: "Matic DAI Stablecoin",
-    image:
-      "https://assets.coingecko.com/coins/images/19344/large/io1v25anp7t7nz954gdam2m27eqp4arr93jly4maa.png?1635126141",
-    contracts: {
-      iotex: "0x62a9d987cbf4c45a550deed5b57b200d7a319632",
-    },
-  },
-  {
-    id: "culture-ticket-chain",
-    symbol: "ctc",
-    name: "Culture Ticket Chain",
-    image:
-      "https://assets.coingecko.com/coins/images/6263/large/ctchain.png?1547042301",
-    contracts: {},
-  },
-  {
-    id: "nyan-cat",
-    symbol: "ncat",
-    name: "NCAT Token",
-    image:
-      "https://assets.coingecko.com/coins/images/14556/large/ncat_logo.jpg?1617002485",
-    contracts: {
-      "binance-smart-chain": "0x0cf011a946f23a03ceff92a4632d5f9288c6c70d",
-    },
-  },
-  {
-    id: "unicap-finance",
-    symbol: "ucap",
-    name: "Unicap.Finance",
-    image:
-      "https://assets.coingecko.com/coins/images/13300/large/unicap256.png?1607308439",
-    contracts: {
-      ethereum: "0xbaa70614c7aafb568a93e62a98d55696bcc85dfe",
-    },
-  },
-  {
-    id: "spookeletons-token",
-    symbol: "spkl",
-    name: "Spookeletons Token",
-    image:
-      "https://assets.coingecko.com/coins/images/20086/large/14169.png?1636458787",
-    contracts: {
-      solana: "31tCNEE6LiL9yW4Bu153Dq4vi2GuorXxCA9pW9aA6ecU",
-    },
-  },
-  {
-    id: "hecofi",
-    symbol: "hfi",
-    name: "HecoFi",
-    image:
-      "https://assets.coingecko.com/coins/images/14045/large/8e113d8.png?1614033745",
-    contracts: {
-      "huobi-token": "0x98fc3b60ed4a504f588342a53746405e355f9347",
-    },
-  },
-  {
-    id: "levolution",
-    symbol: "levl",
-    name: "Levolution",
-    image:
-      "https://assets.coingecko.com/coins/images/7370/large/L_Icon_Blue_200x200.png?1618983083",
-    contracts: {
-      ethereum: "0x09970aec766b6f3223aca9111555e99dc50ff13a",
-    },
-  },
-  {
-    id: "lnko-token",
-    symbol: "lnko",
-    name: "LNKO Token",
-    image:
-      "https://assets.coingecko.com/coins/images/9199/large/logo_%289%29.png?1565077907",
-    contracts: {
-      ethereum: "0x11afe7fa792589dd1236257f99ba09f510460ad9",
-    },
-  },
-  {
-    id: "0-5x-long-matic-token",
-    symbol: "matichalf",
-    name: "0.5X Long Matic Token",
-    image:
-      "https://assets.coingecko.com/coins/images/11990/large/683JEXMN_400x400.png?1596688092",
-    contracts: {
-      ethereum: "",
-    },
-  },
-  {
-    id: "topcat",
-    symbol: "topcat",
-    name: "TopCat",
-    image:
-      "https://assets.coingecko.com/coins/images/15898/large/topcat_logo.jpg?1622384510",
-    contracts: {
-      "binance-smart-chain": "0x78f87d1613b35468455e8379c94e9cc03d2b666f",
-    },
-  },
-  {
-    id: "antiample",
-    symbol: "xamp",
-    name: "Antiample",
-    image:
-      "https://assets.coingecko.com/coins/images/11925/large/antiample.png?1596168983",
-    contracts: {
-      ethereum: "0xf911a7ec46a2c6fa49193212fe4a2a9b95851c27",
-    },
-  },
-  {
-    id: "trustusd",
-    symbol: "trusd",
-    name: "TrustUSD",
-    image:
-      "https://assets.coingecko.com/coins/images/9811/large/TrustUSDlogo.png?1589631273",
-    contracts: {
-      ethereum: "0xdd436a0dce9244b36599ae7b22f0373b4e33992d",
-    },
-  },
-  {
-    id: "yfi-credits-group",
-    symbol: "yficg",
-    name: "YFI Credits Group",
-    image:
-      "https://assets.coingecko.com/coins/images/12932/large/70994628.png?1603697599",
-    contracts: {
-      ethereum: "0x9080e92296a176883aab1d7d1b7e50bc055b0caa",
-    },
-  },
-  {
-    id: "sov",
-    symbol: "sov",
-    name: "SOV",
-    image:
-      "https://assets.coingecko.com/coins/images/9575/large/sov.PNG?1568932551",
-    contracts: {
-      eos: "",
-    },
-  },
-  {
-    id: "poc-blockchain",
-    symbol: "poc",
-    name: "POC Blockchain",
-    image:
-      "https://assets.coingecko.com/coins/images/13759/large/PQ7MaT8N_400x400.png?1611612016",
-    contracts: {},
-  },
-  {
-    id: "dragonbit",
-    symbol: "drgb",
-    name: "Dragonbit",
-    image:
-      "https://assets.coingecko.com/coins/images/10123/large/drgb.PNG?1576125394",
-    contracts: {
-      ethereum: "0x9d3e0892d11f19f5181d4a4c5d04187a9e0d7032",
-    },
-  },
-  {
-    id: "pluto-network",
-    symbol: "ptn",
-    name: "Pluto Network",
-    image:
-      "https://assets.coingecko.com/coins/images/15703/large/pluto-logo-horizontal.png?1621576452",
-    contracts: {
-      "binance-smart-chain": "0x3999565294ca158d3d7cde9c74c86be928317ea0",
-    },
-  },
-  {
-    id: "starblock",
-    symbol: "stb",
-    name: "StarBlock",
-    image:
-      "https://assets.coingecko.com/coins/images/8668/large/starblock-logo-for-coinmarketcap.png?1560207677",
-    contracts: {
-      ethereum: "0xc48b1ac1417db27c4e2c2ed3dae5a3d2fbb07dc5",
-    },
-  },
-  {
-    id: "zomainfinity",
-    symbol: "zin",
-    name: "ZomaInfinity",
-    image:
-      "https://assets.coingecko.com/coins/images/18043/large/Final2.png?1630317786",
-    contracts: {
-      "binance-smart-chain": "0xfbe0b4ae6e5a200c36a341299604d5f71a5f0a48",
-    },
-  },
-  {
-    id: "pokerain",
-    symbol: "mmda",
-    name: "Pokerain",
-    image:
-      "https://assets.coingecko.com/coins/images/6617/large/download_%287%29.jpeg?1547042818",
-    contracts: {},
-  },
-  {
-    id: "1x-short-defi-index-token",
-    symbol: "defihedge",
-    name: "1X Short DeFi Index Token",
-    image:
-      "https://assets.coingecko.com/coins/images/12014/large/683JEXMN_400x400__1_.png?1596693076",
-    contracts: {
-      ethereum: "",
-    },
-  },
-  {
-    id: "crespo",
-    symbol: "cso",
-    name: "Crespo",
-    image:
-      "https://assets.coingecko.com/coins/images/9125/large/crespo.png?1564547729",
-    contracts: {
-      ethereum: "0x5ecb025e51415dba9fd272c551076357cf4069f5",
-    },
-  },
-  {
-    id: "torpedo",
-    symbol: "torpedo",
-    name: "Torpedo",
-    image:
-      "https://assets.coingecko.com/coins/images/14969/large/l4sLwkwR_400x400.jpg?1619168895",
-    contracts: {
-      "binance-smart-chain": "0xaf169e53e9f07de6f9f4eac67e2833c623f0c122",
-    },
-  },
-  {
-    id: "nuvo-cash",
-    symbol: "nuvo",
-    name: "Nuvo Cash",
-    image:
-      "https://assets.coingecko.com/coins/images/11422/large/nuvo.png?1590109082",
-    contracts: {
-      ethereum: "0xe2db94e8d4e4144c336e45668a792d17d48a482c",
-    },
-  },
-  {
-    id: "eskisehir-fan-token",
-    symbol: "eses",
-    name: "Eskişehir Fan Tokens",
-    image:
-      "https://assets.coingecko.com/coins/images/17653/large/eses.png?1628754002",
-    contracts: {
-      Bitcichain: "0x97917e2ff8a4d68c4112696924a9d1343f3dd14d",
-    },
-  },
-  {
-    id: "aicon",
-    symbol: "aico",
-    name: "Aicon",
-    image:
-      "https://assets.coingecko.com/coins/images/12892/large/5920.png?1603333534",
-    contracts: {
-      ethereum: "0xe7fb3559358a99df54466d0350e4ad6dc7093da3",
-    },
-  },
-  {
-    id: "mamadoge",
-    symbol: "mamadoge",
-    name: "MamaDoge",
-    image:
-      "https://assets.coingecko.com/coins/images/16745/large/IYcfpsh.png?1624873265",
-    contracts: {
-      "binance-smart-chain": "0x7819806b6ea4b5582c5ae3825a521b4067b5c7fe",
-    },
-  },
-  {
-    id: "feellike",
-    symbol: "fll",
-    name: "Feellike",
-    image:
-      "https://assets.coingecko.com/coins/images/12075/large/FLL_logo_200.png?1596751266",
-    contracts: {
-      ethereum: "0x9235bda06b8807161b8fbb1e102cb654555b212f",
-    },
-  },
-  {
-    id: "native-utility-token",
-    symbol: "nut",
-    name: "Native Utility Token",
-    image:
-      "https://assets.coingecko.com/coins/images/8329/large/Native_Utility_Token.png?1559287468",
-    contracts: {
-      eos: null,
-    },
-  },
-  {
-    id: "cryptonite",
-    symbol: "CRT",
-    name: "Cryptonite",
-    image:
-      "https://assets.coingecko.com/coins/images/18685/large/4oABqEV.png?1632978434",
-    contracts: {
-      "binance-smart-chain": "0x6904b1c25c91fbd9431621fbe495d7c49fcd171f",
-    },
-  },
-  {
-    id: "grill-farm",
-    symbol: "grill",
-    name: "Grill Farm",
-    image:
-      "https://assets.coingecko.com/coins/images/17958/large/HDcnXpY4_400x400.jpg?1629937487",
-    contracts: {
-      "binance-smart-chain": "0x7853401a1095dd0b04edb92366233c37fb511e89",
-    },
-  },
-  {
-    id: "bitcoin-pay",
-    symbol: "btp",
-    name: "Bitcoin Pay",
-    image:
-      "https://assets.coingecko.com/coins/images/6174/large/bitcoin-pay.png?1547042200",
-    contracts: {},
-  },
-  {
-    id: "idle-susd-yield",
-    symbol: "idleSUSDYield",
-    name: "IdleSUSD (Yield)",
-    image:
-      "https://assets.coingecko.com/coins/images/11934/large/idlesusdv3mmaxyield_32.png?1596263703",
-    contracts: {
-      ethereum: "0xf52cdcd458bf455aed77751743180ec4a595fd3f",
-    },
-  },
-  {
-    id: "cc",
-    symbol: "cc",
-    name: "CC",
-    image:
-      "https://assets.coingecko.com/coins/images/11593/large/CC_logo_200.png?1591599112",
-    contracts: {
-      ethereum: "0x15c9dd08fb16331b9749a8d7d16bcd71c985f190",
-    },
-  },
-  {
-    id: "tothe-moon",
-    symbol: "ttm",
-    name: "To The Moon",
-    image:
-      "https://assets.coingecko.com/coins/images/11604/large/download_%2814%29.png?1591772757",
-    contracts: {
-      ethereum: "0x714b1fded61090a6c49eb0b4d088b8e5ebd64e61",
-    },
-  },
-  {
-    id: "polyfi",
-    symbol: "polyfi",
-    name: "PolyFi",
-    image:
-      "https://assets.coingecko.com/coins/images/15383/large/E8007915-E6-F0-4-E31-A3-BB-C75638060-A40.png?1620698891",
-    contracts: {
-      "polygon-pos": "0xfb005a1834eaaa6e55945b4b756e6873cecfe5ae",
-    },
-  },
-  {
-    id: "web-coin-pay",
-    symbol: "wec",
-    name: "Web Coin Pay",
-    image:
-      "https://assets.coingecko.com/coins/images/12728/large/logo_%281%29.png?1602055480",
-    contracts: {},
-  },
-  {
-    id: "aok",
-    symbol: "aok",
-    name: "AOK",
-    image:
-      "https://assets.coingecko.com/coins/images/20516/large/dFtBcV56_400x400.jpg?1637187888",
-    contracts: {},
-  },
-  {
-    id: "shibacock",
-    symbol: "cock",
-    name: "Shibacock",
-    image:
-      "https://assets.coingecko.com/coins/images/15447/large/Screenshot_7.png?1620814560",
-    contracts: {
-      "binance-smart-chain": "0x9fdce4bafccfc9e9dac362be6bb5fb5d2aba3a58",
-    },
-  },
-  {
-    id: "520",
-    symbol: "520",
-    name: "520",
-    image:
-      "https://assets.coingecko.com/coins/images/9758/large/logo_%2822%29.png?1571437829",
-    contracts: {
-      ethereum: "0x62d75a2a10f755104bd1024d997141ce793cf585",
-    },
-  },
-  {
-    id: "bocketbsc",
-    symbol: "rktbsc",
-    name: "RocketBSC",
-    image:
-      "https://assets.coingecko.com/coins/images/16252/large/rocketbsc.PNG?1623393868",
-    contracts: {
-      "binance-smart-chain": "0x86f56c9041e87d62377acada27055a8debfc8c0f",
-    },
-  },
-  {
-    id: "vollar",
-    symbol: "vollar",
-    name: "V-Dimension",
-    image:
-      "https://assets.coingecko.com/coins/images/7986/large/vollar.png?1557722408",
-    contracts: {},
-  },
-  {
-    id: "polkainu",
-    symbol: "pinu",
-    name: "PolkaInu",
-    image:
-      "https://assets.coingecko.com/coins/images/19897/large/chart-logo.png?1636094124",
-    contracts: {
-      ethereum: "0xaabcecd071ab4ace5496f6ff3e1c4c3ee8116f75",
-    },
-  },
-  {
-    id: "0-5x-long-privacy-index-token",
-    symbol: "privhalf",
-    name: "0.5X Long Privacy Index Token",
-    image:
-      "https://assets.coingecko.com/coins/images/12017/large/683JEXMN_400x400__1_.png?1596693636",
-    contracts: {
-      ethereum: "",
-    },
-  },
-  {
-    id: "palace",
-    symbol: "paa",
-    name: "Palace",
-    image:
-      "https://assets.coingecko.com/coins/images/11141/large/da443cb2601f5fbdab9a2e176d62d6ce.png?1588911369",
-    contracts: {
-      ethereum: "0x3d9ac8e7a9c9be11dfac1677dda901e28d44527f",
-    },
-  },
-  {
-    id: "rotten-floki",
-    symbol: "rotten",
-    name: "Rotten Floki",
-    image:
-      "https://assets.coingecko.com/coins/images/19791/large/floki.png?1635895887",
-    contracts: {
-      "binance-smart-chain": "0x7f976fce4ff9f5fa3ed76609c5cb4d406399e32d",
-    },
-  },
-  {
-    id: "boozedoge",
-    symbol: "BODO",
-    name: "BoozeDoge",
-    image:
-      "https://assets.coingecko.com/coins/images/18852/large/Booze-Logo-CMC.png?1633592459",
-    contracts: {
-      "binance-smart-chain": "0x2f87afe4bc8c989fa488cb3fd6fe6ac2976b0743",
-    },
-  },
-  {
-    id: "goldex-token",
-    symbol: "gldx",
-    name: "Goldex Token",
-    image:
-      "https://assets.coingecko.com/coins/images/17814/large/gldx-logo-200x200.png?1629337485",
-    contracts: {
-      ethereum: "0xc631120155621ee625835ec810b9885cdd764cd6",
-    },
-  },
-  {
-    id: "bonorum-coin",
-    symbol: "bono",
-    name: "Bonorum",
-    image:
-      "https://assets.coingecko.com/coins/images/10563/large/logo-256x256.png?1581024055",
-    contracts: {},
-  },
-  {
-    id: "hiz-finance",
-    symbol: "hiz",
-    name: "Hiz Finance",
-    image:
-      "https://assets.coingecko.com/coins/images/12974/large/73051179.png?1603959145",
-    contracts: {
-      ethereum: "0xc761d1ccb38a94703675d2cdb15f7f1b3dcff7b7",
-    },
-  },
-  {
-    id: "iowbtc",
-    symbol: "iowbtc",
-    name: "ioWBTC",
-    image:
-      "https://assets.coingecko.com/coins/images/19347/large/io1c7unwg8h8vph89xwqru4f7zfa4yy5002wxvlrm.png?1635126652",
-    contracts: {
-      iotex: "0xc7b93720f73b037394ce00f954f849ed484a3dea",
-    },
-  },
-  {
-    id: "monspac",
-    symbol: "mspc",
-    name: "Monspac",
-    image:
-      "https://assets.coingecko.com/coins/images/19408/large/MSPC_logo-01.png?1635211210",
-    contracts: {
-      "binance-smart-chain": "0xba509bdb71a29301860800e13867b59b461747af",
-    },
-  },
-  {
-    id: "green-world",
-    symbol: "grew",
-    name: "Green World",
-    image:
-      "https://assets.coingecko.com/coins/images/15568/large/grew_logo.png?1621222441",
-    contracts: {
-      "binance-smart-chain": "0x77bd60ec67812eb3090a57978f1df69e3b8dad98",
-    },
-  },
-  {
-    id: "karsiyaka-taraftar-token",
-    symbol: "ksk",
-    name: "Karsiyaka Taraftar Token",
-    image:
-      "https://assets.coingecko.com/coins/images/17650/large/ksk.png?1628750530",
-    contracts: {
-      Bitcichain: "0xf425bc8ad12770fcd039d98681a5d653f5783214",
-    },
-  },
-  {
-    id: "asuka-inu",
-    symbol: "asuka",
-    name: "Asuka Inu",
-    image:
-      "https://assets.coingecko.com/coins/images/19608/large/asuka.jpeg?1635493162",
-    contracts: {
-      ethereum: "0x6864174805aa892c6049c79bc3d9ea7666a4e022",
-    },
-  },
-  {
-    id: "cerealia",
-    symbol: "cer",
-    name: "Cerealia",
-    image:
-      "https://assets.coingecko.com/coins/images/18470/large/dlm5ukusyhubg0fq3mtf.png?1632121926",
-    contracts: {
-      ethereum: "0x7c2961e69cdb64e16ffb5202208cd7b9574a9bbe",
-    },
-  },
-  {
-    id: "oec-kine",
-    symbol: "kinek",
-    name: "OEC KINE",
-    image:
-      "https://assets.coingecko.com/coins/images/18605/large/kinek.png?1632655365",
-    contracts: {
-      "okex-chain": "0xc05760d75e7f5ad428a906674ce7c7c82d003d01",
-    },
-  },
-  {
-    id: "safeblast",
-    symbol: "blast",
-    name: "SafeBlast",
-    image:
-      "https://assets.coingecko.com/coins/images/15686/large/safeblast.png?1621561206",
-    contracts: {
-      "binance-smart-chain": "0xddc0dbd7dc799ae53a98a60b54999cb6ebb3abf0",
-    },
-  },
-  {
-    id: "vesta",
-    symbol: "vesta",
-    name: "Vesta",
-    image:
-      "https://assets.coingecko.com/coins/images/12276/large/t693cWC.png?1598736747",
-    contracts: {
-      ethereum: "0x3aef8e803bd9be47e69b9f36487748d30d940b96",
-    },
-  },
-  {
-    id: "tvt",
-    symbol: "tvt",
-    name: "TVT",
-    image:
-      "https://assets.coingecko.com/coins/images/8388/large/g8hXw4QX_400x400.jpg?1557973343",
-    contracts: {
-      ethereum: "0x98e0438d3ee1404fea48e38e92853bb08cfa68bd",
-    },
-  },
-  {
-    id: "squeeze-token",
-    symbol: "SQUEEZE",
-    name: "Squeeze Token",
-    image:
-      "https://assets.coingecko.com/coins/images/18554/large/squeeze.png?1632377096",
-    contracts: {
-      ethereum: "0xabd4dc8fde9848cbc4ff2c0ee81d4a49f4803da4",
-    },
-  },
-  {
-    id: "kimchi-finance",
-    symbol: "kimchi",
-    name: "KIMCHI.finance",
-    image:
-      "https://assets.coingecko.com/coins/images/12302/large/VBa2Z60o_400x400.png?1598982471",
-    contracts: {
-      ethereum: "0x1e18821e69b9faa8e6e75dffe54e7e25754beda0",
-    },
-  },
-  {
-    id: "xrp-classic",
-    symbol: "xrpc",
-    name: "XRP Classic",
-    image:
-      "https://assets.coingecko.com/coins/images/7259/large/xrpc.png?1572011410",
-    contracts: {
-      ethereum: "0xd4ca5c2aff1eefb0bea9e9eab16f88db2990c183",
-    },
-  },
-  {
-    id: "1x-short-theta-network-token",
-    symbol: "thetahedge",
-    name: "1X Short Theta Network Token",
-    image:
-      "https://assets.coingecko.com/coins/images/12045/large/683JEXMN_400x400.png?1596701685",
-    contracts: {
-      ethereum: "",
-    },
-  },
-  {
-    id: "peach-finance",
-    symbol: "peech",
-    name: "Peach Finance",
-    image:
-      "https://assets.coingecko.com/coins/images/15376/large/PEECH-token-logo-200.png?1620692908",
-    contracts: {
-      ethereum: "0x31d939dc09a6bb55642fcbf9d56166ebc0bdec9a",
-    },
-  },
-  {
-    id: "chihuahuasol",
-    symbol: "chih",
-    name: "ChihuahuaSol",
-    image:
-      "https://assets.coingecko.com/coins/images/20528/large/rsz_chihuahua-token.png?1637200907",
-    contracts: {
-      solana: "6xtyNYX6Rf4Kp3629X11m1jqUmkV89mf9xQakUtUQfHq",
-    },
-  },
-  {
-    id: "1x-short-exchange-token-index-token",
-    symbol: "exchhedge",
-    name: "1X Short Exchange Token Index Token",
-    image:
-      "https://assets.coingecko.com/coins/images/11985/large/683JEXMN_400x400__1_.png?1596683946",
-    contracts: {
-      ethereum: "0xf8cc67e304f8e1a351ed83b4dbbe6b4076d51376",
-    },
-  },
-  {
-    id: "our-pay",
-    symbol: "our",
-    name: "Our Pay",
-    image:
-      "https://assets.coingecko.com/coins/images/13936/large/Our_pay_logo.png?1612943572",
-    contracts: {
-      ethereum: "0xdff3d69a00759449f091561a0af99a218982bd7f",
-    },
-  },
-  {
-    id: "asec-frontier",
-    symbol: "asec",
-    name: "ASEC Frontier",
-    image:
-      "https://assets.coingecko.com/coins/images/15939/large/58947b_49a936ef42ab4b7da4d2beb95852d49a_mv2.png?1622459327",
-    contracts: {
-      ethereum: "0x75b02aa1084a12b8729f5acbe1078bd450abe552",
-    },
-  },
-  {
-    id: "worldpet",
-    symbol: "wpt",
-    name: "WORLDPET",
-    image:
-      "https://assets.coingecko.com/coins/images/11707/large/worldpet3.png?1592986614",
-    contracts: {
-      ethereum: "0xe04491d64eaa464ec8fdf53c7a4c92bf5b2278cd",
-    },
-  },
-  {
-    id: "doraemoon",
-    symbol: "dora",
-    name: "Doraemoon",
-    image:
-      "https://assets.coingecko.com/coins/images/16001/large/doraemooon.PNG?1622593152",
-    contracts: {
-      "binance-smart-chain": "0xadaf3be815cd4345229324e02e839de85ce95dc2",
-    },
-  },
-  {
-    id: "space-link",
-    symbol: "splink",
-    name: "Space Link",
-    image:
-      "https://assets.coingecko.com/coins/images/19609/large/splink.png?1635925515",
-    contracts: {
-      ethereum: "0x56a41eef4aba11292c58b39f61dabc82ed22c79b",
-    },
-  },
-  {
-    id: "dscvr-finance",
-    symbol: "dscvr",
-    name: "DSCVR.Finance",
-    image:
-      "https://assets.coingecko.com/coins/images/15131/large/dscvr.PNG?1619766992",
-    contracts: {
-      ethereum: "0x3ee6e46f52c475c52040b934745501f2a0cea252",
-    },
-  },
-  {
-    id: "baby-everdoge",
-    symbol: "baby everdoge",
-    name: "Baby EverDoge",
-    image:
-      "https://assets.coingecko.com/coins/images/16462/large/Baby-Ever-Doge-Logo.png?1625066133",
-    contracts: {
-      "binance-smart-chain": "0x06c4212ae2fea51a27a045d968e73f7e91ea5521",
-    },
-  },
-  {
-    id: "trade-win",
-    symbol: "twi",
-    name: "Trade.win",
-    image:
-      "https://assets.coingecko.com/coins/images/13060/large/Logo.png?1604821765",
-    contracts: {
-      ethereum: "0xdad26bce7dcf59cd03a2455558e4dd73e1c07b66",
-    },
-  },
-  {
-    id: "yfiscurity",
-    symbol: "yfis",
-    name: "YFISCURITY",
-    image:
-      "https://assets.coingecko.com/coins/images/12277/large/Logo_YFIS_.png?1598737945",
-    contracts: {
-      ethereum: "0x86965a86539e2446f9e72634cefca7983cc21a81",
-    },
-  },
-  {
-    id: "fireball-2",
-    symbol: "fire",
-    name: "FireBall",
-    image:
-      "https://assets.coingecko.com/coins/images/15644/large/fireball.png?1621413326",
-    contracts: {
-      "polygon-pos": "0xe118e8b6dc166cd83695825eb1d30e792435bb00",
-    },
-  },
-  {
-    id: "tzbtc",
-    symbol: "tzbtc",
-    name: "tzBTC",
-    image:
-      "https://assets.coingecko.com/coins/images/19512/large/tzbtc.png?1635317869",
-    contracts: {
-      tezos: "KT1PWX2MNDUEOOD7FEMFBBDKX1D9BANNXITN_0",
-    },
-  },
-  {
-    id: "0-5x-long-dogecoin-token",
-    symbol: "dogehalf",
-    name: "0.5X Long Dogecoin Token",
-    image:
-      "https://assets.coingecko.com/coins/images/12002/large/683JEXMN_400x400.png?1596691478",
+      "https://assets.coingecko.com/coins/images/12027/large/683JEXMN_400x400.png?1596696952",
     contracts: {
       ethereum: "",
     },
@@ -99756,486 +99239,53 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "beyond-the-scene-coin",
-    symbol: "btsc",
-    name: "Beyond The Scene Coin",
+    id: "hoopoe",
+    symbol: "hoop",
+    name: "Hoopoe",
     image:
-      "https://assets.coingecko.com/coins/images/7801/large/trans_256x256.png?1572095687",
-    contracts: {},
-  },
-  {
-    id: "rain-network",
-    symbol: "rain",
-    name: "RAIN Network",
-    image:
-      "https://assets.coingecko.com/coins/images/11699/large/v4Bpj2k.png?1592963188",
+      "https://assets.coingecko.com/coins/images/18210/large/hoopoe.PNG?1630997265",
     contracts: {
-      ethereum: "0x61cdb66e56fad942a7b5ce3f419ffe9375e31075",
+      avalanche: "0x0592af5414f2f8d90a5ae3c25e937804d3965c87",
     },
   },
   {
-    id: "3x-short-dragon-index-token",
-    symbol: "drgnbear",
-    name: "3X Short Dragon Index Token",
+    id: "ethereum-vault",
+    symbol: "ethv",
+    name: "Ethereum Vault",
     image:
-      "https://assets.coingecko.com/coins/images/10256/large/683JEXMN_400x400_%281%29.png?1576677145",
+      "https://assets.coingecko.com/coins/images/13051/large/Tok425m.jpeg?1604654743",
     contracts: {
-      ethereum: "0x223fb5c14c00cfb70cf56bb63c2eef2d74fe1a78",
+      ethereum: "0x058349297672b6cc7ccb6e59a679c5add74a6898",
     },
   },
   {
-    id: "hicoin",
-    symbol: "xhi",
-    name: "HiCoin",
+    id: "whis-inu",
+    symbol: "whis",
+    name: "Whis Inu",
     image:
-      "https://assets.coingecko.com/coins/images/572/large/hicoin.png?1547034251",
-    contracts: {},
-  },
-  {
-    id: "3x-short-trx-token",
-    symbol: "trxbear",
-    name: "3X Short TRX Token",
-    image:
-      "https://assets.coingecko.com/coins/images/10234/large/683JEXMN_400x400_%281%29.png?1576618946",
+      "https://assets.coingecko.com/coins/images/19519/large/whis.jpeg?1635322879",
     contracts: {
-      ethereum: "0x86807da5b92d31f67e128771cacb85f3579646ea",
+      ethereum: "0x95f95388d97002af8f5a5e4c2f308d91ee1914ec",
     },
   },
   {
-    id: "simple-software-solutions",
-    symbol: "sss",
-    name: "Simple Software Solutions",
+    id: "1x-short-shitcoin-index-token",
+    symbol: "hedgeshit",
+    name: "1X Short Shitcoin Index Token",
     image:
-      "https://assets.coingecko.com/coins/images/11273/large/SSS-Logo-Original-transparent.png?1589853486",
-    contracts: {},
-  },
-  {
-    id: "vinci",
-    symbol: "vinci",
-    name: "Vinci",
-    image:
-      "https://assets.coingecko.com/coins/images/9675/large/logo-icon.png?1570600569",
+      "https://assets.coingecko.com/coins/images/10450/large/683JEXMN_400x400.png?1579561773",
     contracts: {
-      ethereum: "0x3db99ab08006aefcc9600972eca8c202396b4300",
+      ethereum: "0x1d9cd2180fd4e9771fca28681034d02390b14e4c",
     },
   },
   {
-    id: "magic-cake",
-    symbol: "magiccake",
-    name: "Magic Cake",
+    id: "sbland-vault-nftx",
+    symbol: "sbland",
+    name: "SBLAND Vault (NFTX)",
     image:
-      "https://assets.coingecko.com/coins/images/19279/large/magiccake.png?1634870066",
+      "https://assets.coingecko.com/coins/images/17059/large/SBLAND.png?1626150303",
     contracts: {
-      "binance-smart-chain": "0x81a2f78f7213a69de2e4c40362cbb2bb851f3f6f",
-    },
-  },
-  {
-    id: "magic-cube",
-    symbol: "mcc",
-    name: "Magic Cube Coin",
-    image:
-      "https://assets.coingecko.com/coins/images/8821/large/Magic_Cube.png?1561619567",
-    contracts: {},
-  },
-  {
-    id: "3x-short-defi-index-token",
-    symbol: "defibear",
-    name: "3X Short DeFi Index Token",
-    image:
-      "https://assets.coingecko.com/coins/images/12012/large/683JEXMN_400x400__1_.png?1596692651",
-    contracts: {
-      ethereum: "",
-    },
-  },
-  {
-    id: "green-dildo-finance",
-    symbol: "gdildo",
-    name: "Green Dildo Finance",
-    image:
-      "https://assets.coingecko.com/coins/images/16641/large/gdildo.PNG?1624585725",
-    contracts: {
-      "binance-smart-chain": "0x718f127435213b48c1564c71558608df5770fe68",
-    },
-  },
-  {
-    id: "rush",
-    symbol: "ruc",
-    name: "Rush",
-    image:
-      "https://assets.coingecko.com/coins/images/12834/large/120030147_104370844760714_1920358536411869061_n.jpg?1602882889",
-    contracts: {
-      ethereum: "0x395768aeb16484e5785612a98e9408e4cc1269ec",
-    },
-  },
-  {
-    id: "dionpay",
-    symbol: "dion",
-    name: "Dionpay",
-    image:
-      "https://assets.coingecko.com/coins/images/12080/large/e8R3iNOLYQA359IFUhK83G8FKzYQb8WfwEte_kI06fH9DhThaQ0bv3C3wYnh1Lpr1c8sss-mxm0X0VkVTJCtH_ZWuW4krYaYJyyiPPUKN5SzFuahC9MK7beR8TCHPrOvNfsLNKFekCujprbJW3gurBWjjnbO4UmeV_MnfjtVZMHLIIRPOBPwcp7AdvB2Q20SpvM1JTg1r0ln3-q.jpg?1596816478",
-    contracts: {
-      eos: "",
-    },
-  },
-  {
-    id: "3x-long-bilira-token",
-    symbol: "trybbull",
-    name: "3X Long BiLira Token",
-    image:
-      "https://assets.coingecko.com/coins/images/10449/large/683JEXMN_400x400.png?1579561683",
-    contracts: {
-      ethereum: "0xc7038ccf60e48c5b7119e55566a6ad9f2d66c7c2",
-    },
-  },
-  {
-    id: "trustercoin",
-    symbol: "tsc",
-    name: "TrusterCoin",
-    image:
-      "https://assets.coingecko.com/coins/images/17203/large/87661804.png?1626847317",
-    contracts: {
-      "binance-smart-chain": "0xa2a26349448ddafae34949a6cc2cecf78c0497ac",
-    },
-  },
-  {
-    id: "minishib",
-    symbol: "minishib",
-    name: "MiniShib",
-    image:
-      "https://assets.coingecko.com/coins/images/16883/large/LOGO-2.jpg?1625547895",
-    contracts: {
-      "binance-smart-chain": "0xd099d6ebfe446c9e8342dffd8903109d890f73b7",
-    },
-  },
-  {
-    id: "curryswap",
-    symbol: "curry",
-    name: "CurrySwap",
-    image:
-      "https://assets.coingecko.com/coins/images/13656/large/curry_logo.jpg?1610581982",
-    contracts: {
-      ethereum: "0xc2d3ae29c8309c14994d02ecd228cf86f3efde77",
-    },
-  },
-  {
-    id: "zuplo",
-    symbol: "zlp",
-    name: "Zuplo",
-    image:
-      "https://assets.coingecko.com/coins/images/13066/large/logo2x56_Mesa_de_trabajo_1.png?1604886987",
-    contracts: {
-      ethereum: "0x94d8db14831c2c08943798542c450df2844913e5",
-    },
-  },
-  {
-    id: "rich-maker",
-    symbol: "rich",
-    name: "Rich Maker",
-    image:
-      "https://assets.coingecko.com/coins/images/14047/large/200.png?1615803353",
-    contracts: {
-      "binance-smart-chain": "0x0d94335595ae842890bec091ef8c47d62f545d99",
-    },
-  },
-  {
-    id: "0-5x-long-cardano-token",
-    symbol: "adahalf",
-    name: "0.5X Long Cardano Token",
-    image:
-      "https://assets.coingecko.com/coins/images/12011/large/683JEXMN_400x400.png?1596692577",
-    contracts: {
-      ethereum: "",
-    },
-  },
-  {
-    id: "no-face-inu",
-    symbol: "NOFACE",
-    name: "No Face Inu",
-    image:
-      "https://assets.coingecko.com/coins/images/20577/large/SvPeYri.png?1637246636",
-    contracts: {
-      ethereum: "0x3093003005fd7c9c077e85c15ff47bcfcf0397e0",
-    },
-  },
-  {
-    id: "bitdefi",
-    symbol: "bfi",
-    name: "BitDefi",
-    image:
-      "https://assets.coingecko.com/coins/images/13076/large/bitdefi256x256.png?1604907555",
-    contracts: {
-      ethereum: "0x2b2b0559081c41e962777b5049632fdb30f7e652",
-    },
-  },
-  {
-    id: "amz-coin",
-    symbol: "amz",
-    name: "AMZ Coin",
-    image:
-      "https://assets.coingecko.com/coins/images/13565/large/200x_200x_png_amzcoin.png?1609831489",
-    contracts: {},
-  },
-  {
-    id: "theholyrogercoin",
-    symbol: "roger",
-    name: "TheHolyRogerCoin",
-    image:
-      "https://assets.coingecko.com/coins/images/8869/large/rogerbirdfix3p5.png?1571822035",
-    contracts: {},
-  },
-  {
-    id: "vipcoin-gold",
-    symbol: "vcg",
-    name: "VipCoin.Gold",
-    image:
-      "https://assets.coingecko.com/coins/images/14276/large/LogoVip.png?1615242403",
-    contracts: {},
-  },
-  {
-    id: "alpha-shiba-inu",
-    symbol: "alphashib",
-    name: "Alpha Shiba Inu",
-    image:
-      "https://assets.coingecko.com/coins/images/19824/large/D8-E8-D3-F1-2985-40-E5-A1-FD-EDD79-D4703-E3.png?1635936649",
-    contracts: {
-      "polygon-pos": "0x4668e4225e6bf7469c70adb17a6e1cacd03e7c85",
-    },
-  },
-  {
-    id: "mmmluckup7",
-    symbol: "mmm7",
-    name: "MMMLUCKUP7",
-    image:
-      "https://assets.coingecko.com/coins/images/18216/large/logo.png?1631006201",
-    contracts: {
-      tron: "",
-    },
-  },
-  {
-    id: "herodoge",
-    symbol: "herodoge",
-    name: "HeroDoge",
-    image:
-      "https://assets.coingecko.com/coins/images/17629/large/herodoge-coin.png?1628686933",
-    contracts: {
-      "binance-smart-chain": "0x5a8baec93d3d21e545d3e8a91d7dccdd0e8c4ddd",
-    },
-  },
-  {
-    id: "ubiner",
-    symbol: "ubin",
-    name: "Ubiner",
-    image:
-      "https://assets.coingecko.com/coins/images/12190/large/ubin.PNG?1597965582",
-    contracts: {
-      ethereum: "0xb9eceb9f717852ad0d936b46155cb0c0f43cbe8e",
-    },
-  },
-  {
-    id: "crypto-village-accelerator",
-    symbol: "cva",
-    name: "Crypto Village Accelerator",
-    image:
-      "https://assets.coingecko.com/coins/images/10071/large/logo_tondo_%281%29.png?1575499784",
-    contracts: {
-      ethereum: "0x78a52e12c7b63d05c12f9608307587cf654ec3d0",
-    },
-  },
-  {
-    id: "tokenasset",
-    symbol: "ntb",
-    name: "TokenAsset",
-    image:
-      "https://assets.coingecko.com/coins/images/13710/large/8284.png?1611097251",
-    contracts: {
-      ethereum: "0xbe393aa534f82c0ffac31bf06a23e283acb3352b",
-    },
-  },
-  {
-    id: "galaxium",
-    symbol: "glxm",
-    name: "Galaxium",
-    image:
-      "https://assets.coingecko.com/coins/images/15691/large/Galaxium-Logo-Original200.png?1621567173",
-    contracts: {
-      "binance-smart-chain": "0x67e8954493dcf031243a3498da73c167eda512d4",
-    },
-  },
-  {
-    id: "amazonacoin",
-    symbol: "amz",
-    name: "AmazonasCoin",
-    image:
-      "https://assets.coingecko.com/coins/images/11830/large/67655540_2134166093379460_7734829864909275136_o.png?1594764535",
-    contracts: {},
-  },
-  {
-    id: "royal-doge",
-    symbol: "rdoge",
-    name: "Royal Doge",
-    image:
-      "https://assets.coingecko.com/coins/images/17425/large/favicon_%284%29.png?1627606843",
-    contracts: {
-      "binance-smart-chain": "0xc80f6c08df38da4b1b0377748a9cf7196954c676",
-    },
-  },
-  {
-    id: "safe-baby-shiba",
-    symbol: "sbsh",
-    name: "Safe Baby Shiba",
-    image:
-      "https://assets.coingecko.com/coins/images/16311/large/logo_-_2021-06-15T105921.126.png?1623726182",
-    contracts: {
-      "binance-smart-chain": "0x707c9088313b20931c05d16227f146279ec28e4e",
-    },
-  },
-  {
-    id: "alliance-cargo-direct",
-    symbol: "acd",
-    name: "Alliance Cargo Direct",
-    image:
-      "https://assets.coingecko.com/coins/images/7694/large/1620803690979049473.png?1549612872",
-    contracts: {
-      ethereum: "0xe45fc4290fd3159588f532058592ea327d2e97d4",
-    },
-  },
-  {
-    id: "force-for-fast",
-    symbol: "fff",
-    name: "Force For Fast",
-    image:
-      "https://assets.coingecko.com/coins/images/11718/large/fff2.PNG?1593073288",
-    contracts: {
-      ethereum: "0x22f098f08c4eda4be4ad6b4ba59866f3e98cef92",
-    },
-  },
-  {
-    id: "3x-long-leo-token",
-    symbol: "leobull",
-    name: "3X Long LEO Token",
-    image:
-      "https://assets.coingecko.com/coins/images/10231/large/683JEXMN_400x400_%281%29.png?1576618672",
-    contracts: {
-      ethereum: "0xc2685307ef2b8842fbf3def432408c46bd0420fd",
-    },
-  },
-  {
-    id: "spooky-inu",
-    symbol: "spook",
-    name: "Spooky Inu",
-    image:
-      "https://assets.coingecko.com/coins/images/19129/large/spooky_latest.png?1634883983",
-    contracts: {
-      fantom: "0x1f7cfc9c6954ecec7122d8c7e4e4e50df52f1c98",
-    },
-  },
-  {
-    id: "3x-short-exchange-token-index-token",
-    symbol: "exchbear",
-    name: "3X Short Exchange Token Index Token",
-    image:
-      "https://assets.coingecko.com/coins/images/10331/large/683JEXMN_400x400_%281%29.png?1578052093",
-    contracts: {
-      ethereum: "0x6baa91cd8aa07431760ef2eedfedcef662a6b8b3",
-    },
-  },
-  {
-    id: "frieza-inu",
-    symbol: "frinu",
-    name: "Frieza Inu",
-    image:
-      "https://assets.coingecko.com/coins/images/20005/large/Frinu_200px.png?1636365522",
-    contracts: {
-      ethereum: "0x5aa5ba99105469b10bd82cd22b3166c88d187e3b",
-    },
-  },
-  {
-    id: "3x-short-bilira-token",
-    symbol: "trybbear",
-    name: "3X Short BiLira Token",
-    image:
-      "https://assets.coingecko.com/coins/images/10451/large/683JEXMN_400x400.png?1579561868",
-    contracts: {
-      ethereum: "0xa5ddfca8b837ccd0cf80fe6c24e2a9018fb50dba",
-    },
-  },
-  {
-    id: "dappercoin",
-    symbol: "dapp",
-    name: "DapperCoin",
-    image:
-      "https://assets.coingecko.com/coins/images/8680/large/1553137768539_mid.png?1560223998",
-    contracts: {},
-  },
-  {
-    id: "rocket-bunny",
-    symbol: "bunny",
-    name: "Rocket Bunny",
-    image:
-      "https://assets.coingecko.com/coins/images/14350/large/n8TgW06A_400x400.jpg?1615514406",
-    contracts: {
-      ethereum: "0x3ea50b7ef6a7eaf7e966e2cb72b519c16557497c",
-      "harmony-shard-0": "0x758765664769d82380c95cc3489d533fa21974fa",
-    },
-  },
-  {
-    id: "germancoin",
-    symbol: "gcx",
-    name: "GermanCoin",
-    image:
-      "https://assets.coingecko.com/coins/images/11552/large/pNfx8Lc83ER33KaMGNgBpsN0fofGu0MwRO2eM3_1Q10nzOxqgFjM4Jbq2uHUiRlSJNyMzJi1guj4jyY-vH_00bGX2hOxE79RJX4n_6_mDp13h3GraWnxW0NvfXi1Oi3n8VwHnbX5Uf-c9K7dMJrmq5VQZPYUb2r7n_nud-D32uky7zZS4S55ilccvqocKtLMWnnNH5P5ABNuoP6a8Gd9f.jpg?1590998890",
-    contracts: {
-      ethereum: "0x44a67c8570a61a28bafd0035042f2f0a73a64428",
-    },
-  },
-  {
-    id: "tasty-token",
-    symbol: "tasty",
-    name: "Tasty Token",
-    image:
-      "https://assets.coingecko.com/coins/images/16148/large/60b94679824632448f5cecd2_Tasty_Token.png?1623124261",
-    contracts: {
-      "binance-smart-chain": "0x6615ca62dc2bc773a4e037ff6d620cec9a364813",
-    },
-  },
-  {
-    id: "punk-floor",
-    symbol: "floor",
-    name: "PUNK Floor",
-    image:
-      "https://assets.coingecko.com/coins/images/18021/large/unnamed_%285%29.png?1630283171",
-    contracts: {
-      ethereum: "0xb35ed5c39f371f2cd4bc2edab1f8da314168186a",
-    },
-  },
-  {
-    id: "republic-of-dogs",
-    symbol: "rod",
-    name: "Republic of Dogs",
-    image:
-      "https://assets.coingecko.com/coins/images/17694/large/republic.PNG?1628978370",
-    contracts: {
-      "binance-smart-chain": "0x5872a0846ecb9ed23f796ad71a86fa456577f4e2",
-    },
-  },
-  {
-    id: "3x-long-tether-gold-token",
-    symbol: "xautbull",
-    name: "3X Long Tether Gold Token",
-    image:
-      "https://assets.coingecko.com/coins/images/11979/large/683JEXMN_400x400__1_.png?1596618665",
-    contracts: {
-      ethereum: "0xc9287623832668432099cef2ffdef3ced14f4315",
-    },
-  },
-  {
-    id: "ape-punk",
-    symbol: "ape$",
-    name: "APE Punk",
-    image:
-      "https://assets.coingecko.com/coins/images/14510/large/ape-punk-shards.png?1616596505",
-    contracts: {
-      ethereum: "0x26ea1f595f6567b7050fbba24f6a66e19db4d560",
+      ethereum: "0x63aa9d05c025279f8e963ba784f1254814c1e12b",
     },
   },
   {
@@ -100249,63 +99299,61 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "scatter-cx",
-    symbol: "stt",
-    name: "Scatter.cx",
+    id: "beyond-the-scene-coin",
+    symbol: "btsc",
+    name: "Beyond The Scene Coin",
     image:
-      "https://assets.coingecko.com/coins/images/10422/large/scatter.png?1580876890",
+      "https://assets.coingecko.com/coins/images/7801/large/trans_256x256.png?1572095687",
+    contracts: {},
+  },
+  {
+    id: "boxaxis",
+    symbol: "baxs",
+    name: "BoxAxis",
+    image:
+      "https://assets.coingecko.com/coins/images/7732/large/MaUNF_dJFGQujn1_y5zYWG_U1NCglt4yBsjyftdpPr5H7LqTsu0XEqcKnnRWcjTUA0DsOLCr1Ekhe37__Wpx83X29R-nbs0UTxz5eElpzw7Mcl0y8-ReYLck8dNYAxJpXG1k48pA4RousepQFj7H9JKq09h5Z4EzBwnJf2P6qFWALryESUUmAOmtByKUD5WoCWI4DIlRorsWSbbl6.jpg?1550108268",
     contracts: {
-      ethereum: "0xac9bb427953ac7fddc562adca86cf42d988047fd",
+      ethereum: "0xacf3d402e5e2c3edd5b8129e966017d293f12a4c",
     },
   },
   {
-    id: "lp-3pool-curve",
-    symbol: "3crv",
-    name: "LP 3pool Curve",
+    id: "yearn-finance-infrastructure-labs",
+    symbol: "ylab",
+    name: "Yearn-finance Infrastructure Labs",
     image:
-      "https://assets.coingecko.com/coins/images/12972/large/3pool_128.png?1603948039",
+      "https://assets.coingecko.com/coins/images/12744/large/kKGUHNFn_400x400.jpg?1602193258",
     contracts: {
-      ethereum: "0x6c3f90f043a72fa612cbac8115ee7e52bde6e490",
+      ethereum: "0x454cb9d0845bb4a28462f98c21a4fafd16ceb25f",
     },
   },
   {
-    id: "doge-zilla",
-    symbol: "DOGEZ",
-    name: "DogeZilla Token",
+    id: "cxrbn-token",
+    symbol: "cxrbn",
+    name: "CXRBN Token",
     image:
-      "https://assets.coingecko.com/coins/images/20511/large/dogezilla.png?1637807027",
+      "https://assets.coingecko.com/coins/images/20532/large/Lw8i6sAn_400x400_%281%29.jpg?1637203406",
     contracts: {
-      ethereum: "0x4d8046b2f7986feb5a4b0781ebf5fa2d7a808617",
+      ethereum: "0x720def948b1891a0ba2ca21964e2e5d0a806bc19",
     },
   },
   {
-    id: "0-5x-long-bitcoin-cash-token",
-    symbol: "bchhalf",
-    name: "0.5X Long Bitcoin Cash Token",
+    id: "twirl-governance-token",
+    symbol: "tgt",
+    name: "Twirl Governance Token",
     image:
-      "https://assets.coingecko.com/coins/images/12006/large/683JEXMN_400x400.png?1596692054",
+      "https://assets.coingecko.com/coins/images/16725/large/Yn1ebvX.png?1624850650",
+    contracts: {
+      solana: "FciGvHj9FjgSGgCBF1b9HY814FM9D28NijDd5SJrKvPo",
+    },
+  },
+  {
+    id: "0-5x-long-shitcoin-index-token",
+    symbol: "halfshit",
+    name: "0.5X Long Shitcoin Index Token",
+    image:
+      "https://assets.coingecko.com/coins/images/11995/large/683JEXMN_400x400.png?1596689551",
     contracts: {
       ethereum: "",
-    },
-  },
-  {
-    id: "world-credit-diamond-coin",
-    symbol: "wcdc",
-    name: "World Credit Diamond Coin",
-    image:
-      "https://assets.coingecko.com/coins/images/7649/large/seHi91g1_400x400.jpg?1548930150",
-    contracts: {
-      ethereum: "0xab51e836bdcbc7cc06d926c50d88328f1bb17148",
-    },
-  },
-  {
-    id: "3x-short-cosmos-token",
-    symbol: "atombear",
-    name: "3X Short Cosmos Token",
-    image:
-      "https://assets.coingecko.com/coins/images/10156/large/683JEXMN_400x400_%281%29.png?1576503839",
-    contracts: {
-      ethereum: "0x3b834a620751a811f65d8f599b3b72617a4418d0",
     },
   },
   {
@@ -100319,287 +99367,33 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "the-global-index-chain",
-    symbol: "tgic",
-    name: "The Global Index Chain",
+    id: "dscvr-finance",
+    symbol: "dscvr",
+    name: "DSCVR.Finance",
     image:
-      "https://assets.coingecko.com/coins/images/8323/large/logo.6278d22b.png?1589515874",
-    contracts: {},
-  },
-  {
-    id: "xolo",
-    symbol: "xolo",
-    name: "Xolo",
-    image:
-      "https://assets.coingecko.com/coins/images/16135/large/logo200_%2814%29.png?1623056928",
+      "https://assets.coingecko.com/coins/images/15131/large/dscvr.PNG?1619766992",
     contracts: {
-      "binance-smart-chain": "0x19314dfa75cfc1e5154f95dafab217646bdb79ac",
+      ethereum: "0x3ee6e46f52c475c52040b934745501f2a0cea252",
     },
   },
   {
-    id: "karaganda-token",
-    symbol: "krg",
-    name: "Karaganda Token",
+    id: "nanometer-bitcoin",
+    symbol: "nmbtc",
+    name: "NanoMeter Bitcoin",
     image:
-      "https://assets.coingecko.com/coins/images/12611/large/117756674_103472948138919_7691283516567887912_n.jpg?1601241618",
+      "https://assets.coingecko.com/coins/images/20059/large/logo_-_2021-11-09T161322.006.png?1636445625",
     contracts: {
-      ethereum: "0x32a8cd4d04d5f2e5de30ad73ef0a377eca2fdd98",
+      "binance-smart-chain": "0x5ddb331c3ba48a1d68cbf50dd3bc7aac407dc115",
     },
   },
   {
-    id: "3x-long-midcap-index-token",
-    symbol: "midbull",
-    name: "3X Long Midcap Index Token",
+    id: "hyperalloy",
+    symbol: "alloy",
+    name: "HyperAlloy",
     image:
-      "https://assets.coingecko.com/coins/images/10229/large/683JEXMN_400x400_%281%29.png?1576618503",
+      "https://assets.coingecko.com/coins/images/16083/large/Alloy.png?1622794183",
     contracts: {
-      ethereum: "0x59db60bd41bbc8ca4c1efee6ea2a97eae1e30cf5",
-    },
-  },
-  {
-    id: "silvercashs",
-    symbol: "svc",
-    name: "Silvercashs",
-    image:
-      "https://assets.coingecko.com/coins/images/8241/large/silvercashs.png?1589626218",
-    contracts: {
-      tron: "1002182",
-    },
-  },
-  {
-    id: "defis-network",
-    symbol: "dfs",
-    name: "Defis Network",
-    image:
-      "https://assets.coingecko.com/coins/images/12132/large/defis.3316ee78.png?1597460795",
-    contracts: {
-      eos: "",
-    },
-  },
-  {
-    id: "eautocoin",
-    symbol: "ato",
-    name: "EAutocoin",
-    image:
-      "https://assets.coingecko.com/coins/images/7132/large/ato.png?1547043631",
-    contracts: {
-      ethereum: "0xb551d08d2189ef67b4788be2c35c0743693625ca",
-    },
-  },
-  {
-    id: "torchain",
-    symbol: "tor",
-    name: "Torchain",
-    image:
-      "https://assets.coingecko.com/coins/images/8636/large/Z01mRB2BHvjsIsR95aZ4l8UTF87S5JVTgTvvdC5PVpEPaFXOoXuYwdKvEDiK3o5s-tx-o-S5KW1y2zgwn-9ftk6QUfNQsc_gnzrbvfbIgbm-_FYNoTG50PHc59XU32p6vihaXFYUnHZ9cMCHzGvq9fSqKRul9AEiUe0M9SkS65UNuL--P1ulJtc7r-rQTZpPZ3TS0VhXSGPsdwMglbhIHQDs_.jpg?1566612218",
-    contracts: {
-      ethereum: "0x4f5f2eea4ed3485e5e23a39704d5fd9d0a423886",
-    },
-  },
-  {
-    id: "sl3-token",
-    symbol: "sl3",
-    name: "Mammoth",
-    image:
-      "https://assets.coingecko.com/coins/images/20608/large/mammoth_200_pix_%281%29.jpg?1637291056",
-    contracts: {
-      avalanche: "0x2841a8a2ce98a9d21ad8c3b7fc481527569bd7bb",
-    },
-  },
-  {
-    id: "microtuber",
-    symbol: "mct",
-    name: "MicroTuber",
-    image:
-      "https://assets.coingecko.com/coins/images/15489/large/mct.PNG?1621040638",
-    contracts: {
-      ethereum: "0x6876eba317272fe221c67405c5e8eb3b24535547",
-    },
-  },
-  {
-    id: "swisscoin-classic",
-    symbol: "sicc",
-    name: "Swisscoin-Classic",
-    image:
-      "https://assets.coingecko.com/coins/images/7820/large/O3n5OM3G3dkx9_koYzDe18tZ1j0kDAxmfi2gIUPDHVfT-wCvtL8QsqNH1LQFc2NS5NutgExgEGyA4wpeH9H8KjNx9gMj-RTNkKmm5N9QDDJlQMyZW7IOod60iz7wLAdtgzZOrI-WgBZr8Vwft1JAuRoihr0WI9fPTw8NBhjBzNfjt-ovOyG9ipBv2DyKuJMCtBdpr5YJsopK0khr8.jpg?1550817031",
-    contracts: {},
-  },
-  {
-    id: "genwealth-coin",
-    symbol: "gwc",
-    name: "GenWealth Coin",
-    image:
-      "https://assets.coingecko.com/coins/images/16052/large/white_background___no_name.png?1622694393",
-    contracts: {
-      "binance-smart-chain": "0x280ce73a3a90b8aeb4ef7ed10c928c35ec5c0420",
-    },
-  },
-  {
-    id: "wesing-coin",
-    symbol: "wsc",
-    name: "WeSing Coin",
-    image:
-      "https://assets.coingecko.com/coins/images/7645/large/wesingcoin.png?1548923241",
-    contracts: {
-      ethereum: "0x2dcd9b1a7ed408ff48bd4918a1f9c0535dc54ead",
-    },
-  },
-  {
-    id: "bowl-a-coin",
-    symbol: "bac",
-    name: "Bowl A Coin",
-    image:
-      "https://assets.coingecko.com/coins/images/10407/large/67889072_875141466188128_5648314299878211584_o.jpg?1578952952",
-    contracts: {
-      ethereum: "0x062e3be6a7c56a395b1881a0cd69a4923ade4fa2",
-    },
-  },
-  {
-    id: "hanagold-token",
-    symbol: "hng",
-    name: "HanaGold Token",
-    image:
-      "https://assets.coingecko.com/coins/images/19846/large/198364726_4177388515670795_6662680454680253231_n.jpg?1636035545",
-    contracts: {
-      kardiachain: "0x148de93957ed77f8d5546323b1eda0bf06eb52f3",
-    },
-  },
-  {
-    id: "0-5x-long-xrp-token",
-    symbol: "xrphalf",
-    name: "0.5X Long XRP Token",
-    image:
-      "https://assets.coingecko.com/coins/images/12029/large/683JEXMN_400x400.png?1596697580",
-    contracts: {
-      ethereum: "",
-    },
-  },
-  {
-    id: "bull-run",
-    symbol: "brun",
-    name: "Bull Run",
-    image:
-      "https://assets.coingecko.com/coins/images/15897/large/BR250logo.png?1622299137",
-    contracts: {
-      "binance-smart-chain": "0x13d08a619848019f16f9f16d7f4b7eb90db38ed5",
-    },
-  },
-  {
-    id: "ethereum-chain-token",
-    symbol: "ect",
-    name: "Ethereum Chain Token",
-    image:
-      "https://assets.coingecko.com/coins/images/17196/large/ect.PNG?1626839747",
-    contracts: {
-      ethereum: "0x59d71082d8a5b18ebc6b653ae422ac4383cd2597",
-    },
-  },
-  {
-    id: "boobank",
-    symbol: "boob",
-    name: "BooBank",
-    image:
-      "https://assets.coingecko.com/coins/images/12894/large/boobank.PNG?1604043315",
-    contracts: {
-      ethereum: "0xa9c44135b3a87e0688c41cf8c27939a22dd437c9",
-    },
-  },
-  {
-    id: "ezdex",
-    symbol: "ezx",
-    name: "EZDex",
-    image:
-      "https://assets.coingecko.com/coins/images/17345/large/EZX-200.png?1627365170",
-    contracts: {
-      ethereum: "0x9e8bfe46f9af27c5ea5c9c72b86d71bb86953a0c",
-    },
-  },
-  {
-    id: "3x-short-balancer-token",
-    symbol: "balbear",
-    name: "3X Short Balancer Token",
-    image:
-      "https://assets.coingecko.com/coins/images/12070/large/683JEXMN_400x400.png?1596709288",
-    contracts: {
-      ethereum: "",
-    },
-  },
-  {
-    id: "3x-long-bitcoin-sv-token",
-    symbol: "bsvbull",
-    name: "3X Long Bitcoin SV Token",
-    image:
-      "https://assets.coingecko.com/coins/images/10267/large/683JEXMN_400x400_%281%29.png?1576834731",
-    contracts: {
-      ethereum: "0x6e13a9e4ae3d0678e511fb6d2ad531fcf0e247bf",
-    },
-  },
-  {
-    id: "3x-short-maker-token",
-    symbol: "mkrbear",
-    name: "3X Short Maker Token",
-    image:
-      "https://assets.coingecko.com/coins/images/12071/large/683JEXMN_400x400.png?1596709460",
-    contracts: {
-      ethereum: "",
-    },
-  },
-  {
-    id: "one-share",
-    symbol: "ons",
-    name: "One Share",
-    image:
-      "https://assets.coingecko.com/coins/images/13531/large/bss.a1671c75.png?1609452258",
-    contracts: {
-      ethereum: "0x5bb29c33c4a3c29f56f8aca40b4db91d8a5fe2c5",
-    },
-  },
-  {
-    id: "financial-investment-token",
-    symbol: "fit",
-    name: "FINANCIAL INVESTMENT TOKEN",
-    image:
-      "https://assets.coingecko.com/coins/images/12426/large/Untitled-design-5.png?1599732573",
-    contracts: {},
-  },
-  {
-    id: "babylink",
-    symbol: "bblink",
-    name: "BabyLink",
-    image:
-      "https://assets.coingecko.com/coins/images/17402/large/Babylink-Logo-874x1024-1.png?1627534569",
-    contracts: {
-      "binance-smart-chain": "0xdb5bd5763c16e90f1d5b5947e1b9e2c278f054d9",
-    },
-  },
-  {
-    id: "3x-long-balancer-token",
-    symbol: "balbull",
-    name: "3X Long Balancer Token",
-    image:
-      "https://assets.coingecko.com/coins/images/12065/large/683JEXMN_400x400.png?1596708595",
-    contracts: {
-      ethereum: "",
-    },
-  },
-  {
-    id: "bluefincore",
-    symbol: "bfc",
-    name: "Bluefincore",
-    image:
-      "https://assets.coingecko.com/coins/images/16977/large/bluefinecore1.png?1625838437",
-    contracts: {
-      tron: "TDmwwnWrFxWpYTMhCQDnVaoTQx59m8e7QT",
-    },
-  },
-  {
-    id: "seadex",
-    symbol: "sead",
-    name: "SEADEX",
-    image:
-      "https://assets.coingecko.com/coins/images/6571/large/M7boRCw1_400x400.jpg?1547042780",
-    contracts: {
-      ethereum: "0x936862d34b930b85272f65e94d5b6ec469f95ff7",
+      "binance-smart-chain": "0x5ef5994fa33ff4eb6c82d51ee1dc145c546065bd",
     },
   },
   {
@@ -100613,221 +99407,303 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "banana-bucks",
-    symbol: "bab",
-    name: "Banana Bucks",
+    id: "xenon-2",
+    symbol: "xen",
+    name: "Xenon",
     image:
-      "https://assets.coingecko.com/coins/images/20592/large/_BAB_coinmedium.png?1637285029",
+      "https://assets.coingecko.com/coins/images/11105/large/DyNZKe79_400x400.jpg?1588568617",
     contracts: {
-      solana: "2Dzzc14S1D7cEFGJyMZMACuoQRHVUYFhVE74C5o8Fwau",
+      ethereum: "0x5fbdb42bb048c685c990a37f2c87fe087c586655",
     },
   },
   {
-    id: "moonwalk",
-    symbol: "moonwalk",
-    name: "MoonWalk",
+    id: "blaze-network",
+    symbol: "BLZN",
+    name: "Blaze Network",
     image:
-      "https://assets.coingecko.com/coins/images/16102/large/moonwalk.jpg?1622995404",
+      "https://assets.coingecko.com/coins/images/12248/large/A8JOuPSJ_400x400.jpg?1598511402",
     contracts: {
-      "binance-smart-chain": "0xaab13c27aaa573b83bcb705ffe2d4858569b615c",
+      ethereum: "0x70efdc485a10210b056ef8e0a32993bc6529995e",
     },
   },
   {
-    id: "polypanda",
-    symbol: "bamboo",
-    name: "PolyPanda",
+    id: "moby-dick",
+    symbol: "wot",
+    name: "Moby Dick",
     image:
-      "https://assets.coingecko.com/coins/images/15411/large/polypanda.PNG?1620771185",
+      "https://assets.coingecko.com/coins/images/16539/large/wot.png?1634717207",
     contracts: {
-      "polygon-pos": "0x8095d18fb1e702d69402a6a8c7a56bc1cce6ecc2",
+      "binance-smart-chain": "0xe861dff2099d15185b50de380db8249984cb26ea",
     },
   },
   {
-    id: "bankwupt",
-    symbol: "bankwupt",
-    name: "Bankwupt",
+    id: "green-world",
+    symbol: "grew",
+    name: "Green World",
     image:
-      "https://assets.coingecko.com/coins/images/20235/large/logo.png?1636690561",
+      "https://assets.coingecko.com/coins/images/15568/large/grew_logo.png?1621222441",
     contracts: {
-      "binance-smart-chain": "0x218d9d20c503a651946bc64b54559dcef580befd",
+      "binance-smart-chain": "0x77bd60ec67812eb3090a57978f1df69e3b8dad98",
     },
   },
   {
-    id: "favecoin",
-    symbol: "fave",
-    name: "Favecoin",
+    id: "cryptoverificationcoin",
+    symbol: "cvcc",
+    name: "CryptoVerificationCoin",
     image:
-      "https://assets.coingecko.com/coins/images/17749/large/200x200-favecoin.png?1629173567",
+      "https://assets.coingecko.com/coins/images/8745/large/logo.png?1560827289",
+    contracts: {},
+  },
+  {
+    id: "librefreelencer",
+    symbol: "libref",
+    name: "LibreFreelencer",
+    image:
+      "https://assets.coingecko.com/coins/images/13169/large/LibraF-256x256.png?1606084188",
     contracts: {
-      "binance-smart-chain": "0x5d6df41d39efb3b07eaf79494e35c417f9d6910b",
+      ethereum: "0x449efe48ad7cd423bab056276639f8120cd4f9a3",
     },
   },
   {
-    id: "lapis",
-    symbol: "lps",
-    name: "Lapis",
+    id: "bullrun2-0",
+    symbol: "br2.0",
+    name: "BullRun2.0",
     image:
-      "https://assets.coingecko.com/coins/images/16272/large/lapis_logo_small.png?1623601845",
+      "https://assets.coingecko.com/coins/images/17952/large/bullrun.png?1629896513",
     contracts: {
-      "binance-smart-chain": "0x698bf4f7e3afe0a1764c545ce005a269e4c20eaa",
+      "binance-smart-chain": "0xe0062a28798f85388da4355fe8a1bb4ec921ed3a",
     },
   },
   {
-    id: "derivex",
-    symbol: "dvx",
-    name: "Derivex",
+    id: "moonbar",
+    symbol: "moonbar",
+    name: "MoonBar",
     image:
-      "https://assets.coingecko.com/coins/images/11696/large/dvx.png?1592880992",
+      "https://assets.coingecko.com/coins/images/16178/large/68047fbd-a777-4e31-8f20-84168603a8f6.png?1623209100",
     contracts: {
-      ethereum: "0x975769557510167d25beed6e32806537173e292c",
+      "binance-smart-chain": "0x47e28936d9c7944d106e46295d87a8e4c1be818c",
     },
   },
   {
-    id: "shadowswap",
-    symbol: "shadow",
-    name: "ShadowSwap",
+    id: "gw",
+    symbol: "gw",
+    name: "GW",
     image:
-      "https://assets.coingecko.com/coins/images/16326/large/spaces_-Mb_m7t4r90kdakH8FXe_avatar-1623058079086.png?1623743174",
+      "https://assets.coingecko.com/coins/images/20260/large/04CmcQR.jpeg?1636702913",
     contracts: {
-      fantom: "0x4e8348fdd1b6619a95334fe08a82872047154cb3",
+      ethereum: "0x4be9fc99bd4102c6ddc68a1002af21852761b298",
     },
   },
   {
-    id: "cyberdoge",
-    symbol: "cybrrrdoge",
-    name: "CyberDoge",
+    id: "kenny-token",
+    symbol: "kenny",
+    name: "Kenny Token",
     image:
-      "https://assets.coingecko.com/coins/images/17455/large/VJJcCrdU_400x400.png?1627875883",
+      "https://assets.coingecko.com/coins/images/15976/large/kenny.PNG?1622526532",
     contracts: {
-      "binance-smart-chain": "0xecc62bd353edd64ed31595dbc4c92801af1e2af0",
+      "polygon-pos": "0x6b1faaa2771e8b3aa0e0ba6830436e2df2a0abd6",
     },
   },
   {
-    id: "dogegayson",
-    symbol: "GOGE",
-    name: "DogeGaySon",
+    id: "legends",
+    symbol: "legends",
+    name: "Legends",
     image:
-      "https://assets.coingecko.com/coins/images/20631/large/14766.png?1637332567",
+      "https://assets.coingecko.com/coins/images/15929/large/legends.PNG?1622441772",
     contracts: {
-      "binance-smart-chain": "0xa30d02c5cdb6a76e47ea0d65f369fd39618541fe",
+      "binance-smart-chain": "0x4ca03b31f51b4436e26f6ee335895f3fa290ee5a",
     },
   },
   {
-    id: "art-blocks-curated-fidenza-855",
-    symbol: "fdnza",
-    name: "Art Blocks Curated Fidenza #855",
+    id: "1x-short-defi-index-token",
+    symbol: "defihedge",
+    name: "1X Short DeFi Index Token",
     image:
-      "https://assets.coingecko.com/coins/images/18060/large/Fidenza-855.png?1630346397",
-    contracts: {
-      ethereum: "0x175eaf4feb0a147b5a77549389392094bf38b198",
-    },
-  },
-  {
-    id: "ouroboros",
-    symbol: "ouro",
-    name: "Ouroboros",
-    image:
-      "https://assets.coingecko.com/coins/images/10296/large/d-AjFbpo_400x400.jpg?1577655321",
-    contracts: {
-      cosmos: "",
-    },
-  },
-  {
-    id: "spender-x",
-    symbol: "spdx",
-    name: "SPENDER-X",
-    image:
-      "https://assets.coingecko.com/coins/images/9259/large/spdx.PNG?1565650786",
-    contracts: {
-      ethereum: "0x2c756e74b7309d785b5e2960ef262c4f14a87930",
-    },
-  },
-  {
-    id: "the-kraken",
-    symbol: "krkn",
-    name: "The Kraken",
-    image:
-      "https://assets.coingecko.com/coins/images/17360/large/h5T7xgb.png?1627372374",
-    contracts: {
-      "binance-smart-chain": "0x24cbcaec5178a8bb455d07f14518f9e83f517970",
-    },
-  },
-  {
-    id: "1x-short-cosmos-token",
-    symbol: "atomhedge",
-    name: "1X Short Cosmos Token",
-    image:
-      "https://assets.coingecko.com/coins/images/12048/large/683JEXMN_400x400.png?1596702419",
+      "https://assets.coingecko.com/coins/images/12014/large/683JEXMN_400x400__1_.png?1596693076",
     contracts: {
       ethereum: "",
     },
   },
   {
-    id: "voltz",
-    symbol: "voltz",
-    name: "Voltz",
+    id: "definition-network",
+    symbol: "dzi",
+    name: "DeFinition Network",
     image:
-      "https://assets.coingecko.com/coins/images/8020/large/voltz.png?1553478253",
-    contracts: {
-      ethereum: "0x60715e436c37444e29772c0d26a98ae1e8e1a989",
-    },
-  },
-  {
-    id: "3x-short-ethereum-classic-token",
-    symbol: "etcbear",
-    name: "3X Short Ethereum Classic Token",
-    image:
-      "https://assets.coingecko.com/coins/images/10328/large/683JEXMN_400x400_%281%29.png?1578051480",
-    contracts: {
-      ethereum: "0xa340f0937a8c00db11c83cc16cec12310160f0b6",
-    },
-  },
-  {
-    id: "3x-long-okb-token",
-    symbol: "okbbull",
-    name: "3X Long OKB Token",
-    image:
-      "https://assets.coingecko.com/coins/images/10431/large/683JEXMN_400x400.png?1579276257",
-    contracts: {
-      ethereum: "0x8af785687ee8d75114b028997c9ca36b5cc67bc4",
-    },
-  },
-  {
-    id: "philips-pay-coin",
-    symbol: "ppc",
-    name: "PHILLIPS PAY COIN",
-    image:
-      "https://assets.coingecko.com/coins/images/10311/large/ppc.PNG?1588127720",
-    contracts: {
-      ethereum: "0x84f710bae3316a74fb0fcb01904d2578a4cc6a26",
-    },
-  },
-  {
-    id: "maze-token",
-    symbol: "mzr",
-    name: "Maze Token",
-    image:
-      "https://assets.coingecko.com/coins/images/16432/large/cropped-Sans-titre-15-2.png?1624007627",
-    contracts: {
-      "binance-smart-chain": "0x75c89548c91c9e38c0194110c7091dc2b6bfda61",
-    },
-  },
-  {
-    id: "agricoin",
-    symbol: "AGN",
-    name: "Agricoin",
-    image:
-      "https://assets.coingecko.com/coins/images/2056/large/agricoin.png?1547036352",
+      "https://assets.coingecko.com/coins/images/12264/large/definition_network_logo.png?1598599634",
     contracts: {},
   },
   {
-    id: "3x-long-pax-gold-token",
-    symbol: "paxgbull",
-    name: "3X Long PAX Gold Token",
+    id: "jack-raffle",
+    symbol: "jackr",
+    name: "Jack Raffle",
     image:
-      "https://assets.coingecko.com/coins/images/10435/large/683JEXMN_400x400.png?1579276663",
+      "https://assets.coingecko.com/coins/images/16286/large/logo_-_2021-06-14T153653.618.png?1623656220",
     contracts: {
-      ethereum: "0x81f09ed4b98b1c8e99b1fa838b72acb842afe94c",
+      "binance-smart-chain": "0x32c2bdea6eb916019e37c90650f7914a23beb33b",
+    },
+  },
+  {
+    id: "bitdefi",
+    symbol: "bfi",
+    name: "BitDefi",
+    image:
+      "https://assets.coingecko.com/coins/images/13076/large/bitdefi256x256.png?1604907555",
+    contracts: {
+      ethereum: "0x2b2b0559081c41e962777b5049632fdb30f7e652",
+    },
+  },
+  {
+    id: "3x-short-swipe-token",
+    symbol: "sxpbear",
+    name: "3X Short Swipe Token",
+    image:
+      "https://assets.coingecko.com/coins/images/12030/large/683JEXMN_400x400__1_.png?1596698130",
+    contracts: {
+      ethereum: "",
+    },
+  },
+  {
+    id: "blockchain-quotations-index-token",
+    symbol: "bqt",
+    name: "Blockchain Quotations Index Token",
+    image:
+      "https://assets.coingecko.com/coins/images/5814/large/blockchain-quotations-index-token.png?1547351058",
+    contracts: {
+      ethereum: "0x5eb87caa0105a63aa87a36c7bd2573bd13e84fae",
+    },
+  },
+  {
+    id: "obic",
+    symbol: "obic",
+    name: "OBIC",
+    image:
+      "https://assets.coingecko.com/coins/images/12401/large/png-300x300.png?1599559020",
+    contracts: {
+      ethereum: "0xa8b6d0bd067ce5b2e4e9e225b2e0ff5eb74ded8a",
+    },
+  },
+  {
+    id: "jackpot-army",
+    symbol: "jackpot",
+    name: "Jackpot Army",
+    image:
+      "https://assets.coingecko.com/coins/images/16536/large/logo400x400.png?1624351280",
+    contracts: {
+      "binance-smart-chain": "0xcd5b18bb97bfd0c67d6b0e5d4f63efba194a791f",
+    },
+  },
+  {
+    id: "tonestra",
+    symbol: "tnr",
+    name: "Tonestra",
+    image:
+      "https://assets.coingecko.com/coins/images/12168/large/tonestra_logo.jpg?1597788575",
+    contracts: {
+      ethereum: "",
+    },
+  },
+  {
+    id: "lucy",
+    symbol: "lucy",
+    name: "LUCY",
+    image:
+      "https://assets.coingecko.com/coins/images/9921/large/c567abc2-8a65-4bae-b3c8-98db1aa46322.png?1573460587",
+    contracts: {},
+  },
+  {
+    id: "arise-finance",
+    symbol: "ari",
+    name: "Arise Finance",
+    image:
+      "https://assets.coingecko.com/coins/images/16954/large/ari.PNG?1625793929",
+    contracts: {
+      "binance-smart-chain": "0xbe9605a0bf1ef8a4235e2c1da83dd3aa7702c7ce",
+    },
+  },
+  {
+    id: "art-blocks-curated-full-set",
+    symbol: "abc123",
+    name: "Art Blocks Curated Full Set",
+    image:
+      "https://assets.coingecko.com/coins/images/17860/large/art-block-full-abc123.png?1629683679",
+    contracts: {
+      ethereum: "0x9ff4f50efd40c915f7d1476bf36acb8908e0c56d",
+    },
+  },
+  {
+    id: "royal-doge",
+    symbol: "rdoge",
+    name: "Royal Doge",
+    image:
+      "https://assets.coingecko.com/coins/images/17425/large/favicon_%284%29.png?1627606843",
+    contracts: {
+      "binance-smart-chain": "0xc80f6c08df38da4b1b0377748a9cf7196954c676",
+    },
+  },
+  {
+    id: "lp-3pool-curve",
+    symbol: "3crv",
+    name: "LP 3pool Curve",
+    image:
+      "https://assets.coingecko.com/coins/images/12972/large/3pool_128.png?1603948039",
+    contracts: {
+      ethereum: "0x6c3f90f043a72fa612cbac8115ee7e52bde6e490",
+    },
+  },
+  {
+    id: "x99token",
+    symbol: "x99",
+    name: "x99Token",
+    image:
+      "https://assets.coingecko.com/coins/images/20570/large/V5so3FrH_400x400.jpg?1637227372",
+    contracts: {
+      "binance-smart-chain": "0x3e520f16ac21c271db7117e8d6574b81fdc9f66c",
+    },
+  },
+  {
+    id: "glouki",
+    symbol: "glk",
+    name: "Glouki",
+    image:
+      "https://assets.coingecko.com/coins/images/19482/large/Groupe_1774_2x.png?1635285576",
+    contracts: {},
+  },
+  {
+    id: "sombe",
+    symbol: "sbe",
+    name: "Sombe",
+    image:
+      "https://assets.coingecko.com/coins/images/8904/large/sombe.png?1563783220",
+    contracts: {},
+  },
+  {
+    id: "eskisehir-fan-token",
+    symbol: "eses",
+    name: "Eskişehir Fan Tokens",
+    image:
+      "https://assets.coingecko.com/coins/images/17653/large/eses.png?1628754002",
+    contracts: {
+      Bitcichain: "0x97917e2ff8a4d68c4112696924a9d1343f3dd14d",
+    },
+  },
+  {
+    id: "tronbetdice",
+    symbol: "dice",
+    name: "TRONbetDice",
+    image:
+      "https://assets.coingecko.com/coins/images/12922/large/TRONbet-logo.jpg?1603682558",
+    contracts: {
+      tron: "",
+    },
+  },
+  {
+    id: "3x-long-bitcoin-sv-token",
+    symbol: "bsvbull",
+    name: "3X Long Bitcoin SV Token",
+    image:
+      "https://assets.coingecko.com/coins/images/10267/large/683JEXMN_400x400_%281%29.png?1576834731",
+    contracts: {
+      ethereum: "0x6e13a9e4ae3d0678e511fb6d2ad531fcf0e247bf",
     },
   },
   {
@@ -100841,53 +99717,476 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "oec-sushi",
-    symbol: "sushik",
-    name: "OEC SUSHI",
+    id: "0-5x-long-tezos-token",
+    symbol: "xtzhalf",
+    name: "0.5X Long Tezos Token",
     image:
-      "https://assets.coingecko.com/coins/images/18597/large/sushik.png?1632652849",
+      "https://assets.coingecko.com/coins/images/12028/large/683JEXMN_400x400.png?1596697356",
     contracts: {
-      "okex-chain": "0x2218e0d5e0173769f5b4939a3ae423f7e5e4eab7",
+      ethereum: "",
     },
   },
   {
-    id: "msn",
-    symbol: "msn",
-    name: "MSN",
+    id: "asimi",
+    symbol: "asimi",
+    name: "ASIMI",
     image:
-      "https://assets.coingecko.com/coins/images/9629/large/MSN.png?1569988414",
+      "https://assets.coingecko.com/coins/images/9715/large/asimi.PNG?1571174386",
+    contracts: {
+      waves: "",
+    },
+  },
+  {
+    id: "stadium-pepe",
+    symbol: "SPEP",
+    name: "Stadium Pepe",
+    image:
+      "https://assets.coingecko.com/coins/images/20581/large/pepe_300.png?1637248559",
+    contracts: {
+      "binance-smart-chain": "0x5c2d4caefae1b1a746706aca1bdded72d463215e",
+    },
+  },
+  {
+    id: "adventure-inu",
+    symbol: "adinu",
+    name: "Adventure Inu",
+    image:
+      "https://assets.coingecko.com/coins/images/20036/large/Adventure200x200.png?1636424176",
+    contracts: {
+      ethereum: "0x2f9f363685ffecc8d7bed0486d8c2b21232bdc5a",
+    },
+  },
+  {
+    id: "jindoge",
+    symbol: "jindoge",
+    name: "Jindoge",
+    image:
+      "https://assets.coingecko.com/coins/images/15417/large/JINDOGE.png?1620774122",
+    contracts: {
+      ethereum: "0x3f4cd830543db25254ec0f05eac058d4d6e86166",
+    },
+  },
+  {
+    id: "3x-short-chainlink-token",
+    symbol: "linkbear",
+    name: "3X Short Chainlink Token",
+    image:
+      "https://assets.coingecko.com/coins/images/10233/large/683JEXMN_400x400_%281%29.png?1576618846",
+    contracts: {
+      ethereum: "0xa209ba34c01a2713a4453a656630cc9de8a362bc",
+    },
+  },
+  {
+    id: "swisscoin-classic",
+    symbol: "sicc",
+    name: "Swisscoin-Classic",
+    image:
+      "https://assets.coingecko.com/coins/images/7820/large/O3n5OM3G3dkx9_koYzDe18tZ1j0kDAxmfi2gIUPDHVfT-wCvtL8QsqNH1LQFc2NS5NutgExgEGyA4wpeH9H8KjNx9gMj-RTNkKmm5N9QDDJlQMyZW7IOod60iz7wLAdtgzZOrI-WgBZr8Vwft1JAuRoihr0WI9fPTw8NBhjBzNfjt-ovOyG9ipBv2DyKuJMCtBdpr5YJsopK0khr8.jpg?1550817031",
+    contracts: {},
+  },
+  {
+    id: "lance-coin",
+    symbol: "lce",
+    name: "Lance Coin",
+    image:
+      "https://assets.coingecko.com/coins/images/14707/large/logo200x200_%282%29.png?1617873370",
+    contracts: {
+      ethereum: "0x2c644c3bbea053ed95a6bc04a94c9ce928ff9881",
+    },
+  },
+  {
+    id: "buxcoin",
+    symbol: "bux",
+    name: "BUXCOIN",
+    image:
+      "https://assets.coingecko.com/coins/images/10414/large/logo-primary.jpg?1579128155",
+    contracts: {},
+  },
+  {
+    id: "libartysharetoken",
+    symbol: "lst",
+    name: "Libartysharetoken",
+    image:
+      "https://assets.coingecko.com/coins/images/12990/large/lst_logo.png?1604148361",
+    contracts: {
+      ethereum: "0x355376d6471e09a4ffca8790f50da625630c5270",
+    },
+  },
+  {
+    id: "energoncoin",
+    symbol: "tfg1",
+    name: "Energoncoin",
+    image: "missing_large.png",
+    contracts: {
+      ethereum: "0x666a64f5567c3145fba7ca9ef73648cd4fa2008f",
+    },
+  },
+  {
+    id: "rain-network",
+    symbol: "rain",
+    name: "RAIN Network",
+    image:
+      "https://assets.coingecko.com/coins/images/11699/large/v4Bpj2k.png?1592963188",
+    contracts: {
+      ethereum: "0x61cdb66e56fad942a7b5ce3f419ffe9375e31075",
+    },
+  },
+  {
+    id: "baby-shark-tank",
+    symbol: "bashtank",
+    name: "Baby Shark Tank",
+    image:
+      "https://assets.coingecko.com/coins/images/15390/large/IqTGmFXy_400x400.jpg?1620703139",
+    contracts: {
+      "binance-smart-chain": "0x484312a0aaeae3ae36a74ff3e294246f35dddf4f",
+    },
+  },
+  {
+    id: "the-nifty-onez",
+    symbol: "onez",
+    name: "The Nifty ONEz",
+    image:
+      "https://assets.coingecko.com/coins/images/14370/large/the-nifty-onez.png?1615737408",
+    contracts: {
+      ethereum: "0x12419eea0b053ffea92f9afcd7986a495e2cf0dd",
+    },
+  },
+  {
+    id: "grafsound",
+    symbol: "gsmt",
+    name: "Grafsound",
+    image:
+      "https://assets.coingecko.com/coins/images/12583/large/Logo200_200-GSMT.png?1600927635",
+    contracts: {
+      ethereum: "0x7713bcda5106424ff6b0ae1e7fa05c3f4ae3ecb0",
+    },
+  },
+  {
+    id: "bull-run",
+    symbol: "brun",
+    name: "Bull Run",
+    image:
+      "https://assets.coingecko.com/coins/images/15897/large/BR250logo.png?1622299137",
+    contracts: {
+      "binance-smart-chain": "0x13d08a619848019f16f9f16d7f4b7eb90db38ed5",
+    },
+  },
+  {
+    id: "spooky-inu",
+    symbol: "spook",
+    name: "Spooky Inu",
+    image:
+      "https://assets.coingecko.com/coins/images/19129/large/spooky_latest.png?1634883983",
+    contracts: {
+      fantom: "0x1f7cfc9c6954ecec7122d8c7e4e4e50df52f1c98",
+    },
+  },
+  {
+    id: "viking-legend",
+    symbol: "viking",
+    name: "Viking Legend",
+    image:
+      "https://assets.coingecko.com/coins/images/17591/large/Viking_256.png?1628579292",
+    contracts: {
+      "binance-smart-chain": "0xb513e93ae939fa7346095ff0189ad31ab8864e97",
+    },
+  },
+  {
+    id: "stronghold",
+    symbol: "strng",
+    name: "StrongHold",
+    image:
+      "https://assets.coingecko.com/coins/images/13540/large/strng.png?1609599778",
+    contracts: {
+      ethereum: "0x350a6a30c79df3600c4e0e67deab0a64b645e2c2",
+    },
+  },
+  {
+    id: "cc",
+    symbol: "cc",
+    name: "CC",
+    image:
+      "https://assets.coingecko.com/coins/images/11593/large/CC_logo_200.png?1591599112",
+    contracts: {
+      ethereum: "0x15c9dd08fb16331b9749a8d7d16bcd71c985f190",
+    },
+  },
+  {
+    id: "vinci",
+    symbol: "vinci",
+    name: "Vinci",
+    image:
+      "https://assets.coingecko.com/coins/images/9675/large/logo-icon.png?1570600569",
+    contracts: {
+      ethereum: "0x3db99ab08006aefcc9600972eca8c202396b4300",
+    },
+  },
+  {
+    id: "bankcoincash",
+    symbol: "bcash",
+    name: "BankCoin BCash",
+    image:
+      "https://assets.coingecko.com/coins/images/7692/large/bcash.png?1549865564",
+    contracts: {
+      ethereum: "0xb5bb48567bfd0bfe9e4b08ef8b7f91556cc2a112",
+    },
+  },
+  {
+    id: "hash-pot",
+    symbol: "hpot",
+    name: "Hash Pot",
+    image:
+      "https://assets.coingecko.com/coins/images/11019/large/hashpot.PNG?1587128424",
+    contracts: {
+      ethereum: "0x8cd024cc8f73f5cd132005d1584403877b318c9d",
+    },
+  },
+  {
+    id: "golden-ratio-coin",
+    symbol: "goldr",
+    name: "Golden Ratio Coin",
+    image:
+      "https://assets.coingecko.com/coins/images/10363/large/original_GRO-768x768.png?1578612119",
+    contracts: {
+      ethereum: "0xcfe4f03c3afbb9857b29fc706180bf0044900d59",
+    },
+  },
+  {
+    id: "korss-chain-launchpad",
+    symbol: "kclp",
+    name: "Kross Chain Launchpad",
+    image:
+      "https://assets.coingecko.com/coins/images/17272/large/KCLP.jpg?1630906316",
+    contracts: {
+      "binance-smart-chain": "0x47b8806c2891c4a92b5c590c32cfe1eb617648ef",
+    },
+  },
+  {
+    id: "fanzy",
+    symbol: "fx1",
+    name: "FANZY",
+    image:
+      "https://assets.coingecko.com/coins/images/11117/large/FX.png?1604900016",
+    contracts: {
+      ethereum: "0xed0e2041bfb5a426e5ed426a73765624e08bbb75",
+    },
+  },
+  {
+    id: "sybc-coin",
+    symbol: "sybc",
+    name: "SYBC Coin",
+    image:
+      "https://assets.coingecko.com/coins/images/12901/large/sybc.png?1603346599",
+    contracts: {
+      ethereum: "0xb74755f2896e088790f81205f7f3746e2a4b358b",
+    },
+  },
+  {
+    id: "ubiquitous-social-network-service",
+    symbol: "usns",
+    name: "Ubiquitous Social Network Service",
+    image:
+      "https://assets.coingecko.com/coins/images/10039/large/I8sPo8I22qH5EXEGNKr2uZYZ6LJdCIGrkHDUZ8Myue8gAtfL9e1ouiq6m6lbejHlqL53_bHf-qB2Am7dRS_AdpPBbf1S8DWbIIXewPiqrmt3rarNZlP45fX99lBnxTRG7FrH0JFxXZe6ojunQsNTVlh01WVcGMwe2Q96vLr0C8JridYX_HgEUtzhX2DJl4gUSPk9-bEMG3PaMo7Cu-RP_DwSPOLKreAqKjjW0NjhbvVn-CFM.jpg?1575012815",
+    contracts: {
+      ethereum: "0x2f766a83146f7eaee2c635c9f9a291e4b86f4108",
+    },
+  },
+  {
+    id: "nantrade",
+    symbol: "nan",
+    name: "NanTrade",
+    image:
+      "https://assets.coingecko.com/coins/images/11049/large/logo_%2871%29.png?1587537446",
+    contracts: {
+      ethereum: "0xb393cd041afc1aca4c380c663793fe2c7b8a0212",
+    },
+  },
+  {
+    id: "fanbi-token",
+    symbol: "fbt",
+    name: "FANBI TOKEN",
+    image:
+      "https://assets.coingecko.com/coins/images/9828/large/logo1_%281%29.png?1572472211",
+    contracts: {
+      ethereum: "0x7a9716685f852ee268feb86dffa562d214cc13db",
+    },
+  },
+  {
+    id: "betdice",
+    symbol: "dice",
+    name: "BetDice",
+    image:
+      "https://assets.coingecko.com/coins/images/6642/large/betdice.png?1547042843",
+    contracts: {
+      eos: "",
+    },
+  },
+  {
+    id: "hideous-coin",
+    symbol: "hideous",
+    name: "Hideous Finance",
+    image:
+      "https://assets.coingecko.com/coins/images/19999/large/nL_0yV_P_400x400.jpg?1636364127",
+    contracts: {
+      "binance-smart-chain": "0x1f4105a5231e95bd087cc28cff30595346e1e07c",
+    },
+  },
+  {
+    id: "torpedo",
+    symbol: "torpedo",
+    name: "Torpedo",
+    image:
+      "https://assets.coingecko.com/coins/images/14969/large/l4sLwkwR_400x400.jpg?1619168895",
+    contracts: {
+      "binance-smart-chain": "0xaf169e53e9f07de6f9f4eac67e2833c623f0c122",
+    },
+  },
+  {
+    id: "alanyaspor-fan-token",
+    symbol: "ala",
+    name: "Alanyaspor Fan Token",
+    image:
+      "https://assets.coingecko.com/coins/images/18966/large/spV2Ly3gIaB9XVdib9FUJVPvfT6KBq2qQttTH275.png?1634028195",
+    contracts: {
+      chiliz: "0xf9e3cbdade7dc23629e05906eab9af435bcb97e7",
+    },
+  },
+  {
+    id: "0-5x-long-cardano-token",
+    symbol: "adahalf",
+    name: "0.5X Long Cardano Token",
+    image:
+      "https://assets.coingecko.com/coins/images/12011/large/683JEXMN_400x400.png?1596692577",
+    contracts: {
+      ethereum: "",
+    },
+  },
+  {
+    id: "peach-finance",
+    symbol: "peech",
+    name: "Peach Finance",
+    image:
+      "https://assets.coingecko.com/coins/images/15376/large/PEECH-token-logo-200.png?1620692908",
+    contracts: {
+      ethereum: "0x31d939dc09a6bb55642fcbf9d56166ebc0bdec9a",
+    },
+  },
+  {
+    id: "dappercoin",
+    symbol: "dapp",
+    name: "DapperCoin",
+    image:
+      "https://assets.coingecko.com/coins/images/8680/large/1553137768539_mid.png?1560223998",
+    contracts: {},
+  },
+  {
+    id: "smegmars",
+    symbol: "SMGM",
+    name: "SMEGMARS",
+    image:
+      "https://assets.coingecko.com/coins/images/16123/large/smeg-coingecko_%281%29.png?1623118187",
+    contracts: {
+      "binance-smart-chain": "0x74f3a669a8f35010f6f8811c495c0a5f60c5d04d",
+    },
+  },
+  {
+    id: "frozencake",
+    symbol: "frozen",
+    name: "FrozenCake",
+    image:
+      "https://assets.coingecko.com/coins/images/16554/large/1_XmvVMsQaWZJ1Nzj3qCcyug.png?1624434864",
+    contracts: {
+      "binance-smart-chain": "0xe7a8e7d7729859ea6eedbd4d67f8c97a22b11435",
+    },
+  },
+  {
+    id: "yfibalancer-finance",
+    symbol: "yfib",
+    name: "YFIBALANCER.FINANCE",
+    image:
+      "https://assets.coingecko.com/coins/images/12411/large/LogoYFIB_200px.png?1599640942",
+    contracts: {
+      ethereum: "0x03829f5675f3b51d0f8c2a74417a757625acf22f",
+    },
+  },
+  {
+    id: "trustusd",
+    symbol: "trusd",
+    name: "TrustUSD",
+    image:
+      "https://assets.coingecko.com/coins/images/9811/large/TrustUSDlogo.png?1589631273",
+    contracts: {
+      ethereum: "0xdd436a0dce9244b36599ae7b22f0373b4e33992d",
+    },
+  },
+  {
+    id: "bullrise",
+    symbol: "bull",
+    name: "BullRise",
+    image:
+      "https://assets.coingecko.com/coins/images/18188/large/BULLRISE.jpg?1630906709",
+    contracts: {
+      "binance-smart-chain": "0x90db4c8ddc0055ae03cde0b4e83fbde7de711464",
+    },
+  },
+  {
+    id: "btecoin",
+    symbol: "bte",
+    name: "BTEcoin",
+    image:
+      "https://assets.coingecko.com/coins/images/10736/large/read.jpg?1582701685",
+    contracts: {
+      ethereum: "0xfd62247943f94c3910a4922af2c62c2d3fac2a8f",
+    },
+  },
+  {
+    id: "grom",
+    symbol: "gr",
+    name: "GROM",
+    image:
+      "https://assets.coingecko.com/coins/images/13216/large/gr.png?1606278269",
+    contracts: {
+      ethereum: "0xce593a29905951e8fc579bc092eca72577da575c",
+    },
+  },
+  {
+    id: "ecog9coin",
+    symbol: "egc",
+    name: "EcoG9coin",
+    image:
+      "https://assets.coingecko.com/coins/images/8038/large/Screenshot_2019-12-05_at_7.14.34_AM.png?1575501284",
+    contracts: {
+      ethereum: "0xc0ec8caec55f37d47fbfa595727418868a21fd48",
+    },
+  },
+  {
+    id: "pixeos",
+    symbol: "pixeos",
+    name: "PixEOS",
+    image:
+      "https://assets.coingecko.com/coins/images/9116/large/57129657_1849603145145589_3936675094033596416_n.png?1564469512",
     contracts: {
       eos: null,
     },
   },
   {
-    id: "oilage",
-    symbol: "oil",
-    name: "OILage",
+    id: "shinedao",
+    symbol: "shn",
+    name: "ShineDAO",
     image:
-      "https://assets.coingecko.com/coins/images/11232/large/download_%2812%29.png?1589767119",
+      "https://assets.coingecko.com/coins/images/20555/large/shine-dao-logo.png?1637206602",
     contracts: {
-      ethereum: "0xa29a8e360c0cba25a3719763fde43a1ee570271d",
+      ethereum: "0x1c7ede23b1361acc098a1e357c9085d131b34a01",
     },
   },
   {
-    id: "p2p",
-    symbol: "p2p",
-    name: "P2P",
+    id: "denizlispor-fan-token",
+    symbol: "dnz",
+    name: "Denizlispor Fan Token",
     image:
-      "https://assets.coingecko.com/coins/images/12486/large/p2p.png?1600207324",
+      "https://assets.coingecko.com/coins/images/18082/large/dnz.png?1630401926",
     contracts: {
-      ethereum: "0xabe9b2e4bbd5a8c718752c41254ed81aae7d98bf",
-    },
-  },
-  {
-    id: "touch",
-    symbol: "touch",
-    name: "Touch",
-    image:
-      "https://assets.coingecko.com/coins/images/16968/large/touch.PNG?1625807888",
-    contracts: {
-      "binance-smart-chain": "0xd96dc1a49b189eeaa9f01301e45b17f3e403dfae",
+      Bitcichain: "0xb428b0d491516aad256386180945c52423907a61",
     },
   },
   {
@@ -100901,6 +100200,441 @@ export const tokens: TokenD[] = [
     },
   },
   {
+    id: "starbase-huobi",
+    symbol: "se",
+    name: "Starbase Huobi",
+    image:
+      "https://assets.coingecko.com/coins/images/19376/large/SE.png?1635140565",
+    contracts: {
+      "huobi-token": "0xb505d0cb29940351ce0662675e26566888614e9f",
+    },
+  },
+  {
+    id: "arrow",
+    symbol: "arw",
+    name: "Arrow",
+    image:
+      "https://assets.coingecko.com/coins/images/10362/large/logo_arrow.png?1578524977",
+    contracts: {},
+  },
+  {
+    id: "ripple-alpha",
+    symbol: "xla",
+    name: "Ripple Alpha",
+    image:
+      "https://assets.coingecko.com/coins/images/11763/large/ripplealpha.png?1593654621",
+    contracts: {},
+  },
+  {
+    id: "dreamscoin",
+    symbol: "dream",
+    name: "DreamsCoin",
+    image:
+      "https://assets.coingecko.com/coins/images/10675/large/aHon0cqNuXUTYB2MO4DYmM4fmEMDqIXeXvP38dKRaKspANDniVJbmYUU2tVZlyMBYQ9GMHHBHL-YbkIGQDMwnO1QN1VNia1kh_QB6h9je3XwzCmDLP_HKusR1c7kExITpt4BXoGCnsj19wyjY_NywMLGrB1C0f9LrLJJZxNo_pUJNw7D8Cw4tFKUtdVe8B7_pgpb8ngd8aAKi_H.jpg?1581632126",
+    contracts: {
+      waves: "",
+    },
+  },
+  {
+    id: "lyfe-land",
+    symbol: "lland",
+    name: "Lyfe Land",
+    image:
+      "https://assets.coingecko.com/coins/images/14940/large/LLAND-Logo-200.png?1619083033",
+    contracts: {
+      ethereum: "0xe5bf6790d138b154f1df3db8d245be46a5d05ee4",
+    },
+  },
+  {
+    id: "zik-token",
+    symbol: "zik",
+    name: "Ziktalk",
+    image:
+      "https://assets.coingecko.com/coins/images/8991/large/QiYexdGd53yjxWR1U-R4YOeDVpiWcj_h4iB4vjSQITFwpfhZyWxVMc5PK0v89oKOjMAFkvVpswecaGxScUAe9PuEVmJPIhZL2xkxuLSnt_zx3onNLjCMHaOnQUTbUhJy5Bq-Av6YVrbiGIiHk1Z2gbHGgAmJp1uxt2MevcPnnXzXqPwdNGNO1olMH5-_dXNXCgvp1CHWInNVHAnOe.jpg?1563503454",
+    contracts: {},
+  },
+  {
+    id: "smartpad",
+    symbol: "pad",
+    name: "SmartPad",
+    image:
+      "https://assets.coingecko.com/coins/images/16587/large/pad.png?1638180859",
+    contracts: {
+      ethereum: "0x5067006f830224960fb419d7f25a3a53e9919bb0",
+      "polygon-pos": "0x0ad2eff7f37e0037b5e30c1947f31abdf11461e4",
+    },
+  },
+  {
+    id: "bliss-2",
+    symbol: "bliss",
+    name: "Bliss",
+    image:
+      "https://assets.coingecko.com/coins/images/13762/large/eD2mpsGhthNTkzYlFjNACI_Oy8IwC9kh7TISfep2ZcaRYoNiVFOwiUprqlrzwVTHRddCUULAEQGyPPjaTqG2ZLCPvCX5ycQF3TMrffadkJGDKe_wQ0N8QT2MO4xXMJ4c6PJgi2MG0WySER24ZbvahGPjtxBBPIb3fS21Seydik57qQyJMYB73il_L636mqaIT1gc9h75K5uT8UK.jpg?1611695377",
+    contracts: {
+      ethereum: "0x50d2de5397d7c657c3d424634a2ddf4e0d73d789",
+    },
+  },
+  {
+    id: "antique-zombie-shards",
+    symbol: "zomb",
+    name: "Antique Zombie Shards",
+    image:
+      "https://assets.coingecko.com/coins/images/12617/large/cryptopunks-zomb.png?1602398280",
+    contracts: {
+      ethereum: "0x78175901e9b04090bf3b3d3cb7f91ca986fb1af6",
+    },
+  },
+  {
+    id: "ouroboros",
+    symbol: "ouro",
+    name: "Ouroboros",
+    image:
+      "https://assets.coingecko.com/coins/images/10296/large/d-AjFbpo_400x400.jpg?1577655321",
+    contracts: {
+      cosmos: "",
+    },
+  },
+  {
+    id: "electronic-pk-chain",
+    symbol: "epc",
+    name: "Electronic PK Chain",
+    image:
+      "https://assets.coingecko.com/coins/images/2764/large/electronic-pk-chain.png?1547036955",
+    contracts: {},
+  },
+  {
+    id: "oraclechain",
+    symbol: "oct",
+    name: "OracleChain",
+    image:
+      "https://assets.coingecko.com/coins/images/826/large/oraclechain.png?1548330186",
+    contracts: {
+      bitshares: "",
+    },
+  },
+  {
+    id: "eos-pow-coin",
+    symbol: "pow",
+    name: "EOS PoW Coin",
+    image:
+      "https://assets.coingecko.com/coins/images/10466/large/pow.PNG?1579732560",
+    contracts: {
+      eos: "",
+    },
+  },
+  {
+    id: "peet-defi",
+    symbol: "pte",
+    name: "Peet DeFi",
+    image:
+      "https://assets.coingecko.com/coins/images/13100/large/peetdefi_logo.png?1605148557",
+    contracts: {
+      "binance-smart-chain": "0x424b50dcb78f459d11a95beddd13788296281987",
+    },
+  },
+  {
+    id: "wrapped-moon-cats",
+    symbol: "mcat20",
+    name: "Wrapped Moon Cats",
+    image:
+      "https://assets.coingecko.com/coins/images/14387/large/MCAT20.png?1615803341",
+    contracts: {
+      ethereum: "0xf961a1fa7c781ecd23689fe1d0b7f3b6cbb2f972",
+    },
+  },
+  {
+    id: "project-x",
+    symbol: "nanox",
+    name: "Project-X",
+    image:
+      "https://assets.coingecko.com/coins/images/1435/large/project-x.png?1547035508",
+    contracts: {},
+  },
+  {
+    id: "bitup-token",
+    symbol: "but",
+    name: "BitUP Token",
+    image:
+      "https://assets.coingecko.com/coins/images/6041/large/bitup_token.jpg?1548828844",
+    contracts: {
+      ethereum: "0xb2e260f12406c401874ecc960893c0f74cd6afcd",
+    },
+  },
+  {
+    id: "chainsquare",
+    symbol: "chs",
+    name: "Chainsquare",
+    image:
+      "https://assets.coingecko.com/coins/images/14858/large/chainsquare.png?1618804636",
+    contracts: {
+      ethereum: "0xb41380174d0b06181513a5677b60200b93b5efb4",
+    },
+  },
+  {
+    id: "worldpet",
+    symbol: "wpt",
+    name: "WORLDPET",
+    image:
+      "https://assets.coingecko.com/coins/images/11707/large/worldpet3.png?1592986614",
+    contracts: {
+      ethereum: "0xe04491d64eaa464ec8fdf53c7a4c92bf5b2278cd",
+    },
+  },
+  {
+    id: "octapay",
+    symbol: "octa",
+    name: "OctaPay",
+    image:
+      "https://assets.coingecko.com/coins/images/17163/large/octapay.PNG?1626682540",
+    contracts: {
+      "binance-smart-chain": "0xf04681b72e5d60eeb32c3a1ba65abe1992a7466d",
+    },
+  },
+  {
+    id: "aave-amm-dai",
+    symbol: "aAmmDAI",
+    name: "Aave AMM DAI",
+    image:
+      "https://assets.coingecko.com/coins/images/17197/large/aAMMDAI_2x.png?1626940032",
+    contracts: {
+      ethereum: "0x79be75ffc64dd58e66787e4eae470c8a1fd08ba4",
+    },
+  },
+  {
+    id: "space-monkey",
+    symbol: "spmk",
+    name: "Space Monkey",
+    image:
+      "https://assets.coingecko.com/coins/images/14776/large/ItWjW7D.png?1618372154",
+    contracts: {
+      ethereum: "0x51d3e4c0b2c83e62f5d517d250b3e856897d2052",
+    },
+  },
+  {
+    id: "buff-samo",
+    symbol: "bsamo",
+    name: "Buff Samo",
+    image:
+      "https://assets.coingecko.com/coins/images/20597/large/logo_-_2021-11-19T094813.378.png?1637286506",
+    contracts: {
+      solana: "2XSuy8RSESbtYRBbVHxGWuoikn3B6iXKVKzN4i3owTCf",
+    },
+  },
+  {
+    id: "polycake-finance",
+    symbol: "pcake",
+    name: "PolyCake Finance",
+    image:
+      "https://assets.coingecko.com/coins/images/15783/large/0S_K8CFb_400x400.jpg?1621844145",
+    contracts: {
+      "polygon-pos": "0xd9a2c5c0fb2f138c2b96582d29a648df70f80465",
+    },
+  },
+  {
+    id: "naka-bodhi-token",
+    symbol: "nbot",
+    name: "Naka Bodhi Token",
+    image:
+      "https://assets.coingecko.com/coins/images/8133/large/mBKP0Lne_400x400.jpg?1561427531",
+    contracts: {},
+  },
+  {
+    id: "defini",
+    symbol: "dfni",
+    name: "DeFini",
+    image:
+      "https://assets.coingecko.com/coins/images/14616/large/logo_-_2021-04-01T133425.308.png?1617255308",
+    contracts: {
+      ethereum: "0xdf276a2442ccbbdf0707427668434d6d130b75eb",
+    },
+  },
+  {
+    id: "darkbuild-v2",
+    symbol: "db",
+    name: "Dark.Build",
+    image:
+      "https://assets.coingecko.com/coins/images/14195/large/DARK-circle_token_200px.png?1614853053",
+    contracts: {
+      "polygon-pos": "0x0e59d50add2d90f5111aca875bae0a72d95b4762",
+    },
+  },
+  {
+    id: "eska",
+    symbol: "esk",
+    name: "Eska",
+    image:
+      "https://assets.coingecko.com/coins/images/9642/large/ESKA.png?1627014485",
+    contracts: {},
+  },
+  {
+    id: "gomics",
+    symbol: "gom",
+    name: "Gomics",
+    image:
+      "https://assets.coingecko.com/coins/images/9506/large/69581895_377122223186787_4719544883591774208_n.png?1568184472",
+    contracts: {
+      ethereum: "0xb8c6ad2586bb71d518c2aaf510efe91f82022f58",
+    },
+  },
+  {
+    id: "cifculation",
+    symbol: "clc",
+    name: "Cifculation",
+    image:
+      "https://assets.coingecko.com/coins/images/8678/large/logo_%2825%29.png?1560221363",
+    contracts: {
+      ethereum: "0x951301a2bbce3d357785ba1e13ec8f42322252b8",
+    },
+  },
+  {
+    id: "precium",
+    symbol: "pcm",
+    name: "Precium",
+    image:
+      "https://assets.coingecko.com/coins/images/9490/large/pcm.PNG?1568015318",
+    contracts: {
+      ethereum: "0x6096d2460cf5177e40b515223428dc005ad35123",
+    },
+  },
+  {
+    id: "payturn",
+    symbol: "ptr",
+    name: "Payturn",
+    image:
+      "https://assets.coingecko.com/coins/images/14175/large/ptr.jpg?1614785735",
+    contracts: {
+      ethereum: "",
+    },
+  },
+  {
+    id: "luckstar",
+    symbol: "lst",
+    name: "Luckstar",
+    image:
+      "https://assets.coingecko.com/coins/images/7804/large/49211002_377935006115216_8098246624284770304_n.png?1550735229",
+    contracts: {
+      ethereum: "0x681ecc5a0bfd18c308a1138ff607f818bac5e417",
+    },
+  },
+  {
+    id: "help-coins",
+    symbol: "hcs",
+    name: "Help Coins",
+    image:
+      "https://assets.coingecko.com/coins/images/14927/large/HCS_200.png?1619068527",
+    contracts: {
+      "binance-smart-chain": "0x2c0af42e89b79b86050f11c47603c85c08da329a",
+    },
+  },
+  {
+    id: "quick-bounty",
+    symbol: "qb",
+    name: "Quick Bounty",
+    image:
+      "https://assets.coingecko.com/coins/images/16520/large/favicon-1.png?1624330268",
+    contracts: {
+      "binance-smart-chain": "0x4ccbe073a58a574cac3ee69649e44728d2e2554c",
+    },
+  },
+  {
+    id: "swusd",
+    symbol: "swusd",
+    name: "Swerve.fi USD",
+    image:
+      "https://assets.coingecko.com/coins/images/12918/large/swerve.png?1603631063",
+    contracts: {
+      ethereum: "0x77c6e4a580c0dce4e5c7a17d0bc077188a83a059",
+    },
+  },
+  {
+    id: "wenmoon",
+    symbol: "wm",
+    name: "WenMoon",
+    image:
+      "https://assets.coingecko.com/coins/images/20263/large/Wen-Moon200x200.png?1636704100",
+    contracts: {
+      ethereum: "0x750c83707112e9acc452692c190cb55e30f42510",
+    },
+  },
+  {
+    id: "vollar",
+    symbol: "vollar",
+    name: "V-Dimension",
+    image:
+      "https://assets.coingecko.com/coins/images/7986/large/vollar.png?1557722408",
+    contracts: {},
+  },
+  {
+    id: "touch",
+    symbol: "touch",
+    name: "Touch",
+    image:
+      "https://assets.coingecko.com/coins/images/16968/large/touch.PNG?1625807888",
+    contracts: {
+      "binance-smart-chain": "0xd96dc1a49b189eeaa9f01301e45b17f3e403dfae",
+    },
+  },
+  {
+    id: "block-18",
+    symbol: "18c",
+    name: "Block 18",
+    image:
+      "https://assets.coingecko.com/coins/images/7605/large/block_18.jpg?1548828772",
+    contracts: {
+      ethereum: "0x5a9bf6badcd24fe0d58e1087290c2fe2c728736a",
+    },
+  },
+  {
+    id: "1x-short-btc-implied-volatility",
+    symbol: "ibvol",
+    name: "Inverse Bitcoin Volatility Token",
+    image:
+      "https://assets.coingecko.com/coins/images/11057/large/download_%2810%29.png?1587642128",
+    contracts: {
+      ethereum: "0x627e2ee3dbda546e168eaaff25a2c5212e4a95a0",
+    },
+  },
+  {
+    id: "world-credit-diamond-coin",
+    symbol: "wcdc",
+    name: "World Credit Diamond Coin",
+    image:
+      "https://assets.coingecko.com/coins/images/7649/large/seHi91g1_400x400.jpg?1548930150",
+    contracts: {
+      ethereum: "0xab51e836bdcbc7cc06d926c50d88328f1bb17148",
+    },
+  },
+  {
+    id: "tron-atm",
+    symbol: "tatm",
+    name: "TRON ATM",
+    image:
+      "https://assets.coingecko.com/coins/images/12159/large/45691608.png?1597703740",
+    contracts: {
+      tron: "TX8EdSeZQ99TvBbz8SXxxaBMTnEyV3Vmjw",
+    },
+  },
+  {
+    id: "1x-short-chainlink-token",
+    symbol: "LINKHEDGE",
+    name: "1X Short Chainlink Token",
+    image:
+      "https://assets.coingecko.com/coins/images/12056/large/683JEXMN_400x400.png?1596703926",
+    contracts: {
+      ethereum: "",
+    },
+  },
+  {
+    id: "3x-short-bitcoin-sv-token",
+    symbol: "bsvbear",
+    name: "3X Short Bitcoin SV Token",
+    image:
+      "https://assets.coingecko.com/coins/images/10329/large/683JEXMN_400x400_%281%29.png?1578051844",
+    contracts: {
+      ethereum: "0xce49c3c92b33a1653f34811a9d7e34502bf12b89",
+    },
+  },
+  {
     id: "ace-casino",
     symbol: "ace",
     name: "Ace Entertainment",
@@ -100911,43 +100645,1875 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "1x-short-algorand-token",
-    symbol: "algohedge",
-    name: "1X Short Algorand Token",
+    id: "yearn-finance-network",
+    symbol: "yfn",
+    name: "Yearn Finance Network",
     image:
-      "https://assets.coingecko.com/coins/images/11987/large/683JEXMN_400x400.png?1596687107",
+      "https://assets.coingecko.com/coins/images/12821/large/9v36orK.jpg?1603191959",
     contracts: {
-      ethereum: "0xfdc3d57eb7839ca68a2fad7a93799c8e8afa61b7",
+      ethereum: "0x3dd66732113af9981a861cf489431533aeba33b8",
     },
   },
   {
-    id: "akuaku",
-    symbol: "akuaku",
-    name: "AkuAku",
+    id: "universe-coin",
+    symbol: "unis",
+    name: "Universe Coin",
     image:
-      "https://assets.coingecko.com/coins/images/16651/large/finished-logo-coingecko.jpg?1624598298",
+      "https://assets.coingecko.com/coins/images/10389/large/9lTQkX7d_400x400.jpg?1578868716",
     contracts: {
-      "binance-smart-chain": "0x02e5393758de06588634215afb71e7ee8b4362d0",
+      ethereum: "0xedc87cab8bd12ca39088deaf9fdfb63503f19f85",
     },
   },
   {
-    id: "afrodex",
-    symbol: "afrox",
-    name: "AfroDex",
+    id: "caramelswap",
+    symbol: "mel",
+    name: "CaramelSwap",
     image:
-      "https://assets.coingecko.com/coins/images/10047/large/AfroDex_LOGO.png?1575243022",
+      "https://assets.coingecko.com/coins/images/15167/large/Adobe-Stock-164869011-Convertido.png?1626097946",
     contracts: {
-      ethereum: "0x08130635368aa28b217a4dfb68e1bf8dc525621c",
+      "binance-smart-chain": "0x7d5bc7796fd62a9a27421198fc3c349b96cdd9dc",
     },
   },
   {
-    id: "dogefather-ecosystem",
-    symbol: "dogefather",
-    name: "Dogefather Ecosystem",
+    id: "geist-usdc",
+    symbol: "gusdc",
+    name: "Geist USDC",
     image:
-      "https://assets.coingecko.com/coins/images/17138/large/Dogefather_EcoSystem_Logo.png?1626515748",
+      "https://assets.coingecko.com/coins/images/19002/large/preview-gallery-gUSDCgecko_%281%29.png?1634790726",
     contracts: {
-      ethereum: "0x73c61dd9e121de834a4f3ed607263ee33b308c06",
+      fantom: "0xe578c856933d8e1082740bf7661e379aa2a30b26",
+    },
+  },
+  {
+    id: "gt-star-token",
+    symbol: "gts",
+    name: "GT STAR Token",
+    image:
+      "https://assets.coingecko.com/coins/images/11160/large/gts.PNG?1589268165",
+    contracts: {
+      ethereum: "0x951a1070ac39851dcc07b302230a68f81929a5f1",
+    },
+  },
+  {
+    id: "mgc-token",
+    symbol: "mgc",
+    name: "MGC Token",
+    image:
+      "https://assets.coingecko.com/coins/images/8469/large/mgc.png?1558768022",
+    contracts: {
+      ethereum: "0x174bfa6600bf90c885c7c01c7031389ed1461ab9",
+    },
+  },
+  {
+    id: "bitsonic-token",
+    symbol: "bsc",
+    name: "Bitsonic Token",
+    image:
+      "https://assets.coingecko.com/coins/images/9238/large/image.png?1604295837",
+    contracts: {
+      ethereum: "0xe541504417670fb76b612b41b4392d967a1956c7",
+    },
+  },
+  {
+    id: "talent-coin",
+    symbol: "tlnt",
+    name: "Talent Coin",
+    image:
+      "https://assets.coingecko.com/coins/images/13771/large/TLNT.png?1611698474",
+    contracts: {
+      ethereum: "0x9f300b4ac0bf94cad77e7e2d3f850352b8bb264c",
+    },
+  },
+  {
+    id: "safeblast",
+    symbol: "blast",
+    name: "SafeBlast",
+    image:
+      "https://assets.coingecko.com/coins/images/15686/large/safeblast.png?1621561206",
+    contracts: {
+      "binance-smart-chain": "0xddc0dbd7dc799ae53a98a60b54999cb6ebb3abf0",
+    },
+  },
+  {
+    id: "unicap-finance",
+    symbol: "ucap",
+    name: "Unicap.Finance",
+    image:
+      "https://assets.coingecko.com/coins/images/13300/large/unicap256.png?1607308439",
+    contracts: {
+      ethereum: "0xbaa70614c7aafb568a93e62a98d55696bcc85dfe",
+    },
+  },
+  {
+    id: "koel-coin",
+    symbol: "koel",
+    name: "Koel Coin",
+    image:
+      "https://assets.coingecko.com/coins/images/12816/large/cuckoo.png?1602740144",
+    contracts: {},
+  },
+  {
+    id: "change-our-world",
+    symbol: "chg",
+    name: "Change Our World",
+    image:
+      "https://assets.coingecko.com/coins/images/15476/large/change.jpeg?1620995093",
+    contracts: {
+      "binance-smart-chain": "0x6e1b4ba8f5be7708cd475795fc23924ed078a8d2",
+    },
+  },
+  {
+    id: "dragonbit",
+    symbol: "drgb",
+    name: "Dragonbit",
+    image:
+      "https://assets.coingecko.com/coins/images/10123/large/drgb.PNG?1576125394",
+    contracts: {
+      ethereum: "0x9d3e0892d11f19f5181d4a4c5d04187a9e0d7032",
+    },
+  },
+  {
+    id: "kpop-coin",
+    symbol: "kpop",
+    name: "KPOP Coin",
+    image:
+      "https://assets.coingecko.com/coins/images/15923/large/kpop.PNG?1622431964",
+    contracts: {
+      ethereum: "0x7b7983967409fce461ea8bbdf9ed37631b1d59c9",
+    },
+  },
+  {
+    id: "decenturion",
+    symbol: "dcnt",
+    name: "Decenturion",
+    image:
+      "https://assets.coingecko.com/coins/images/6195/large/X5_20dt1_400x400.jpg?1547042224",
+    contracts: {
+      ethereum: "0x0ce6d5a093d4166237c7a9ff8e0553b0293214a1",
+    },
+  },
+  {
+    id: "autostake",
+    symbol: "auto",
+    name: "Autostake",
+    image:
+      "https://assets.coingecko.com/coins/images/17720/large/1lxasDg.png?1629089519",
+    contracts: {
+      "binance-smart-chain": "0x1cff458b364d0d328d4c9d59d10be7d22d01953d",
+    },
+  },
+  {
+    id: "treelion",
+    symbol: "trn",
+    name: "Treelion",
+    image:
+      "https://assets.coingecko.com/coins/images/9630/large/yvXR4R-F_400x400.jpg?1570001020",
+    contracts: {
+      ethereum: "0x70968feaf13299d0dbf78f66860bab9dbe3856bc",
+    },
+  },
+  {
+    id: "native-utility-token",
+    symbol: "nut",
+    name: "Native Utility Token",
+    image:
+      "https://assets.coingecko.com/coins/images/8329/large/Native_Utility_Token.png?1559287468",
+    contracts: {
+      eos: null,
+    },
+  },
+  {
+    id: "3x-short-dragon-index-token",
+    symbol: "drgnbear",
+    name: "3X Short Dragon Index Token",
+    image:
+      "https://assets.coingecko.com/coins/images/10256/large/683JEXMN_400x400_%281%29.png?1576677145",
+    contracts: {
+      ethereum: "0x223fb5c14c00cfb70cf56bb63c2eef2d74fe1a78",
+    },
+  },
+  {
+    id: "per-project",
+    symbol: "per",
+    name: "PER Project",
+    image:
+      "https://assets.coingecko.com/coins/images/15012/large/per.png?1622474149",
+    contracts: {
+      "klay-token": "0x7eee60a000986e9efe7f5c90340738558c24317b",
+    },
+  },
+  {
+    id: "the-global-index-chain",
+    symbol: "tgic",
+    name: "The Global Index Chain",
+    image:
+      "https://assets.coingecko.com/coins/images/8323/large/logo.6278d22b.png?1589515874",
+    contracts: {},
+  },
+  {
+    id: "3x-short-compound-token-token",
+    symbol: "compbear",
+    name: "3X Short Compound Token Token",
+    image:
+      "https://assets.coingecko.com/coins/images/12074/large/683JEXMN_400x400__1_.png?1596709858",
+    contracts: {
+      ethereum: "",
+    },
+  },
+  {
+    id: "lp-renbtc-curve",
+    symbol: "renbtcCurve",
+    name: "LP renBTC Curve",
+    image:
+      "https://assets.coingecko.com/coins/images/11957/large/Curvefi_renCrv_32.png?1596435739",
+    contracts: {
+      ethereum: "0x49849c98ae39fff122806c06791fa73784fb3675",
+    },
+  },
+  {
+    id: "0-5x-long-ethereum-token",
+    symbol: "ethhalf",
+    name: "0.5X Long Ethereum Token",
+    image:
+      "https://assets.coingecko.com/coins/images/11998/large/683JEXMN_400x400.png?1596690114",
+    contracts: {
+      ethereum: "",
+    },
+  },
+  {
+    id: "magic-cube",
+    symbol: "mcc",
+    name: "Magic Cube Coin",
+    image:
+      "https://assets.coingecko.com/coins/images/8821/large/Magic_Cube.png?1561619567",
+    contracts: {},
+  },
+  {
+    id: "3x-short-stellar-token",
+    symbol: "xlmbear",
+    name: "3X Short Stellar Token",
+    image:
+      "https://assets.coingecko.com/coins/images/13335/large/assets_coingecko_com-ftt.jpg?1607567062",
+    contracts: {
+      ethereum: "0x960efd63ae895f165d874e6cc62501fd0e7dc50a",
+    },
+  },
+  {
+    id: "1x-short-trx-token",
+    symbol: "trxhedge",
+    name: "1X Short TRX Token",
+    image:
+      "https://assets.coingecko.com/coins/images/12060/large/683JEXMN_400x400.png?1596705582",
+    contracts: {
+      ethereum: "0xe58c8df0088cf27b26c7d546a9835deacc29496c",
+    },
+  },
+  {
+    id: "1x-short-dogecoin-token",
+    symbol: "dogehedge",
+    name: "1X Short Dogecoin Token",
+    image:
+      "https://assets.coingecko.com/coins/images/12055/large/683JEXMN_400x400.png?1596703809",
+    contracts: {
+      ethereum: "",
+    },
+  },
+  {
+    id: "vesta",
+    symbol: "vesta",
+    name: "Vesta",
+    image:
+      "https://assets.coingecko.com/coins/images/12276/large/t693cWC.png?1598736747",
+    contracts: {
+      ethereum: "0x3aef8e803bd9be47e69b9f36487748d30d940b96",
+    },
+  },
+  {
+    id: "3x-long-pax-gold-token",
+    symbol: "paxgbull",
+    name: "3X Long PAX Gold Token",
+    image:
+      "https://assets.coingecko.com/coins/images/10435/large/683JEXMN_400x400.png?1579276663",
+    contracts: {
+      ethereum: "0x81f09ed4b98b1c8e99b1fa838b72acb842afe94c",
+    },
+  },
+  {
+    id: "3x-short-huobi-token-token",
+    symbol: "htbear",
+    name: "3X Short Huobi Token Token",
+    image:
+      "https://assets.coingecko.com/coins/images/10430/large/683JEXMN_400x400.png?1579276187",
+    contracts: {
+      ethereum: "0x86eb791495be777db763142a2c547d1112554fb8",
+    },
+  },
+  {
+    id: "1x-short-eos-token",
+    symbol: "eoshedge",
+    name: "1X Short EOS Token",
+    image:
+      "https://assets.coingecko.com/coins/images/10221/large/683JEXMN_400x400.png?1596706630",
+    contracts: {
+      ethereum: "0xb38f206615325306dddeb0794a6482486b6b78b8",
+    },
+  },
+  {
+    id: "bnbx-finance",
+    symbol: "bnbx",
+    name: "BNBX Finance",
+    image:
+      "https://assets.coingecko.com/coins/images/16290/large/jS3gdvy.png?1623661374",
+    contracts: {
+      "binance-smart-chain": "0x1592271a485e7f12de1eccf2555cea7763f29cac",
+    },
+  },
+  {
+    id: "wordlex",
+    symbol: "wdx",
+    name: "Wordlex",
+    image:
+      "https://assets.coingecko.com/coins/images/14481/large/Wordlex-logo.png?1616463252",
+    contracts: {
+      tron: "TThrzAzRj2Pw4CQjqo1dk2zGyifPhuNHRu",
+    },
+  },
+  {
+    id: "supertron",
+    symbol: "stro",
+    name: "Supertron",
+    image:
+      "https://assets.coingecko.com/coins/images/9326/large/LQOVF5S.png?1566267616",
+    contracts: {
+      ethereum: "0xc2e343118f937f88ee1fc3150cdc0d6f3d11bba7",
+    },
+  },
+  {
+    id: "aave-balancer-pool-token",
+    symbol: "abpt",
+    name: "Aave Balancer Pool Token",
+    image:
+      "https://assets.coingecko.com/coins/images/16788/large/ABPT_2x.png?1625046056",
+    contracts: {
+      ethereum: "0x41a08648c3766f9f9d85598ff102a08f4ef84f84",
+    },
+  },
+  {
+    id: "cspc",
+    symbol: "cspc",
+    name: "CSPC",
+    image:
+      "https://assets.coingecko.com/coins/images/9165/large/Fm57V1XAjhR_swTZ5yWbP-MHIGXE.png?1564986140",
+    contracts: {},
+  },
+  {
+    id: "3x-long-tether-token",
+    symbol: "usdtbull",
+    name: "3X Long Tether Token",
+    image:
+      "https://assets.coingecko.com/coins/images/10207/large/683JEXMN_400x400_%281%29.png?1576535011",
+    contracts: {
+      ethereum: "0x8cce19943a01e78b7c277794fb081816f6151bab",
+    },
+  },
+  {
+    id: "dragonvein",
+    symbol: "dvc",
+    name: "DragonVein",
+    image:
+      "https://assets.coingecko.com/coins/images/8263/large/LrDC1OmYiqq05_-E3PFLO6oJou6HOvVMFpjEqbYdcvaIPgQp7mF52lpj_rCmQW1FhAoBg5E2Z9o16L3Z7n8SQrMIp1YZNEGHRzc3P0P3jOZnyKvHNuTXQx9q13_kxXG1oMzaN3HfWdUnTMAfKRwghCa7BX67W9pSV-AJkcQ4-5Qy_qlAN28UCUgVnM0k6ZXlNWZo7Vi00CD7657qw.jpg?1557125797",
+    contracts: {
+      ethereum: "0x5e6ffe7b174a50c81ff3f3c54c04fd3c11e20830",
+    },
+  },
+  {
+    id: "3x-short-maker-token",
+    symbol: "mkrbear",
+    name: "3X Short Maker Token",
+    image:
+      "https://assets.coingecko.com/coins/images/12071/large/683JEXMN_400x400.png?1596709460",
+    contracts: {
+      ethereum: "",
+    },
+  },
+  {
+    id: "3x-short-shitcoin-index-token",
+    symbol: "bearshit",
+    name: "3X Short Shitcoin Index Token",
+    image:
+      "https://assets.coingecko.com/coins/images/10206/large/683JEXMN_400x400_%281%29.png?1576534838",
+    contracts: {
+      ethereum: "0x48dee19c81b89a9ab473361bae7a19210f2deaa4",
+    },
+  },
+  {
+    id: "nayuta-coin",
+    symbol: "nc",
+    name: "Nayuta Coin",
+    image:
+      "https://assets.coingecko.com/coins/images/13701/large/nc_logo.png?1611021562",
+    contracts: {
+      "enq-enecuum": "",
+    },
+  },
+  {
+    id: "community-chain",
+    symbol: "comc",
+    name: "Community Chain",
+    image:
+      "https://assets.coingecko.com/coins/images/6948/large/download_%288%29.jpeg?1547043326",
+    contracts: {
+      ethereum: "0xa5e99ad202bdd71d3518306cf4dd163261981af1",
+    },
+  },
+  {
+    id: "3x-long-tether-gold-token",
+    symbol: "xautbull",
+    name: "3X Long Tether Gold Token",
+    image:
+      "https://assets.coingecko.com/coins/images/11979/large/683JEXMN_400x400__1_.png?1596618665",
+    contracts: {
+      ethereum: "0xc9287623832668432099cef2ffdef3ced14f4315",
+    },
+  },
+  {
+    id: "galaxium",
+    symbol: "glxm",
+    name: "Galaxium",
+    image:
+      "https://assets.coingecko.com/coins/images/15691/large/Galaxium-Logo-Original200.png?1621567173",
+    contracts: {
+      "binance-smart-chain": "0x67e8954493dcf031243a3498da73c167eda512d4",
+    },
+  },
+  {
+    id: "3x-long-leo-token",
+    symbol: "leobull",
+    name: "3X Long LEO Token",
+    image:
+      "https://assets.coingecko.com/coins/images/10231/large/683JEXMN_400x400_%281%29.png?1576618672",
+    contracts: {
+      ethereum: "0xc2685307ef2b8842fbf3def432408c46bd0420fd",
+    },
+  },
+  {
+    id: "1x-short-litecoin-token",
+    symbol: "ltchedge",
+    name: "1X Short Litecoin Token",
+    image:
+      "https://assets.coingecko.com/coins/images/10230/large/683JEXMN_400x400_%281%29.png?1576618594",
+    contracts: {
+      ethereum: "0xd0c64d6c0e9aa53fffd8b80313e035f7b83083f3",
+    },
+  },
+  {
+    id: "3x-short-trx-token",
+    symbol: "trxbear",
+    name: "3X Short TRX Token",
+    image:
+      "https://assets.coingecko.com/coins/images/10234/large/683JEXMN_400x400_%281%29.png?1576618946",
+    contracts: {
+      ethereum: "0x86807da5b92d31f67e128771cacb85f3579646ea",
+    },
+  },
+  {
+    id: "3x-short-midcap-index-token",
+    symbol: "midbear",
+    name: "3X Short Midcap Index Token",
+    image:
+      "https://assets.coingecko.com/coins/images/10330/large/683JEXMN_400x400_%281%29.png?1578051961",
+    contracts: {
+      ethereum: "0xc82abb524257c8ee4790bfdefb452b2d6a395e21",
+    },
+  },
+  {
+    id: "nova",
+    symbol: "nova",
+    name: "NOVA",
+    image:
+      "https://assets.coingecko.com/coins/images/6545/large/N7d0x35q_400x400.jpg?1547042760",
+    contracts: {
+      ethereum: "0xb48b7e5bf6563b3e0a85055821a83deb8cfc12f6",
+    },
+  },
+  {
+    id: "3x-short-pax-gold-token",
+    symbol: "paxgbear",
+    name: "3X Short PAX Gold Token",
+    image:
+      "https://assets.coingecko.com/coins/images/10432/large/683JEXMN_400x400.png?1579276381",
+    contracts: {
+      ethereum: "0x3c4a46f0c075a7f191a7459bb51eb1f81ac36f8a",
+    },
+  },
+  {
+    id: "3x-long-balancer-token",
+    symbol: "balbull",
+    name: "3X Long Balancer Token",
+    image:
+      "https://assets.coingecko.com/coins/images/12065/large/683JEXMN_400x400.png?1596708595",
+    contracts: {
+      ethereum: "",
+    },
+  },
+  {
+    id: "3x-short-vechain-token",
+    symbol: "vetbear",
+    name: "3X Short VeChain Token",
+    image:
+      "https://assets.coingecko.com/coins/images/12037/large/683JEXMN_400x400__1_.png?1596700129",
+    contracts: {
+      ethereum: "",
+    },
+  },
+  {
+    id: "theholyrogercoin",
+    symbol: "roger",
+    name: "TheHolyRogerCoin",
+    image:
+      "https://assets.coingecko.com/coins/images/8869/large/rogerbirdfix3p5.png?1571822035",
+    contracts: {},
+  },
+  {
+    id: "ytho-online",
+    symbol: "ytho",
+    name: "YTHO Online",
+    image:
+      "https://assets.coingecko.com/coins/images/13130/large/photo_2020-10-06_11-28-28_%282%29.jpg?1609205097",
+    contracts: {
+      ethereum: "0x48cf0e2eca22eae0ad33fee16a5cb6e62207a8ab",
+    },
+  },
+  {
+    id: "boltt-coin",
+    symbol: "boltt",
+    name: "BolttCoin",
+    image:
+      "https://assets.coingecko.com/coins/images/3928/large/Ticker.jpeg?1551231549",
+    contracts: {
+      ethereum: "0xbb340a2eaf55c5e67a5a05fe5ceed9b9702d76f4",
+    },
+  },
+  {
+    id: "npo-coin",
+    symbol: "npo",
+    name: "NPO Coin",
+    image:
+      "https://assets.coingecko.com/coins/images/13324/large/NPO-moeda.png?1608168259",
+    contracts: {
+      tron: "TXVNa2f3sxLykasb6VuyNyUuYk4MWCBduG",
+    },
+  },
+  {
+    id: "q-dao-governance-token-v1-0",
+    symbol: "qdao",
+    name: "Q DAO Governance token v1.0",
+    image:
+      "https://assets.coingecko.com/coins/images/8599/large/QDAO_logo_white_black.png?1562131656",
+    contracts: {
+      ethereum: "0x3166c570935a7d8554c8f4ea792ff965d2efe1f2",
+      "binance-smart-chain": "0x2bf5b0df27f31388d5b825b39bd752bed6c7f7e9",
+    },
+  },
+  {
+    id: "amond",
+    symbol: "amon",
+    name: "AmonD",
+    image:
+      "https://assets.coingecko.com/coins/images/8952/large/AmonD_512x512.png?1563227436",
+    contracts: {
+      ethereum: "0x00059ae69c1622a7542edc15e8d17b060fe307b6",
+    },
+  },
+  {
+    id: "ume-token",
+    symbol: "ume",
+    name: "UME Token",
+    image:
+      "https://assets.coingecko.com/coins/images/14348/large/UME_Logo.png?1615505886",
+    contracts: {
+      tron: "TRkuKAxmWZ4G74MvZnFpoosQZsfvtNpmwH",
+    },
+  },
+  {
+    id: "dogz",
+    symbol: "dogz",
+    name: "Dogz",
+    image:
+      "https://assets.coingecko.com/coins/images/7544/large/dogz.png?1604655282",
+    contracts: {
+      ethereum: "0x82a77710495a35549d2add797412b4a4497d33ef",
+    },
+  },
+  {
+    id: "crespo",
+    symbol: "cso",
+    name: "Crespo",
+    image:
+      "https://assets.coingecko.com/coins/images/9125/large/crespo.png?1564547729",
+    contracts: {
+      ethereum: "0x5ecb025e51415dba9fd272c551076357cf4069f5",
+    },
+  },
+  {
+    id: "yfix-finance",
+    symbol: "yfix",
+    name: "YFIX.finance",
+    image:
+      "https://assets.coingecko.com/coins/images/12554/large/yfix-icon-200.png?1600739144",
+    contracts: {
+      ethereum: "0xa4f779074850d320b5553c9db5fc6a8ab15bd34a",
+    },
+  },
+  {
+    id: "1x-short-tezos-token",
+    symbol: "xtzhedge",
+    name: "1X Short Tezos Token",
+    image:
+      "https://assets.coingecko.com/coins/images/12047/large/683JEXMN_400x400.png?1596702162",
+    contracts: {
+      ethereum: "",
+    },
+  },
+  {
+    id: "hanagold-token",
+    symbol: "hng",
+    name: "HanaGold Token",
+    image:
+      "https://assets.coingecko.com/coins/images/19846/large/198364726_4177388515670795_6662680454680253231_n.jpg?1636035545",
+    contracts: {
+      kardiachain: "0x148de93957ed77f8d5546323b1eda0bf06eb52f3",
+    },
+  },
+  {
+    id: "yap-stone",
+    symbol: "yap",
+    name: "Yap Stone",
+    image:
+      "https://assets.coingecko.com/coins/images/8760/large/yap.PNG?1573118457",
+    contracts: {
+      ethereum: "0x245392ee7ce736ec6a0908b67dc5d0a218230005",
+    },
+  },
+  {
+    id: "iab",
+    symbol: "iab",
+    name: "IAB",
+    image:
+      "https://assets.coingecko.com/coins/images/6549/large/iabchain.png?1547042763",
+    contracts: {
+      ethereum: "0xded2583b3fbf4b381851f5031188a5a3562ab2cd",
+    },
+  },
+  {
+    id: "baby-everdoge",
+    symbol: "baby everdoge",
+    name: "Baby EverDoge",
+    image:
+      "https://assets.coingecko.com/coins/images/16462/large/Baby-Ever-Doge-Logo.png?1625066133",
+    contracts: {
+      "binance-smart-chain": "0x06c4212ae2fea51a27a045d968e73f7e91ea5521",
+    },
+  },
+  {
+    id: "3x-short-exchange-token-index-token",
+    symbol: "exchbear",
+    name: "3X Short Exchange Token Index Token",
+    image:
+      "https://assets.coingecko.com/coins/images/10331/large/683JEXMN_400x400_%281%29.png?1578052093",
+    contracts: {
+      ethereum: "0x6baa91cd8aa07431760ef2eedfedcef662a6b8b3",
+    },
+  },
+  {
+    id: "green-dildo-finance",
+    symbol: "gdildo",
+    name: "Green Dildo Finance",
+    image:
+      "https://assets.coingecko.com/coins/images/16641/large/gdildo.PNG?1624585725",
+    contracts: {
+      "binance-smart-chain": "0x718f127435213b48c1564c71558608df5770fe68",
+    },
+  },
+  {
+    id: "simple-software-solutions",
+    symbol: "sss",
+    name: "Simple Software Solutions",
+    image:
+      "https://assets.coingecko.com/coins/images/11273/large/SSS-Logo-Original-transparent.png?1589853486",
+    contracts: {},
+  },
+  {
+    id: "ulgen-hash-power",
+    symbol: "uhp",
+    name: "Ulgen Hash Power",
+    image:
+      "https://assets.coingecko.com/coins/images/11897/large/download_%2816%29.png?1595892702",
+    contracts: {
+      ethereum: "0x9135d92e3a34e2a94e4474b74b9dc2d51118eed5",
+    },
+  },
+  {
+    id: "shield-network",
+    symbol: "shieldnet",
+    name: "Shield Network",
+    image:
+      "https://assets.coingecko.com/coins/images/14909/large/ShieldNet.png?1623317875",
+    contracts: {
+      "binance-smart-chain": "0xf2e00684457de1a3c87361bc4bfe2de92342306c",
+    },
+  },
+  {
+    id: "geist-fusdt",
+    symbol: "gfusdt",
+    name: "Geist fUSDT",
+    image:
+      "https://assets.coingecko.com/coins/images/19000/large/preview-gallery-gUSDTgecko_%281%29.png?1634790738",
+    contracts: {
+      fantom: "0x940f41f0ec9ba1a34cf001cc03347ac092f5f6b5",
+    },
+  },
+  {
+    id: "safe-baby-shiba",
+    symbol: "sbsh",
+    name: "Safe Baby Shiba",
+    image:
+      "https://assets.coingecko.com/coins/images/16311/large/logo_-_2021-06-15T105921.126.png?1623726182",
+    contracts: {
+      "binance-smart-chain": "0x707c9088313b20931c05d16227f146279ec28e4e",
+    },
+  },
+  {
+    id: "when-lambo",
+    symbol: "lmbo",
+    name: "When Lambo",
+    image:
+      "https://assets.coingecko.com/coins/images/16298/large/WHEN-LAMBO-LOGO-200px.png?1623681208",
+    contracts: {
+      "binance-smart-chain": "0x017a2a7808e4cf95e6c20c777c5ded01e3a2a9df",
+    },
+  },
+  {
+    id: "space-link",
+    symbol: "splink",
+    name: "Space Link",
+    image:
+      "https://assets.coingecko.com/coins/images/19609/large/splink.png?1635925515",
+    contracts: {
+      ethereum: "0x56a41eef4aba11292c58b39f61dabc82ed22c79b",
+    },
+  },
+  {
+    id: "flokimars",
+    symbol: "flom",
+    name: "Flokimars",
+    image:
+      "https://assets.coingecko.com/coins/images/19789/large/-klKitmy_400x400.jpg?1635889843",
+    contracts: {
+      "binance-smart-chain": "0xcc2bf0f46c561afdce6c23710d0d7f38b007443f",
+    },
+  },
+  {
+    id: "polyfi",
+    symbol: "polyfi",
+    name: "PolyFi",
+    image:
+      "https://assets.coingecko.com/coins/images/15383/large/E8007915-E6-F0-4-E31-A3-BB-C75638060-A40.png?1620698891",
+    contracts: {
+      "polygon-pos": "0xfb005a1834eaaa6e55945b4b756e6873cecfe5ae",
+    },
+  },
+  {
+    id: "xanalia",
+    symbol: "alia",
+    name: "Xanalia",
+    image:
+      "https://assets.coingecko.com/coins/images/16024/large/alia.PNG?1622618514",
+    contracts: {
+      "binance-smart-chain": "0x13861c017735d3b2f0678a546948d67ad51ac07b",
+    },
+  },
+  {
+    id: "idle-dai-yield",
+    symbol: "idleDAIYield",
+    name: "IdleDAI (Best Yield)",
+    image:
+      "https://assets.coingecko.com/coins/images/11901/large/idledai_32.png?1595990312",
+    contracts: {
+      ethereum: "0x3fe7940616e5bc47b0775a0dccf6237893353bb4",
+    },
+  },
+  {
+    id: "zabaku-inu",
+    symbol: "zabaku",
+    name: "Zabaku Inu",
+    image:
+      "https://assets.coingecko.com/coins/images/15944/large/5-E31387-E-08-F6-4-A29-AC33-EC138-E09-E9-A7.jpg?1630331287",
+    contracts: {
+      "binance-smart-chain": "0x1e5f009d4f8ca44b5fcc4963dd301da82b4eed09",
+    },
+  },
+  {
+    id: "unicorn-token",
+    symbol: "uni",
+    name: "UNICORN Token",
+    image:
+      "https://assets.coingecko.com/coins/images/9383/large/54231438.png?1566777314",
+    contracts: {
+      ethereum: "0x2730d6fdc86c95a74253beffaa8306b40fedecbb",
+    },
+  },
+  {
+    id: "iten",
+    symbol: "iten",
+    name: "ITEN",
+    image:
+      "https://assets.coingecko.com/coins/images/12314/large/logo-light_%281%29.png?1599084234",
+    contracts: {
+      ethereum: "0x65b678936c489a2639036755aa2107ec09569198",
+    },
+  },
+  {
+    id: "amz-coin",
+    symbol: "amz",
+    name: "AMZ Coin",
+    image:
+      "https://assets.coingecko.com/coins/images/13565/large/200x_200x_png_amzcoin.png?1609831489",
+    contracts: {},
+  },
+  {
+    id: "tothe-moon",
+    symbol: "ttm",
+    name: "To The Moon",
+    image:
+      "https://assets.coingecko.com/coins/images/11604/large/download_%2814%29.png?1591772757",
+    contracts: {
+      ethereum: "0x714b1fded61090a6c49eb0b4d088b8e5ebd64e61",
+    },
+  },
+  {
+    id: "nagaswap",
+    symbol: "bnw",
+    name: "NagaSwap",
+    image:
+      "https://assets.coingecko.com/coins/images/13828/large/1_dQKxZmGq8IWJAJHu6kDS5Q.png?1612157547",
+    contracts: {
+      "binance-smart-chain": "0xa15083664eb19899885ccc2b4fd03977b26d3a2d",
+    },
+  },
+  {
+    id: "solit",
+    symbol: "slt",
+    name: "Solit",
+    image:
+      "https://assets.coingecko.com/coins/images/20553/large/logo_-_2021-11-18T112941.579.png?1637206190",
+    contracts: {
+      solana: "SLT3iSYKeBuCyxvnfij4RUhMfKxZCY3s12Z5pfkTXhV",
+    },
+  },
+  {
+    id: "cultiplan",
+    symbol: "ctpl",
+    name: "Cultiplan",
+    image:
+      "https://assets.coingecko.com/coins/images/15798/large/Cultiplan_200x200_logo.png?1621927264",
+    contracts: {
+      ethereum: "0xf7e40af830a2ecbfe72c5210c1ca272e3aa7ca1b",
+    },
+  },
+  {
+    id: "empow",
+    symbol: "em",
+    name: "Empow",
+    image:
+      "https://assets.coingecko.com/coins/images/11684/large/QmTMXMYaXQqG4PSNursodTYLJguiX73Z92nCaNddBzCEVU.png?1592793335",
+    contracts: {},
+  },
+  {
+    id: "sov",
+    symbol: "sov",
+    name: "SOV",
+    image:
+      "https://assets.coingecko.com/coins/images/9575/large/sov.PNG?1568932551",
+    contracts: {
+      eos: "",
+    },
+  },
+  {
+    id: "pluto-network",
+    symbol: "ptn",
+    name: "Pluto Network",
+    image:
+      "https://assets.coingecko.com/coins/images/15703/large/pluto-logo-horizontal.png?1621576452",
+    contracts: {
+      "binance-smart-chain": "0x3999565294ca158d3d7cde9c74c86be928317ea0",
+    },
+  },
+  {
+    id: "fireball-2",
+    symbol: "fire",
+    name: "FireBall",
+    image:
+      "https://assets.coingecko.com/coins/images/15644/large/fireball.png?1621413326",
+    contracts: {
+      "polygon-pos": "0xe118e8b6dc166cd83695825eb1d30e792435bb00",
+    },
+  },
+  {
+    id: "x22",
+    symbol: "x22",
+    name: "X22",
+    image:
+      "https://assets.coingecko.com/coins/images/17421/large/x22.PNG?1627600635",
+    contracts: {
+      "binance-smart-chain": "0x87e41175921d283c10ce42c9200aa3c8d51835a2",
+      ethereum: "0x41045282901e90bda7578d628e479e5421d1cdd5",
+    },
+  },
+  {
+    id: "100x-coin",
+    symbol: "100x",
+    name: "100xCoin",
+    image:
+      "https://assets.coingecko.com/coins/images/15062/large/NEW-100-X-LOGO-png.png?1622343378",
+    contracts: {
+      "binance-smart-chain": "0x016c285d5b918b92aa85ef1e147498badfe30d69",
+    },
+  },
+  {
+    id: "quickchart",
+    symbol: "quickchart",
+    name: "QuickChart",
+    image:
+      "https://assets.coingecko.com/coins/images/15387/large/3-E7934-AD-31-CC-4-A62-8526-82-B0-DE53-BBFB.png?1620702415",
+    contracts: {
+      "polygon-pos": "0x99da82c5464c49962cdda44fe30d352bc5da0580",
+    },
+  },
+  {
+    id: "gambler-shiba",
+    symbol: "gshiba",
+    name: "Gambler Shiba",
+    image:
+      "https://assets.coingecko.com/coins/images/17130/large/RHzOHCyb_400x400.jpg?1626410775",
+    contracts: {
+      ethereum: "0xb892249939adbf6d7851864ca9a5c7d2d537af97",
+    },
+  },
+  {
+    id: "momo-protocol",
+    symbol: "momo",
+    name: "Momo Protocol",
+    image:
+      "https://assets.coingecko.com/coins/images/14846/large/200logo.png?1629463786",
+    contracts: {
+      "binance-smart-chain": "0xafb2997fe9a99022e61c7e01b974e0e3d7704b02",
+    },
+  },
+  {
+    id: "stargazer-protocol",
+    symbol: "stardust",
+    name: "Stargazer Protocol",
+    image:
+      "https://assets.coingecko.com/coins/images/16863/large/output-onlinepngtools-8.png?1625469420",
+    contracts: {
+      "binance-smart-chain": "0xf647d6b49ea7bb880ecbcff9913df0d634875d33",
+    },
+  },
+  {
+    id: "oec-fil",
+    symbol: "filk",
+    name: "OEC FIL",
+    image:
+      "https://assets.coingecko.com/coins/images/18607/large/filk.png?1632655922",
+    contracts: {
+      "okex-chain": "0x3f8969be2fc0770dcc174968e4b4ff146e0acdaf",
+    },
+  },
+  {
+    id: "oec-dai",
+    symbol: "daik",
+    name: "OEC DAI",
+    image:
+      "https://assets.coingecko.com/coins/images/18599/large/daik.png?1632653621",
+    contracts: {
+      "okex-chain": "0x21cde7e32a6caf4742d00d44b07279e7596d26b9",
+    },
+  },
+  {
+    id: "oec-sfg",
+    symbol: "sfgk",
+    name: "OEC SFG",
+    image:
+      "https://assets.coingecko.com/coins/images/18583/large/0x3212606f74cc59656e1ec6f587fca61ba3b85eb0.png?1632494636",
+    contracts: {
+      "okex-chain": "0x3212606f74cc59656e1ec6f587fca61ba3b85eb0",
+    },
+  },
+  {
+    id: "shipitpro",
+    symbol: "shpp",
+    name: "ShipItPro",
+    image:
+      "https://assets.coingecko.com/coins/images/14687/large/photo_2020-12-28_16-37-33.jpg?1617785737",
+    contracts: {
+      ethereum: "0x13b1e6b036ac0a1495f876313f92a0706cc10871",
+    },
+  },
+  {
+    id: "dragonmoon",
+    symbol: "dmoon",
+    name: "DragonMoon",
+    image:
+      "https://assets.coingecko.com/coins/images/17177/large/dmoon.PNG?1626816912",
+    contracts: {
+      "binance-smart-chain": "0x8267d169e1483e01aacbcfd22d294c47ece9f07f",
+    },
+  },
+  {
+    id: "goldex-token",
+    symbol: "gldx",
+    name: "Goldex Token",
+    image:
+      "https://assets.coingecko.com/coins/images/17814/large/gldx-logo-200x200.png?1629337485",
+    contracts: {
+      ethereum: "0xc631120155621ee625835ec810b9885cdd764cd6",
+    },
+  },
+  {
+    id: "kuky-star",
+    symbol: "kuky",
+    name: "Kuky Star",
+    image:
+      "https://assets.coingecko.com/coins/images/7465/large/images_%283%29.jpeg?1547622295",
+    contracts: {
+      ethereum: "0xe6b7743e2b9aa2d0a9b163c4e69186abb57817d9",
+    },
+  },
+  {
+    id: "wesing-coin",
+    symbol: "wsc",
+    name: "WeSing Coin",
+    image:
+      "https://assets.coingecko.com/coins/images/7645/large/wesingcoin.png?1548923241",
+    contracts: {
+      ethereum: "0x2dcd9b1a7ed408ff48bd4918a1f9c0535dc54ead",
+    },
+  },
+  {
+    id: "gigecoin",
+    symbol: "gig",
+    name: "GigEcoin",
+    image:
+      "https://assets.coingecko.com/coins/images/7521/large/Screenshot_2019-01-22_at_7.10.46_PM.png?1548155892",
+    contracts: {},
+  },
+  {
+    id: "eros-token",
+    symbol: "eros",
+    name: "Eros Token",
+    image:
+      "https://assets.coingecko.com/coins/images/17961/large/icon200x200_%282%29.png?1629943287",
+    contracts: {
+      "binance-smart-chain": "0xe0ca4724bc8b97b259d25596ee3cfab816629bad",
+    },
+  },
+  {
+    id: "netcoincapital",
+    symbol: "ncc",
+    name: "Netcoincapital",
+    image:
+      "https://assets.coingecko.com/coins/images/17956/large/ncc.jpeg?1629903347",
+    contracts: {
+      tron: "TWmocwvHpui48QXUVJeW2SvcFe8LyNgLCU",
+    },
+  },
+  {
+    id: "dionpay",
+    symbol: "dion",
+    name: "Dionpay",
+    image:
+      "https://assets.coingecko.com/coins/images/12080/large/e8R3iNOLYQA359IFUhK83G8FKzYQb8WfwEte_kI06fH9DhThaQ0bv3C3wYnh1Lpr1c8sss-mxm0X0VkVTJCtH_ZWuW4krYaYJyyiPPUKN5SzFuahC9MK7beR8TCHPrOvNfsLNKFekCujprbJW3gurBWjjnbO4UmeV_MnfjtVZMHLIIRPOBPwcp7AdvB2Q20SpvM1JTg1r0ln3-q.jpg?1596816478",
+    contracts: {
+      eos: "",
+    },
+  },
+  {
+    id: "dain-token",
+    symbol: "dain",
+    name: "Dain Token",
+    image:
+      "https://assets.coingecko.com/coins/images/14811/large/%C2%B4%C3%99%C3%80%C3%8E%C2%B7%C3%8E%C2%B0%C3%AD.png?1618541340",
+    contracts: {
+      ethereum: "0xd7d706ed3598a354a4adfce5d8c5383df99a4461",
+    },
+  },
+  {
+    id: "karsiyaka-taraftar-token",
+    symbol: "ksk",
+    name: "Karsiyaka Taraftar Token",
+    image:
+      "https://assets.coingecko.com/coins/images/17650/large/ksk.png?1628750530",
+    contracts: {
+      Bitcichain: "0xf425bc8ad12770fcd039d98681a5d653f5783214",
+    },
+  },
+  {
+    id: "cryptopunk-7171-hoodie",
+    symbol: "hoodie",
+    name: "CryptoPunk #7171",
+    image:
+      "https://assets.coingecko.com/coins/images/17842/large/cryptopunk-hoodie.png?1629468579",
+    contracts: {
+      ethereum: "0xdffa3a7f5b40789c7a437dbe7b31b47f9b08fe75",
+    },
+  },
+  {
+    id: "bidipass",
+    symbol: "bdp",
+    name: "BidiPass",
+    image:
+      "https://assets.coingecko.com/coins/images/3890/large/AxiFAoHc_400x400.jpg?1567461770",
+    contracts: {
+      ethereum: "0x593114f03a0a575aece9ed675e52ed68d2172b8c",
+    },
+  },
+  {
+    id: "bitcoingenx",
+    symbol: "bgx",
+    name: "BitcoinGenX",
+    image:
+      "https://assets.coingecko.com/coins/images/7675/large/DvaFKS3VYAAQaEW.jpg?1549870327",
+    contracts: {},
+  },
+  {
+    id: "herodoge",
+    symbol: "herodoge",
+    name: "HeroDoge",
+    image:
+      "https://assets.coingecko.com/coins/images/17629/large/herodoge-coin.png?1628686933",
+    contracts: {
+      "binance-smart-chain": "0x5a8baec93d3d21e545d3e8a91d7dccdd0e8c4ddd",
+    },
+  },
+  {
+    id: "favecoin",
+    symbol: "fave",
+    name: "Favecoin",
+    image:
+      "https://assets.coingecko.com/coins/images/17749/large/200x200-favecoin.png?1629173567",
+    contracts: {
+      "binance-smart-chain": "0x5d6df41d39efb3b07eaf79494e35c417f9d6910b",
+    },
+  },
+  {
+    id: "infinitup",
+    symbol: "iup",
+    name: "InfinitUp",
+    image:
+      "https://assets.coingecko.com/coins/images/18890/large/fc_qo2M7_400x400.jpg?1633749805",
+    contracts: {
+      "binance-smart-chain": "0xc6f26e6df5f44c0ccd939581987c09b866cdbd1a",
+    },
+  },
+  {
+    id: "joos-protocol",
+    symbol: "joos",
+    name: "JOOS Protocol",
+    image:
+      "https://assets.coingecko.com/coins/images/7819/large/unaAbzXx_400x400.jpg?1550816726",
+    contracts: {
+      ethereum: "0x05f9abf4b0c5661e83b92c056a8791d5ccd7ca52",
+    },
+  },
+  {
+    id: "eros",
+    symbol: "ers",
+    name: "Eros",
+    image:
+      "https://assets.coingecko.com/coins/images/1588/large/ers.png?1547035775",
+    contracts: {},
+  },
+  {
+    id: "usd-sports",
+    symbol: "usdsp",
+    name: "USD Sports",
+    image:
+      "https://assets.coingecko.com/coins/images/15758/large/usdsp.PNG?1621824288",
+    contracts: {},
+  },
+  {
+    id: "buckhath-coin",
+    symbol: "bhig",
+    name: "BuckHath Coin",
+    image:
+      "https://assets.coingecko.com/coins/images/7821/large/logstex.PNG?1585121237",
+    contracts: {
+      ethereum: "0x996229d0c6a485c7f4b52e092eaa907cb2def5c6",
+    },
+  },
+  {
+    id: "babylink",
+    symbol: "bblink",
+    name: "BabyLink",
+    image:
+      "https://assets.coingecko.com/coins/images/17402/large/Babylink-Logo-874x1024-1.png?1627534569",
+    contracts: {
+      "binance-smart-chain": "0xdb5bd5763c16e90f1d5b5947e1b9e2c278f054d9",
+    },
+  },
+  {
+    id: "yfi-credits-group",
+    symbol: "yficg",
+    name: "YFI Credits Group",
+    image:
+      "https://assets.coingecko.com/coins/images/12932/large/70994628.png?1603697599",
+    contracts: {
+      ethereum: "0x9080e92296a176883aab1d7d1b7e50bc055b0caa",
+    },
+  },
+  {
+    id: "bocketbsc",
+    symbol: "rktbsc",
+    name: "RocketBSC",
+    image:
+      "https://assets.coingecko.com/coins/images/16252/large/rocketbsc.PNG?1623393868",
+    contracts: {
+      "binance-smart-chain": "0x86f56c9041e87d62377acada27055a8debfc8c0f",
+    },
+  },
+  {
+    id: "asec-frontier",
+    symbol: "asec",
+    name: "ASEC Frontier",
+    image:
+      "https://assets.coingecko.com/coins/images/15939/large/58947b_49a936ef42ab4b7da4d2beb95852d49a_mv2.png?1622459327",
+    contracts: {
+      ethereum: "0x75b02aa1084a12b8729f5acbe1078bd450abe552",
+    },
+  },
+  {
+    id: "p2p",
+    symbol: "p2p",
+    name: "P2P",
+    image:
+      "https://assets.coingecko.com/coins/images/12486/large/p2p.png?1600207324",
+    contracts: {
+      ethereum: "0xabe9b2e4bbd5a8c718752c41254ed81aae7d98bf",
+    },
+  },
+  {
+    id: "darkbuild",
+    symbol: "dark",
+    name: "Dark.Build v1",
+    image:
+      "https://assets.coingecko.com/coins/images/12716/large/DARK-circle_token_200px.png?1614850894",
+    contracts: {
+      ethereum: "0x3108ccfd96816f9e663baa0e8c5951d229e8c6da",
+    },
+  },
+  {
+    id: "hiz-finance",
+    symbol: "hiz",
+    name: "Hiz Finance",
+    image:
+      "https://assets.coingecko.com/coins/images/12974/large/73051179.png?1603959145",
+    contracts: {
+      ethereum: "0xc761d1ccb38a94703675d2cdb15f7f1b3dcff7b7",
+    },
+  },
+  {
+    id: "shibboo-inu",
+    symbol: "shibboo",
+    name: "Shibboo Inu",
+    image:
+      "https://assets.coingecko.com/coins/images/19601/large/shibboo.jpeg?1635491024",
+    contracts: {
+      ethereum: "0x2e1368fe7b9cbb3f777c2d85e9e804f8f67d7074",
+    },
+  },
+  {
+    id: "curryswap",
+    symbol: "curry",
+    name: "CurrySwap",
+    image:
+      "https://assets.coingecko.com/coins/images/13656/large/curry_logo.jpg?1610581982",
+    contracts: {
+      ethereum: "0xc2d3ae29c8309c14994d02ecd228cf86f3efde77",
+    },
+  },
+  {
+    id: "rotten-floki",
+    symbol: "rotten",
+    name: "Rotten Floki",
+    image:
+      "https://assets.coingecko.com/coins/images/19791/large/floki.png?1635895887",
+    contracts: {
+      "binance-smart-chain": "0x7f976fce4ff9f5fa3ed76609c5cb4d406399e32d",
+    },
+  },
+  {
+    id: "tilwiki",
+    symbol: "tlw",
+    name: "TilWiki",
+    image:
+      "https://assets.coingecko.com/coins/images/12915/large/89706561_1111490899211097_8975783115158978560_n.jpg?1603441976",
+    contracts: {
+      ethereum: "0x06f3cdabae564b0546529b4dd8fef1bcd4235753",
+    },
+  },
+  {
+    id: "babybackdoge",
+    symbol: "bbdoge",
+    name: "BabyBackDOGE",
+    image:
+      "https://assets.coingecko.com/coins/images/17351/large/nqmcVGQ.png?1627368499",
+    contracts: {
+      "binance-smart-chain": "0x545c6721314a1064821a8f235a7cef987b4fbc32",
+    },
+  },
+  {
+    id: "minishib-eth",
+    symbol: "minishib",
+    name: "miniSHIB ETH",
+    image:
+      "https://assets.coingecko.com/coins/images/19364/large/minishib.jpeg?1635131418",
+    contracts: {
+      ethereum: "0x68abcf0ee3e25e3529aae96e927a1329bdbe4ec3",
+    },
+  },
+  {
+    id: "bowl-a-coin",
+    symbol: "bac",
+    name: "Bowl A Coin",
+    image:
+      "https://assets.coingecko.com/coins/images/10407/large/67889072_875141466188128_5648314299878211584_o.jpg?1578952952",
+    contracts: {
+      ethereum: "0x062e3be6a7c56a395b1881a0cd69a4923ade4fa2",
+    },
+  },
+  {
+    id: "3x-short-bilira-token",
+    symbol: "trybbear",
+    name: "3X Short BiLira Token",
+    image:
+      "https://assets.coingecko.com/coins/images/10451/large/683JEXMN_400x400.png?1579561868",
+    contracts: {
+      ethereum: "0xa5ddfca8b837ccd0cf80fe6c24e2a9018fb50dba",
+    },
+  },
+  {
+    id: "formula",
+    symbol: "fml",
+    name: "FormulA",
+    image:
+      "https://assets.coingecko.com/coins/images/6878/large/formula_token.png?1547043223",
+    contracts: {
+      ethereum: "0xde522a2778e4554707e6a8df36a4871ce9967bb5",
+    },
+  },
+  {
+    id: "1x-short-vechain-token",
+    symbol: "vethedge",
+    name: "1X Short VeChain Token",
+    image:
+      "https://assets.coingecko.com/coins/images/12038/large/683JEXMN_400x400__1_.png?1596700312",
+    contracts: {
+      ethereum: "",
+    },
+  },
+  {
+    id: "monspac",
+    symbol: "mspc",
+    name: "Monspac",
+    image:
+      "https://assets.coingecko.com/coins/images/19408/large/MSPC_logo-01.png?1635211210",
+    contracts: {
+      "binance-smart-chain": "0xba509bdb71a29301860800e13867b59b461747af",
+    },
+  },
+  {
+    id: "fat-doge",
+    symbol: "foge",
+    name: "Fat Doge",
+    image:
+      "https://assets.coingecko.com/coins/images/15497/large/foge.png?1621057848",
+    contracts: {
+      ethereum: "0x76851a93977bea9264c32255b6457882035c7501",
+    },
+  },
+  {
+    id: "1x-short-exchange-token-index-token",
+    symbol: "exchhedge",
+    name: "1X Short Exchange Token Index Token",
+    image:
+      "https://assets.coingecko.com/coins/images/11985/large/683JEXMN_400x400__1_.png?1596683946",
+    contracts: {
+      ethereum: "0xf8cc67e304f8e1a351ed83b4dbbe6b4076d51376",
+    },
+  },
+  {
+    id: "eautocoin",
+    symbol: "ato",
+    name: "EAutocoin",
+    image:
+      "https://assets.coingecko.com/coins/images/7132/large/ato.png?1547043631",
+    contracts: {
+      ethereum: "0xb551d08d2189ef67b4788be2c35c0743693625ca",
+    },
+  },
+  {
+    id: "island-inu",
+    symbol: "islainu",
+    name: "Island Inu",
+    image:
+      "https://assets.coingecko.com/coins/images/19521/large/island_inu.jpeg?1635323269",
+    contracts: {
+      ethereum: "0xe9fba30ff18d305fea49836939eaca55f26c019c",
+    },
+  },
+  {
+    id: "matic-dai-stablecoin",
+    symbol: "dai-matic",
+    name: "Matic DAI Stablecoin",
+    image:
+      "https://assets.coingecko.com/coins/images/19344/large/io1v25anp7t7nz954gdam2m27eqp4arr93jly4maa.png?1635126141",
+    contracts: {
+      iotex: "0x62a9d987cbf4c45a550deed5b57b200d7a319632",
+    },
+  },
+  {
+    id: "shadowswap",
+    symbol: "shadow",
+    name: "ShadowSwap",
+    image:
+      "https://assets.coingecko.com/coins/images/16326/large/spaces_-Mb_m7t4r90kdakH8FXe_avatar-1623058079086.png?1623743174",
+    contracts: {
+      fantom: "0x4e8348fdd1b6619a95334fe08a82872047154cb3",
+    },
+  },
+  {
+    id: "poc-blockchain",
+    symbol: "poc",
+    name: "POC Blockchain",
+    image:
+      "https://assets.coingecko.com/coins/images/13759/large/PQ7MaT8N_400x400.png?1611612016",
+    contracts: {},
+  },
+  {
+    id: "the-kraken",
+    symbol: "krkn",
+    name: "The Kraken",
+    image:
+      "https://assets.coingecko.com/coins/images/17360/large/h5T7xgb.png?1627372374",
+    contracts: {
+      "binance-smart-chain": "0x24cbcaec5178a8bb455d07f14518f9e83f517970",
+    },
+  },
+  {
+    id: "blastoise-inu",
+    symbol: "blast",
+    name: "Blastoise Inu",
+    image:
+      "https://assets.coingecko.com/coins/images/19197/large/blast.png?1635005146",
+    contracts: {
+      ethereum: "0x5167f7cdeb771417d8722e654ccc3e1734a01878",
+    },
+  },
+  {
+    id: "crypto-village-accelerator-cvag",
+    symbol: "cvag",
+    name: "Crypto Village Accelerator CVAG",
+    image:
+      "https://assets.coingecko.com/coins/images/17124/large/cvag.PNG?1626401266",
+    contracts: {
+      ethereum: "0x72a66e54b66892ae3bbe54df7bb7dd5ae927a6f9",
+    },
+  },
+  {
+    id: "lichang",
+    symbol: "lc",
+    name: "Lichang",
+    image:
+      "https://assets.coingecko.com/coins/images/8358/large/download_%282%29.png?1563420885",
+    contracts: {
+      eos: "",
+    },
+  },
+  {
+    id: "kingxchain",
+    symbol: "kxc",
+    name: "KingXChain",
+    image:
+      "https://assets.coingecko.com/coins/images/5690/large/kingxchain.png?1547975313",
+    contracts: {
+      ethereum: "0x016396044709eb3edc69c44f4d5fa6996917e4e8",
+    },
+  },
+  {
+    id: "poc-chain",
+    symbol: "pocc",
+    name: "POC Chain",
+    image:
+      "https://assets.coingecko.com/coins/images/7718/large/logo_%281%29.png?1549956313",
+    contracts: {
+      ethereum: "0x926be13b4d93f29ea254e4e518f33099e45d7f06",
+    },
+  },
+  {
+    id: "mamadoge",
+    symbol: "mamadoge",
+    name: "MamaDoge",
+    image:
+      "https://assets.coingecko.com/coins/images/16745/large/IYcfpsh.png?1624873265",
+    contracts: {
+      "binance-smart-chain": "0x7819806b6ea4b5582c5ae3825a521b4067b5c7fe",
+    },
+  },
+  {
+    id: "silvercashs",
+    symbol: "svc",
+    name: "Silvercashs",
+    image:
+      "https://assets.coingecko.com/coins/images/8241/large/silvercashs.png?1589626218",
+    contracts: {
+      tron: "1002182",
+    },
+  },
+  {
+    id: "uca",
+    symbol: "uca",
+    name: "UCA Coin",
+    image:
+      "https://assets.coingecko.com/coins/images/11032/large/UCA.png?1587294886",
+    contracts: {},
+  },
+  {
+    id: "universal-euro",
+    symbol: "upeur",
+    name: "Universal Euro",
+    image:
+      "https://assets.coingecko.com/coins/images/11172/large/1_hxXrtjdwUeSTn67wA8nHQw.png?1589440779",
+    contracts: {
+      ethereum: "0x6c103d85c15107dce19f5a75fc746227e610aabd",
+    },
+  },
+  {
+    id: "doos-token",
+    symbol: "doos",
+    name: "DOOS TOKEN",
+    image:
+      "https://assets.coingecko.com/coins/images/12418/large/2020-09-09-14-45-27.png?1599692321",
+    contracts: {},
+  },
+  {
+    id: "sopay",
+    symbol: "sop",
+    name: "SoPay",
+    image:
+      "https://assets.coingecko.com/coins/images/6736/large/sopay.png?1548609877",
+    contracts: {
+      ethereum: "0x076641af1b8f06b7f8c92587156143c109002cbe",
+    },
+  },
+  {
+    id: "spender-x",
+    symbol: "spdx",
+    name: "SPENDER-X",
+    image:
+      "https://assets.coingecko.com/coins/images/9259/large/spdx.PNG?1565650786",
+    contracts: {
+      ethereum: "0x2c756e74b7309d785b5e2960ef262c4f14a87930",
+    },
+  },
+  {
+    id: "memeflate",
+    symbol: "mflate",
+    name: "Memeflate",
+    image:
+      "https://assets.coingecko.com/coins/images/19598/large/mflate.PNG?1635489960",
+    contracts: {
+      "binance-smart-chain": "0xafe3321309a994831884fc1725f4c3236ac79f76",
+    },
+  },
+  {
+    id: "cherry-token",
+    symbol: "yt",
+    name: "Cherry Token",
+    image:
+      "https://assets.coingecko.com/coins/images/8321/large/cherry.png?1557480352",
+    contracts: {
+      ethereum: "0x5c89736e9454200141b80c37eb28eaceca2ce8cb",
+    },
+  },
+  {
+    id: "oec-zks",
+    symbol: "zksk",
+    name: "OEC ZKS",
+    image:
+      "https://assets.coingecko.com/coins/images/18600/large/zksk.png?1632653846",
+    contracts: {
+      "okex-chain": "0xcd08d321f6bc10a10f094e4b2e6c9b8bf9906401",
+    },
+  },
+  {
+    id: "kimchi-finance",
+    symbol: "kimchi",
+    name: "KIMCHI.finance",
+    image:
+      "https://assets.coingecko.com/coins/images/12302/large/VBa2Z60o_400x400.png?1598982471",
+    contracts: {
+      ethereum: "0x1e18821e69b9faa8e6e75dffe54e7e25754beda0",
+    },
+  },
+  {
+    id: "genexi",
+    symbol: "gxi",
+    name: "Genexi",
+    image:
+      "https://assets.coingecko.com/coins/images/7126/large/bR4FuOeq_400x400.jpg?1547043624",
+    contracts: {
+      ethereum: "0xbcfdaeb22ab6e10dfb99546e6240155edc1084f7",
+    },
+  },
+  {
+    id: "papacake",
+    symbol: "papacake",
+    name: "PapaCake",
+    image:
+      "https://assets.coingecko.com/coins/images/17503/large/papacake.PNG?1628036837",
+    contracts: {
+      "binance-smart-chain": "0x7fccb3084c0893ebbdc46f6a416c633d8174e6bd",
+    },
+  },
+  {
+    id: "greenmars",
+    symbol: "greenmars",
+    name: "GreenMars",
+    image:
+      "https://assets.coingecko.com/coins/images/15981/large/GM_Logo200200.png?1622531000",
+    contracts: {
+      "binance-smart-chain": "0x0709f67254df2d6bbfd4884a5472439b5417615d",
+    },
+  },
+  {
+    id: "ubiner",
+    symbol: "ubin",
+    name: "Ubiner",
+    image:
+      "https://assets.coingecko.com/coins/images/12190/large/ubin.PNG?1597965582",
+    contracts: {
+      ethereum: "0xb9eceb9f717852ad0d936b46155cb0c0f43cbe8e",
+    },
+  },
+  {
+    id: "shiba-maki",
+    symbol: "shibamaki",
+    name: "Shiba Maki",
+    image:
+      "https://assets.coingecko.com/coins/images/20098/large/shiba_maki.PNG?1636495165",
+    contracts: {
+      "binance-smart-chain": "0x40d6f307cd6869262caa82907a80bda3317b9501",
+    },
+  },
+  {
+    id: "babydogex",
+    symbol: "BDOGEX",
+    name: "BabyDogeX",
+    image:
+      "https://assets.coingecko.com/coins/images/18591/large/mSzE1EF.png?1632557178",
+    contracts: {
+      "binance-smart-chain": "0x4a6db8f47b8c827aaa846ba017e9809bb92cf6b2",
+    },
+  },
+  {
+    id: "nyan-cat",
+    symbol: "ncat",
+    name: "NCAT Token",
+    image:
+      "https://assets.coingecko.com/coins/images/14556/large/ncat_logo.jpg?1617002485",
+    contracts: {
+      "binance-smart-chain": "0x0cf011a946f23a03ceff92a4632d5f9288c6c70d",
+    },
+  },
+  {
+    id: "520",
+    symbol: "520",
+    name: "520",
+    image:
+      "https://assets.coingecko.com/coins/images/9758/large/logo_%2822%29.png?1571437829",
+    contracts: {
+      ethereum: "0x62d75a2a10f755104bd1024d997141ce793cf585",
+    },
+  },
+  {
+    id: "3x-short-defi-index-token",
+    symbol: "defibear",
+    name: "3X Short DeFi Index Token",
+    image:
+      "https://assets.coingecko.com/coins/images/12012/large/683JEXMN_400x400__1_.png?1596692651",
+    contracts: {
+      ethereum: "",
+    },
+  },
+  {
+    id: "cetf",
+    symbol: "cetf",
+    name: "Cell ETF",
+    image:
+      "https://assets.coingecko.com/coins/images/18191/large/cetf_logo.png?1630910561",
+    contracts: {
+      "huobi-token": "0x24ab27a7274de0ba5760bab804fe870bb572c510",
+    },
+  },
+  {
+    id: "galaxer",
+    symbol: "glx",
+    name: "Galaxer",
+    image:
+      "https://assets.coingecko.com/coins/images/18464/large/logo-token.png?1632109751",
+    contracts: {
+      ethereum: "0x75d0fb8db2f6485fdfe6ff58321e91effae759a8",
+    },
+  },
+  {
+    id: "tronbetlive",
+    symbol: "live",
+    name: "TRONbetLive",
+    image:
+      "https://assets.coingecko.com/coins/images/12323/large/TVgAYofpQku5G4zenXnvxhbZxpzzrk8WVK.png?1599095759",
+    contracts: {
+      tron: "",
+    },
+  },
+  {
+    id: "ricefarm",
+    symbol: "rice",
+    name: "RiceFarm",
+    image:
+      "https://assets.coingecko.com/coins/images/16727/large/RICE.png?1624855146",
+    contracts: {
+      "binance-smart-chain": "0xc4eeff5aab678c3ff32362d80946a3f5de4a1861",
+    },
+  },
+  {
+    id: "sl3-token",
+    symbol: "sl3",
+    name: "Mammoth",
+    image:
+      "https://assets.coingecko.com/coins/images/20608/large/mammoth_200_pix_%281%29.jpg?1637291056",
+    contracts: {
+      avalanche: "0x2841a8a2ce98a9d21ad8c3b7fc481527569bd7bb",
+    },
+  },
+  {
+    id: "3x-short-bnb-token",
+    symbol: "bnbbear",
+    name: "3X Short BNB Token",
+    image:
+      "https://assets.coingecko.com/coins/images/10242/large/683JEXMN_400x400_%281%29.png?1576633870",
+    contracts: {
+      ethereum: "0x6febdfc0a9d9502c45343fce0df08828def44795",
+    },
+  },
+  {
+    id: "ad-flex-token",
+    symbol: "adf",
+    name: "Ad Flex Token",
+    image:
+      "https://assets.coingecko.com/coins/images/5620/large/ad-flex-token.png?1547041485",
+    contracts: {
+      ethereum: "0x7220e92d418e2eb59d0c25d195fa004bfd3afc42",
+    },
+  },
+  {
+    id: "mmmluckup7",
+    symbol: "mmm7",
+    name: "MMMLUCKUP7",
+    image:
+      "https://assets.coingecko.com/coins/images/18216/large/logo.png?1631006201",
+    contracts: {
+      tron: "",
+    },
+  },
+  {
+    id: "sphinxel",
+    symbol: "spx",
+    name: "Sphinxel",
+    image:
+      "https://assets.coingecko.com/coins/images/20249/large/logo_-_2021-11-12T151134.139.png?1636701101",
+    contracts: {
+      solana: "H6JocWxg5g1Lcs4oPnBecmjQ4Y1bkZhGJHtjMunmjyrp",
+    },
+  },
+  {
+    id: "0-5x-long-xrp-token",
+    symbol: "xrphalf",
+    name: "0.5X Long XRP Token",
+    image:
+      "https://assets.coingecko.com/coins/images/12029/large/683JEXMN_400x400.png?1596697580",
+    contracts: {
+      ethereum: "",
+    },
+  },
+  {
+    id: "phoenix-unity",
+    symbol: "pxu",
+    name: "Phoenix Unity",
+    image:
+      "https://assets.coingecko.com/coins/images/19723/large/32x32-Asset-1-Phoenix-Unity.png?1635761746",
+    contracts: {
+      "binance-smart-chain": "0x2acd4d05cbfdb78f46f0b4ef32aff32c74e8afbe",
+    },
+  },
+  {
+    id: "baby-bonfire",
+    symbol: "FIRE",
+    name: "Baby Bonfire",
+    image:
+      "https://assets.coingecko.com/coins/images/18821/large/w-Nxn-Ke-Uc-400x400.jpg?1633520273",
+    contracts: {
+      "binance-smart-chain": "0x24b66a58d505ff7651c31358b3a2d697644a8de7",
+    },
+  },
+  {
+    id: "50k",
+    symbol: "50k",
+    name: "50 Keeper",
+    image:
+      "https://assets.coingecko.com/coins/images/16448/large/50k.png?1624239707",
+    contracts: {
+      "polygon-pos": "0xa656dc2b1061f80f4e847bba2d9bd52db4889836",
+    },
+  },
+  {
+    id: "babyshibby-inu",
+    symbol: "babyshib",
+    name: "BabyShibby Inu",
+    image:
+      "https://assets.coingecko.com/coins/images/17004/large/iG11kku.png?1626062376",
+    contracts: {
+      "binance-smart-chain": "0xde87b96fb2b0b6b492dc1c9b228a7c71ffba40fb",
+    },
+  },
+  {
+    id: "inoovi",
+    symbol: "ivi",
+    name: "Inoovi",
+    image:
+      "https://assets.coingecko.com/coins/images/10372/large/Bvp7U25U_400x400.jpg?1578674638",
+    contracts: {
+      ethereum: "0xa91464abd4625a23ab719e3f0fce84dadd54e546",
+    },
+  },
+  {
+    id: "huskyshiba",
+    symbol: "hshiba",
+    name: "HuskyShiba",
+    image:
+      "https://assets.coingecko.com/coins/images/15517/large/hshiba.PNG?1621117994",
+    contracts: {
+      "binance-smart-chain": "0xd914bde476b6e44b7a1579b21f0f9193ea55f852",
     },
   },
   {
@@ -100962,741 +102528,81 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "aster",
-    symbol: "atc",
-    name: "Aster",
+    id: "amazonacoin",
+    symbol: "amz",
+    name: "AmazonasCoin",
     image:
-      "https://assets.coingecko.com/coins/images/17325/large/atc.png?1627311439",
-    contracts: {
-      ethereum: "0x0eb3032bcac2be1fa95e296442f225edb80fc3cd",
-    },
-  },
-  {
-    id: "kuky-star",
-    symbol: "kuky",
-    name: "Kuky Star",
-    image:
-      "https://assets.coingecko.com/coins/images/7465/large/images_%283%29.jpeg?1547622295",
-    contracts: {
-      ethereum: "0xe6b7743e2b9aa2d0a9b163c4e69186abb57817d9",
-    },
-  },
-  {
-    id: "quick-bounty",
-    symbol: "qb",
-    name: "Quick Bounty",
-    image:
-      "https://assets.coingecko.com/coins/images/16520/large/favicon-1.png?1624330268",
-    contracts: {
-      "binance-smart-chain": "0x4ccbe073a58a574cac3ee69649e44728d2e2554c",
-    },
-  },
-  {
-    id: "roocoin",
-    symbol: "roo",
-    name: "RooCoin",
-    image:
-      "https://assets.coingecko.com/coins/images/15434/large/RooCoinLogo.png?1620799405",
-    contracts: {
-      "binance-smart-chain": "0x30b29c6c03546f6395ddb454538d0eb7e4a6e32f",
-    },
-  },
-  {
-    id: "store-of-value-token",
-    symbol: "sov",
-    name: "Store of Value Token",
-    image:
-      "https://assets.coingecko.com/coins/images/17870/large/SOVcoin.png?1629692413",
-    contracts: {
-      ethereum: "0x0afee744b6d9ff2b78f76fe10b3e0199c413fd34",
-    },
-  },
-  {
-    id: "polygold",
-    symbol: "polygold",
-    name: "PolyGold",
-    image:
-      "https://assets.coingecko.com/coins/images/16055/large/wYRJKCT.png?1622699065",
-    contracts: {
-      "polygon-pos": "0x0184316f58b9a44acdd3e683257259dc0cf2202a",
-    },
-  },
-  {
-    id: "stronghold",
-    symbol: "strng",
-    name: "StrongHold",
-    image:
-      "https://assets.coingecko.com/coins/images/13540/large/strng.png?1609599778",
-    contracts: {
-      ethereum: "0x350a6a30c79df3600c4e0e67deab0a64b645e2c2",
-    },
-  },
-  {
-    id: "wrapped-moon-cats",
-    symbol: "mcat20",
-    name: "Wrapped Moon Cats",
-    image:
-      "https://assets.coingecko.com/coins/images/14387/large/MCAT20.png?1615803341",
-    contracts: {
-      ethereum: "0xf961a1fa7c781ecd23689fe1d0b7f3b6cbb2f972",
-    },
-  },
-  {
-    id: "swaptoken",
-    symbol: "token",
-    name: "SwapToken",
-    image:
-      "https://assets.coingecko.com/coins/images/2214/large/token.png?1547036499",
+      "https://assets.coingecko.com/coins/images/11830/large/67655540_2134166093379460_7734829864909275136_o.png?1594764535",
     contracts: {},
   },
   {
-    id: "3x-short-cardano-token",
-    symbol: "adabear",
-    name: "3X Short Cardano Token",
+    id: "buildup",
+    symbol: "bup",
+    name: "BuildUp",
     image:
-      "https://assets.coingecko.com/coins/images/10232/large/683JEXMN_400x400_%281%29.png?1576618766",
+      "https://assets.coingecko.com/coins/images/13206/large/BUP_-_LOGO.png?1606199462",
     contracts: {
-      ethereum: "0xb3299d4bab93bf04d5b11bc49cd6dfad1f77d23f",
+      ethereum: "0xb04dfdb8271ed2d5e13858562c44a77d3ceb9e57",
     },
   },
   {
-    id: "camp",
-    symbol: "camp",
-    name: "Camp",
+    id: "nocapcoin",
+    symbol: "ncc",
+    name: "NoCapCoin",
     image:
-      "https://assets.coingecko.com/coins/images/13338/large/CampGlobal_256256.png?1607576849",
+      "https://assets.coingecko.com/coins/images/15491/large/nocapcoin.PNG?1621041472",
     contracts: {
-      ethereum: "0xe9e73e1ae76d17a16cc53e3e87a9a7da78834d37",
+      "binance-smart-chain": "0x93dfc1e09b7164bafd4860963b6d94cbc4284774",
     },
   },
   {
-    id: "1x-short-chainlink-token",
-    symbol: "LINKHEDGE",
-    name: "1X Short Chainlink Token",
+    id: "bankwupt",
+    symbol: "bankwupt",
+    name: "Bankwupt",
     image:
-      "https://assets.coingecko.com/coins/images/12056/large/683JEXMN_400x400.png?1596703926",
+      "https://assets.coingecko.com/coins/images/20235/large/logo.png?1636690561",
     contracts: {
-      ethereum: "",
+      "binance-smart-chain": "0x218d9d20c503a651946bc64b54559dcef580befd",
     },
   },
   {
-    id: "troneuroperewardcoin",
-    symbol: "terc",
-    name: "TronEuropeRewardCoin",
+    id: "bullex",
+    symbol: "blx",
+    name: "BulleX",
     image:
-      "https://assets.coingecko.com/coins/images/9253/large/1000226.png?1565567673",
+      "https://assets.coingecko.com/coins/images/17066/large/blx.PNG?1626151063",
     contracts: {
-      tron: "1000226",
+      "binance-smart-chain": "0x9612f89f32c8a8419be7a65358e485b76db2d7f4",
     },
   },
   {
-    id: "smegmars",
-    symbol: "SMGM",
-    name: "SMEGMARS",
+    id: "deipool",
+    symbol: "dip",
+    name: "Deipool",
     image:
-      "https://assets.coingecko.com/coins/images/16123/large/smeg-coingecko_%281%29.png?1623118187",
+      "https://assets.coingecko.com/coins/images/13186/large/deipool.png?1606085265",
     contracts: {
-      "binance-smart-chain": "0x74f3a669a8f35010f6f8811c495c0a5f60c5d04d",
+      ethereum: "0xd1517663883e2acc154178fb194e80e8bbc29730",
     },
   },
   {
-    id: "0-5x-long-shitcoin-index-token",
-    symbol: "halfshit",
-    name: "0.5X Long Shitcoin Index Token",
+    id: "babybnb",
+    symbol: "babybnb",
+    name: "BabyBNB",
     image:
-      "https://assets.coingecko.com/coins/images/11995/large/683JEXMN_400x400.png?1596689551",
+      "https://assets.coingecko.com/coins/images/16780/large/Babybnb-logo-200px.png?1626961003",
     contracts: {
-      ethereum: "",
+      "binance-smart-chain": "0xc1168b7b85b2bbc8a5c73c007b74e7523b2da209",
     },
   },
   {
-    id: "greenmars",
-    symbol: "greenmars",
-    name: "GreenMars",
+    id: "wrapped-usd",
+    symbol: "wusd",
+    name: "Wrapped USD",
     image:
-      "https://assets.coingecko.com/coins/images/15981/large/GM_Logo200200.png?1622531000",
+      "https://assets.coingecko.com/coins/images/14691/large/StableLogo.png?1617808927",
     contracts: {
-      "binance-smart-chain": "0x0709f67254df2d6bbfd4884a5472439b5417615d",
-    },
-  },
-  {
-    id: "cspc",
-    symbol: "cspc",
-    name: "CSPC",
-    image:
-      "https://assets.coingecko.com/coins/images/9165/large/Fm57V1XAjhR_swTZ5yWbP-MHIGXE.png?1564986140",
-    contracts: {},
-  },
-  {
-    id: "oec-fil",
-    symbol: "filk",
-    name: "OEC FIL",
-    image:
-      "https://assets.coingecko.com/coins/images/18607/large/filk.png?1632655922",
-    contracts: {
-      "okex-chain": "0x3f8969be2fc0770dcc174968e4b4ff146e0acdaf",
-    },
-  },
-  {
-    id: "kpop-coin",
-    symbol: "kpop",
-    name: "KPOP Coin",
-    image:
-      "https://assets.coingecko.com/coins/images/15923/large/kpop.PNG?1622431964",
-    contracts: {
-      ethereum: "0x7b7983967409fce461ea8bbdf9ed37631b1d59c9",
-    },
-  },
-  {
-    id: "3x-long-maker-token",
-    symbol: "mkrbull",
-    name: "3X Long Maker Token",
-    image:
-      "https://assets.coingecko.com/coins/images/12066/large/683JEXMN_400x400.png?1596708801",
-    contracts: {
-      ethereum: "",
-    },
-  },
-  {
-    id: "thisoption",
-    symbol: "tons",
-    name: "Thisoption",
-    image:
-      "https://assets.coingecko.com/coins/images/12470/large/Tons_200px-01.png?1600117332",
-    contracts: {
-      tron: "THgLniqRhDg5zePSrDTdU9QwY8FjD9nLYt",
-    },
-  },
-  {
-    id: "50k",
-    symbol: "50k",
-    name: "50 Keeper",
-    image:
-      "https://assets.coingecko.com/coins/images/16448/large/50k.png?1624239707",
-    contracts: {
-      "polygon-pos": "0xa656dc2b1061f80f4e847bba2d9bd52db4889836",
-    },
-  },
-  {
-    id: "definition-network",
-    symbol: "dzi",
-    name: "DeFinition Network",
-    image:
-      "https://assets.coingecko.com/coins/images/12264/large/definition_network_logo.png?1598599634",
-    contracts: {},
-  },
-  {
-    id: "brilliancex",
-    symbol: "brilx",
-    name: "BrillianceX",
-    image:
-      "https://assets.coingecko.com/coins/images/15574/large/rs_w_1200_cg_true.png?1621234563",
-    contracts: {
-      ethereum: "0x1de6cb5b085ac84bd247b8176c781e913166aa6b",
-    },
-  },
-  {
-    id: "babysun",
-    symbol: "babysun",
-    name: "BabySun",
-    image:
-      "https://assets.coingecko.com/coins/images/17545/large/baby_sun.PNG?1628204247",
-    contracts: {
-      "binance-smart-chain": "0xca40882bec9b7e77401652e6d0bfec9c168bb56b",
-    },
-  },
-  {
-    id: "ausd",
-    symbol: "ausd",
-    name: "aUSD",
-    image:
-      "https://assets.coingecko.com/coins/images/15942/large/AUSD200.png?1622460098",
-    contracts: {
-      fantom: "0x41e3df7f716ab5af28c1497b354d79342923196a",
-    },
-  },
-  {
-    id: "leonidas-token",
-    symbol: "leonidas",
-    name: "Leonidas Token",
-    image:
-      "https://assets.coingecko.com/coins/images/20496/large/cropped-logo_%281%29.png?1637131887",
-    contracts: {
-      solana: "7puG5H5Mc6QpvaXjAVLr6GnL5hhUMnpLcUm8G3mEsgHQ",
-    },
-  },
-  {
-    id: "stib-token",
-    symbol: "sti",
-    name: "StiB",
-    image:
-      "https://assets.coingecko.com/coins/images/10059/large/200x200_%281%29.png?1576674116",
-    contracts: {
-      ethereum: "0xb52bbd3d5bfa3836bf2b55fe3b7467219280bc2e",
-    },
-  },
-  {
-    id: "tilwiki",
-    symbol: "tlw",
-    name: "TilWiki",
-    image:
-      "https://assets.coingecko.com/coins/images/12915/large/89706561_1111490899211097_8975783115158978560_n.jpg?1603441976",
-    contracts: {
-      ethereum: "0x06f3cdabae564b0546529b4dd8fef1bcd4235753",
-    },
-  },
-  {
-    id: "yfi-business",
-    symbol: "yfib",
-    name: "YFI Business",
-    image:
-      "https://assets.coingecko.com/coins/images/12346/large/fkPIR2pc_400x400.jpg?1599192901",
-    contracts: {
-      ethereum: "0x47632da9227e322eda59f9e7691eacc6430ac87c",
-    },
-  },
-  {
-    id: "gu",
-    symbol: "GÜ",
-    name: "GÜ",
-    image:
-      "https://assets.coingecko.com/coins/images/17532/large/Logo_GU_512.png?1628129442",
-    contracts: {
-      solana: "5KV2W2XPdSo97wQWcuAVi6G4PaCoieg4Lhhi61PAMaMJ",
-    },
-  },
-  {
-    id: "0-5x-long-bitcoin-token",
-    symbol: "half",
-    name: "0.5X Long Bitcoin Token",
-    image:
-      "https://assets.coingecko.com/coins/images/11996/large/683JEXMN_400x400.png?1596689733",
-    contracts: {
-      ethereum: "",
-    },
-  },
-  {
-    id: "art-blocks-curated-full-set",
-    symbol: "abc123",
-    name: "Art Blocks Curated Full Set",
-    image:
-      "https://assets.coingecko.com/coins/images/17860/large/art-block-full-abc123.png?1629683679",
-    contracts: {
-      ethereum: "0x9ff4f50efd40c915f7d1476bf36acb8908e0c56d",
-    },
-  },
-  {
-    id: "twirl-governance-token",
-    symbol: "tgt",
-    name: "Twirl Governance Token",
-    image:
-      "https://assets.coingecko.com/coins/images/16725/large/Yn1ebvX.png?1624850650",
-    contracts: {
-      solana: "FciGvHj9FjgSGgCBF1b9HY814FM9D28NijDd5SJrKvPo",
-    },
-  },
-  {
-    id: "oiocoin",
-    symbol: "oioc",
-    name: "OIOCoin",
-    image:
-      "https://assets.coingecko.com/coins/images/16332/large/OIOC.png?1623749314",
-    contracts: {
-      tron: "TJurGPpZDE2oNegMtHspX2KtjHuPnaRb4J",
-    },
-  },
-  {
-    id: "bunnycake",
-    symbol: "bunnycake",
-    name: "BunnyCake",
-    image:
-      "https://assets.coingecko.com/coins/images/17343/large/IMG_2046_%282%29.PNG?1627364095",
-    contracts: {
-      "binance-smart-chain": "0x4e50deb3270906ca77d0f1d4452212f9e71593e1",
-    },
-  },
-  {
-    id: "bullrise",
-    symbol: "bull",
-    name: "BullRise",
-    image:
-      "https://assets.coingecko.com/coins/images/18188/large/BULLRISE.jpg?1630906709",
-    contracts: {
-      "binance-smart-chain": "0x90db4c8ddc0055ae03cde0b4e83fbde7de711464",
-    },
-  },
-  {
-    id: "oec-chainlink",
-    symbol: "linkk",
-    name: "OEC Chainlink",
-    image:
-      "https://assets.coingecko.com/coins/images/18539/large/0xbeb67de6cc5af652b2d9b0235750ed70f5a2cb0d.png?1632305141",
-    contracts: {
-      "okex-chain": "0xbeb67de6cc5af652b2d9b0235750ed70f5a2cb0d",
-    },
-  },
-  {
-    id: "1x-short-cardano-token",
-    symbol: "adahedge",
-    name: "1X Short Cardano Token",
-    image:
-      "https://assets.coingecko.com/coins/images/12053/large/683JEXMN_400x400.png?1596703208",
-    contracts: {
-      ethereum: "",
-    },
-  },
-  {
-    id: "alanyaspor-fan-token",
-    symbol: "ala",
-    name: "Alanyaspor Fan Token",
-    image:
-      "https://assets.coingecko.com/coins/images/18966/large/spV2Ly3gIaB9XVdib9FUJVPvfT6KBq2qQttTH275.png?1634028195",
-    contracts: {
-      chiliz: "0xf9e3cbdade7dc23629e05906eab9af435bcb97e7",
-    },
-  },
-  {
-    id: "shiba-maki",
-    symbol: "shibamaki",
-    name: "Shiba Maki",
-    image:
-      "https://assets.coingecko.com/coins/images/20098/large/shiba_maki.PNG?1636495165",
-    contracts: {
-      "binance-smart-chain": "0x40d6f307cd6869262caa82907a80bda3317b9501",
-    },
-  },
-  {
-    id: "bidipass",
-    symbol: "bdp",
-    name: "BidiPass",
-    image:
-      "https://assets.coingecko.com/coins/images/3890/large/AxiFAoHc_400x400.jpg?1567461770",
-    contracts: {
-      ethereum: "0x593114f03a0a575aece9ed675e52ed68d2172b8c",
-    },
-  },
-  {
-    id: "flokimars",
-    symbol: "flom",
-    name: "Flokimars",
-    image:
-      "https://assets.coingecko.com/coins/images/19789/large/-klKitmy_400x400.jpg?1635889843",
-    contracts: {
-      "binance-smart-chain": "0xcc2bf0f46c561afdce6c23710d0d7f38b007443f",
-    },
-  },
-  {
-    id: "jindoge",
-    symbol: "jindoge",
-    name: "Jindoge",
-    image:
-      "https://assets.coingecko.com/coins/images/15417/large/JINDOGE.png?1620774122",
-    contracts: {
-      ethereum: "0x3f4cd830543db25254ec0f05eac058d4d6e86166",
-    },
-  },
-  {
-    id: "robo-token",
-    symbol: "robo",
-    name: "Robo Token",
-    image:
-      "https://assets.coingecko.com/coins/images/14611/large/rlogo200.jpg?1617247446",
-    contracts: {
-      ethereum: "0x6fc2f1044a3b9bb3e43a43ec8f840843ed753061",
-    },
-  },
-  {
-    id: "community-chain",
-    symbol: "comc",
-    name: "Community Chain",
-    image:
-      "https://assets.coingecko.com/coins/images/6948/large/download_%288%29.jpeg?1547043326",
-    contracts: {
-      ethereum: "0xa5e99ad202bdd71d3518306cf4dd163261981af1",
-    },
-  },
-  {
-    id: "1x-short-compound-token-token",
-    symbol: "comphedge",
-    name: "1X Short Compound Token Token",
-    image:
-      "https://assets.coingecko.com/coins/images/12043/large/683JEXMN_400x400.png?1596701384",
-    contracts: {
-      ethereum: "",
-    },
-  },
-  {
-    id: "yi12-stfinance",
-    symbol: "yi12",
-    name: "Yield Stake Finance",
-    image:
-      "https://assets.coingecko.com/coins/images/12708/large/yi12_logo.jpg?1601894672",
-    contracts: {
-      ethereum: "0x03e4bdce611104289333f35c8177558b04cc99ff",
-    },
-  },
-  {
-    id: "aelysir",
-    symbol: "ael",
-    name: "Aelysir",
-    image:
-      "https://assets.coingecko.com/coins/images/12955/large/ael_logo.png?1603794538",
-    contracts: {
-      ethereum: "0xd337382da15d12bb6e56498e91df64f86c8f1ea8",
-    },
-  },
-  {
-    id: "sopay",
-    symbol: "sop",
-    name: "SoPay",
-    image:
-      "https://assets.coingecko.com/coins/images/6736/large/sopay.png?1548609877",
-    contracts: {
-      ethereum: "0x076641af1b8f06b7f8c92587156143c109002cbe",
-    },
-  },
-  {
-    id: "cyclops-treasure",
-    symbol: "cytr",
-    name: "Cyclops Treasure",
-    image:
-      "https://assets.coingecko.com/coins/images/12698/large/Untitled-design-9-removebg-preview.png?1601855912",
-    contracts: {
-      ethereum: "0xbd05cee8741100010d8e93048a80ed77645ac7bf",
-    },
-  },
-  {
-    id: "baby-o-baby",
-    symbol: "bob",
-    name: "Baby o Baby",
-    image:
-      "https://assets.coingecko.com/coins/images/20479/large/200x200tokenbob_%282%29.png?1637114694",
-    contracts: {
-      "binance-smart-chain": "0xe798e8f65e4252a55ffc552c17c576ba9b05c15b",
-    },
-  },
-  {
-    id: "nora-token",
-    symbol: "nra",
-    name: "Nora Token",
-    image:
-      "https://assets.coingecko.com/coins/images/20107/large/rQ5UNxnj_400x400.jpg?1636512610",
-    contracts: {
-      solana: "1C2EYVrwmoXAGbiKirFFBeDFDYUBHPhDeg9trhibTND",
-    },
-  },
-  {
-    id: "island-inu",
-    symbol: "islainu",
-    name: "Island Inu",
-    image:
-      "https://assets.coingecko.com/coins/images/19521/large/island_inu.jpeg?1635323269",
-    contracts: {
-      ethereum: "0xe9fba30ff18d305fea49836939eaca55f26c019c",
-    },
-  },
-  {
-    id: "ethereum-vault",
-    symbol: "ethv",
-    name: "Ethereum Vault",
-    image:
-      "https://assets.coingecko.com/coins/images/13051/large/Tok425m.jpeg?1604654743",
-    contracts: {
-      ethereum: "0x058349297672b6cc7ccb6e59a679c5add74a6898",
-    },
-  },
-  {
-    id: "fds",
-    symbol: "fds",
-    name: "Fair Dollars",
-    image:
-      "https://assets.coingecko.com/coins/images/8434/large/E52F6C4B6C8A4342918C2734D4F38D91.png?1558509805",
-    contracts: {},
-  },
-  {
-    id: "arise-finance",
-    symbol: "ari",
-    name: "Arise Finance",
-    image:
-      "https://assets.coingecko.com/coins/images/16954/large/ari.PNG?1625793929",
-    contracts: {
-      "binance-smart-chain": "0xbe9605a0bf1ef8a4235e2c1da83dd3aa7702c7ce",
-    },
-  },
-  {
-    id: "shrek",
-    symbol: "shk",
-    name: "Shrek",
-    image:
-      "https://assets.coingecko.com/coins/images/18219/large/Untitled-design-4.png?1631007329",
-    contracts: {
-      "binance-smart-chain": "0xe44dd7cb0256241ca7eea20036bed27586fa13c4",
-    },
-  },
-  {
-    id: "bizzcoin",
-    symbol: "bizz",
-    name: "BIZZCOIN",
-    image:
-      "https://assets.coingecko.com/coins/images/10979/large/bizzcoin.PNG?1586766076",
-    contracts: {
-      ethereum: "0x7a8ca2f815a260660158a38c34ca321a3605ecfe",
-    },
-  },
-  {
-    id: "nkcl-classic",
-    symbol: "nkclc",
-    name: "NKCL Classic",
-    image:
-      "https://assets.coingecko.com/coins/images/17893/large/w02Nksm-.png?1629718144",
-    contracts: {
-      ethereum: "0xd1b624f07a4d9b3e3746e33cb58f42df079b5444",
-    },
-  },
-  {
-    id: "cxrbn-token",
-    symbol: "cxrbn",
-    name: "CXRBN Token",
-    image:
-      "https://assets.coingecko.com/coins/images/20532/large/Lw8i6sAn_400x400_%281%29.jpg?1637203406",
-    contracts: {
-      ethereum: "0x720def948b1891a0ba2ca21964e2e5d0a806bc19",
-    },
-  },
-  {
-    id: "lucy",
-    symbol: "lucy",
-    name: "LUCY",
-    image:
-      "https://assets.coingecko.com/coins/images/9921/large/c567abc2-8a65-4bae-b3c8-98db1aa46322.png?1573460587",
-    contracts: {},
-  },
-  {
-    id: "0-5x-long-tezos-token",
-    symbol: "xtzhalf",
-    name: "0.5X Long Tezos Token",
-    image:
-      "https://assets.coingecko.com/coins/images/12028/large/683JEXMN_400x400.png?1596697356",
-    contracts: {
-      ethereum: "",
-    },
-  },
-  {
-    id: "humancoin-2",
-    symbol: "hmnc",
-    name: "HumanCoin",
-    image:
-      "https://assets.coingecko.com/coins/images/15079/large/HMNC.png?1619650086",
-    contracts: {
-      ethereum: "0x77e31d674a46d356b2e65892bde7758bb26238ca",
-    },
-  },
-  {
-    id: "mixty-finance",
-    symbol: "mxf",
-    name: "Mixty Finance",
-    image:
-      "https://assets.coingecko.com/coins/images/14627/large/mixty_finance.jpg?1617342977",
-    contracts: {
-      "binance-smart-chain": "0xdf065aa3a18ae67055ff44bd26506fde6ce13312",
-    },
-  },
-  {
-    id: "defini",
-    symbol: "dfni",
-    name: "DeFini",
-    image:
-      "https://assets.coingecko.com/coins/images/14616/large/logo_-_2021-04-01T133425.308.png?1617255308",
-    contracts: {
-      ethereum: "0xdf276a2442ccbbdf0707427668434d6d130b75eb",
-    },
-  },
-  {
-    id: "bonus-cake",
-    symbol: "BonusCake",
-    name: "Bonus Cake",
-    image:
-      "https://assets.coingecko.com/coins/images/18218/large/11547.png?1631007111",
-    contracts: {
-      "binance-smart-chain": "0xb84ddc645c27d4dc4bfa325c946f9d89d3afcc7a",
-    },
-  },
-  {
-    id: "yfos-finance",
-    symbol: "YFOS",
-    name: "YFOS.finance",
-    image:
-      "https://assets.coingecko.com/coins/images/12707/large/wHQeaUF.jpg?1601888512",
-    contracts: {
-      ethereum: "0xcd254568ebf88f088e40f456db9e17731243cb25",
-    },
-  },
-  {
-    id: "ucx",
-    symbol: "ucx",
-    name: "UCX",
-    image:
-      "https://assets.coingecko.com/coins/images/10131/large/UCX_200200.png?1576186720",
-    contracts: {
-      ethereum: "0x3d3af44cf092a49280e316f09c8f20ecf97bc933",
-    },
-  },
-  {
-    id: "royal-bet",
-    symbol: "rbet",
-    name: "Royal BET",
-    image:
-      "https://assets.coingecko.com/coins/images/20564/large/photo_2021-11-18_14.30.41.jpeg?1637217189",
-    contracts: {
-      "binance-smart-chain": "0x3753301611c7d2f352d28151d14d915492c6940f",
-    },
-  },
-  {
-    id: "melody",
-    symbol: "melody",
-    name: "Melody",
-    image:
-      "https://assets.coingecko.com/coins/images/15442/large/UajWzxT.png?1620807695",
-    contracts: {
-      "binance-smart-chain": "0x2f619a1270226fd8ed3df82f0c1e0cd90804346d",
-    },
-  },
-  {
-    id: "darkbuild-v2",
-    symbol: "db",
-    name: "Dark.Build",
-    image:
-      "https://assets.coingecko.com/coins/images/14195/large/DARK-circle_token_200px.png?1614853053",
-    contracts: {
-      "polygon-pos": "0x0e59d50add2d90f5111aca875bae0a72d95b4762",
-    },
-  },
-  {
-    id: "dcoin-token",
-    symbol: "dt",
-    name: "Dcoin Token",
-    image:
-      "https://assets.coingecko.com/coins/images/8831/large/Dcoin_Token.png?1561955438",
-    contracts: {},
-  },
-  {
-    id: "hyperalloy",
-    symbol: "alloy",
-    name: "HyperAlloy",
-    image:
-      "https://assets.coingecko.com/coins/images/16083/large/Alloy.png?1622794183",
-    contracts: {
-      "binance-smart-chain": "0x5ef5994fa33ff4eb6c82d51ee1dc145c546065bd",
-    },
-  },
-  {
-    id: "amaten",
-    symbol: "ama",
-    name: "Amaten",
-    image:
-      "https://assets.coingecko.com/coins/images/11010/large/0_%283%29.png?1587104344",
-    contracts: {
-      ethereum: "0x2509ee05b8df07ec75046e24bbf1cfcdb8b2a183",
+      ethereum: "0x7c974104df9dd7fb91205ab3d66d15aff1049de8",
     },
   },
   {
@@ -101710,189 +102616,417 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "diamond-hands-token",
-    symbol: "dhc",
-    name: "Diamond Hands Token",
+    id: "3x-short-cosmos-token",
+    symbol: "atombear",
+    name: "3X Short Cosmos Token",
     image:
-      "https://assets.coingecko.com/coins/images/17605/large/mMr-qYsX_400x400.png?1628647249",
+      "https://assets.coingecko.com/coins/images/10156/large/683JEXMN_400x400_%281%29.png?1576503839",
     contracts: {
-      "binance-smart-chain": "0x4b747b2ed0c445bd52a3a559ff12700689870ca9",
+      ethereum: "0x3b834a620751a811f65d8f599b3b72617a4418d0",
     },
   },
   {
-    id: "maggot",
-    symbol: "maggot",
-    name: "Maggot",
+    id: "1x-short-compound-token-token",
+    symbol: "comphedge",
+    name: "1X Short Compound Token Token",
     image:
-      "https://assets.coingecko.com/coins/images/19796/large/photo-2021-11-03-00-38-21.jpg?1635907468",
+      "https://assets.coingecko.com/coins/images/12043/large/683JEXMN_400x400.png?1596701384",
     contracts: {
-      "binance-smart-chain": "0xdbc68862a8880c0c4693a920bd1e461f07f6262e",
+      ethereum: "",
     },
   },
   {
-    id: "3x-short-huobi-token-token",
-    symbol: "htbear",
-    name: "3X Short Huobi Token Token",
+    id: "r34p",
+    symbol: "r34p",
+    name: "R34P",
     image:
-      "https://assets.coingecko.com/coins/images/10430/large/683JEXMN_400x400.png?1579276187",
+      "https://assets.coingecko.com/coins/images/13393/large/r34p_logo.png?1608100330",
     contracts: {
-      ethereum: "0x86eb791495be777db763142a2c547d1112554fb8",
+      ethereum: "0xcaeaf8381d4b20b43afa42061d6f80319a8881f6",
     },
   },
   {
-    id: "unicorn-token",
-    symbol: "uni",
-    name: "UNICORN Token",
+    id: "3x-short-theta-network-token",
+    symbol: "thetabear",
+    name: "3X Short Theta Network Token",
     image:
-      "https://assets.coingecko.com/coins/images/9383/large/54231438.png?1566777314",
+      "https://assets.coingecko.com/coins/images/12052/large/683JEXMN_400x400__1_.png?1596702995",
     contracts: {
-      ethereum: "0x2730d6fdc86c95a74253beffaa8306b40fedecbb",
+      ethereum: "",
     },
   },
   {
-    id: "oec-sfg",
-    symbol: "sfgk",
-    name: "OEC SFG",
+    id: "zomainfinity",
+    symbol: "zin",
+    name: "ZomaInfinity",
     image:
-      "https://assets.coingecko.com/coins/images/18583/large/0x3212606f74cc59656e1ec6f587fca61ba3b85eb0.png?1632494636",
+      "https://assets.coingecko.com/coins/images/18043/large/Final2.png?1630317786",
     contracts: {
-      "okex-chain": "0x3212606f74cc59656e1ec6f587fca61ba3b85eb0",
+      "binance-smart-chain": "0xfbe0b4ae6e5a200c36a341299604d5f71a5f0a48",
     },
   },
   {
-    id: "cng-casino",
-    symbol: "cng",
-    name: "CNG Casino",
+    id: "3x-short-okb-token",
+    symbol: "okbbear",
+    name: "3X Short OKB Token",
     image:
-      "https://assets.coingecko.com/coins/images/11573/large/cng_casino.png?1591230675",
+      "https://assets.coingecko.com/coins/images/10241/large/683JEXMN_400x400_%281%29.png?1576633732",
     contracts: {
-      ethereum: "0x883a158c9b28f8d626acfcfbe1028f49e70c9d75",
+      ethereum: "0x053e5ba7cb9669dcc2feb2d0e1d3d4a0ad6aae39",
     },
   },
   {
-    id: "universe-coin",
-    symbol: "unis",
-    name: "Universe Coin",
+    id: "babyxape",
+    symbol: "babyx",
+    name: "BabyXape",
     image:
-      "https://assets.coingecko.com/coins/images/10389/large/9lTQkX7d_400x400.jpg?1578868716",
+      "https://assets.coingecko.com/coins/images/19757/large/babyx.jpeg?1635827752",
     contracts: {
-      ethereum: "0xedc87cab8bd12ca39088deaf9fdfb63503f19f85",
+      "binance-smart-chain": "0x234003ffa399e8bc53236ac777f4c781b10d1344",
     },
   },
   {
-    id: "fat-doge",
-    symbol: "foge",
-    name: "Fat Doge",
+    id: "3x-long-maker-token",
+    symbol: "mkrbull",
+    name: "3X Long Maker Token",
     image:
-      "https://assets.coingecko.com/coins/images/15497/large/foge.png?1621057848",
+      "https://assets.coingecko.com/coins/images/12066/large/683JEXMN_400x400.png?1596708801",
     contracts: {
-      ethereum: "0x76851a93977bea9264c32255b6457882035c7501",
+      ethereum: "",
     },
   },
   {
-    id: "commons-earth",
-    symbol: "com",
-    name: "Commons Earth",
+    id: "yfiexchange-finance",
+    symbol: "yfie",
+    name: "YFIEXCHANGE.FINANCE",
     image:
-      "https://assets.coingecko.com/coins/images/14087/large/commons-earth.png?1614214707",
-    contracts: {
-      ethereum: "0xcae838187c1f813fc3bfae6387bf34aeacb5bef6",
-    },
-  },
-  {
-    id: "bnbx-finance",
-    symbol: "bnbx",
-    name: "BNBX Finance",
-    image:
-      "https://assets.coingecko.com/coins/images/16290/large/jS3gdvy.png?1623661374",
-    contracts: {
-      "binance-smart-chain": "0x1592271a485e7f12de1eccf2555cea7763f29cac",
-    },
-  },
-  {
-    id: "arrow",
-    symbol: "arw",
-    name: "Arrow",
-    image:
-      "https://assets.coingecko.com/coins/images/10362/large/logo_arrow.png?1578524977",
+      "https://assets.coingecko.com/coins/images/12218/large/Logo_YFIE.png?1598238960",
     contracts: {},
   },
   {
-    id: "duxdoge",
-    symbol: "ddc",
-    name: "DuxDoge",
+    id: "jokes-meme",
+    symbol: "joke",
+    name: "Jokes Meme",
     image:
-      "https://assets.coingecko.com/coins/images/18156/large/o6uUXqV.png?1630742079",
+      "https://assets.coingecko.com/coins/images/16719/large/newjoketoken.png?1624845136",
     contracts: {
-      "binance-smart-chain": "0x418236ca7c807cfc1d04eb64475df7ce17c2f218",
+      solana: "8NGgmXzBzhsXz46pTC3ioSBxeE3w2EXpc741N3EQ8E6r",
     },
   },
   {
-    id: "nayuta-coin",
-    symbol: "nc",
-    name: "Nayuta Coin",
+    id: "geist-eth",
+    symbol: "geth",
+    name: "Geist ETH",
     image:
-      "https://assets.coingecko.com/coins/images/13701/large/nc_logo.png?1611021562",
+      "https://assets.coingecko.com/coins/images/18998/large/preview-gallery-gETHgecko_%281%29.png?1634790781",
     contracts: {
-      "enq-enecuum": "",
+      fantom: "0x25c130b2624cf12a4ea30143ef50c5d68cefa22f",
     },
   },
   {
-    id: "myteamfinance",
-    symbol: "myf",
-    name: "MyteamFinance",
+    id: "trade-win",
+    symbol: "twi",
+    name: "Trade.win",
     image:
-      "https://assets.coingecko.com/coins/images/20690/large/myteamfinance200x200.png?1637560743",
+      "https://assets.coingecko.com/coins/images/13060/large/Logo.png?1604821765",
     contracts: {
-      "binance-smart-chain": "0x143f4b20c8d96da41ae9bf8f1d7e1d064c35a706",
+      ethereum: "0xdad26bce7dcf59cd03a2455558e4dd73e1c07b66",
     },
   },
   {
-    id: "npo-coin",
-    symbol: "npo",
-    name: "NPO Coin",
+    id: "geist-dai",
+    symbol: "gdai",
+    name: "Geist Dai",
     image:
-      "https://assets.coingecko.com/coins/images/13324/large/NPO-moeda.png?1608168259",
+      "https://assets.coingecko.com/coins/images/18997/large/preview-gallery-gDAIgecko_%281%29.png?1634790790",
     contracts: {
-      tron: "TXVNa2f3sxLykasb6VuyNyUuYk4MWCBduG",
+      fantom: "0x07e6332dd090d287d3489245038daf987955dcfb",
     },
   },
   {
-    id: "linix",
-    symbol: "lnx",
-    name: "LNX Protocol",
+    id: "3x-short-kyber-network-token",
+    symbol: "kncbear",
+    name: "3X Short Kyber Network Token",
     image:
-      "https://assets.coingecko.com/coins/images/8776/large/Linix.png?1561103529",
+      "https://assets.coingecko.com/coins/images/12068/large/683JEXMN_400x400.png?1596709128",
     contracts: {
-      ethereum: "0x5e3845a1d78db544613edbe43dc1ea497266d3b8",
+      ethereum: "",
     },
   },
   {
-    id: "neoworld-cash",
-    symbol: "nash",
-    name: "NeoWorld Cash",
+    id: "geist-wbtc",
+    symbol: "gwbtc",
+    name: "Geist WBTC",
     image:
-      "https://assets.coingecko.com/coins/images/6737/large/D7F231BA7E294954A0C2C4EBA6BCEFEB.png?1547042977",
+      "https://assets.coingecko.com/coins/images/18999/large/preview-gallery-gWBTCgecko_%281%29.png?1634790748",
     contracts: {
-      ethereum: "0x0a255f700b16c0acf5673565c757b94fb38b27f2",
+      fantom: "0x38aca5484b8603373acc6961ecd57a6a594510a3",
     },
   },
   {
-    id: "dragonvein",
-    symbol: "dvc",
-    name: "DragonVein",
+    id: "troneuroperewardcoin",
+    symbol: "terc",
+    name: "TronEuropeRewardCoin",
     image:
-      "https://assets.coingecko.com/coins/images/8263/large/LrDC1OmYiqq05_-E3PFLO6oJou6HOvVMFpjEqbYdcvaIPgQp7mF52lpj_rCmQW1FhAoBg5E2Z9o16L3Z7n8SQrMIp1YZNEGHRzc3P0P3jOZnyKvHNuTXQx9q13_kxXG1oMzaN3HfWdUnTMAfKRwghCa7BX67W9pSV-AJkcQ4-5Qy_qlAN28UCUgVnM0k6ZXlNWZo7Vi00CD7657qw.jpg?1557125797",
+      "https://assets.coingecko.com/coins/images/9253/large/1000226.png?1565567673",
     contracts: {
-      ethereum: "0x5e6ffe7b174a50c81ff3f3c54c04fd3c11e20830",
+      tron: "1000226",
     },
   },
   {
-    id: "harmonycoin",
-    symbol: "hmc",
-    name: "HarmonyCoin",
+    id: "bluefincore",
+    symbol: "bfc",
+    name: "Bluefincore",
     image:
-      "https://assets.coingecko.com/coins/images/829/large/harmony-coin.png?1547034621",
+      "https://assets.coingecko.com/coins/images/16977/large/bluefinecore1.png?1625838437",
+    contracts: {
+      tron: "TDmwwnWrFxWpYTMhCQDnVaoTQx59m8e7QT",
+    },
+  },
+  {
+    id: "aelysir",
+    symbol: "ael",
+    name: "Aelysir",
+    image:
+      "https://assets.coingecko.com/coins/images/12955/large/ael_logo.png?1603794538",
+    contracts: {
+      ethereum: "0xd337382da15d12bb6e56498e91df64f86c8f1ea8",
+    },
+  },
+  {
+    id: "casper-defi",
+    symbol: "casper",
+    name: "Casper DeFi",
+    image:
+      "https://assets.coingecko.com/coins/images/17275/large/casper-ghost-128x128.png?1627010769",
+    contracts: {
+      fantom: "0xc30d1b0ce932c3dd3373a2c23ada4e9608caf345",
+    },
+  },
+  {
+    id: "oiocoin",
+    symbol: "oioc",
+    name: "OIOCoin",
+    image:
+      "https://assets.coingecko.com/coins/images/16332/large/OIOC.png?1623749314",
+    contracts: {
+      tron: "TJurGPpZDE2oNegMtHspX2KtjHuPnaRb4J",
+    },
+  },
+  {
+    id: "zuplo",
+    symbol: "zlp",
+    name: "Zuplo",
+    image:
+      "https://assets.coingecko.com/coins/images/13066/large/logo2x56_Mesa_de_trabajo_1.png?1604886987",
+    contracts: {
+      ethereum: "0x94d8db14831c2c08943798542c450df2844913e5",
+    },
+  },
+  {
+    id: "fomo-baby",
+    symbol: "fomobaby",
+    name: "FOMO BABY",
+    image:
+      "https://assets.coingecko.com/coins/images/20435/large/Artboard_29.png?1637037640",
+    contracts: {
+      "binance-smart-chain": "0x82d6e409438e9c2eaed8ceec4bd95918cbd17c87",
+    },
+  },
+  {
+    id: "msn",
+    symbol: "msn",
+    name: "MSN",
+    image:
+      "https://assets.coingecko.com/coins/images/9629/large/MSN.png?1569988414",
+    contracts: {
+      eos: null,
+    },
+  },
+  {
+    id: "oec-chainlink",
+    symbol: "linkk",
+    name: "OEC Chainlink",
+    image:
+      "https://assets.coingecko.com/coins/images/18539/large/0xbeb67de6cc5af652b2d9b0235750ed70f5a2cb0d.png?1632305141",
+    contracts: {
+      "okex-chain": "0xbeb67de6cc5af652b2d9b0235750ed70f5a2cb0d",
+    },
+  },
+  {
+    id: "amaten",
+    symbol: "ama",
+    name: "Amaten",
+    image:
+      "https://assets.coingecko.com/coins/images/11010/large/0_%283%29.png?1587104344",
+    contracts: {
+      ethereum: "0x2509ee05b8df07ec75046e24bbf1cfcdb8b2a183",
+    },
+  },
+  {
+    id: "king-of-the-doge",
+    symbol: "kotdoge",
+    name: "King Of The Doge",
+    image:
+      "https://assets.coingecko.com/coins/images/17413/large/king_doge.PNG?1627596331",
+    contracts: {
+      "binance-smart-chain": "0xdc4bf310b5c685a25031580682568fdb1cd55658",
+    },
+  },
+  {
+    id: "treasure-sl",
+    symbol: "tsl",
+    name: "Treasure SL",
+    image:
+      "https://assets.coingecko.com/coins/images/8212/large/treasure_sl.png?1556527565",
+    contracts: {},
+  },
+  {
+    id: "cryptonite",
+    symbol: "CRT",
+    name: "Cryptonite",
+    image:
+      "https://assets.coingecko.com/coins/images/18685/large/4oABqEV.png?1632978434",
+    contracts: {
+      "binance-smart-chain": "0x6904b1c25c91fbd9431621fbe495d7c49fcd171f",
+    },
+  },
+  {
+    id: "yi12-stfinance",
+    symbol: "yi12",
+    name: "Yield Stake Finance",
+    image:
+      "https://assets.coingecko.com/coins/images/12708/large/yi12_logo.jpg?1601894672",
+    contracts: {
+      ethereum: "0x03e4bdce611104289333f35c8177558b04cc99ff",
+    },
+  },
+  {
+    id: "iowbtc",
+    symbol: "iowbtc",
+    name: "ioWBTC",
+    image:
+      "https://assets.coingecko.com/coins/images/19347/large/io1c7unwg8h8vph89xwqru4f7zfa4yy5002wxvlrm.png?1635126652",
+    contracts: {
+      iotex: "0xc7b93720f73b037394ce00f954f849ed484a3dea",
+    },
+  },
+  {
+    id: "momoshiba",
+    symbol: "momo",
+    name: "MomoShiba",
+    image:
+      "https://assets.coingecko.com/coins/images/16861/large/MomoShiba5.png?1625467137",
+    contracts: {
+      "binance-smart-chain": "0x843e0cebb6da822f553b4c1daa234be87491ab31",
+    },
+  },
+  {
+    id: "top-cat-inu",
+    symbol: "tcat",
+    name: "Top Cat inu",
+    image:
+      "https://assets.coingecko.com/coins/images/19615/large/tcat.jpeg?1635494920",
+    contracts: {
+      ethereum: "0x0e84d86c3745a05d65f8051407249cd1c4970346",
+    },
+  },
+  {
+    id: "beer-money",
+    symbol: "beer",
+    name: "Beer Money",
+    image:
+      "https://assets.coingecko.com/coins/images/10682/large/-IRzLSxO_400x400.jpg?1589525797",
+    contracts: {
+      nem: "",
+    },
+  },
+  {
+    id: "mad-bull-token",
+    symbol: "mbull",
+    name: "Mad Bull Token",
+    image:
+      "https://assets.coingecko.com/coins/images/15558/large/Transparent-Logo-removebg-preview.png?1621214005",
+    contracts: {
+      "binance-smart-chain": "0xbfbad3694417e7f272aff380fc56f8a4ab86ec5f",
+    },
+  },
+  {
+    id: "rush",
+    symbol: "ruc",
+    name: "Rush",
+    image:
+      "https://assets.coingecko.com/coins/images/12834/large/120030147_104370844760714_1920358536411869061_n.jpg?1602882889",
+    contracts: {
+      ethereum: "0x395768aeb16484e5785612a98e9408e4cc1269ec",
+    },
+  },
+  {
+    id: "magic-cake",
+    symbol: "magiccake",
+    name: "Magic Cake",
+    image:
+      "https://assets.coingecko.com/coins/images/19279/large/magiccake.png?1634870066",
+    contracts: {
+      "binance-smart-chain": "0x81a2f78f7213a69de2e4c40362cbb2bb851f3f6f",
+    },
+  },
+  {
+    id: "idle-usdc-risk-adjusted",
+    symbol: "idleUSDCSafe",
+    name: "IdleUSDC (Risk Adjusted)",
+    image:
+      "https://assets.coingecko.com/coins/images/11930/large/idleusdc-safe.png?1596263257",
+    contracts: {
+      ethereum: "0x3391bc034f2935ef0e1e41619445f998b2680d35",
+    },
+  },
+  {
+    id: "mcobit",
+    symbol: "mct",
+    name: "Mcobit",
+    image:
+      "https://assets.coingecko.com/coins/images/13950/large/logo_%286%29.png?1613250490",
+    contracts: {
+      tron: "TC3a6T5PVybdbKE3Q5WDBo2KqSNwaD4vy1",
+    },
+  },
+  {
+    id: "yfos-finance",
+    symbol: "YFOS",
+    name: "YFOS.finance",
+    image:
+      "https://assets.coingecko.com/coins/images/12707/large/wHQeaUF.jpg?1601888512",
+    contracts: {
+      ethereum: "0xcd254568ebf88f088e40f456db9e17731243cb25",
+    },
+  },
+  {
+    id: "no-face-inu",
+    symbol: "NOFACE",
+    name: "No Face Inu",
+    image:
+      "https://assets.coingecko.com/coins/images/20577/large/SvPeYri.png?1637246636",
+    contracts: {
+      ethereum: "0x3093003005fd7c9c077e85c15ff47bcfcf0397e0",
+    },
+  },
+  {
+    id: "nezuko-inu",
+    symbol: "nezuko",
+    name: "Nezuko Inu",
+    image:
+      "https://assets.coingecko.com/coins/images/18652/large/O7TBGRA.png?1632759790",
+    contracts: {
+      ethereum: "0xbc298dfaa2edda095b924f1390cc38fb7c5f6250",
+    },
+  },
+  {
+    id: "bitcoin-pay",
+    symbol: "btp",
+    name: "Bitcoin Pay",
+    image:
+      "https://assets.coingecko.com/coins/images/6174/large/bitcoin-pay.png?1547042200",
     contracts: {},
   },
   {
@@ -101906,305 +103040,21 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "orient-walt",
-    symbol: "htdf",
-    name: "Orient Walt",
+    id: "pokerain",
+    symbol: "mmda",
+    name: "Pokerain",
     image:
-      "https://assets.coingecko.com/coins/images/10428/large/ljNSTB1aq9SOWE49wMCrB4lWtLJbMoZQqlvcWXQwlkGDE5cwp4BME45KtQ6g9bVQN8G5Ix_9Aq0rpu8eu3kErjMLAQViiuLdfLPhqgxmSdcsLcMZHlUR1Yi5kkUnIGnf6mUf10HLMWvuznxpD8dEAomxyqBAgPf0eq9uvvdrmysbvKoJ8A_TBFle-M6UJx8KtH4NguXTR1guR1nuKigdrUJ.jpg?1579215445",
+      "https://assets.coingecko.com/coins/images/6617/large/download_%287%29.jpeg?1547042818",
     contracts: {},
   },
   {
-    id: "cherry-token",
-    symbol: "yt",
-    name: "Cherry Token",
+    id: "3x-short-cardano-token",
+    symbol: "adabear",
+    name: "3X Short Cardano Token",
     image:
-      "https://assets.coingecko.com/coins/images/8321/large/cherry.png?1557480352",
+      "https://assets.coingecko.com/coins/images/10232/large/683JEXMN_400x400_%281%29.png?1576618766",
     contracts: {
-      ethereum: "0x5c89736e9454200141b80c37eb28eaceca2ce8cb",
-    },
-  },
-  {
-    id: "3x-short-tezos-token",
-    symbol: "xtzbear",
-    name: "3X Short Tezos Token",
-    image:
-      "https://assets.coingecko.com/coins/images/10175/large/683JEXMN_400x400_%281%29.png?1576506808",
-    contracts: {
-      ethereum: "0xbc41d05287498dec58129560de6bd1b8d4e3ac1d",
-    },
-  },
-  {
-    id: "dogz",
-    symbol: "dogz",
-    name: "Dogz",
-    image:
-      "https://assets.coingecko.com/coins/images/7544/large/dogz.png?1604655282",
-    contracts: {
-      ethereum: "0x82a77710495a35549d2add797412b4a4497d33ef",
-    },
-  },
-  {
-    id: "moonbar",
-    symbol: "moonbar",
-    name: "MoonBar",
-    image:
-      "https://assets.coingecko.com/coins/images/16178/large/68047fbd-a777-4e31-8f20-84168603a8f6.png?1623209100",
-    contracts: {
-      "binance-smart-chain": "0x47e28936d9c7944d106e46295d87a8e4c1be818c",
-    },
-  },
-  {
-    id: "0-5x-long-cosmos-token",
-    symbol: "atomhalf",
-    name: "0.5X Long Cosmos Token",
-    image:
-      "https://assets.coingecko.com/coins/images/12007/large/683JEXMN_400x400.png?1596692188",
-    contracts: {
-      ethereum: "",
-    },
-  },
-  {
-    id: "3x-short-xrp-token",
-    symbol: "xrpbear",
-    name: "3X Short XRP Token",
-    image:
-      "https://assets.coingecko.com/coins/images/10210/large/683JEXMN_400x400_%281%29.png?1576535444",
-    contracts: {
-      ethereum: "0x94fc5934cf5970e944a67de806eeb5a4b493c6e6",
-    },
-  },
-  {
-    id: "x99token",
-    symbol: "x99",
-    name: "x99Token",
-    image:
-      "https://assets.coingecko.com/coins/images/20570/large/V5so3FrH_400x400.jpg?1637227372",
-    contracts: {
-      "binance-smart-chain": "0x3e520f16ac21c271db7117e8d6574b81fdc9f66c",
-    },
-  },
-  {
-    id: "veco",
-    symbol: "veco",
-    name: "Veco",
-    image:
-      "https://assets.coingecko.com/coins/images/7423/large/Veco200.png?1547201986",
-    contracts: {},
-  },
-  {
-    id: "baby-akita",
-    symbol: "bkita",
-    name: "Baby Akita",
-    image:
-      "https://assets.coingecko.com/coins/images/15450/large/ycDKDtRt_400x400.jpg?1620836652",
-    contracts: {
-      ethereum: "0x0d6f6a130c3046713cba425f41a65c17205df6b5",
-    },
-  },
-  {
-    id: "caramelswap",
-    symbol: "mel",
-    name: "CaramelSwap",
-    image:
-      "https://assets.coingecko.com/coins/images/15167/large/Adobe-Stock-164869011-Convertido.png?1626097946",
-    contracts: {
-      "binance-smart-chain": "0x7d5bc7796fd62a9a27421198fc3c349b96cdd9dc",
-    },
-  },
-  {
-    id: "darkbuild",
-    symbol: "dark",
-    name: "Dark.Build v1",
-    image:
-      "https://assets.coingecko.com/coins/images/12716/large/DARK-circle_token_200px.png?1614850894",
-    contracts: {
-      ethereum: "0x3108ccfd96816f9e663baa0e8c5951d229e8c6da",
-    },
-  },
-  {
-    id: "buckhath-coin",
-    symbol: "bhig",
-    name: "BuckHath Coin",
-    image:
-      "https://assets.coingecko.com/coins/images/7821/large/logstex.PNG?1585121237",
-    contracts: {
-      ethereum: "0x996229d0c6a485c7f4b52e092eaa907cb2def5c6",
-    },
-  },
-  {
-    id: "decenturion",
-    symbol: "dcnt",
-    name: "Decenturion",
-    image:
-      "https://assets.coingecko.com/coins/images/6195/large/X5_20dt1_400x400.jpg?1547042224",
-    contracts: {
-      ethereum: "0x0ce6d5a093d4166237c7a9ff8e0553b0293214a1",
-    },
-  },
-  {
-    id: "arc-block-protocol",
-    symbol: "abp",
-    name: "Arc Block Protocol",
-    image:
-      "https://assets.coingecko.com/coins/images/14549/large/abp.png?1616988852",
-    contracts: {
-      "binance-smart-chain": "0x1afd7b4faf6940872f69e55237155c7b36fd5153",
-    },
-  },
-  {
-    id: "noel-capital",
-    symbol: "noel",
-    name: "Noel Capital",
-    image:
-      "https://assets.coingecko.com/coins/images/13687/large/noelcapital.png?1610949504",
-    contracts: {
-      tron: "",
-    },
-  },
-  {
-    id: "stellarpayglobal",
-    symbol: "xlpg",
-    name: "StellarPayGlobal",
-    image:
-      "https://assets.coingecko.com/coins/images/10908/large/pFKTJuPvxdFOaXCfwaQavhSLWhx9Je3xB93KSjCFrWaS7US-UdmZ5Lf64LZ_PiP5CPJyLP1ri9TLzI7REUYVrIcpyJeVL1sDwBPSwtqLmuurQJVXs4W6ocE0ydVxsS-6uYicwQDQxPgrGOWoko7WZG-qQIcSHlvPxly1uWXGJjfy-ofeJluDs-Q4XUJpRAZwQJygog9ny_jcLuj.jpg?1585796602",
-    contracts: {
-      stellar: "",
-    },
-  },
-  {
-    id: "super-shiba",
-    symbol: "$sshiba",
-    name: "Super Shiba",
-    image:
-      "https://assets.coingecko.com/coins/images/15869/large/SuperShibaLogoSmall.png?1622178165",
-    contracts: {
-      "binance-smart-chain": "0x922c77c7724d7b77fd7791be5cc5314b70c3a781",
-    },
-  },
-  {
-    id: "antique-zombie-shards",
-    symbol: "zomb",
-    name: "Antique Zombie Shards",
-    image:
-      "https://assets.coingecko.com/coins/images/12617/large/cryptopunks-zomb.png?1602398280",
-    contracts: {
-      ethereum: "0x78175901e9b04090bf3b3d3cb7f91ca986fb1af6",
-    },
-  },
-  {
-    id: "xenon-2",
-    symbol: "xen",
-    name: "Xenon",
-    image:
-      "https://assets.coingecko.com/coins/images/11105/large/DyNZKe79_400x400.jpg?1588568617",
-    contracts: {
-      ethereum: "0x5fbdb42bb048c685c990a37f2c87fe087c586655",
-    },
-  },
-  {
-    id: "drakeball-token",
-    symbol: "dball",
-    name: "DrakeBall Token [OLD]",
-    image:
-      "https://assets.coingecko.com/coins/images/17587/large/drakeball.PNG?1628571627",
-    contracts: {
-      "binance-smart-chain": "0x088bebef4e371757509e64d3508b6da6f376e2ac",
-    },
-  },
-  {
-    id: "baby-pancake",
-    symbol: "bpcake",
-    name: "Baby Pancake",
-    image:
-      "https://assets.coingecko.com/coins/images/17499/large/200x200-1.png?1627989735",
-    contracts: {
-      "binance-smart-chain": "0xd69573a37ef9708863d7cd82039f289dd9d04050",
-    },
-  },
-  {
-    id: "bankcoincash",
-    symbol: "bcash",
-    name: "BankCoin BCash",
-    image:
-      "https://assets.coingecko.com/coins/images/7692/large/bcash.png?1549865564",
-    contracts: {
-      ethereum: "0xb5bb48567bfd0bfe9e4b08ef8b7f91556cc2a112",
-    },
-  },
-  {
-    id: "space-monkey",
-    symbol: "spmk",
-    name: "Space Monkey",
-    image:
-      "https://assets.coingecko.com/coins/images/14776/large/ItWjW7D.png?1618372154",
-    contracts: {
-      ethereum: "0x51d3e4c0b2c83e62f5d517d250b3e856897d2052",
-    },
-  },
-  {
-    id: "talent-coin",
-    symbol: "tlnt",
-    name: "Talent Coin",
-    image:
-      "https://assets.coingecko.com/coins/images/13771/large/TLNT.png?1611698474",
-    contracts: {
-      ethereum: "0x9f300b4ac0bf94cad77e7e2d3f850352b8bb264c",
-    },
-  },
-  {
-    id: "historia",
-    symbol: "hta",
-    name: "Historia",
-    image:
-      "https://assets.coingecko.com/coins/images/10885/large/download_%283%29.png?1585551391",
-    contracts: {},
-  },
-  {
-    id: "gogo-finance",
-    symbol: "gogo",
-    name: "GOGO Finance",
-    image:
-      "https://assets.coingecko.com/coins/images/13857/large/gogofinance.png?1612404853",
-    contracts: {
-      ethereum: "0x9a96e767bfcce8e80370be00821ed5ba283d4a17",
-    },
-  },
-  {
-    id: "korss-chain-launchpad",
-    symbol: "kclp",
-    name: "Kross Chain Launchpad",
-    image:
-      "https://assets.coingecko.com/coins/images/17272/large/KCLP.jpg?1630906316",
-    contracts: {
-      "binance-smart-chain": "0x47b8806c2891c4a92b5c590c32cfe1eb617648ef",
-    },
-  },
-  {
-    id: "1x-long-btc-implied-volatility-token",
-    symbol: "bvol",
-    name: "Bitcoin Volatility Token",
-    image:
-      "https://assets.coingecko.com/coins/images/11056/large/download_%2810%29.png?1587641855",
-    contracts: {
-      ethereum: "0x81824663353a9d29b01b2de9dd9a2bb271d298cd",
-    },
-  },
-  {
-    id: "cryptoverificationcoin",
-    symbol: "cvcc",
-    name: "CryptoVerificationCoin",
-    image:
-      "https://assets.coingecko.com/coins/images/8745/large/logo.png?1560827289",
-    contracts: {},
-  },
-  {
-    id: "tripedia",
-    symbol: "trip",
-    name: "Tripedia",
-    image:
-      "https://assets.coingecko.com/coins/images/11014/large/4-e1525270062824.png?1587113708",
-    contracts: {
-      ethereum: "0xae2fab175d20b7afa56f3bb32500b26dc62bf572",
+      ethereum: "0xb3299d4bab93bf04d5b11bc49cd6dfad1f77d23f",
     },
   },
   {
@@ -102228,208 +103078,33 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "sybc-coin",
-    symbol: "sybc",
-    name: "SYBC Coin",
+    id: "bonus-cake",
+    symbol: "BonusCake",
+    name: "Bonus Cake",
     image:
-      "https://assets.coingecko.com/coins/images/12901/large/sybc.png?1603346599",
+      "https://assets.coingecko.com/coins/images/18218/large/11547.png?1631007111",
     contracts: {
-      ethereum: "0xb74755f2896e088790f81205f7f3746e2a4b358b",
+      "binance-smart-chain": "0xb84ddc645c27d4dc4bfa325c946f9d89d3afcc7a",
     },
   },
   {
-    id: "beer-money",
-    symbol: "beer",
-    name: "Beer Money",
+    id: "stib-token",
+    symbol: "sti",
+    name: "StiB",
     image:
-      "https://assets.coingecko.com/coins/images/10682/large/-IRzLSxO_400x400.jpg?1589525797",
+      "https://assets.coingecko.com/coins/images/10059/large/200x200_%281%29.png?1576674116",
     contracts: {
-      nem: "",
+      ethereum: "0xb52bbd3d5bfa3836bf2b55fe3b7467219280bc2e",
     },
   },
   {
-    id: "when-lambo",
-    symbol: "lmbo",
-    name: "When Lambo",
+    id: "maggot",
+    symbol: "maggot",
+    name: "Maggot",
     image:
-      "https://assets.coingecko.com/coins/images/16298/large/WHEN-LAMBO-LOGO-200px.png?1623681208",
+      "https://assets.coingecko.com/coins/images/19796/large/photo-2021-11-03-00-38-21.jpg?1635907468",
     contracts: {
-      "binance-smart-chain": "0x017a2a7808e4cf95e6c20c777c5ded01e3a2a9df",
-    },
-  },
-  {
-    id: "bestay",
-    symbol: "bsy",
-    name: "Bestay",
-    image:
-      "https://assets.coingecko.com/coins/images/12166/large/photo-2019-07-04-17-03-29.jpg?1597787199",
-    contracts: {
-      ethereum: "0x7a647637e75d34a7798ba06bd1adf5c084bb5dd5",
-    },
-  },
-  {
-    id: "moby-dick",
-    symbol: "wot",
-    name: "Moby Dick",
-    image:
-      "https://assets.coingecko.com/coins/images/16539/large/wot.png?1634717207",
-    contracts: {
-      "binance-smart-chain": "0xe861dff2099d15185b50de380db8249984cb26ea",
-    },
-  },
-  {
-    id: "kurai-inu",
-    symbol: "kurai",
-    name: "Kurai Inu",
-    image:
-      "https://assets.coingecko.com/coins/images/20114/large/KuraiInu.png?1636514407",
-    contracts: {
-      "binance-smart-chain": "0x70c82588fcc570cd4885ca50b8d34c225f431ee8",
-    },
-  },
-  {
-    id: "crypto-village-accelerator-cvag",
-    symbol: "cvag",
-    name: "Crypto Village Accelerator CVAG",
-    image:
-      "https://assets.coingecko.com/coins/images/17124/large/cvag.PNG?1626401266",
-    contracts: {
-      ethereum: "0x72a66e54b66892ae3bbe54df7bb7dd5ae927a6f9",
-    },
-  },
-  {
-    id: "idle-dai-yield",
-    symbol: "idleDAIYield",
-    name: "IdleDAI (Best Yield)",
-    image:
-      "https://assets.coingecko.com/coins/images/11901/large/idledai_32.png?1595990312",
-    contracts: {
-      ethereum: "0x3fe7940616e5bc47b0775a0dccf6237893353bb4",
-    },
-  },
-  {
-    id: "glouki",
-    symbol: "glk",
-    name: "Glouki",
-    image:
-      "https://assets.coingecko.com/coins/images/19482/large/Groupe_1774_2x.png?1635285576",
-    contracts: {},
-  },
-  {
-    id: "change-our-world",
-    symbol: "chg",
-    name: "Change Our World",
-    image:
-      "https://assets.coingecko.com/coins/images/15476/large/change.jpeg?1620995093",
-    contracts: {
-      "binance-smart-chain": "0x6e1b4ba8f5be7708cd475795fc23924ed078a8d2",
-    },
-  },
-  {
-    id: "badger-sett-badger",
-    symbol: "bbadger",
-    name: "Badger Sett Badger",
-    image:
-      "https://assets.coingecko.com/coins/images/14502/large/BADGER_DAO.png?1616559959",
-    contracts: {
-      ethereum: "0x19d97d8fa813ee2f51ad4b4e04ea08baf4dffc28",
-      fantom: "0x1f7216fdb338247512ec99715587bb97bbf96eae",
-    },
-  },
-  {
-    id: "nfteez",
-    symbol: "nfteez",
-    name: "NFTeez",
-    image:
-      "https://assets.coingecko.com/coins/images/19380/large/nfteez.PNG?1635142302",
-    contracts: {
-      "binance-smart-chain": "0x7c6da35b6e28c5e571026eb4f9605e35d79dcb4c",
-    },
-  },
-  {
-    id: "eska",
-    symbol: "esk",
-    name: "Eska",
-    image:
-      "https://assets.coingecko.com/coins/images/9642/large/ESKA.png?1627014485",
-    contracts: {},
-  },
-  {
-    id: "polybius",
-    symbol: "plbt",
-    name: "Polybius",
-    image:
-      "https://assets.coingecko.com/coins/images/766/large/polybius.png?1547034516",
-    contracts: {
-      ethereum: "0x0affa06e7fbe5bc9a764c979aa66e8256a631f02",
-    },
-  },
-  {
-    id: "naka-bodhi-token",
-    symbol: "nbot",
-    name: "Naka Bodhi Token",
-    image:
-      "https://assets.coingecko.com/coins/images/8133/large/mBKP0Lne_400x400.jpg?1561427531",
-    contracts: {},
-  },
-  {
-    id: "btecoin",
-    symbol: "bte",
-    name: "BTEcoin",
-    image:
-      "https://assets.coingecko.com/coins/images/10736/large/read.jpg?1582701685",
-    contracts: {
-      ethereum: "0xfd62247943f94c3910a4922af2c62c2d3fac2a8f",
-    },
-  },
-  {
-    id: "medium",
-    symbol: "mdm",
-    name: "MEDIUM",
-    image:
-      "https://assets.coingecko.com/coins/images/9961/large/VEEFC4sG.png?1574293042",
-    contracts: {
-      ethereum: "0xd24dff6117936b6ff97108cf26c1dd8865743d87",
-    },
-  },
-  {
-    id: "limon-group",
-    symbol: "limon",
-    name: "Limon Group",
-    image:
-      "https://assets.coingecko.com/coins/images/15905/large/83708837.png?1622514935",
-    contracts: {
-      "binance-smart-chain": "0x712c0a4659a7c31a81fd5a47a2d83c63a07d7d06",
-    },
-  },
-  {
-    id: "yfibalancer-finance",
-    symbol: "yfib",
-    name: "YFIBALANCER.FINANCE",
-    image:
-      "https://assets.coingecko.com/coins/images/12411/large/LogoYFIB_200px.png?1599640942",
-    contracts: {
-      ethereum: "0x03829f5675f3b51d0f8c2a74417a757625acf22f",
-    },
-  },
-  {
-    id: "blockchain-exchange-alliance",
-    symbol: "bxa",
-    name: "Blockchain Exchange Alliance",
-    image:
-      "https://assets.coingecko.com/coins/images/7842/large/images.png?1551144999",
-    contracts: {
-      ethereum: "0x98d8d146e644171cd47ff8588987b7bdeef72a87",
-    },
-  },
-  {
-    id: "budacoin",
-    symbol: "buda",
-    name: "BudaCoin",
-    image:
-      "https://assets.coingecko.com/coins/images/16426/large/photo_2021-08-26_21-17-27.jpg?1629984206",
-    contracts: {
-      "binance-smart-chain": "0x4b63f8c52e3286ca871cd66b7c84e26556b2de8e",
+      "binance-smart-chain": "0xdbc68862a8880c0c4693a920bd1e461f07f6262e",
     },
   },
   {
@@ -102443,842 +103118,41 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "bullex",
-    symbol: "blx",
-    name: "BulleX",
+    id: "happy-birthday-coin",
+    symbol: "hbdc",
+    name: "Happy Birthday Coin",
     image:
-      "https://assets.coingecko.com/coins/images/17066/large/blx.PNG?1626151063",
+      "https://assets.coingecko.com/coins/images/12814/large/%EC%A7%84%ED%92%88.png?1630840854",
     contracts: {
-      "binance-smart-chain": "0x9612f89f32c8a8419be7a65358e485b76db2d7f4",
+      ethereum: "0x39d30828a163713d91c4eadbba2c497a9139ec5c",
     },
   },
   {
-    id: "cryptopunk-7171-hoodie",
-    symbol: "hoodie",
-    name: "CryptoPunk #7171",
+    id: "vankia-chain",
+    symbol: "vkt",
+    name: "Vankia Chain",
     image:
-      "https://assets.coingecko.com/coins/images/17842/large/cryptopunk-hoodie.png?1629468579",
-    contracts: {
-      ethereum: "0xdffa3a7f5b40789c7a437dbe7b31b47f9b08fe75",
-    },
-  },
-  {
-    id: "ripple-alpha",
-    symbol: "xla",
-    name: "Ripple Alpha",
-    image:
-      "https://assets.coingecko.com/coins/images/11763/large/ripplealpha.png?1593654621",
+      "https://assets.coingecko.com/coins/images/5625/large/vankia-chain.png?1547041493",
     contracts: {},
   },
   {
-    id: "hideous-coin",
-    symbol: "hideous",
-    name: "Hideous Finance",
+    id: "drakeball-token",
+    symbol: "dball",
+    name: "DrakeBall Token [OLD]",
     image:
-      "https://assets.coingecko.com/coins/images/19999/large/nL_0yV_P_400x400.jpg?1636364127",
+      "https://assets.coingecko.com/coins/images/17587/large/drakeball.PNG?1628571627",
     contracts: {
-      "binance-smart-chain": "0x1f4105a5231e95bd087cc28cff30595346e1e07c",
+      "binance-smart-chain": "0x088bebef4e371757509e64d3508b6da6f376e2ac",
     },
   },
   {
-    id: "life-token-v2",
-    symbol: "ltnv2",
-    name: "Life Token v2",
+    id: "selfbar",
+    symbol: "sbar",
+    name: "Selfbar",
     image:
-      "https://assets.coingecko.com/coins/images/20568/large/1-j2MSwg_400x400.jpg?1637225507",
+      "https://assets.coingecko.com/coins/images/20599/large/sbar-icon.png?1637286886",
     contracts: {
-      "binance-smart-chain": "0x167e5455e4c978883b414e7f02c0147eec9a18e9",
-    },
-  },
-  {
-    id: "zik-token",
-    symbol: "zik",
-    name: "Ziktalk",
-    image:
-      "https://assets.coingecko.com/coins/images/8991/large/QiYexdGd53yjxWR1U-R4YOeDVpiWcj_h4iB4vjSQITFwpfhZyWxVMc5PK0v89oKOjMAFkvVpswecaGxScUAe9PuEVmJPIhZL2xkxuLSnt_zx3onNLjCMHaOnQUTbUhJy5Bq-Av6YVrbiGIiHk1Z2gbHGgAmJp1uxt2MevcPnnXzXqPwdNGNO1olMH5-_dXNXCgvp1CHWInNVHAnOe.jpg?1563503454",
-    contracts: {},
-  },
-  {
-    id: "viking-legend",
-    symbol: "viking",
-    name: "Viking Legend",
-    image:
-      "https://assets.coingecko.com/coins/images/17591/large/Viking_256.png?1628579292",
-    contracts: {
-      "binance-smart-chain": "0xb513e93ae939fa7346095ff0189ad31ab8864e97",
-    },
-  },
-  {
-    id: "help-coins",
-    symbol: "hcs",
-    name: "Help Coins",
-    image:
-      "https://assets.coingecko.com/coins/images/14927/large/HCS_200.png?1619068527",
-    contracts: {
-      "binance-smart-chain": "0x2c0af42e89b79b86050f11c47603c85c08da329a",
-    },
-  },
-  {
-    id: "oracle-system",
-    symbol: "orc",
-    name: "Oracle System",
-    image:
-      "https://assets.coingecko.com/coins/images/12517/large/www.oraclesystem.io-home-org-logo.png?1600382654",
-    contracts: {
-      ethereum: "0x324af2d5353f2dd138e234b359d30d67c64b1b20",
-    },
-  },
-  {
-    id: "maximus",
-    symbol: "maxi",
-    name: "Maximus",
-    image:
-      "https://assets.coingecko.com/coins/images/20485/large/RH7DeA5K_400x400.jpg?1637118568",
-    contracts: {
-      avalanche: "0x885d748c00a279b67a7749ec6b03301700dd0455",
-    },
-  },
-  {
-    id: "geist-ftm",
-    symbol: "gftm",
-    name: "Geist FTM",
-    image:
-      "https://assets.coingecko.com/coins/images/18991/large/preview-gallery-gFTMgecko_%281%29.png?1634790810",
-    contracts: {
-      fantom: "0x39b3bd37208cbade74d0fcbdbb12d606295b430a",
-    },
-  },
-  {
-    id: "alrightcoin",
-    symbol: "alc",
-    name: "AlrightCoin",
-    image:
-      "https://assets.coingecko.com/coins/images/11611/large/34B2E0C6-DDCB-4F48-B6BE-A2D9FB8734A3.png?1591842917",
-    contracts: {
-      ethereum: "0x95d82ba91256db995c80bed690d0a779191af62b",
-    },
-  },
-  {
-    id: "peoples-punk",
-    symbol: "dddd",
-    name: "People's Punk",
-    image:
-      "https://assets.coingecko.com/coins/images/17973/large/unnamed_%284%29.png?1629956290",
-    contracts: {
-      ethereum: "0x8ca9a0fbd8db501f013f2e9e33a1b9dc129a48e0",
-    },
-  },
-  {
-    id: "fawkes-mask",
-    symbol: "fmk",
-    name: "Fawkes Mask",
-    image:
-      "https://assets.coingecko.com/coins/images/16761/large/logo_-_2021-06-29T105437.526.png?1624935285",
-    contracts: {
-      "binance-smart-chain": "0xc2591d74cc6a0810847add242319d4b43c8e5f09",
-    },
-  },
-  {
-    id: "ume-token",
-    symbol: "ume",
-    name: "UME Token",
-    image:
-      "https://assets.coingecko.com/coins/images/14348/large/UME_Logo.png?1615505886",
-    contracts: {
-      tron: "TRkuKAxmWZ4G74MvZnFpoosQZsfvtNpmwH",
-    },
-  },
-  {
-    id: "joos-protocol",
-    symbol: "joos",
-    name: "JOOS Protocol",
-    image:
-      "https://assets.coingecko.com/coins/images/7819/large/unaAbzXx_400x400.jpg?1550816726",
-    contracts: {
-      ethereum: "0x05f9abf4b0c5661e83b92c056a8791d5ccd7ca52",
-    },
-  },
-  {
-    id: "kingxchain",
-    symbol: "kxc",
-    name: "KingXChain",
-    image:
-      "https://assets.coingecko.com/coins/images/5690/large/kingxchain.png?1547975313",
-    contracts: {
-      ethereum: "0x016396044709eb3edc69c44f4d5fa6996917e4e8",
-    },
-  },
-  {
-    id: "sphinxel",
-    symbol: "spx",
-    name: "Sphinxel",
-    image:
-      "https://assets.coingecko.com/coins/images/20249/large/logo_-_2021-11-12T151134.139.png?1636701101",
-    contracts: {
-      solana: "H6JocWxg5g1Lcs4oPnBecmjQ4Y1bkZhGJHtjMunmjyrp",
-    },
-  },
-  {
-    id: "mechashiba",
-    symbol: "mec",
-    name: "MechaShiba",
-    image:
-      "https://assets.coingecko.com/coins/images/16952/large/mechashiba.png?1625754833",
-    contracts: {
-      "binance-smart-chain": "0xc2d56d2d136f16ed1c3e219339b272feddf2a376",
-    },
-  },
-  {
-    id: "iten",
-    symbol: "iten",
-    name: "ITEN",
-    image:
-      "https://assets.coingecko.com/coins/images/12314/large/logo-light_%281%29.png?1599084234",
-    contracts: {
-      ethereum: "0x65b678936c489a2639036755aa2107ec09569198",
-    },
-  },
-  {
-    id: "netcoincapital",
-    symbol: "ncc",
-    name: "Netcoincapital",
-    image:
-      "https://assets.coingecko.com/coins/images/17956/large/ncc.jpeg?1629903347",
-    contracts: {
-      tron: "TWmocwvHpui48QXUVJeW2SvcFe8LyNgLCU",
-    },
-  },
-  {
-    id: "cetf",
-    symbol: "cetf",
-    name: "Cell ETF",
-    image:
-      "https://assets.coingecko.com/coins/images/18191/large/cetf_logo.png?1630910561",
-    contracts: {
-      "huobi-token": "0x24ab27a7274de0ba5760bab804fe870bb572c510",
-    },
-  },
-  {
-    id: "pixeos",
-    symbol: "pixeos",
-    name: "PixEOS",
-    image:
-      "https://assets.coingecko.com/coins/images/9116/large/57129657_1849603145145589_3936675094033596416_n.png?1564469512",
-    contracts: {
-      eos: null,
-    },
-  },
-  {
-    id: "goforit",
-    symbol: "goi",
-    name: "GoForIt Walk&Win",
-    image:
-      "https://assets.coingecko.com/coins/images/9564/large/E5q4JAYW_400x400.jpg?1568849486",
-    contracts: {
-      ethereum: "0x2f34dd3d46855277eee79a1d724c2249f770054b",
-    },
-  },
-  {
-    id: "libartysharetoken",
-    symbol: "lst",
-    name: "Libartysharetoken",
-    image:
-      "https://assets.coingecko.com/coins/images/12990/large/lst_logo.png?1604148361",
-    contracts: {
-      ethereum: "0x355376d6471e09a4ffca8790f50da625630c5270",
-    },
-  },
-  {
-    id: "blaze-network",
-    symbol: "BLZN",
-    name: "Blaze Network",
-    image:
-      "https://assets.coingecko.com/coins/images/12248/large/A8JOuPSJ_400x400.jpg?1598511402",
-    contracts: {
-      ethereum: "0x70efdc485a10210b056ef8e0a32993bc6529995e",
-    },
-  },
-  {
-    id: "versewar",
-    symbol: "verse",
-    name: "VerseWar",
-    image:
-      "https://assets.coingecko.com/coins/images/18206/large/LOGO_1-01.png?1630978745",
-    contracts: {
-      "binance-smart-chain": "0x3963df5ba3cf7a579ed4a5ff81084e059a32bda0",
-    },
-  },
-  {
-    id: "geist-fusdt",
-    symbol: "gfusdt",
-    name: "Geist fUSDT",
-    image:
-      "https://assets.coingecko.com/coins/images/19000/large/preview-gallery-gUSDTgecko_%281%29.png?1634790738",
-    contracts: {
-      fantom: "0x940f41f0ec9ba1a34cf001cc03347ac092f5f6b5",
-    },
-  },
-  {
-    id: "baby-bonfire",
-    symbol: "FIRE",
-    name: "Baby Bonfire",
-    image:
-      "https://assets.coingecko.com/coins/images/18821/large/w-Nxn-Ke-Uc-400x400.jpg?1633520273",
-    contracts: {
-      "binance-smart-chain": "0x24b66a58d505ff7651c31358b3a2d697644a8de7",
-    },
-  },
-  {
-    id: "uncle-doge",
-    symbol: "udoge",
-    name: "Uncle Doge",
-    image:
-      "https://assets.coingecko.com/coins/images/16880/large/CGK-logo.png?1626693097",
-    contracts: {
-      "binance-smart-chain": "0xd2618bc9c9cdc40ff19e200a7d14a09799c0a152",
-    },
-  },
-  {
-    id: "baby-doge-cash",
-    symbol: "babydogecash",
-    name: "Baby Doge Cash",
-    image:
-      "https://assets.coingecko.com/coins/images/16846/large/babydogecash-cmc-logo.png?1625391403",
-    contracts: {
-      "binance-smart-chain": "0x4cda4daad72340b28925ccd6fa78db631267d3c4",
-    },
-  },
-  {
-    id: "aave-amm-dai",
-    symbol: "aAmmDAI",
-    name: "Aave AMM DAI",
-    image:
-      "https://assets.coingecko.com/coins/images/17197/large/aAMMDAI_2x.png?1626940032",
-    contracts: {
-      ethereum: "0x79be75ffc64dd58e66787e4eae470c8a1fd08ba4",
-    },
-  },
-  {
-    id: "viral-inu",
-    symbol: "vinu",
-    name: "Viral Inu",
-    image:
-      "https://assets.coingecko.com/coins/images/20698/large/logo_-_2021-11-22T151434.485.png?1637565282",
-    contracts: {
-      solana: "CgbJxXyaHeU8VsquBpySuFXA94b6LWXxioZ28wRr8fs9",
-    },
-  },
-  {
-    id: "0-5x-long-balancer-token",
-    symbol: "balhalf",
-    name: "0.5X Long Balancer Token",
-    image:
-      "https://assets.coingecko.com/coins/images/12022/large/683JEXMN_400x400.png?1596694142",
-    contracts: {
-      ethereum: "",
-    },
-  },
-  {
-    id: "starbase-huobi",
-    symbol: "se",
-    name: "Starbase Huobi",
-    image:
-      "https://assets.coingecko.com/coins/images/19376/large/SE.png?1635140565",
-    contracts: {
-      "huobi-token": "0xb505d0cb29940351ce0662675e26566888614e9f",
-    },
-  },
-  {
-    id: "famous-coin",
-    symbol: "famous",
-    name: "Famous Coin",
-    image:
-      "https://assets.coingecko.com/coins/images/14416/large/famouscoin.jpg?1615951801",
-    contracts: {
-      ethereum: "0x4838903d6319e483ab82ae3f09a1ec36489a4193",
-    },
-  },
-  {
-    id: "3x-short-pax-gold-token",
-    symbol: "paxgbear",
-    name: "3X Short PAX Gold Token",
-    image:
-      "https://assets.coingecko.com/coins/images/10432/large/683JEXMN_400x400.png?1579276381",
-    contracts: {
-      ethereum: "0x3c4a46f0c075a7f191a7459bb51eb1f81ac36f8a",
-    },
-  },
-  {
-    id: "arank",
-    symbol: "arank",
-    name: "Arank",
-    image:
-      "https://assets.coingecko.com/coins/images/19411/large/arank.PNG?1635211855",
-    contracts: {
-      "harmony-shard-0": "0xbd16b0b2eb520b7ff4a4156d367ee359ac19c531",
-    },
-  },
-  {
-    id: "lance-coin",
-    symbol: "lce",
-    name: "Lance Coin",
-    image:
-      "https://assets.coingecko.com/coins/images/14707/large/logo200x200_%282%29.png?1617873370",
-    contracts: {
-      ethereum: "0x2c644c3bbea053ed95a6bc04a94c9ce928ff9881",
-    },
-  },
-  {
-    id: "wenmoon",
-    symbol: "wm",
-    name: "WenMoon",
-    image:
-      "https://assets.coingecko.com/coins/images/20263/large/Wen-Moon200x200.png?1636704100",
-    contracts: {
-      ethereum: "0x750c83707112e9acc452692c190cb55e30f42510",
-    },
-  },
-  {
-    id: "phoenix-unity",
-    symbol: "pxu",
-    name: "Phoenix Unity",
-    image:
-      "https://assets.coingecko.com/coins/images/19723/large/32x32-Asset-1-Phoenix-Unity.png?1635761746",
-    contracts: {
-      "binance-smart-chain": "0x2acd4d05cbfdb78f46f0b4ef32aff32c74e8afbe",
-    },
-  },
-  {
-    id: "king-of-the-doge",
-    symbol: "kotdoge",
-    name: "King Of The Doge",
-    image:
-      "https://assets.coingecko.com/coins/images/17413/large/king_doge.PNG?1627596331",
-    contracts: {
-      "binance-smart-chain": "0xdc4bf310b5c685a25031580682568fdb1cd55658",
-    },
-  },
-  {
-    id: "genexi",
-    symbol: "gxi",
-    name: "Genexi",
-    image:
-      "https://assets.coingecko.com/coins/images/7126/large/bR4FuOeq_400x400.jpg?1547043624",
-    contracts: {
-      ethereum: "0xbcfdaeb22ab6e10dfb99546e6240155edc1084f7",
-    },
-  },
-  {
-    id: "unicly-mooncats-collection",
-    symbol: "umoon",
-    name: "Unicly MoonCats Collection",
-    image:
-      "https://assets.coingecko.com/coins/images/15674/large/MoonCats.jpg?1621498102",
-    contracts: {
-      ethereum: "0x683239a4cab49642c6e025cf81d283f9c87bc07d",
-    },
-  },
-  {
-    id: "windswap",
-    symbol: "windy",
-    name: "WindSwap",
-    image:
-      "https://assets.coingecko.com/coins/images/14977/large/logo_-_2021-04-24T061145.384.png?1619216118",
-    contracts: {
-      "binance-smart-chain": "0xd1587ee50e0333f0c4adcf261379a61b1486c5d2",
-    },
-  },
-  {
-    id: "3x-short-bitcoin-cash-token",
-    symbol: "bchbear",
-    name: "3X Short Bitcoin Cash Token",
-    image:
-      "https://assets.coingecko.com/coins/images/10268/large/683JEXMN_400x400_%281%29.png?1576835432",
-    contracts: {
-      ethereum: "0xa9fc65da36064ce545e87690e06f5de10c52c690",
-    },
-  },
-  {
-    id: "papacake",
-    symbol: "papacake",
-    name: "PapaCake",
-    image:
-      "https://assets.coingecko.com/coins/images/17503/large/papacake.PNG?1628036837",
-    contracts: {
-      "binance-smart-chain": "0x7fccb3084c0893ebbdc46f6a416c633d8174e6bd",
-    },
-  },
-  {
-    id: "1x-short-xrp-token",
-    symbol: "xrphedge",
-    name: "1X Short XRP Token",
-    image:
-      "https://assets.coingecko.com/coins/images/12059/large/683JEXMN_400x400.png?1596705201",
-    contracts: {
-      ethereum: "0x55b54d8fb1640d1321d5164590e7b020ba43def2",
-    },
-  },
-  {
-    id: "swusd",
-    symbol: "swusd",
-    name: "Swerve.fi USD",
-    image:
-      "https://assets.coingecko.com/coins/images/12918/large/swerve.png?1603631063",
-    contracts: {
-      ethereum: "0x77c6e4a580c0dce4e5c7a17d0bc077188a83a059",
-    },
-  },
-  {
-    id: "geist-wbtc",
-    symbol: "gwbtc",
-    name: "Geist WBTC",
-    image:
-      "https://assets.coingecko.com/coins/images/18999/large/preview-gallery-gWBTCgecko_%281%29.png?1634790748",
-    contracts: {
-      fantom: "0x38aca5484b8603373acc6961ecd57a6a594510a3",
-    },
-  },
-  {
-    id: "veraswap",
-    symbol: "vrap",
-    name: "VeraSwap",
-    image:
-      "https://assets.coingecko.com/coins/images/14324/large/2fde7Uc2_400x400.png?1615428194",
-    contracts: {
-      "binance-smart-chain": "0x271c418b045d05a1d52c6bf849d47b5b5b4d769e",
-    },
-  },
-  {
-    id: "babydogex",
-    symbol: "BDOGEX",
-    name: "BabyDogeX",
-    image:
-      "https://assets.coingecko.com/coins/images/18591/large/mSzE1EF.png?1632557178",
-    contracts: {
-      "binance-smart-chain": "0x4a6db8f47b8c827aaa846ba017e9809bb92cf6b2",
-    },
-  },
-  {
-    id: "mini-baby-doge",
-    symbol: "minibabydoge",
-    name: "Mini Baby Doge",
-    image:
-      "https://assets.coingecko.com/coins/images/16970/large/minibabydoge.PNG?1625808292",
-    contracts: {
-      "binance-smart-chain": "0xa3b89c5f75c530f33e612177001f5602e9c2830f",
-    },
-  },
-  {
-    id: "bayc-history",
-    symbol: "sweep",
-    name: "BAYC History -The Great Floor Sweep",
-    image:
-      "https://assets.coingecko.com/coins/images/18017/large/bayc.png?1630251628",
-    contracts: {
-      ethereum: "0xfe2a5b942083d92135c7fe364bb75218e547cc62",
-    },
-  },
-  {
-    id: "ea-token",
-    symbol: "ea",
-    name: "EA Token",
-    image:
-      "https://assets.coingecko.com/coins/images/9525/large/ea.PNG?1568606285",
-    contracts: {},
-  },
-  {
-    id: "universal-euro",
-    symbol: "upeur",
-    name: "Universal Euro",
-    image:
-      "https://assets.coingecko.com/coins/images/11172/large/1_hxXrtjdwUeSTn67wA8nHQw.png?1589440779",
-    contracts: {
-      ethereum: "0x6c103d85c15107dce19f5a75fc746227e610aabd",
-    },
-  },
-  {
-    id: "eros-token",
-    symbol: "eros",
-    name: "Eros Token",
-    image:
-      "https://assets.coingecko.com/coins/images/17961/large/icon200x200_%282%29.png?1629943287",
-    contracts: {
-      "binance-smart-chain": "0xe0ca4724bc8b97b259d25596ee3cfab816629bad",
-    },
-  },
-  {
-    id: "bullrun2-0",
-    symbol: "br2.0",
-    name: "BullRun2.0",
-    image:
-      "https://assets.coingecko.com/coins/images/17952/large/bullrun.png?1629896513",
-    contracts: {
-      "binance-smart-chain": "0xe0062a28798f85388da4355fe8a1bb4ec921ed3a",
-    },
-  },
-  {
-    id: "ytho-online",
-    symbol: "ytho",
-    name: "YTHO Online",
-    image:
-      "https://assets.coingecko.com/coins/images/13130/large/photo_2020-10-06_11-28-28_%282%29.jpg?1609205097",
-    contracts: {
-      ethereum: "0x48cf0e2eca22eae0ad33fee16a5cb6e62207a8ab",
-    },
-  },
-  {
-    id: "nova",
-    symbol: "nova",
-    name: "NOVA",
-    image:
-      "https://assets.coingecko.com/coins/images/6545/large/N7d0x35q_400x400.jpg?1547042760",
-    contracts: {
-      ethereum: "0xb48b7e5bf6563b3e0a85055821a83deb8cfc12f6",
-    },
-  },
-  {
-    id: "usd-sports",
-    symbol: "usdsp",
-    name: "USD Sports",
-    image:
-      "https://assets.coingecko.com/coins/images/15758/large/usdsp.PNG?1621824288",
-    contracts: {},
-  },
-  {
-    id: "top-cat-inu",
-    symbol: "tcat",
-    name: "Top Cat inu",
-    image:
-      "https://assets.coingecko.com/coins/images/19615/large/tcat.jpeg?1635494920",
-    contracts: {
-      ethereum: "0x0e84d86c3745a05d65f8051407249cd1c4970346",
-    },
-  },
-  {
-    id: "mcobit",
-    symbol: "mct",
-    name: "Mcobit",
-    image:
-      "https://assets.coingecko.com/coins/images/13950/large/logo_%286%29.png?1613250490",
-    contracts: {
-      tron: "TC3a6T5PVybdbKE3Q5WDBo2KqSNwaD4vy1",
-    },
-  },
-  {
-    id: "cifculation",
-    symbol: "clc",
-    name: "Cifculation",
-    image:
-      "https://assets.coingecko.com/coins/images/8678/large/logo_%2825%29.png?1560221363",
-    contracts: {
-      ethereum: "0x951301a2bbce3d357785ba1e13ec8f42322252b8",
-    },
-  },
-  {
-    id: "gram",
-    symbol: "gram",
-    name: "OpenGram",
-    image:
-      "https://assets.coingecko.com/coins/images/6261/large/gram_token.png?1547042299",
-    contracts: {},
-  },
-  {
-    id: "kenny-token",
-    symbol: "kenny",
-    name: "Kenny Token",
-    image:
-      "https://assets.coingecko.com/coins/images/15976/large/kenny.PNG?1622526532",
-    contracts: {
-      "polygon-pos": "0x6b1faaa2771e8b3aa0e0ba6830436e2df2a0abd6",
-    },
-  },
-  {
-    id: "roar-token",
-    symbol: "roar",
-    name: "Roar Token",
-    image:
-      "https://assets.coingecko.com/coins/images/20693/large/logo_-_2021-11-22T144644.880.png?1637563616",
-    contracts: {
-      solana: "DqxzPWQ2FKHn8pRoy9jCpA6M3GkEqYfieiAVwMYWVyXr",
-    },
-  },
-  {
-    id: "avanyan",
-    symbol: "anyan",
-    name: "AvaNyan",
-    image:
-      "https://assets.coingecko.com/coins/images/18829/large/yFekfMPo_400x400.jpg?1633560035",
-    contracts: {
-      avalanche: "0xf54501fbc97d5cb9c8b96480996a397e07516b2e",
-    },
-  },
-  {
-    id: "panda-coin",
-    symbol: "panda",
-    name: "Panda Coin",
-    image:
-      "https://assets.coingecko.com/coins/images/20500/large/RWPafw5a_400x400.jpg?1637136874",
-    contracts: {
-      solana: "Aw8qLRHGhMcKq7rxs5XBNCd9oe3BvoAhpNMVz7AdGmty",
-    },
-  },
-  {
-    id: "fanbi-token",
-    symbol: "fbt",
-    name: "FANBI TOKEN",
-    image:
-      "https://assets.coingecko.com/coins/images/9828/large/logo1_%281%29.png?1572472211",
-    contracts: {
-      ethereum: "0x7a9716685f852ee268feb86dffa562d214cc13db",
-    },
-  },
-  {
-    id: "mashima-inu",
-    symbol: "mashima",
-    name: "Mashima Inu",
-    image:
-      "https://assets.coingecko.com/coins/images/20061/large/WssfhdF.png?1636445904",
-    contracts: {
-      ethereum: "0xb2f8a70b09db0f7795a5f079b5021eb84aa59e28",
-    },
-  },
-  {
-    id: "stadium-pepe",
-    symbol: "SPEP",
-    name: "Stadium Pepe",
-    image:
-      "https://assets.coingecko.com/coins/images/20581/large/pepe_300.png?1637248559",
-    contracts: {
-      "binance-smart-chain": "0x5c2d4caefae1b1a746706aca1bdded72d463215e",
-    },
-  },
-  {
-    id: "little-tsuki-inu",
-    symbol: "liltk",
-    name: "Little Tsuki Inu",
-    image:
-      "https://assets.coingecko.com/coins/images/19943/large/lil.png?1636336387",
-    contracts: {
-      ethereum: "0xcdf6e6d4b5c840478a4b38a5c42224f5c0e6f858",
-    },
-  },
-  {
-    id: "blaze-the-cat",
-    symbol: "$blaze",
-    name: "Blaze the cat",
-    image:
-      "https://assets.coingecko.com/coins/images/19980/large/TGGVsU4L_400x400.jpg?1636355972",
-    contracts: {
-      ethereum: "0xffa8b451f22ab4ceabdef3a9dc66aad3564c8829",
-    },
-  },
-  {
-    id: "buildup",
-    symbol: "bup",
-    name: "BuildUp",
-    image:
-      "https://assets.coingecko.com/coins/images/13206/large/BUP_-_LOGO.png?1606199462",
-    contracts: {
-      ethereum: "0xb04dfdb8271ed2d5e13858562c44a77d3ceb9e57",
-    },
-  },
-  {
-    id: "babyshibby-inu",
-    symbol: "babyshib",
-    name: "BabyShibby Inu",
-    image:
-      "https://assets.coingecko.com/coins/images/17004/large/iG11kku.png?1626062376",
-    contracts: {
-      "binance-smart-chain": "0xde87b96fb2b0b6b492dc1c9b228a7c71ffba40fb",
-    },
-  },
-  {
-    id: "shield-network",
-    symbol: "shieldnet",
-    name: "Shield Network",
-    image:
-      "https://assets.coingecko.com/coins/images/14909/large/ShieldNet.png?1623317875",
-    contracts: {
-      "binance-smart-chain": "0xf2e00684457de1a3c87361bc4bfe2de92342306c",
-    },
-  },
-  {
-    id: "sherlock-wallet",
-    symbol: "sher",
-    name: "Sherlock Wallet",
-    image:
-      "https://assets.coingecko.com/coins/images/20122/large/sherlock.PNG?1636523400",
-    contracts: {
-      "binance-smart-chain": "0xab896775c35ff4522fd285f7a7acbdaaca1fadd9",
-    },
-  },
-  {
-    id: "ifx24",
-    symbol: "ifx24",
-    name: "IFX24",
-    image:
-      "https://assets.coingecko.com/coins/images/10444/large/lpFSaoD.png?1579475634",
-    contracts: {
-      ethereum: "0xc962ad021a69d457564e985738c719ae3f79b707",
-    },
-  },
-  {
-    id: "energoncoin",
-    symbol: "tfg1",
-    name: "Energoncoin",
-    image: "missing_large.png",
-    contracts: {
-      ethereum: "0x666a64f5567c3145fba7ca9ef73648cd4fa2008f",
-    },
-  },
-  {
-    id: "bitsonic-token",
-    symbol: "bsc",
-    name: "Bitsonic Token",
-    image:
-      "https://assets.coingecko.com/coins/images/9238/large/image.png?1604295837",
-    contracts: {
-      ethereum: "0xe541504417670fb76b612b41b4392d967a1956c7",
-    },
-  },
-  {
-    id: "polycake-finance",
-    symbol: "pcake",
-    name: "PolyCake Finance",
-    image:
-      "https://assets.coingecko.com/coins/images/15783/large/0S_K8CFb_400x400.jpg?1621844145",
-    contracts: {
-      "polygon-pos": "0xd9a2c5c0fb2f138c2b96582d29a648df70f80465",
-    },
-  },
-  {
-    id: "glex",
-    symbol: "glex",
-    name: "GLEX",
-    image:
-      "https://assets.coingecko.com/coins/images/11609/large/1578901576974.png?1591777246",
-    contracts: {
-      ethereum: "0x0a0db74ef8b4480cc29b7d68647727feeb1ea4ec",
-    },
-  },
-  {
-    id: "the-nifty-onez",
-    symbol: "onez",
-    name: "The Nifty ONEz",
-    image:
-      "https://assets.coingecko.com/coins/images/14370/large/the-nifty-onez.png?1615737408",
-    contracts: {
-      ethereum: "0x12419eea0b053ffea92f9afcd7986a495e2cf0dd",
-    },
-  },
-  {
-    id: "nantrade",
-    symbol: "nan",
-    name: "NanTrade",
-    image:
-      "https://assets.coingecko.com/coins/images/11049/large/logo_%2871%29.png?1587537446",
-    contracts: {
-      ethereum: "0xb393cd041afc1aca4c380c663793fe2c7b8a0212",
+      "polygon-pos": "0x6c526368e1185e4cd8a50468eb3429c5aeb674f3",
     },
   },
   {
@@ -103292,23 +103166,637 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "hash-pot",
-    symbol: "hpot",
-    name: "Hash Pot",
+    id: "polyshark-finance",
+    symbol: "shark",
+    name: "PolyShark Finance",
     image:
-      "https://assets.coingecko.com/coins/images/11019/large/hashpot.PNG?1587128424",
+      "https://assets.coingecko.com/coins/images/15398/large/2KY2RdEo_400x400.png?1620714513",
     contracts: {
-      ethereum: "0x8cd024cc8f73f5cd132005d1584403877b318c9d",
+      "polygon-pos": "0xd201b8511aab3e9b094b35abcd5d7863c78d6d0e",
     },
   },
   {
-    id: "shibboo-inu",
-    symbol: "shibboo",
-    name: "Shibboo Inu",
+    id: "gu",
+    symbol: "GÜ",
+    name: "GÜ",
     image:
-      "https://assets.coingecko.com/coins/images/19601/large/shibboo.jpeg?1635491024",
+      "https://assets.coingecko.com/coins/images/17532/large/Logo_GU_512.png?1628129442",
     contracts: {
-      ethereum: "0x2e1368fe7b9cbb3f777c2d85e9e804f8f67d7074",
+      solana: "5KV2W2XPdSo97wQWcuAVi6G4PaCoieg4Lhhi61PAMaMJ",
+    },
+  },
+  {
+    id: "diamond-hands-token",
+    symbol: "dhc",
+    name: "Diamond Hands Token",
+    image:
+      "https://assets.coingecko.com/coins/images/17605/large/mMr-qYsX_400x400.png?1628647249",
+    contracts: {
+      "binance-smart-chain": "0x4b747b2ed0c445bd52a3a559ff12700689870ca9",
+    },
+  },
+  {
+    id: "cedars",
+    symbol: "ceds",
+    name: "CEDARS",
+    image:
+      "https://assets.coingecko.com/coins/images/12255/large/cedars.png?1598522772",
+    contracts: {
+      ethereum: "0xf256f3ac4176126f55af7c6e25fa5f3cdf518b38",
+    },
+  },
+  {
+    id: "xswap",
+    symbol: "xsp",
+    name: "XSwap",
+    image:
+      "https://assets.coingecko.com/coins/images/12541/large/256x256_%282%29.png?1600645409",
+    contracts: {
+      ethereum: "0x9b06d48e0529ecf05905ff52dd426ebec0ea3011",
+    },
+  },
+  {
+    id: "aicon",
+    symbol: "aico",
+    name: "Aicon",
+    image:
+      "https://assets.coingecko.com/coins/images/12892/large/5920.png?1603333534",
+    contracts: {
+      ethereum: "0xe7fb3559358a99df54466d0350e4ad6dc7093da3",
+    },
+  },
+  {
+    id: "infinium",
+    symbol: "inf",
+    name: "Infinium",
+    image:
+      "https://assets.coingecko.com/coins/images/14291/large/logo3_new.png?1615281725",
+    contracts: {},
+  },
+  {
+    id: "hashnet-biteco",
+    symbol: "hnb",
+    name: "HashNet BitEco",
+    image:
+      "https://assets.coingecko.com/coins/images/8126/large/GyEELaxS_400x400.jpg?1555226121",
+    contracts: {
+      ethereum: "0x9c197c4b58527faaab67cb35e3145166b23d242e",
+    },
+  },
+  {
+    id: "vegeta-inu",
+    symbol: "vegi",
+    name: "Vegeta Inu",
+    image:
+      "https://assets.coingecko.com/coins/images/19515/large/vege.jpeg?1635321344",
+    contracts: {
+      ethereum: "0x158c86d5f63fb97fa6c8f67d6a094f25cb60be67",
+    },
+  },
+  {
+    id: "harmonycoin",
+    symbol: "hmc",
+    name: "HarmonyCoin",
+    image:
+      "https://assets.coingecko.com/coins/images/829/large/harmony-coin.png?1547034621",
+    contracts: {},
+  },
+  {
+    id: "baby-akita",
+    symbol: "bkita",
+    name: "Baby Akita",
+    image:
+      "https://assets.coingecko.com/coins/images/15450/large/ycDKDtRt_400x400.jpg?1620836652",
+    contracts: {
+      ethereum: "0x0d6f6a130c3046713cba425f41a65c17205df6b5",
+    },
+  },
+  {
+    id: "doge-token",
+    symbol: "doget",
+    name: "Doge Token",
+    image:
+      "https://assets.coingecko.com/coins/images/20458/large/PGOrmP9S_400x400.jpg?1637062322",
+    contracts: {
+      stellar: "GDOEVDDBU6OBWKL7VHDAOKD77UP4DKHQYKOKJJT5PR3WRDBTX35HUEUX",
+    },
+  },
+  {
+    id: "babysun",
+    symbol: "babysun",
+    name: "BabySun",
+    image:
+      "https://assets.coingecko.com/coins/images/17545/large/baby_sun.PNG?1628204247",
+    contracts: {
+      "binance-smart-chain": "0xca40882bec9b7e77401652e6d0bfec9c168bb56b",
+    },
+  },
+  {
+    id: "bakerytools",
+    symbol: "tbake",
+    name: "BakeryTools",
+    image:
+      "https://assets.coingecko.com/coins/images/15184/large/tbakelogo-1.png?1620034899",
+    contracts: {
+      "binance-smart-chain": "0x26d6e280f9687c463420908740ae59f712419147",
+    },
+  },
+  {
+    id: "xolo",
+    symbol: "xolo",
+    name: "Xolo",
+    image:
+      "https://assets.coingecko.com/coins/images/16135/large/logo200_%2814%29.png?1623056928",
+    contracts: {
+      "binance-smart-chain": "0x19314dfa75cfc1e5154f95dafab217646bdb79ac",
+    },
+  },
+  {
+    id: "7up",
+    symbol: "7up",
+    name: "7up",
+    image:
+      "https://assets.coingecko.com/coins/images/12953/large/7up-token.png?1603790389",
+    contracts: {
+      "binance-smart-chain": "0x29f350b3822f51dc29619c583adbc9628646e315",
+    },
+  },
+  {
+    id: "linix",
+    symbol: "lnx",
+    name: "LNX Protocol",
+    image:
+      "https://assets.coingecko.com/coins/images/8776/large/Linix.png?1561103529",
+    contracts: {
+      ethereum: "0x5e3845a1d78db544613edbe43dc1ea497266d3b8",
+    },
+  },
+  {
+    id: "bogecoin",
+    symbol: "boge",
+    name: "Bogecoin",
+    image:
+      "https://assets.coingecko.com/coins/images/16231/large/boge.PNG?1623361888",
+    contracts: {
+      "binance-smart-chain": "0x248c45af3b2f73bc40fa159f2a90ce9cad7a77ba",
+    },
+  },
+  {
+    id: "orient-walt",
+    symbol: "htdf",
+    name: "Orient Walt",
+    image:
+      "https://assets.coingecko.com/coins/images/10428/large/ljNSTB1aq9SOWE49wMCrB4lWtLJbMoZQqlvcWXQwlkGDE5cwp4BME45KtQ6g9bVQN8G5Ix_9Aq0rpu8eu3kErjMLAQViiuLdfLPhqgxmSdcsLcMZHlUR1Yi5kkUnIGnf6mUf10HLMWvuznxpD8dEAomxyqBAgPf0eq9uvvdrmysbvKoJ8A_TBFle-M6UJx8KtH4NguXTR1guR1nuKigdrUJ.jpg?1579215445",
+    contracts: {},
+  },
+  {
+    id: "gogo-finance",
+    symbol: "gogo",
+    name: "GOGO Finance",
+    image:
+      "https://assets.coingecko.com/coins/images/13857/large/gogofinance.png?1612404853",
+    contracts: {
+      ethereum: "0x9a96e767bfcce8e80370be00821ed5ba283d4a17",
+    },
+  },
+  {
+    id: "0-5x-long-bitcoin-cash-token",
+    symbol: "bchhalf",
+    name: "0.5X Long Bitcoin Cash Token",
+    image:
+      "https://assets.coingecko.com/coins/images/12006/large/683JEXMN_400x400.png?1596692054",
+    contracts: {
+      ethereum: "",
+    },
+  },
+  {
+    id: "ausd",
+    symbol: "ausd",
+    name: "aUSD",
+    image:
+      "https://assets.coingecko.com/coins/images/15942/large/AUSD200.png?1622460098",
+    contracts: {
+      fantom: "0x41e3df7f716ab5af28c1497b354d79342923196a",
+    },
+  },
+  {
+    id: "dragons-quick",
+    symbol: "dquick",
+    name: "Dragon's Quick",
+    image:
+      "https://assets.coingecko.com/coins/images/15185/large/quickswap.png?1620044811",
+    contracts: {
+      "polygon-pos": "0xf28164a485b0b2c90639e47b0f377b4a438a16b1",
+    },
+  },
+  {
+    id: "3x-short-tether-gold-token",
+    symbol: "xautbear",
+    name: "3X Short Tether Gold Token",
+    image:
+      "https://assets.coingecko.com/coins/images/11980/large/683JEXMN_400x400__1_.png?1596618975",
+    contracts: {
+      ethereum: "0x31cbf205e26ba63296fdbd254a6b1be3ed28ce47",
+    },
+  },
+  {
+    id: "enviro",
+    symbol: "enviro",
+    name: "Enviro",
+    image:
+      "https://assets.coingecko.com/coins/images/16028/large/enviro.PNG?1622624315",
+    contracts: {
+      "binance-smart-chain": "0x08a68ef8f28fbe9008adcb5bf4a7140cb1bbf23a",
+    },
+  },
+  {
+    id: "ape-punk",
+    symbol: "ape$",
+    name: "APE Punk",
+    image:
+      "https://assets.coingecko.com/coins/images/14510/large/ape-punk-shards.png?1616596505",
+    contracts: {
+      ethereum: "0x26ea1f595f6567b7050fbba24f6a66e19db4d560",
+    },
+  },
+  {
+    id: "store-of-value-token",
+    symbol: "sov",
+    name: "Store of Value Token",
+    image:
+      "https://assets.coingecko.com/coins/images/17870/large/SOVcoin.png?1629692413",
+    contracts: {
+      ethereum: "0x0afee744b6d9ff2b78f76fe10b3e0199c413fd34",
+    },
+  },
+  {
+    id: "cerealia",
+    symbol: "cer",
+    name: "Cerealia",
+    image:
+      "https://assets.coingecko.com/coins/images/18470/large/dlm5ukusyhubg0fq3mtf.png?1632121926",
+    contracts: {
+      ethereum: "0x7c2961e69cdb64e16ffb5202208cd7b9574a9bbe",
+    },
+  },
+  {
+    id: "1x-short-theta-network-token",
+    symbol: "thetahedge",
+    name: "1X Short Theta Network Token",
+    image:
+      "https://assets.coingecko.com/coins/images/12045/large/683JEXMN_400x400.png?1596701685",
+    contracts: {
+      ethereum: "",
+    },
+  },
+  {
+    id: "polyyield-token",
+    symbol: "yield",
+    name: "PolyYield Token",
+    image:
+      "https://assets.coingecko.com/coins/images/16656/large/polylogo.png?1624602286",
+    contracts: {
+      "polygon-pos": "0xce4e6da9c509cb33c23d748713c681c959f68658",
+    },
+  },
+  {
+    id: "ifx24",
+    symbol: "ifx24",
+    name: "IFX24",
+    image:
+      "https://assets.coingecko.com/coins/images/10444/large/lpFSaoD.png?1579475634",
+    contracts: {
+      ethereum: "0xc962ad021a69d457564e985738c719ae3f79b707",
+    },
+  },
+  {
+    id: "hecofi",
+    symbol: "hfi",
+    name: "HecoFi",
+    image:
+      "https://assets.coingecko.com/coins/images/14045/large/8e113d8.png?1614033745",
+    contracts: {
+      "huobi-token": "0x98fc3b60ed4a504f588342a53746405e355f9347",
+    },
+  },
+  {
+    id: "invoice-coin",
+    symbol: "ivc",
+    name: "Invoice Coin",
+    image:
+      "https://assets.coingecko.com/coins/images/7366/large/EcleHY7b_400x400.jpg?1547044053",
+    contracts: {},
+  },
+  {
+    id: "yfiscurity",
+    symbol: "yfis",
+    name: "YFISCURITY",
+    image:
+      "https://assets.coingecko.com/coins/images/12277/large/Logo_YFIS_.png?1598737945",
+    contracts: {
+      ethereum: "0x86965a86539e2446f9e72634cefca7983cc21a81",
+    },
+  },
+  {
+    id: "leonidas-token",
+    symbol: "leonidas",
+    name: "Leonidas Token",
+    image:
+      "https://assets.coingecko.com/coins/images/20496/large/cropped-logo_%281%29.png?1637131887",
+    contracts: {
+      solana: "7puG5H5Mc6QpvaXjAVLr6GnL5hhUMnpLcUm8G3mEsgHQ",
+    },
+  },
+  {
+    id: "antiample",
+    symbol: "xamp",
+    name: "Antiample",
+    image:
+      "https://assets.coingecko.com/coins/images/11925/large/antiample.png?1596168983",
+    contracts: {
+      ethereum: "0xf911a7ec46a2c6fa49193212fe4a2a9b95851c27",
+    },
+  },
+  {
+    id: "rabbit-coin",
+    symbol: "brb",
+    name: "Rabbit Coin",
+    image:
+      "https://assets.coingecko.com/coins/images/8614/large/312c7330-ffbb-4a29-9cd0-7336170bb8f9.png?1559628544",
+    contracts: {
+      ethereum: "0x61d24aabb3e5e800d8f3d3d43dcbd66ae6cab51e",
+    },
+  },
+  {
+    id: "usd-gambit",
+    symbol: "usdg",
+    name: "USD Gambit",
+    image:
+      "https://assets.coingecko.com/coins/images/15886/large/usdg-02.png?1622207135",
+    contracts: {
+      "binance-smart-chain": "0x85e76cbf4893c1fbcb34dcf1239a91ce2a4cf5a7",
+    },
+  },
+  {
+    id: "peoples-punk",
+    symbol: "dddd",
+    name: "People's Punk",
+    image:
+      "https://assets.coingecko.com/coins/images/17973/large/unnamed_%284%29.png?1629956290",
+    contracts: {
+      ethereum: "0x8ca9a0fbd8db501f013f2e9e33a1b9dc129a48e0",
+    },
+  },
+  {
+    id: "lucky-2",
+    symbol: "lucky",
+    name: "LUCKY",
+    image:
+      "https://assets.coingecko.com/coins/images/11127/large/title-bg.png?1588737239",
+    contracts: {
+      ethereum: "0xe478d4f4a87d4d641af97ca0b5cc3db61e266357",
+    },
+  },
+  {
+    id: "fatcake",
+    symbol: "fatcake",
+    name: "FatCake",
+    image:
+      "https://assets.coingecko.com/coins/images/17400/large/Copy-of-Untitled-6.png?1631512375",
+    contracts: {
+      "binance-smart-chain": "0xb7dba4c673bedb174dc3ff7ec65d17c863d39b16",
+    },
+  },
+  {
+    id: "oec-dot",
+    symbol: "dotk",
+    name: "OEC DOT",
+    image:
+      "https://assets.coingecko.com/coins/images/18603/large/dotk.png?1632654839",
+    contracts: {
+      "okex-chain": "0xabc732f6f69a519f6d508434481376b6221eb7d5",
+    },
+  },
+  {
+    id: "one-share",
+    symbol: "ons",
+    name: "One Share",
+    image:
+      "https://assets.coingecko.com/coins/images/13531/large/bss.a1671c75.png?1609452258",
+    contracts: {
+      ethereum: "0x5bb29c33c4a3c29f56f8aca40b4db91d8a5fe2c5",
+    },
+  },
+  {
+    id: "uncle-doge",
+    symbol: "udoge",
+    name: "Uncle Doge",
+    image:
+      "https://assets.coingecko.com/coins/images/16880/large/CGK-logo.png?1626693097",
+    contracts: {
+      "binance-smart-chain": "0xd2618bc9c9cdc40ff19e200a7d14a09799c0a152",
+    },
+  },
+  {
+    id: "veco",
+    symbol: "veco",
+    name: "Veco",
+    image:
+      "https://assets.coingecko.com/coins/images/7423/large/Veco200.png?1547201986",
+    contracts: {},
+  },
+  {
+    id: "medium",
+    symbol: "mdm",
+    name: "MEDIUM",
+    image:
+      "https://assets.coingecko.com/coins/images/9961/large/VEEFC4sG.png?1574293042",
+    contracts: {
+      ethereum: "0xd24dff6117936b6ff97108cf26c1dd8865743d87",
+    },
+  },
+  {
+    id: "viral-inu",
+    symbol: "vinu",
+    name: "Viral Inu",
+    image:
+      "https://assets.coingecko.com/coins/images/20698/large/logo_-_2021-11-22T151434.485.png?1637565282",
+    contracts: {
+      solana: "CgbJxXyaHeU8VsquBpySuFXA94b6LWXxioZ28wRr8fs9",
+    },
+  },
+  {
+    id: "doraemoon",
+    symbol: "dora",
+    name: "Doraemoon",
+    image:
+      "https://assets.coingecko.com/coins/images/16001/large/doraemooon.PNG?1622593152",
+    contracts: {
+      "binance-smart-chain": "0xadaf3be815cd4345229324e02e839de85ce95dc2",
+    },
+  },
+  {
+    id: "chihuahuasol",
+    symbol: "chih",
+    name: "ChihuahuaSol",
+    image:
+      "https://assets.coingecko.com/coins/images/20528/large/rsz_chihuahua-token.png?1637200907",
+    contracts: {
+      solana: "6xtyNYX6Rf4Kp3629X11m1jqUmkV89mf9xQakUtUQfHq",
+    },
+  },
+  {
+    id: "boobank",
+    symbol: "boob",
+    name: "BooBank",
+    image:
+      "https://assets.coingecko.com/coins/images/12894/large/boobank.PNG?1604043315",
+    contracts: {
+      ethereum: "0xa9c44135b3a87e0688c41cf8c27939a22dd437c9",
+    },
+  },
+  {
+    id: "blockchain-exchange-alliance",
+    symbol: "bxa",
+    name: "Blockchain Exchange Alliance",
+    image:
+      "https://assets.coingecko.com/coins/images/7842/large/images.png?1551144999",
+    contracts: {
+      ethereum: "0x98d8d146e644171cd47ff8588987b7bdeef72a87",
+    },
+  },
+  {
+    id: "defis-network",
+    symbol: "dfs",
+    name: "Defis Network",
+    image:
+      "https://assets.coingecko.com/coins/images/12132/large/defis.3316ee78.png?1597460795",
+    contracts: {
+      eos: "",
+    },
+  },
+  {
+    id: "dcoin-token",
+    symbol: "dt",
+    name: "Dcoin Token",
+    image:
+      "https://assets.coingecko.com/coins/images/8831/large/Dcoin_Token.png?1561955438",
+    contracts: {},
+  },
+  {
+    id: "spaceballs",
+    symbol: "balls",
+    name: "SpaceBalls",
+    image:
+      "https://assets.coingecko.com/coins/images/19984/large/41FA61E.png?1636356578",
+    contracts: {
+      ethereum: "0x174ed6e64a5903b59ca7910081e1e3a2c551afc6",
+    },
+  },
+  {
+    id: "0-5x-long-dogecoin-token",
+    symbol: "dogehalf",
+    name: "0.5X Long Dogecoin Token",
+    image:
+      "https://assets.coingecko.com/coins/images/12002/large/683JEXMN_400x400.png?1596691478",
+    contracts: {
+      ethereum: "",
+    },
+  },
+  {
+    id: "lightningcoin",
+    symbol: "lc",
+    name: "LightningCoin",
+    image:
+      "https://assets.coingecko.com/coins/images/8983/large/lightning.png?1563420661",
+    contracts: {},
+  },
+  {
+    id: "zenko",
+    symbol: "znko",
+    name: "Zenko",
+    image:
+      "https://assets.coingecko.com/coins/images/15327/large/znko.PNG?1620520320",
+    contracts: {
+      "polygon-pos": "0x11b077300211dc3b4b316f02440a39dbb1818f19",
+    },
+  },
+  {
+    id: "melody",
+    symbol: "melody",
+    name: "Melody",
+    image:
+      "https://assets.coingecko.com/coins/images/15442/large/UajWzxT.png?1620807695",
+    contracts: {
+      "binance-smart-chain": "0x2f619a1270226fd8ed3df82f0c1e0cd90804346d",
+    },
+  },
+  {
+    id: "7eleven",
+    symbol: "7e",
+    name: "7ELEVEN",
+    image:
+      "https://assets.coingecko.com/coins/images/8324/large/icon4.png?1557529360",
+    contracts: {
+      ethereum: "0x186a33d4dbcd700086a26188dcb74e69be463665",
+    },
+  },
+  {
+    id: "fds",
+    symbol: "fds",
+    name: "Fair Dollars",
+    image:
+      "https://assets.coingecko.com/coins/images/8434/large/E52F6C4B6C8A4342918C2734D4F38D91.png?1558509805",
+    contracts: {},
+  },
+  {
+    id: "brilliancex",
+    symbol: "brilx",
+    name: "BrillianceX",
+    image:
+      "https://assets.coingecko.com/coins/images/15574/large/rs_w_1200_cg_true.png?1621234563",
+    contracts: {
+      ethereum: "0x1de6cb5b085ac84bd247b8176c781e913166aa6b",
+    },
+  },
+  {
+    id: "heartnumber",
+    symbol: "htn",
+    name: "Heart Number",
+    image:
+      "https://assets.coingecko.com/coins/images/9002/large/htn%28200x200%29.png?1600757668",
+    contracts: {
+      ethereum: "0x4b4b1d389d4f4e082b30f75c6319c0ce5acbd619",
+    },
+  },
+  {
+    id: "roar-token",
+    symbol: "roar",
+    name: "Roar Token",
+    image:
+      "https://assets.coingecko.com/coins/images/20693/large/logo_-_2021-11-22T144644.880.png?1637563616",
+    contracts: {
+      solana: "DqxzPWQ2FKHn8pRoy9jCpA6M3GkEqYfieiAVwMYWVyXr",
+    },
+  },
+  {
+    id: "panda-coin",
+    symbol: "panda",
+    name: "Panda Coin",
+    image:
+      "https://assets.coingecko.com/coins/images/20500/large/panda.png?1638349709",
+    contracts: {
+      solana: "Aw8qLRHGhMcKq7rxs5XBNCd9oe3BvoAhpNMVz7AdGmty",
+    },
+  },
+  {
+    id: "fme",
+    symbol: "fme",
+    name: "FME",
+    image:
+      "https://assets.coingecko.com/coins/images/12897/large/FME_token.png?1603336122",
+    contracts: {
+      ethereum: "0x947938339bf61c84669e303bc39c794d65a525d0",
     },
   },
   {
@@ -103322,23 +103810,259 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "benepit",
-    symbol: "bnp",
-    name: "BenePit",
+    id: "moonpump",
+    symbol: "pump",
+    name: "MoonPump",
     image:
-      "https://assets.coingecko.com/coins/images/6740/large/TEmrEC3Z_400x400.png?1570484295",
+      "https://assets.coingecko.com/coins/images/16318/large/moonpump.PNG?1623736749",
     contracts: {
-      ethereum: "0xd27d76a1ba55ce5c0291ccd04febbe793d22ebf4",
+      "binance-smart-chain": "0x5610bf2bf5abe5750bdbce311631dee2afa2cd24",
     },
   },
   {
-    id: "mar-network",
-    symbol: "mars",
-    name: "Mars Network",
+    id: "polkainu",
+    symbol: "pinu",
+    name: "PolkaInu",
     image:
-      "https://assets.coingecko.com/coins/images/12828/large/Mars-logo-2.jpg?1602832489",
+      "https://assets.coingecko.com/coins/images/19897/large/chart-logo.png?1636094124",
     contracts: {
-      ethereum: "0xedd8da5c20eb014e550008df3304213dde5e29f0",
+      ethereum: "0xaabcecd071ab4ace5496f6ff3e1c4c3ee8116f75",
+    },
+  },
+  {
+    id: "smart-medical-coin",
+    symbol: "smc",
+    name: "Smart Medical Coin",
+    image:
+      "https://assets.coingecko.com/coins/images/17327/large/smc.png?1627313618",
+    contracts: {
+      ethereum: "0xb6eda82597808c96969c21a88bf6c749b441c44a",
+    },
+  },
+  {
+    id: "alpha-shiba-inu",
+    symbol: "alphashib",
+    name: "Alpha Shiba Inu",
+    image:
+      "https://assets.coingecko.com/coins/images/19824/large/D8-E8-D3-F1-2985-40-E5-A1-FD-EDD79-D4703-E3.png?1635936649",
+    contracts: {
+      "polygon-pos": "0x4668e4225e6bf7469c70adb17a6e1cacd03e7c85",
+    },
+  },
+  {
+    id: "microtuber",
+    symbol: "mct",
+    name: "MicroTuber",
+    image:
+      "https://assets.coingecko.com/coins/images/15489/large/mct.PNG?1621040638",
+    contracts: {
+      ethereum: "0x6876eba317272fe221c67405c5e8eb3b24535547",
+    },
+  },
+  {
+    id: "xrp-classic",
+    symbol: "xrpc",
+    name: "XRP Classic",
+    image:
+      "https://assets.coingecko.com/coins/images/7259/large/xrpc.png?1572011410",
+    contracts: {
+      ethereum: "0xd4ca5c2aff1eefb0bea9e9eab16f88db2990c183",
+    },
+  },
+  {
+    id: "art-blocks-curated-fidenza-855",
+    symbol: "fdnza",
+    name: "Art Blocks Curated Fidenza #855",
+    image:
+      "https://assets.coingecko.com/coins/images/18060/large/Fidenza-855.png?1630346397",
+    contracts: {
+      ethereum: "0x175eaf4feb0a147b5a77549389392094bf38b198",
+    },
+  },
+  {
+    id: "zupi-coin",
+    symbol: "zupi",
+    name: "Zupi Coin",
+    image:
+      "https://assets.coingecko.com/coins/images/13935/large/zupi.png?1613705495",
+    contracts: {
+      tron: "TBnY2jGuuYYF4j7kp1otQizqF5wbEhFKxA",
+    },
+  },
+  {
+    id: "trustercoin",
+    symbol: "tsc",
+    name: "TrusterCoin",
+    image:
+      "https://assets.coingecko.com/coins/images/17203/large/87661804.png?1626847317",
+    contracts: {
+      "binance-smart-chain": "0xa2a26349448ddafae34949a6cc2cecf78c0497ac",
+    },
+  },
+  {
+    id: "super-shiba",
+    symbol: "$sshiba",
+    name: "Super Shiba",
+    image:
+      "https://assets.coingecko.com/coins/images/15869/large/SuperShibaLogoSmall.png?1622178165",
+    contracts: {
+      "binance-smart-chain": "0x922c77c7724d7b77fd7791be5cc5314b70c3a781",
+    },
+  },
+  {
+    id: "pinkswap-token",
+    symbol: "pinks",
+    name: "PinkSwap Token",
+    image:
+      "https://assets.coingecko.com/coins/images/16223/large/pinkswap.png?1623331173",
+    contracts: {
+      "binance-smart-chain": "0x702b3f41772e321aaccdea91e1fcef682d21125d",
+    },
+  },
+  {
+    id: "mini-baby-doge",
+    symbol: "minibabydoge",
+    name: "Mini Baby Doge",
+    image:
+      "https://assets.coingecko.com/coins/images/16970/large/minibabydoge.PNG?1625808292",
+    contracts: {
+      "binance-smart-chain": "0xa3b89c5f75c530f33e612177001f5602e9c2830f",
+    },
+  },
+  {
+    id: "oec-sushi",
+    symbol: "sushik",
+    name: "OEC SUSHI",
+    image:
+      "https://assets.coingecko.com/coins/images/18597/large/sushik.png?1632652849",
+    contracts: {
+      "okex-chain": "0x2218e0d5e0173769f5b4939a3ae423f7e5e4eab7",
+    },
+  },
+  {
+    id: "santrast",
+    symbol: "snrw",
+    name: "Santrast",
+    image:
+      "https://assets.coingecko.com/coins/images/19441/large/logo_-_2021-10-26T151745.858.png?1635232673",
+    contracts: {
+      avalanche: "0xe677bdc4f5ac7ef7701f4199f25abad34d41fd7f",
+    },
+  },
+  {
+    id: "tvt",
+    symbol: "tvt",
+    name: "TVT",
+    image:
+      "https://assets.coingecko.com/coins/images/8388/large/g8hXw4QX_400x400.jpg?1557973343",
+    contracts: {
+      ethereum: "0x98e0438d3ee1404fea48e38e92853bb08cfa68bd",
+    },
+  },
+  {
+    id: "biswap-token",
+    symbol: "biswap",
+    name: "Biswap Token",
+    image:
+      "https://assets.coingecko.com/coins/images/17487/large/biswap.PNG?1627960291",
+    contracts: {
+      "binance-smart-chain": "0x3f3608a1896c0d29c95df5b3f2bb549b755a5674",
+    },
+  },
+  {
+    id: "polyquokka-finance",
+    symbol: "quokk",
+    name: "PolyQuokka Finance",
+    image:
+      "https://assets.coingecko.com/coins/images/18483/large/quokk.PNG?1632179256",
+    contracts: {
+      "polygon-pos": "0x9469603f3efbcf17e4a5868d81c701bdbd222555",
+    },
+  },
+  {
+    id: "cyberdoge",
+    symbol: "cybrrrdoge",
+    name: "CyberDoge",
+    image:
+      "https://assets.coingecko.com/coins/images/17455/large/VJJcCrdU_400x400.png?1627875883",
+    contracts: {
+      "binance-smart-chain": "0xecc62bd353edd64ed31595dbc4c92801af1e2af0",
+    },
+  },
+  {
+    id: "d-community",
+    symbol: "dili",
+    name: "D Community",
+    image:
+      "https://assets.coingecko.com/coins/images/9485/large/BYf_d6kekNWOY34VLGPvf7RcVj8SeRi7P65Nk0W7ji1jir_qSLfssffnNW0ZzQSWzhhsNRkMCL7qcX4CCaMTbgKb0D7b5yNeStKVMm2deZd9cONMuItgoKUXxIYkHElfk1PW2uiNZbg6a2K0OHtZTvkt1xo8YVKuthskXaryOkM6Ax-MXQlHOfbjwCcnQQjHxAucufrCZJfDgrY.jpg?1571685571",
+    contracts: {
+      ethereum: "0x37f74e99794853777a10ea1dc08a64c86958f06a",
+    },
+  },
+  {
+    id: "tasty-token",
+    symbol: "tasty",
+    name: "Tasty Token",
+    image:
+      "https://assets.coingecko.com/coins/images/16148/large/60b94679824632448f5cecd2_Tasty_Token.png?1623124261",
+    contracts: {
+      "binance-smart-chain": "0x6615ca62dc2bc773a4e037ff6d620cec9a364813",
+    },
+  },
+  {
+    id: "myteamfinance",
+    symbol: "myf",
+    name: "MyteamFinance",
+    image:
+      "https://assets.coingecko.com/coins/images/20690/large/myteamfinance200x200.png?1637560743",
+    contracts: {
+      "binance-smart-chain": "0x143f4b20c8d96da41ae9bf8f1d7e1d064c35a706",
+    },
+  },
+  {
+    id: "historia",
+    symbol: "hta",
+    name: "Historia",
+    image:
+      "https://assets.coingecko.com/coins/images/10885/large/download_%283%29.png?1585551391",
+    contracts: {},
+  },
+  {
+    id: "bitcoinv",
+    symbol: "btcv",
+    name: "BitcoinV",
+    image:
+      "https://assets.coingecko.com/coins/images/8030/large/btc.png?1553484092",
+    contracts: {},
+  },
+  {
+    id: "robocalls",
+    symbol: "rc20",
+    name: "RoboCalls",
+    image:
+      "https://assets.coingecko.com/coins/images/7935/large/ms-icon-310x310.png?1552009545",
+    contracts: {
+      ethereum: "0x61b2d3ea9f1c6b387c985c73d40e8fbfb284e5c7",
+    },
+  },
+  {
+    id: "revolt",
+    symbol: "revt",
+    name: "Revolt",
+    image:
+      "https://assets.coingecko.com/coins/images/15581/large/WhpwgTS.jpg?1621242127",
+    contracts: {
+      "binance-smart-chain": "0x87076dae0086d79873031e96a4b52c85f998ecb5",
+    },
+  },
+  {
+    id: "unicly-mooncats-collection",
+    symbol: "umoon",
+    name: "Unicly MoonCats Collection",
+    image:
+      "https://assets.coingecko.com/coins/images/15674/large/MoonCats.jpg?1621498102",
+    contracts: {
+      ethereum: "0x683239a4cab49642c6e025cf81d283f9c87bc07d",
     },
   },
   {
@@ -103350,71 +104074,33 @@ export const tokens: TokenD[] = [
     contracts: {},
   },
   {
-    id: "momoshiba",
-    symbol: "momo",
-    name: "MomoShiba",
+    id: "dogegayson",
+    symbol: "GOGE",
+    name: "DogeGaySon",
     image:
-      "https://assets.coingecko.com/coins/images/16861/large/MomoShiba5.png?1625467137",
+      "https://assets.coingecko.com/coins/images/20631/large/14766.png?1637332567",
     contracts: {
-      "binance-smart-chain": "0x843e0cebb6da822f553b4c1daa234be87491ab31",
+      "binance-smart-chain": "0xa30d02c5cdb6a76e47ea0d65f369fd39618541fe",
     },
   },
   {
-    id: "1x-short-dogecoin-token",
-    symbol: "dogehedge",
-    name: "1X Short Dogecoin Token",
+    id: "crypto-village-accelerator",
+    symbol: "cva",
+    name: "Crypto Village Accelerator",
     image:
-      "https://assets.coingecko.com/coins/images/12055/large/683JEXMN_400x400.png?1596703809",
+      "https://assets.coingecko.com/coins/images/10071/large/logo_tondo_%281%29.png?1575499784",
     contracts: {
-      ethereum: "",
+      ethereum: "0x78a52e12c7b63d05c12f9608307587cf654ec3d0",
     },
   },
   {
-    id: "boxaxis",
-    symbol: "baxs",
-    name: "BoxAxis",
+    id: "calypso",
+    symbol: "cyo",
+    name: "Calypso",
     image:
-      "https://assets.coingecko.com/coins/images/7732/large/MaUNF_dJFGQujn1_y5zYWG_U1NCglt4yBsjyftdpPr5H7LqTsu0XEqcKnnRWcjTUA0DsOLCr1Ekhe37__Wpx83X29R-nbs0UTxz5eElpzw7Mcl0y8-ReYLck8dNYAxJpXG1k48pA4RousepQFj7H9JKq09h5Z4EzBwnJf2P6qFWALryESUUmAOmtByKUD5WoCWI4DIlRorsWSbbl6.jpg?1550108268",
+      "https://assets.coingecko.com/coins/images/18563/large/CYO200x200.png?1632443319",
     contracts: {
-      ethereum: "0xacf3d402e5e2c3edd5b8129e966017d293f12a4c",
-    },
-  },
-  {
-    id: "buxcoin",
-    symbol: "bux",
-    name: "BUXCOIN",
-    image:
-      "https://assets.coingecko.com/coins/images/10414/large/logo-primary.jpg?1579128155",
-    contracts: {},
-  },
-  {
-    id: "octapay",
-    symbol: "octa",
-    name: "OctaPay",
-    image:
-      "https://assets.coingecko.com/coins/images/17163/large/octapay.PNG?1626682540",
-    contracts: {
-      "binance-smart-chain": "0xf04681b72e5d60eeb32c3a1ba65abe1992a7466d",
-    },
-  },
-  {
-    id: "gt-star-token",
-    symbol: "gts",
-    name: "GT STAR Token",
-    image:
-      "https://assets.coingecko.com/coins/images/11160/large/gts.PNG?1589268165",
-    contracts: {
-      ethereum: "0x951a1070ac39851dcc07b302230a68f81929a5f1",
-    },
-  },
-  {
-    id: "sandman",
-    symbol: "sandman",
-    name: "SandMan",
-    image:
-      "https://assets.coingecko.com/coins/images/17872/large/sandman-large.png?1629695052",
-    contracts: {
-      "polygon-pos": "0xf9b4defdde04fe18f5ee6456607f8a2ec9ff6a75",
+      "binance-smart-chain": "0xc4903be0052eb897b9cce1574838a9fe32ef97ec",
     },
   },
   {
@@ -103429,191 +104115,43 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "yfix-finance",
-    symbol: "yfix",
-    name: "YFIX.finance",
+    id: "mar-network",
+    symbol: "mars",
+    name: "Mars Network",
     image:
-      "https://assets.coingecko.com/coins/images/12554/large/yfix-icon-200.png?1600739144",
+      "https://assets.coingecko.com/coins/images/12828/large/Mars-logo-2.jpg?1602832489",
     contracts: {
-      ethereum: "0xa4f779074850d320b5553c9db5fc6a8ab15bd34a",
+      ethereum: "0xedd8da5c20eb014e550008df3304213dde5e29f0",
     },
   },
   {
-    id: "yfe-money",
-    symbol: "YFE",
-    name: "YFE Money",
+    id: "palace",
+    symbol: "paa",
+    name: "Palace",
     image:
-      "https://assets.coingecko.com/coins/images/12644/large/logo-round.png?1601373377",
+      "https://assets.coingecko.com/coins/images/11141/large/da443cb2601f5fbdab9a2e176d62d6ce.png?1588911369",
     contracts: {
-      ethereum: "0x33811d4edbcaed10a685254eb5d3c4e4398520d2",
+      ethereum: "0x3d9ac8e7a9c9be11dfac1677dda901e28d44527f",
     },
   },
   {
-    id: "babytraderjoe",
-    symbol: "bjoe",
-    name: "BabyTraderJoe",
+    id: "alliance-cargo-direct",
+    symbol: "acd",
+    name: "Alliance Cargo Direct",
     image:
-      "https://assets.coingecko.com/coins/images/20573/large/trader_joe_baby.png?1637242519",
+      "https://assets.coingecko.com/coins/images/7694/large/1620803690979049473.png?1549612872",
     contracts: {
-      avalanche: "0xe703214808c3603a9da2609d52bdcf920e0a0edf",
+      ethereum: "0xe45fc4290fd3159588f532058592ea327d2e97d4",
     },
   },
   {
-    id: "arbys",
-    symbol: "arbys",
-    name: "Arbys Token",
+    id: "republic-of-dogs",
+    symbol: "rod",
+    name: "Republic of Dogs",
     image:
-      "https://assets.coingecko.com/coins/images/18332/large/arby.PNG?1631579212",
+      "https://assets.coingecko.com/coins/images/17694/large/republic.PNG?1628978370",
     contracts: {
-      "arbitrum-one": "0x86a1012d437bbff84fbdf62569d12d4fd3396f8c",
-    },
-  },
-  {
-    id: "jack-raffle",
-    symbol: "jackr",
-    name: "Jack Raffle",
-    image:
-      "https://assets.coingecko.com/coins/images/16286/large/logo_-_2021-06-14T153653.618.png?1623656220",
-    contracts: {
-      "binance-smart-chain": "0x32c2bdea6eb916019e37c90650f7914a23beb33b",
-    },
-  },
-  {
-    id: "sombe",
-    symbol: "sbe",
-    name: "Sombe",
-    image:
-      "https://assets.coingecko.com/coins/images/8904/large/sombe.png?1563783220",
-    contracts: {},
-  },
-  {
-    id: "golden-ratio-coin",
-    symbol: "goldr",
-    name: "Golden Ratio Coin",
-    image:
-      "https://assets.coingecko.com/coins/images/10363/large/original_GRO-768x768.png?1578612119",
-    contracts: {
-      ethereum: "0xcfe4f03c3afbb9857b29fc706180bf0044900d59",
-    },
-  },
-  {
-    id: "3x-long-bitcoin-cash-token",
-    symbol: "bchbull",
-    name: "3X Long Bitcoin Cash Token",
-    image:
-      "https://assets.coingecko.com/coins/images/10306/large/683JEXMN_400x400.png?1577743740",
-    contracts: {
-      ethereum: "0x4c133e081dfb5858e39cca74e69bf603d409e57a",
-    },
-  },
-  {
-    id: "superskynet",
-    symbol: "ssn",
-    name: "SuperSkyNet",
-    image:
-      "https://assets.coingecko.com/coins/images/8944/large/p3dTwXMK_400x400.jpg?1563153164",
-    contracts: {
-      ethereum: "0xa5b46ff9a887180c8fb2d97146398ddfc5fef1cd",
-    },
-  },
-  {
-    id: "baby-shark-tank",
-    symbol: "bashtank",
-    name: "Baby Shark Tank",
-    image:
-      "https://assets.coingecko.com/coins/images/15390/large/IqTGmFXy_400x400.jpg?1620703139",
-    contracts: {
-      "binance-smart-chain": "0x484312a0aaeae3ae36a74ff3e294246f35dddf4f",
-    },
-  },
-  {
-    id: "fme",
-    symbol: "fme",
-    name: "FME",
-    image:
-      "https://assets.coingecko.com/coins/images/12897/large/FME_token.png?1603336122",
-    contracts: {
-      ethereum: "0x947938339bf61c84669e303bc39c794d65a525d0",
-    },
-  },
-  {
-    id: "3x-short-midcap-index-token",
-    symbol: "midbear",
-    name: "3X Short Midcap Index Token",
-    image:
-      "https://assets.coingecko.com/coins/images/10330/large/683JEXMN_400x400_%281%29.png?1578051961",
-    contracts: {
-      ethereum: "0xc82abb524257c8ee4790bfdefb452b2d6a395e21",
-    },
-  },
-  {
-    id: "3x-short-vechain-token",
-    symbol: "vetbear",
-    name: "3X Short VeChain Token",
-    image:
-      "https://assets.coingecko.com/coins/images/12037/large/683JEXMN_400x400__1_.png?1596700129",
-    contracts: {
-      ethereum: "",
-    },
-  },
-  {
-    id: "7eleven",
-    symbol: "7e",
-    name: "7ELEVEN",
-    image:
-      "https://assets.coingecko.com/coins/images/8324/large/icon4.png?1557529360",
-    contracts: {
-      ethereum: "0x186a33d4dbcd700086a26188dcb74e69be463665",
-    },
-  },
-  {
-    id: "ryze-inu",
-    symbol: "$ryzeinu",
-    name: "Ryze Inu",
-    image:
-      "https://assets.coingecko.com/coins/images/19801/large/ryzeinu.jpeg?1635909392",
-    contracts: {
-      ethereum: "0xa63deda2909a682ad6cc4558468cf2a64d90706e",
-    },
-  },
-  {
-    id: "staked-aave-balancer-pool-token",
-    symbol: "stkabpt",
-    name: "Staked Aave Balancer Pool Token",
-    image:
-      "https://assets.coingecko.com/coins/images/16789/large/StkABPT_2x.png?1625046066",
-    contracts: {
-      ethereum: "0xa1116930326d21fb917d5a27f1e9943a9595fb47",
-    },
-  },
-  {
-    id: "3x-short-privacy-index-token",
-    symbol: "privbear",
-    name: "3X Short Privacy Index Token",
-    image:
-      "https://assets.coingecko.com/coins/images/12016/large/683JEXMN_400x400__1_.png?1596693544",
-    contracts: {
-      ethereum: "",
-    },
-  },
-  {
-    id: "1x-short-shitcoin-index-token",
-    symbol: "hedgeshit",
-    name: "1X Short Shitcoin Index Token",
-    image:
-      "https://assets.coingecko.com/coins/images/10450/large/683JEXMN_400x400.png?1579561773",
-    contracts: {
-      ethereum: "0x1d9cd2180fd4e9771fca28681034d02390b14e4c",
-    },
-  },
-  {
-    id: "3x-short-compound-token-token",
-    symbol: "compbear",
-    name: "3X Short Compound Token Token",
-    image:
-      "https://assets.coingecko.com/coins/images/12074/large/683JEXMN_400x400__1_.png?1596709858",
-    contracts: {
-      ethereum: "",
+      "binance-smart-chain": "0x5872a0846ecb9ed23f796ad71a86fa456577f4e2",
     },
   },
   {
@@ -103627,879 +104165,6 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "gomics",
-    symbol: "gom",
-    name: "Gomics",
-    image:
-      "https://assets.coingecko.com/coins/images/9506/large/69581895_377122223186787_4719544883591774208_n.png?1568184472",
-    contracts: {
-      ethereum: "0xb8c6ad2586bb71d518c2aaf510efe91f82022f58",
-    },
-  },
-  {
-    id: "3x-short-okb-token",
-    symbol: "okbbear",
-    name: "3X Short OKB Token",
-    image:
-      "https://assets.coingecko.com/coins/images/10241/large/683JEXMN_400x400_%281%29.png?1576633732",
-    contracts: {
-      ethereum: "0x053e5ba7cb9669dcc2feb2d0e1d3d4a0ad6aae39",
-    },
-  },
-  {
-    id: "3x-short-bitcoin-sv-token",
-    symbol: "bsvbear",
-    name: "3X Short Bitcoin SV Token",
-    image:
-      "https://assets.coingecko.com/coins/images/10329/large/683JEXMN_400x400_%281%29.png?1578051844",
-    contracts: {
-      ethereum: "0xce49c3c92b33a1653f34811a9d7e34502bf12b89",
-    },
-  },
-  {
-    id: "tonestra",
-    symbol: "tnr",
-    name: "Tonestra",
-    image:
-      "https://assets.coingecko.com/coins/images/12168/large/tonestra_logo.jpg?1597788575",
-    contracts: {
-      ethereum: "",
-    },
-  },
-  {
-    id: "c-token",
-    symbol: "c",
-    name: "C Token",
-    image:
-      "https://assets.coingecko.com/coins/images/17484/large/lyuF5Ri.jpg?1627956870",
-    contracts: {
-      "huobi-token": "0xfed613cdd4182b73a032fe1f03bd7872465010f8",
-    },
-  },
-  {
-    id: "3x-short-compound-usdt-token",
-    symbol: "cusdtbear",
-    name: "3X Short Compound USDT Token",
-    image:
-      "https://assets.coingecko.com/coins/images/12067/large/683JEXMN_400x400__1_.png?1596708852",
-    contracts: {
-      ethereum: "",
-    },
-  },
-  {
-    id: "gambler-shiba",
-    symbol: "gshiba",
-    name: "Gambler Shiba",
-    image:
-      "https://assets.coingecko.com/coins/images/17130/large/RHzOHCyb_400x400.jpg?1626410775",
-    contracts: {
-      ethereum: "0xb892249939adbf6d7851864ca9a5c7d2d537af97",
-    },
-  },
-  {
-    id: "dragons-quick",
-    symbol: "dquick",
-    name: "Dragon's Quick",
-    image:
-      "https://assets.coingecko.com/coins/images/15185/large/quickswap.png?1620044811",
-    contracts: {
-      "polygon-pos": "0xf28164a485b0b2c90639e47b0f377b4a438a16b1",
-    },
-  },
-  {
-    id: "xanalia",
-    symbol: "alia",
-    name: "Xanalia",
-    image:
-      "https://assets.coingecko.com/coins/images/16024/large/alia.PNG?1622618514",
-    contracts: {
-      "binance-smart-chain": "0x13861c017735d3b2f0678a546948d67ad51ac07b",
-    },
-  },
-  {
-    id: "idle-tusd-yield",
-    symbol: "idleTUSDYield",
-    name: "IdleTUSD (Best Yield)",
-    image:
-      "https://assets.coingecko.com/coins/images/11935/large/idletusdv3mMaxyield_32.png?1596263719",
-    contracts: {
-      ethereum: "0xc278041fdd8249fe4c1aad1193876857eea3d68c",
-    },
-  },
-  {
-    id: "ricefarm",
-    symbol: "rice",
-    name: "RiceFarm",
-    image:
-      "https://assets.coingecko.com/coins/images/16727/large/RICE.png?1624855146",
-    contracts: {
-      "binance-smart-chain": "0xc4eeff5aab678c3ff32362d80946a3f5de4a1861",
-    },
-  },
-  {
-    id: "bitup-token",
-    symbol: "but",
-    name: "BitUP Token",
-    image:
-      "https://assets.coingecko.com/coins/images/6041/large/bitup_token.jpg?1548828844",
-    contracts: {
-      ethereum: "0xb2e260f12406c401874ecc960893c0f74cd6afcd",
-    },
-  },
-  {
-    id: "3x-long-tether-token",
-    symbol: "usdtbull",
-    name: "3X Long Tether Token",
-    image:
-      "https://assets.coingecko.com/coins/images/10207/large/683JEXMN_400x400_%281%29.png?1576535011",
-    contracts: {
-      ethereum: "0x8cce19943a01e78b7c277794fb081816f6151bab",
-    },
-  },
-  {
-    id: "3x-long-exchange-token-index-token",
-    symbol: "exchbull",
-    name: "3X Long Exchange Token Index Token",
-    image:
-      "https://assets.coingecko.com/coins/images/10436/large/683JEXMN_400x400.png?1579276837",
-    contracts: {
-      ethereum: "0x592ef68c18f05a22c5890263dea5d952dd140d2a",
-    },
-  },
-  {
-    id: "3x-long-kyber-network-token",
-    symbol: "kncbull",
-    name: "3X Long Kyber Network Token",
-    image:
-      "https://assets.coingecko.com/coins/images/12064/large/683JEXMN_400x400.png?1596708452",
-    contracts: {
-      ethereum: "",
-    },
-  },
-  {
-    id: "fatcake",
-    symbol: "fatcake",
-    name: "FatCake",
-    image:
-      "https://assets.coingecko.com/coins/images/17400/large/Copy-of-Untitled-6.png?1631512375",
-    contracts: {
-      "binance-smart-chain": "0xb7dba4c673bedb174dc3ff7ec65d17c863d39b16",
-    },
-  },
-  {
-    id: "lp-renbtc-curve",
-    symbol: "renbtcCurve",
-    name: "LP renBTC Curve",
-    image:
-      "https://assets.coingecko.com/coins/images/11957/large/Curvefi_renCrv_32.png?1596435739",
-    contracts: {
-      ethereum: "0x49849c98ae39fff122806c06791fa73784fb3675",
-    },
-  },
-  {
-    id: "3x-short-kyber-network-token",
-    symbol: "kncbear",
-    name: "3X Short Kyber Network Token",
-    image:
-      "https://assets.coingecko.com/coins/images/12068/large/683JEXMN_400x400.png?1596709128",
-    contracts: {
-      ethereum: "",
-    },
-  },
-  {
-    id: "geist-usdc",
-    symbol: "gusdc",
-    name: "Geist USDC",
-    image:
-      "https://assets.coingecko.com/coins/images/19002/large/preview-gallery-gUSDCgecko_%281%29.png?1634790726",
-    contracts: {
-      fantom: "0xe578c856933d8e1082740bf7661e379aa2a30b26",
-    },
-  },
-  {
-    id: "q-dao-governance-token-v1-0",
-    symbol: "qdao",
-    name: "Q DAO Governance token v1.0",
-    image:
-      "https://assets.coingecko.com/coins/images/8599/large/QDAO_logo_white_black.png?1562131656",
-    contracts: {
-      ethereum: "0x3166c570935a7d8554c8f4ea792ff965d2efe1f2",
-      "binance-smart-chain": "0x2bf5b0df27f31388d5b825b39bd752bed6c7f7e9",
-    },
-  },
-  {
-    id: "zupi-coin",
-    symbol: "zupi",
-    name: "Zupi Coin",
-    image:
-      "https://assets.coingecko.com/coins/images/13935/large/zupi.png?1613705495",
-    contracts: {
-      tron: "TBnY2jGuuYYF4j7kp1otQizqF5wbEhFKxA",
-    },
-  },
-  {
-    id: "grafsound",
-    symbol: "gsmt",
-    name: "Grafsound",
-    image:
-      "https://assets.coingecko.com/coins/images/12583/large/Logo200_200-GSMT.png?1600927635",
-    contracts: {
-      ethereum: "0x7713bcda5106424ff6b0ae1e7fa05c3f4ae3ecb0",
-    },
-  },
-  {
-    id: "grafsound",
-    symbol: "gsmt",
-    name: "Grafsound",
-    image:
-      "https://assets.coingecko.com/coins/images/12583/large/Logo200_200-GSMT.png?1600927635",
-    contracts: {
-      ethereum: "0x7713bcda5106424ff6b0ae1e7fa05c3f4ae3ecb0",
-    },
-  },
-  {
-    id: "zupi-coin",
-    symbol: "zupi",
-    name: "Zupi Coin",
-    image:
-      "https://assets.coingecko.com/coins/images/13935/large/zupi.png?1613705495",
-    contracts: {
-      tron: "TBnY2jGuuYYF4j7kp1otQizqF5wbEhFKxA",
-    },
-  },
-  {
-    id: "shinedao",
-    symbol: "shn",
-    name: "ShineDAO",
-    image:
-      "https://assets.coingecko.com/coins/images/20555/large/shine-dao-logo.png?1637206602",
-    contracts: {
-      ethereum: "0x1c7ede23b1361acc098a1e357c9085d131b34a01",
-    },
-  },
-  {
-    id: "idle-dai-risk-adjusted",
-    symbol: "idleDAISafe",
-    name: "IdleDAI (Risk Adjusted)",
-    image:
-      "https://assets.coingecko.com/coins/images/11929/large/idledai-safe.png?1596263241",
-    contracts: {
-      ethereum: "0xa14ea0e11121e6e951e87c66afe460a00bcd6a16",
-    },
-  },
-  {
-    id: "ubiquitous-social-network-service",
-    symbol: "usns",
-    name: "Ubiquitous Social Network Service",
-    image:
-      "https://assets.coingecko.com/coins/images/10039/large/I8sPo8I22qH5EXEGNKr2uZYZ6LJdCIGrkHDUZ8Myue8gAtfL9e1ouiq6m6lbejHlqL53_bHf-qB2Am7dRS_AdpPBbf1S8DWbIIXewPiqrmt3rarNZlP45fX99lBnxTRG7FrH0JFxXZe6ojunQsNTVlh01WVcGMwe2Q96vLr0C8JridYX_HgEUtzhX2DJl4gUSPk9-bEMG3PaMo7Cu-RP_DwSPOLKreAqKjjW0NjhbvVn-CFM.jpg?1575012815",
-    contracts: {
-      ethereum: "0x2f766a83146f7eaee2c635c9f9a291e4b86f4108",
-    },
-  },
-  {
-    id: "geist-eth",
-    symbol: "geth",
-    name: "Geist ETH",
-    image:
-      "https://assets.coingecko.com/coins/images/18998/large/preview-gallery-gETHgecko_%281%29.png?1634790781",
-    contracts: {
-      fantom: "0x25c130b2624cf12a4ea30143ef50c5d68cefa22f",
-    },
-  },
-  {
-    id: "idle-usdt-yield",
-    symbol: "idleUSDTYield",
-    name: "IdleUSDT (Yield)",
-    image:
-      "https://assets.coingecko.com/coins/images/11933/large/idleusdtv3maxyield_32.png?1596263688",
-    contracts: {
-      ethereum: "0xf34842d05a1c888ca02769a633df37177415c2f8",
-    },
-  },
-  {
-    id: "7up",
-    symbol: "7up",
-    name: "7up",
-    image:
-      "https://assets.coingecko.com/coins/images/12953/large/7up-token.png?1603790389",
-    contracts: {
-      "binance-smart-chain": "0x29f350b3822f51dc29619c583adbc9628646e315",
-    },
-  },
-  {
-    id: "jokes-meme",
-    symbol: "joke",
-    name: "Jokes Meme",
-    image:
-      "https://assets.coingecko.com/coins/images/16719/large/newjoketoken.png?1624845136",
-    contracts: {
-      solana: "8NGgmXzBzhsXz46pTC3ioSBxeE3w2EXpc741N3EQ8E6r",
-    },
-  },
-  {
-    id: "supertron",
-    symbol: "stro",
-    name: "Supertron",
-    image:
-      "https://assets.coingecko.com/coins/images/9326/large/LQOVF5S.png?1566267616",
-    contracts: {
-      ethereum: "0xc2e343118f937f88ee1fc3150cdc0d6f3d11bba7",
-    },
-  },
-  {
-    id: "grom",
-    symbol: "gr",
-    name: "GROM",
-    image:
-      "https://assets.coingecko.com/coins/images/13216/large/gr.png?1606278269",
-    contracts: {
-      ethereum: "0xce593a29905951e8fc579bc092eca72577da575c",
-    },
-  },
-  {
-    id: "3x-long-compound-usdt-token",
-    symbol: "cusdtbull",
-    name: "3X Long Compound USDT Token",
-    image:
-      "https://assets.coingecko.com/coins/images/12069/large/683JEXMN_400x400__1_.png?1596709154",
-    contracts: {
-      ethereum: "",
-    },
-  },
-  {
-    id: "empow",
-    symbol: "em",
-    name: "Empow",
-    image:
-      "https://assets.coingecko.com/coins/images/11684/large/QmTMXMYaXQqG4PSNursodTYLJguiX73Z92nCaNddBzCEVU.png?1592793335",
-    contracts: {},
-  },
-  {
-    id: "arteon",
-    symbol: "arteon",
-    name: "Arteon",
-    image:
-      "https://assets.coingecko.com/coins/images/14771/large/arteon_200x200.png?1618369416",
-    contracts: {
-      ethereum: "0x897abf83f0c44b86cb67ec56c006c00d56659517",
-    },
-  },
-  {
-    id: "minishib-eth",
-    symbol: "minishib",
-    name: "miniSHIB ETH",
-    image:
-      "https://assets.coingecko.com/coins/images/19364/large/minishib.jpeg?1635131418",
-    contracts: {
-      ethereum: "0x68abcf0ee3e25e3529aae96e927a1329bdbe4ec3",
-    },
-  },
-  {
-    id: "inoovi",
-    symbol: "ivi",
-    name: "Inoovi",
-    image:
-      "https://assets.coingecko.com/coins/images/10372/large/Bvp7U25U_400x400.jpg?1578674638",
-    contracts: {
-      ethereum: "0xa91464abd4625a23ab719e3f0fce84dadd54e546",
-    },
-  },
-  {
-    id: "yearn-finance-infrastructure-labs",
-    symbol: "ylab",
-    name: "Yearn-finance Infrastructure Labs",
-    image:
-      "https://assets.coingecko.com/coins/images/12744/large/kKGUHNFn_400x400.jpg?1602193258",
-    contracts: {
-      ethereum: "0x454cb9d0845bb4a28462f98c21a4fafd16ceb25f",
-    },
-  },
-  {
-    id: "usd-bancor",
-    symbol: "usdb",
-    name: "USD Bancor",
-    image:
-      "https://assets.coingecko.com/coins/images/10619/large/busd.png?1581026228",
-    contracts: {
-      ethereum: "0x309627af60f0926daa6041b8279484312f2bf060",
-    },
-  },
-  {
-    id: "3x-short-theta-network-token",
-    symbol: "thetabear",
-    name: "3X Short Theta Network Token",
-    image:
-      "https://assets.coingecko.com/coins/images/12052/large/683JEXMN_400x400__1_.png?1596702995",
-    contracts: {
-      ethereum: "",
-    },
-  },
-  {
-    id: "eos-pow-coin",
-    symbol: "pow",
-    name: "EOS PoW Coin",
-    image:
-      "https://assets.coingecko.com/coins/images/10466/large/pow.PNG?1579732560",
-    contracts: {
-      eos: "",
-    },
-  },
-  {
-    id: "1x-short-btc-implied-volatility",
-    symbol: "ibvol",
-    name: "Inverse Bitcoin Volatility Token",
-    image:
-      "https://assets.coingecko.com/coins/images/11057/large/download_%2810%29.png?1587642128",
-    contracts: {
-      ethereum: "0x627e2ee3dbda546e168eaaff25a2c5212e4a95a0",
-    },
-  },
-  {
-    id: "revolt",
-    symbol: "revt",
-    name: "Revolt",
-    image:
-      "https://assets.coingecko.com/coins/images/15581/large/WhpwgTS.jpg?1621242127",
-    contracts: {
-      "binance-smart-chain": "0x87076dae0086d79873031e96a4b52c85f998ecb5",
-    },
-  },
-  {
-    id: "obic",
-    symbol: "obic",
-    name: "OBIC",
-    image:
-      "https://assets.coingecko.com/coins/images/12401/large/png-300x300.png?1599559020",
-    contracts: {
-      ethereum: "0xa8b6d0bd067ce5b2e4e9e225b2e0ff5eb74ded8a",
-    },
-  },
-  {
-    id: "enviro",
-    symbol: "enviro",
-    name: "Enviro",
-    image:
-      "https://assets.coingecko.com/coins/images/16028/large/enviro.PNG?1622624315",
-    contracts: {
-      "binance-smart-chain": "0x08a68ef8f28fbe9008adcb5bf4a7140cb1bbf23a",
-    },
-  },
-  {
-    id: "aave-balancer-pool-token",
-    symbol: "abpt",
-    name: "Aave Balancer Pool Token",
-    image:
-      "https://assets.coingecko.com/coins/images/16788/large/ABPT_2x.png?1625046056",
-    contracts: {
-      ethereum: "0x41a08648c3766f9f9d85598ff102a08f4ef84f84",
-    },
-  },
-  {
-    id: "luckstar",
-    symbol: "lst",
-    name: "Luckstar",
-    image:
-      "https://assets.coingecko.com/coins/images/7804/large/49211002_377935006115216_8098246624284770304_n.png?1550735229",
-    contracts: {
-      ethereum: "0x681ecc5a0bfd18c308a1138ff607f818bac5e417",
-    },
-  },
-  {
-    id: "guss-one",
-    symbol: "guss",
-    name: "GUSS.ONE",
-    image:
-      "https://assets.coingecko.com/coins/images/8509/large/gussone_mid.png?1559030931",
-    contracts: {
-      ethereum: "0xdae6f68da3bab6866742a7f4050366f6ac48760d",
-    },
-  },
-  {
-    id: "smartpad",
-    symbol: "pad",
-    name: "SmartPad",
-    image:
-      "https://assets.coingecko.com/coins/images/16587/large/smartpad.PNG?1624518548",
-    contracts: {
-      ethereum: "0x5067006f830224960fb419d7f25a3a53e9919bb0",
-    },
-  },
-  {
-    id: "lichang",
-    symbol: "lc",
-    name: "Lichang",
-    image:
-      "https://assets.coingecko.com/coins/images/8358/large/download_%282%29.png?1563420885",
-    contracts: {
-      eos: "",
-    },
-  },
-  {
-    id: "flokimars",
-    symbol: "flom",
-    name: "Flokimars",
-    image:
-      "https://assets.coingecko.com/coins/images/19789/large/-klKitmy_400x400.jpg?1635889843",
-    contracts: {
-      "binance-smart-chain": "0xcc2bf0f46c561afdce6c23710d0d7f38b007443f",
-    },
-  },
-  {
-    id: "babyxape",
-    symbol: "babyx",
-    name: "BabyXape",
-    image:
-      "https://assets.coingecko.com/coins/images/19757/large/babyx.jpeg?1635827752",
-    contracts: {
-      "binance-smart-chain": "0x234003ffa399e8bc53236ac777f4c781b10d1344",
-    },
-  },
-  {
-    id: "huskyshiba",
-    symbol: "hshiba",
-    name: "HuskyShiba",
-    image:
-      "https://assets.coingecko.com/coins/images/15517/large/hshiba.PNG?1621117994",
-    contracts: {
-      "binance-smart-chain": "0xd914bde476b6e44b7a1579b21f0f9193ea55f852",
-    },
-  },
-  {
-    id: "nanometer-bitcoin",
-    symbol: "nmbtc",
-    name: "NanoMeter Bitcoin",
-    image:
-      "https://assets.coingecko.com/coins/images/20059/large/logo_-_2021-11-09T161322.006.png?1636445625",
-    contracts: {
-      "binance-smart-chain": "0x5ddb331c3ba48a1d68cbf50dd3bc7aac407dc115",
-    },
-  },
-  {
-    id: "spaceballs",
-    symbol: "balls",
-    name: "SpaceBalls",
-    image:
-      "https://assets.coingecko.com/coins/images/19984/large/41FA61E.png?1636356578",
-    contracts: {
-      ethereum: "0x174ed6e64a5903b59ca7910081e1e3a2c551afc6",
-    },
-  },
-  {
-    id: "1x-short-bnb-token",
-    symbol: "bnbhedge",
-    name: "1X Short BNB Token",
-    image:
-      "https://assets.coingecko.com/coins/images/12062/large/683JEXMN_400x400.png?1596706881",
-    contracts: {
-      ethereum: "0x2840ad41cf25ad58303ba24c416e79dce4161b4f",
-    },
-  },
-  {
-    id: "autostake",
-    symbol: "auto",
-    name: "Autostake",
-    image:
-      "https://assets.coingecko.com/coins/images/17720/large/1lxasDg.png?1629089519",
-    contracts: {
-      "binance-smart-chain": "0x1cff458b364d0d328d4c9d59d10be7d22d01953d",
-    },
-  },
-  {
-    id: "3x-short-shitcoin-index-token",
-    symbol: "bearshit",
-    name: "3X Short Shitcoin Index Token",
-    image:
-      "https://assets.coingecko.com/coins/images/10206/large/683JEXMN_400x400_%281%29.png?1576534838",
-    contracts: {
-      ethereum: "0x48dee19c81b89a9ab473361bae7a19210f2deaa4",
-    },
-  },
-  {
-    id: "nocapcoin",
-    symbol: "ncc",
-    name: "NoCapCoin",
-    image:
-      "https://assets.coingecko.com/coins/images/15491/large/nocapcoin.PNG?1621041472",
-    contracts: {
-      "binance-smart-chain": "0x93dfc1e09b7164bafd4860963b6d94cbc4284774",
-    },
-  },
-  {
-    id: "amond",
-    symbol: "amon",
-    name: "AmonD",
-    image:
-      "https://assets.coingecko.com/coins/images/8952/large/AmonD_512x512.png?1563227436",
-    contracts: {
-      ethereum: "0x00059ae69c1622a7542edc15e8d17b060fe307b6",
-    },
-  },
-  {
-    id: "iouni",
-    symbol: "iouni",
-    name: "ioUNI",
-    image:
-      "https://assets.coingecko.com/coins/images/19343/large/io1ahh04jn2zkqlug6feh7rpq75a75p3rj42hp4ch.png?1635125793",
-    contracts: {
-      iotex: "0xedeefaca6a1581fe2349cdfc3083d4efa8188e55",
-    },
-  },
-  {
-    id: "3x-short-bnb-token",
-    symbol: "bnbbear",
-    name: "3X Short BNB Token",
-    image:
-      "https://assets.coingecko.com/coins/images/10242/large/683JEXMN_400x400_%281%29.png?1576633870",
-    contracts: {
-      ethereum: "0x6febdfc0a9d9502c45343fce0df08828def44795",
-    },
-  },
-  {
-    id: "yearn-finance-network",
-    symbol: "yfn",
-    name: "Yearn Finance Network",
-    image:
-      "https://assets.coingecko.com/coins/images/12821/large/9v36orK.jpg?1603191959",
-    contracts: {
-      ethereum: "0x3dd66732113af9981a861cf489431533aeba33b8",
-    },
-  },
-  {
-    id: "dreamscoin",
-    symbol: "dream",
-    name: "DreamsCoin",
-    image:
-      "https://assets.coingecko.com/coins/images/10675/large/aHon0cqNuXUTYB2MO4DYmM4fmEMDqIXeXvP38dKRaKspANDniVJbmYUU2tVZlyMBYQ9GMHHBHL-YbkIGQDMwnO1QN1VNia1kh_QB6h9je3XwzCmDLP_HKusR1c7kExITpt4BXoGCnsj19wyjY_NywMLGrB1C0f9LrLJJZxNo_pUJNw7D8Cw4tFKUtdVe8B7_pgpb8ngd8aAKi_H.jpg?1581632126",
-    contracts: {
-      waves: "",
-    },
-  },
-  {
-    id: "formula",
-    symbol: "fml",
-    name: "FormulA",
-    image:
-      "https://assets.coingecko.com/coins/images/6878/large/formula_token.png?1547043223",
-    contracts: {
-      ethereum: "0xde522a2778e4554707e6a8df36a4871ce9967bb5",
-    },
-  },
-  {
-    id: "zabaku-inu",
-    symbol: "zabaku",
-    name: "Zabaku Inu",
-    image:
-      "https://assets.coingecko.com/coins/images/15944/large/5-E31387-E-08-F6-4-A29-AC33-EC138-E09-E9-A7.jpg?1630331287",
-    contracts: {
-      "binance-smart-chain": "0x1e5f009d4f8ca44b5fcc4963dd301da82b4eed09",
-    },
-  },
-  {
-    id: "0-5x-long-ethereum-token",
-    symbol: "ethhalf",
-    name: "0.5X Long Ethereum Token",
-    image:
-      "https://assets.coingecko.com/coins/images/11998/large/683JEXMN_400x400.png?1596690114",
-    contracts: {
-      ethereum: "",
-    },
-  },
-  {
-    id: "electronic-pk-chain",
-    symbol: "epc",
-    name: "Electronic PK Chain",
-    image:
-      "https://assets.coingecko.com/coins/images/2764/large/electronic-pk-chain.png?1547036955",
-    contracts: {},
-  },
-  {
-    id: "wordlex",
-    symbol: "wdx",
-    name: "Wordlex",
-    image:
-      "https://assets.coingecko.com/coins/images/14481/large/Wordlex-logo.png?1616463252",
-    contracts: {
-      tron: "TThrzAzRj2Pw4CQjqo1dk2zGyifPhuNHRu",
-    },
-  },
-  {
-    id: "blastoise-inu",
-    symbol: "blast",
-    name: "Blastoise Inu",
-    image:
-      "https://assets.coingecko.com/coins/images/19197/large/blast.png?1635005146",
-    contracts: {
-      ethereum: "0x5167f7cdeb771417d8722e654ccc3e1734a01878",
-    },
-  },
-  {
-    id: "vankia-chain",
-    symbol: "vkt",
-    name: "Vankia Chain",
-    image:
-      "https://assets.coingecko.com/coins/images/5625/large/vankia-chain.png?1547041493",
-    contracts: {},
-  },
-  {
-    id: "3x-long-dragon-index-token",
-    symbol: "drgnbull",
-    name: "3X Long Dragon Index Token",
-    image:
-      "https://assets.coingecko.com/coins/images/10197/large/683JEXMN_400x400_%281%29.png?1576533729",
-    contracts: {
-      ethereum: "0x3335f16af9008bfd32f1ee6c2be5d4f84fa0b9da",
-    },
-  },
-  {
-    id: "polyquokka-finance",
-    symbol: "quokk",
-    name: "PolyQuokka Finance",
-    image:
-      "https://assets.coingecko.com/coins/images/18483/large/quokk.PNG?1632179256",
-    contracts: {
-      "polygon-pos": "0x9469603f3efbcf17e4a5868d81c701bdbd222555",
-    },
-  },
-  {
-    id: "turkiye-basketbol-federasyonu-token",
-    symbol: "tbft",
-    name: "Turkiye Basketbol Federasyonu Token",
-    image:
-      "https://assets.coingecko.com/coins/images/17649/large/tbft.png?1628749628",
-    contracts: {
-      Bitcichain: "0xa3225ae74e9a92f8deef5b857100b31259b998db",
-    },
-  },
-  {
-    id: "treelion",
-    symbol: "trn",
-    name: "Treelion",
-    image:
-      "https://assets.coingecko.com/coins/images/9630/large/yvXR4R-F_400x400.jpg?1570001020",
-    contracts: {
-      ethereum: "0x70968feaf13299d0dbf78f66860bab9dbe3856bc",
-    },
-  },
-  {
-    id: "sbland-vault-nftx",
-    symbol: "sbland",
-    name: "SBLAND Vault (NFTX)",
-    image:
-      "https://assets.coingecko.com/coins/images/17059/large/SBLAND.png?1626150303",
-    contracts: {
-      ethereum: "0x63aa9d05c025279f8e963ba784f1254814c1e12b",
-    },
-  },
-  {
-    id: "boltt-coin",
-    symbol: "boltt",
-    name: "BolttCoin",
-    image:
-      "https://assets.coingecko.com/coins/images/3928/large/Ticker.jpeg?1551231549",
-    contracts: {
-      ethereum: "0xbb340a2eaf55c5e67a5a05fe5ceed9b9702d76f4",
-    },
-  },
-  {
-    id: "adventure-inu",
-    symbol: "adinu",
-    name: "Adventure Inu",
-    image:
-      "https://assets.coingecko.com/coins/images/20036/large/Adventure200x200.png?1636424176",
-    contracts: {
-      ethereum: "0x2f9f363685ffecc8d7bed0486d8c2b21232bdc5a",
-    },
-  },
-  {
-    id: "invoice-coin",
-    symbol: "ivc",
-    name: "Invoice Coin",
-    image:
-      "https://assets.coingecko.com/coins/images/7366/large/EcleHY7b_400x400.jpg?1547044053",
-    contracts: {},
-  },
-  {
-    id: "nezuko-inu",
-    symbol: "nezuko",
-    name: "Nezuko Inu",
-    image:
-      "https://assets.coingecko.com/coins/images/18652/large/O7TBGRA.png?1632759790",
-    contracts: {
-      ethereum: "0xbc298dfaa2edda095b924f1390cc38fb7c5f6250",
-    },
-  },
-  {
-    id: "poc-chain",
-    symbol: "pocc",
-    name: "POC Chain",
-    image:
-      "https://assets.coingecko.com/coins/images/7718/large/logo_%281%29.png?1549956313",
-    contracts: {
-      ethereum: "0x926be13b4d93f29ea254e4e518f33099e45d7f06",
-    },
-  },
-  {
-    id: "galaxer",
-    symbol: "glx",
-    name: "Galaxer",
-    image:
-      "https://assets.coingecko.com/coins/images/18464/large/logo-token.png?1632109751",
-    contracts: {
-      ethereum: "0x75d0fb8db2f6485fdfe6ff58321e91effae759a8",
-    },
-  },
-  {
-    id: "hashnet-biteco",
-    symbol: "hnb",
-    name: "HashNet BitEco",
-    image:
-      "https://assets.coingecko.com/coins/images/8126/large/GyEELaxS_400x400.jpg?1555226121",
-    contracts: {
-      ethereum: "0x9c197c4b58527faaab67cb35e3145166b23d242e",
-    },
-  },
-  {
-    id: "precium",
-    symbol: "pcm",
-    name: "Precium",
-    image:
-      "https://assets.coingecko.com/coins/images/9490/large/pcm.PNG?1568015318",
-    contracts: {
-      ethereum: "0x6096d2460cf5177e40b515223428dc005ad35123",
-    },
-  },
-  {
-    id: "legends",
-    symbol: "legends",
-    name: "Legends",
-    image:
-      "https://assets.coingecko.com/coins/images/15929/large/legends.PNG?1622441772",
-    contracts: {
-      "binance-smart-chain": "0x4ca03b31f51b4436e26f6ee335895f3fa290ee5a",
-    },
-  },
-  {
-    id: "ulgen-hash-power",
-    symbol: "uhp",
-    name: "Ulgen Hash Power",
-    image:
-      "https://assets.coingecko.com/coins/images/11897/large/download_%2816%29.png?1595892702",
-    contracts: {
-      ethereum: "0x9135d92e3a34e2a94e4474b74b9dc2d51118eed5",
-    },
-  },
-  {
-    id: "asimi",
-    symbol: "asimi",
-    name: "ASIMI",
-    image:
-      "https://assets.coingecko.com/coins/images/9715/large/asimi.PNG?1571174386",
-    contracts: {
-      waves: "",
-    },
-  },
-  {
     id: "parsiq-boost",
     symbol: "prqboost",
     name: "Parsiq Boost",
@@ -104510,41 +104175,360 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "heartnumber",
-    symbol: "htn",
-    name: "Heart Number",
+    id: "feellike",
+    symbol: "fll",
+    name: "Feellike",
     image:
-      "https://assets.coingecko.com/coins/images/9002/large/htn%28200x200%29.png?1600757668",
+      "https://assets.coingecko.com/coins/images/12075/large/FLL_logo_200.png?1596751266",
     contracts: {
-      ethereum: "0x4b4b1d389d4f4e082b30f75c6319c0ce5acbd619",
+      ethereum: "0x9235bda06b8807161b8fbb1e102cb654555b212f",
     },
   },
   {
-    id: "buyucoin-token",
-    symbol: "buc",
-    name: "BuyUCoin Token",
+    id: "cyclops-treasure",
+    symbol: "cytr",
+    name: "Cyclops Treasure",
     image:
-      "https://assets.coingecko.com/coins/images/11561/large/XF7boZ2M_400x400.jpg?1591112316",
+      "https://assets.coingecko.com/coins/images/12698/large/Untitled-design-9-removebg-preview.png?1601855912",
+    contracts: {
+      ethereum: "0xbd05cee8741100010d8e93048a80ed77645ac7bf",
+    },
+  },
+  {
+    id: "boozedoge",
+    symbol: "BODO",
+    name: "BoozeDoge",
+    image:
+      "https://assets.coingecko.com/coins/images/18852/large/Booze-Logo-CMC.png?1633592459",
+    contracts: {
+      "binance-smart-chain": "0x2f87afe4bc8c989fa488cb3fd6fe6ac2976b0743",
+    },
+  },
+  {
+    id: "goforit",
+    symbol: "goi",
+    name: "GoForIt Walk&Win",
+    image:
+      "https://assets.coingecko.com/coins/images/9564/large/E5q4JAYW_400x400.jpg?1568849486",
+    contracts: {
+      ethereum: "0x2f34dd3d46855277eee79a1d724c2249f770054b",
+    },
+  },
+  {
+    id: "lnko-token",
+    symbol: "lnko",
+    name: "LNKO Token",
+    image:
+      "https://assets.coingecko.com/coins/images/9199/large/logo_%289%29.png?1565077907",
+    contracts: {
+      ethereum: "0x11afe7fa792589dd1236257f99ba09f510460ad9",
+    },
+  },
+  {
+    id: "baby-pancake",
+    symbol: "bpcake",
+    name: "Baby Pancake",
+    image:
+      "https://assets.coingecko.com/coins/images/17499/large/200x200-1.png?1627989735",
+    contracts: {
+      "binance-smart-chain": "0xd69573a37ef9708863d7cd82039f289dd9d04050",
+    },
+  },
+  {
+    id: "ea-token",
+    symbol: "ea",
+    name: "EA Token",
+    image:
+      "https://assets.coingecko.com/coins/images/9525/large/ea.PNG?1568606285",
     contracts: {},
   },
   {
-    id: "sbank",
-    symbol: "sts",
-    name: "SBank",
+    id: "smartchem",
+    symbol: "smac",
+    name: "Smartchem",
     image:
-      "https://assets.coingecko.com/coins/images/10279/large/74302797_109806420469006_618028571075543040_o.png?1576971737",
+      "https://assets.coingecko.com/coins/images/20616/large/SMAC-icon200x200.png?1637309473",
     contracts: {
-      ethereum: "0x4c14114c107d6374ec31981f5f6cc27a13e22f9a",
+      ethereum: "0xb9964c8b9c48800678e72b2fe7b9b365d3d0019d",
     },
   },
   {
-    id: "fanzy",
-    symbol: "fx1",
-    name: "FANZY",
+    id: "babytraderjoe",
+    symbol: "bjoe",
+    name: "BabyTraderJoe",
     image:
-      "https://assets.coingecko.com/coins/images/11117/large/FX.png?1604900016",
+      "https://assets.coingecko.com/coins/images/20573/large/trader_joe_baby.png?1637242519",
     contracts: {
-      ethereum: "0xed0e2041bfb5a426e5ed426a73765624e08bbb75",
+      avalanche: "0xe703214808c3603a9da2609d52bdcf920e0a0edf",
+    },
+  },
+  {
+    id: "oec-kine",
+    symbol: "kinek",
+    name: "OEC KINE",
+    image:
+      "https://assets.coingecko.com/coins/images/18605/large/kinek.png?1632655365",
+    contracts: {
+      "okex-chain": "0xc05760d75e7f5ad428a906674ce7c7c82d003d01",
+    },
+  },
+  {
+    id: "badger-sett-badger",
+    symbol: "bbadger",
+    name: "Badger Sett Badger",
+    image:
+      "https://assets.coingecko.com/coins/images/14502/large/BADGER_DAO.png?1616559959",
+    contracts: {
+      ethereum: "0x19d97d8fa813ee2f51ad4b4e04ea08baf4dffc28",
+      fantom: "0x1f7216fdb338247512ec99715587bb97bbf96eae",
+    },
+  },
+  {
+    id: "eureka-coin",
+    symbol: "erk",
+    name: "Eureka Coin",
+    image:
+      "https://assets.coingecko.com/coins/images/8974/large/ERK-200px.png?1563403126",
+    contracts: {},
+  },
+  {
+    id: "oracle-system",
+    symbol: "orc",
+    name: "Oracle System",
+    image:
+      "https://assets.coingecko.com/coins/images/12517/large/www.oraclesystem.io-home-org-logo.png?1600382654",
+    contracts: {
+      ethereum: "0x324af2d5353f2dd138e234b359d30d67c64b1b20",
+    },
+  },
+  {
+    id: "global-reserve-system",
+    symbol: "glob",
+    name: "Global Reserve System",
+    image:
+      "https://assets.coingecko.com/coins/images/10773/large/g20.png?1583379257",
+    contracts: {
+      ethereum: "0x45f2ab0ca2116b2e1a70bf5e13293947b25d0272",
+    },
+  },
+  {
+    id: "tripedia",
+    symbol: "trip",
+    name: "Tripedia",
+    image:
+      "https://assets.coingecko.com/coins/images/11014/large/4-e1525270062824.png?1587113708",
+    contracts: {
+      ethereum: "0xae2fab175d20b7afa56f3bb32500b26dc62bf572",
+    },
+  },
+  {
+    id: "avanyan",
+    symbol: "anyan",
+    name: "AvaNyan",
+    image:
+      "https://assets.coingecko.com/coins/images/18829/large/yFekfMPo_400x400.jpg?1633560035",
+    contracts: {
+      avalanche: "0xf54501fbc97d5cb9c8b96480996a397e07516b2e",
+    },
+  },
+  {
+    id: "little-tsuki-inu",
+    symbol: "liltk",
+    name: "Little Tsuki Inu",
+    image:
+      "https://assets.coingecko.com/coins/images/19943/large/lil.png?1636336387",
+    contracts: {
+      ethereum: "0xcdf6e6d4b5c840478a4b38a5c42224f5c0e6f858",
+    },
+  },
+  {
+    id: "akuaku",
+    symbol: "akuaku",
+    name: "AkuAku",
+    image:
+      "https://assets.coingecko.com/coins/images/16651/large/finished-logo-coingecko.jpg?1624598298",
+    contracts: {
+      "binance-smart-chain": "0x02e5393758de06588634215afb71e7ee8b4362d0",
+    },
+  },
+  {
+    id: "limon-group",
+    symbol: "limon",
+    name: "Limon Group",
+    image:
+      "https://assets.coingecko.com/coins/images/15905/large/83708837.png?1622514935",
+    contracts: {
+      "binance-smart-chain": "0x712c0a4659a7c31a81fd5a47a2d83c63a07d7d06",
+    },
+  },
+  {
+    id: "germancoin",
+    symbol: "gcx",
+    name: "GermanCoin",
+    image:
+      "https://assets.coingecko.com/coins/images/11552/large/pNfx8Lc83ER33KaMGNgBpsN0fofGu0MwRO2eM3_1Q10nzOxqgFjM4Jbq2uHUiRlSJNyMzJi1guj4jyY-vH_00bGX2hOxE79RJX4n_6_mDp13h3GraWnxW0NvfXi1Oi3n8VwHnbX5Uf-c9K7dMJrmq5VQZPYUb2r7n_nud-D32uky7zZS4S55ilccvqocKtLMWnnNH5P5ABNuoP6a8Gd9f.jpg?1590998890",
+    contracts: {
+      ethereum: "0x44a67c8570a61a28bafd0035042f2f0a73a64428",
+    },
+  },
+  {
+    id: "shrek",
+    symbol: "shk",
+    name: "Shrek",
+    image:
+      "https://assets.coingecko.com/coins/images/18219/large/Untitled-design-4.png?1631007329",
+    contracts: {
+      "binance-smart-chain": "0xe44dd7cb0256241ca7eea20036bed27586fa13c4",
+    },
+  },
+  {
+    id: "3x-long-okb-token",
+    symbol: "okbbull",
+    name: "3X Long OKB Token",
+    image:
+      "https://assets.coingecko.com/coins/images/10431/large/683JEXMN_400x400.png?1579276257",
+    contracts: {
+      ethereum: "0x8af785687ee8d75114b028997c9ca36b5cc67bc4",
+    },
+  },
+  {
+    id: "arank",
+    symbol: "arank",
+    name: "Arank",
+    image:
+      "https://assets.coingecko.com/coins/images/19411/large/arank.PNG?1635211855",
+    contracts: {
+      "harmony-shard-0": "0xbd16b0b2eb520b7ff4a4156d367ee359ac19c531",
+    },
+  },
+  {
+    id: "yfe-money",
+    symbol: "YFE",
+    name: "YFE Money",
+    image:
+      "https://assets.coingecko.com/coins/images/12644/large/logo-round.png?1601373377",
+    contracts: {
+      ethereum: "0x33811d4edbcaed10a685254eb5d3c4e4398520d2",
+    },
+  },
+  {
+    id: "squeeze-token",
+    symbol: "SQUEEZE",
+    name: "Squeeze Token",
+    image:
+      "https://assets.coingecko.com/coins/images/18554/large/squeeze.png?1632377096",
+    contracts: {
+      ethereum: "0xabd4dc8fde9848cbc4ff2c0ee81d4a49f4803da4",
+    },
+  },
+  {
+    id: "budacoin",
+    symbol: "buda",
+    name: "BudaCoin",
+    image:
+      "https://assets.coingecko.com/coins/images/16426/large/photo_2021-08-26_21-17-27.jpg?1629984206",
+    contracts: {
+      "binance-smart-chain": "0x4b63f8c52e3286ca871cd66b7c84e26556b2de8e",
+    },
+  },
+  {
+    id: "3x-short-balancer-token",
+    symbol: "balbear",
+    name: "3X Short Balancer Token",
+    image:
+      "https://assets.coingecko.com/coins/images/12070/large/683JEXMN_400x400.png?1596709288",
+    contracts: {
+      ethereum: "",
+    },
+  },
+  {
+    id: "androttweiler-token",
+    symbol: "androttweiler",
+    name: "Androttweiler Token",
+    image:
+      "https://assets.coingecko.com/coins/images/16881/large/androt.jpg?1634890013",
+    contracts: {
+      ethereum: "0xa8c16fbecf1ae1bc1dcc87e6892f18f777e92c69",
+    },
+  },
+  {
+    id: "bizzcoin",
+    symbol: "bizz",
+    name: "BIZZCOIN",
+    image:
+      "https://assets.coingecko.com/coins/images/10979/large/bizzcoin.PNG?1586766076",
+    contracts: {
+      ethereum: "0x7a8ca2f815a260660158a38c34ca321a3605ecfe",
+    },
+  },
+  {
+    id: "frieza-inu",
+    symbol: "frinu",
+    name: "Frieza Inu",
+    image:
+      "https://assets.coingecko.com/coins/images/20005/large/Frinu_200px.png?1636365522",
+    contracts: {
+      ethereum: "0x5aa5ba99105469b10bd82cd22b3166c88d187e3b",
+    },
+  },
+  {
+    id: "our-pay",
+    symbol: "our",
+    name: "Our Pay",
+    image:
+      "https://assets.coingecko.com/coins/images/13936/large/Our_pay_logo.png?1612943572",
+    contracts: {
+      ethereum: "0xdff3d69a00759449f091561a0af99a218982bd7f",
+    },
+  },
+  {
+    id: "banana-bucks",
+    symbol: "bab",
+    name: "Banana Bucks",
+    image:
+      "https://assets.coingecko.com/coins/images/20592/large/_BAB_coinmedium.png?1637285029",
+    contracts: {
+      solana: "2Dzzc14S1D7cEFGJyMZMACuoQRHVUYFhVE74C5o8Fwau",
+    },
+  },
+  {
+    id: "levolution",
+    symbol: "levl",
+    name: "Levolution",
+    image:
+      "https://assets.coingecko.com/coins/images/7370/large/L_Icon_Blue_200x200.png?1618983083",
+    contracts: {
+      ethereum: "0x09970aec766b6f3223aca9111555e99dc50ff13a",
+    },
+  },
+  {
+    id: "asuka-inu",
+    symbol: "asuka",
+    name: "Asuka Inu",
+    image:
+      "https://assets.coingecko.com/coins/images/19608/large/asuka.jpeg?1635493162",
+    contracts: {
+      ethereum: "0x6864174805aa892c6049c79bc3d9ea7666a4e022",
+    },
+  },
+  {
+    id: "idle-wbtc-yield",
+    symbol: "idleWBTCYield",
+    name: "IdleWBTC (Best Yield)",
+    image:
+      "https://assets.coingecko.com/coins/images/11936/large/idlewbtcv3maxyield_32.png?1596263736",
+    contracts: {
+      ethereum: "0x8c81121b15197fa0eeaee1dc75533419dcfd3151",
+    },
+  },
+  {
+    id: "idle-susd-yield",
+    symbol: "idleSUSDYield",
+    name: "IdleSUSD (Yield)",
+    image:
+      "https://assets.coingecko.com/coins/images/11934/large/idlesusdv3mmaxyield_32.png?1596263703",
+    contracts: {
+      ethereum: "0xf52cdcd458bf455aed77751743180ec4a595fd3f",
     },
   },
   {
@@ -104558,327 +104542,139 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "per-project",
-    symbol: "per",
-    name: "PER Project",
+    id: "idle-usdt-risk-adjusted",
+    symbol: "IdleUSDTSafe",
+    name: "IdleUSDT (Risk Adjusted)",
     image:
-      "https://assets.coingecko.com/coins/images/15012/large/per.png?1622474149",
+      "https://assets.coingecko.com/coins/images/11931/large/idleusdt-safe.png?1596263270",
     contracts: {
-      "klay-token": "0x7eee60a000986e9efe7f5c90340738558c24317b",
+      ethereum: "0x28fac5334c9f7262b3a3fe707e250e01053e07b5",
     },
   },
   {
-    id: "iab",
-    symbol: "iab",
-    name: "IAB",
+    id: "oilage",
+    symbol: "oil",
+    name: "OILage",
     image:
-      "https://assets.coingecko.com/coins/images/6549/large/iabchain.png?1547042763",
+      "https://assets.coingecko.com/coins/images/11232/large/download_%2812%29.png?1589767119",
     contracts: {
-      ethereum: "0xded2583b3fbf4b381851f5031188a5a3562ab2cd",
+      ethereum: "0xa29a8e360c0cba25a3719763fde43a1ee570271d",
     },
   },
   {
-    id: "0-5x-long-theta-network-token",
-    symbol: "thetahalf",
-    name: "0.5X Long Theta Network Token",
+    id: "arteon",
+    symbol: "arteon",
+    name: "Arteon",
     image:
-      "https://assets.coingecko.com/coins/images/12027/large/683JEXMN_400x400.png?1596696952",
+      "https://assets.coingecko.com/coins/images/14771/large/arteon_200x200.png?1618369416",
     contracts: {
-      ethereum: "",
+      ethereum: "0x897abf83f0c44b86cb67ec56c006c00d56659517",
     },
   },
   {
-    id: "treasure-sl",
-    symbol: "tsl",
-    name: "Treasure SL",
+    id: "idle-usdt-yield",
+    symbol: "idleUSDTYield",
+    name: "IdleUSDT (Yield)",
     image:
-      "https://assets.coingecko.com/coins/images/8212/large/treasure_sl.png?1556527565",
+      "https://assets.coingecko.com/coins/images/11933/large/idleusdtv3maxyield_32.png?1596263688",
+    contracts: {
+      ethereum: "0xf34842d05a1c888ca02769a633df37177415c2f8",
+    },
+  },
+  {
+    id: "op-coin",
+    symbol: "opc",
+    name: "OP Coin",
+    image:
+      "https://assets.coingecko.com/coins/images/2447/large/op-coin.png?1548330224",
     contracts: {},
   },
   {
-    id: "renrenbit",
-    symbol: "rrb",
-    name: "Renrenbit",
+    id: "tzbtc",
+    symbol: "tzbtc",
+    name: "tzBTC",
     image:
-      "https://assets.coingecko.com/coins/images/9578/large/Renrenbit.png?1568961883",
+      "https://assets.coingecko.com/coins/images/19512/large/tzbtc.png?1635317869",
+    contracts: {
+      tezos: "KT1PWX2MNDUEOOD7FEMFBBDKX1D9BANNXITN_0",
+    },
+  },
+  {
+    id: "idle-dai-risk-adjusted",
+    symbol: "idleDAISafe",
+    name: "IdleDAI (Risk Adjusted)",
+    image:
+      "https://assets.coingecko.com/coins/images/11929/large/idledai-safe.png?1596263241",
+    contracts: {
+      ethereum: "0xa14ea0e11121e6e951e87c66afe460a00bcd6a16",
+    },
+  },
+  {
+    id: "life-token-v2",
+    symbol: "ltnv2",
+    name: "Life Token v2",
+    image:
+      "https://assets.coingecko.com/coins/images/20568/large/1-j2MSwg_400x400.jpg?1637225507",
+    contracts: {
+      "binance-smart-chain": "0x167e5455e4c978883b414e7f02c0147eec9a18e9",
+    },
+  },
+  {
+    id: "shibacock",
+    symbol: "cock",
+    name: "Shibacock",
+    image:
+      "https://assets.coingecko.com/coins/images/15447/large/Screenshot_7.png?1620814560",
+    contracts: {
+      "binance-smart-chain": "0x9fdce4bafccfc9e9dac362be6bb5fb5d2aba3a58",
+    },
+  },
+  {
+    id: "ebisu-network",
+    symbol: "ebs",
+    name: "Ebisu Network",
+    image:
+      "https://assets.coingecko.com/coins/images/17590/large/photo-2021-08-05-13-11-44.png?1628578409",
+    contracts: {
+      "binance-smart-chain": "0x48974e3b93575b8249fd797efa47ec8feebf0b64",
+    },
+  },
+  {
+    id: "camp",
+    symbol: "camp",
+    name: "Camp",
+    image:
+      "https://assets.coingecko.com/coins/images/13338/large/CampGlobal_256256.png?1607576849",
+    contracts: {
+      ethereum: "0xe9e73e1ae76d17a16cc53e3e87a9a7da78834d37",
+    },
+  },
+  {
+    id: "bonorum-coin",
+    symbol: "bono",
+    name: "Bonorum",
+    image:
+      "https://assets.coingecko.com/coins/images/10563/large/logo-256x256.png?1581024055",
     contracts: {},
   },
   {
-    id: "yfiexchange-finance",
-    symbol: "yfie",
-    name: "YFIEXCHANGE.FINANCE",
+    id: "polybius",
+    symbol: "plbt",
+    name: "Polybius",
     image:
-      "https://assets.coingecko.com/coins/images/12218/large/Logo_YFIE.png?1598238960",
-    contracts: {},
-  },
-  {
-    id: "deipool",
-    symbol: "dip",
-    name: "Deipool",
-    image:
-      "https://assets.coingecko.com/coins/images/13186/large/deipool.png?1606085265",
+      "https://assets.coingecko.com/coins/images/766/large/polybius.png?1547034516",
     contracts: {
-      ethereum: "0xd1517663883e2acc154178fb194e80e8bbc29730",
+      ethereum: "0x0affa06e7fbe5bc9a764c979aa66e8256a631f02",
     },
   },
   {
-    id: "rabbit-coin",
-    symbol: "brb",
-    name: "Rabbit Coin",
+    id: "badger-sett-digg",
+    symbol: "bdigg",
+    name: "Badger Sett Digg",
     image:
-      "https://assets.coingecko.com/coins/images/8614/large/312c7330-ffbb-4a29-9cd0-7336170bb8f9.png?1559628544",
+      "https://assets.coingecko.com/coins/images/14503/large/DIGG.png?1616560407",
     contracts: {
-      ethereum: "0x61d24aabb3e5e800d8f3d3d43dcbd66ae6cab51e",
-    },
-  },
-  {
-    id: "gw",
-    symbol: "gw",
-    name: "GW",
-    image:
-      "https://assets.coingecko.com/coins/images/20260/large/04CmcQR.jpeg?1636702913",
-    contracts: {
-      ethereum: "0x4be9fc99bd4102c6ddc68a1002af21852761b298",
-    },
-  },
-  {
-    id: "jackpot-army",
-    symbol: "jackpot",
-    name: "Jackpot Army",
-    image:
-      "https://assets.coingecko.com/coins/images/16536/large/logo400x400.png?1624351280",
-    contracts: {
-      "binance-smart-chain": "0xcd5b18bb97bfd0c67d6b0e5d4f63efba194a791f",
-    },
-  },
-  {
-    id: "fundin",
-    symbol: "fdn",
-    name: "FUNDIN",
-    image:
-      "https://assets.coingecko.com/coins/images/8576/large/3emFc3C__400x400.jpg?1559294128",
-    contracts: {},
-  },
-  {
-    id: "bogecoin",
-    symbol: "boge",
-    name: "Bogecoin",
-    image:
-      "https://assets.coingecko.com/coins/images/16231/large/boge.PNG?1623361888",
-    contracts: {
-      "binance-smart-chain": "0x248c45af3b2f73bc40fa159f2a90ce9cad7a77ba",
-    },
-  },
-  {
-    id: "chainsquare",
-    symbol: "chs",
-    name: "Chainsquare",
-    image:
-      "https://assets.coingecko.com/coins/images/14858/large/chainsquare.png?1618804636",
-    contracts: {
-      ethereum: "0xb41380174d0b06181513a5677b60200b93b5efb4",
-    },
-  },
-  {
-    id: "wrapped-usd",
-    symbol: "wusd",
-    name: "Wrapped USD",
-    image:
-      "https://assets.coingecko.com/coins/images/14691/large/StableLogo.png?1617808927",
-    contracts: {
-      ethereum: "0x7c974104df9dd7fb91205ab3d66d15aff1049de8",
-    },
-  },
-  {
-    id: "3x-short-tether-gold-token",
-    symbol: "xautbear",
-    name: "3X Short Tether Gold Token",
-    image:
-      "https://assets.coingecko.com/coins/images/11980/large/683JEXMN_400x400__1_.png?1596618975",
-    contracts: {
-      ethereum: "0x31cbf205e26ba63296fdbd254a6b1be3ed28ce47",
-    },
-  },
-  {
-    id: "dragonmoon",
-    symbol: "dmoon",
-    name: "DragonMoon",
-    image:
-      "https://assets.coingecko.com/coins/images/17177/large/dmoon.PNG?1626816912",
-    contracts: {
-      "binance-smart-chain": "0x8267d169e1483e01aacbcfd22d294c47ece9f07f",
-    },
-  },
-  {
-    id: "digi-dinar",
-    symbol: "ddr",
-    name: "Digi Dinar",
-    image:
-      "https://assets.coingecko.com/coins/images/8666/large/X02nUjMz_400x400.jpg?1560206597",
-    contracts: {},
-  },
-  {
-    id: "lucky-2",
-    symbol: "lucky",
-    name: "LUCKY",
-    image:
-      "https://assets.coingecko.com/coins/images/11127/large/title-bg.png?1588737239",
-    contracts: {
-      ethereum: "0xe478d4f4a87d4d641af97ca0b5cc3db61e266357",
-    },
-  },
-  {
-    id: "doge-token",
-    symbol: "doget",
-    name: "Doge Token",
-    image:
-      "https://assets.coingecko.com/coins/images/20458/large/PGOrmP9S_400x400.jpg?1637062322",
-    contracts: {
-      stellar: "GDOEVDDBU6OBWKL7VHDAOKD77UP4DKHQYKOKJJT5PR3WRDBTX35HUEUX",
-    },
-  },
-  {
-    id: "oec-zks",
-    symbol: "zksk",
-    name: "OEC ZKS",
-    image:
-      "https://assets.coingecko.com/coins/images/18600/large/zksk.png?1632653846",
-    contracts: {
-      "okex-chain": "0xcd08d321f6bc10a10f094e4b2e6c9b8bf9906401",
-    },
-  },
-  {
-    id: "giftbag",
-    symbol: "gbag",
-    name: "Giftbag",
-    image:
-      "https://assets.coingecko.com/coins/images/20593/large/oqwoymka_400x400.jpg?1637285892",
-    contracts: {
-      "binance-smart-chain": "0x6820f244b81d0906d70266cc9bccc2a8eaa5464c",
-    },
-  },
-  {
-    id: "babybnb",
-    symbol: "babybnb",
-    name: "BabyBNB",
-    image:
-      "https://assets.coingecko.com/coins/images/16780/large/Babybnb-logo-200px.png?1626961003",
-    contracts: {
-      "binance-smart-chain": "0xc1168b7b85b2bbc8a5c73c007b74e7523b2da209",
-    },
-  },
-  {
-    id: "blockchain-quotations-index-token",
-    symbol: "bqt",
-    name: "Blockchain Quotations Index Token",
-    image:
-      "https://assets.coingecko.com/coins/images/5814/large/blockchain-quotations-index-token.png?1547351058",
-    contracts: {
-      ethereum: "0x5eb87caa0105a63aa87a36c7bd2573bd13e84fae",
-    },
-  },
-  {
-    id: "geist-dai",
-    symbol: "gdai",
-    name: "Geist Dai",
-    image:
-      "https://assets.coingecko.com/coins/images/18997/large/preview-gallery-gDAIgecko_%281%29.png?1634790790",
-    contracts: {
-      fantom: "0x07e6332dd090d287d3489245038daf987955dcfb",
-    },
-  },
-  {
-    id: "ethereum-wrapped-filecoin",
-    symbol: "efil",
-    name: "Ethereum Wrapped Filecoin",
-    image:
-      "https://assets.coingecko.com/coins/images/18231/large/output-onlinepngtools_%287%29.png?1631060559",
-    contracts: {
-      ethereum: "0x4b7ee45f30767f36f06f79b32bf1fca6f726deda",
-    },
-  },
-  {
-    id: "bitcoinv",
-    symbol: "btcv",
-    name: "BitcoinV",
-    image:
-      "https://assets.coingecko.com/coins/images/8030/large/btc.png?1553484092",
-    contracts: {},
-  },
-  {
-    id: "polyshark-finance",
-    symbol: "shark",
-    name: "PolyShark Finance",
-    image:
-      "https://assets.coingecko.com/coins/images/15398/large/2KY2RdEo_400x400.png?1620714513",
-    contracts: {
-      "polygon-pos": "0xd201b8511aab3e9b094b35abcd5d7863c78d6d0e",
-    },
-  },
-  {
-    id: "robocalls",
-    symbol: "rc20",
-    name: "RoboCalls",
-    image:
-      "https://assets.coingecko.com/coins/images/7935/large/ms-icon-310x310.png?1552009545",
-    contracts: {
-      ethereum: "0x61b2d3ea9f1c6b387c985c73d40e8fbfb284e5c7",
-    },
-  },
-  {
-    id: "6ix9ine-chain",
-    symbol: "69c",
-    name: "6ix9ine Chain",
-    image:
-      "https://assets.coingecko.com/coins/images/11260/large/6ix9ineChain.png?1589789641",
-    contracts: {
-      ethereum: "0x02fdd6866333d8cd8b1ca022d382080698060bc2",
-    },
-  },
-  {
-    id: "project-x",
-    symbol: "nanox",
-    name: "Project-X",
-    image:
-      "https://assets.coingecko.com/coins/images/1435/large/project-x.png?1547035508",
-    contracts: {},
-  },
-  {
-    id: "glosfer-token",
-    symbol: "glo",
-    name: "Glosfer Token",
-    image:
-      "https://assets.coingecko.com/coins/images/9237/large/ItBMqQKt_400x400.jpg?1565336364",
-    contracts: {
-      ethereum: "0xc0e6737a29de7a00e2f6011924eb257106cb082f",
-    },
-  },
-  {
-    id: "gigecoin",
-    symbol: "gig",
-    name: "GigEcoin",
-    image:
-      "https://assets.coingecko.com/coins/images/7521/large/Screenshot_2019-01-22_at_7.10.46_PM.png?1548155892",
-    contracts: {},
-  },
-  {
-    id: "salmon",
-    symbol: "slm",
-    name: "Salmon",
-    image:
-      "https://assets.coingecko.com/coins/images/12349/large/salmon_swap_logo.png?1599202737",
-    contracts: {
-      tron: "TXyrq6xE49dJhBGBYRH4pZzq9QdXNKWUQa",
-    },
-  },
-  {
-    id: "fk-coin",
-    symbol: "fk",
-    name: "FK Coin",
-    image:
-      "https://assets.coingecko.com/coins/images/9801/large/logo.e944e891.png?1571918228",
-    contracts: {
-      ethereum: "0x903d78ca7d892e4518586d0b64f418bd4ca9a82d",
+      ethereum: "0x7e7e112a68d8d2e221e11047a72ffc1065c38e1a",
     },
   },
   {
@@ -105012,33 +104808,279 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "luckyseventoken",
-    symbol: "lst",
-    name: "LuckySevenToken",
+    id: "versess-coin",
+    symbol: "vers",
+    name: "VERSESS COIN",
     image:
-      "https://assets.coingecko.com/coins/images/10553/large/lst7.png?1580944195",
+      "https://assets.coingecko.com/coins/images/9246/large/logo_%281%29.png?1565561653",
+    contracts: {},
+  },
+  {
+    id: "0-5x-long-echange-token-index-token",
+    symbol: "exchhalf",
+    name: "0.5X Long Exchange Token Index Token",
+    image:
+      "https://assets.coingecko.com/coins/images/11997/large/683JEXMN_400x400.png?1596689896",
     contracts: {
-      ethereum: "0x6b9f1f092e0b10015a4391a80cd3e6b6cefd1728",
+      ethereum: "",
     },
   },
   {
-    id: "internet-exchange-token",
-    symbol: "inex",
-    name: "Internet Exchange Token",
+    id: "solarys",
+    symbol: "sola",
+    name: "Solarys",
     image:
-      "https://assets.coingecko.com/coins/images/11017/large/ftQxvUbk_400x400.jpg?1587127361",
+      "https://assets.coingecko.com/coins/images/15050/large/png-icon-200.png?1619560316",
     contracts: {
-      ethereum: "0xa2d77f8353cb2afd709aba4a967257511ecff716",
+      "binance-smart-chain": "0xdb8469dfe691b4521df510938c8a822db575fc83",
     },
   },
   {
-    id: "reborn-dollar",
-    symbol: "rebd",
-    name: "Reborn Dollar",
+    id: "mage-doge",
+    symbol: "mgdg",
+    name: "Mage Doge",
     image:
-      "https://assets.coingecko.com/coins/images/17505/large/reborn_token%28small_size%29.png?1628044455",
+      "https://assets.coingecko.com/coins/images/17491/large/A2zu7cU.png?1627968748",
     contracts: {
-      ethereum: "0x7fea8dda7462ac9f2ce62cf52ce9840e0e6a8c3b",
+      "binance-smart-chain": "0x274b148b6a1b4ebaba1054e5230192fcacaba899",
+    },
+  },
+  {
+    id: "stoner-doge",
+    symbol: "stoge",
+    name: "Stoner Doge Finance",
+    image:
+      "https://assets.coingecko.com/coins/images/14896/large/Stoge-logo.png?1618916387",
+    contracts: {
+      ethereum: "0x1296a923cd4f39116e0297d921fe25fe228552c6",
+    },
+  },
+  {
+    id: "dogezoo",
+    symbol: "dzoo",
+    name: "DogeZoo",
+    image:
+      "https://assets.coingecko.com/coins/images/18209/large/doge.PNG?1630995263",
+    contracts: {
+      "binance-smart-chain": "0x5419291d81c68c103363e06046f40a9056ab2b7f",
+    },
+  },
+  {
+    id: "bevo-digital-art-token",
+    symbol: "bevo",
+    name: "Bevo Digital Art Token",
+    image:
+      "https://assets.coingecko.com/coins/images/15777/large/flatvers1-300x300.png?1621835403",
+    contracts: {
+      "binance-smart-chain": "0xc6cb12df4520b7bf83f64c79c585b8462e18b6aa",
+    },
+  },
+  {
+    id: "0-5x-long-bitcoin-sv-token",
+    symbol: "bsvhalf",
+    name: "0.5X Long Bitcoin SV Token",
+    image:
+      "https://assets.coingecko.com/coins/images/12004/large/683JEXMN_400x400.png?1596691775",
+    contracts: {
+      ethereum: "",
+    },
+  },
+  {
+    id: "umee",
+    symbol: "umee",
+    name: "Umee",
+    image:
+      "https://assets.coingecko.com/coins/images/20635/large/umee.jpeg?1637399318",
+    contracts: {},
+  },
+  {
+    id: "babyavengers",
+    symbol: "avngrs",
+    name: "BabyAvengers",
+    image:
+      "https://assets.coingecko.com/coins/images/17701/large/logo_%283%29.png?1629073699",
+    contracts: {
+      "binance-smart-chain": "0xdad6d006ab190e536e2d256526d038d67303f577",
+    },
+  },
+  {
+    id: "zoomcoin",
+    symbol: "zoom",
+    name: "Zoomcoin",
+    image:
+      "https://assets.coingecko.com/coins/images/16913/large/zoom.PNG?1625621714",
+    contracts: {
+      tron: "TVQMfT8NuXwfZSCevNp1vYKb9q7vksT6R5",
+    },
+  },
+  {
+    id: "xkncb",
+    symbol: "xkncb",
+    name: "xKNCb",
+    image:
+      "https://assets.coingecko.com/coins/images/13996/large/Token-4.png?1613546873",
+    contracts: {
+      ethereum: "0x06890d4c65a4cb75be73d7ccb4a8ee7962819e81",
+    },
+  },
+  {
+    id: "finswap",
+    symbol: "fnsp",
+    name: "Finswap",
+    image:
+      "https://assets.coingecko.com/coins/images/12542/large/finswap-orange-200x200-1.png?1600663987",
+    contracts: {
+      ethereum: "0x3b78dc5736a49bd297dd2e4d62daa83d35a22749",
+    },
+  },
+  {
+    id: "voltium",
+    symbol: "vltm",
+    name: "Voltium",
+    image:
+      "https://assets.coingecko.com/coins/images/15349/large/voltm.PNG?1620625153",
+    contracts: {
+      ethereum: "0xaf5db2cc35ef9bba3cfa5f8faeedcf9b4e2f286f",
+    },
+  },
+  {
+    id: "torq-coin",
+    symbol: "torq",
+    name: "TORQ Coin",
+    image:
+      "https://assets.coingecko.com/coins/images/3486/large/torq-coin.png?1547038229",
+    contracts: {
+      ethereum: "0x1c65c261cb89178b02cf2aee20058b992787d770",
+    },
+  },
+  {
+    id: "vybe",
+    symbol: "vybe",
+    name: "Vybe",
+    image:
+      "https://assets.coingecko.com/coins/images/12438/large/22k5gGG.jpg?1609924524",
+    contracts: {
+      ethereum: "0x3a1c1d1c06be03cddc4d3332f7c20e1b37c97ce9",
+    },
+  },
+  {
+    id: "euro-token-2",
+    symbol: "euro",
+    name: "Euro Token",
+    image:
+      "https://assets.coingecko.com/coins/images/16247/large/euro.PNG?1623379765",
+    contracts: {
+      "binance-smart-chain": "0x3c2c8fc79d37c97cf41d0a2e0a4c89953e49cc4e",
+    },
+  },
+  {
+    id: "unicly-gone-studio-collection",
+    symbol: "ugone",
+    name: "Unicly Gone Studio Collection",
+    image:
+      "https://assets.coingecko.com/coins/images/15680/large/gone_studio.jpg?1621500252",
+    contracts: {
+      ethereum: "0xc9df0ed2e9ef4357b51db171ff08297d10875280",
+    },
+  },
+  {
+    id: "trich",
+    symbol: "trc",
+    name: "Trich",
+    image:
+      "https://assets.coingecko.com/coins/images/13522/large/CrbB7XreGBKz4kiitz_I2Jx1UsgzJy4PZrb-qk7dTaaJ2s7o6b0YwNH9S81mfM_HmDDfM5e6Z13y_puaEil9cKboJzPUV1agyYPuUftO0OQdaK7QrU_hFWu7h9shv0ahYXMYAP7NEIJc-MXHyIdGfq7Q74KB-SHtl1TXA9Wn-CM-to06kJNK4J-hpJn5ZvTiLRk_aKkxtm4gGJ_.jpg?1609375445",
+    contracts: {
+      tron: "",
+    },
+  },
+  {
+    id: "pikto-group",
+    symbol: "pkp",
+    name: "Pikto Group",
+    image:
+      "https://assets.coingecko.com/coins/images/13105/large/a-11-e1604828151917-1024x799.png?1605235252",
+    contracts: {
+      ethereum: "0x6a532b08c654a1a86069b74c560d8fa0ff842218",
+    },
+  },
+  {
+    id: "zbank-token",
+    symbol: "zbk",
+    name: "Zbank Token",
+    image:
+      "https://assets.coingecko.com/coins/images/11820/large/zbank2.png?1594681143",
+    contracts: {
+      ethereum: "0x29257908879c5792f1bb25449a7209205434dc3f",
+    },
+  },
+  {
+    id: "xlshiba",
+    symbol: "xlshiba",
+    name: "XLSHIBA",
+    image:
+      "https://assets.coingecko.com/coins/images/19802/large/xlshiba.png?1635909741",
+    contracts: {
+      ethereum: "0x443c31b525791b4bfb1cf67196475cb27b834b67",
+    },
+  },
+  {
+    id: "1x-short-tomochain-token",
+    symbol: "tomohedge",
+    name: "1X Short TomoChain Token",
+    image:
+      "https://assets.coingecko.com/coins/images/12049/large/683JEXMN_400x400.png?1596702543",
+    contracts: {
+      ethereum: "",
+    },
+  },
+  {
+    id: "0-5x-long-dragon-index-token",
+    symbol: "drgnhalf",
+    name: "0.5X Long Dragon Index Token",
+    image:
+      "https://assets.coingecko.com/coins/images/12001/large/683JEXMN_400x400.png?1596690694",
+    contracts: {
+      ethereum: "",
+    },
+  },
+  {
+    id: "kong-defi",
+    symbol: "kong",
+    name: "Kong Defi",
+    image:
+      "https://assets.coingecko.com/coins/images/14490/large/IMG_4643.png?1620025009",
+    contracts: {
+      ethereum: "0x7c3cf2d43b50e78e27a81293a43fcac45796fb54",
+    },
+  },
+  {
+    id: "saitama-kitty",
+    symbol: "saikitty",
+    name: "Saitama Kitty",
+    image:
+      "https://assets.coingecko.com/coins/images/20186/large/isY65Cv.png?1636611192",
+    contracts: {
+      "binance-smart-chain": "0x8ad579a3258ffd4235e619d0001cb6ad7d9a25cf",
+    },
+  },
+  {
+    id: "gaberise",
+    symbol: "gabr",
+    name: "GabeRise",
+    image:
+      "https://assets.coingecko.com/coins/images/16794/large/gabe.PNG?1625036583",
+    contracts: {
+      "binance-smart-chain": "0xa610e3b12641abefd4383b0889e51756e490dbf0",
+    },
+  },
+  {
+    id: "grandma-doge",
+    symbol: "gdoge",
+    name: "Grandma Doge",
+    image:
+      "https://assets.coingecko.com/coins/images/16988/large/logo_%2820%29.png?1625957577",
+    contracts: {
+      "binance-smart-chain": "0x624ef4e11a393b9843579db37b24322b64f83fb9",
     },
   },
   {
@@ -105052,68 +105094,461 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "coin-guardian",
-    symbol: "cgd",
-    name: "Coin Guardian",
+    id: "thecash",
+    symbol: "tch",
+    name: "THECASH",
     image:
-      "https://assets.coingecko.com/coins/images/16847/large/S_xp-TLP_400x400.jpg?1625405384",
+      "https://assets.coingecko.com/coins/images/11851/large/thecash_logo_200.png?1595165242",
     contracts: {
-      "binance-smart-chain": "0xebf66828c3d2f86e3bd59222bd7570973800c26b",
+      ethereum: "0xcd475371e39c0d94e82fccc9dd0ea710d0dc0c0b",
     },
   },
   {
-    id: "predictz",
-    symbol: "prdz",
-    name: "Predictz",
+    id: "babycare",
+    symbol: "babycare",
+    name: "BabyCare",
     image:
-      "https://assets.coingecko.com/coins/images/13376/large/Predictz_Transperant.png?1608021631",
+      "https://assets.coingecko.com/coins/images/19067/large/babycare.png?1634269618",
     contracts: {
-      ethereum: "0x4e085036a1b732cbe4ffb1c12ddfdd87e7c3664d",
+      "binance-smart-chain": "0x988300f65191c3a52ef59dbb5539c01b502787a9",
     },
   },
   {
-    id: "aqt-token",
-    symbol: "aqt",
-    name: "AQT Token",
+    id: "defidrop",
+    symbol: "drops",
+    name: "DefiDrop",
     image:
-      "https://assets.coingecko.com/coins/images/9731/large/logo_%284%29.png?1571305654",
+      "https://assets.coingecko.com/coins/images/15318/large/defidrop.PNG?1620511563",
+    contracts: {
+      "binance-smart-chain": "0x4d2e266267f756d54c09afd1d1473c7739eb7020",
+    },
+  },
+  {
+    id: "minibaby",
+    symbol: "MBBY",
+    name: "MiniBaby",
+    image:
+      "https://assets.coingecko.com/coins/images/18326/large/download-1.png?1631533265",
+    contracts: {
+      "binance-smart-chain": "0x170a687fea3cced46d76c38278e997409fa66760",
+    },
+  },
+  {
+    id: "integrity",
+    symbol: "grit",
+    name: "Integrity",
+    image:
+      "https://assets.coingecko.com/coins/images/16156/large/VXtaA63.png?1623136583",
+    contracts: {
+      "binance-smart-chain": "0x35d05fd35396b25209b5c2e4c2fde2303f6e9b9e",
+    },
+  },
+  {
+    id: "harta-tech",
+    symbol: "harta",
+    name: "Harta Tech",
+    image:
+      "https://assets.coingecko.com/coins/images/14813/large/hartalogocoingecko.png?1618542976",
+    contracts: {
+      "binance-smart-chain": "0x0b3eee5724730b57caf2a108451c7366230155c4",
+    },
+  },
+  {
+    id: "elon-diamond-hands",
+    symbol: "edh",
+    name: "Elon Diamond Hands",
+    image:
+      "https://assets.coingecko.com/coins/images/15821/large/83nQGjea_400x400.jpg?1621999765",
+    contracts: {
+      ethereum: "0x3b046fde911d3b6f9caa4759dbcfb034a87648ba",
+    },
+  },
+  {
+    id: "bgt",
+    symbol: "bgt",
+    name: "BGT",
+    image:
+      "https://assets.coingecko.com/coins/images/6666/large/bgt.jpg?1547042870",
+    contracts: {
+      ethereum: "0x5cbb89b03534d82692b183882c2a2a9ff7fdeb44",
+    },
+  },
+  {
+    id: "voda-token",
+    symbol: "wdt",
+    name: "VODA TOKEN",
+    image:
+      "https://assets.coingecko.com/coins/images/8534/large/wdt.png?1559115489",
+    contracts: {
+      ethereum: "0xd110bb8a24b100c37af7310416e685af807c1f10",
+    },
+  },
+  {
+    id: "1x-short-okb-token",
+    symbol: "okbhedge",
+    name: "1X Short OKB Token",
+    image:
+      "https://assets.coingecko.com/coins/images/12057/large/683JEXMN_400x400.png?1596704656",
+    contracts: {
+      ethereum: "0x889bc62e94bb6902d022bb82b38f7fcd637df28c",
+    },
+  },
+  {
+    id: "gcnx-token",
+    symbol: "gcnx",
+    name: "GCNX Token",
+    image:
+      "https://assets.coingecko.com/coins/images/17338/large/TXz3FUPFavAVVqdrBSC6trvSFL7FCTLr5W.jpeg?1627355135",
+    contracts: {
+      tron: "TXz3FUPFavAVVqdrBSC6trvSFL7FCTLr5W",
+    },
+  },
+  {
+    id: "tom-inu",
+    symbol: "tinu",
+    name: "Tom Inu",
+    image:
+      "https://assets.coingecko.com/coins/images/16505/large/tom-cg-logo.png?1624269653",
+    contracts: {
+      ethereum: "0x2d0e64b6bf13660a4c0de42a0b88144a7c10991f",
+    },
+  },
+  {
+    id: "crypto-hounds",
+    symbol: "cth",
+    name: "Crypto Hounds",
+    image:
+      "https://assets.coingecko.com/coins/images/18015/large/Crypto-Hounds.png?1630239997",
+    contracts: {
+      "binance-smart-chain": "0xb7148ae5745f4753673511b1315d6089e64d83d1",
+    },
+  },
+  {
+    id: "0-5x-long-tether-gold-token",
+    symbol: "xauthalf",
+    name: "0.5X Long Tether Gold Token",
+    image:
+      "https://assets.coingecko.com/coins/images/12031/large/683JEXMN_400x400.png?1596698173",
+    contracts: {
+      ethereum: "",
+    },
+  },
+  {
+    id: "baby-shiba",
+    symbol: "bhiba",
+    name: "Baby Shiba",
+    image:
+      "https://assets.coingecko.com/coins/images/15426/large/NAFfUZrX_400x400.jpg?1620788063",
+    contracts: {
+      ethereum: "0x4a6be56a211a4c4e0dd4474d524138933c17f3e3",
+    },
+  },
+  {
+    id: "usda",
+    symbol: "usda",
+    name: "USDA",
+    image:
+      "https://assets.coingecko.com/coins/images/10280/large/71706577_106238760785222_2649249116525166592_n.png?1576972115",
+    contracts: {
+      ethereum: "0x3c7b464376db7c9927930cf50eefdea2eff3a66a",
+    },
+  },
+  {
+    id: "robet-coin",
+    symbol: "robet",
+    name: "RoBet Coin",
+    image:
+      "https://assets.coingecko.com/coins/images/6286/large/RoBet_Coin.png?1547042328",
+    contracts: {
+      ethereum: "0x2344871f523cbb28a4f60045531184cf1f03ad24",
+    },
+  },
+  {
+    id: "100man",
+    symbol: "man",
+    name: "100Man",
+    image:
+      "https://assets.coingecko.com/coins/images/18029/large/rzlfBOs.png?1630293443",
+    contracts: {
+      kardiachain: "0x0acfaa0d0cca295672e09ad906240c03d54f286a",
+    },
+  },
+  {
+    id: "get-doge",
+    symbol: "getdoge",
+    name: "Get Doge",
+    image:
+      "https://assets.coingecko.com/coins/images/17236/large/getdoge-icon-200.png?1626931424",
+    contracts: {
+      "binance-smart-chain": "0x5ee36c0a5e96220f9dcde6a068c5f4e597f83fbb",
+    },
+  },
+  {
+    id: "crypto-excellence",
+    symbol: "ce",
+    name: "Crypto Excellence",
+    image:
+      "https://assets.coingecko.com/coins/images/14809/large/ce.PNG?1618539068",
+    contracts: {
+      ethereum: "0x8f12dfc7981de79a8a34070a732471f2d335eece",
+    },
+  },
+  {
+    id: "adena-finance",
+    symbol: "adena",
+    name: "Adena Finance",
+    image:
+      "https://assets.coingecko.com/coins/images/20552/large/hII-XM15_400x400.jpg?1637206004",
+    contracts: {
+      "harmony-shard-0": "0x97594e465e6b4df48e58327f566a3f79e9274655",
+    },
+  },
+  {
+    id: "wenburn",
+    symbol: "wenb",
+    name: "WenBurn",
+    image:
+      "https://assets.coingecko.com/coins/images/12557/large/moonOnFire.jpg?1600746273",
+    contracts: {
+      ethereum: "0x46f4e420c75401494a39b70653f4bbb88ad2d728",
+    },
+  },
+  {
+    id: "goonrich",
+    symbol: "goon",
+    name: "GoonRich",
+    image:
+      "https://assets.coingecko.com/coins/images/16361/large/goontoken.png?1623812806",
+    contracts: {
+      ethereum: "0xb0302d59237e6104c3f0d145996302f044797ca5",
+    },
+  },
+  {
+    id: "dream-swap",
+    symbol: "dream",
+    name: "Dream Swap",
+    image:
+      "https://assets.coingecko.com/coins/images/13033/large/dream_32.png?1604503082",
+    contracts: {
+      ethereum: "0xa93d5cfaa41193b13321c035b4bdd2b534172762",
+    },
+  },
+  {
+    id: "hype-bet",
+    symbol: "hypebet",
+    name: "Hype.Bet",
+    image:
+      "https://assets.coingecko.com/coins/images/13296/large/Hype-Bet-Token-Logo.png?1607074281",
+    contracts: {
+      ethereum: "0xc9dfcd0a1dd2d7bb6fd2ef91a16a6a1c4e9846dd",
+    },
+  },
+  {
+    id: "forexcoin",
+    symbol: "forex",
+    name: "FOREXCOIN",
+    image:
+      "https://assets.coingecko.com/coins/images/6852/large/forex-logo.PNG?1547043174",
+    contracts: {
+      ethereum: "0xa4e9584daa093cb1205e17ba737c3fd015748087",
+    },
+  },
+  {
+    id: "dacsee",
+    symbol: "dacs",
+    name: "Dacsee",
+    image:
+      "https://assets.coingecko.com/coins/images/4834/large/dacsee-token-logo.png?1547040217",
+    contracts: {
+      ethereum: "0xa31108e5bab5494560db34c95492658af239357c",
+    },
+  },
+  {
+    id: "polkabase",
+    symbol: "pbase",
+    name: "Polkabase",
+    image:
+      "https://assets.coingecko.com/coins/images/13954/large/polkabase_logo.png?1613301180",
+    contracts: {
+      ethereum: "0x44b537b6f94c73a54f7bf8a9b68f8125da3c330b",
+    },
+  },
+  {
+    id: "healthchainus",
+    symbol: "hcut",
+    name: "HealthChainUS",
+    image:
+      "https://assets.coingecko.com/coins/images/11868/large/60633927_588600498303961_3291974703035449344_n.png?1595496238",
+    contracts: {
+      ethereum: "0xd31a9d28d66a1f7e62b5565416ea14607690f788",
+    },
+  },
+  {
+    id: "alliance-x-trading",
+    symbol: "axt",
+    name: "Alliance X Trading",
+    image:
+      "https://assets.coingecko.com/coins/images/11124/large/a02f067fc027d99c4f1b1d36ad98205c.png?1588734944",
+    contracts: {
+      eos: "",
+    },
+  },
+  {
+    id: "oec-auction",
+    symbol: "auctionk",
+    name: "OEC AUCTION",
+    image:
+      "https://assets.coingecko.com/coins/images/18601/large/auctionk.png?1632654033",
+    contracts: {
+      "okex-chain": "0x77df6ebec3316792d4ea5bc0f8286c27905aa8e8",
+    },
+  },
+  {
+    id: "aeur",
+    symbol: "aeur",
+    name: "AEUR",
+    image:
+      "https://assets.coingecko.com/coins/images/7811/large/fpboa2ok_400x400.jpg?1550776818",
+    contracts: {
+      ardor: "",
+    },
+  },
+  {
+    id: "emojis-farm",
+    symbol: "emoji",
+    name: "Emojis Farm",
+    image:
+      "https://assets.coingecko.com/coins/images/13341/large/emojis_farm.png?1607588447",
+    contracts: {
+      ethereum: "0xcbd380c2d84deafed09f79863705353505764f26",
+    },
+  },
+  {
+    id: "bitcoin-instant",
+    symbol: "bti",
+    name: "Bitcoin Instant",
+    image:
+      "https://assets.coingecko.com/coins/images/4759/large/bitcoin-instant-logo.png?1547040082",
     contracts: {},
   },
   {
-    id: "holiday-chain",
-    symbol: "hcc",
-    name: "Holiday Chain",
+    id: "tronipay",
+    symbol: "trp",
+    name: "Tronipay",
     image:
-      "https://assets.coingecko.com/coins/images/9760/large/hcc.PNG?1571439226",
-    contracts: {},
-  },
-  {
-    id: "web-token-pay",
-    symbol: "wtp",
-    name: "Web Token Pay",
-    image:
-      "https://assets.coingecko.com/coins/images/8720/large/logo_%2828%29.png?1560397140",
+      "https://assets.coingecko.com/coins/images/8152/large/tronipay-logo.jpg?1555571959",
     contracts: {
-      ethereum: "0x1680cfdad75da2bb56ded4f36bb9423c86ffa7b7",
+      ethereum: "0x9b1e1fc958b83e801d1342f9f9ba7da3a55ba1ef",
     },
   },
   {
-    id: "afrodex-labs-token",
-    symbol: "afdlt",
-    name: "AfroDex Labs Token",
+    id: "beautyk",
+    symbol: "btkc",
+    name: "BeautyK",
     image:
-      "https://assets.coingecko.com/coins/images/9908/large/GOLDEN_TOKEN_4.png?1575868746",
+      "https://assets.coingecko.com/coins/images/12189/large/logo_%2891%29.png?1597963518",
     contracts: {
-      ethereum: "0xd8a8843b0a5aba6b030e92b3f4d669fad8a5be50",
+      ethereum: "0x6682195e2a0048ce38b727a3711802d58244606e",
     },
   },
   {
-    id: "stader",
-    symbol: "sd",
-    name: "Stader",
+    id: "transparent-token",
+    symbol: "transparent",
+    name: "Transparent Token",
     image:
-      "https://assets.coingecko.com/coins/images/20658/large/1_xbgTj5cMVuuWvXz0hy-uIg.jpeg?1637530302",
+      "https://assets.coingecko.com/coins/images/17823/large/transparent_logo_small.png?1629346496",
+    contracts: {
+      ethereum: "0x4ebe2c526ee3ed4791a02960f53f65645f404ed6",
+    },
+  },
+  {
+    id: "polyplay",
+    symbol: "play",
+    name: "PolyPlay",
+    image:
+      "https://assets.coingecko.com/coins/images/17314/large/09ee5fe7-7f9c-4e77-8872-d9053ac2a936.png?1627287780",
+    contracts: {
+      "binance-smart-chain": "0x9a3077f34cc30f9bf8e93a0369119bae0113d9cc",
+      ethereum: "0x130966628846bfd36ff31a822705796e8cb8c18d",
+    },
+  },
+  {
+    id: "yokai-network",
+    symbol: "yokai",
+    name: "Yokai Network",
+    image:
+      "https://assets.coingecko.com/coins/images/20361/large/t1VJM5h.png?1636945441",
+    contracts: {
+      ethereum: "0xb499b5a97bdbc3e117d15b448daacc9305025689",
+    },
+  },
+  {
+    id: "ymen-finance",
+    symbol: "ymen",
+    name: "Ymen.Finance",
+    image:
+      "https://assets.coingecko.com/coins/images/12452/large/logoymen.png?1603008881",
+    contracts: {
+      ethereum: "0xd0c59798f986d333554688cd667033d469c2398e",
+    },
+  },
+  {
+    id: "hustle-token",
+    symbol: "husl",
+    name: "Hustle Token",
+    image:
+      "https://assets.coingecko.com/coins/images/10680/large/hlhfVHeb_400x400.jpg?1581804351",
+    contracts: {
+      ethereum: "0x56be94d29e1125d2d61d06629c1b251d72c1b3b3",
+    },
+  },
+  {
+    id: "football-inu",
+    symbol: "finu",
+    name: "Football Inu",
+    image:
+      "https://assets.coingecko.com/coins/images/16523/large/football_inu.PNG?1624332778",
+    contracts: {
+      ethereum: "0x48a3d9510f7c2aa61a285ccb4eaa5ba072692468",
+    },
+  },
+  {
+    id: "niubiswap",
+    symbol: "niu",
+    name: "Niubiswap",
+    image:
+      "https://assets.coingecko.com/coins/images/15158/large/niu.png?1619996852",
+    contracts: {
+      "binance-smart-chain": "0xfa90d5d5ff08d9a06c9fdf89b4b22217b9dbc418",
+    },
+  },
+  {
+    id: "hype-finance",
+    symbol: "hype",
+    name: "Hype Finance",
+    image:
+      "https://assets.coingecko.com/coins/images/13193/large/hype_finance_logo.png?1606109896",
+    contracts: {
+      ethereum: "0x610c67be018a5c5bdc70acd8dc19688a11421073",
+    },
+  },
+  {
+    id: "dota-finance",
+    symbol: "dota",
+    name: "Dota Finance",
+    image:
+      "https://assets.coingecko.com/coins/images/16256/large/dota_200_200.png?1623400372",
     contracts: {},
+  },
+  {
+    id: "megarise",
+    symbol: "megarise",
+    name: "MegaRise",
+    image:
+      "https://assets.coingecko.com/coins/images/16425/large/megarise.PNG?1623992754",
+    contracts: {
+      "binance-smart-chain": "0x3ec7ba1b86387b8cb323eac3f2aae217c876f9a7",
+    },
   },
   {
     id: "qdefi-governance-token-v2.0",
@@ -105126,33 +105561,41 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "eurxb",
-    symbol: "eurxb",
-    name: "EURxb",
+    id: "rug",
+    symbol: "rug",
+    name: "Rug",
     image:
-      "https://assets.coingecko.com/coins/images/14300/large/eurxb.png?1615341210",
+      "https://assets.coingecko.com/coins/images/12307/large/rug_token_logo.png?1599029152",
     contracts: {
-      ethereum: "0x0bead9a1bcc1b84d06e3f2df67e3549fd55ab054",
+      ethereum: "0xd0df3b1cf729a29b7404c40d61c750008e631ba7",
     },
   },
   {
-    id: "tronx-coin",
-    symbol: "tronx",
-    name: "TronX coin",
+    id: "standard-token",
+    symbol: "tst",
+    name: "Standard Token",
     image:
-      "https://assets.coingecko.com/coins/images/12703/large/t200.png?1601867720",
+      "https://assets.coingecko.com/coins/images/20598/large/tst.png?1638251569",
     contracts: {
-      tron: "TA1UcPfy1Tie4SdTKpjwrjdnpBd2WT51Ss",
+      ethereum: "0xa0b93b9e90ab887e53f9fb8728c009746e989b53",
     },
   },
   {
-    id: "yearn-finance-protocol",
-    symbol: "yfp",
-    name: "Yearn Finance Protocol",
+    id: "dkk-token",
+    symbol: "dkkt",
+    name: "DKK Token",
     image:
-      "https://assets.coingecko.com/coins/images/12363/large/yearn.jpg?1599309396",
+      "https://assets.coingecko.com/coins/images/8338/large/logo_%2818%29.png?1557603828",
+    contracts: {},
+  },
+  {
+    id: "ecomverse-finance",
+    symbol: "ecov",
+    name: "EcomVerse Finance",
+    image:
+      "https://assets.coingecko.com/coins/images/20477/large/Ads-z-tasar-m-4.png?1637114029",
     contracts: {
-      ethereum: "0x96d62cdcd1cc49cb6ee99c867cb8812bea86b9fa",
+      "binance-smart-chain": "0x2c002a7058053bd0eebc82b43c531e23e2ad9bef",
     },
   },
   {
@@ -105166,21 +105609,427 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "walnut-finance",
-    symbol: "wtf",
-    name: "Walnut.finance",
+    id: "iron-bank-jpy",
+    symbol: "ibjpy",
+    name: "Iron Bank JPY",
     image:
-      "https://assets.coingecko.com/coins/images/12301/large/photo_2020-08-31_04-24-32.jpg?1598968170",
+      "https://assets.coingecko.com/coins/images/18364/large/jpy.png?1631634116",
     contracts: {
-      ethereum: "0x0501e7a02c285b9b520fdbf1badc74ae931ad75d",
+      ethereum: "0x5555f75e3d5278082200fb451d1b6ba946d8e13b",
     },
   },
   {
-    id: "0-5x-long-defi-index-token",
-    symbol: "defihalf",
-    name: "0.5X Long DeFi Index Token",
+    id: "dxy-finance",
+    symbol: "dxy",
+    name: "DXY Finance",
     image:
-      "https://assets.coingecko.com/coins/images/12013/large/683JEXMN_400x400__1_.png?1596692965",
+      "https://assets.coingecko.com/coins/images/12839/large/dxy_finance.png?1602903489",
+    contracts: {
+      ethereum: "0x39fa206c1648944f92e8f7b626e1cbdf78d7e9db",
+    },
+  },
+  {
+    id: "compounder",
+    symbol: "cp3r",
+    name: "Compounder",
+    image:
+      "https://assets.coingecko.com/coins/images/13182/large/compounder_logo.png?1606018434",
+    contracts: {
+      ethereum: "0x7ef1081ecc8b5b5b130656a41d4ce4f89dbbcc8c",
+    },
+  },
+  {
+    id: "crypto-pote-token",
+    symbol: "pope",
+    name: "Crypto Pote Token",
+    image:
+      "https://assets.coingecko.com/coins/images/16404/large/crypto-pope-LOGO.png?1623915534",
+    contracts: {
+      "binance-smart-chain": "0x82e684d9e0a2892e7d2ada8c8e1dcdc33ee4b645",
+    },
+  },
+  {
+    id: "hygenercoin",
+    symbol: "hg",
+    name: "Hygenercoin",
+    image:
+      "https://assets.coingecko.com/coins/images/8817/large/60762471_431874227611586_5376521021266329600_n.png?1561551785",
+    contracts: {
+      ethereum: "0x1bc9f31c327ce04b6fa9d56fd84c14cc0b0a4f47",
+    },
+  },
+  {
+    id: "moonghost",
+    symbol: "moonghost",
+    name: "MoonGhost",
+    image:
+      "https://assets.coingecko.com/coins/images/16117/large/moonghost.JPG?1623033498",
+    contracts: {
+      "binance-smart-chain": "0xf818d092beaf21beafe6acdd8230bd5f7b861d9c",
+    },
+  },
+  {
+    id: "neeva-defi",
+    symbol: "nva",
+    name: "Neeva Defi",
+    image:
+      "https://assets.coingecko.com/coins/images/12919/large/NEEVA-TOKEN-1-1.png?1603667387",
+    contracts: {
+      ethereum: "0x38f7cd43662d1cff4cc3c2c4b749f7cfed1d1db3",
+    },
+  },
+  {
+    id: "blue-eyes-white-doge",
+    symbol: "bdoge",
+    name: "Blue Eyes White Doge",
+    image:
+      "https://assets.coingecko.com/coins/images/15436/large/256.jpg?1620800814",
+    contracts: {
+      ethereum: "0x37092dbf8c26da9cc805683b4cc0b942e92de2fd",
+    },
+  },
+  {
+    id: "99masternodes",
+    symbol: "nmn",
+    name: "99Masternodes",
+    image:
+      "https://assets.coingecko.com/coins/images/8218/large/logo_1_whiteSymbol.png?1556588307",
+    contracts: {},
+  },
+  {
+    id: "bitz",
+    symbol: "bitz",
+    name: "bitz",
+    image:
+      "https://assets.coingecko.com/coins/images/249/large/bitz.png?1547034019",
+    contracts: {},
+  },
+  {
+    id: "vader-protocol",
+    symbol: "vader",
+    name: "Vader Protocol",
+    image:
+      "https://assets.coingecko.com/coins/images/20497/large/AcF08Jk1_400x400.jpg?1637131991",
+    contracts: {
+      ethereum: "0x2602278ee1882889b946eb11dc0e810075650983",
+    },
+  },
+  {
+    id: "timeminer",
+    symbol: "time",
+    name: "TimeMiner",
+    image:
+      "https://assets.coingecko.com/coins/images/12280/large/2WTMX74.png?1598739901",
+    contracts: {
+      ethereum: "0xa54c67bd320da4f9725a6f585b7635a0c09b122e",
+    },
+  },
+  {
+    id: "bit-public-talent-network",
+    symbol: "bptn",
+    name: "Bit Public Talent Network",
+    image:
+      "https://assets.coingecko.com/coins/images/8412/large/7f346702db390a289f5770f008563173.png?1558077057",
+    contracts: {
+      ethereum: "0x6c22b815904165f3599f0a4a092d458966bd8024",
+    },
+  },
+  {
+    id: "unicly-the-day-by-arc-collection",
+    symbol: "uarc",
+    name: "Unicly The Day by Arc Collection",
+    image:
+      "https://assets.coingecko.com/coins/images/15677/large/uarc.jpg?1621499433",
+    contracts: {
+      ethereum: "0x44440bd68b5e4b1e0cb810669097e9573175601b",
+    },
+  },
+  {
+    id: "crypto-bank-coin",
+    symbol: "cbc",
+    name: "Crypto Bank Coin",
+    image:
+      "https://assets.coingecko.com/coins/images/17804/large/EKoGgR5.jpeg?1629292325",
+    contracts: {
+      "binance-smart-chain": "0xb6ff6d6dfb0545cd620c99194a9a787ccaf797f3",
+    },
+  },
+  {
+    id: "the-portal",
+    symbol: "portal",
+    name: "The Portal",
+    image:
+      "https://assets.coingecko.com/coins/images/17986/large/download_%2832%29.png?1630029972",
+    contracts: {
+      ethereum: "0x1d9f8ab6dd1cf13874efce60fc35daf801c65d72",
+    },
+  },
+  {
+    id: "the-metaonez",
+    symbol: "meta",
+    name: "The MetaONEz",
+    image:
+      "https://assets.coingecko.com/coins/images/14367/large/metaonez.png?1615730788",
+    contracts: {
+      ethereum: "0xc0bfeba72805f22dc18dde31467c5a55c16ff57b",
+    },
+  },
+  {
+    id: "hyruleswap",
+    symbol: "rupee",
+    name: "HyruleSwap",
+    image:
+      "https://assets.coingecko.com/coins/images/14760/large/2_%284%29.png?1618274227",
+    contracts: {
+      "binance-smart-chain": "0x7b0409a3a3f79baa284035d48e1dfd581d7d7654",
+    },
+  },
+  {
+    id: "afrodex-labs-token",
+    symbol: "afdlt",
+    name: "AfroDex Labs Token",
+    image:
+      "https://assets.coingecko.com/coins/images/9908/large/GOLDEN_TOKEN_4.png?1575868746",
+    contracts: {
+      ethereum: "0xd8a8843b0a5aba6b030e92b3f4d669fad8a5be50",
+    },
+  },
+  {
+    id: "attlas-token",
+    symbol: "ats",
+    name: "Attlas Token",
+    image:
+      "https://assets.coingecko.com/coins/images/17309/large/logo-ats.png?1627275209",
+    contracts: {
+      ethereum: "0xb9a6644bef37286fc08e703ecd15e9dedf78d3eb",
+    },
+  },
+  {
+    id: "swiftmoon",
+    symbol: "smoon",
+    name: "SwiftMoon",
+    image:
+      "https://assets.coingecko.com/coins/images/15609/large/logo-3.png?1621316829",
+    contracts: {
+      "binance-smart-chain": "0xb47d8d9cd415dae40e364b140ae6af186e2332f4",
+    },
+  },
+  {
+    id: "dragon-ball",
+    symbol: "dragon",
+    name: "Dragon Ball",
+    image:
+      "https://assets.coingecko.com/coins/images/12416/large/fbe4f736-13cf-414b-8c92-17e01b30692b.png?1599690946",
+    contracts: {
+      tron: "TYLPtEvANesoVWEKKzbDFnfuiKdaRNkpmb",
+    },
+  },
+  {
+    id: "ipfst",
+    symbol: "ipfst",
+    name: "IPFST",
+    image:
+      "https://assets.coingecko.com/coins/images/9667/large/855329605b484cac887c8a1c79e91c25.png?1570487527",
+    contracts: {},
+  },
+  {
+    id: "neal",
+    symbol: "neal",
+    name: "Coineal Token",
+    image:
+      "https://assets.coingecko.com/coins/images/6712/large/coineal_token.png?1547042932",
+    contracts: {
+      ethereum: "0xacce88f5a63a5e65db9aa7303720be16b556e751",
+    },
+  },
+  {
+    id: "rapdoge",
+    symbol: "rapdoge",
+    name: "RapDoge",
+    image:
+      "https://assets.coingecko.com/coins/images/16749/large/rapdoge.png?1624884614",
+    contracts: {
+      ethereum: "0xd8dae35b487e3453cffd998c6754713c81b0f200",
+    },
+  },
+  {
+    id: "bpop",
+    symbol: "bpop",
+    name: "BPOP",
+    image:
+      "https://assets.coingecko.com/coins/images/9701/large/bpop.PNG?1570916211",
+    contracts: {
+      ethereum: "0x0452aed878805514e28fb5bd0b56bef92176e32a",
+    },
+  },
+  {
+    id: "tmc-niftygotchi",
+    symbol: "tmc",
+    name: "TMC NiftyGotchi",
+    image:
+      "https://assets.coingecko.com/coins/images/13627/large/tmc.png?1610434378",
+    contracts: {
+      ethereum: "0xe13559cf6edf84bd04bf679e251f285000b9305e",
+    },
+  },
+  {
+    id: "qusd-stablecoin",
+    symbol: "qusd",
+    name: "QUSD Stablecoin",
+    image:
+      "https://assets.coingecko.com/coins/images/13176/large/qusd_logo.png?1605922605",
+    contracts: {
+      ethereum: "0x59d4ccc94a9c4c3d3b4ba2aa343a9bdf95145dd1",
+    },
+  },
+  {
+    id: "0-5x-long-altcoin-index-token",
+    symbol: "althalf",
+    name: "0.5X Long Altcoin Index Token",
+    image:
+      "https://assets.coingecko.com/coins/images/12008/large/683JEXMN_400x400.png?1596692307",
+    contracts: {
+      ethereum: "",
+    },
+  },
+  {
+    id: "trustnft",
+    symbol: "trustnft",
+    name: "TrustNFT",
+    image:
+      "https://assets.coingecko.com/coins/images/20478/large/logo-3_%281%29.png?1637114682",
+    contracts: {
+      "binance-smart-chain": "0x8fa83334784f5b9cb2f15185c3d1db1e7c531e11",
+    },
+  },
+  {
+    id: "1x-short-privacy-index-token",
+    symbol: "privhedge",
+    name: "1X Short Privacy Index Token",
+    image:
+      "https://assets.coingecko.com/coins/images/12019/large/683JEXMN_400x400__1_.png?1596693816",
+    contracts: {
+      ethereum: "",
+    },
+  },
+  {
+    id: "babydogecake",
+    symbol: "bdc",
+    name: "BabyDogeCake",
+    image:
+      "https://assets.coingecko.com/coins/images/17405/large/eWt6m4W.png?1627539644",
+    contracts: {
+      "binance-smart-chain": "0x7181638e041e26321f9f2519e2f885f656458519",
+    },
+  },
+  {
+    id: "stonks",
+    symbol: "stonk",
+    name: "STONKS",
+    image:
+      "https://assets.coingecko.com/coins/images/13111/large/stonk_logo.png?1605278755",
+    contracts: {
+      ethereum: "0x60ca261e14f26e8daae8b1a7f8e783d64859126c",
+    },
+  },
+  {
+    id: "redbux",
+    symbol: "redbux",
+    name: "RedBUX",
+    image:
+      "https://assets.coingecko.com/coins/images/3390/large/redbux.png?1547038049",
+    contracts: {},
+  },
+  {
+    id: "super-gold",
+    symbol: "spg",
+    name: "Super Gold",
+    image:
+      "https://assets.coingecko.com/coins/images/7006/large/super_gold.png?1547043420",
+    contracts: {},
+  },
+  {
+    id: "exchain",
+    symbol: "ext",
+    name: "ExChain Token",
+    image:
+      "https://assets.coingecko.com/coins/images/5310/large/Experience_Token.jpg?1547040861",
+    contracts: {},
+  },
+  {
+    id: "cine-media-celebrity-coin",
+    symbol: "cmccoin",
+    name: "CINE MEDIA CELEBRITY COIN",
+    image:
+      "https://assets.coingecko.com/coins/images/11157/large/1585359806656.png?1589244985",
+    contracts: {
+      tron: "",
+    },
+  },
+  {
+    id: "ikomp",
+    symbol: "ikomp",
+    name: "IKOMP",
+    image:
+      "https://assets.coingecko.com/coins/images/14384/large/logo_ikomp1.png?1615789490",
+    contracts: {
+      ethereum: "0x6a625ddb2e2a2de0257c5129364dd80bb4afa3b9",
+    },
+  },
+  {
+    id: "poolstake",
+    symbol: "psk",
+    name: "PoolStake",
+    image:
+      "https://assets.coingecko.com/coins/images/13285/large/psk_logo.png?1606984935",
+    contracts: {
+      ethereum: "0x3f84c4184b35c488f7fe4a12469610c9b1cb03c9",
+    },
+  },
+  {
+    id: "bkex-taihe-stable-b",
+    symbol: "thb",
+    name: "BKEX Taihe Stable B",
+    image:
+      "https://assets.coingecko.com/coins/images/16800/large/bkex.jpeg?1625060473",
+    contracts: {},
+  },
+  {
+    id: "3x-short-zcash-token",
+    symbol: "zecbear",
+    name: "3X Short Zcash Token",
+    image:
+      "https://assets.coingecko.com/coins/images/16560/large/FTX_LOGO.png?1624453448",
+    contracts: {
+      ethereum: "0x78a8c84b4c23563be4518e7045016d3170130823",
+    },
+  },
+  {
+    id: "fidenza-527",
+    symbol: "fidenz",
+    name: "Fidenza #527",
+    image:
+      "https://assets.coingecko.com/coins/images/17851/large/fidenza.png?1629531578",
+    contracts: {
+      ethereum: "0x3fa42c7dfc3bdffabbc1176619b5aa8ff61c432f",
+    },
+  },
+  {
+    id: "chubby-inu",
+    symbol: "chinu",
+    name: "Chubby Inu",
+    image:
+      "https://assets.coingecko.com/coins/images/15814/large/logo_-_2021-05-26T060705.435.png?1621980432",
+    contracts: {
+      ethereum: "0x910985ffa7101bf5801dd2e91555c465efd9aab3",
+    },
+  },
+  {
+    id: "0-5x-long-okb-token",
+    symbol: "OKBHALF",
+    name: "0.5X Long OKB Token",
+    image:
+      "https://assets.coingecko.com/coins/images/11989/large/683JEXMN_400x400.png?1596687863",
     contracts: {
       ethereum: "",
     },
@@ -105196,12 +106045,14 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "dkk-token",
-    symbol: "dkkt",
-    name: "DKK Token",
+    id: "bimcoin",
+    symbol: "bim",
+    name: "Bimcoin",
     image:
-      "https://assets.coingecko.com/coins/images/8338/large/logo_%2818%29.png?1557603828",
-    contracts: {},
+      "https://assets.coingecko.com/coins/images/10371/large/roundlogo.png?1578674498",
+    contracts: {
+      ethereum: "0x9e7ce36dbd1a9a6c6e80d08e38077745855edd3a",
+    },
   },
   {
     id: "unix",
@@ -105214,6 +106065,16 @@ export const tokens: TokenD[] = [
     },
   },
   {
+    id: "electronic-move-pay",
+    symbol: "emp",
+    name: "Electronic Move Pay",
+    image:
+      "https://assets.coingecko.com/coins/images/9338/large/26.png?1566387741",
+    contracts: {
+      ethereum: "0x9b639486f4a40c1a7a6728114f2413973f5fa4c6",
+    },
+  },
+  {
     id: "rutheneum",
     symbol: "rth",
     name: "Rutheneum",
@@ -105222,472 +106083,63 @@ export const tokens: TokenD[] = [
     contracts: {},
   },
   {
-    id: "chubby-inu",
-    symbol: "chinu",
-    name: "Chubby Inu",
+    id: "eloncryptogod",
+    symbol: "ecgod",
+    name: "ElonCryptoGod",
     image:
-      "https://assets.coingecko.com/coins/images/15814/large/logo_-_2021-05-26T060705.435.png?1621980432",
+      "https://assets.coingecko.com/coins/images/16323/large/elon.PNG?1623739913",
     contracts: {
-      ethereum: "0x910985ffa7101bf5801dd2e91555c465efd9aab3",
+      "binance-smart-chain": "0x64f9dcd33d9f3a98407eef67ac8f60cd370961cf",
     },
   },
   {
-    id: "babyavengers",
-    symbol: "avngrs",
-    name: "BabyAvengers",
+    id: "anti-fraud-chain",
+    symbol: "afc",
+    name: "Anti-Fraud Chain",
     image:
-      "https://assets.coingecko.com/coins/images/17701/large/logo_%283%29.png?1629073699",
+      "https://assets.coingecko.com/coins/images/9448/large/logo-white.png?1567550853",
     contracts: {
-      "binance-smart-chain": "0xdad6d006ab190e536e2d256526d038d67303f577",
+      ethereum: "0x14dffd4f515d4c43493c6c512c78fbc59a8af254",
     },
   },
   {
-    id: "baby-cuban",
-    symbol: "babycuban",
-    name: "Baby Cuban",
+    id: "liquid-lottery-rtc",
+    symbol: "liqlo",
+    name: "Liquid Lottery RTC",
     image:
-      "https://assets.coingecko.com/coins/images/17199/large/croppedCuban-300x182.png?1626846096",
+      "https://assets.coingecko.com/coins/images/13104/large/liqlo_logo.png?1605234382",
     contracts: {
-      ethereum: "0xd21730353086b0d6c34656ca74f4e4295dc9b8e0",
+      ethereum: "0x59ad6061a0be82155e7acce9f0c37bf59f9c1e3c",
     },
   },
   {
-    id: "tom-inu",
-    symbol: "tinu",
-    name: "Tom Inu",
+    id: "se7en-2",
+    symbol: "se7en",
+    name: "SE7EN",
     image:
-      "https://assets.coingecko.com/coins/images/16505/large/tom-cg-logo.png?1624269653",
+      "https://assets.coingecko.com/coins/images/16915/large/SE7EN_7_512.png?1625624703",
     contracts: {
-      ethereum: "0x2d0e64b6bf13660a4c0de42a0b88144a7c10991f",
+      "binance-smart-chain": "0x6cd502ab164e37231c20578214f874a8adbdc7c2",
     },
   },
   {
-    id: "self-storage-coin",
-    symbol: "stor",
-    name: "Self Storage Coin",
+    id: "yoo-ecology",
+    symbol: "yoo",
+    name: "Yoo Ecology",
     image:
-      "https://assets.coingecko.com/coins/images/8159/large/stor33_2.png?1555897923",
+      "https://assets.coingecko.com/coins/images/11021/large/logo.1a3fe1d.png?1587160083",
     contracts: {
-      ethereum: "0xa3ceac0aac5c5d868973e546ce4731ba90e873c2",
+      ethereum: "0xc7596f3fc97ae603e1d7ffa61e6efb7b6a59bed2",
     },
   },
   {
-    id: "heartk",
-    symbol: "HeartK",
-    name: "HeartK",
+    id: "baby-falcon-doge",
+    symbol: "bfdoge",
+    name: "Baby Falcon Doge",
     image:
-      "https://assets.coingecko.com/coins/images/18502/large/4QO2ND.png?1632210427",
+      "https://assets.coingecko.com/coins/images/17645/large/logo_token-01.png?1628746319",
     contracts: {
-      "binance-smart-chain": "0xc417d28d8c83550e3a17ae17652d84bedb5884eb",
-    },
-  },
-  {
-    id: "robet-coin",
-    symbol: "robet",
-    name: "RoBet Coin",
-    image:
-      "https://assets.coingecko.com/coins/images/6286/large/RoBet_Coin.png?1547042328",
-    contracts: {
-      ethereum: "0x2344871f523cbb28a4f60045531184cf1f03ad24",
-    },
-  },
-  {
-    id: "sonarwatch",
-    symbol: "sonar",
-    name: "SonarWatch",
-    image:
-      "https://assets.coingecko.com/coins/images/20494/large/S_7gaWIC_400x400.png?1637131427",
-    contracts: {
-      solana: "sonarX4VtVkQemriJeLm6CKeW3GDMyiBnnAEMw1MRAE",
-    },
-  },
-  {
-    id: "fission-cash",
-    symbol: "fcx",
-    name: "Fission Cash",
-    image:
-      "https://assets.coingecko.com/coins/images/13620/large/FCX-Logo-W-e1609294744561.png?1610333962",
-    contracts: {
-      ethereum: "0x0b66015bc42601d5986b540373b4e02d7383c7c1",
-    },
-  },
-  {
-    id: "shadetech",
-    symbol: "shd",
-    name: "Shadetech",
-    image:
-      "https://assets.coingecko.com/coins/images/14394/large/_MVDoFXx_400x400.jpg?1615878255",
-    contracts: {
-      ethereum: "0x8a8221628361fa25294a83a172dd4f0133207b37",
-    },
-  },
-  {
-    id: "xswap-protocol",
-    symbol: "xsp",
-    name: "XSwap Protocol",
-    image:
-      "https://assets.coingecko.com/coins/images/20696/large/sCokBB2.png?1637564790",
-    contracts: {
-      "": "xdc36726235dadbdb4658d33e62a249dca7c4b2bc68",
-    },
-  },
-  {
-    id: "ebsp-token",
-    symbol: "ebsp",
-    name: "EBSP Token",
-    image:
-      "https://assets.coingecko.com/coins/images/7650/large/mwlDkYEKIpcWAP00hfCU7KPQti7jgbew1OKea9RGlGwpdkwOTWp7shOWG5EAsXpUonAo8ZnQoVYoWIz0Tju71QcYMesj8-4Qz_CAyxUy12MTknHGjwfpITWwDaRtHXeTDCCGMvPRPR5ebXultUTIQAtB1x9gtvA03QAi5RVg4GkfX6kB_r04Qx6w2lxuLuyUAqd4x6zaQo_1Hy8NV333I.jpg?1549001856",
-    contracts: {
-      ethereum: "0x6f063c0fcda0ea6dcc01d5a7cb3066ed4f90d1a8",
-    },
-  },
-  {
-    id: "get-doge",
-    symbol: "getdoge",
-    name: "Get Doge",
-    image:
-      "https://assets.coingecko.com/coins/images/17236/large/getdoge-icon-200.png?1626931424",
-    contracts: {
-      "binance-smart-chain": "0x5ee36c0a5e96220f9dcde6a068c5f4e597f83fbb",
-    },
-  },
-  {
-    id: "euro-token-2",
-    symbol: "euro",
-    name: "Euro Token",
-    image:
-      "https://assets.coingecko.com/coins/images/16247/large/euro.PNG?1623379765",
-    contracts: {
-      "binance-smart-chain": "0x3c2c8fc79d37c97cf41d0a2e0a4c89953e49cc4e",
-    },
-  },
-  {
-    id: "thanos-2",
-    symbol: "thanos",
-    name: "THANOS",
-    image:
-      "https://assets.coingecko.com/coins/images/19136/large/5ctOmsu.png?1634527818",
-    contracts: {
-      ethereum: "0xdb0c52980e66ef97ee2ab85f57f86cd53928ac93",
-    },
-  },
-  {
-    id: "babydogecake",
-    symbol: "bdc",
-    name: "BabyDogeCake",
-    image:
-      "https://assets.coingecko.com/coins/images/17405/large/eWt6m4W.png?1627539644",
-    contracts: {
-      "binance-smart-chain": "0x7181638e041e26321f9f2519e2f885f656458519",
-    },
-  },
-  {
-    id: "autoglyph-271",
-    symbol: "aglyph",
-    name: "Autoglyph #271",
-    image:
-      "https://assets.coingecko.com/coins/images/18042/large/autoglyph-271.png?1630316281",
-    contracts: {
-      ethereum: "0x8baad3be0eddf4ec8fbd9bc2946a972e30741f8c",
-    },
-  },
-  {
-    id: "xkncb",
-    symbol: "xkncb",
-    name: "xKNCb",
-    image:
-      "https://assets.coingecko.com/coins/images/13996/large/Token-4.png?1613546873",
-    contracts: {
-      ethereum: "0x06890d4c65a4cb75be73d7ccb4a8ee7962819e81",
-    },
-  },
-  {
-    id: "mainframe-protocol",
-    symbol: "vmain",
-    name: "MainFrame Protocol",
-    image:
-      "https://assets.coingecko.com/coins/images/19856/large/MainFrame-logo3.png?1636063931",
-    contracts: {},
-  },
-  {
-    id: "qusd-stablecoin",
-    symbol: "qusd",
-    name: "QUSD Stablecoin",
-    image:
-      "https://assets.coingecko.com/coins/images/13176/large/qusd_logo.png?1605922605",
-    contracts: {
-      ethereum: "0x59d4ccc94a9c4c3d3b4ba2aa343a9bdf95145dd1",
-    },
-  },
-  {
-    id: "unicly-artblocks-collection",
-    symbol: "uartb",
-    name: "Unicly ArtBlocks Collection",
-    image:
-      "https://assets.coingecko.com/coins/images/15672/large/uartblocks.jpeg?1621497079",
-    contracts: {
-      ethereum: "0xf824402747e5142d04892fdc27c73e6460e80080",
-    },
-  },
-  {
-    id: "unicly-the-day-by-arc-collection",
-    symbol: "uarc",
-    name: "Unicly The Day by Arc Collection",
-    image:
-      "https://assets.coingecko.com/coins/images/15677/large/uarc.jpg?1621499433",
-    contracts: {
-      ethereum: "0x44440bd68b5e4b1e0cb810669097e9573175601b",
-    },
-  },
-  {
-    id: "tmc-niftygotchi",
-    symbol: "tmc",
-    name: "TMC NiftyGotchi",
-    image:
-      "https://assets.coingecko.com/coins/images/13627/large/tmc.png?1610434378",
-    contracts: {
-      ethereum: "0xe13559cf6edf84bd04bf679e251f285000b9305e",
-    },
-  },
-  {
-    id: "minieverdoge",
-    symbol: "med",
-    name: "MiniEverDoge",
-    image:
-      "https://assets.coingecko.com/coins/images/16940/large/P6md9jU.png?1625714108",
-    contracts: {
-      "binance-smart-chain": "0xf50155cffd6c9a3634edfd6a00850016fe02c4dc",
-    },
-  },
-  {
-    id: "bitcoin-instant",
-    symbol: "bti",
-    name: "Bitcoin Instant",
-    image:
-      "https://assets.coingecko.com/coins/images/4759/large/bitcoin-instant-logo.png?1547040082",
-    contracts: {},
-  },
-  {
-    id: "skin-rich",
-    symbol: "skin",
-    name: "SKIN RICH",
-    image:
-      "https://assets.coingecko.com/coins/images/9900/large/skinrich_2.PNG?1573164965",
-    contracts: {},
-  },
-  {
-    id: "healthchainus",
-    symbol: "hcut",
-    name: "HealthChainUS",
-    image:
-      "https://assets.coingecko.com/coins/images/11868/large/60633927_588600498303961_3291974703035449344_n.png?1595496238",
-    contracts: {
-      ethereum: "0xd31a9d28d66a1f7e62b5565416ea14607690f788",
-    },
-  },
-  {
-    id: "torq-coin",
-    symbol: "torq",
-    name: "TORQ Coin",
-    image:
-      "https://assets.coingecko.com/coins/images/3486/large/torq-coin.png?1547038229",
-    contracts: {
-      ethereum: "0x1c65c261cb89178b02cf2aee20058b992787d770",
-    },
-  },
-  {
-    id: "kper-network",
-    symbol: "kper",
-    name: "Kper Network",
-    image:
-      "https://assets.coingecko.com/coins/images/12984/large/kper.png?1604066205",
-    contracts: {
-      ethereum: "0xc89b4a8a121dd3e726fe7515e703936cf83e3350",
-    },
-  },
-  {
-    id: "daddy-feg",
-    symbol: "daddyfeg",
-    name: "Daddy Feg",
-    image:
-      "https://assets.coingecko.com/coins/images/16886/large/oRO6iffY_200x200.jpg?1625548603",
-    contracts: {
-      "binance-smart-chain": "0xf869076283148054ce4634677b3bb832320463aa",
-    },
-  },
-  {
-    id: "currency-network",
-    symbol: "cnet",
-    name: "Currency Network",
-    image:
-      "https://assets.coingecko.com/coins/images/6688/large/currency_network_cnet.jpg?1547042892",
-    contracts: {},
-  },
-  {
-    id: "balloon-coin",
-    symbol: "balo",
-    name: "Balloon Coin",
-    image:
-      "https://assets.coingecko.com/coins/images/11142/large/logo-2.png?1588918249",
-    contracts: {
-      ethereum: "0x6523203bd28d399068acc14db6b7f31d9bf43f1a",
-    },
-  },
-  {
-    id: "yplutus",
-    symbol: "yplt",
-    name: "yplutus",
-    image:
-      "https://assets.coingecko.com/coins/images/13358/large/ypltblack-01.png?1607826916",
-    contracts: {
-      ethereum: "0x40e7705254494a7e61d5b7c86da50225ddc3daae",
-    },
-  },
-  {
-    id: "standard-token",
-    symbol: "tst",
-    name: "Standard Token",
-    image:
-      "https://assets.coingecko.com/coins/images/20598/large/SdkuLtM7_400x400.png?1637286772",
-    contracts: {
-      ethereum: "0xa0b93b9e90ab887e53f9fb8728c009746e989b53",
-    },
-  },
-  {
-    id: "detox",
-    symbol: "dtx",
-    name: "Detox",
-    image:
-      "https://assets.coingecko.com/coins/images/17718/large/IfeP9eV.jpg?1629088615",
-    contracts: {
-      "binance-smart-chain": "0x978e4e5b0586c848898eda9fbbb02eb4a207e7bc",
-    },
-  },
-  {
-    id: "ikomp",
-    symbol: "ikomp",
-    name: "IKOMP",
-    image:
-      "https://assets.coingecko.com/coins/images/14384/large/logo_ikomp1.png?1615789490",
-    contracts: {
-      ethereum: "0x6a625ddb2e2a2de0257c5129364dd80bb4afa3b9",
-    },
-  },
-  {
-    id: "kawanggawa",
-    symbol: "kgw",
-    name: "KAWANGGAWA",
-    image:
-      "https://assets.coingecko.com/coins/images/11815/large/f_HFXjBE_400x400.jpg?1594597195",
-    contracts: {
-      ethereum: "0x55eb5288c9b65037a4cd2289637f38a4f9db3a6b",
-    },
-  },
-  {
-    id: "iron-bank-jpy",
-    symbol: "ibjpy",
-    name: "Iron Bank JPY",
-    image:
-      "https://assets.coingecko.com/coins/images/18364/large/jpy.png?1631634116",
-    contracts: {
-      ethereum: "0x5555f75e3d5278082200fb451d1b6ba946d8e13b",
-    },
-  },
-  {
-    id: "sxc",
-    symbol: "sxc",
-    name: "SXC Token",
-    image: "missing_large.png",
-    contracts: {
-      ethereum: "0x6a48ba795e3289b9151036e189e352e3ee2c7798",
-    },
-  },
-  {
-    id: "space-cat",
-    symbol: "spacecat",
-    name: "Space Cat",
-    image:
-      "https://assets.coingecko.com/coins/images/17227/large/60f80b796540ba7b1658a3ff_logo200.png?1626919180",
-    contracts: {
-      "binance-smart-chain": "0x7e82b5a7af1916a97fa656b2a38c070e79143ff9",
-    },
-  },
-  {
-    id: "thebridge",
-    symbol: "tbg",
-    name: "TheBridge",
-    image:
-      "https://assets.coingecko.com/coins/images/15986/large/9937e1b25a64a.png?1622536404",
-    contracts: {
-      ethereum: "0x391612e67b0252e0d1e1460501b41545931faef9",
-    },
-  },
-  {
-    id: "1x-short-okb-token",
-    symbol: "okbhedge",
-    name: "1X Short OKB Token",
-    image:
-      "https://assets.coingecko.com/coins/images/12057/large/683JEXMN_400x400.png?1596704656",
-    contracts: {
-      ethereum: "0x889bc62e94bb6902d022bb82b38f7fcd637df28c",
-    },
-  },
-  {
-    id: "vbt",
-    symbol: "vbt",
-    name: "VBT",
-    image:
-      "https://assets.coingecko.com/coins/images/8467/large/747suczn_400x400.jpg?1558766251",
-    contracts: {
-      ethereum: "0x1ffe24629f1b3df74fc0f6e5d086f2fd09258ff2",
-    },
-  },
-  {
-    id: "zoomcoin",
-    symbol: "zoom",
-    name: "Zoomcoin",
-    image:
-      "https://assets.coingecko.com/coins/images/16913/large/zoom.PNG?1625621714",
-    contracts: {
-      tron: "TVQMfT8NuXwfZSCevNp1vYKb9q7vksT6R5",
-    },
-  },
-  {
-    id: "poly-peg-mdex",
-    symbol: "hmdx",
-    name: "Poly-Peg Mdex",
-    image:
-      "https://assets.coingecko.com/coins/images/18504/large/Capture.PNG?1632211012",
-    contracts: {
-      "binance-smart-chain": "0xaee4164c1ee46ed0bbc34790f1a3d1fc87796668",
-    },
-  },
-  {
-    id: "wincash-coin",
-    symbol: "wcc",
-    name: "Wincash Coin",
-    image:
-      "https://assets.coingecko.com/coins/images/10518/large/wincash_coin.png?1580439168",
-    contracts: {},
-  },
-  {
-    id: "0-5x-long-tether-gold-token",
-    symbol: "xauthalf",
-    name: "0.5X Long Tether Gold Token",
-    image:
-      "https://assets.coingecko.com/coins/images/12031/large/683JEXMN_400x400.png?1596698173",
-    contracts: {
-      ethereum: "",
-    },
-  },
-  {
-    id: "libera",
-    symbol: "lib",
-    name: "Libera",
-    image:
-      "https://assets.coingecko.com/coins/images/12211/large/19nmRSeR_400x400.jpg?1598234697",
-    contracts: {
-      ethereum: "0x0bf6261297198d91d4fa460242c69232146a5703",
+      "binance-smart-chain": "0x85a632b17e5310937ff237bfc2f0124f36469593",
     },
   },
   {
@@ -105701,33 +106153,121 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "linkbased",
-    symbol: "lbd",
-    name: "LinkBased",
+    id: "1x-short-bitcoin-cash-token",
+    symbol: "bchhedge",
+    name: "1X Short Bitcoin Cash Token",
     image:
-      "https://assets.coingecko.com/coins/images/13506/large/linkbased_logo.jpg?1609224548",
+      "https://assets.coingecko.com/coins/images/10332/large/683JEXMN_400x400.png?1596707014",
     contracts: {
-      ethereum: "0xb15ae165000c8d7b69d2a82e425e110668c73ad5",
+      ethereum: "0x02e88a689fdfb920e7aa6174fb7ab72add3c5694",
     },
   },
   {
-    id: "vader-protocol",
-    symbol: "vader",
-    name: "Vader Protocol",
+    id: "eos-eth",
+    symbol: "eeth",
+    name: "EOS ETH",
     image:
-      "https://assets.coingecko.com/coins/images/20497/large/AcF08Jk1_400x400.jpg?1637131991",
+      "https://assets.coingecko.com/coins/images/7223/large/Screen_Shot_2018-12-20_at_2.18.50_PM.png?1547043806",
     contracts: {
-      ethereum: "0x2602278ee1882889b946eb11dc0e810075650983",
+      eos: "",
     },
   },
   {
-    id: "kitcoin",
-    symbol: "ktc",
-    name: "Kitcoin",
+    id: "unicly-artblocks-collection",
+    symbol: "uartb",
+    name: "Unicly ArtBlocks Collection",
     image:
-      "https://assets.coingecko.com/coins/images/8910/large/logo2.png?1562744333",
+      "https://assets.coingecko.com/coins/images/15672/large/uartblocks.jpeg?1621497079",
     contracts: {
-      ethereum: "0x9827f6e8df0ccc584ff7b37144de8bac7c446385",
+      ethereum: "0xf824402747e5142d04892fdc27c73e6460e80080",
+    },
+  },
+  {
+    id: "helios-cash",
+    symbol: "heo",
+    name: "Helios Cash",
+    image:
+      "https://assets.coingecko.com/coins/images/16790/large/logo200_%2817%29.png?1625031247",
+    contracts: {
+      "polygon-pos": "0x03aa5daf9fd5f7f33c67afbcd53c1c1e87c4c9f7",
+    },
+  },
+  {
+    id: "bixcpro",
+    symbol: "bixcpro",
+    name: "BIXCPRO",
+    image:
+      "https://assets.coingecko.com/coins/images/7893/large/download.jpg?1551429825",
+    contracts: {
+      ethereum: "0x3e9e371f8d2e9fca315fb0a747533ced8a3fcbcb",
+    },
+  },
+  {
+    id: "trexcoin",
+    symbol: "trex",
+    name: "Trexcoin",
+    image:
+      "https://assets.coingecko.com/coins/images/11054/large/yKoW3RU.png?1587610213",
+    contracts: {},
+  },
+  {
+    id: "cranberry",
+    symbol: "crnbry",
+    name: "Cranberry",
+    image:
+      "https://assets.coingecko.com/coins/images/16470/large/xJ0IjKL.png?1624267835",
+    contracts: {
+      "binance-smart-chain": "0x6a40a7a671d81728506370ce4f3b464303dd9125",
+    },
+  },
+  {
+    id: "minieverdoge",
+    symbol: "med",
+    name: "MiniEverDoge",
+    image:
+      "https://assets.coingecko.com/coins/images/16940/large/P6md9jU.png?1625714108",
+    contracts: {
+      "binance-smart-chain": "0xf50155cffd6c9a3634edfd6a00850016fe02c4dc",
+    },
+  },
+  {
+    id: "brosispay",
+    symbol: "bspay",
+    name: "Brosispay",
+    image:
+      "https://assets.coingecko.com/coins/images/14706/large/logo_to_send.png?1617873149",
+    contracts: {
+      "binance-smart-chain": "0x6dceaac4e68d1bc5834dc3c8bc012317cd4d1ffa",
+    },
+  },
+  {
+    id: "charity-alfa",
+    symbol: "mich",
+    name: "Charity Alfa",
+    image:
+      "https://assets.coingecko.com/coins/images/10382/large/charifyalfa.PNG?1578699201",
+    contracts: {
+      eos: "",
+    },
+  },
+  {
+    id: "baby-bake",
+    symbol: "babybake",
+    name: "BabyBake",
+    image:
+      "https://assets.coingecko.com/coins/images/17344/large/200x200-Baby-Bake.png?1627364640",
+    contracts: {
+      "binance-smart-chain": "0x4f73b1f7adcf65d0fa744fd49a8d0341f478cd24",
+    },
+  },
+  {
+    id: "poly-peg-mdex",
+    symbol: "hmdx",
+    name: "Poly-Peg Mdex",
+    image:
+      "https://assets.coingecko.com/coins/images/18504/large/Capture.PNG?1632211012",
+    contracts: {
+      "binance-smart-chain": "0xaee4164c1ee46ed0bbc34790f1a3d1fc87796668",
     },
   },
   {
@@ -105741,87 +106281,237 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "hygenercoin",
-    symbol: "hg",
-    name: "Hygenercoin",
+    id: "xpandacoin",
+    symbol: "xpc",
+    name: "XPandaCoin",
     image:
-      "https://assets.coingecko.com/coins/images/8817/large/60762471_431874227611586_5376521021266329600_n.png?1561551785",
+      "https://assets.coingecko.com/coins/images/17904/large/200-200.png?1629774455",
     contracts: {
-      ethereum: "0x1bc9f31c327ce04b6fa9d56fd84c14cc0b0a4f47",
+      "binance-smart-chain": "0xd5bd23477f92dfd36a3d86f353a57d083b427e88",
     },
   },
   {
-    id: "goldnero",
-    symbol: "gldx",
-    name: "Goldnero",
+    id: "unidollar",
+    symbol: "uniusd",
+    name: "UniDollar",
     image:
-      "https://assets.coingecko.com/coins/images/11581/large/logo-white2x.png?1591320267",
+      "https://assets.coingecko.com/coins/images/11637/large/Unidollar.png?1592272468",
+    contracts: {
+      ethereum: "0x256845e721c0c46d54e6afbd4fa3b52cb72353ea",
+    },
+  },
+  {
+    id: "ulanco",
+    symbol: "uac",
+    name: "Ulanco",
+    image:
+      "https://assets.coingecko.com/coins/images/20662/large/udacity_logo_icon_169367.png?1637545628",
+    contracts: {
+      ethereum: "0x0af5855a348c58a8bbf65bcc7b9bbacd0e7e2238",
+    },
+  },
+  {
+    id: "eurxb",
+    symbol: "eurxb",
+    name: "EURxb",
+    image:
+      "https://assets.coingecko.com/coins/images/14300/large/eurxb.png?1615341210",
+    contracts: {
+      ethereum: "0x0bead9a1bcc1b84d06e3f2df67e3549fd55ab054",
+    },
+  },
+  {
+    id: "biki",
+    symbol: "biki",
+    name: "BIKI",
+    image:
+      "https://assets.coingecko.com/coins/images/8119/large/BiKi_icon.png?1581935375",
+    contracts: {
+      ethereum: "0x70debcdab2ef20be3d1dbff6a845e9ccb6e46930",
+    },
+  },
+  {
+    id: "mini-floki-shiba",
+    symbol: "mfloki",
+    name: "Mini Floki Shiba",
+    image:
+      "https://assets.coingecko.com/coins/images/17253/large/logo200_%2819%29.png?1626944549",
+    contracts: {
+      "binance-smart-chain": "0x5cedd85e5c34ef894380fb027fa5d2c944ea28e0",
+    },
+  },
+  {
+    id: "toydoge",
+    symbol: "tdg",
+    name: "ToyDOGE",
+    image:
+      "https://assets.coingecko.com/coins/images/18828/large/toydoge.PNG?1633559886",
+    contracts: {
+      "binance-smart-chain": "0x298499f46fbbd468ca1ec7de1e29adfde2e5b373",
+    },
+  },
+  {
+    id: "ronin",
+    symbol: "ron",
+    name: "Ronin",
+    image:
+      "https://assets.coingecko.com/coins/images/20009/large/ronin-katana.png?1636437035",
     contracts: {},
   },
   {
-    id: "99masternodes",
-    symbol: "nmn",
-    name: "99Masternodes",
+    id: "sonarwatch",
+    symbol: "sonar",
+    name: "SonarWatch",
     image:
-      "https://assets.coingecko.com/coins/images/8218/large/logo_1_whiteSymbol.png?1556588307",
+      "https://assets.coingecko.com/coins/images/20494/large/S_7gaWIC_400x400.png?1637131427",
+    contracts: {
+      solana: "sonarX4VtVkQemriJeLm6CKeW3GDMyiBnnAEMw1MRAE",
+    },
+  },
+  {
+    id: "sunglassesdoge",
+    symbol: "sunglassesdoge",
+    name: "SunglassesDoge",
+    image:
+      "https://assets.coingecko.com/coins/images/17164/large/sunGlassesDoge2_200x200.png?1626682992",
+    contracts: {
+      "binance-smart-chain": "0x322a9b99c772c7d31a0a4925edc120110b47512d",
+    },
+  },
+  {
+    id: "shadetech",
+    symbol: "shd",
+    name: "Shadetech",
+    image:
+      "https://assets.coingecko.com/coins/images/14394/large/_MVDoFXx_400x400.jpg?1615878255",
+    contracts: {
+      ethereum: "0x8a8221628361fa25294a83a172dd4f0133207b37",
+    },
+  },
+  {
+    id: "tronx-coin",
+    symbol: "tronx",
+    name: "TronX coin",
+    image:
+      "https://assets.coingecko.com/coins/images/12703/large/t200.png?1601867720",
+    contracts: {
+      tron: "TA1UcPfy1Tie4SdTKpjwrjdnpBd2WT51Ss",
+    },
+  },
+  {
+    id: "cpcoin",
+    symbol: "cpc",
+    name: "CPCoin",
+    image:
+      "https://assets.coingecko.com/coins/images/14640/large/BzW-jHmFl_PkBLsqzEGiGZfO_G75YWWzLwwF-_3La21nTjsb_BPi-vG0V0PWWkZz8WDSj5zNmjcN7OkKcym2K2dWeCxYLYIslRQLAyDHWeQt389vFOEgJcojPE-rej71tPs5fSfVX5uJt12yR5kzAxK60Tdd-NWboebmQhtnN04_xHBZ_xSUhL-Zrvpk2MJEUyzDoHFGaRwwpdf.jpg?1617485165",
     contracts: {},
   },
   {
-    id: "rapdoge",
-    symbol: "rapdoge",
-    name: "RapDoge",
+    id: "nirvana",
+    symbol: "vana",
+    name: "Nirvana",
     image:
-      "https://assets.coingecko.com/coins/images/16749/large/rapdoge.png?1624884614",
+      "https://assets.coingecko.com/coins/images/13541/large/vana.jpg?1609602820",
     contracts: {
-      ethereum: "0xd8dae35b487e3453cffd998c6754713c81b0f200",
+      ethereum: "0x790baf0c914898c62163a61f150637d4bd180697",
     },
   },
   {
-    id: "neal",
-    symbol: "neal",
-    name: "Coineal Token",
+    id: "linkbased",
+    symbol: "lbd",
+    name: "LinkBased",
     image:
-      "https://assets.coingecko.com/coins/images/6712/large/coineal_token.png?1547042932",
+      "https://assets.coingecko.com/coins/images/13506/large/linkbased_logo.jpg?1609224548",
     contracts: {
-      ethereum: "0xacce88f5a63a5e65db9aa7303720be16b556e751",
+      ethereum: "0xb15ae165000c8d7b69d2a82e425e110668c73ad5",
     },
   },
   {
-    id: "niubiswap",
-    symbol: "niu",
-    name: "Niubiswap",
+    id: "kujira",
+    symbol: "kuji",
+    name: "Kujira",
     image:
-      "https://assets.coingecko.com/coins/images/15158/large/niu.png?1619996852",
+      "https://assets.coingecko.com/coins/images/20685/large/kuji-200x200.png?1637557201",
     contracts: {
-      "binance-smart-chain": "0xfa90d5d5ff08d9a06c9fdf89b4b22217b9dbc418",
+      terra: "terra1xfsdgcemqwxp4hhnyk4rle6wr22sseq7j07dnn",
     },
   },
   {
-    id: "bimcoin",
-    symbol: "bim",
-    name: "Bimcoin",
+    id: "web-token-pay",
+    symbol: "wtp",
+    name: "Web Token Pay",
     image:
-      "https://assets.coingecko.com/coins/images/10371/large/roundlogo.png?1578674498",
+      "https://assets.coingecko.com/coins/images/8720/large/logo_%2828%29.png?1560397140",
     contracts: {
-      ethereum: "0x9e7ce36dbd1a9a6c6e80d08e38077745855edd3a",
+      ethereum: "0x1680cfdad75da2bb56ded4f36bb9423c86ffa7b7",
     },
   },
   {
-    id: "rakun",
-    symbol: "raku",
-    name: "RAKUN",
+    id: "die",
+    symbol: "die",
+    name: "Die",
     image:
-      "https://assets.coingecko.com/coins/images/10768/large/Rakun_Icon_Red_200x200.png?1583310899",
+      "https://assets.coingecko.com/coins/images/13136/large/gR-removebg-preview.png?1605580337",
     contracts: {
-      ethereum: "0x51bc0deaf7bbe82bc9006b0c3531668a4206d27f",
+      ethereum: "0x15f5f5f29a819bf7b4b80bf55352e1e42707c94e",
     },
   },
   {
-    id: "0-5x-long-chainlink-token",
-    symbol: "linkhalf",
-    name: "0.5X Long Chainlink Token",
+    id: "to-the-mars",
+    symbol: "mars",
+    name: "To The Mars",
     image:
-      "https://assets.coingecko.com/coins/images/11992/large/683JEXMN_400x400.png?1596688614",
+      "https://assets.coingecko.com/coins/images/14829/large/ME3O7JWS9Vd-ElZzYVUZCnqKq2IFpu-P9enDsmRBwU_MgIEAedFxjCovFJDIMUiUaerwHzJ_e-INtwoY3_pH30DIuk3dJE9QX684fBNCX_dx-6ZCjnaHeAljggdsT-THwHgfpk9BzHQ0DT-sBC7bgD9F9Q354r5RuBZ6Xebq0nPFY48oMf7PJuNvE8ToUrTJZStFXc10Alu.jpg?1618563983",
+    contracts: {
+      "binance-smart-chain": "0x4ec57b0156564dddea375f313927ec2ddc975d69",
+    },
+  },
+  {
+    id: "meta-pets",
+    symbol: "mp",
+    name: "Meta Pets",
+    image:
+      "https://assets.coingecko.com/coins/images/20603/large/LnUYRKR.png?1637288317",
+    contracts: {
+      ethereum: "0x17cd80aa8f4aed7c403e4c6b9c2cd3fabef09d99",
+    },
+  },
+  {
+    id: "0-5x-long-defi-index-token",
+    symbol: "defihalf",
+    name: "0.5X Long DeFi Index Token",
+    image:
+      "https://assets.coingecko.com/coins/images/12013/large/683JEXMN_400x400__1_.png?1596692965",
+    contracts: {
+      ethereum: "",
+    },
+  },
+  {
+    id: "yearn20moonfinance",
+    symbol: "ymf20",
+    name: "Yearn20Moon.Finance",
+    image:
+      "https://assets.coingecko.com/coins/images/13037/large/Brand_Identity.png?1605773986",
+    contracts: {
+      ethereum: "0x16be21c08eb27953273608629e4397556c561d26",
+    },
+  },
+  {
+    id: "higamecoin",
+    symbol: "hgc",
+    name: "HiGameCoin",
+    image:
+      "https://assets.coingecko.com/coins/images/8333/large/hpc.png?1557546950",
+    contracts: {
+      ethereum: "0x5b5a353fc217ebef77bc7686ea05a003ebdb7d1a",
+    },
+  },
+  {
+    id: "1x-short-matic-token",
+    symbol: "matichedge",
+    name: "1X Short Matic Token",
+    image:
+      "https://assets.coingecko.com/coins/images/12054/large/683JEXMN_400x400.png?1596703312",
     contracts: {
       ethereum: "",
     },
@@ -105837,735 +106527,23 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "1x-short-matic-token",
-    symbol: "matichedge",
-    name: "1X Short Matic Token",
+    id: "reborn-dollar",
+    symbol: "rebd",
+    name: "Reborn Dollar",
     image:
-      "https://assets.coingecko.com/coins/images/12054/large/683JEXMN_400x400.png?1596703312",
+      "https://assets.coingecko.com/coins/images/17505/large/reborn_token%28small_size%29.png?1628044455",
     contracts: {
-      ethereum: "",
+      ethereum: "0x7fea8dda7462ac9f2ce62cf52ce9840e0e6a8c3b",
     },
   },
   {
-    id: "ymen-finance",
-    symbol: "ymen",
-    name: "Ymen.Finance",
+    id: "yearn-finance-protocol",
+    symbol: "yfp",
+    name: "Yearn Finance Protocol",
     image:
-      "https://assets.coingecko.com/coins/images/12452/large/logoymen.png?1603008881",
+      "https://assets.coingecko.com/coins/images/12363/large/yearn.jpg?1599309396",
     contracts: {
-      ethereum: "0xd0c59798f986d333554688cd667033d469c2398e",
-    },
-  },
-  {
-    id: "yfarm-token",
-    symbol: "yfarm",
-    name: "YFARM Token",
-    image:
-      "https://assets.coingecko.com/coins/images/12475/large/yffs.jpg?1600136951",
-    contracts: {
-      ethereum: "0xf5d0fefaab749d8b14c27f0de60cc6e9e7f848d1",
-    },
-  },
-  {
-    id: "hype-bet",
-    symbol: "hypebet",
-    name: "Hype.Bet",
-    image:
-      "https://assets.coingecko.com/coins/images/13296/large/Hype-Bet-Token-Logo.png?1607074281",
-    contracts: {
-      ethereum: "0xc9dfcd0a1dd2d7bb6fd2ef91a16a6a1c4e9846dd",
-    },
-  },
-  {
-    id: "ketchup-finance",
-    symbol: "ketchup",
-    name: "Ketchup Finance",
-    image:
-      "https://assets.coingecko.com/coins/images/16232/large/J4KoUiq1_400x400.jpg?1623362234",
-    contracts: {
-      "binance-smart-chain": "0x714a84632ed7edbbbfeb62dacf02db4beb4c69d9",
-    },
-  },
-  {
-    id: "megarise",
-    symbol: "megarise",
-    name: "MegaRise",
-    image:
-      "https://assets.coingecko.com/coins/images/16425/large/megarise.PNG?1623992754",
-    contracts: {
-      "binance-smart-chain": "0x3ec7ba1b86387b8cb323eac3f2aae217c876f9a7",
-    },
-  },
-  {
-    id: "meta-pets",
-    symbol: "mp",
-    name: "Meta Pets",
-    image:
-      "https://assets.coingecko.com/coins/images/20603/large/LnUYRKR.png?1637288317",
-    contracts: {
-      ethereum: "0x17cd80aa8f4aed7c403e4c6b9c2cd3fabef09d99",
-    },
-  },
-  {
-    id: "adena-finance",
-    symbol: "adena",
-    name: "Adena Finance",
-    image:
-      "https://assets.coingecko.com/coins/images/20552/large/hII-XM15_400x400.jpg?1637206004",
-    contracts: {
-      "harmony-shard-0": "0x97594e465e6b4df48e58327f566a3f79e9274655",
-    },
-  },
-  {
-    id: "the-metaonez",
-    symbol: "meta",
-    name: "The MetaONEz",
-    image:
-      "https://assets.coingecko.com/coins/images/14367/large/metaonez.png?1615730788",
-    contracts: {
-      ethereum: "0xc0bfeba72805f22dc18dde31467c5a55c16ff57b",
-    },
-  },
-  {
-    id: "xlshiba",
-    symbol: "xlshiba",
-    name: "XLSHIBA",
-    image:
-      "https://assets.coingecko.com/coins/images/19802/large/xlshiba.png?1635909741",
-    contracts: {
-      ethereum: "0x443c31b525791b4bfb1cf67196475cb27b834b67",
-    },
-  },
-  {
-    id: "aggregator-network",
-    symbol: "aggt",
-    name: "Aggregator Network",
-    image:
-      "https://assets.coingecko.com/coins/images/15520/large/aggt.PNG?1621119056",
-    contracts: {
-      ethereum: "0x8028a34ec63678bcb64325f805449beba98c28a8",
-    },
-  },
-  {
-    id: "cine-media-celebrity-coin",
-    symbol: "cmccoin",
-    name: "CINE MEDIA CELEBRITY COIN",
-    image:
-      "https://assets.coingecko.com/coins/images/11157/large/1585359806656.png?1589244985",
-    contracts: {
-      tron: "",
-    },
-  },
-  {
-    id: "bpop",
-    symbol: "bpop",
-    name: "BPOP",
-    image:
-      "https://assets.coingecko.com/coins/images/9701/large/bpop.PNG?1570916211",
-    contracts: {
-      ethereum: "0x0452aed878805514e28fb5bd0b56bef92176e32a",
-    },
-  },
-  {
-    id: "digex",
-    symbol: "digex",
-    name: "Digex",
-    image:
-      "https://assets.coingecko.com/coins/images/12891/large/Digex_token.png?1603332770",
-    contracts: {
-      ethereum: "0x763f8b4fb067190e739ed6acb12f40f2f3890840",
-    },
-  },
-  {
-    id: "lbrl",
-    symbol: "lbrl",
-    name: "LBRL",
-    image:
-      "https://assets.coingecko.com/coins/images/11803/large/LBRL-ROXO.png?1594361198",
-    contracts: {},
-  },
-  {
-    id: "dar-dex-token",
-    symbol: "ddt",
-    name: "Dar Dex Token",
-    image:
-      "https://assets.coingecko.com/coins/images/20704/large/dardark200.png?1637570433",
-    contracts: {
-      "binance-smart-chain": "0x28a899e29235e973a69e7c5df833d8cd63985fce",
-    },
-  },
-  {
-    id: "binance-vnd",
-    symbol: "bvnd",
-    name: "Binance VND",
-    image:
-      "https://assets.coingecko.com/coins/images/13438/large/BUSD.png?1608546122",
-    contracts: {
-      binancecoin: "",
-    },
-  },
-  {
-    id: "goonrich",
-    symbol: "goon",
-    name: "GoonRich",
-    image:
-      "https://assets.coingecko.com/coins/images/16361/large/goontoken.png?1623812806",
-    contracts: {
-      ethereum: "0xb0302d59237e6104c3f0d145996302f044797ca5",
-    },
-  },
-  {
-    id: "0-5x-long-bitcoin-sv-token",
-    symbol: "bsvhalf",
-    name: "0.5X Long Bitcoin SV Token",
-    image:
-      "https://assets.coingecko.com/coins/images/12004/large/683JEXMN_400x400.png?1596691775",
-    contracts: {
-      ethereum: "",
-    },
-  },
-  {
-    id: "ai-mining",
-    symbol: "aim",
-    name: "AI Mining",
-    image:
-      "https://assets.coingecko.com/coins/images/13635/large/logo_-_2021-01-13T091008.612.png?1610500226",
-    contracts: {
-      ethereum: "0x53352e7d6620cc931c0c9318166ae2a92c1a4666",
-    },
-  },
-  {
-    id: "social-capitalism",
-    symbol: "socap",
-    name: "Social Capitalism",
-    image:
-      "https://assets.coingecko.com/coins/images/20535/large/socap.PNG?1637202400",
-    contracts: {
-      "binance-smart-chain": "0x6fabd3aec027ab898f72e5f9a855a5d740c22cd1",
-    },
-  },
-  {
-    id: "hachiko-inu",
-    symbol: "hachiko",
-    name: "Hachiko Inu",
-    image:
-      "https://assets.coingecko.com/coins/images/15340/large/Hachiko.png?1623248394",
-    contracts: {
-      ethereum: "0xccac36423def6c19ee6b5679144e2976e309ca45",
-    },
-  },
-  {
-    id: "bkex-taihe-stable-a",
-    symbol: "tha",
-    name: "BKEX Taihe Stable A",
-    image:
-      "https://assets.coingecko.com/coins/images/16799/large/bkex.jpeg?1625059545",
-    contracts: {},
-  },
-  {
-    id: "to-the-mars",
-    symbol: "mars",
-    name: "To The Mars",
-    image:
-      "https://assets.coingecko.com/coins/images/14829/large/ME3O7JWS9Vd-ElZzYVUZCnqKq2IFpu-P9enDsmRBwU_MgIEAedFxjCovFJDIMUiUaerwHzJ_e-INtwoY3_pH30DIuk3dJE9QX684fBNCX_dx-6ZCjnaHeAljggdsT-THwHgfpk9BzHQ0DT-sBC7bgD9F9Q354r5RuBZ6Xebq0nPFY48oMf7PJuNvE8ToUrTJZStFXc10Alu.jpg?1618563983",
-    contracts: {
-      "binance-smart-chain": "0x4ec57b0156564dddea375f313927ec2ddc975d69",
-    },
-  },
-  {
-    id: "asian-african-capital-chain",
-    symbol: "acc",
-    name: "Asian-African Capital Chain",
-    image:
-      "https://assets.coingecko.com/coins/images/9523/large/fbSQvxG8y5dVommoQit8UyyMMCL6lqPnZEwG2QLryO39jnV902pbiYHGYtdwykHmPp0VTvEPrvBDdLmFnYVDEQXlrlVQJxABEYWWqP-rkXS__PYoxQAQHJGZPYV8P1I_ONfxIiOZ4ai36xG_b9BPNGR07kzUL8Dlwu_eij8Fi-OskE7v7QQ6QlvZQjE2tb0DpydAowS3txOVsUNFs.jpg?1568605521",
-    contracts: {
-      eos: null,
-    },
-  },
-  {
-    id: "yorocket",
-    symbol: "$yo",
-    name: "YoRocket",
-    image:
-      "https://assets.coingecko.com/coins/images/19176/large/yorocket.PNG?1634612749",
-    contracts: {
-      "binance-smart-chain": "0x5e8aa6fe0537f230a233969567fa02f0d1b7a86b",
-    },
-  },
-  {
-    id: "ethereumsc",
-    symbol: "ethsc",
-    name: "EthereumSC",
-    image:
-      "https://assets.coingecko.com/coins/images/12167/large/avatar01.jpg?1597787790",
-    contracts: {
-      ethereum: "0xcfd069247bd5f01a17f1ca76424c9e424256908d",
-    },
-  },
-  {
-    id: "0-5x-long-eos-token",
-    symbol: "eoshalf",
-    name: "0.5X Long EOS Token",
-    image:
-      "https://assets.coingecko.com/coins/images/12000/large/683JEXMN_400x400.png?1596690527",
-    contracts: {
-      ethereum: "",
-    },
-  },
-  {
-    id: "football-inu",
-    symbol: "finu",
-    name: "Football Inu",
-    image:
-      "https://assets.coingecko.com/coins/images/16523/large/football_inu.PNG?1624332778",
-    contracts: {
-      ethereum: "0x48a3d9510f7c2aa61a285ccb4eaa5ba072692468",
-    },
-  },
-  {
-    id: "bgt",
-    symbol: "bgt",
-    name: "BGT",
-    image:
-      "https://assets.coingecko.com/coins/images/6666/large/bgt.jpg?1547042870",
-    contracts: {
-      ethereum: "0x5cbb89b03534d82692b183882c2a2a9ff7fdeb44",
-    },
-  },
-  {
-    id: "liquid-lottery-rtc",
-    symbol: "liqlo",
-    name: "Liquid Lottery RTC",
-    image:
-      "https://assets.coingecko.com/coins/images/13104/large/liqlo_logo.png?1605234382",
-    contracts: {
-      ethereum: "0x59ad6061a0be82155e7acce9f0c37bf59f9c1e3c",
-    },
-  },
-  {
-    id: "yokai-network",
-    symbol: "yokai",
-    name: "Yokai Network",
-    image:
-      "https://assets.coingecko.com/coins/images/20361/large/t1VJM5h.png?1636945441",
-    contracts: {
-      ethereum: "0xb499b5a97bdbc3e117d15b448daacc9305025689",
-    },
-  },
-  {
-    id: "ronin",
-    symbol: "ron",
-    name: "Ronin",
-    image:
-      "https://assets.coingecko.com/coins/images/20009/large/ronin-katana.png?1636437035",
-    contracts: {},
-  },
-  {
-    id: "stonks",
-    symbol: "stonk",
-    name: "STONKS",
-    image:
-      "https://assets.coingecko.com/coins/images/13111/large/stonk_logo.png?1605278755",
-    contracts: {
-      ethereum: "0x60ca261e14f26e8daae8b1a7f8e783d64859126c",
-    },
-  },
-  {
-    id: "ape-stax",
-    symbol: "astax",
-    name: "Ape Stax",
-    image:
-      "https://assets.coingecko.com/coins/images/16842/large/apestax.png?1625383600",
-    contracts: {
-      ethereum: "0x0f8c793dbc30a185138d5da00f106290b26e36c5",
-    },
-  },
-  {
-    id: "pikto-group",
-    symbol: "pkp",
-    name: "Pikto Group",
-    image:
-      "https://assets.coingecko.com/coins/images/13105/large/a-11-e1604828151917-1024x799.png?1605235252",
-    contracts: {
-      ethereum: "0x6a532b08c654a1a86069b74c560d8fa0ff842218",
-    },
-  },
-  {
-    id: "yearn20moonfinance",
-    symbol: "ymf20",
-    name: "Yearn20Moon.Finance",
-    image:
-      "https://assets.coingecko.com/coins/images/13037/large/Brand_Identity.png?1605773986",
-    contracts: {
-      ethereum: "0x16be21c08eb27953273608629e4397556c561d26",
-    },
-  },
-  {
-    id: "helios-cash",
-    symbol: "heo",
-    name: "Helios Cash",
-    image:
-      "https://assets.coingecko.com/coins/images/16790/large/logo200_%2817%29.png?1625031247",
-    contracts: {
-      "polygon-pos": "0x03aa5daf9fd5f7f33c67afbcd53c1c1e87c4c9f7",
-    },
-  },
-  {
-    id: "biki",
-    symbol: "biki",
-    name: "BIKI",
-    image:
-      "https://assets.coingecko.com/coins/images/8119/large/BiKi_icon.png?1581935375",
-    contracts: {
-      ethereum: "0x70debcdab2ef20be3d1dbff6a845e9ccb6e46930",
-    },
-  },
-  {
-    id: "se7en-2",
-    symbol: "se7en",
-    name: "SE7EN",
-    image:
-      "https://assets.coingecko.com/coins/images/16915/large/SE7EN_7_512.png?1625624703",
-    contracts: {
-      "binance-smart-chain": "0x6cd502ab164e37231c20578214f874a8adbdc7c2",
-    },
-  },
-  {
-    id: "trisolaris",
-    symbol: "tri",
-    name: "Trisolaris",
-    image:
-      "https://assets.coingecko.com/coins/images/20607/large/logo_-_2021-11-19T104946.772.png?1637290197",
-    contracts: {},
-  },
-  {
-    id: "tamy-token",
-    symbol: "tmt",
-    name: "Tamy Token",
-    image:
-      "https://assets.coingecko.com/coins/images/12641/large/tamy_logo.png?1601369530",
-    contracts: {
-      ethereum: "0xb9cb7905981198add8059114b3b7dc7042b52f7b",
-    },
-  },
-  {
-    id: "vybe",
-    symbol: "vybe",
-    name: "Vybe",
-    image:
-      "https://assets.coingecko.com/coins/images/12438/large/22k5gGG.jpg?1609924524",
-    contracts: {
-      ethereum: "0x3a1c1d1c06be03cddc4d3332f7c20e1b37c97ce9",
-    },
-  },
-  {
-    id: "solview",
-    symbol: "solv",
-    name: "Solview",
-    image:
-      "https://assets.coingecko.com/coins/images/20482/large/Solview-final-logo-1.png?1637116275",
-    contracts: {
-      solana: "7q3AdgKuMeDRnjaMQs7ppXjaw4HUxjsdyMrrfiSZraiN",
-    },
-  },
-  {
-    id: "compounder",
-    symbol: "cp3r",
-    name: "Compounder",
-    image:
-      "https://assets.coingecko.com/coins/images/13182/large/compounder_logo.png?1606018434",
-    contracts: {
-      ethereum: "0x7ef1081ecc8b5b5b130656a41d4ce4f89dbbcc8c",
-    },
-  },
-  {
-    id: "nework",
-    symbol: "nkc",
-    name: "Nework",
-    image:
-      "https://assets.coingecko.com/coins/images/2731/large/nework.png?1547036932",
-    contracts: {},
-  },
-  {
-    id: "heartk",
-    symbol: "HeartK",
-    name: "HeartK",
-    image:
-      "https://assets.coingecko.com/coins/images/18502/large/4QO2ND.png?1632210427",
-    contracts: {
-      "binance-smart-chain": "0xc417d28d8c83550e3a17ae17652d84bedb5884eb",
-    },
-  },
-  {
-    id: "unicly-the-day-by-arc-collection",
-    symbol: "uarc",
-    name: "Unicly The Day by Arc Collection",
-    image:
-      "https://assets.coingecko.com/coins/images/15677/large/uarc.jpg?1621499433",
-    contracts: {
-      ethereum: "0x44440bd68b5e4b1e0cb810669097e9573175601b",
-    },
-  },
-  {
-    id: "crypto-excellence",
-    symbol: "ce",
-    name: "Crypto Excellence",
-    image:
-      "https://assets.coingecko.com/coins/images/14809/large/ce.PNG?1618539068",
-    contracts: {
-      ethereum: "0x8f12dfc7981de79a8a34070a732471f2d335eece",
-    },
-  },
-  {
-    id: "luckyseventoken",
-    symbol: "lst",
-    name: "LuckySevenToken",
-    image:
-      "https://assets.coingecko.com/coins/images/10553/large/lst7.png?1580944195",
-    contracts: {
-      ethereum: "0x6b9f1f092e0b10015a4391a80cd3e6b6cefd1728",
-    },
-  },
-  {
-    id: "qusd-stablecoin",
-    symbol: "qusd",
-    name: "QUSD Stablecoin",
-    image:
-      "https://assets.coingecko.com/coins/images/13176/large/qusd_logo.png?1605922605",
-    contracts: {
-      ethereum: "0x59d4ccc94a9c4c3d3b4ba2aa343a9bdf95145dd1",
-    },
-  },
-  {
-    id: "ronin",
-    symbol: "ron",
-    name: "Ronin",
-    image:
-      "https://assets.coingecko.com/coins/images/20009/large/ronin-katana.png?1636437035",
-    contracts: {},
-  },
-  {
-    id: "xswap-protocol",
-    symbol: "xsp",
-    name: "XSwap Protocol",
-    image:
-      "https://assets.coingecko.com/coins/images/20696/large/sCokBB2.png?1637564790",
-    contracts: {
-      "": "xdc36726235dadbdb4658d33e62a249dca7c4b2bc68",
-    },
-  },
-  {
-    id: "sonarwatch",
-    symbol: "sonar",
-    name: "SonarWatch",
-    image:
-      "https://assets.coingecko.com/coins/images/20494/large/S_7gaWIC_400x400.png?1637131427",
-    contracts: {
-      solana: "sonarX4VtVkQemriJeLm6CKeW3GDMyiBnnAEMw1MRAE",
-    },
-  },
-  {
-    id: "robet-coin",
-    symbol: "robet",
-    name: "RoBet Coin",
-    image:
-      "https://assets.coingecko.com/coins/images/6286/large/RoBet_Coin.png?1547042328",
-    contracts: {
-      ethereum: "0x2344871f523cbb28a4f60045531184cf1f03ad24",
-    },
-  },
-  {
-    id: "aggregator-network",
-    symbol: "aggt",
-    name: "Aggregator Network",
-    image:
-      "https://assets.coingecko.com/coins/images/15520/large/aggt.PNG?1621119056",
-    contracts: {
-      ethereum: "0x8028a34ec63678bcb64325f805449beba98c28a8",
-    },
-  },
-  {
-    id: "eos-btc",
-    symbol: "ebtc",
-    name: "EOS BTC",
-    image:
-      "https://assets.coingecko.com/coins/images/7222/large/Screen_Shot_2018-12-20_at_2.18.50_PM.png?1547043804",
-    contracts: {
-      eos: "",
-    },
-  },
-  {
-    id: "attlas-token",
-    symbol: "ats",
-    name: "Attlas Token",
-    image:
-      "https://assets.coingecko.com/coins/images/17309/large/logo-ats.png?1627275209",
-    contracts: {
-      ethereum: "0xb9a6644bef37286fc08e703ecd15e9dedf78d3eb",
-    },
-  },
-  {
-    id: "linkbased",
-    symbol: "lbd",
-    name: "LinkBased",
-    image:
-      "https://assets.coingecko.com/coins/images/13506/large/linkbased_logo.jpg?1609224548",
-    contracts: {
-      ethereum: "0xb15ae165000c8d7b69d2a82e425e110668c73ad5",
-    },
-  },
-  {
-    id: "football-inu",
-    symbol: "finu",
-    name: "Football Inu",
-    image:
-      "https://assets.coingecko.com/coins/images/16523/large/football_inu.PNG?1624332778",
-    contracts: {
-      ethereum: "0x48a3d9510f7c2aa61a285ccb4eaa5ba072692468",
-    },
-  },
-  {
-    id: "goonrich",
-    symbol: "goon",
-    name: "GoonRich",
-    image:
-      "https://assets.coingecko.com/coins/images/16361/large/goontoken.png?1623812806",
-    contracts: {
-      ethereum: "0xb0302d59237e6104c3f0d145996302f044797ca5",
-    },
-  },
-  {
-    id: "aqt-token",
-    symbol: "aqt",
-    name: "AQT Token",
-    image:
-      "https://assets.coingecko.com/coins/images/9731/large/logo_%284%29.png?1571305654",
-    contracts: {},
-  },
-  {
-    id: "unix",
-    symbol: "unix",
-    name: "UniX",
-    image:
-      "https://assets.coingecko.com/coins/images/20674/large/unix.png?1637735771",
-    contracts: {
-      ethereum: "0xddd6a0ecc3c6f6c102e5ea3d8af7b801d1a77ac8",
-    },
-  },
-  {
-    id: "bitz",
-    symbol: "bitz",
-    name: "bitz",
-    image:
-      "https://assets.coingecko.com/coins/images/249/large/bitz.png?1547034019",
-    contracts: {},
-  },
-  {
-    id: "yorocket",
-    symbol: "$yo",
-    name: "YoRocket",
-    image:
-      "https://assets.coingecko.com/coins/images/19176/large/yorocket.PNG?1634612749",
-    contracts: {
-      "binance-smart-chain": "0x5e8aa6fe0537f230a233969567fa02f0d1b7a86b",
-    },
-  },
-  {
-    id: "1x-short-okb-token",
-    symbol: "okbhedge",
-    name: "1X Short OKB Token",
-    image:
-      "https://assets.coingecko.com/coins/images/12057/large/683JEXMN_400x400.png?1596704656",
-    contracts: {
-      ethereum: "0x889bc62e94bb6902d022bb82b38f7fcd637df28c",
-    },
-  },
-  {
-    id: "anti-fraud-chain",
-    symbol: "afc",
-    name: "Anti-Fraud Chain",
-    image:
-      "https://assets.coingecko.com/coins/images/9448/large/logo-white.png?1567550853",
-    contracts: {
-      ethereum: "0x14dffd4f515d4c43493c6c512c78fbc59a8af254",
-    },
-  },
-  {
-    id: "standard-token",
-    symbol: "tst",
-    name: "Standard Token",
-    image:
-      "https://assets.coingecko.com/coins/images/20598/large/SdkuLtM7_400x400.png?1637286772",
-    contracts: {
-      ethereum: "0xa0b93b9e90ab887e53f9fb8728c009746e989b53",
-    },
-  },
-  {
-    id: "unicly-gone-studio-collection",
-    symbol: "ugone",
-    name: "Unicly Gone Studio Collection",
-    image:
-      "https://assets.coingecko.com/coins/images/15680/large/gone_studio.jpg?1621500252",
-    contracts: {
-      ethereum: "0xc9df0ed2e9ef4357b51db171ff08297d10875280",
-    },
-  },
-  {
-    id: "99masternodes",
-    symbol: "nmn",
-    name: "99Masternodes",
-    image:
-      "https://assets.coingecko.com/coins/images/8218/large/logo_1_whiteSymbol.png?1556588307",
-    contracts: {},
-  },
-  {
-    id: "tronx-coin",
-    symbol: "tronx",
-    name: "TronX coin",
-    image:
-      "https://assets.coingecko.com/coins/images/12703/large/t200.png?1601867720",
-    contracts: {
-      tron: "TA1UcPfy1Tie4SdTKpjwrjdnpBd2WT51Ss",
-    },
-  },
-  {
-    id: "xlshiba",
-    symbol: "xlshiba",
-    name: "XLSHIBA",
-    image:
-      "https://assets.coingecko.com/coins/images/19802/large/xlshiba.png?1635909741",
-    contracts: {
-      ethereum: "0x443c31b525791b4bfb1cf67196475cb27b834b67",
-    },
-  },
-  {
-    id: "poolstake",
-    symbol: "psk",
-    name: "PoolStake",
-    image:
-      "https://assets.coingecko.com/coins/images/13285/large/psk_logo.png?1606984935",
-    contracts: {
-      ethereum: "0x3f84c4184b35c488f7fe4a12469610c9b1cb03c9",
-    },
-  },
-  {
-    id: "usda",
-    symbol: "usda",
-    name: "USDA",
-    image:
-      "https://assets.coingecko.com/coins/images/10280/large/71706577_106238760785222_2649249116525166592_n.png?1576972115",
-    contracts: {
-      ethereum: "0x3c7b464376db7c9927930cf50eefdea2eff3a66a",
-    },
-  },
-  {
-    id: "emojis-farm",
-    symbol: "emoji",
-    name: "Emojis Farm",
-    image:
-      "https://assets.coingecko.com/coins/images/13341/large/emojis_farm.png?1607588447",
-    contracts: {
-      ethereum: "0xcbd380c2d84deafed09f79863705353505764f26",
+      ethereum: "0x96d62cdcd1cc49cb6ee99c867cb8812bea86b9fa",
     },
   },
   {
@@ -106579,133 +106557,13 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "reborn-dollar",
-    symbol: "rebd",
-    name: "Reborn Dollar",
+    id: "shiba-cloud",
+    symbol: "nimbus",
+    name: "Shiba Cloud",
     image:
-      "https://assets.coingecko.com/coins/images/17505/large/reborn_token%28small_size%29.png?1628044455",
+      "https://assets.coingecko.com/coins/images/16137/large/SCLOUD_256x256_1_200x200.png?1623086984",
     contracts: {
-      ethereum: "0x7fea8dda7462ac9f2ce62cf52ce9840e0e6a8c3b",
-    },
-  },
-  {
-    id: "dmme-app",
-    symbol: "dmme",
-    name: "DMme",
-    image:
-      "https://assets.coingecko.com/coins/images/9598/large/iyrIZf3N_400x400.png?1569383452",
-    contracts: {
-      ethereum: "0x9556f8ee795d991ff371f547162d5efb2769425f",
-    },
-  },
-  {
-    id: "internet-exchange-token",
-    symbol: "inex",
-    name: "Internet Exchange Token",
-    image:
-      "https://assets.coingecko.com/coins/images/11017/large/ftQxvUbk_400x400.jpg?1587127361",
-    contracts: {
-      ethereum: "0xa2d77f8353cb2afd709aba4a967257511ecff716",
-    },
-  },
-  {
-    id: "thecash",
-    symbol: "tch",
-    name: "THECASH",
-    image:
-      "https://assets.coingecko.com/coins/images/11851/large/thecash_logo_200.png?1595165242",
-    contracts: {
-      ethereum: "0xcd475371e39c0d94e82fccc9dd0ea710d0dc0c0b",
-    },
-  },
-  {
-    id: "shareat",
-    symbol: "xat",
-    name: "ShareAt",
-    image:
-      "https://assets.coingecko.com/coins/images/12902/large/shareat.PNG?1603346956",
-    contracts: {
-      ethereum: "0x01c8857057326b8f64dcb5cba6d802dcd132946e",
-    },
-  },
-  {
-    id: "defidrop",
-    symbol: "drops",
-    name: "DefiDrop",
-    image:
-      "https://assets.coingecko.com/coins/images/15318/large/defidrop.PNG?1620511563",
-    contracts: {
-      "binance-smart-chain": "0x4d2e266267f756d54c09afd1d1473c7739eb7020",
-    },
-  },
-  {
-    id: "yfarm-token",
-    symbol: "yfarm",
-    name: "YFARM Token",
-    image:
-      "https://assets.coingecko.com/coins/images/12475/large/yffs.jpg?1600136951",
-    contracts: {
-      ethereum: "0xf5d0fefaab749d8b14c27f0de60cc6e9e7f848d1",
-    },
-  },
-  {
-    id: "web-token-pay",
-    symbol: "wtp",
-    name: "Web Token Pay",
-    image:
-      "https://assets.coingecko.com/coins/images/8720/large/logo_%2828%29.png?1560397140",
-    contracts: {
-      ethereum: "0x1680cfdad75da2bb56ded4f36bb9423c86ffa7b7",
-    },
-  },
-  {
-    id: "soge",
-    symbol: "soge",
-    name: "SOGE",
-    image:
-      "https://assets.coingecko.com/coins/images/14690/large/photo_2021-04-16_12-35-09.jpg?1620027241",
-    contracts: {
-      ethereum: "0x41933422dc4a1cb8c822e06f12f7b52fa5e7e094",
-    },
-  },
-  {
-    id: "swiftmoon",
-    symbol: "smoon",
-    name: "SwiftMoon",
-    image:
-      "https://assets.coingecko.com/coins/images/15609/large/logo-3.png?1621316829",
-    contracts: {
-      "binance-smart-chain": "0xb47d8d9cd415dae40e364b140ae6af186e2332f4",
-    },
-  },
-  {
-    id: "walnut-finance",
-    symbol: "wtf",
-    name: "Walnut.finance",
-    image:
-      "https://assets.coingecko.com/coins/images/12301/large/photo_2020-08-31_04-24-32.jpg?1598968170",
-    contracts: {
-      ethereum: "0x0501e7a02c285b9b520fdbf1badc74ae931ad75d",
-    },
-  },
-  {
-    id: "3x-short-sushi-token",
-    symbol: "sushibear",
-    name: "3X Short Sushi Token",
-    image:
-      "https://assets.coingecko.com/coins/images/12495/large/ftt.png?1600248453",
-    contracts: {
-      ethereum: "",
-    },
-  },
-  {
-    id: "vangold-token",
-    symbol: "vgd",
-    name: "Vangold Token",
-    image:
-      "https://assets.coingecko.com/coins/images/15080/large/20210315_142517.png?1619651013",
-    contracts: {
-      "binance-smart-chain": "0xfd91fa8fab5ca11569e256fa8844bc2abecc331d",
+      ethereum: "0x645035d009182b480fe554d2926664105d62c309",
     },
   },
   {
@@ -106719,106 +106577,6 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "niubiswap",
-    symbol: "niu",
-    name: "Niubiswap",
-    image:
-      "https://assets.coingecko.com/coins/images/15158/large/niu.png?1619996852",
-    contracts: {
-      "binance-smart-chain": "0xfa90d5d5ff08d9a06c9fdf89b4b22217b9dbc418",
-    },
-  },
-  {
-    id: "vain",
-    symbol: "vain",
-    name: "Vain",
-    image:
-      "https://assets.coingecko.com/coins/images/16877/large/vain.PNG?1625531574",
-    contracts: {
-      "binance-smart-chain": "0x6067652fe687aa221b6f86f398af4d0fe9bf45e3",
-    },
-  },
-  {
-    id: "kujira",
-    symbol: "kuji",
-    name: "Kujira",
-    image:
-      "https://assets.coingecko.com/coins/images/20685/large/kuji-200x200.png?1637557201",
-    contracts: {
-      terra: "terra1xfsdgcemqwxp4hhnyk4rle6wr22sseq7j07dnn",
-    },
-  },
-  {
-    id: "helios-cash",
-    symbol: "heo",
-    name: "Helios Cash",
-    image:
-      "https://assets.coingecko.com/coins/images/16790/large/logo200_%2817%29.png?1625031247",
-    contracts: {
-      "polygon-pos": "0x03aa5daf9fd5f7f33c67afbcd53c1c1e87c4c9f7",
-    },
-  },
-  {
-    id: "ecomverse-finance",
-    symbol: "ecov",
-    name: "EcomVerse Finance",
-    image:
-      "https://assets.coingecko.com/coins/images/20477/large/Ads-z-tasar-m-4.png?1637114029",
-    contracts: {
-      "binance-smart-chain": "0x2c002a7058053bd0eebc82b43c531e23e2ad9bef",
-    },
-  },
-  {
-    id: "unicly-waifu-collection",
-    symbol: "uwaifu",
-    name: "Unicly Waifu Collection",
-    image:
-      "https://assets.coingecko.com/coins/images/15218/large/y1ano8ch_400x400.jpg?1620116826",
-    contracts: {
-      ethereum: "0x3ac7a71b97183e3db7722c75eaa8df2c1a0badfc",
-    },
-  },
-  {
-    id: "dacsee",
-    symbol: "dacs",
-    name: "Dacsee",
-    image:
-      "https://assets.coingecko.com/coins/images/4834/large/dacsee-token-logo.png?1547040217",
-    contracts: {
-      ethereum: "0xa31108e5bab5494560db34c95492658af239357c",
-    },
-  },
-  {
-    id: "rakun",
-    symbol: "raku",
-    name: "RAKUN",
-    image:
-      "https://assets.coingecko.com/coins/images/10768/large/Rakun_Icon_Red_200x200.png?1583310899",
-    contracts: {
-      ethereum: "0x51bc0deaf7bbe82bc9006b0c3531668a4206d27f",
-    },
-  },
-  {
-    id: "kong-defi",
-    symbol: "kong",
-    name: "Kong Defi",
-    image:
-      "https://assets.coingecko.com/coins/images/14490/large/IMG_4643.png?1620025009",
-    contracts: {
-      ethereum: "0x7c3cf2d43b50e78e27a81293a43fcac45796fb54",
-    },
-  },
-  {
-    id: "adena-finance",
-    symbol: "adena",
-    name: "Adena Finance",
-    image:
-      "https://assets.coingecko.com/coins/images/20552/large/hII-XM15_400x400.jpg?1637206004",
-    contracts: {
-      "harmony-shard-0": "0x97594e465e6b4df48e58327f566a3f79e9274655",
-    },
-  },
-  {
     id: "youforia",
     symbol: "yfr",
     name: "YouForia",
@@ -106829,81 +106587,13 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "star-crunch",
-    symbol: "starc",
-    name: "Star Crunch",
+    id: "vangold-token",
+    symbol: "vgd",
+    name: "Vangold Token",
     image:
-      "https://assets.coingecko.com/coins/images/18001/large/x5U3RHX.png?1630073208",
+      "https://assets.coingecko.com/coins/images/15080/large/20210315_142517.png?1619651013",
     contracts: {
-      ethereum: "0x7f66ef4be2c128f121ca776888e6142ec0f3bd75",
-    },
-  },
-  {
-    id: "unidollar",
-    symbol: "uniusd",
-    name: "UniDollar",
-    image:
-      "https://assets.coingecko.com/coins/images/11637/large/Unidollar.png?1592272468",
-    contracts: {
-      ethereum: "0x256845e721c0c46d54e6afbd4fa3b52cb72353ea",
-    },
-  },
-  {
-    id: "flokigravity",
-    symbol: "flokig",
-    name: "FlokiGravity",
-    image:
-      "https://assets.coingecko.com/coins/images/19354/large/flokig.jpeg?1635128252",
-    contracts: {
-      "binance-smart-chain": "0xa54c7fa856f0dfd5c1fac07bf4bab876663c42e3",
-    },
-  },
-  {
-    id: "0-5x-long-defi-index-token",
-    symbol: "defihalf",
-    name: "0.5X Long DeFi Index Token",
-    image:
-      "https://assets.coingecko.com/coins/images/12013/large/683JEXMN_400x400__1_.png?1596692965",
-    contracts: {
-      ethereum: "",
-    },
-  },
-  {
-    id: "dkk-token",
-    symbol: "dkkt",
-    name: "DKK Token",
-    image:
-      "https://assets.coingecko.com/coins/images/8338/large/logo_%2818%29.png?1557603828",
-    contracts: {},
-  },
-  {
-    id: "hybrid-bank-cash",
-    symbol: "hbc",
-    name: "Hybrid Bank Cash",
-    image:
-      "https://assets.coingecko.com/coins/images/12489/large/hb_logo.png?1600208518",
-    contracts: {
-      ethereum: "0xfb9553afa2b5c19c5f8e5b8ee175fc01abd1555f",
-    },
-  },
-  {
-    id: "hachiko-inu",
-    symbol: "hachiko",
-    name: "Hachiko Inu",
-    image:
-      "https://assets.coingecko.com/coins/images/15340/large/Hachiko.png?1623248394",
-    contracts: {
-      ethereum: "0xccac36423def6c19ee6b5679144e2976e309ca45",
-    },
-  },
-  {
-    id: "eos-eth",
-    symbol: "eeth",
-    name: "EOS ETH",
-    image:
-      "https://assets.coingecko.com/coins/images/7223/large/Screen_Shot_2018-12-20_at_2.18.50_PM.png?1547043806",
-    contracts: {
-      eos: "",
+      "binance-smart-chain": "0xfd91fa8fab5ca11569e256fa8844bc2abecc331d",
     },
   },
   {
@@ -106918,33 +106608,31 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "nadeshiko",
-    symbol: "ndsk",
-    name: "Nadeshiko",
+    id: "holiday-chain",
+    symbol: "hcc",
+    name: "Holiday Chain",
     image:
-      "https://assets.coingecko.com/coins/images/16904/large/nadeshiko.png?1625580230",
+      "https://assets.coingecko.com/coins/images/9760/large/hcc.PNG?1571439226",
+    contracts: {},
+  },
+  {
+    id: "0-5x-long-eos-token",
+    symbol: "eoshalf",
+    name: "0.5X Long EOS Token",
+    image:
+      "https://assets.coingecko.com/coins/images/12000/large/683JEXMN_400x400.png?1596690527",
     contracts: {
-      "binance-smart-chain": "0x568b0d8ac3967d363257c520c9be0f17984e470f",
+      ethereum: "",
     },
   },
   {
-    id: "bpop",
-    symbol: "bpop",
-    name: "BPOP",
+    id: "binance-vnd",
+    symbol: "bvnd",
+    name: "Binance VND",
     image:
-      "https://assets.coingecko.com/coins/images/9701/large/bpop.PNG?1570916211",
+      "https://assets.coingecko.com/coins/images/13438/large/BUSD.png?1608546122",
     contracts: {
-      ethereum: "0x0452aed878805514e28fb5bd0b56bef92176e32a",
-    },
-  },
-  {
-    id: "tronipay",
-    symbol: "trp",
-    name: "Tronipay",
-    image:
-      "https://assets.coingecko.com/coins/images/8152/large/tronipay-logo.jpg?1555571959",
-    contracts: {
-      ethereum: "0x9b1e1fc958b83e801d1342f9f9ba7da3a55ba1ef",
+      binancecoin: "",
     },
   },
   {
@@ -106958,517 +106646,24 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "wenburn",
-    symbol: "wenb",
-    name: "WenBurn",
+    id: "aggregator-network",
+    symbol: "aggt",
+    name: "Aggregator Network",
     image:
-      "https://assets.coingecko.com/coins/images/12557/large/moonOnFire.jpg?1600746273",
+      "https://assets.coingecko.com/coins/images/15520/large/aggt.PNG?1621119056",
     contracts: {
-      ethereum: "0x46f4e420c75401494a39b70653f4bbb88ad2d728",
+      ethereum: "0x8028a34ec63678bcb64325f805449beba98c28a8",
     },
   },
   {
-    id: "finswap",
-    symbol: "fnsp",
-    name: "Finswap",
+    id: "solview",
+    symbol: "solv",
+    name: "Solview",
     image:
-      "https://assets.coingecko.com/coins/images/12542/large/finswap-orange-200x200-1.png?1600663987",
+      "https://assets.coingecko.com/coins/images/20482/large/Solview-final-logo-1.png?1637116275",
     contracts: {
-      ethereum: "0x3b78dc5736a49bd297dd2e4d62daa83d35a22749",
+      solana: "7q3AdgKuMeDRnjaMQs7ppXjaw4HUxjsdyMrrfiSZraiN",
     },
-  },
-  {
-    id: "ethereumsc",
-    symbol: "ethsc",
-    name: "EthereumSC",
-    image:
-      "https://assets.coingecko.com/coins/images/12167/large/avatar01.jpg?1597787790",
-    contracts: {
-      ethereum: "0xcfd069247bd5f01a17f1ca76424c9e424256908d",
-    },
-  },
-  {
-    id: "0-5x-long-tether-gold-token",
-    symbol: "xauthalf",
-    name: "0.5X Long Tether Gold Token",
-    image:
-      "https://assets.coingecko.com/coins/images/12031/large/683JEXMN_400x400.png?1596698173",
-    contracts: {
-      ethereum: "",
-    },
-  },
-  {
-    id: "1x-short-matic-token",
-    symbol: "matichedge",
-    name: "1X Short Matic Token",
-    image:
-      "https://assets.coingecko.com/coins/images/12054/large/683JEXMN_400x400.png?1596703312",
-    contracts: {
-      ethereum: "",
-    },
-  },
-  {
-    id: "zbank-token",
-    symbol: "zbk",
-    name: "Zbank Token",
-    image:
-      "https://assets.coingecko.com/coins/images/11820/large/zbank2.png?1594681143",
-    contracts: {
-      ethereum: "0x29257908879c5792f1bb25449a7209205434dc3f",
-    },
-  },
-  {
-    id: "sol-fox",
-    symbol: "sfox",
-    name: "Sol Fox",
-    image:
-      "https://assets.coingecko.com/coins/images/20196/large/sfox.png?1636615053",
-    contracts: {
-      solana: "3TMdBbnXKASdx9rBcZ5HQsyqCky7Gt2ea44gYB6Ro15A",
-    },
-  },
-  {
-    id: "digex",
-    symbol: "digex",
-    name: "Digex",
-    image:
-      "https://assets.coingecko.com/coins/images/12891/large/Digex_token.png?1603332770",
-    contracts: {
-      ethereum: "0x763f8b4fb067190e739ed6acb12f40f2f3890840",
-    },
-  },
-  {
-    id: "ymen-finance",
-    symbol: "ymen",
-    name: "Ymen.Finance",
-    image:
-      "https://assets.coingecko.com/coins/images/12452/large/logoymen.png?1603008881",
-    contracts: {
-      ethereum: "0xd0c59798f986d333554688cd667033d469c2398e",
-    },
-  },
-  {
-    id: "rutheneum",
-    symbol: "rth",
-    name: "Rutheneum",
-    image:
-      "https://assets.coingecko.com/coins/images/2305/large/download_%2815%29.jpg?1523360980",
-    contracts: {},
-  },
-  {
-    id: "asian-african-capital-chain",
-    symbol: "acc",
-    name: "Asian-African Capital Chain",
-    image:
-      "https://assets.coingecko.com/coins/images/9523/large/fbSQvxG8y5dVommoQit8UyyMMCL6lqPnZEwG2QLryO39jnV902pbiYHGYtdwykHmPp0VTvEPrvBDdLmFnYVDEQXlrlVQJxABEYWWqP-rkXS__PYoxQAQHJGZPYV8P1I_ONfxIiOZ4ai36xG_b9BPNGR07kzUL8Dlwu_eij8Fi-OskE7v7QQ6QlvZQjE2tb0DpydAowS3txOVsUNFs.jpg?1568605521",
-    contracts: {
-      eos: null,
-    },
-  },
-  {
-    id: "trisolaris",
-    symbol: "tri",
-    name: "Trisolaris",
-    image:
-      "https://assets.coingecko.com/coins/images/20607/large/logo_-_2021-11-19T104946.772.png?1637290197",
-    contracts: {},
-  },
-  {
-    id: "gcnx-token",
-    symbol: "gcnx",
-    name: "GCNX Token",
-    image:
-      "https://assets.coingecko.com/coins/images/17338/large/TXz3FUPFavAVVqdrBSC6trvSFL7FCTLr5W.jpeg?1627355135",
-    contracts: {
-      tron: "TXz3FUPFavAVVqdrBSC6trvSFL7FCTLr5W",
-    },
-  },
-  {
-    id: "ebsp-token",
-    symbol: "ebsp",
-    name: "EBSP Token",
-    image:
-      "https://assets.coingecko.com/coins/images/7650/large/mwlDkYEKIpcWAP00hfCU7KPQti7jgbew1OKea9RGlGwpdkwOTWp7shOWG5EAsXpUonAo8ZnQoVYoWIz0Tju71QcYMesj8-4Qz_CAyxUy12MTknHGjwfpITWwDaRtHXeTDCCGMvPRPR5ebXultUTIQAtB1x9gtvA03QAi5RVg4GkfX6kB_r04Qx6w2lxuLuyUAqd4x6zaQo_1Hy8NV333I.jpg?1549001856",
-    contracts: {
-      ethereum: "0x6f063c0fcda0ea6dcc01d5a7cb3066ed4f90d1a8",
-    },
-  },
-  {
-    id: "versess-coin",
-    symbol: "vers",
-    name: "VERSESS COIN",
-    image:
-      "https://assets.coingecko.com/coins/images/9246/large/logo_%281%29.png?1565561653",
-    contracts: {},
-  },
-  {
-    id: "0-5x-long-dragon-index-token",
-    symbol: "drgnhalf",
-    name: "0.5X Long Dragon Index Token",
-    image:
-      "https://assets.coingecko.com/coins/images/12001/large/683JEXMN_400x400.png?1596690694",
-    contracts: {
-      ethereum: "",
-    },
-  },
-  {
-    id: "afrodex-labs-token",
-    symbol: "afdlt",
-    name: "AfroDex Labs Token",
-    image:
-      "https://assets.coingecko.com/coins/images/9908/large/GOLDEN_TOKEN_4.png?1575868746",
-    contracts: {
-      ethereum: "0xd8a8843b0a5aba6b030e92b3f4d669fad8a5be50",
-    },
-  },
-  {
-    id: "mti-finance",
-    symbol: "mti",
-    name: "MTI Finance",
-    image:
-      "https://assets.coingecko.com/coins/images/13061/large/mti.png?1605153678",
-    contracts: {
-      ethereum: "0x86d3f38edaf7e7959e5d8e6aea5ad3187b78c346",
-    },
-  },
-  {
-    id: "autoglyph-271",
-    symbol: "aglyph",
-    name: "Autoglyph #271",
-    image:
-      "https://assets.coingecko.com/coins/images/18042/large/autoglyph-271.png?1630316281",
-    contracts: {
-      ethereum: "0x8baad3be0eddf4ec8fbd9bc2946a972e30741f8c",
-    },
-  },
-  {
-    id: "lbrl",
-    symbol: "lbrl",
-    name: "LBRL",
-    image:
-      "https://assets.coingecko.com/coins/images/11803/large/LBRL-ROXO.png?1594361198",
-    contracts: {},
-  },
-  {
-    id: "ai-mining",
-    symbol: "aim",
-    name: "AI Mining",
-    image:
-      "https://assets.coingecko.com/coins/images/13635/large/logo_-_2021-01-13T091008.612.png?1610500226",
-    contracts: {
-      ethereum: "0x53352e7d6620cc931c0c9318166ae2a92c1a4666",
-    },
-  },
-  {
-    id: "cpcoin",
-    symbol: "cpc",
-    name: "CPCoin",
-    image:
-      "https://assets.coingecko.com/coins/images/14640/large/BzW-jHmFl_PkBLsqzEGiGZfO_G75YWWzLwwF-_3La21nTjsb_BPi-vG0V0PWWkZz8WDSj5zNmjcN7OkKcym2K2dWeCxYLYIslRQLAyDHWeQt389vFOEgJcojPE-rej71tPs5fSfVX5uJt12yR5kzAxK60Tdd-NWboebmQhtnN04_xHBZ_xSUhL-Zrvpk2MJEUyzDoHFGaRwwpdf.jpg?1617485165",
-    contracts: {},
-  },
-  {
-    id: "saitama-kitty",
-    symbol: "saikitty",
-    name: "Saitama Kitty",
-    image:
-      "https://assets.coingecko.com/coins/images/20186/large/isY65Cv.png?1636611192",
-    contracts: {
-      "binance-smart-chain": "0x8ad579a3258ffd4235e619d0001cb6ad7d9a25cf",
-    },
-  },
-  {
-    id: "1x-short-tomochain-token",
-    symbol: "tomohedge",
-    name: "1X Short TomoChain Token",
-    image:
-      "https://assets.coingecko.com/coins/images/12049/large/683JEXMN_400x400.png?1596702543",
-    contracts: {
-      ethereum: "",
-    },
-  },
-  {
-    id: "cranberry",
-    symbol: "crnbry",
-    name: "Cranberry",
-    image:
-      "https://assets.coingecko.com/coins/images/16470/large/xJ0IjKL.png?1624267835",
-    contracts: {
-      "binance-smart-chain": "0x6a40a7a671d81728506370ce4f3b464303dd9125",
-    },
-  },
-  {
-    id: "babycare",
-    symbol: "babycare",
-    name: "BabyCare",
-    image:
-      "https://assets.coingecko.com/coins/images/19067/large/babycare.png?1634269618",
-    contracts: {
-      "binance-smart-chain": "0x988300f65191c3a52ef59dbb5539c01b502787a9",
-    },
-  },
-  {
-    id: "hyperjump",
-    symbol: "jump",
-    name: "HyperJump",
-    image:
-      "https://assets.coingecko.com/coins/images/20465/large/VevzGuv.png?1637064112",
-    contracts: {
-      fantom: "0x78de9326792ce1d6eca0c978753c6953cdeedd73",
-      "binance-smart-chain": "0x130025ee738a66e691e6a7a62381cb33c6d9ae83",
-    },
-  },
-  {
-    id: "alacrity",
-    symbol: "alr",
-    name: "Alacrity",
-    image:
-      "https://assets.coingecko.com/coins/images/14649/large/logo-while-hor.png?1617494783",
-    contracts: {
-      tron: "TRpsDNYpxRW9URtPU1h5XTXLNHgtQNy3dz",
-    },
-  },
-  {
-    id: "chubby-inu",
-    symbol: "chinu",
-    name: "Chubby Inu",
-    image:
-      "https://assets.coingecko.com/coins/images/15814/large/logo_-_2021-05-26T060705.435.png?1621980432",
-    contracts: {
-      ethereum: "0x910985ffa7101bf5801dd2e91555c465efd9aab3",
-    },
-  },
-  {
-    id: "epstein",
-    symbol: "epstein",
-    name: "Epstein",
-    image:
-      "https://assets.coingecko.com/coins/images/16299/large/pTRo5Ak.png?1623681578",
-    contracts: {
-      ethereum: "0x051cf5178f60e9def5d5a39b2a988a9f914107cb",
-    },
-  },
-  {
-    id: "yearn20moonfinance",
-    symbol: "ymf20",
-    name: "Yearn20Moon.Finance",
-    image:
-      "https://assets.coingecko.com/coins/images/13037/large/Brand_Identity.png?1605773986",
-    contracts: {
-      ethereum: "0x16be21c08eb27953273608629e4397556c561d26",
-    },
-  },
-  {
-    id: "hyruleswap",
-    symbol: "rupee",
-    name: "HyruleSwap",
-    image:
-      "https://assets.coingecko.com/coins/images/14760/large/2_%284%29.png?1618274227",
-    contracts: {
-      "binance-smart-chain": "0x7b0409a3a3f79baa284035d48e1dfd581d7d7654",
-    },
-  },
-  {
-    id: "greencandles",
-    symbol: "green",
-    name: "GreenCandles",
-    image:
-      "https://assets.coingecko.com/coins/images/16577/large/i3jlHLZH_400x400.png?1624504891",
-    contracts: {
-      "binance-smart-chain": "0xa3a02553bdf42be18b3563d5c7968768530f5a73",
-    },
-  },
-  {
-    id: "aston",
-    symbol: "atx",
-    name: "Aston",
-    image:
-      "https://assets.coingecko.com/coins/images/4300/large/aston.png?1547039664",
-    contracts: {
-      ethereum: "0x1a0f2ab46ec630f9fd638029027b552afa64b94c",
-    },
-  },
-  {
-    id: "bitcoin-instant",
-    symbol: "bti",
-    name: "Bitcoin Instant",
-    image:
-      "https://assets.coingecko.com/coins/images/4759/large/bitcoin-instant-logo.png?1547040082",
-    contracts: {},
-  },
-  {
-    id: "dxy-finance",
-    symbol: "dxy",
-    name: "DXY Finance",
-    image:
-      "https://assets.coingecko.com/coins/images/12839/large/dxy_finance.png?1602903489",
-    contracts: {
-      ethereum: "0x39fa206c1648944f92e8f7b626e1cbdf78d7e9db",
-    },
-  },
-  {
-    id: "star-shib",
-    symbol: "STARSB",
-    name: "Star Shib",
-    image:
-      "https://assets.coingecko.com/coins/images/15419/large/100-1.png?1620775159",
-    contracts: {
-      ethereum: "0x5f435cd858f71e42a3db4282231d1ed25ba07aed",
-    },
-  },
-  {
-    id: "stader",
-    symbol: "sd",
-    name: "Stader",
-    image:
-      "https://assets.coingecko.com/coins/images/20658/large/1_xbgTj5cMVuuWvXz0hy-uIg.jpeg?1637530302",
-    contracts: {},
-  },
-  {
-    id: "trich",
-    symbol: "trc",
-    name: "Trich",
-    image:
-      "https://assets.coingecko.com/coins/images/13522/large/CrbB7XreGBKz4kiitz_I2Jx1UsgzJy4PZrb-qk7dTaaJ2s7o6b0YwNH9S81mfM_HmDDfM5e6Z13y_puaEil9cKboJzPUV1agyYPuUftO0OQdaK7QrU_hFWu7h9shv0ahYXMYAP7NEIJc-MXHyIdGfq7Q74KB-SHtl1TXA9Wn-CM-to06kJNK4J-hpJn5ZvTiLRk_aKkxtm4gGJ_.jpg?1609375445",
-    contracts: {
-      tron: "",
-    },
-  },
-  {
-    id: "cybercoin",
-    symbol: "CBR",
-    name: "Cybercoin",
-    image:
-      "https://assets.coingecko.com/coins/images/11927/large/ezDztuH.png?1596179588",
-    contracts: {
-      ethereum: "0x4ba012f6e411a1be55b98e9e62c3a4ceb16ec88b",
-    },
-  },
-  {
-    id: "brosispay",
-    symbol: "bspay",
-    name: "Brosispay",
-    image:
-      "https://assets.coingecko.com/coins/images/14706/large/logo_to_send.png?1617873149",
-    contracts: {
-      "binance-smart-chain": "0x6dceaac4e68d1bc5834dc3c8bc012317cd4d1ffa",
-    },
-  },
-  {
-    id: "goldnero",
-    symbol: "gldx",
-    name: "Goldnero",
-    image:
-      "https://assets.coingecko.com/coins/images/11581/large/logo-white2x.png?1591320267",
-    contracts: {},
-  },
-  {
-    id: "bevo-digital-art-token",
-    symbol: "bevo",
-    name: "Bevo Digital Art Token",
-    image:
-      "https://assets.coingecko.com/coins/images/15777/large/flatvers1-300x300.png?1621835403",
-    contracts: {
-      "binance-smart-chain": "0xc6cb12df4520b7bf83f64c79c585b8462e18b6aa",
-    },
-  },
-  {
-    id: "baby-cuban",
-    symbol: "babycuban",
-    name: "Baby Cuban",
-    image:
-      "https://assets.coingecko.com/coins/images/17199/large/croppedCuban-300x182.png?1626846096",
-    contracts: {
-      ethereum: "0xd21730353086b0d6c34656ca74f4e4295dc9b8e0",
-    },
-  },
-  {
-    id: "fission-cash",
-    symbol: "fcx",
-    name: "Fission Cash",
-    image:
-      "https://assets.coingecko.com/coins/images/13620/large/FCX-Logo-W-e1609294744561.png?1610333962",
-    contracts: {
-      ethereum: "0x0b66015bc42601d5986b540373b4e02d7383c7c1",
-    },
-  },
-  {
-    id: "unicly-artblocks-collection",
-    symbol: "uartb",
-    name: "Unicly ArtBlocks Collection",
-    image:
-      "https://assets.coingecko.com/coins/images/15672/large/uartblocks.jpeg?1621497079",
-    contracts: {
-      ethereum: "0xf824402747e5142d04892fdc27c73e6460e80080",
-    },
-  },
-  {
-    id: "3x-short-zcash-token",
-    symbol: "zecbear",
-    name: "3X Short Zcash Token",
-    image:
-      "https://assets.coingecko.com/coins/images/16560/large/FTX_LOGO.png?1624453448",
-    contracts: {
-      ethereum: "0x78a8c84b4c23563be4518e7045016d3170130823",
-    },
-  },
-  {
-    id: "tom-inu",
-    symbol: "tinu",
-    name: "Tom Inu",
-    image:
-      "https://assets.coingecko.com/coins/images/16505/large/tom-cg-logo.png?1624269653",
-    contracts: {
-      ethereum: "0x2d0e64b6bf13660a4c0de42a0b88144a7c10991f",
-    },
-  },
-  {
-    id: "self-storage-coin",
-    symbol: "stor",
-    name: "Self Storage Coin",
-    image:
-      "https://assets.coingecko.com/coins/images/8159/large/stor33_2.png?1555897923",
-    contracts: {
-      ethereum: "0xa3ceac0aac5c5d868973e546ce4731ba90e873c2",
-    },
-  },
-  {
-    id: "iron-bank-jpy",
-    symbol: "ibjpy",
-    name: "Iron Bank JPY",
-    image:
-      "https://assets.coingecko.com/coins/images/18364/large/jpy.png?1631634116",
-    contracts: {
-      ethereum: "0x5555f75e3d5278082200fb451d1b6ba946d8e13b",
-    },
-  },
-  {
-    id: "yplutus",
-    symbol: "yplt",
-    name: "yplutus",
-    image:
-      "https://assets.coingecko.com/coins/images/13358/large/ypltblack-01.png?1607826916",
-    contracts: {
-      ethereum: "0x40e7705254494a7e61d5b7c86da50225ddc3daae",
-    },
-  },
-  {
-    id: "transparent-token",
-    symbol: "transparent",
-    name: "Transparent Token",
-    image:
-      "https://assets.coingecko.com/coins/images/17823/large/transparent_logo_small.png?1629346496",
-    contracts: {
-      ethereum: "0x4ebe2c526ee3ed4791a02960f53f65645f404ed6",
-    },
-  },
-  {
-    id: "bkex-taihe-stable-a",
-    symbol: "tha",
-    name: "BKEX Taihe Stable A",
-    image:
-      "https://assets.coingecko.com/coins/images/16799/large/bkex.jpeg?1625059545",
-    contracts: {},
   },
   {
     id: "0-5x-long-ethereum-classic-token",
@@ -107481,248 +106676,43 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "ape-stax",
-    symbol: "astax",
-    name: "Ape Stax",
+    id: "riseup",
+    symbol: "riseup",
+    name: "RiseUp",
     image:
-      "https://assets.coingecko.com/coins/images/16842/large/apestax.png?1625383600",
+      "https://assets.coingecko.com/coins/images/16584/large/200x200px-logo-riseup.png?1624510560",
     contracts: {
-      ethereum: "0x0f8c793dbc30a185138d5da00f106290b26e36c5",
+      "binance-smart-chain": "0x61c911b6d1b46dcadbb61bfa7100290a6faad53d",
     },
   },
   {
-    id: "tamy-token",
-    symbol: "tmt",
-    name: "Tamy Token",
+    id: "just-network",
+    symbol: "jus",
+    name: "JUST NETWORK",
     image:
-      "https://assets.coingecko.com/coins/images/12641/large/tamy_logo.png?1601369530",
+      "https://assets.coingecko.com/coins/images/10796/large/OPQ-hZVi_400x400.png?1583722516",
     contracts: {
-      ethereum: "0xb9cb7905981198add8059114b3b7dc7042b52f7b",
+      ethereum: "0x14ca41eecd7d81d5d13098586c0d2314eba285be",
     },
   },
   {
-    id: "get-doge",
-    symbol: "getdoge",
-    name: "Get Doge",
+    id: "savebritney",
+    symbol: "sbrt",
+    name: "SaveBritney",
     image:
-      "https://assets.coingecko.com/coins/images/17236/large/getdoge-icon-200.png?1626931424",
+      "https://assets.coingecko.com/coins/images/17140/large/4NqipCv__400x400_%281%29.jpg?1626589552",
     contracts: {
-      "binance-smart-chain": "0x5ee36c0a5e96220f9dcde6a068c5f4e597f83fbb",
+      ethereum: "0x606ce698aea1dca5a2627a4583da13a340667f09",
     },
   },
   {
-    id: "0-5x-long-altcoin-index-token",
-    symbol: "althalf",
-    name: "0.5X Long Altcoin Index Token",
+    id: "ims-wallet",
+    symbol: "ims",
+    name: "IMSWallet",
     image:
-      "https://assets.coingecko.com/coins/images/12008/large/683JEXMN_400x400.png?1596692307",
+      "https://assets.coingecko.com/coins/images/12173/large/wqtIArTS_400x400.jpg?1597804992",
     contracts: {
-      ethereum: "",
-    },
-  },
-  {
-    id: "biki",
-    symbol: "biki",
-    name: "BIKI",
-    image:
-      "https://assets.coingecko.com/coins/images/8119/large/BiKi_icon.png?1581935375",
-    contracts: {
-      ethereum: "0x70debcdab2ef20be3d1dbff6a845e9ccb6e46930",
-    },
-  },
-  {
-    id: "future-cash-digital",
-    symbol: "fcd",
-    name: "Future Cash Digital",
-    image:
-      "https://assets.coingecko.com/coins/images/13085/large/4abcb18740eb7eef72f8bca62a45640f_340x280.png?1604985657",
-    contracts: {
-      ethereum: "0x74db83feba1574fec860413eb509d1ddfb1b730b",
-    },
-  },
-  {
-    id: "gaberise",
-    symbol: "gabr",
-    name: "GabeRise",
-    image:
-      "https://assets.coingecko.com/coins/images/16794/large/gabe.PNG?1625036583",
-    contracts: {
-      "binance-smart-chain": "0xa610e3b12641abefd4383b0889e51756e490dbf0",
-    },
-  },
-  {
-    id: "pegshares",
-    symbol: "pegs",
-    name: "PegShares",
-    image:
-      "https://assets.coingecko.com/coins/images/13675/large/pegshare.png?1610705105",
-    contracts: {
-      ethereum: "0x88bd6efe33bc82860278c044efa33364c6285032",
-    },
-  },
-  {
-    id: "holiday-chain",
-    symbol: "hcc",
-    name: "Holiday Chain",
-    image:
-      "https://assets.coingecko.com/coins/images/9760/large/hcc.PNG?1571439226",
-    contracts: {},
-  },
-  {
-    id: "100man",
-    symbol: "man",
-    name: "100Man",
-    image:
-      "https://assets.coingecko.com/coins/images/18029/large/rzlfBOs.png?1630293443",
-    contracts: {
-      kardiachain: "0x0acfaa0d0cca295672e09ad906240c03d54f286a",
-    },
-  },
-  {
-    id: "1x-short-privacy-index-token",
-    symbol: "privhedge",
-    name: "1X Short Privacy Index Token",
-    image:
-      "https://assets.coingecko.com/coins/images/12019/large/683JEXMN_400x400__1_.png?1596693816",
-    contracts: {
-      ethereum: "",
-    },
-  },
-  {
-    id: "mainframe-protocol",
-    symbol: "vmain",
-    name: "MainFrame Protocol",
-    image:
-      "https://assets.coingecko.com/coins/images/19856/large/MainFrame-logo3.png?1636063931",
-    contracts: {},
-  },
-  {
-    id: "minieverdoge",
-    symbol: "med",
-    name: "MiniEverDoge",
-    image:
-      "https://assets.coingecko.com/coins/images/16940/large/P6md9jU.png?1625714108",
-    contracts: {
-      "binance-smart-chain": "0xf50155cffd6c9a3634edfd6a00850016fe02c4dc",
-    },
-  },
-  {
-    id: "polyplay",
-    symbol: "play",
-    name: "PolyPlay",
-    image:
-      "https://assets.coingecko.com/coins/images/17314/large/09ee5fe7-7f9c-4e77-8872-d9053ac2a936.png?1627287780",
-    contracts: {
-      "binance-smart-chain": "0x9a3077f34cc30f9bf8e93a0369119bae0113d9cc",
-      ethereum: "0x130966628846bfd36ff31a822705796e8cb8c18d",
-    },
-  },
-  {
-    id: "skin-rich",
-    symbol: "skin",
-    name: "SKIN RICH",
-    image:
-      "https://assets.coingecko.com/coins/images/9900/large/skinrich_2.PNG?1573164965",
-    contracts: {},
-  },
-  {
-    id: "torq-coin",
-    symbol: "torq",
-    name: "TORQ Coin",
-    image:
-      "https://assets.coingecko.com/coins/images/3486/large/torq-coin.png?1547038229",
-    contracts: {
-      ethereum: "0x1c65c261cb89178b02cf2aee20058b992787d770",
-    },
-  },
-  {
-    id: "xpandacoin",
-    symbol: "xpc",
-    name: "XPandaCoin",
-    image:
-      "https://assets.coingecko.com/coins/images/17904/large/200-200.png?1629774455",
-    contracts: {
-      "binance-smart-chain": "0xd5bd23477f92dfd36a3d86f353a57d083b427e88",
-    },
-  },
-  {
-    id: "ikomp",
-    symbol: "ikomp",
-    name: "IKOMP",
-    image:
-      "https://assets.coingecko.com/coins/images/14384/large/logo_ikomp1.png?1615789490",
-    contracts: {
-      ethereum: "0x6a625ddb2e2a2de0257c5129364dd80bb4afa3b9",
-    },
-  },
-  {
-    id: "harta-tech",
-    symbol: "harta",
-    name: "Harta Tech",
-    image:
-      "https://assets.coingecko.com/coins/images/14813/large/hartalogocoingecko.png?1618542976",
-    contracts: {
-      "binance-smart-chain": "0x0b3eee5724730b57caf2a108451c7366230155c4",
-    },
-  },
-  {
-    id: "yearn-finance-protocol",
-    symbol: "yfp",
-    name: "Yearn Finance Protocol",
-    image:
-      "https://assets.coingecko.com/coins/images/12363/large/yearn.jpg?1599309396",
-    contracts: {
-      ethereum: "0x96d62cdcd1cc49cb6ee99c867cb8812bea86b9fa",
-    },
-  },
-  {
-    id: "baby-bake",
-    symbol: "babybake",
-    name: "BabyBake",
-    image:
-      "https://assets.coingecko.com/coins/images/17344/large/200x200-Baby-Bake.png?1627364640",
-    contracts: {
-      "binance-smart-chain": "0x4f73b1f7adcf65d0fa744fd49a8d0341f478cd24",
-    },
-  },
-  {
-    id: "0-5x-long-kyber-network-token",
-    symbol: "knchalf",
-    name: "0.5X Long Kyber Network Token",
-    image:
-      "https://assets.coingecko.com/coins/images/12026/large/683JEXMN_400x400.png?1596696818",
-    contracts: {
-      ethereum: "",
-    },
-  },
-  {
-    id: "cine-media-celebrity-coin",
-    symbol: "cmccoin",
-    name: "CINE MEDIA CELEBRITY COIN",
-    image:
-      "https://assets.coingecko.com/coins/images/11157/large/1585359806656.png?1589244985",
-    contracts: {
-      tron: "",
-    },
-  },
-  {
-    id: "sunglassesdoge",
-    symbol: "sunglassesdoge",
-    name: "SunglassesDoge",
-    image:
-      "https://assets.coingecko.com/coins/images/17164/large/sunGlassesDoge2_200x200.png?1626682992",
-    contracts: {
-      "binance-smart-chain": "0x322a9b99c772c7d31a0a4925edc120110b47512d",
-    },
-  },
-  {
-    id: "euro-token-2",
-    symbol: "euro",
-    name: "Euro Token",
-    image:
-      "https://assets.coingecko.com/coins/images/16247/large/euro.PNG?1623379765",
-    contracts: {
-      "binance-smart-chain": "0x3c2c8fc79d37c97cf41d0a2e0a4c89953e49cc4e",
+      ethereum: "0x3c4030839708a20fd2fb379cf11810dde4888d93",
     },
   },
   {
@@ -107736,6 +106726,172 @@ export const tokens: TokenD[] = [
     },
   },
   {
+    id: "orenda-protocol",
+    symbol: "orex",
+    name: "Orenda Protocol",
+    image:
+      "https://assets.coingecko.com/coins/images/19679/large/200x200logo_%283%29.png?1635741576",
+    contracts: {
+      ethereum: "0x1a58b77d529cf012443094422ed1c9f29e76aaee",
+    },
+  },
+  {
+    id: "self-storage-coin",
+    symbol: "stor",
+    name: "Self Storage Coin",
+    image:
+      "https://assets.coingecko.com/coins/images/8159/large/stor33_2.png?1555897923",
+    contracts: {
+      ethereum: "0xa3ceac0aac5c5d868973e546ce4731ba90e873c2",
+    },
+  },
+  {
+    id: "epstein",
+    symbol: "epstein",
+    name: "Epstein",
+    image:
+      "https://assets.coingecko.com/coins/images/16299/large/pTRo5Ak.png?1623681578",
+    contracts: {
+      ethereum: "0x051cf5178f60e9def5d5a39b2a988a9f914107cb",
+    },
+  },
+  {
+    id: "o2ox",
+    symbol: "o2ox",
+    name: "O2OX",
+    image:
+      "https://assets.coingecko.com/coins/images/17410/large/Coin_O2OX_200x200.png?1627549697",
+    contracts: {
+      tron: "TGa7XABaVqhGcn4obDCVeSLiau5FhfYp92",
+    },
+  },
+  {
+    id: "moola",
+    symbol: "mla",
+    name: "Moola",
+    image:
+      "https://assets.coingecko.com/coins/images/14448/large/caa4fac4-49c8-43c2-8452-82e748afdf31.png?1616129555",
+    contracts: {
+      "binance-smart-chain": "0xbddd7d426274fc5f370817c80c06b86d651963e4",
+    },
+  },
+  {
+    id: "dmme-app",
+    symbol: "dmme",
+    name: "DMme",
+    image:
+      "https://assets.coingecko.com/coins/images/9598/large/iyrIZf3N_400x400.png?1569383452",
+    contracts: {
+      ethereum: "0x9556f8ee795d991ff371f547162d5efb2769425f",
+    },
+  },
+  {
+    id: "nework",
+    symbol: "nkc",
+    name: "Nework",
+    image:
+      "https://assets.coingecko.com/coins/images/2731/large/nework.png?1547036932",
+    contracts: {},
+  },
+  {
+    id: "kper-network",
+    symbol: "kper",
+    name: "Kper Network",
+    image:
+      "https://assets.coingecko.com/coins/images/12984/large/kper.png?1604066205",
+    contracts: {
+      ethereum: "0xc89b4a8a121dd3e726fe7515e703936cf83e3350",
+    },
+  },
+  {
+    id: "kawanggawa",
+    symbol: "kgw",
+    name: "KAWANGGAWA",
+    image:
+      "https://assets.coingecko.com/coins/images/11815/large/f_HFXjBE_400x400.jpg?1594597195",
+    contracts: {
+      ethereum: "0x55eb5288c9b65037a4cd2289637f38a4f9db3a6b",
+    },
+  },
+  {
+    id: "fantasy-tales",
+    symbol: "fts",
+    name: "Fantasy Tales",
+    image:
+      "https://assets.coingecko.com/coins/images/18190/large/fantasy_tales.PNG?1630907892",
+    contracts: {
+      "binance-smart-chain": "0x23662f3f9f35daab7a8d10654b5a4c1f3e57fc7a",
+    },
+  },
+  {
+    id: "fission-cash",
+    symbol: "fcx",
+    name: "Fission Cash",
+    image:
+      "https://assets.coingecko.com/coins/images/13620/large/FCX-Logo-W-e1609294744561.png?1610333962",
+    contracts: {
+      ethereum: "0x0b66015bc42601d5986b540373b4e02d7383c7c1",
+    },
+  },
+  {
+    id: "kskin",
+    symbol: "ksk",
+    name: "Kskin",
+    image:
+      "https://assets.coingecko.com/coins/images/14285/large/logo-kskin.png?1615273981",
+    contracts: {
+      ethereum: "0x44bbb689aa13315ea5d56ebda2d263e53cb4b0b7",
+    },
+  },
+  {
+    id: "0-5x-long-chainlink-token",
+    symbol: "linkhalf",
+    name: "0.5X Long Chainlink Token",
+    image:
+      "https://assets.coingecko.com/coins/images/11992/large/683JEXMN_400x400.png?1596688614",
+    contracts: {
+      ethereum: "",
+    },
+  },
+  {
+    id: "mainframe-protocol",
+    symbol: "vmain",
+    name: "MainFrame Protocol",
+    image:
+      "https://assets.coingecko.com/coins/images/19856/large/MainFrame-logo3.png?1636063931",
+    contracts: {},
+  },
+  {
+    id: "vain",
+    symbol: "vain",
+    name: "Vain",
+    image:
+      "https://assets.coingecko.com/coins/images/16877/large/vain.PNG?1625531574",
+    contracts: {
+      "binance-smart-chain": "0x6067652fe687aa221b6f86f398af4d0fe9bf45e3",
+    },
+  },
+  {
+    id: "dar-dex-token",
+    symbol: "ddt",
+    name: "Dar Dex Token",
+    image:
+      "https://assets.coingecko.com/coins/images/20704/large/dardark200.png?1637570433",
+    contracts: {
+      "binance-smart-chain": "0x28a899e29235e973a69e7c5df833d8cd63985fce",
+    },
+  },
+  {
+    id: "nosta",
+    symbol: "nosta",
+    name: "Nosta",
+    image:
+      "https://assets.coingecko.com/coins/images/16241/large/Logo_Nosta.png?1623374738",
+    contracts: {
+      "binance-smart-chain": "0x8ac973ff7d79d78943ceaca5f7e667369c6dce66",
+    },
+  },
+  {
     id: "bnx",
     symbol: "bnx",
     name: "BTCNEXT Coin",
@@ -107746,22 +106902,472 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "sxc",
-    symbol: "sxc",
-    name: "SXC Token",
-    image: "missing_large.png",
+    id: "detox",
+    symbol: "dtx",
+    name: "Detox",
+    image:
+      "https://assets.coingecko.com/coins/images/17718/large/IfeP9eV.jpg?1629088615",
     contracts: {
-      ethereum: "0x6a48ba795e3289b9151036e189e352e3ee2c7798",
+      "binance-smart-chain": "0x978e4e5b0586c848898eda9fbbb02eb4a207e7bc",
     },
   },
   {
-    id: "0-5x-long-bitcoin-sv-token",
-    symbol: "bsvhalf",
-    name: "0.5X Long Bitcoin SV Token",
+    id: "heartk",
+    symbol: "HeartK",
+    name: "HeartK",
     image:
-      "https://assets.coingecko.com/coins/images/12004/large/683JEXMN_400x400.png?1596691775",
+      "https://assets.coingecko.com/coins/images/18502/large/4QO2ND.png?1632210427",
+    contracts: {
+      "binance-smart-chain": "0xc417d28d8c83550e3a17ae17652d84bedb5884eb",
+    },
+  },
+  {
+    id: "ai-mining",
+    symbol: "aim",
+    name: "AI Mining",
+    image:
+      "https://assets.coingecko.com/coins/images/13635/large/logo_-_2021-01-13T091008.612.png?1610500226",
+    contracts: {
+      ethereum: "0x53352e7d6620cc931c0c9318166ae2a92c1a4666",
+    },
+  },
+  {
+    id: "lbrl",
+    symbol: "lbrl",
+    name: "LBRL",
+    image:
+      "https://assets.coingecko.com/coins/images/11803/large/LBRL-ROXO.png?1594361198",
+    contracts: {},
+  },
+  {
+    id: "coin-guardian",
+    symbol: "cgd",
+    name: "Coin Guardian",
+    image:
+      "https://assets.coingecko.com/coins/images/16847/large/S_xp-TLP_400x400.jpg?1625405384",
+    contracts: {
+      "binance-smart-chain": "0xebf66828c3d2f86e3bd59222bd7570973800c26b",
+    },
+  },
+  {
+    id: "alacrity",
+    symbol: "alr",
+    name: "Alacrity",
+    image:
+      "https://assets.coingecko.com/coins/images/14649/large/logo-while-hor.png?1617494783",
+    contracts: {
+      tron: "TRpsDNYpxRW9URtPU1h5XTXLNHgtQNy3dz",
+    },
+  },
+  {
+    id: "momentum",
+    symbol: "XMM",
+    name: "Momentum",
+    image:
+      "https://assets.coingecko.com/coins/images/12461/large/logo-transparent-200.png?1600007183",
+    contracts: {
+      ethereum: "0x9a7a4c141a3bcce4a31e42c1192ac6add35069b4",
+    },
+  },
+  {
+    id: "hachiko-inu",
+    symbol: "hachiko",
+    name: "Hachiko Inu",
+    image:
+      "https://assets.coingecko.com/coins/images/15340/large/Hachiko.png?1623248394",
+    contracts: {
+      ethereum: "0xccac36423def6c19ee6b5679144e2976e309ca45",
+    },
+  },
+  {
+    id: "blockstamp",
+    symbol: "bst",
+    name: "BlockStamp",
+    image:
+      "https://assets.coingecko.com/coins/images/8514/large/200x200.png?1559094704",
+    contracts: {},
+  },
+  {
+    id: "currency-network",
+    symbol: "cnet",
+    name: "Currency Network",
+    image:
+      "https://assets.coingecko.com/coins/images/6688/large/currency_network_cnet.jpg?1547042892",
+    contracts: {},
+  },
+  {
+    id: "kitcoin",
+    symbol: "ktc",
+    name: "Kitcoin",
+    image:
+      "https://assets.coingecko.com/coins/images/8910/large/logo2.png?1562744333",
+    contracts: {
+      ethereum: "0x9827f6e8df0ccc584ff7b37144de8bac7c446385",
+    },
+  },
+  {
+    id: "snowballtoken",
+    symbol: "snowball",
+    name: "Snowball Token",
+    image:
+      "https://assets.coingecko.com/coins/images/15439/large/Untitled-design-9.png?1620805759",
+    contracts: {
+      "binance-smart-chain": "0x764b602c261a929b45f9fe7a4eabf4a9f8470458",
+    },
+  },
+  {
+    id: "nadeshiko",
+    symbol: "ndsk",
+    name: "Nadeshiko",
+    image:
+      "https://assets.coingecko.com/coins/images/16904/large/nadeshiko.png?1625580230",
+    contracts: {
+      "binance-smart-chain": "0x568b0d8ac3967d363257c520c9be0f17984e470f",
+    },
+  },
+  {
+    id: "cost-coin",
+    symbol: "akm",
+    name: "COST COIN+",
+    image:
+      "https://assets.coingecko.com/coins/images/11705/large/akm.PNG?1592984686",
+    contracts: {
+      ethereum: "0x5f02cf3c7ada49dfc4a3645fc85c8ae86808dd9b",
+    },
+  },
+  {
+    id: "digex",
+    symbol: "digex",
+    name: "Digex",
+    image:
+      "https://assets.coingecko.com/coins/images/12891/large/Digex_token.png?1603332770",
+    contracts: {
+      ethereum: "0x763f8b4fb067190e739ed6acb12f40f2f3890840",
+    },
+  },
+  {
+    id: "kutikirise",
+    symbol: "ktr",
+    name: "KuTikiRise",
+    image:
+      "https://assets.coingecko.com/coins/images/17089/large/kutikirise.png?1626182642",
+    contracts: {
+      "kucoin-community-chain": "0x141b987f067db2745402a07de8d1e471fc48c4aa",
+    },
+  },
+  {
+    id: "walnut-finance",
+    symbol: "wtf",
+    name: "Walnut.finance",
+    image:
+      "https://assets.coingecko.com/coins/images/12301/large/photo_2020-08-31_04-24-32.jpg?1598968170",
+    contracts: {
+      ethereum: "0x0501e7a02c285b9b520fdbf1badc74ae931ad75d",
+    },
+  },
+  {
+    id: "suprenft",
+    symbol: "snft",
+    name: "SupreNFT",
+    image:
+      "https://assets.coingecko.com/coins/images/20557/large/flogo.png?1637209401",
+    contracts: {},
+  },
+  {
+    id: "pegshares",
+    symbol: "pegs",
+    name: "PegShares",
+    image:
+      "https://assets.coingecko.com/coins/images/13675/large/pegshare.png?1610705105",
+    contracts: {
+      ethereum: "0x88bd6efe33bc82860278c044efa33364c6285032",
+    },
+  },
+  {
+    id: "rakun",
+    symbol: "raku",
+    name: "RAKUN",
+    image:
+      "https://assets.coingecko.com/coins/images/10768/large/Rakun_Icon_Red_200x200.png?1583310899",
+    contracts: {
+      ethereum: "0x51bc0deaf7bbe82bc9006b0c3531668a4206d27f",
+    },
+  },
+  {
+    id: "autoglyph-271",
+    symbol: "aglyph",
+    name: "Autoglyph #271",
+    image:
+      "https://assets.coingecko.com/coins/images/18042/large/autoglyph-271.png?1630316281",
+    contracts: {
+      ethereum: "0x8baad3be0eddf4ec8fbd9bc2946a972e30741f8c",
+    },
+  },
+  {
+    id: "moonlyfans",
+    symbol: "moonlyfans",
+    name: "MoonlyFans",
+    image:
+      "https://assets.coingecko.com/coins/images/15922/large/AQ1DDZ3t.jpg?1622431201",
+    contracts: {
+      "binance-smart-chain": "0x95a566d335872f7ee447d5010ecef96c1806cb82",
+    },
+  },
+  {
+    id: "trisolaris",
+    symbol: "tri",
+    name: "Trisolaris",
+    image:
+      "https://assets.coingecko.com/coins/images/20607/large/logo_-_2021-11-19T104946.772.png?1637290197",
+    contracts: {},
+  },
+  {
+    id: "biotron",
+    symbol: "btrn",
+    name: "Biotron",
+    image:
+      "https://assets.coingecko.com/coins/images/4038/large/biotron.png?1547039163",
+    contracts: {
+      ethereum: "0x03c780cd554598592b97b7256ddaad759945b125",
+    },
+  },
+  {
+    id: "libera",
+    symbol: "lib",
+    name: "Libera",
+    image:
+      "https://assets.coingecko.com/coins/images/12211/large/19nmRSeR_400x400.jpg?1598234697",
+    contracts: {
+      ethereum: "0x0bf6261297198d91d4fa460242c69232146a5703",
+    },
+  },
+  {
+    id: "hybrid-bank-cash",
+    symbol: "hbc",
+    name: "Hybrid Bank Cash",
+    image:
+      "https://assets.coingecko.com/coins/images/12489/large/hb_logo.png?1600208518",
+    contracts: {
+      ethereum: "0xfb9553afa2b5c19c5f8e5b8ee175fc01abd1555f",
+    },
+  },
+  {
+    id: "shareat",
+    symbol: "xat",
+    name: "ShareAt",
+    image:
+      "https://assets.coingecko.com/coins/images/12902/large/shareat.PNG?1603346956",
+    contracts: {
+      ethereum: "0x01c8857057326b8f64dcb5cba6d802dcd132946e",
+    },
+  },
+  {
+    id: "space-cat",
+    symbol: "spacecat",
+    name: "Space Cat",
+    image:
+      "https://assets.coingecko.com/coins/images/17227/large/60f80b796540ba7b1658a3ff_logo200.png?1626919180",
+    contracts: {
+      "binance-smart-chain": "0x7e82b5a7af1916a97fa656b2a38c070e79143ff9",
+    },
+  },
+  {
+    id: "3x-short-sushi-token",
+    symbol: "sushibear",
+    name: "3X Short Sushi Token",
+    image:
+      "https://assets.coingecko.com/coins/images/12495/large/ftt.png?1600248453",
     contracts: {
       ethereum: "",
+    },
+  },
+  {
+    id: "bcat",
+    symbol: "bcat",
+    name: "BCAT",
+    image:
+      "https://assets.coingecko.com/coins/images/9593/large/bcat.png?1569278870",
+    contracts: {
+      ethereum: "0xfdeaa4ab9fea519afd74df2257a21e5bca0dfd3f",
+    },
+  },
+  {
+    id: "hyperjump",
+    symbol: "jump",
+    name: "HyperJump",
+    image:
+      "https://assets.coingecko.com/coins/images/20465/large/jump.png?1638350433",
+    contracts: {
+      fantom: "0x78de9326792ce1d6eca0c978753c6953cdeedd73",
+      "binance-smart-chain": "0x130025ee738a66e691e6a7a62381cb33c6d9ae83",
+    },
+  },
+  {
+    id: "daddy-feg",
+    symbol: "daddyfeg",
+    name: "Daddy Feg",
+    image:
+      "https://assets.coingecko.com/coins/images/16886/large/oRO6iffY_200x200.jpg?1625548603",
+    contracts: {
+      "binance-smart-chain": "0xf869076283148054ce4634677b3bb832320463aa",
+    },
+  },
+  {
+    id: "0-5x-long-kyber-network-token",
+    symbol: "knchalf",
+    name: "0.5X Long Kyber Network Token",
+    image:
+      "https://assets.coingecko.com/coins/images/12026/large/683JEXMN_400x400.png?1596696818",
+    contracts: {
+      ethereum: "",
+    },
+  },
+  {
+    id: "sol-fox",
+    symbol: "sfox",
+    name: "Sol Fox",
+    image:
+      "https://assets.coingecko.com/coins/images/20196/large/sfox.png?1636615053",
+    contracts: {
+      solana: "3TMdBbnXKASdx9rBcZ5HQsyqCky7Gt2ea44gYB6Ro15A",
+    },
+  },
+  {
+    id: "metaprediction",
+    symbol: "metp",
+    name: "Metaprediction",
+    image:
+      "https://assets.coingecko.com/coins/images/10997/large/81621194_148915083232429_7449717815403085824_n.jpg?1587026250",
+    contracts: {
+      ethereum: "0x108d27f9c4b2a98c025c94c76ca78c6ce6c7a4eb",
+    },
+  },
+  {
+    id: "luckyseventoken",
+    symbol: "lst",
+    name: "LuckySevenToken",
+    image:
+      "https://assets.coingecko.com/coins/images/10553/large/lst7.png?1580944195",
+    contracts: {
+      ethereum: "0x6b9f1f092e0b10015a4391a80cd3e6b6cefd1728",
+    },
+  },
+  {
+    id: "balloon-coin",
+    symbol: "balo",
+    name: "Balloon Coin",
+    image:
+      "https://assets.coingecko.com/coins/images/11142/large/logo-2.png?1588918249",
+    contracts: {
+      ethereum: "0x6523203bd28d399068acc14db6b7f31d9bf43f1a",
+    },
+  },
+  {
+    id: "thetimeschaincoin",
+    symbol: "ttc",
+    name: "TheTimesChainCoin",
+    image:
+      "https://assets.coingecko.com/coins/images/9528/large/lD-E4KiHMPVbPJGUHBaOQlqOFE7NS0lwUmEyzGqNF5TPAOkizfiSOX7NOTjD4OJnGSYJIIJ7d1CmWS-AigN8Lxz6N3IC-wou1lESlbbu2krKaWlLdSyWrp8SUeji7HtOBM0uoEzNJWCyYgGYuk7pCq3KXZ5ppiH0ZjUVZcZAjJLax3S25_Qlh1RX21LiuWMttjqkD9irV8QQzSzib.jpg?1568613440",
+    contracts: {
+      ethereum: "0xaff4abdc75f07387401ba9bc0f75ebe4c734b4c9",
+    },
+  },
+  {
+    id: "aston",
+    symbol: "atx",
+    name: "Aston",
+    image:
+      "https://assets.coingecko.com/coins/images/4300/large/aston.png?1547039664",
+    contracts: {
+      ethereum: "0x1a0f2ab46ec630f9fd638029027b552afa64b94c",
+    },
+  },
+  {
+    id: "stader",
+    symbol: "sd",
+    name: "Stader",
+    image:
+      "https://assets.coingecko.com/coins/images/20658/large/1_xbgTj5cMVuuWvXz0hy-uIg.jpeg?1637530302",
+    contracts: {},
+  },
+  {
+    id: "yplutus",
+    symbol: "yplt",
+    name: "yplutus",
+    image:
+      "https://assets.coingecko.com/coins/images/13358/large/ypltblack-01.png?1607826916",
+    contracts: {
+      ethereum: "0x40e7705254494a7e61d5b7c86da50225ddc3daae",
+    },
+  },
+  {
+    id: "thore-exchange",
+    symbol: "thex",
+    name: "Thore Exchange Token",
+    image:
+      "https://assets.coingecko.com/coins/images/6915/large/photo_2018-11-18_17-49-32.jpg?1547043286",
+    contracts: {
+      ethereum: "0x3204dcde0c50b7b2e606587663a0fe2ee8dfb6bf",
+    },
+  },
+  {
+    id: "ebsp-token",
+    symbol: "ebsp",
+    name: "EBSP Token",
+    image:
+      "https://assets.coingecko.com/coins/images/7650/large/mwlDkYEKIpcWAP00hfCU7KPQti7jgbew1OKea9RGlGwpdkwOTWp7shOWG5EAsXpUonAo8ZnQoVYoWIz0Tju71QcYMesj8-4Qz_CAyxUy12MTknHGjwfpITWwDaRtHXeTDCCGMvPRPR5ebXultUTIQAtB1x9gtvA03QAi5RVg4GkfX6kB_r04Qx6w2lxuLuyUAqd4x6zaQo_1Hy8NV333I.jpg?1549001856",
+    contracts: {
+      ethereum: "0x6f063c0fcda0ea6dcc01d5a7cb3066ed4f90d1a8",
+    },
+  },
+  {
+    id: "internet-exchange-token",
+    symbol: "inex",
+    name: "Internet Exchange Token",
+    image:
+      "https://assets.coingecko.com/coins/images/11017/large/ftQxvUbk_400x400.jpg?1587127361",
+    contracts: {
+      ethereum: "0xa2d77f8353cb2afd709aba4a967257511ecff716",
+    },
+  },
+  {
+    id: "ape-stax",
+    symbol: "astax",
+    name: "Ape Stax",
+    image:
+      "https://assets.coingecko.com/coins/images/16842/large/apestax.png?1625383600",
+    contracts: {
+      ethereum: "0x0f8c793dbc30a185138d5da00f106290b26e36c5",
+    },
+  },
+  {
+    id: "flokigravity",
+    symbol: "flokig",
+    name: "FlokiGravity",
+    image:
+      "https://assets.coingecko.com/coins/images/19354/large/flokig.jpeg?1635128252",
+    contracts: {
+      "binance-smart-chain": "0xa54c7fa856f0dfd5c1fac07bf4bab876663c42e3",
+    },
+  },
+  {
+    id: "lucky1token",
+    symbol: "l1t",
+    name: "Lucky1Token",
+    image:
+      "https://assets.coingecko.com/coins/images/18428/large/L1-T-200x200.png?1631885426",
+    contracts: {
+      ethereum: "0x30baadb0c58a913934082962512c1aab1e596fef",
+    },
+  },
+  {
+    id: "yfarm-token",
+    symbol: "yfarm",
+    name: "YFARM Token",
+    image:
+      "https://assets.coingecko.com/coins/images/12475/large/yffs.jpg?1600136951",
+    contracts: {
+      ethereum: "0xf5d0fefaab749d8b14c27f0de60cc6e9e7f848d1",
     },
   },
   {
@@ -107775,81 +107381,112 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "hustle-token",
-    symbol: "husl",
-    name: "Hustle Token",
+    id: "unicly-waifu-collection",
+    symbol: "uwaifu",
+    name: "Unicly Waifu Collection",
     image:
-      "https://assets.coingecko.com/coins/images/10680/large/hlhfVHeb_400x400.jpg?1581804351",
+      "https://assets.coingecko.com/coins/images/15218/large/y1ano8ch_400x400.jpg?1620116826",
     contracts: {
-      ethereum: "0x56be94d29e1125d2d61d06629c1b251d72c1b3b3",
+      ethereum: "0x3ac7a71b97183e3db7722c75eaa8df2c1a0badfc",
     },
   },
   {
-    id: "gasgains",
-    symbol: "gasg",
-    name: "Gasgains",
+    id: "star-crunch",
+    symbol: "starc",
+    name: "Star Crunch",
     image:
-      "https://assets.coingecko.com/coins/images/13795/large/gasgains_logo.png?1611809086",
+      "https://assets.coingecko.com/coins/images/18001/large/x5U3RHX.png?1630073208",
     contracts: {
-      ethereum: "0xc58467b855401ef3ff8fda9216f236e29f0d6277",
+      ethereum: "0x7f66ef4be2c128f121ca776888e6142ec0f3bd75",
     },
   },
   {
-    id: "babydogecake",
-    symbol: "bdc",
-    name: "BabyDogeCake",
+    id: "yfmoonshot",
+    symbol: "yfms",
+    name: "YFMoonshot",
     image:
-      "https://assets.coingecko.com/coins/images/17405/large/eWt6m4W.png?1627539644",
+      "https://assets.coingecko.com/coins/images/12496/large/yfmoonshot_logo.jpg?1600266768",
     contracts: {
-      "binance-smart-chain": "0x7181638e041e26321f9f2519e2f885f656458519",
+      ethereum: "0xfef3bef71a5eb97e097039038776fd967ae5b106",
     },
   },
   {
-    id: "trustnft",
-    symbol: "trustnft",
-    name: "TrustNFT",
+    id: "yorocket",
+    symbol: "$yo",
+    name: "YoRocket",
     image:
-      "https://assets.coingecko.com/coins/images/20478/large/logo-3_%281%29.png?1637114682",
+      "https://assets.coingecko.com/coins/images/19176/large/yorocket.PNG?1634612749",
     contracts: {
-      "binance-smart-chain": "0x8fa83334784f5b9cb2f15185c3d1db1e7c531e11",
+      "binance-smart-chain": "0x5e8aa6fe0537f230a233969567fa02f0d1b7a86b",
     },
   },
   {
-    id: "se7en-2",
-    symbol: "se7en",
-    name: "SE7EN",
+    id: "thanos-2",
+    symbol: "thanos",
+    name: "THANOS",
     image:
-      "https://assets.coingecko.com/coins/images/16915/large/SE7EN_7_512.png?1625624703",
+      "https://assets.coingecko.com/coins/images/19136/large/5ctOmsu.png?1634527818",
     contracts: {
-      "binance-smart-chain": "0x6cd502ab164e37231c20578214f874a8adbdc7c2",
+      ethereum: "0xdb0c52980e66ef97ee2ab85f57f86cd53928ac93",
     },
   },
   {
-    id: "oec-auction",
-    symbol: "auctionk",
-    name: "OEC AUCTION",
+    id: "ketchup-finance",
+    symbol: "ketchup",
+    name: "Ketchup Finance",
     image:
-      "https://assets.coingecko.com/coins/images/18601/large/auctionk.png?1632654033",
+      "https://assets.coingecko.com/coins/images/16232/large/J4KoUiq1_400x400.jpg?1623362234",
     contracts: {
-      "okex-chain": "0x77df6ebec3316792d4ea5bc0f8286c27905aa8e8",
+      "binance-smart-chain": "0x714a84632ed7edbbbfeb62dacf02db4beb4c69d9",
     },
   },
   {
-    id: "ipfst",
-    symbol: "ipfst",
-    name: "IPFST",
-    image:
-      "https://assets.coingecko.com/coins/images/9667/large/855329605b484cac887c8a1c79e91c25.png?1570487527",
-    contracts: {},
+    id: "sxc",
+    symbol: "sxc",
+    name: "SXC Token",
+    image: "missing_large.png",
+    contracts: {
+      ethereum: "0x6a48ba795e3289b9151036e189e352e3ee2c7798",
+    },
   },
   {
-    id: "dream-swap",
-    symbol: "dream",
-    name: "Dream Swap",
+    id: "eos-btc",
+    symbol: "ebtc",
+    name: "EOS BTC",
     image:
-      "https://assets.coingecko.com/coins/images/13033/large/dream_32.png?1604503082",
+      "https://assets.coingecko.com/coins/images/7222/large/Screen_Shot_2018-12-20_at_2.18.50_PM.png?1547043804",
     contracts: {
-      ethereum: "0xa93d5cfaa41193b13321c035b4bdd2b534172762",
+      eos: "",
+    },
+  },
+  {
+    id: "tamy-token",
+    symbol: "tmt",
+    name: "Tamy Token",
+    image:
+      "https://assets.coingecko.com/coins/images/12641/large/tamy_logo.png?1601369530",
+    contracts: {
+      ethereum: "0xb9cb7905981198add8059114b3b7dc7042b52f7b",
+    },
+  },
+  {
+    id: "simba-token",
+    symbol: "simba",
+    name: "Simba Token",
+    image:
+      "https://assets.coingecko.com/coins/images/16060/large/200x200_%2819%29.png?1622710548",
+    contracts: {
+      ethereum: "0x254417f7b56328a48f554b173dca7bdda7a2a0d2",
+    },
+  },
+  {
+    id: "vicetoken",
+    symbol: "vicex",
+    name: "ViceToken",
+    image:
+      "https://assets.coingecko.com/coins/images/17403/large/313yJo3V_400x400.png?1627535314",
+    contracts: {
+      ethereum: "0xdfd5bb6ce8716822b2c9b255560194ca3509bebc",
     },
   },
   {
@@ -107863,399 +107500,127 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "blockstamp",
-    symbol: "bst",
-    name: "BlockStamp",
+    id: "baby-cuban",
+    symbol: "babycuban",
+    name: "Baby Cuban",
     image:
-      "https://assets.coingecko.com/coins/images/8514/large/200x200.png?1559094704",
+      "https://assets.coingecko.com/coins/images/17199/large/croppedCuban-300x182.png?1626846096",
+    contracts: {
+      ethereum: "0xd21730353086b0d6c34656ca74f4e4295dc9b8e0",
+    },
+  },
+  {
+    id: "bkex-taihe-stable-a",
+    symbol: "tha",
+    name: "BKEX Taihe Stable A",
+    image:
+      "https://assets.coingecko.com/coins/images/16799/large/bkex.jpeg?1625059545",
     contracts: {},
   },
   {
-    id: "dogezoo",
-    symbol: "dzoo",
-    name: "DogeZoo",
+    id: "vbt",
+    symbol: "vbt",
+    name: "VBT",
     image:
-      "https://assets.coingecko.com/coins/images/18209/large/doge.PNG?1630995263",
+      "https://assets.coingecko.com/coins/images/8467/large/747suczn_400x400.jpg?1558766251",
     contracts: {
-      "binance-smart-chain": "0x5419291d81c68c103363e06046f40a9056ab2b7f",
+      ethereum: "0x1ffe24629f1b3df74fc0f6e5d086f2fd09258ff2",
     },
   },
   {
-    id: "summeris",
-    symbol: "sum",
-    name: "Summeris",
+    id: "greencandles",
+    symbol: "green",
+    name: "GreenCandles",
     image:
-      "https://assets.coingecko.com/coins/images/20806/large/200_%2814%29.png?1637708796",
+      "https://assets.coingecko.com/coins/images/16577/large/i3jlHLZH_400x400.png?1624504891",
     contracts: {
-      "binance-smart-chain": "0x84689271848cc405a36b967d24d73f20884f3648",
+      "binance-smart-chain": "0xa3a02553bdf42be18b3563d5c7968768530f5a73",
     },
   },
   {
-    id: "davis-cup-fan-token",
-    symbol: "DAVIS",
-    name: "Davis Cup Fan Token",
+    id: "ethereumsc",
+    symbol: "ethsc",
+    name: "EthereumSC",
     image:
-      "https://assets.coingecko.com/coins/images/20793/large/tokens_7514c284-9026-46cf-bdc6-97d8c6076b8e.png?1637673729",
+      "https://assets.coingecko.com/coins/images/12167/large/avatar01.jpg?1597787790",
     contracts: {
-      chiliz: "0x4b436f10911cd3f90b06f52e2a788a0a0dff96de",
+      ethereum: "0xcfd069247bd5f01a17f1ca76424c9e424256908d",
     },
   },
   {
-    id: "thors-mead",
-    symbol: "mead",
-    name: "Thors Mead",
+    id: "xswap-protocol",
+    symbol: "xsp",
+    name: "XSwap Protocol",
     image:
-      "https://assets.coingecko.com/coins/images/20837/large/Gv06icCE_400x400.jpg?1637737430",
+      "https://assets.coingecko.com/coins/images/20696/large/sCokBB2.png?1637564790",
     contracts: {
-      avalanche: "0x245c2591403e182e41d7a851eab53b01854844ce",
+      "": "xdc36726235dadbdb4658d33e62a249dca7c4b2bc68",
     },
   },
   {
-    id: "firezard",
-    symbol: "zard",
-    name: "FireZard",
+    id: "aqt-token",
+    symbol: "aqt",
+    name: "AQT Token",
     image:
-      "https://assets.coingecko.com/coins/images/20749/large/FireZard_200.png?1637635239",
-    contracts: {
-      "binance-smart-chain": "0xcf663a0ef9155bdc35a4b918bbec75e9bfe40d2a",
-    },
-  },
-  {
-    id: "cardax",
-    symbol: "cdx",
-    name: "Cardax",
-    image:
-      "https://assets.coingecko.com/coins/images/20802/large/cardax.PNG?1637706497",
-    contracts: {
-      cardano: "722c45e8ba2a3c399cf09949abe74546ecb75defb8206914085dc28e434458",
-    },
-  },
-  {
-    id: "lucid-lands",
-    symbol: "llg",
-    name: "Lucid Lands",
-    image:
-      "https://assets.coingecko.com/coins/images/20812/large/t4NyStd9_400x400.jpg?1637713006",
-    contracts: {
-      "binance-smart-chain": "0x4691f60c894d3f16047824004420542e4674e621",
-    },
-  },
-  {
-    id: "wolf-game-wool",
-    symbol: "wool",
-    name: "Wolf Game Wool",
-    image:
-      "https://assets.coingecko.com/coins/images/20760/large/KM3RwIVx_400x400.jpg?1637650093",
-    contracts: {
-      ethereum: "0x8355dbe8b0e275abad27eb843f3eaf3fc855e525",
-    },
-  },
-  {
-    id: "seamlessswap-token",
-    symbol: "seamless",
-    name: "SeamlessSwap Token",
-    image:
-      "https://assets.coingecko.com/coins/images/20836/large/h9aSYw1B_400x400.jpg?1637736753",
-    contracts: {
-      "binance-smart-chain": "0x2fc9e0f34d86f65b495de7ee3bb5cbeac7f92b04",
-    },
-  },
-  {
-    id: "safeswap-token",
-    symbol: "ssgtx",
-    name: "Safeswap Token",
-    image:
-      "https://assets.coingecko.com/coins/images/20769/large/15021.png?1637657834",
-    contracts: {
-      "polygon-pos": "0xd0cfd20e8bbdb7621b705a4fd61de2e80c2cd02f",
-    },
-  },
-  {
-    id: "cvd19",
-    symbol: "cvd19",
-    name: "CVD19",
-    image:
-      "https://assets.coingecko.com/coins/images/20928/large/dswukNcT_400x400.jpg?1637935364",
-    contracts: {
-      "binance-smart-chain": "0x437811519f3f7dfde412a91a9939e9b78c215aa3",
-    },
-  },
-  {
-    id: "browniesswap",
-    symbol: "brown",
-    name: "BrowniesSwap",
-    image:
-      "https://assets.coingecko.com/coins/images/20826/large/200x200-LOGO.png?1637725008",
-    contracts: {
-      "binance-smart-chain": "0x208fe37358d6aa767af66c4d87d5542ee2f35334",
-    },
-  },
-  {
-    id: "mintea",
-    symbol: "mint",
-    name: "Mintea",
-    image:
-      "https://assets.coingecko.com/coins/images/20818/large/SFq-K6w3-400x400.jpg?1637719898",
-    contracts: {
-      "binance-smart-chain": "0x950e49e4ceaf97dc38d38cf62b7d63fc81390b7e",
-    },
-  },
-  {
-    id: "lovelace-world",
-    symbol: "lace",
-    name: "Lovelace World",
-    image:
-      "https://assets.coingecko.com/coins/images/20801/large/voOmcwrV_400x400.jpg?1637704443",
-    contracts: {
-      "binance-smart-chain": "0xa3499dd7dbbbd93cb0f8303f8a8ace8d02508e73",
-    },
-  },
-  {
-    id: "scary-chain-capital",
-    symbol: "scc",
-    name: "Scary Chain Capital",
-    image:
-      "https://assets.coingecko.com/coins/images/20864/large/Asset_1_%281%29.png?1637805857",
-    contracts: {
-      fantom: "0xb63029e37fc5186cb58c3b8c193fd37b1e1e1d43",
-    },
-  },
-  {
-    id: "dofi",
-    symbol: "doo",
-    name: "Dofi",
-    image:
-      "https://assets.coingecko.com/coins/images/20853/large/dofi.PNG?1637789247",
-    contracts: {
-      tron: "TNo7XJu46hbEatQw7uxmcKx3nnrMRUCBhv",
-    },
-  },
-  {
-    id: "kilt-protocol",
-    symbol: "kilt",
-    name: "KILT Protocol",
-    image:
-      "https://assets.coingecko.com/coins/images/20861/large/kilt.png?1637893150",
-    contracts: {
-      polkadot: "",
-    },
-  },
-  {
-    id: "timerr",
-    symbol: "timerr",
-    name: "Timerr",
-    image:
-      "https://assets.coingecko.com/coins/images/20814/large/v8Ku6pr.png?1637718594",
-    contracts: {
-      "binance-smart-chain": "0xb5c9aa0d54091b32c6496b1f3f745e2492daa2ff",
-    },
-  },
-  {
-    id: "bloody-shiba",
-    symbol: "BLOODYSHIBA",
-    name: "Bloody shiba",
-    image:
-      "https://assets.coingecko.com/coins/images/20727/large/photo-2021-11-10-19-50-17.jpg?1637596076",
-    contracts: {
-      "binance-smart-chain": "0xc9161bcacca2aab93c82917b35cfe6998e96c354",
-    },
-  },
-  {
-    id: "doggystyle-coin",
-    symbol: "dsc",
-    name: "DoggyStyle Coin",
-    image:
-      "https://assets.coingecko.com/coins/images/20831/large/logo_-_2021-11-24T132426.774.png?1637731476",
-    contracts: {
-      solana: "DogscQVvNVj7ndEnhWiCXPVPKKwNy9fJd4ATF7mVi5J",
-    },
-  },
-  {
-    id: "script-network",
-    symbol: "scpt",
-    name: "Script Network",
-    image:
-      "https://assets.coingecko.com/coins/images/20869/large/Script_LOGO-03.png?1637808609",
-    contracts: {
-      ethereum: "",
-    },
-  },
-  {
-    id: "colligo-token",
-    symbol: "cotk",
-    name: "Colligo Token",
-    image:
-      "https://assets.coingecko.com/coins/images/20903/large/MicrosoftTeams-image.png?1637879554",
-    contracts: {
-      "binance-smart-chain": "0xc2770e5520b441bc730b3894f32a4b8cf1b991e5",
-    },
-  },
-  {
-    id: "maximizer",
-    symbol: "maxi",
-    name: "Maximizer",
-    image:
-      "https://assets.coingecko.com/coins/images/20929/large/maxi-logo-black-bg-round-200x200.png?1637934965",
-    contracts: {
-      avalanche: "0x7c08413cbf02202a1c13643db173f2694e0f73f0",
-    },
-  },
-  {
-    id: "solar-energy",
-    symbol: "seg",
-    name: "Solar Energy",
-    image:
-      "https://assets.coingecko.com/coins/images/20935/large/seg.png?1638010532",
-    contracts: {
-      "binance-smart-chain": "0xec126e20e7cb114dd3ba356100eaca2cc2921322",
-    },
-  },
-  {
-    id: "the-cancoin",
-    symbol: "canna",
-    name: "The CanCoin",
-    image:
-      "https://assets.coingecko.com/coins/images/20889/large/CanCoin2Rityta_1_kopia_3.png?1637844044",
-    contracts: {
-      "binance-smart-chain": "0xcbed7180e61f82aa9bbc1f59afaa7d57fab588ac",
-    },
-  },
-  {
-    id: "rocket-pool-eth",
-    symbol: "rETH",
-    name: "Rocket Pool ETH",
-    image:
-      "https://assets.coingecko.com/coins/images/20764/large/reth.png?1637652366",
-    contracts: {
-      ethereum: "0xae78736cd615f374d3085123a210448e74fc6393",
-    },
-  },
-  {
-    id: "axus-coin",
-    symbol: "axus",
-    name: "Axus Coin",
-    image:
-      "https://assets.coingecko.com/coins/images/20713/large/-rUSqDLk_400x400.png?1637575970",
-    contracts: {
-      ethereum: "0x872d63d889d4b445c89a0887dcdbcc179b026432",
-    },
-  },
-  {
-    id: "bridge",
-    symbol: "brg.x",
-    name: "Bridge$",
-    image:
-      "https://assets.coingecko.com/coins/images/20875/large/bridgescrypto.PNG?1637814449",
-    contracts: {
-      "binance-smart-chain": "0x0e2114955023b736fa97d9e2fcde2836d10b7a5c",
-    },
-  },
-  {
-    id: "duo-2",
-    symbol: "duo",
-    name: "Duo",
-    image:
-      "https://assets.coingecko.com/coins/images/20879/large/444dOkc.png?1637818800",
-    contracts: {
-      avalanche: "0xed4102f3a1a24bd4ef1f29b90cd8bf00a540c0c2",
-    },
-  },
-  {
-    id: "binancehodl",
-    symbol: "bihodl",
-    name: "BinanceHODL",
-    image:
-      "https://assets.coingecko.com/coins/images/20712/large/wUhzIPYJ_400x400.jpg?1637575654",
-    contracts: {
-      "binance-smart-chain": "0x56ea3a560086d7961cfa29b4ede10eb2300f53e4",
-    },
-  },
-  {
-    id: "zenlink-network-token",
-    symbol: "zlk",
-    name: "Zenlink Network Token",
-    image:
-      "https://assets.coingecko.com/coins/images/20884/large/zenlink.PNG?1637824309",
+      "https://assets.coingecko.com/coins/images/9731/large/logo_%284%29.png?1571305654",
     contracts: {},
   },
   {
-    id: "holiday-token",
-    symbol: "HOL",
-    name: "Holiday Token",
+    id: "star-shib",
+    symbol: "STARSB",
+    name: "Star Shib",
     image:
-      "https://assets.coingecko.com/coins/images/20720/large/mknVoLTr_400x400.jpg?1637586159",
+      "https://assets.coingecko.com/coins/images/15419/large/100-1.png?1620775159",
     contracts: {
-      "binance-smart-chain": "0x7b8656c95944f1d6e2e6deadedd0392a4138d8dd",
+      ethereum: "0x5f435cd858f71e42a3db4282231d1ed25ba07aed",
     },
   },
   {
-    id: "powerinu",
-    symbol: "PowerInu",
-    name: "PowerInu",
+    id: "wincash-coin",
+    symbol: "wcc",
+    name: "Wincash Coin",
     image:
-      "https://assets.coingecko.com/coins/images/20800/large/power_inu_logo_200x200.png?1637678872",
+      "https://assets.coingecko.com/coins/images/10518/large/wincash_coin.png?1580439168",
+    contracts: {},
+  },
+  {
+    id: "3x-short-tether-token",
+    symbol: "usdtbear",
+    name: "3X Short Tether Token",
+    image:
+      "https://assets.coingecko.com/coins/images/10307/large/683JEXMN_400x400.png?1577743905",
     contracts: {
-      "binance-smart-chain": "0xec743655ddb648c4362dfa71cdb1877783ed1cca",
+      ethereum: "0x0cd6c8161f1638485a1a2f5bf1a0127e45913c2f",
     },
   },
   {
-    id: "desirenft",
-    symbol: "desire",
-    name: "DesireNFT",
+    id: "cybercoin",
+    symbol: "CBR",
+    name: "Cybercoin",
     image:
-      "https://assets.coingecko.com/coins/images/20771/large/Desire_logo_round_black_1024x1024.png?1637725214",
+      "https://assets.coingecko.com/coins/images/11927/large/ezDztuH.png?1596179588",
     contracts: {
-      "binance-smart-chain": "0xc8846b0877cec21336ba3136208fd02d42ac7b5e",
+      ethereum: "0x4ba012f6e411a1be55b98e9e62c3a4ceb16ec88b",
     },
   },
   {
-    id: "otterclam",
-    symbol: "clam",
-    name: "OtterClam",
+    id: "scopecoin",
+    symbol: "xscp",
+    name: "ScopeCoin",
     image:
-      "https://assets.coingecko.com/coins/images/20670/large/clam.png?1637548092",
+      "https://assets.coingecko.com/coins/images/7919/large/logo_%286%29.png?1551925380",
     contracts: {
-      "polygon-pos": "0xc250e9987a032acac293d838726c511e6e1c029d",
+      zilliqa: "",
     },
   },
   {
-    id: "wrapped-ampleforth",
-    symbol: "wampl",
-    name: "Wrapped Ampleforth",
+    id: "gmsol",
+    symbol: "GMSOL",
+    name: "GMSOL",
     image:
-      "https://assets.coingecko.com/coins/images/20825/large/photo_2021-11-25_02-05-11.jpg?1637811951",
+      "https://assets.coingecko.com/coins/images/20717/large/gm-logo-200.png?1637584967",
     contracts: {
-      ethereum: "0xedb171c18ce90b633db442f2a6f72874093b49ef",
-    },
-  },
-  {
-    id: "daddyeth",
-    symbol: "DADDYETH",
-    name: "DaddyETH",
-    image:
-      "https://assets.coingecko.com/coins/images/20718/large/verticalhead-1024x382.png?1637585765",
-    contracts: {
-      "binance-smart-chain": "0x37b6d248ed24b1cba56705ce7b75d76068cb8a4a",
-    },
-  },
-  {
-    id: "arcane",
-    symbol: "ARCANE",
-    name: "Arcane",
-    image:
-      "https://assets.coingecko.com/coins/images/20890/large/ArcaneLogo.png?1637845385",
-    contracts: {
-      ethereum: "0x58530a272bf650827ae05fadee76f36271089f7f",
-    },
-  },
-  {
-    id: "sportsicon",
-    symbol: "$icons",
-    name: "SportsIcon",
-    image:
-      "https://assets.coingecko.com/coins/images/20856/large/sportsicon.PNG?1637791571",
-    contracts: {
-      ethereum: "0x3f68e7b44e9bcb486c2feadb7a2289d9cdfc9088",
+      solana: "gmdu3snwW28DmmxCseChp9owWLUhamH9eS3hWfHG8Vg",
     },
   },
   {
@@ -108269,169 +107634,43 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "elons-marvin",
-    symbol: "marvin",
-    name: "Elon's Marvin",
+    id: "metaland-gameverse",
+    symbol: "mst",
+    name: "MetaLand Gameverse",
     image:
-      "https://assets.coingecko.com/coins/images/20886/large/marvin.png?1637832213",
+      "https://assets.coingecko.com/coins/images/20942/large/MuOV5beX_400x400.png?1638027301",
     contracts: {
-      "binance-smart-chain": "0x2bfd26116c6321be08ef5374b4e42814c14a042d",
+      fantom: "0x152888854378201e173490956085c711f1ded565",
     },
   },
   {
-    id: "catbonk",
-    symbol: "cabo",
-    name: "Catbonk",
+    id: "muso-finance-2",
+    symbol: "muso",
+    name: "MUSO Finance",
     image:
-      "https://assets.coingecko.com/coins/images/20917/large/cabo.png?1637923769",
+      "https://assets.coingecko.com/coins/images/20715/large/cMwOUI9V_400x400.jpg?1637578611",
     contracts: {
-      "binance-smart-chain": "0xdfaabaa57dec10c049335bdaa2e949b4ce2ead30",
+      "binance-smart-chain": "0xc08e10b7eb0736368a0b92ee7a140ec8c63a2dd1",
     },
   },
   {
-    id: "daddy-dogeback",
-    symbol: "daddydb",
-    name: "Daddy Dogeback",
+    id: "krause",
+    symbol: "$KRAUSE",
+    name: "KRAUSE",
     image:
-      "https://assets.coingecko.com/coins/images/20790/large/DOGELOGO-TRANS-200-PX.png?1637672597",
+      "https://assets.coingecko.com/coins/images/21022/large/-HEQTtGz_400x400.png?1638193269",
     contracts: {
-      "binance-smart-chain": "0x8755ccab81406cc5d98abe787719062591527421",
+      ethereum: "0x9f6f91078a5072a8b54695dafa2374ab3ccd603b",
     },
   },
   {
-    id: "jumbo",
-    symbol: "jub",
-    name: "Jumbo",
+    id: "ape",
+    symbol: "ape",
+    name: "APE",
     image:
-      "https://assets.coingecko.com/coins/images/20731/large/QHdEfGdt_400x400.jpg?1637617134",
+      "https://assets.coingecko.com/coins/images/20762/large/uXhjvO7.png?1637651257",
     contracts: {
-      "binance-smart-chain": "0x44c098782990966ec3ad27a7fa43947358eeb2c3",
-    },
-  },
-  {
-    id: "boku",
-    symbol: "boku",
-    name: "Boryoku Dragonz",
-    image:
-      "https://assets.coingecko.com/coins/images/20820/large/ZdgsxFPV_400x400.png?1637721291",
-    contracts: {
-      solana: "CN7qFa5iYkHz99PTctvT4xXUHnxwjQ5MHxCuTJtPN5uS",
-    },
-  },
-  {
-    id: "hippo-coin",
-    symbol: "$HIPPO",
-    name: "Hippo Coin",
-    image:
-      "https://assets.coingecko.com/coins/images/20728/large/iu-n3i1b_400x400.jpg?1637596901",
-    contracts: {
-      solana: "3EkHyexJLGCvSxzn5umbtd9N69GoT4p5pfdLTFqCNP9Y",
-    },
-  },
-  {
-    id: "suteku",
-    symbol: "suteku",
-    name: "Suteku",
-    image:
-      "https://assets.coingecko.com/coins/images/20824/large/15080.png?1637722885",
-    contracts: {
-      "binance-smart-chain": "0x198800af50914004a9e9d19ca18c0b24587a50cf",
-    },
-  },
-  {
-    id: "vodka-token",
-    symbol: "VODKA",
-    name: "Vodka Token",
-    image:
-      "https://assets.coingecko.com/coins/images/20848/large/Vodka-Token-LOGO.png?1637760753",
-    contracts: {
-      "binance-smart-chain": "0x66da5cc445fec38a9475ae7941f89110b9d256b9",
-    },
-  },
-  {
-    id: "unus-dao",
-    symbol: "udo",
-    name: "Unus Dao",
-    image:
-      "https://assets.coingecko.com/coins/images/20914/large/3c2IfwK-_400x400.jpg?1637923093",
-    contracts: {
-      "binance-smart-chain": "0xb91ec4f9d7d12a1ac145a7ae3b78afb45856c9c8",
-    },
-  },
-  {
-    id: "space-dog",
-    symbol: "Space dog",
-    name: "Space dog",
-    image:
-      "https://assets.coingecko.com/coins/images/20919/large/IMG-20211125-192926-355.jpg?1637924479",
-    contracts: {
-      "binance-smart-chain": "0xd034c1f3cd74094fe966a0f25c9e5a21a21eb487",
-    },
-  },
-  {
-    id: "reesykle",
-    symbol: "sykle",
-    name: "Reesykle",
-    image:
-      "https://assets.coingecko.com/coins/images/20844/large/252136105_112396834579033_5977036500359520487_n.png?1637744603",
-    contracts: {
-      "binance-smart-chain": "0x5c25b256dbe756538265e5fc05b99ed49a59c986",
-    },
-  },
-  {
-    id: "swerve-protocol",
-    symbol: "swerve",
-    name: "SWERVE Protocol",
-    image:
-      "https://assets.coingecko.com/coins/images/20858/large/94614403.png?1637801748",
-    contracts: {
-      solana: "45ojchnvC3agGNvs86MWBq8N4miiTY6X8ECQzgQNDE4v",
-    },
-  },
-  {
-    id: "starcoin",
-    symbol: "stc",
-    name: "Starcoin",
-    image:
-      "https://assets.coingecko.com/coins/images/20921/large/xUH0BKJu_400x400.png?1637926585",
-    contracts: {},
-  },
-  {
-    id: "monox",
-    symbol: "mono",
-    name: "MonoX",
-    image:
-      "https://assets.coingecko.com/coins/images/20901/large/e51c6UaU_400x400.png?1637879085",
-    contracts: {
-      ethereum: "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d",
-    },
-  },
-  {
-    id: "crypto-royale",
-    symbol: "roy",
-    name: "Crypto Royale",
-    image:
-      "https://assets.coingecko.com/coins/images/20668/large/ROY_logo_new_design_small.png?1637547627",
-    contracts: {
-      "harmony-shard-0": "0xfe1b516a7297eb03229a8b5afad80703911e81cb",
-    },
-  },
-  {
-    id: "cheqd-network",
-    symbol: "cheq",
-    name: "CHEQD Network",
-    image:
-      "https://assets.coingecko.com/coins/images/20855/large/79901197.png?1637791407",
-    contracts: {},
-  },
-  {
-    id: "metaland",
-    symbol: "VML",
-    name: "MetaLand",
-    image:
-      "https://assets.coingecko.com/coins/images/20925/large/245534_a1e67f06e5514a78914f96b52e1a5f85_mv2.png?1637933936",
-    contracts: {
-      "binance-smart-chain": "0xd302c09bc32aef53146b6ba7bc420f5caca897f6",
+      ethereum: "0x40e0a6ef9dbadfc83c5e0d15262feb4638588d77",
     },
   },
   {
@@ -108445,23 +107684,73 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "minisportzilla",
-    symbol: "minisportz",
-    name: "MiniSportZilla",
+    id: "swerve-protocol",
+    symbol: "swerve",
+    name: "SWERVE Protocol",
     image:
-      "https://assets.coingecko.com/coins/images/20770/large/zilla.PNG?1637658389",
+      "https://assets.coingecko.com/coins/images/20858/large/94614403.png?1637801748",
     contracts: {
-      "binance-smart-chain": "0xd506ee6a2bb483a953eb311e9b7e5719211702d3",
+      solana: "45ojchnvC3agGNvs86MWBq8N4miiTY6X8ECQzgQNDE4v",
     },
   },
   {
-    id: "socialx-2",
-    symbol: "sosx",
-    name: "SocialX",
+    id: "dogeville",
+    symbol: "dville",
+    name: "DogeVille",
     image:
-      "https://assets.coingecko.com/coins/images/20752/large/sosx_200x200.png?1637635630",
+      "https://assets.coingecko.com/coins/images/20961/large/unnamed.jpg?1638150132",
     contracts: {
-      "binance-smart-chain": "0xc27f6473a04b2bdee0bf650f153f1d8720aa3062",
+      "binance-smart-chain": "0xd3b6bfd18b34ae0e3165738bf66ebc64cad1b944",
+    },
+  },
+  {
+    id: "lys-capital",
+    symbol: "lys",
+    name: "LYS Capital",
+    image:
+      "https://assets.coingecko.com/coins/images/20863/large/1637613107-lys-logo-cg-200pix.png?1637805637",
+    contracts: {
+      "arbitrum-one": "0xa4f595ba35161c9ffe3db8c03991b9c2cbb26c6b",
+    },
+  },
+  {
+    id: "hoff-coin",
+    symbol: "hoff",
+    name: "Hoff Coin",
+    image:
+      "https://assets.coingecko.com/coins/images/20782/large/qSZekqh.png?1637670583",
+    contracts: {
+      ethereum: "0xb3f822dbbd694901e2051a2495a8755d6cfd5133",
+    },
+  },
+  {
+    id: "outrace",
+    symbol: "ore",
+    name: "Outrace",
+    image:
+      "https://assets.coingecko.com/coins/images/20951/large/ppLk7GCl_400x400.jpg?1638137567",
+    contracts: {
+      "binance-smart-chain": "0x91f006ee672f8f39c6e63ca75b1ca14067b3c366",
+    },
+  },
+  {
+    id: "kibastablecapital",
+    symbol: "KSC",
+    name: "KibaStableCapital",
+    image:
+      "https://assets.coingecko.com/coins/images/21023/large/yQbOjUH.png?1638193647",
+    contracts: {
+      ethereum: "0x9ee985007e03e279a736f8e86e412377db93d014",
+    },
+  },
+  {
+    id: "babywakandainu",
+    symbol: "babywkd",
+    name: "Babywakandainu",
+    image:
+      "https://assets.coingecko.com/coins/images/20995/large/OZryZPiqih0h.png?1638173462",
+    contracts: {
+      "binance-smart-chain": "0x353a94e74750c5d2d5b3c52abad54d76cb08a151",
     },
   },
   {
@@ -108475,91 +107764,23 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "wolfgirl",
-    symbol: "WLFGRL",
-    name: "Wolfgirl",
+    id: "talecraft",
+    symbol: "craft",
+    name: "TaleCraft",
     image:
-      "https://assets.coingecko.com/coins/images/20724/large/Icon200.png?1637593750",
+      "https://assets.coingecko.com/coins/images/20934/large/3mrl6Lfw_400x400.jpg?1638003612",
     contracts: {
-      "binance-smart-chain": "0x3067177a2a3d68b02cf9bd585f28b755958ced3b",
+      avalanche: "0x8ae8be25c23833e0a01aa200403e826f611f9cd2",
     },
   },
   {
-    id: "jungle",
-    symbol: "Jungle",
-    name: "Jungle",
+    id: "binancehodl",
+    symbol: "bihodl",
+    name: "BinanceHODL",
     image:
-      "https://assets.coingecko.com/coins/images/20893/large/O9Usopi.png?1637847516",
+      "https://assets.coingecko.com/coins/images/20712/large/wUhzIPYJ_400x400.jpg?1637575654",
     contracts: {
-      solana: "Aogv6j1wWiBAZcqRNN1Y89eozda2ke6rkc4CYy7c4iCi",
-    },
-  },
-  {
-    id: "eternalgirl",
-    symbol: "etgl",
-    name: "EternalGirl",
-    image:
-      "https://assets.coingecko.com/coins/images/20750/large/main_logo.png?1637635451",
-    contracts: {
-      "binance-smart-chain": "0xed2286558d7ec45b86cd943d941f1a1a9c9c71be",
-    },
-  },
-  {
-    id: "solar-bear",
-    symbol: "solbear",
-    name: "Solar Bear",
-    image:
-      "https://assets.coingecko.com/coins/images/20778/large/logo.png?1637665136",
-    contracts: {
-      solana: "DktNJUJAWJyeLw3ykCkFNpGohE24SoEhevKBskRi6P1y",
-    },
-  },
-  {
-    id: "bemil-coin",
-    symbol: "bem",
-    name: "Bemil Coin",
-    image:
-      "https://assets.coingecko.com/coins/images/20896/large/12878.png?1637875878",
-    contracts: {
-      "binance-smart-chain": "0x5306be16e6af81140aa1cc4de45aa27f657f02b2",
-    },
-  },
-  {
-    id: "astroport",
-    symbol: "astro",
-    name: "Astroport",
-    image:
-      "https://assets.coingecko.com/coins/images/20804/large/Astro_coin_icon.png?1637706905",
-    contracts: {},
-  },
-  {
-    id: "gmsol",
-    symbol: "GMSOL",
-    name: "GMSOL",
-    image:
-      "https://assets.coingecko.com/coins/images/20717/large/gm-logo-200.png?1637584967",
-    contracts: {
-      solana: "gmdu3snwW28DmmxCseChp9owWLUhamH9eS3hWfHG8Vg",
-    },
-  },
-  {
-    id: "space-monkey-token",
-    symbol: "MONKE",
-    name: "Space Monkey Token",
-    image:
-      "https://assets.coingecko.com/coins/images/20847/large/XXqbKW2a_400x400.jpg?1637788170",
-    contracts: {
-      "binance-smart-chain": "0xb422de11a237d0cbce17d7d70f53f67ef84394d3",
-    },
-  },
-  {
-    id: "rudolph-coin",
-    symbol: "RUDOLPH",
-    name: "Rudolph Coin",
-    image:
-      "https://assets.coingecko.com/coins/images/20781/large/qUhcna2.png?1637670107",
-    contracts: {
-      "binance-smart-chain": "0x116fddb6ea3d230247497f686ea2f0e69b430e72",
+      "binance-smart-chain": "0x56ea3a560086d7961cfa29b4ede10eb2300f53e4",
     },
   },
   {
@@ -108573,63 +107794,725 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "nft-maze",
-    symbol: "MAZE",
-    name: "NFT MAZE",
+    id: "r-u-generous",
+    symbol: "rug",
+    name: "R U Generous",
     image:
-      "https://assets.coingecko.com/coins/images/20784/large/maze.png?1637671162",
+      "https://assets.coingecko.com/coins/images/20708/large/nnKwMye.png?1637573199",
     contracts: {
-      "binance-smart-chain": "0xbc23833d965632cec84bf98181cb84c31bbdfa94",
+      avalanche: "0xb8ef3a190b68175000b74b4160d325fd5024760e",
     },
   },
   {
-    id: "coinflect",
-    symbol: "cflt",
-    name: "Coinflect",
+    id: "browniesswap",
+    symbol: "brown",
+    name: "BrowniesSwap",
     image:
-      "https://assets.coingecko.com/coins/images/20815/large/favicon-3.png?1637718879",
+      "https://assets.coingecko.com/coins/images/20826/large/200x200-LOGO.png?1637725008",
     contracts: {
-      "binance-smart-chain": "0x04305e84400f70b778868fd5226a6135d8fe151d",
+      "binance-smart-chain": "0x208fe37358d6aa767af66c4d87d5542ee2f35334",
     },
   },
   {
-    id: "defi-degen-land",
-    symbol: "ddl",
-    name: "DeFi Degen Land",
+    id: "bloody-shiba",
+    symbol: "BLOODYSHIBA",
+    name: "Bloody shiba",
     image:
-      "https://assets.coingecko.com/coins/images/20871/large/0inlfwNU_400x400.jpg?1637809911",
+      "https://assets.coingecko.com/coins/images/20727/large/photo-2021-11-10-19-50-17.jpg?1637596076",
     contracts: {
-      "binance-smart-chain": "0x88803312628fd21542f706b0c7dc8495c1c10b2e",
+      "binance-smart-chain": "0xc9161bcacca2aab93c82917b35cfe6998e96c354",
     },
   },
   {
-    id: "arbirise-finance",
-    symbol: "arf",
-    name: "ArbiRiseFinance",
+    id: "dofi",
+    symbol: "doo",
+    name: "Dofi",
     image:
-      "https://assets.coingecko.com/coins/images/20860/large/profile_picture_200.png?1637803349",
+      "https://assets.coingecko.com/coins/images/20853/large/dofi.PNG?1637789247",
     contracts: {
-      "arbitrum-one": "0xeb6f8eebc83d85120f9299b84da558825685570e",
+      tron: "TNo7XJu46hbEatQw7uxmcKx3nnrMRUCBhv",
     },
   },
   {
-    id: "baby-bali",
-    symbol: "BB",
-    name: "Baby Bali",
+    id: "appleswap",
+    symbol: "apple",
+    name: "AppleSwap",
     image:
-      "https://assets.coingecko.com/coins/images/20789/large/New-Era-of-Baby-Bali-200x200pxl.png?1637671831",
+      "https://assets.coingecko.com/coins/images/20974/large/logoapples.png?1638158416",
     contracts: {
-      "binance-smart-chain": "0x16f9cc3c6f8d8006cfc0ee693cef9d76b0d44c36",
+      "binance-smart-chain": "0xbdbd5a8179c9ba78327a50a8c0454c6f93bc4ce2",
     },
   },
   {
-    id: "the-killbox-game",
-    symbol: "kbox",
-    name: "The Killbox Game",
+    id: "colligo-token",
+    symbol: "cotk",
+    name: "Colligo Token",
     image:
-      "https://assets.coingecko.com/coins/images/20828/large/icon_abe_token-200.png?1637726119",
+      "https://assets.coingecko.com/coins/images/20903/large/MicrosoftTeams-image.png?1637879554",
     contracts: {
-      "binance-smart-chain": "0x3523d58d8036b1c5c9a13493143c97aefc5ad422",
+      "binance-smart-chain": "0xc2770e5520b441bc730b3894f32a4b8cf1b991e5",
+    },
+  },
+  {
+    id: "bemil-coin",
+    symbol: "bem",
+    name: "Bemil Coin",
+    image:
+      "https://assets.coingecko.com/coins/images/20896/large/12878.png?1637875878",
+    contracts: {
+      "binance-smart-chain": "0x5306be16e6af81140aa1cc4de45aa27f657f02b2",
+    },
+  },
+  {
+    id: "impactxp",
+    symbol: "impactxp",
+    name: "ImpactXP",
+    image:
+      "https://assets.coingecko.com/coins/images/21118/large/TJpEKVBW_400x400.jpg?1638340573",
+    contracts: {
+      ethereum: "0xb12494c8824fc069757f47d177e666c571cd49ae",
+    },
+  },
+  {
+    id: "guildfi",
+    symbol: "gf",
+    name: "GuildFi",
+    image:
+      "https://assets.coingecko.com/coins/images/20933/large/guildfi-logo-200.png?1638003537",
+    contracts: {
+      ethereum: "0xaaef88cea01475125522e117bfe45cf32044e238",
+    },
+  },
+  {
+    id: "summeris",
+    symbol: "sum",
+    name: "Summeris",
+    image:
+      "https://assets.coingecko.com/coins/images/20806/large/200_%2814%29.png?1637708796",
+    contracts: {
+      "binance-smart-chain": "0x84689271848cc405a36b967d24d73f20884f3648",
+    },
+  },
+  {
+    id: "metaraca",
+    symbol: "metar",
+    name: "MetaRaca",
+    image:
+      "https://assets.coingecko.com/coins/images/20742/large/Logo-01_s1.png?1637632808",
+    contracts: {
+      "binance-smart-chain": "0x63ec19c2983bfb0d43232aa9c792fe6f27f63361",
+    },
+  },
+  {
+    id: "toxicgamenft",
+    symbol: "txc",
+    name: "ToxicGameNft",
+    image:
+      "https://assets.coingecko.com/coins/images/20984/large/1638050660072-921.jpg?1638165652",
+    contracts: {
+      "binance-smart-chain": "0xc380fa4b673b267b6626ef177cea421f9e704ed0",
+    },
+  },
+  {
+    id: "omni-cash",
+    symbol: "oca$h",
+    name: "Omni Cash",
+    image:
+      "https://assets.coingecko.com/coins/images/20868/large/Whats-App-Image-2021-11-25-at-02-58-12.png?1637808029",
+    contracts: {
+      "binance-smart-chain": "0xb340f67e9cc3927ebeeb04c2e03f74bd0543f4fc",
+    },
+  },
+  {
+    id: "egoh-finance",
+    symbol: "egoh",
+    name: "EGOH Finance",
+    image:
+      "https://assets.coingecko.com/coins/images/20960/large/fHMPHC7B_400x400.jpg?1638149252",
+    contracts: {
+      "binance-smart-chain": "0x147e81789bbdc9820da35cc613cf10c0b2d06399",
+    },
+  },
+  {
+    id: "dice-inu",
+    symbol: "dice",
+    name: "Dice Inu",
+    image:
+      "https://assets.coingecko.com/coins/images/21032/large/ZqnXTl8.jpg?1638232578",
+    contracts: {
+      "binance-smart-chain": "0x924ebf416e8d207539ee36b1223b990db2ae379e",
+    },
+  },
+  {
+    id: "wheat-token-avax",
+    symbol: "wheat",
+    name: "Wheat Token (AVAX)",
+    image:
+      "https://assets.coingecko.com/coins/images/20840/large/wheat_logo.png?1637739155",
+    contracts: {
+      avalanche: "0x1a51686fb42861aa7e38c1cf8868877f43f82aa4",
+    },
+  },
+  {
+    id: "jetoken",
+    symbol: "jets",
+    name: "JeToken",
+    image:
+      "https://assets.coingecko.com/coins/images/21104/large/fav-icon.png?1638327812",
+    contracts: {
+      "binance-smart-chain": "0x0f005dfe97c5041e538b7075915b2ee706677c26",
+    },
+  },
+  {
+    id: "elonflokiinu",
+    symbol: "EFloki",
+    name: "ElonFlokiInu",
+    image:
+      "https://assets.coingecko.com/coins/images/21062/large/LSR4RvRK_400x400.jpg?1638275600",
+    contracts: {
+      "binance-smart-chain": "0x5a79d742e396760f5e0990a59d6e5cf0b134d92b",
+    },
+  },
+  {
+    id: "clytie",
+    symbol: "cly",
+    name: "Clytie",
+    image:
+      "https://assets.coingecko.com/coins/images/20811/large/IMG_20211104_182317_937.png?1637709965",
+    contracts: {
+      "binance-smart-chain": "0x2ea96aa00b2a07a236a65118ab6c377169bb5db7",
+    },
+  },
+  {
+    id: "sriracha-inu",
+    symbol: "sriracha",
+    name: "Sriracha Inu",
+    image:
+      "https://assets.coingecko.com/coins/images/21065/large/sriracha-inu-200.png?1638277078",
+    contracts: {
+      "binance-smart-chain": "0x3314d28f86cc1bc7424b66b4b4c23621eba8d925",
+    },
+  },
+  {
+    id: "powerzilla",
+    symbol: "powerzilla",
+    name: "PowerZilla",
+    image:
+      "https://assets.coingecko.com/coins/images/21010/large/MYaRJcZd_400x400.jpg?1638189555",
+    contracts: {
+      "binance-smart-chain": "0xf082907bebdd0978e075621cf040ec716de966b9",
+    },
+  },
+  {
+    id: "firulais-wallet-token",
+    symbol: "FIWT",
+    name: "Firulais Wallet Token",
+    image:
+      "https://assets.coingecko.com/coins/images/20716/large/FIWT-Logo.png?1637584712",
+    contracts: {
+      ethereum: "0x62406995cafd18f57e7375e8e0060725acebce58",
+    },
+  },
+  {
+    id: "inpoker",
+    symbol: "inp",
+    name: "InPoker",
+    image:
+      "https://assets.coingecko.com/coins/images/20936/large/inpoker.PNG?1638020430",
+    contracts: {
+      "binance-smart-chain": "0xf0f88d49d3fea2ee07002b9565f47666ba7439ea",
+    },
+  },
+  {
+    id: "team-clean-seas",
+    symbol: "tcs",
+    name: "Team Clean Seas",
+    image:
+      "https://assets.coingecko.com/coins/images/20714/large/top-logo-300x146.png?1637577379",
+    contracts: {
+      ethereum: "0x592f77f18893c8657cbf7cfc93e3f7cf7b02662d",
+    },
+  },
+  {
+    id: "hyper-trust",
+    symbol: "hptt",
+    name: "Hyper Trust",
+    image:
+      "https://assets.coingecko.com/coins/images/20993/large/logo_-_2021-11-29T152324.124.png?1638170611",
+    contracts: {
+      ethereum: "0xba711fb93ca039cb592ee34c96f4adf632e5b8e7",
+    },
+  },
+  {
+    id: "yield-protocol-token",
+    symbol: "yield",
+    name: "Yield Protocol Token",
+    image:
+      "https://assets.coingecko.com/coins/images/20810/large/s3oj0HeF_400x400.png?1637709725",
+    contracts: {},
+  },
+  {
+    id: "santa-capital",
+    symbol: "SC",
+    name: "Santa Capital",
+    image:
+      "https://assets.coingecko.com/coins/images/20851/large/xiJbUqT.png?1637761503",
+    contracts: {
+      ethereum: "0x9dcb90ac6e5ef95797233a49a7da903cc27aaf39",
+    },
+  },
+  {
+    id: "earthfund",
+    symbol: "1earth",
+    name: "EarthFund",
+    image:
+      "https://assets.coingecko.com/coins/images/20822/large/earthfund.PNG?1637722232",
+    contracts: {
+      ethereum: "0x9e04f519b094f5f8210441e285f603f4d2b50084",
+    },
+  },
+  {
+    id: "moonway",
+    symbol: "moonway",
+    name: "MoonWay",
+    image:
+      "https://assets.coingecko.com/coins/images/21073/large/output-onlinepngtools-2.png?1638282942",
+    contracts: {
+      "binance-smart-chain": "0x01cdec00557c39e43ac24898be9878925b8f49d3",
+    },
+  },
+  {
+    id: "star-wars-cat",
+    symbol: "swcat",
+    name: "Star Wars Cat",
+    image:
+      "https://assets.coingecko.com/coins/images/20899/large/star_wars_cat.PNG?1637878347",
+    contracts: {
+      "binance-smart-chain": "0x98b6e33e77a55732f0e2ce595429144b18ce862c",
+    },
+  },
+  {
+    id: "solar-energy",
+    symbol: "seg",
+    name: "Solar Energy",
+    image:
+      "https://assets.coingecko.com/coins/images/20935/large/seg.png?1638010532",
+    contracts: {
+      "binance-smart-chain": "0xec126e20e7cb114dd3ba356100eaca2cc2921322",
+    },
+  },
+  {
+    id: "stadium",
+    symbol: "std",
+    name: "Stadium",
+    image:
+      "https://assets.coingecko.com/coins/images/20711/large/14952.png?1637574753",
+    contracts: {
+      "binance-smart-chain": "0xfa2258704a201c6c3d07c32f29d3059c56da58d4",
+    },
+  },
+  {
+    id: "nunet",
+    symbol: "ntx",
+    name: "NuNet",
+    image:
+      "https://assets.coingecko.com/coins/images/20950/large/8Zb2W2Wi_400x400.png?1638137477",
+    contracts: {
+      ethereum: "0xf0d33beda4d734c72684b5f9abbebf715d0a7935",
+    },
+  },
+  {
+    id: "wool-token",
+    symbol: "wool",
+    name: "Wool",
+    image:
+      "https://assets.coingecko.com/coins/images/20940/large/15244.png?1638023728",
+    contracts: {
+      "binance-smart-chain": "0xa46346bc9d110907b5ace36b53263320baf1cd21",
+    },
+  },
+  {
+    id: "script-network",
+    symbol: "scpt",
+    name: "Script Network",
+    image:
+      "https://assets.coingecko.com/coins/images/20869/large/Script_LOGO-03.png?1637808609",
+    contracts: {
+      ethereum: "",
+    },
+  },
+  {
+    id: "lobis",
+    symbol: "lobi",
+    name: "Lobis",
+    image:
+      "https://assets.coingecko.com/coins/images/20813/large/0tOZIQ0B_400x400.jpg?1637718276",
+    contracts: {
+      ethereum: "0xdec41db0c33f3f6f3cb615449c311ba22d418a8d",
+    },
+  },
+  {
+    id: "sparta",
+    symbol: "spar",
+    name: "Sparta",
+    image:
+      "https://assets.coingecko.com/coins/images/20809/large/spartaxyz-logo_200x200.png?1637709228",
+    contracts: {
+      fantom: "0xccbbd6b8e7d135ed0e54fce6945e83d6a7baf60f",
+    },
+  },
+  {
+    id: "swincoin",
+    symbol: "swin",
+    name: "SwinCoin",
+    image:
+      "https://assets.coingecko.com/coins/images/20907/large/logo200.png?1637891981",
+    contracts: {
+      "binance-smart-chain": "0xe061618f0d3df5cb05fbf91455018f2d64074c85",
+    },
+  },
+  {
+    id: "mirror-mdot-token",
+    symbol: "mdot",
+    name: "Mirror mDOT Token",
+    image:
+      "https://assets.coingecko.com/coins/images/21003/large/70503197.png?1638188064",
+    contracts: {
+      terra: "terra19ya4jpvjvvtggepvmmj6ftmwly3p7way0tt08r",
+    },
+  },
+  {
+    id: "grand-time",
+    symbol: "grand",
+    name: "Grand Time",
+    image:
+      "https://assets.coingecko.com/coins/images/20746/large/153314375_103432561801116_948719880607040614_n.png?1637634251",
+    contracts: {
+      ethereum: "0x4911f8cebd546ef805e81dd0b0084a90d11a7688",
+    },
+  },
+  {
+    id: "duo-2",
+    symbol: "duo",
+    name: "Duo",
+    image:
+      "https://assets.coingecko.com/coins/images/20879/large/444dOkc.png?1637818800",
+    contracts: {
+      avalanche: "0xed4102f3a1a24bd4ef1f29b90cd8bf00a540c0c2",
+    },
+  },
+  {
+    id: "socialx-2",
+    symbol: "sosx",
+    name: "SocialX",
+    image:
+      "https://assets.coingecko.com/coins/images/20752/large/sosx_200x200.png?1637635630",
+    contracts: {
+      "binance-smart-chain": "0xc27f6473a04b2bdee0bf650f153f1d8720aa3062",
+    },
+  },
+  {
+    id: "cardax",
+    symbol: "cdx",
+    name: "Cardax",
+    image:
+      "https://assets.coingecko.com/coins/images/20802/large/cardax.PNG?1637706497",
+    contracts: {
+      cardano: "722c45e8ba2a3c399cf09949abe74546ecb75defb8206914085dc28e434458",
+    },
+  },
+  {
+    id: "every-game",
+    symbol: "egame",
+    name: "Every Game",
+    image:
+      "https://assets.coingecko.com/coins/images/20758/large/egame.png?1637648306",
+    contracts: {
+      ethereum: "0x62d3c05b9c3d916fbc111819bbd3cee52906c1ae",
+    },
+  },
+  {
+    id: "tempo-dao",
+    symbol: "tempo",
+    name: "Tempo DAO",
+    image:
+      "https://assets.coingecko.com/coins/images/21047/large/1_j6tc3Dd45kUd7Sjwv3DVmA.jpeg?1638257364",
+    contracts: {
+      avalanche: "0x88a425b738682f58c0ff9fcf2cceb47a361ef4cf",
+    },
+  },
+  {
+    id: "rocket-pool-eth",
+    symbol: "rETH",
+    name: "Rocket Pool ETH",
+    image:
+      "https://assets.coingecko.com/coins/images/20764/large/reth.png?1637652366",
+    contracts: {
+      ethereum: "0xae78736cd615f374d3085123a210448e74fc6393",
+    },
+  },
+  {
+    id: "mtvx",
+    symbol: "MTVX",
+    name: "MTVX",
+    image:
+      "https://assets.coingecko.com/coins/images/20798/large/mtvx-logo.png?1637678108",
+    contracts: {
+      "binance-smart-chain": "0xd10672a959ce3bb8939827391fe78762f518f740",
+    },
+  },
+  {
+    id: "templardao",
+    symbol: "tem",
+    name: "Templar DAO",
+    image:
+      "https://assets.coingecko.com/coins/images/21001/large/93573503.png?1638181698",
+    contracts: {
+      "binance-smart-chain": "0x19e6bfc1a6e4b042fb20531244d47e252445df01",
+    },
+  },
+  {
+    id: "rudolph-coin",
+    symbol: "RUDOLPH",
+    name: "Rudolph Coin",
+    image:
+      "https://assets.coingecko.com/coins/images/20781/large/qUhcna2.png?1637670107",
+    contracts: {
+      "binance-smart-chain": "0x116fddb6ea3d230247497f686ea2f0e69b430e72",
+    },
+  },
+  {
+    id: "dragon-pool",
+    symbol: "dp",
+    name: "Dragon Pool",
+    image:
+      "https://assets.coingecko.com/coins/images/20730/large/240601798_112525817849387_6382833246720791968_n.jpg?1637616376",
+    contracts: {
+      "binance-smart-chain": "0xc31c29d89e1c351d0a41b938dc8aa0b9f07b4a29",
+    },
+  },
+  {
+    id: "meta-musk",
+    symbol: "META",
+    name: "Meta Musk",
+    image:
+      "https://assets.coingecko.com/coins/images/21019/large/Nzl6pv4.png?1638192233",
+    contracts: {
+      "binance-smart-chain": "0x4d8164892df2d5cf4754799cb2a001e3d5832b30",
+    },
+  },
+  {
+    id: "financio",
+    symbol: "fin",
+    name: "Financio",
+    image:
+      "https://assets.coingecko.com/coins/images/20835/large/financio.PNG?1637736075",
+    contracts: {
+      "binance-smart-chain": "0x09e7e61f28e83c7bac827a0ec9dcd800ce4b4cc1",
+    },
+  },
+  {
+    id: "metashiba",
+    symbol: "METASHIB",
+    name: "MetaShiba",
+    image:
+      "https://assets.coingecko.com/coins/images/20930/large/metashiba.png?1638345755",
+    contracts: {
+      "binance-smart-chain": "0x8aa621be2c5f3672303c309bfb0dd4018979b970",
+    },
+  },
+  {
+    id: "wagmidao",
+    symbol: "gmi",
+    name: "WagmiDAO",
+    image:
+      "https://assets.coingecko.com/coins/images/21027/large/gmi.png?1638197549",
+    contracts: {},
+  },
+  {
+    id: "definix",
+    symbol: "finix",
+    name: "Definix",
+    image:
+      "https://assets.coingecko.com/coins/images/14872/large/FINIX_token_200x200.png?1618820518",
+    contracts: {
+      "binance-smart-chain": "0x0f02b1f5af54e04fb6dd6550f009ac2429c4e30d",
+    },
+  },
+  {
+    id: "regularpresale",
+    symbol: "REGU",
+    name: "RegularPresale",
+    image:
+      "https://assets.coingecko.com/coins/images/20797/large/W1byu.png?1637677488",
+    contracts: {
+      "binance-smart-chain": "0xf1ca73caa1c7ad66af11147ba7d5636243af0493",
+    },
+  },
+  {
+    id: "everlens",
+    symbol: "elen",
+    name: "Everlens",
+    image:
+      "https://assets.coingecko.com/coins/images/20829/large/len.PNG?1637726284",
+    contracts: {
+      "binance-smart-chain": "0xca2483727292ba552aec12dfee4dc105cb1376b9",
+    },
+  },
+  {
+    id: "dawg",
+    symbol: "dawg",
+    name: "DAWG",
+    image:
+      "https://assets.coingecko.com/coins/images/20881/large/143299698-37b637ea-7fce-4bd6-8713-71c42e37629e.png?1637820203",
+    contracts: {
+      solana: "3DHPqxdMXogNNnpqBMF8N4Zs4dn1WR31H7UjWq6FExwG",
+    },
+  },
+  {
+    id: "grand-exchange",
+    symbol: "gp",
+    name: "Grand Exchange",
+    image:
+      "https://assets.coingecko.com/coins/images/21004/large/xNOjUV-i_400x400.jpg?1638188296",
+    contracts: {
+      "binance-smart-chain": "0x2b7cf251feb2f128b1bd04dfd9290f316fb4d958",
+    },
+  },
+  {
+    id: "crypto-royale",
+    symbol: "roy",
+    name: "Crypto Royale",
+    image:
+      "https://assets.coingecko.com/coins/images/20668/large/ROY_logo_new_design_small.png?1637547627",
+    contracts: {
+      "harmony-shard-0": "0xfe1b516a7297eb03229a8b5afad80703911e81cb",
+    },
+  },
+  {
+    id: "shiba-games",
+    symbol: "shibagames",
+    name: "Shiba Games",
+    image:
+      "https://assets.coingecko.com/coins/images/21111/large/200x200.png?1638331678",
+    contracts: {
+      "binance-smart-chain": "0x0ea526b4799541797d8b880b48cc65d71d1e273b",
+    },
+  },
+  {
+    id: "elons-marvin",
+    symbol: "marvin",
+    name: "Elon's Marvin",
+    image:
+      "https://assets.coingecko.com/coins/images/20886/large/marvin.png?1637832213",
+    contracts: {
+      "binance-smart-chain": "0x2bfd26116c6321be08ef5374b4e42814c14a042d",
+    },
+  },
+  {
+    id: "bomberman",
+    symbol: "$BOMB",
+    name: "Bomberman",
+    image:
+      "https://assets.coingecko.com/coins/images/21075/large/Bomberman_200x200.png?1638284610",
+    contracts: {
+      "binance-smart-chain": "0xf8d5153839d8ace20ee6d262c24c8c168e057b88",
+    },
+  },
+  {
+    id: "shiba-dragon",
+    symbol: "shibad",
+    name: "Shiba Dragon",
+    image:
+      "https://assets.coingecko.com/coins/images/21093/large/Logo-111.png?1638323805",
+    contracts: {
+      "binance-smart-chain": "0x1ed3cc3490efd36e78f301523ccd169330520d3f",
+    },
+  },
+  {
+    id: "turtles-token",
+    symbol: "TRTLS",
+    name: "Turtles Token",
+    image:
+      "https://assets.coingecko.com/coins/images/21017/large/turtles200x200.png?1638191778",
+    contracts: {
+      solana: "q4bpaRKw3fJB1AJBeeBaKv3TjYzWsmntLgnSB275YUb",
+    },
+  },
+  {
+    id: "eternalgirl",
+    symbol: "etgl",
+    name: "EternalGirl",
+    image:
+      "https://assets.coingecko.com/coins/images/20750/large/main_logo.png?1637635451",
+    contracts: {
+      "binance-smart-chain": "0xed2286558d7ec45b86cd943d941f1a1a9c9c71be",
+    },
+  },
+  {
+    id: "genomesdao",
+    symbol: "$gene",
+    name: "GenomesDAO",
+    image:
+      "https://assets.coingecko.com/coins/images/20807/large/1637683704200x200.png?1637708934",
+    contracts: {
+      ethereum: "0x21413c119b0c11c5d96ae1bd328917bc5c8ed67e",
+    },
+  },
+  {
+    id: "rocket-zilla",
+    symbol: "ROZ",
+    name: "Rocket Zilla",
+    image:
+      "https://assets.coingecko.com/coins/images/21008/large/5ca147e44f56ee00375088adfc254185.png?1638189110",
+    contracts: {
+      "binance-smart-chain": "0x8223683133f4d11861c5b35e199bf10ff658d8d5",
+    },
+  },
+  {
+    id: "pog-coin",
+    symbol: "pog",
+    name: "PolygonumOnline",
+    image:
+      "https://assets.coingecko.com/coins/images/21053/large/pog.png?1638261470",
+    contracts: {},
+  },
+  {
+    id: "cross-chain-farming",
+    symbol: "CCF",
+    name: "Cross Chain Farming",
+    image:
+      "https://assets.coingecko.com/coins/images/20852/large/ccf.png?1638350354",
+    contracts: {
+      "binance-smart-chain": "0x76d0c0d1db8478e5ed1f5cf8ff6b80121181cff9",
+    },
+  },
+  {
+    id: "doubledice-token",
+    symbol: "dodi",
+    name: "DoubleDice",
+    image:
+      "https://assets.coingecko.com/coins/images/21035/large/crEjNfhF_400x400.jpg?1638250608",
+    contracts: {
+      ethereum: "0x4e08f03079c5cd3083ea331ec61bcc87538b7665",
+    },
+  },
+  {
+    id: "shopnext",
+    symbol: "next",
+    name: "ShopNEXT",
+    image:
+      "https://assets.coingecko.com/coins/images/21116/large/sRiZ3WMj_400x400.jpg?1638340194",
+    contracts: {},
+  },
+  {
+    id: "xhashtag",
+    symbol: "xtag",
+    name: "xHashtag",
+    image:
+      "https://assets.coingecko.com/coins/images/20912/large/xtag.png?1637922382",
+    contracts: {
+      solana: "5gs8nf4wojB5EXgDUWNLwXpknzgV2YWDhveAeBZpVLbp",
     },
   },
   {
@@ -108643,41 +108526,301 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "h3ro3s",
-    symbol: "h3ro",
-    name: "H3RO3S",
+    id: "natural-farm-union-protocol",
+    symbol: "nfup",
+    name: "Natural Farm Union Protocol",
     image:
-      "https://assets.coingecko.com/coins/images/20906/large/photo_2021-09-08_12-39-26.jpg?1637883504",
+      "https://assets.coingecko.com/coins/images/21052/large/logo_-_2021-11-30T163428.088.png?1638261294",
+    contracts: {
+      ethereum: "0x26cbc7008cd879f4b63b69a915378f2d9b17bbf0",
+    },
+  },
+  {
+    id: "dappradar",
+    symbol: "radar",
+    name: "DappRadar",
+    image:
+      "https://assets.coingecko.com/coins/images/20894/large/dappradar-token.png?1637859758",
     contracts: {},
   },
   {
-    id: "mini-shib",
-    symbol: "mshib",
-    name: "mini SHIB",
+    id: "fans-squid",
+    symbol: "fst",
+    name: "Fans Squid",
     image:
-      "https://assets.coingecko.com/coins/images/20874/large/piPMf_g2_400x400.jpg?1637813141",
+      "https://assets.coingecko.com/coins/images/20846/large/Ye1rP4dW_400x400.jpg?1637748058",
     contracts: {
-      ethereum: "0x3c5bda020caa1350a7b4e6e013a2516423c2800f",
+      "binance-smart-chain": "0x0c30aaa3ba8d581a46db87e3904f1c482d2f26e9",
     },
   },
   {
-    id: "rps-league",
-    symbol: "rps",
-    name: "Rps League",
+    id: "reesykle",
+    symbol: "sykle",
+    name: "Reesykle",
     image:
-      "https://assets.coingecko.com/coins/images/20918/large/nS5mB7aP_400x400.jpg?1637924138",
+      "https://assets.coingecko.com/coins/images/20844/large/252136105_112396834579033_5977036500359520487_n.png?1637744603",
     contracts: {
-      "binance-smart-chain": "0xc2a605a31bf67a5af81cf6e39af79a62d8462717",
+      "binance-smart-chain": "0x5c25b256dbe756538265e5fc05b99ed49a59c986",
     },
   },
   {
-    id: "trickle",
-    symbol: "h2o",
-    name: "Trickle",
+    id: "daddyeth",
+    symbol: "DADDYETH",
+    name: "DaddyETH",
     image:
-      "https://assets.coingecko.com/coins/images/20830/large/gFiD-RNL_400x400.jpg?1637726434",
+      "https://assets.coingecko.com/coins/images/20718/large/verticalhead-1024x382.png?1637585765",
     contracts: {
-      "binance-smart-chain": "0xb8b932d41d6be935ce1666aaf41f056093f9faee",
+      "binance-smart-chain": "0x37b6d248ed24b1cba56705ce7b75d76068cb8a4a",
+    },
+  },
+  {
+    id: "euro-stable-token",
+    symbol: "eurst",
+    name: "Euro Stable Token",
+    image:
+      "https://assets.coingecko.com/coins/images/20988/large/AF3E1D9F-4817-4FC4-BC80-FFF30A3E1B91.PNG?1638169603",
+    contracts: {
+      ethereum: "0xb1abd7aba7d99bbefb33d1dfc66b0dd522335350",
+    },
+  },
+  {
+    id: "monox",
+    symbol: "mono",
+    name: "MonoX",
+    image:
+      "https://assets.coingecko.com/coins/images/20901/large/e51c6UaU_400x400.png?1637879085",
+    contracts: {
+      ethereum: "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d",
+    },
+  },
+  {
+    id: "dhedge-stablecoin-yield",
+    symbol: "dusd",
+    name: "dHEDGE Stablecoin Yield",
+    image:
+      "https://assets.coingecko.com/coins/images/20765/large/dUSD-200px.png?1637653645",
+    contracts: {
+      "polygon-pos": "0xbae28251b2a4e621aa7e20538c06dee010bc06de",
+    },
+  },
+  {
+    id: "kishuelon",
+    symbol: "KELON",
+    name: "Kishuelon",
+    image:
+      "https://assets.coingecko.com/coins/images/21015/large/Kw2Rr28.png?1638191254",
+    contracts: {
+      ethereum: "0x372a912b1bdf243aa4eb8a5697c7e97036f422be",
+    },
+  },
+  {
+    id: "solabrador",
+    symbol: "SOLAB",
+    name: "Solabrador",
+    image:
+      "https://assets.coingecko.com/coins/images/21014/large/2ZR6Gkz.png?1638190959",
+    contracts: {
+      solana: "GLmaRDRmYd4u3YLfnj9eq1mrwxa1YfSweZYYZXZLTRdK",
+    },
+  },
+  {
+    id: "wagmi-on-solana",
+    symbol: "wagmi",
+    name: "WAGMI On Solana",
+    image:
+      "https://assets.coingecko.com/coins/images/21069/large/logo.png?1638279903",
+    contracts: {
+      solana: "3m7A2A8HHdqmiDrjAfaddj7Hxd88FrBHA1KSoqjoELtu",
+    },
+  },
+  {
+    id: "thors-mead",
+    symbol: "mead",
+    name: "Thors Mead",
+    image:
+      "https://assets.coingecko.com/coins/images/20837/large/mead.png?1638251983",
+    contracts: {
+      avalanche: "0x245c2591403e182e41d7a851eab53b01854844ce",
+    },
+  },
+  {
+    id: "lot-trade",
+    symbol: "lott",
+    name: "LOT.TRADE",
+    image:
+      "https://assets.coingecko.com/coins/images/21080/large/logo-small.png?1638309089",
+    contracts: {
+      "binance-smart-chain": "0xf81628edeb110a73c016ab7afa57d80afae07f59",
+    },
+  },
+  {
+    id: "rocky-inu",
+    symbol: "rocky",
+    name: "Rocky Inu",
+    image:
+      "https://assets.coingecko.com/coins/images/21037/large/AjdepqD.png?1638253053",
+    contracts: {
+      "binance-smart-chain": "0x75cc6feb91f9cf00b41f8d2f6f66b4aedaf9727b",
+    },
+  },
+  {
+    id: "hippo-coin",
+    symbol: "$HIPPO",
+    name: "Hippo Coin",
+    image:
+      "https://assets.coingecko.com/coins/images/20728/large/iu-n3i1b_400x400.jpg?1637596901",
+    contracts: {
+      solana: "3EkHyexJLGCvSxzn5umbtd9N69GoT4p5pfdLTFqCNP9Y",
+    },
+  },
+  {
+    id: "hodl-eth",
+    symbol: "HETH",
+    name: "Hodl ETH",
+    image:
+      "https://assets.coingecko.com/coins/images/21076/large/eKKSueB.png?1638285093",
+    contracts: {
+      "binance-smart-chain": "0x328acc7cd3e2340cef992b67c852095c0ee98603",
+    },
+  },
+  {
+    id: "catemoon-inu",
+    symbol: "cate",
+    name: "Catemoon Inu",
+    image:
+      "https://assets.coingecko.com/coins/images/20732/large/gRjXT37W_400x400.jpg?1637617355",
+    contracts: {
+      "binance-smart-chain": "0x5ea221fbe4150071a0c88beb7d4889904263efd2",
+    },
+  },
+  {
+    id: "lemonn-token",
+    symbol: "lmn",
+    name: "Lemonn",
+    image:
+      "https://assets.coingecko.com/coins/images/21057/large/lemonn-logo-200x200.png?1638267162",
+    contracts: {
+      "binance-smart-chain": "0x7251c7a2155d8fedb42a1dc4333ade589e4d6919",
+    },
+  },
+  {
+    id: "jungle",
+    symbol: "Jungle",
+    name: "Jungle",
+    image:
+      "https://assets.coingecko.com/coins/images/20893/large/O9Usopi.png?1637847516",
+    contracts: {
+      solana: "Aogv6j1wWiBAZcqRNN1Y89eozda2ke6rkc4CYy7c4iCi",
+    },
+  },
+  {
+    id: "solareum-wallet",
+    symbol: "xsb",
+    name: "Solareum Wallet",
+    image:
+      "https://assets.coingecko.com/coins/images/20958/large/xsb-200.png?1638141904",
+    contracts: {
+      solana: "4UuGQgkD3rSeoXatXRWwRfRd21G87d5LiCfkVzNNv1Tt",
+    },
+  },
+  {
+    id: "scary-chain-capital",
+    symbol: "scc",
+    name: "Scary Chain Capital",
+    image:
+      "https://assets.coingecko.com/coins/images/20864/large/Asset_1_%281%29.png?1637805857",
+    contracts: {
+      fantom: "0xb63029e37fc5186cb58c3b8c193fd37b1e1e1d43",
+    },
+  },
+  {
+    id: "kill-zill",
+    symbol: "kz",
+    name: "KiLL ZiLL",
+    image:
+      "https://assets.coingecko.com/coins/images/20909/large/Logo200-1.png?1637893806",
+    contracts: {
+      "binance-smart-chain": "0x3217a0a23f3967dcd3867fcd43f55cb1a789a97c",
+    },
+  },
+  {
+    id: "gobble-token",
+    symbol: "gobble",
+    name: "Gobble Token",
+    image:
+      "https://assets.coingecko.com/coins/images/20775/large/4lAtqZZv_400x400.jpg?1637660828",
+    contracts: {
+      ethereum: "0x1ec1b3fffd5072d97b27110a667c35025c96d5c5",
+    },
+  },
+  {
+    id: "vodka-token",
+    symbol: "VODKA",
+    name: "Vodka Token",
+    image:
+      "https://assets.coingecko.com/coins/images/20848/large/Vodka-Token-LOGO.png?1637760753",
+    contracts: {
+      "binance-smart-chain": "0x66da5cc445fec38a9475ae7941f89110b9d256b9",
+    },
+  },
+  {
+    id: "squirt-game",
+    symbol: "SQUIRT",
+    name: "Squirt Game",
+    image:
+      "https://assets.coingecko.com/coins/images/20887/large/squirtgame-logo-200x200.png?1637843619",
+    contracts: {
+      "binance-smart-chain": "0xd2d7289db68395593d65101753fec9450ddfb699",
+    },
+  },
+  {
+    id: "lovelace-world",
+    symbol: "lace",
+    name: "Lovelace World",
+    image:
+      "https://assets.coingecko.com/coins/images/20801/large/voOmcwrV_400x400.jpg?1637704443",
+    contracts: {
+      "binance-smart-chain": "0xa3499dd7dbbbd93cb0f8303f8a8ace8d02508e73",
+    },
+  },
+  {
+    id: "ghost-farmer-capital",
+    symbol: "gfc",
+    name: "Ghost Farmer Capital",
+    image:
+      "https://assets.coingecko.com/coins/images/20876/large/2VoVqTh.png?1637817258",
+    contracts: {
+      fantom: "0xe794e5cff1367bc06b6661ea4472e4919cb00186",
+    },
+  },
+  {
+    id: "arbirise-finance",
+    symbol: "arf",
+    name: "ArbiRiseFinance",
+    image:
+      "https://assets.coingecko.com/coins/images/20860/large/profile_picture_200.png?1637803349",
+    contracts: {
+      "arbitrum-one": "0xeb6f8eebc83d85120f9299b84da558825685570e",
+    },
+  },
+  {
+    id: "weta-vr",
+    symbol: "WETA",
+    name: "WETA VR",
+    image:
+      "https://assets.coingecko.com/coins/images/21020/large/RLcto7b.png?1638192691",
+    contracts: {
+      "binance-smart-chain": "0x527d5cbb37c56304121f05d54e4fb75737517ae0",
+    },
+  },
+  {
+    id: "autobusd",
+    symbol: "abs",
+    name: "Autobusd",
+    image:
+      "https://assets.coingecko.com/coins/images/21029/large/88858579.png?1638230804",
+    contracts: {
+      "binance-smart-chain": "0xf83849122f769a0a7386df183e633607c890f6c0",
     },
   },
   {
@@ -108691,6 +108834,1037 @@ export const tokens: TokenD[] = [
     },
   },
   {
+    id: "h3ro3s",
+    symbol: "h3ro",
+    name: "H3RO3S",
+    image:
+      "https://assets.coingecko.com/coins/images/20906/large/photo_2021-09-08_12-39-26.jpg?1637883504",
+    contracts: {},
+  },
+  {
+    id: "kilt-protocol",
+    symbol: "kilt",
+    name: "KILT Protocol",
+    image:
+      "https://assets.coingecko.com/coins/images/20861/large/kilt.png?1637893150",
+    contracts: {
+      polkadot: "",
+    },
+  },
+  {
+    id: "planet-of-apes",
+    symbol: "poa",
+    name: "Planet of Apes",
+    image:
+      "https://assets.coingecko.com/coins/images/20792/large/photo_2021-11-23_21.17.27.jpeg?1637673462",
+    contracts: {
+      ethereum: "0x8cd439cb2e0e01de6aa08c1c5e7f49e8b992de16",
+    },
+  },
+  {
+    id: "bikini-finance",
+    symbol: "BIKINI",
+    name: "Bikini Finance",
+    image:
+      "https://assets.coingecko.com/coins/images/21072/large/Bikinicoin.png?1638282075",
+    contracts: {
+      "binance-smart-chain": "0xc865a1dfb8717f53261a935d5c2577fda7523c55",
+    },
+  },
+  {
+    id: "powerinu",
+    symbol: "PowerInu",
+    name: "PowerInu",
+    image:
+      "https://assets.coingecko.com/coins/images/20800/large/power_inu_logo_200x200.png?1637678872",
+    contracts: {
+      "binance-smart-chain": "0xec743655ddb648c4362dfa71cdb1877783ed1cca",
+    },
+  },
+  {
+    id: "dtravel",
+    symbol: "trvl",
+    name: "DTravel",
+    image:
+      "https://assets.coingecko.com/coins/images/20911/large/trvl.png?1637922141",
+    contracts: {
+      ethereum: "0xd47bdf574b4f76210ed503e0efe81b58aa061f3d",
+    },
+  },
+  {
+    id: "unicake",
+    symbol: "uct",
+    name: "UniCAKE",
+    image:
+      "https://assets.coingecko.com/coins/images/20849/large/uct.png?1638251485",
+    contracts: {
+      "binance-smart-chain": "0xdf9343973cbdb6d462527f8c2b383f4a16efbf34",
+    },
+  },
+  {
+    id: "artii-token",
+    symbol: "artii",
+    name: "ARTII Token",
+    image:
+      "https://assets.coingecko.com/coins/images/20767/large/logo-img.png?1637654806",
+    contracts: {
+      ethereum: "0x07a858fc699f99ddf2b186bf162fd7f4d42f7f63",
+    },
+  },
+  {
+    id: "onston",
+    symbol: "onston",
+    name: "Onston",
+    image:
+      "https://assets.coingecko.com/coins/images/20669/large/onston.PNG?1637547859",
+    contracts: {
+      ethereum: "0x47b9f01b16e9c9cb99191dca68c9cc5bf6403957",
+    },
+  },
+  {
+    id: "metashiba-bsc",
+    symbol: "metashiba",
+    name: "MetaShiba BSC",
+    image:
+      "https://assets.coingecko.com/coins/images/21038/large/200x200_%281%29.png?1638253123",
+    contracts: {
+      "binance-smart-chain": "0x817aea85fa208f499f08276a4340e4e35d50b643",
+    },
+  },
+  {
+    id: "gnome",
+    symbol: "$gnome",
+    name: "GNOME",
+    image:
+      "https://assets.coingecko.com/coins/images/20885/large/gnome.png?1637829973",
+    contracts: {
+      ethereum: "0xe58eb0bb13a71d7b95c4c3cbe6cb3dbb08f9cbfb",
+    },
+  },
+  {
+    id: "ixo",
+    symbol: "ixo",
+    name: "IXO",
+    image:
+      "https://assets.coingecko.com/coins/images/16829/large/ixo.png?1625215707",
+    contracts: {
+      cosmos: "",
+    },
+  },
+  {
+    id: "rammus",
+    symbol: "rammus",
+    name: "Rammus",
+    image:
+      "https://assets.coingecko.com/coins/images/21105/large/photo-2021-11-28-02-38-26.jpg?1638328026",
+    contracts: {
+      ethereum: "0xa4fabd195f6245437ab459f7597bfa4f9112ec9e",
+    },
+  },
+  {
+    id: "mandox",
+    symbol: "mandox",
+    name: "MandoX",
+    image:
+      "https://assets.coingecko.com/coins/images/20954/large/JYSDP9N.png?1638139268",
+    contracts: {
+      ethereum: "0xafbf03181833ab4e8dec24d708a2a24c2baaa4a4",
+    },
+  },
+  {
+    id: "eggzilla",
+    symbol: "EGG",
+    name: "eggzilla",
+    image:
+      "https://assets.coingecko.com/coins/images/20850/large/12bee43b83f1aaf53d0d953f0c459c69.png?1637761165",
+    contracts: {
+      "binance-smart-chain": "0xd0586700dbac9071474e72f94610613123a222b8",
+    },
+  },
+  {
+    id: "millionaire-maker",
+    symbol: "million",
+    name: "Millionaire Maker",
+    image:
+      "https://assets.coingecko.com/coins/images/20910/large/VpuyUpT8_400x400.png?1637895376",
+    contracts: {
+      "binance-smart-chain": "0x370220f460c65e87a87341f48cc18bcbdbc18433",
+    },
+  },
+  {
+    id: "spice-dao",
+    symbol: "spice",
+    name: "Spice DAO",
+    image:
+      "https://assets.coingecko.com/coins/images/21086/large/KfMQkToD_400x400.jpg?1638312662",
+    contracts: {
+      ethereum: "0x9b6db7597a74602a5a806e33408e7e2dafa58193",
+    },
+  },
+  {
+    id: "megaweapon",
+    symbol: "$weapon",
+    name: "Megaweapon",
+    image:
+      "https://assets.coingecko.com/coins/images/20833/large/weapon.png?1638343548",
+    contracts: {
+      ethereum: "0x3063c77c4ef5c1de185321ae2bc5675e17344f7f",
+    },
+  },
+  {
+    id: "metagame-arena",
+    symbol: "mga",
+    name: "Metagame Arena",
+    image:
+      "https://assets.coingecko.com/coins/images/20947/large/mga.png?1638073074",
+    contracts: {
+      "binance-smart-chain": "0x03ac6ab6a9a91a0fcdec7d85b38bdfbb719ec02f",
+    },
+  },
+  {
+    id: "megatoken",
+    symbol: "mega",
+    name: "MegaToken",
+    image:
+      "https://assets.coingecko.com/coins/images/20671/large/undefined-Imgur-5.png?1637548941",
+    contracts: {
+      "binance-smart-chain": "0x079f0f5f3ad15e01a5cd919564a8f52dde03431b",
+    },
+  },
+  {
+    id: "timerr",
+    symbol: "timerr",
+    name: "Timerr",
+    image:
+      "https://assets.coingecko.com/coins/images/20814/large/v8Ku6pr.png?1637718594",
+    contracts: {
+      "binance-smart-chain": "0xb5c9aa0d54091b32c6496b1f3f745e2492daa2ff",
+    },
+  },
+  {
+    id: "fenix-danjon",
+    symbol: "DJN",
+    name: "Fenix Danjon",
+    image:
+      "https://assets.coingecko.com/coins/images/21134/large/logo.png?1638361975",
+    contracts: {
+      solana: "GnzxEyULVPQYb5F5hxGc8dEGivctVrfr5mtsdp4z5xU2",
+    },
+  },
+  {
+    id: "anchor-beth-token",
+    symbol: "beth",
+    name: "Anchor bETH Token",
+    image:
+      "https://assets.coingecko.com/coins/images/21002/large/bETH.png?1638187691",
+    contracts: {
+      terra: "terra1dzhzukyezv0etz22ud940z7adyv7xgcjkahuun",
+    },
+  },
+  {
+    id: "arcane",
+    symbol: "ARCANE",
+    name: "Arcane",
+    image:
+      "https://assets.coingecko.com/coins/images/20890/large/ArcaneLogo.png?1637845385",
+    contracts: {
+      ethereum: "0x58530a272bf650827ae05fadee76f36271089f7f",
+    },
+  },
+  {
+    id: "sonic-token",
+    symbol: "sonic",
+    name: "Sonic Token",
+    image:
+      "https://assets.coingecko.com/coins/images/20741/large/logo_-_2021-11-23T095506.845.png?1637632521",
+    contracts: {
+      avalanche: "0x4aca0ad6357b918e3d06bb1a0bcc403619177523",
+    },
+  },
+  {
+    id: "fumoney",
+    symbol: "fum",
+    name: "FUMoney",
+    image:
+      "https://assets.coingecko.com/coins/images/21054/large/KuH9TXMM_400x400.jpg?1638263205",
+    contracts: {
+      solana: "EZF2sPJRe26e8iyXaCrmEefrGVBkqqNGv9UPGG9EnTQz",
+    },
+  },
+  {
+    id: "toshinori-inu",
+    symbol: "toshinori",
+    name: "Toshinori Inu",
+    image:
+      "https://assets.coingecko.com/coins/images/21068/large/2Dp0LWna_400x400.jpg?1638279103",
+    contracts: {
+      "binance-smart-chain": "0x2c3ffa02d582a08e27289a3fe67d79c1834a87ef",
+      ethereum: "0xe0bcd056b6a8c7fd4983cb56c162799e498e85d3",
+    },
+  },
+  {
+    id: "chicken-zilla",
+    symbol: "chkn",
+    name: "Chicken Zilla",
+    image:
+      "https://assets.coingecko.com/coins/images/21044/large/photo-2021-11-18-09-41-16.jpg?1638256781",
+    contracts: {
+      "binance-smart-chain": "0xabde9af935d52ed5eaf17db7f1f3d025b8abd9ae",
+    },
+  },
+  {
+    id: "rooster-battle",
+    symbol: "rice",
+    name: "Rooster Battle",
+    image:
+      "https://assets.coingecko.com/coins/images/20975/large/roosterbattle.png?1638161550",
+    contracts: {
+      "binance-smart-chain": "0x338af54976b9d4f7f41c97dcb60dfec0694149f9",
+    },
+  },
+  {
+    id: "tabtrader",
+    symbol: "ttt",
+    name: "TabTrader",
+    image:
+      "https://assets.coingecko.com/coins/images/21060/large/xFYsZV9U_400x400.jpg?1638268495",
+    contracts: {
+      solana: "FNFKRV3V8DtA3gVJN6UshMiLGYA8izxFwkNWmJbFjmRj",
+    },
+  },
+  {
+    id: "acu-platform",
+    symbol: "acu",
+    name: "ACU Platform",
+    image:
+      "https://assets.coingecko.com/coins/images/20845/large/acu_platform.PNG?1637744893",
+    contracts: {
+      ethereum: "0x2a4f6675469ee5a31664925b486ebaddfb838dd0",
+    },
+  },
+  {
+    id: "stafi-ratom",
+    symbol: "ratom",
+    name: "StaFi rATOM",
+    image:
+      "https://assets.coingecko.com/coins/images/21121/large/ratom.png?1638341526",
+    contracts: {
+      ethereum: "0xd01cb3d113a864763dd3977fe1e725860013b0ed",
+    },
+  },
+  {
+    id: "boku",
+    symbol: "boku",
+    name: "Boryoku Dragonz",
+    image:
+      "https://assets.coingecko.com/coins/images/20820/large/ZdgsxFPV_400x400.png?1637721291",
+    contracts: {
+      solana: "CN7qFa5iYkHz99PTctvT4xXUHnxwjQ5MHxCuTJtPN5uS",
+    },
+  },
+  {
+    id: "pomeranian",
+    symbol: "pom",
+    name: "Pomeranian",
+    image:
+      "https://assets.coingecko.com/coins/images/20739/large/UxLFl_pv_400x400.jpg?1637619880",
+    contracts: {
+      "binance-smart-chain": "0x79a9b1e4298ac4a544608ff7715460b92b936c43",
+    },
+  },
+  {
+    id: "trickle",
+    symbol: "h2o",
+    name: "Trickle",
+    image:
+      "https://assets.coingecko.com/coins/images/20830/large/gFiD-RNL_400x400.jpg?1637726434",
+    contracts: {
+      "binance-smart-chain": "0xb8b932d41d6be935ce1666aaf41f056093f9faee",
+    },
+  },
+  {
+    id: "diamond-xrpl",
+    symbol: "diamond",
+    name: "Diamond XRPL",
+    image:
+      "https://assets.coingecko.com/coins/images/21099/large/Color_logo_with_background.png?1638326195",
+    contracts: {
+      xrp: "",
+    },
+  },
+  {
+    id: "flux-token",
+    symbol: "flx",
+    name: "Flux Token",
+    image:
+      "https://assets.coingecko.com/coins/images/21137/large/flux-flx.jpeg?1638372222",
+    contracts: {
+      ethereum: "0x3ea8ea4237344c9931214796d9417af1a1180770",
+    },
+  },
+  {
+    id: "spin",
+    symbol: "spin",
+    name: "SPIN",
+    image:
+      "https://assets.coingecko.com/coins/images/21040/large/VrssGNlO_400x400.jpg?1638253983",
+    contracts: {
+      "binance-smart-chain": "0xf93c5222a1dd5f482701d6ad6ab9f5eed4b0718b",
+    },
+  },
+  {
+    id: "wolfgirl",
+    symbol: "WLFGRL",
+    name: "Wolfgirl",
+    image:
+      "https://assets.coingecko.com/coins/images/20724/large/Icon200.png?1637593750",
+    contracts: {
+      "binance-smart-chain": "0x819a27c0d14a1d7e05d4e31a4778a0662db5cb00",
+    },
+  },
+  {
+    id: "viral-ethereum",
+    symbol: "eViral",
+    name: "Viral Ethereum",
+    image:
+      "https://assets.coingecko.com/coins/images/20794/large/eviral.png?1638183864",
+    contracts: {
+      ethereum: "0x7cec018ceef82339ee583fd95446334f2685d24f",
+    },
+  },
+  {
+    id: "slushie-capital",
+    symbol: "slush",
+    name: "Slushie Capital",
+    image:
+      "https://assets.coingecko.com/coins/images/21095/large/slush.PNG?1638324332",
+    contracts: {
+      avalanche: "0xd197c8b939f199c7d70d030c1931d3c24442df60",
+    },
+  },
+  {
+    id: "nebulatoken",
+    symbol: "nebula",
+    name: "NebulaToken",
+    image:
+      "https://assets.coingecko.com/coins/images/20908/large/rLvxXxbk_400x400.jpg?1637892653",
+    contracts: {
+      "binance-smart-chain": "0xd59af4e5a8c8d3e091d300f5416e7ef7ff28d875",
+    },
+  },
+  {
+    id: "cycle-punk",
+    symbol: "bike",
+    name: "Cycle Punk",
+    image:
+      "https://assets.coingecko.com/coins/images/20759/large/bike.png?1638350012",
+    contracts: {
+      ethereum: "0xf0607300cb81b1bfdb55768d7386863a759a4e06",
+    },
+  },
+  {
+    id: "sonic",
+    symbol: "sonic",
+    name: "Sonic",
+    image:
+      "https://assets.coingecko.com/coins/images/20816/large/SONICSWAP-CROPPED-RESIZED-200x200.png?1637719235",
+    contracts: {
+      "harmony-shard-0": "0x1e05c8b69e4128949fcef16811a819ef2f55d33e",
+    },
+  },
+  {
+    id: "thaicoin",
+    symbol: "tac",
+    name: "Thaicoin",
+    image:
+      "https://assets.coingecko.com/coins/images/20808/large/logo%28192%29.png?1637709028",
+    contracts: {
+      "binance-smart-chain": "0xcfc9321e3aa3a15bbbc4c4390da7407f3ec84145",
+    },
+  },
+  {
+    id: "suteku",
+    symbol: "suteku",
+    name: "Suteku",
+    image:
+      "https://assets.coingecko.com/coins/images/20824/large/15080.png?1637722885",
+    contracts: {
+      "binance-smart-chain": "0x198800af50914004a9e9d19ca18c0b24587a50cf",
+    },
+  },
+  {
+    id: "ginga-finance",
+    symbol: "gin",
+    name: "Ginga Finance",
+    image:
+      "https://assets.coingecko.com/coins/images/20948/large/An27hEg.png?1638101521",
+    contracts: {
+      "binance-smart-chain": "0x2c77778c189abae5951aab1100cebd99a42307c5",
+    },
+  },
+  {
+    id: "wrapped-metrix",
+    symbol: "mrxb",
+    name: "Wrapped Metrix",
+    image:
+      "https://assets.coingecko.com/coins/images/20763/large/Copy_of_Metrix_Logo_Final_Cut.png?1637652298",
+    contracts: {
+      "binance-smart-chain": "0x767b28a30e3a15dcece7bff7a020adfde9d19cf8",
+    },
+  },
+  {
+    id: "flokishu",
+    symbol: "flishu",
+    name: "FloKishu",
+    image:
+      "https://assets.coingecko.com/coins/images/20945/large/logo1-2.png?1638035189",
+    contracts: {
+      "binance-smart-chain": "0xfe6367ee89ad114833c05dd22c9797baca8aa370",
+    },
+  },
+  {
+    id: "shiba-metaverse",
+    symbol: "shibmeta",
+    name: "Shiba Metaverse",
+    image:
+      "https://assets.coingecko.com/coins/images/20946/large/200x200Logo.png?1638036136",
+    contracts: {
+      "binance-smart-chain": "0xf52d13b7145390a67f5b93854a4b2eda7fb09fb1",
+    },
+  },
+  {
+    id: "apollo-dao",
+    symbol: "apollo",
+    name: "Apollo DAO",
+    image:
+      "https://assets.coingecko.com/coins/images/20854/large/apollo.PNG?1637789483",
+    contracts: {
+      terra: "terra100yeqvww74h4yaejj6h733thgcafdaukjtw397",
+    },
+  },
+  {
+    id: "evolution-token",
+    symbol: "evo",
+    name: "Evolution Token",
+    image:
+      "https://assets.coingecko.com/coins/images/21101/large/Whats-App-Image-2021-11-30-at-23-27-27.png?1638327207",
+    contracts: {
+      "binance-smart-chain": "0xf2761e6f56fc3fba0f519e441720f80c087dba13",
+    },
+  },
+  {
+    id: "cirrus",
+    symbol: "crs",
+    name: "Cirrus",
+    image:
+      "https://assets.coingecko.com/coins/images/18335/large/icon_2x.png?1631585107",
+    contracts: {},
+  },
+  {
+    id: "for-loot-and-glory",
+    symbol: "FLAG",
+    name: "For Loot And Glory",
+    image:
+      "https://assets.coingecko.com/coins/images/20726/large/token_logo.ico?1637595445",
+    contracts: {
+      "polygon-pos": "0xb89fd55ef1ea71560469d55637ef9c2770d4830d",
+    },
+  },
+  {
+    id: "straitsx-indonesia-rupiah",
+    symbol: "xidr",
+    name: "StraitsX Indonesia Rupiah",
+    image:
+      "https://assets.coingecko.com/coins/images/21126/large/XIDR_Logo_256_X_256.png?1638343133",
+    contracts: {
+      ethereum: "0xebf2096e01455108badcbaf86ce30b6e5a72aa52",
+    },
+  },
+  {
+    id: "meebitsdao-pool",
+    symbol: "mbbt",
+    name: "MeebitsDAO Pool",
+    image:
+      "https://assets.coingecko.com/coins/images/20986/large/ZgVuisG__400x400.jpg?1638168731",
+    contracts: {
+      ethereum: "0x4ee4f96838454e67fce92b2c53b0f1a97d047179",
+    },
+  },
+  {
+    id: "defi-degen-land",
+    symbol: "ddl",
+    name: "DeFi Degen Land",
+    image:
+      "https://assets.coingecko.com/coins/images/20871/large/0inlfwNU_400x400.jpg?1637809911",
+    contracts: {
+      "binance-smart-chain": "0x88803312628fd21542f706b0c7dc8495c1c10b2e",
+    },
+  },
+  {
+    id: "the-realm-defenders",
+    symbol: "trd",
+    name: "The Realm Defenders",
+    image:
+      "https://assets.coingecko.com/coins/images/20734/large/g5IogLIJ_400x400.jpg?1637617954",
+    contracts: {
+      "polygon-pos": "0x2a1f0ad3cab040e28845734d932f3ff0a24b14f4",
+    },
+  },
+  {
+    id: "zetta-bitcoin-hashrate-token",
+    symbol: "zbtc",
+    name: "Zetta Bitcoin Hashrate Token",
+    image:
+      "https://assets.coingecko.com/coins/images/20754/large/10280.png?1637637442",
+    contracts: {
+      "binance-smart-chain": "0xd0dff49de3e314fdfd3f93c5eeee7d5d2f5515cd",
+    },
+  },
+  {
+    id: "subx-finance",
+    symbol: "sfx",
+    name: "SUBX FINANCE LAB",
+    image:
+      "https://assets.coingecko.com/coins/images/20710/large/zq3STMSH_400x400.jpg?1637573765",
+    contracts: {
+      "binance-smart-chain": "0x4cbda3d23c031cd403db2d24512ad920bf22f205",
+    },
+  },
+  {
+    id: "farmersonly-onion",
+    symbol: "onion",
+    name: "FarmersOnly Onion",
+    image:
+      "https://assets.coingecko.com/coins/images/20783/large/logo_-_2021-11-23T203515.245.png?1637670922",
+    contracts: {
+      avalanche: "0xf6931e67ef0cb20423351a53069719df2ad76e78",
+    },
+  },
+  {
+    id: "baby-shibnobi",
+    symbol: "babyshinja",
+    name: "Baby Shibnobi",
+    image:
+      "https://assets.coingecko.com/coins/images/20709/large/Ino0FHzd_400x400.jpg?1637573613",
+    contracts: {
+      ethereum: "0xd58f55b2c7b64afed8d21c5e852bcccae721e376",
+    },
+  },
+  {
+    id: "green-planet",
+    symbol: "gamma",
+    name: "Green Planet",
+    image:
+      "https://assets.coingecko.com/coins/images/20895/large/Green.e0975317.png?1637859046",
+    contracts: {
+      "binance-smart-chain": "0xb3cb6d2f8f2fde203a022201c81a96c167607f15",
+    },
+  },
+  {
+    id: "devil-token",
+    symbol: "DEVL",
+    name: "Devil Token",
+    image:
+      "https://assets.coingecko.com/coins/images/20721/large/pLHVgHY.png?1637586445",
+    contracts: {
+      "binance-smart-chain": "0xd280e0fea29bcae6ed9dd9fb4b9e5fa90f5c249d",
+    },
+  },
+  {
+    id: "8ight-finance",
+    symbol: "eight",
+    name: "8ight Finance",
+    image:
+      "https://assets.coingecko.com/coins/images/20706/large/logo_eight-03.png?1637572541",
+    contracts: {
+      "harmony-shard-0": "0xcda2fdeee5c382e401c04dc929e53ababf6c8109",
+    },
+  },
+  {
+    id: "operon-origins",
+    symbol: "oro",
+    name: "Operon Origins",
+    image:
+      "https://assets.coingecko.com/coins/images/20965/large/oro.png?1638152385",
+    contracts: {},
+  },
+  {
+    id: "kentucky-farm-capital",
+    symbol: "KFC",
+    name: "Kentucky Farm Capital",
+    image:
+      "https://assets.coingecko.com/coins/images/20891/large/kfclogo.jpg?1637845829",
+    contracts: {
+      ethereum: "0xfa18cbc7e4a18cf42887b078cede36ed75c20946",
+    },
+  },
+  {
+    id: "creaticles",
+    symbol: "cre8",
+    name: "Creaticles",
+    image:
+      "https://assets.coingecko.com/coins/images/21115/large/logo-v3-small.png?1638339957",
+    contracts: {
+      ethereum: "0xc36b4311b21fc0c2ead46f1ea6ce97c9c4d98d3d",
+    },
+  },
+  {
+    id: "anduschain",
+    symbol: "deb",
+    name: "Anduschain",
+    image:
+      "https://assets.coingecko.com/coins/images/20842/large/DEB.png?1637743593",
+    contracts: {
+      ethereum: "0xa1e770be76bde604f8ebb66f640250a787b9422b",
+    },
+  },
+  {
+    id: "metapay",
+    symbol: "mpay",
+    name: "Metapay",
+    image:
+      "https://assets.coingecko.com/coins/images/21033/large/metapay.PNG?1638236907",
+    contracts: {
+      "binance-smart-chain": "0xfe4066f9c900c4e4dce13fb1c3c751ccffd8b6a3",
+    },
+  },
+  {
+    id: "elonspets",
+    symbol: "elp",
+    name: "ElonsPets",
+    image:
+      "https://assets.coingecko.com/coins/images/21036/large/Z963ee-Wx-400x400.jpg?1638252364",
+    contracts: {
+      ethereum: "0x40b50a516e081945b95d30fcbbb31476a63ffb4a",
+    },
+  },
+  {
+    id: "the-cancoin",
+    symbol: "canna",
+    name: "The CanCoin",
+    image:
+      "https://assets.coingecko.com/coins/images/20889/large/CanCoin2Rityta_1_kopia_3.png?1637844044",
+    contracts: {
+      "binance-smart-chain": "0xcbed7180e61f82aa9bbc1f59afaa7d57fab588ac",
+    },
+  },
+  {
+    id: "vitamin-coin",
+    symbol: "vitc",
+    name: "Vitamin Coin",
+    image:
+      "https://assets.coingecko.com/coins/images/20661/large/vitc_200.png?1637545079",
+    contracts: {
+      vite: "tti_22d0b205bed4d268a05dfc3c",
+    },
+  },
+  {
+    id: "punk-shiba",
+    symbol: "PUNKS",
+    name: "Punk Shiba",
+    image:
+      "https://assets.coingecko.com/coins/images/21013/large/logo200.png?1638190739",
+    contracts: {
+      "binance-smart-chain": "0x7189b1391f24f9a90cdb0e12ac0b3f489939921c",
+    },
+  },
+  {
+    id: "madworld",
+    symbol: "umad",
+    name: "MADworld",
+    image:
+      "https://assets.coingecko.com/coins/images/20939/large/UMAD_.png?1638238294",
+    contracts: {
+      ethereum: "0x31c2415c946928e9fd1af83cdfa38d3edbd4326f",
+    },
+  },
+  {
+    id: "kaka-nft-world",
+    symbol: "kaka",
+    name: "KAKA NFT World",
+    image:
+      "https://assets.coingecko.com/coins/images/20877/large/10768.png?1637818350",
+    contracts: {
+      "binance-smart-chain": "0x26a1bdfa3bb86b2744c4a42ebfdd205761d13a8a",
+    },
+  },
+  {
+    id: "logix-coin",
+    symbol: "lgx",
+    name: "Logix Coin",
+    image:
+      "https://assets.coingecko.com/coins/images/20969/large/logo_blue.844d37ad.png?1638153236",
+    contracts: {
+      "binance-smart-chain": "0x110873306cd09f5322c06def4e4a9a70bf4cf668",
+    },
+  },
+  {
+    id: "baby-ripple",
+    symbol: "BabyXRP",
+    name: "Baby Ripple",
+    image:
+      "https://assets.coingecko.com/coins/images/21064/large/KrrE8T3.jpeg?1638276825",
+    contracts: {
+      "binance-smart-chain": "0xbc9bb68c561a1ff1b3fbc954fcead1d4862ac5cf",
+    },
+  },
+  {
+    id: "radao",
+    symbol: "ra",
+    name: "RaDAO",
+    image:
+      "https://assets.coingecko.com/coins/images/21055/large/radao.PNG?1638266245",
+    contracts: {
+      "binance-smart-chain": "0xcc238200cffda7a5e2810086c26d5334e64f1155",
+    },
+  },
+  {
+    id: "robinhoodprotocol",
+    symbol: "xrhp",
+    name: "RobinHoodProtocol",
+    image:
+      "https://assets.coingecko.com/coins/images/20955/large/logow.png?1638139764",
+    contracts: {
+      "binance-smart-chain": "0x0e53c8779197ac62b93251ebcb1d562325a0f5f3",
+    },
+  },
+  {
+    id: "capital-aggregator-token",
+    symbol: "cat",
+    name: "Capital Aggregator Token",
+    image:
+      "https://assets.coingecko.com/coins/images/20962/large/Logo-only.png?1638150368",
+    contracts: {
+      ethereum: "0x3734dc0d241b5ad886fa6bff45ffa67252ac0e89",
+    },
+  },
+  {
+    id: "solideth",
+    symbol: "solideth",
+    name: "SolidETH",
+    image:
+      "https://assets.coingecko.com/coins/images/20867/large/solideth.png?1638347712",
+    contracts: {
+      "binance-smart-chain": "0x5d772ca965648bcdbc263a7e672b46d214cca432",
+    },
+  },
+  {
+    id: "playermon",
+    symbol: "pym",
+    name: "Playermon",
+    image:
+      "https://assets.coingecko.com/coins/images/20682/large/eALRa3rZ_400x400.png?1637552321",
+    contracts: {
+      "polygon-pos": "0x0bd49815ea8e2682220bcb41524c0dd10ba71d41",
+    },
+  },
+  {
+    id: "otterclam",
+    symbol: "clam",
+    name: "OtterClam",
+    image:
+      "https://assets.coingecko.com/coins/images/20670/large/clam.png?1637548092",
+    contracts: {
+      "polygon-pos": "0xc250e9987a032acac293d838726c511e6e1c029d",
+    },
+  },
+  {
+    id: "monkeyball",
+    symbol: "mbs",
+    name: "MonkeyBall",
+    image:
+      "https://assets.coingecko.com/coins/images/20841/large/monkeyball_logo.png?1637743556",
+    contracts: {},
+  },
+  {
+    id: "all-coins-yield-capital",
+    symbol: "acyc",
+    name: "All Coins Yield Capital",
+    image:
+      "https://assets.coingecko.com/coins/images/21109/large/logo200_%2828%29.png?1638330853",
+    contracts: {
+      ethereum: "0xb56a1f3310578f23120182fb2e58c087efe6e147",
+    },
+  },
+  {
+    id: "forward",
+    symbol: "forward",
+    name: "Forward",
+    image:
+      "https://assets.coingecko.com/coins/images/20866/large/182860872_110384464503974_4805876988713020861_n.png?1637807531",
+    contracts: {
+      ethereum: "",
+    },
+  },
+  {
+    id: "sportium",
+    symbol: "sprt",
+    name: "Sportium",
+    image:
+      "https://assets.coingecko.com/coins/images/20981/large/sportium_logo_symbolmark_skyblue.png?1638163975",
+    contracts: {
+      ethereum: "0x5ab6a4f46ce182356b6fa2661ed8ebcafce995ad",
+    },
+  },
+  {
+    id: "plutonium",
+    symbol: "pln",
+    name: "Plutonium",
+    image:
+      "https://assets.coingecko.com/coins/images/20735/large/pln.png?1638346853",
+    contracts: {
+      "binance-smart-chain": "0x45e027fca0364333bdb725a524cb401531a0f1d1",
+    },
+  },
+  {
+    id: "luni",
+    symbol: "luni",
+    name: "Luni",
+    image:
+      "https://assets.coingecko.com/coins/images/21058/large/5tXNX2tT_400x400.jpg?1638267848",
+    contracts: {
+      terra: "terra1m3tdguf59xq3pa2twk5fjte5g6szj5y9x5npy7",
+    },
+  },
+  {
+    id: "vival",
+    symbol: "vvl",
+    name: "Vival",
+    image:
+      "https://assets.coingecko.com/coins/images/20991/large/200x200_%2844%29.png?1638170474",
+    contracts: {
+      "binance-smart-chain": "0xcb4b60ab2d6c11e9f065c8e4850350a14c1b8b01",
+    },
+  },
+  {
+    id: "firezard",
+    symbol: "zard",
+    name: "FireZard",
+    image:
+      "https://assets.coingecko.com/coins/images/20749/large/FireZard_200.png?1637635239",
+    contracts: {
+      "binance-smart-chain": "0xcf663a0ef9155bdc35a4b918bbec75e9bfe40d2a",
+    },
+  },
+  {
+    id: "burnt-cake",
+    symbol: "bcake",
+    name: "Burnt Cake",
+    image:
+      "https://assets.coingecko.com/coins/images/21000/large/Untitled-design-6.png?1638177739",
+    contracts: {
+      "binance-smart-chain": "0x29fa9cced410c5f62ec503019fcc8ed5b1be59fd",
+    },
+  },
+  {
+    id: "solchicks-token",
+    symbol: "chicks",
+    name: "SolChicks Token",
+    image:
+      "https://assets.coingecko.com/coins/images/20978/large/chicks.png?1638162821",
+    contracts: {},
+  },
+  {
+    id: "canon-crypto",
+    symbol: "cato",
+    name: "Canon Crypto",
+    image:
+      "https://assets.coingecko.com/coins/images/21045/large/urMeBx_X_400x400.jpg?1638256935",
+    contracts: {
+      "binance-smart-chain": "0x97667aeb10b6916001b5431f980c30fb8a9ce4b4",
+    },
+  },
+  {
+    id: "nidhi-dao",
+    symbol: "guru",
+    name: "Nidhi Dao",
+    image:
+      "https://assets.coingecko.com/coins/images/20823/large/_AzvB0CH_400x400.jpg?1637722508",
+    contracts: {
+      "polygon-pos": "0x057e0bd9b797f9eeeb8307b35dbc8c12e534c41e",
+    },
+  },
+  {
+    id: "medping",
+    symbol: "mpg",
+    name: "Medping",
+    image:
+      "https://assets.coingecko.com/coins/images/20971/large/MEDPING_LOGO.png?1638154197",
+    contracts: {
+      "binance-smart-chain": "0x53f0e242ea207b6e9b63e0a53e788267aa99ff9b",
+    },
+  },
+  {
+    id: "lithosphere",
+    symbol: "litho",
+    name: "Lithosphere",
+    image:
+      "https://assets.coingecko.com/coins/images/21128/large/6gizpBLn.png?1638347028",
+    contracts: {
+      "binance-smart-chain": "0x61909950e1bfb5d567c5463cbd33dc1cdc85ee93",
+    },
+  },
+  {
+    id: "guzzler",
+    symbol: "gzlr",
+    name: "Guzzler",
+    image:
+      "https://assets.coingecko.com/coins/images/20970/large/Screenshot-2021-11-27-at-22-57-22.png?1638153729",
+    contracts: {
+      ethereum: "0x9f4909cc95fb870bf48c128c1fdbb5f482797632",
+    },
+  },
+  {
+    id: "metagalaxy-land",
+    symbol: "megaland",
+    name: "Metagalaxy Land",
+    image:
+      "https://assets.coingecko.com/coins/images/20983/large/dud5mv4kNaj1PZwSQ3Eazt5voNIycBwyhJQFaXdE.png?1638165470",
+    contracts: {
+      "binance-smart-chain": "0x7cd8c22d3f4b66230f73d7ffcb48576233c3fe33",
+    },
+  },
+  {
+    id: "seamlessswap-token",
+    symbol: "seamless",
+    name: "SeamlessSwap Token",
+    image:
+      "https://assets.coingecko.com/coins/images/20836/large/h9aSYw1B_400x400.jpg?1637736753",
+    contracts: {
+      "binance-smart-chain": "0x2fc9e0f34d86f65b495de7ee3bb5cbeac7f92b04",
+    },
+  },
+  {
+    id: "safe-drive",
+    symbol: "drive",
+    name: "Safe Drive",
+    image:
+      "https://assets.coingecko.com/coins/images/20897/large/drive.PNG?1637877141",
+    contracts: {
+      "binance-smart-chain": "0xa321fc1171eb85498fad47d3d127368eba70265c",
+    },
+  },
+  {
+    id: "desirenft",
+    symbol: "desire",
+    name: "DesireNFT",
+    image:
+      "https://assets.coingecko.com/coins/images/20771/large/Desire_logo_round_black_1024x1024.png?1637725214",
+    contracts: {
+      "binance-smart-chain": "0xc8846b0877cec21336ba3136208fd02d42ac7b5e",
+    },
+  },
+  {
+    id: "cvd19",
+    symbol: "cvd19",
+    name: "CVD19",
+    image:
+      "https://assets.coingecko.com/coins/images/20928/large/dswukNcT_400x400.jpg?1637935364",
+    contracts: {
+      "binance-smart-chain": "0x437811519f3f7dfde412a91a9939e9b78c215aa3",
+    },
+  },
+  {
     id: "bxmi-token",
     symbol: "bxmi",
     name: "Bxmi Token",
@@ -108701,21 +109875,33 @@ export const tokens: TokenD[] = [
     },
   },
   {
-    id: "dappradar",
-    symbol: "radar",
-    name: "DappRadar",
+    id: "metapool",
+    symbol: "mpool",
+    name: "Metapool",
     image:
-      "https://assets.coingecko.com/coins/images/20894/large/dappradar-token.png?1637859758",
-    contracts: {},
+      "https://assets.coingecko.com/coins/images/21016/large/Screenshot-2021-11-28-at-20-18-58.png?1638191310",
+    contracts: {
+      "binance-smart-chain": "0x18c43a0214db7c7dca1125256e2a848aaea71040",
+    },
   },
   {
-    id: "hunny-love-token",
-    symbol: "love",
-    name: "HunnyDAO",
+    id: "heroes-td",
+    symbol: "htd",
+    name: "Heroes TD",
     image:
-      "https://assets.coingecko.com/coins/images/20748/large/hunnydaologo-200x200.png?1637634867",
+      "https://assets.coingecko.com/coins/images/20953/large/heroes_td.PNG?1638138806",
     contracts: {
-      "binance-smart-chain": "0x9505dbd77dacd1f6c89f101b98522d4b871d88c5",
+      "binance-smart-chain": "0x5e2689412fae5c29bd575fbe1d5c1cd1e0622a8f",
+    },
+  },
+  {
+    id: "davis-cup-fan-token",
+    symbol: "DAVIS",
+    name: "Davis Cup Fan Token",
+    image:
+      "https://assets.coingecko.com/coins/images/20793/large/tokens_7514c284-9026-46cf-bdc6-97d8c6076b8e.png?1637673729",
+    contracts: {
+      chiliz: "0x4b436f10911cd3f90b06f52e2a788a0a0dff96de",
     },
   },
   {
@@ -108729,6 +109915,1073 @@ export const tokens: TokenD[] = [
     },
   },
   {
+    id: "the-killbox-game",
+    symbol: "kbox",
+    name: "The Killbox Game",
+    image:
+      "https://assets.coingecko.com/coins/images/20828/large/icon_abe_token-200.png?1637726119",
+    contracts: {
+      "binance-smart-chain": "0x3523d58d8036b1c5c9a13493143c97aefc5ad422",
+    },
+  },
+  {
+    id: "wonderfi-tokenized-stock",
+    symbol: "wndr",
+    name: "WonderFi Tokenized Stock",
+    image:
+      "https://assets.coingecko.com/coins/images/20878/large/download_%2843%29.png?1637818473",
+    contracts: {},
+  },
+  {
+    id: "space-monkey-token",
+    symbol: "MONKE",
+    name: "Space Monkey Token",
+    image:
+      "https://assets.coingecko.com/coins/images/20847/large/XXqbKW2a_400x400.jpg?1637788170",
+    contracts: {
+      "binance-smart-chain": "0xb422de11a237d0cbce17d7d70f53f67ef84394d3",
+    },
+  },
+  {
+    id: "solar-bear",
+    symbol: "solbear",
+    name: "Solar Bear",
+    image:
+      "https://assets.coingecko.com/coins/images/20778/large/logo.png?1637665136",
+    contracts: {
+      solana: "DktNJUJAWJyeLw3ykCkFNpGohE24SoEhevKBskRi6P1y",
+    },
+  },
+  {
+    id: "ascensionarcade",
+    symbol: "aat",
+    name: "AscensionArcade",
+    image:
+      "https://assets.coingecko.com/coins/images/20985/large/_VoQPDDs_400x400.jpg?1638168643",
+    contracts: {
+      "binance-smart-chain": "0x2180f5cc1ddf117640963ae91868948bd3ef6838",
+    },
+  },
+  {
+    id: "a-list-royale",
+    symbol: "AList",
+    name: "A-List Royale",
+    image:
+      "https://assets.coingecko.com/coins/images/20786/large/A-List_Royale_Banner.png?1637671390",
+    contracts: {
+      "binance-smart-chain": "0x9e96e806f8f72ce3bc59f8169cce9b1d0968aa2d",
+    },
+  },
+  {
+    id: "safeswap-token",
+    symbol: "ssgtx",
+    name: "Safeswap Token",
+    image:
+      "https://assets.coingecko.com/coins/images/20769/large/GBpj6TpI.png?1638362807",
+    contracts: {
+      "polygon-pos": "0xd0cfd20e8bbdb7621b705a4fd61de2e80c2cd02f",
+    },
+  },
+  {
+    id: "fantasy-world-gold",
+    symbol: "fwg",
+    name: "Fantasy World Gold",
+    image:
+      "https://assets.coingecko.com/coins/images/20963/large/cropped-photo_2021-10-19-09.22.13.png?1638151342",
+    contracts: {
+      ethereum: "0x7345ffe6291bc15381a4110831013e8fe9f93253",
+    },
+  },
+  {
+    id: "ix-token",
+    symbol: "ixt",
+    name: "IX Token",
+    image:
+      "https://assets.coingecko.com/coins/images/20927/large/IXT_SYMBOL_SVG_RGB_BLACK.png?1637934555",
+    contracts: {
+      "polygon-pos": "0xe06bd4f5aac8d0aa337d13ec88db6defc6eaeefe",
+    },
+  },
+  {
+    id: "crypto-gaming-united",
+    symbol: "cgu",
+    name: "Crypto Gaming United",
+    image:
+      "https://assets.coingecko.com/coins/images/20751/large/cgu_cgu.jpg?1637635608",
+    contracts: {
+      "binance-smart-chain": "0x747d74db20cc422f39ab54edb2a3ce21f3c98af1",
+    },
+  },
+  {
+    id: "life-dao",
+    symbol: "lf",
+    name: "Life DAO",
+    image:
+      "https://assets.coingecko.com/coins/images/20999/large/94867468.png?1638177019",
+    contracts: {
+      avalanche: "0x5684a087c739a2e845f4aaaabf4fbd261edc2be8",
+    },
+  },
+  {
+    id: "infinite-launch",
+    symbol: "ila",
+    name: "Infinite Launch",
+    image:
+      "https://assets.coingecko.com/coins/images/20883/large/infinite_launch.PNG?1637823260",
+    contracts: {},
+  },
+  {
+    id: "wrapped-ampleforth",
+    symbol: "wampl",
+    name: "Wrapped Ampleforth",
+    image:
+      "https://assets.coingecko.com/coins/images/20825/large/photo_2021-11-25_02-05-11.jpg?1637811951",
+    contracts: {
+      ethereum: "0xedb171c18ce90b633db442f2a6f72874093b49ef",
+    },
+  },
+  {
+    id: "iotexpad",
+    symbol: "tex",
+    name: "IoTeXPad",
+    image:
+      "https://assets.coingecko.com/coins/images/20964/large/7gyi5TV8_400x400.jpg?1638152165",
+    contracts: {
+      iotex: "",
+    },
+  },
+  {
+    id: "carsautofinance",
+    symbol: "caf",
+    name: "CarsAutoFinance",
+    image:
+      "https://assets.coingecko.com/coins/images/20737/large/caf.PNG?1637619302",
+    contracts: {
+      "binance-smart-chain": "0x3e0e21f8cc8f479c43b05fed9ad7bed07f0eba02",
+    },
+  },
+  {
+    id: "bridge",
+    symbol: "brg.x",
+    name: "Bridge$",
+    image:
+      "https://assets.coingecko.com/coins/images/20875/large/bridgescrypto.PNG?1637814449",
+    contracts: {
+      "binance-smart-chain": "0x0e2114955023b736fa97d9e2fcde2836d10b7a5c",
+    },
+  },
+  {
+    id: "cheems-inu",
+    symbol: "$CINU",
+    name: "CHEEMS INU",
+    image:
+      "https://assets.coingecko.com/coins/images/20924/large/Screenshot-2021-11-23-at-00-45-30.png?1637932412",
+    contracts: {
+      "binance-smart-chain": "0xdfe6891ce8e5a5c7cf54ffde406a6c2c54145f71",
+    },
+  },
+  {
+    id: "alien-inu",
+    symbol: "alien",
+    name: "Alien Inu",
+    image:
+      "https://assets.coingecko.com/coins/images/20719/large/alien.png?1637585886",
+    contracts: {
+      ethereum: "0xf42965f82f9e3171d1205c5e3058caf324a09432",
+    },
+  },
+  {
+    id: "rxcgames",
+    symbol: "rexc",
+    name: "RXCGames",
+    image:
+      "https://assets.coingecko.com/coins/images/20989/large/evyjvQB.jpeg?1638169876",
+    contracts: {
+      "binance-smart-chain": "0x7c59a57fc16eac270421b74615c4bc009ecd486d",
+    },
+  },
+  {
+    id: "multi-stake-capital",
+    symbol: "msc",
+    name: "Multi-Stake Capital",
+    image:
+      "https://assets.coingecko.com/coins/images/20843/large/MSC-Logo-Coin.png?1637743979",
+    contracts: {
+      ethereum: "0x7ed037eb22982b839a5f0b67f6a652c9857ccd4d",
+    },
+  },
+  {
+    id: "enigma-dao",
+    symbol: "gma",
+    name: "Enigma DAO",
+    image:
+      "https://assets.coingecko.com/coins/images/21103/large/lwth.png?1638326904",
+    contracts: {
+      avalanche: "0x19cfd1a6b1cd236b542b561ed26b32d697e5a77f",
+    },
+  },
+  {
+    id: "moda-dao",
+    symbol: "moda",
+    name: "MODA DAO",
+    image:
+      "https://assets.coingecko.com/coins/images/20870/large/ModaDAO__logomark-primary_3x.png?1637809145",
+    contracts: {
+      ethereum: "0x1117ac6ad6cdf1a3bc543bad3b133724620522d5",
+    },
+  },
+  {
+    id: "gempay",
+    symbol: "gpay",
+    name: "GemPay",
+    image:
+      "https://assets.coingecko.com/coins/images/20766/large/200x200_%281%29.jpg?1637654513",
+    contracts: {
+      "polygon-pos": "0x29c28f7e50ea89343fe2b2c75f2652b883ed0cbd",
+    },
+  },
+  {
+    id: "metaverse-doge",
+    symbol: "$MVDOGE",
+    name: "Metaverse Doge",
+    image:
+      "https://assets.coingecko.com/coins/images/21007/large/Screenshot-2021-11-26-at-18-18-33.png?1638188916",
+    contracts: {
+      "binance-smart-chain": "0xd19d179a2bf479a4282aa91dbd563682e804345d",
+    },
+  },
+  {
+    id: "sheep-game",
+    symbol: "awool",
+    name: "Sheep Game",
+    image:
+      "https://assets.coingecko.com/coins/images/20873/large/awool.jpg?1637811310",
+    contracts: {
+      avalanche: "0x5ede350e84223fb50775fd91a723f2ca71034cf7",
+    },
+  },
+  {
+    id: "kiradoge-coin",
+    symbol: "KIRADOGE",
+    name: "Kiradoge coin",
+    image:
+      "https://assets.coingecko.com/coins/images/21136/large/200x200.-CMC.png?1638362440",
+    contracts: {
+      "binance-smart-chain": "0x07236aa0a4886ae2c097c86cc29954f78165b327",
+    },
+  },
+  {
+    id: "everdot",
+    symbol: "everdot",
+    name: "EverDot",
+    image:
+      "https://assets.coingecko.com/coins/images/20773/large/Logo-200x200.png?1637660192",
+    contracts: {
+      "binance-smart-chain": "0x0b40bbf9265b7f93169b087b9749d9d059d82ffe",
+    },
+  },
+  {
+    id: "shiny",
+    symbol: "shiny",
+    name: "Shiny",
+    image:
+      "https://assets.coingecko.com/coins/images/20832/large/shiny-token-200px.png?1637734428",
+    contracts: {
+      ethereum: "0xc150bac3cd3678acb2c093e433bed40a6ef08542",
+    },
+  },
+  {
+    id: "mittens",
+    symbol: "mitten",
+    name: "Mittens",
+    image:
+      "https://assets.coingecko.com/coins/images/20776/large/TjoOrv6u_400x400.jpg?1637661110",
+    contracts: {
+      ethereum: "0x01d5609df23dee77fe8db8e03c66be11dca7d21b",
+    },
+  },
+  {
+    id: "solidray-finance",
+    symbol: "SRT",
+    name: "Solidray Finance",
+    image:
+      "https://assets.coingecko.com/coins/images/21135/large/B3pTkF8J_400x400.jpg?1638362175",
+    contracts: {
+      "binance-smart-chain": "0x5b6c496cc837ccf003feacc4835e39d5976105a8",
+    },
+  },
+  {
+    id: "bitlocus",
+    symbol: "btl",
+    name: "Bitlocus",
+    image:
+      "https://assets.coingecko.com/coins/images/20913/large/btl.png?1637922710",
+    contracts: {},
+  },
+  {
+    id: "santos-fc-fan-token",
+    symbol: "santos",
+    name: "Santos FC Fan Token",
+    image:
+      "https://assets.coingecko.com/coins/images/21132/large/santos.png?1638357080",
+    contracts: {
+      "binance-smart-chain": "0xa64455a4553c9034236734faddaddbb64ace4cc7",
+    },
+  },
+  {
+    id: "xensa",
+    symbol: "xensa",
+    name: "Xensa",
+    image:
+      "https://assets.coingecko.com/coins/images/20941/large/Xensa_token-200.png?1638023991",
+    contracts: {
+      "okex-chain": "0x01d346f740e27b0f3f5513bc4d2e132e3a43cc6e",
+    },
+  },
+  {
+    id: "minisportzilla",
+    symbol: "minisportz",
+    name: "MiniSportZilla",
+    image:
+      "https://assets.coingecko.com/coins/images/20770/large/zilla.PNG?1637658389",
+    contracts: {
+      "binance-smart-chain": "0xd506ee6a2bb483a953eb311e9b7e5719211702d3",
+    },
+  },
+  {
+    id: "mine-network",
+    symbol: "mnet",
+    name: "MINE Network",
+    image:
+      "https://assets.coingecko.com/coins/images/21127/large/r6EAaVft_400x400.jpg?1638346677",
+    contracts: {},
+  },
+  {
+    id: "integritee",
+    symbol: "teer",
+    name: "Integritee",
+    image:
+      "https://assets.coingecko.com/coins/images/21131/large/teer.PNG?1638351281",
+    contracts: {},
+  },
+  {
+    id: "income-island",
+    symbol: "income",
+    name: "Income Island",
+    image:
+      "https://assets.coingecko.com/coins/images/21125/large/income_island.PNG?1638342832",
+    contracts: {
+      "binance-smart-chain": "0x3a91a88ef4bb813bb99ef5a745bcb56e3a3b403b",
+    },
+  },
+  {
+    id: "pintu-token",
+    symbol: "PTU",
+    name: "Pintu Token",
+    image:
+      "https://assets.coingecko.com/coins/images/20281/large/image_1_8dd79a68aa.png?1636733599",
+    contracts: {
+      ethereum: "0xc229c69eb3bb51828d0caa3509a05a51083898dd",
+    },
+  },
+  {
+    id: "txbit",
+    symbol: "txbit",
+    name: "Txbit",
+    image:
+      "https://assets.coingecko.com/coins/images/21122/large/Ft4mjdHu_400x400.jpg?1638342134",
+    contracts: {
+      "binance-smart-chain": "0x339fe932809e39a95b621a7f88bbf6c08eb6c978",
+    },
+  },
+  {
+    id: "elysiant-token",
+    symbol: "els",
+    name: "Elysian Token",
+    image:
+      "https://assets.coingecko.com/coins/images/20966/large/communityIcon_kr83rxrl1ij71.png?1638152549",
+    contracts: {
+      xrp: "rHXuEaRYnnJHbDeuBH5w8yPh5uwNVh5zAg",
+    },
+  },
+  {
+    id: "gamefi-collection",
+    symbol: "gfc",
+    name: "GameFi Collection",
+    image:
+      "https://assets.coingecko.com/coins/images/20923/large/game_fi.PNG?1637927442",
+    contracts: {
+      "binance-smart-chain": "0xf1046200b4362da7f0919a8aff2266a1aaa29ac5",
+    },
+  },
+  {
+    id: "iotexdoge",
+    symbol: "iodoge",
+    name: "IotexDoge",
+    image:
+      "https://assets.coingecko.com/coins/images/21018/large/iotexdoge.png?1638191814",
+    contracts: {
+      iotex: "0xa1491dc5fda535e698f0af102cd9ac8b5f7aa56f",
+    },
+  },
+  {
+    id: "miaw-token",
+    symbol: "miaw",
+    name: "Miaw",
+    image:
+      "https://assets.coingecko.com/coins/images/21117/large/EddQSSLo_400x400.jpg?1638340425",
+    contracts: {
+      terra: "terra1vtr50tw0pgqpes34zqu60n554p9x4950wk8f63",
+    },
+  },
+  {
+    id: "alt-coin",
+    symbol: "ALT",
+    name: "Alt Coin",
+    image:
+      "https://assets.coingecko.com/coins/images/20931/large/zM1fNLMi_400x400.png?1637969598",
+    contracts: {
+      "binance-smart-chain": "0x7120f43220d1c77cb821dde0420293491d03f854",
+    },
+  },
+  {
+    id: "foxboy",
+    symbol: "fbb",
+    name: "Foxboy",
+    image:
+      "https://assets.coingecko.com/coins/images/21119/large/h6g4-dsp_400x400.jpg?1638340812",
+    contracts: {
+      "binance-smart-chain": "0xfe0927f43a4f0a0dc7ee946859d7109a9a090257",
+    },
+  },
+  {
+    id: "rasko",
+    symbol: "rasko",
+    name: "rASKO",
+    image:
+      "https://assets.coingecko.com/coins/images/20977/large/r-ASKO-TOKEN-2-1.png?1638162089",
+    contracts: {
+      "binance-smart-chain": "0xd118f42edbc839f7e1e85d5269a25288792c141b",
+    },
+  },
+  {
+    id: "naraka-token",
+    symbol: "nt",
+    name: "Naraka",
+    image:
+      "https://assets.coingecko.com/coins/images/21112/large/1212122112.png?1638332193",
+    contracts: {
+      ethereum: "0x8e3fe7cdf4ebb605bbbac3a43d76ea757f7f06e2",
+    },
+  },
+  {
+    id: "magic-metaverse",
+    symbol: "mac",
+    name: "Magic Metaverse",
+    image:
+      "https://assets.coingecko.com/coins/images/20736/large/y89qzMd0_400x400.jpg?1637619159",
+    contracts: {
+      "binance-smart-chain": "0x2700bc595607f154163471ac2bd46ea8987d4cf0",
+    },
+  },
+  {
+    id: "doggystyle-coin",
+    symbol: "dsc",
+    name: "DoggyStyle Coin",
+    image:
+      "https://assets.coingecko.com/coins/images/20831/large/logo_-_2021-11-24T132426.774.png?1637731476",
+    contracts: {
+      solana: "DogscQVvNVj7ndEnhWiCXPVPKKwNy9fJd4ATF7mVi5J",
+    },
+  },
+  {
+    id: "big-brain-capital-dao",
+    symbol: "bbc dao",
+    name: "Big Brain Capital DAO",
+    image:
+      "https://assets.coingecko.com/coins/images/21107/large/O2fuFbO.png?1638329608",
+    contracts: {
+      ethereum: "0x270719e21852e0e817c4663cc9f1567441d6eaac",
+    },
+  },
+  {
+    id: "cerveza",
+    symbol: "cvza",
+    name: "Cerveza",
+    image:
+      "https://assets.coingecko.com/coins/images/20968/large/613c3b9b4a2d484d7c6b23d6_cvza_icon.png?1638152989",
+    contracts: {
+      tezos: "KT1BCzAq3PrTKPsEBKuoTGZdwX6rN6WE8rJj",
+    },
+  },
+  {
+    id: "space-dog",
+    symbol: "Space dog",
+    name: "Space dog",
+    image:
+      "https://assets.coingecko.com/coins/images/20919/large/IMG-20211125-192926-355.jpg?1637924479",
+    contracts: {
+      "binance-smart-chain": "0xd034c1f3cd74094fe966a0f25c9e5a21a21eb487",
+    },
+  },
+  {
+    id: "dex-game",
+    symbol: "dxgm",
+    name: "Dex Game",
+    image:
+      "https://assets.coingecko.com/coins/images/21084/large/dxgm-token.png?1638310949",
+    contracts: {
+      ethereum: "0x66f73d0fd4161cfad4302dc145ff994375c13475",
+    },
+  },
+  {
+    id: "vip-token",
+    symbol: "vip",
+    name: "VIP Token",
+    image:
+      "https://assets.coingecko.com/coins/images/20994/large/hVOVuxlC_400x400.jpg?1638172062",
+    contracts: {
+      "binance-smart-chain": "0x6759565574de509b7725abb4680020704b3f404e",
+    },
+  },
+  {
+    id: "bitvalve-2",
+    symbol: "btv",
+    name: "BitValve",
+    image:
+      "https://assets.coingecko.com/coins/images/20681/large/bitvalve-icon-200x200.png?1637551577",
+    contracts: {
+      ethereum: "0xb837b6467b4878fb5b3b81664042852593f15126",
+    },
+  },
+  {
+    id: "garlic",
+    symbol: "GRLC",
+    name: "Garlic",
+    image:
+      "https://assets.coingecko.com/coins/images/21011/large/logo.png?1638190406",
+    contracts: {
+      solana: "88YqDBWxYhhwPbExF966EdaCYBKP51xVm1oGBcbWzcf2",
+    },
+  },
+  {
+    id: "rocketcoin-2",
+    symbol: "rocket",
+    name: "RocketCoin",
+    image:
+      "https://assets.coingecko.com/coins/images/21108/large/Screenshot-2021-12-01-at-03-39-43.png?1638330515",
+    contracts: {
+      "binance-smart-chain": "0xd051b29c5cb6c19532529d7544dd0718dd40ecc8",
+    },
+  },
+  {
+    id: "cronaswap",
+    symbol: "crona",
+    name: "CronaSwap",
+    image:
+      "https://assets.coingecko.com/coins/images/21098/large/logox200.png?1638324977",
+    contracts: {
+      cronos: "0xadbd1231fb360047525bedf962581f3eee7b49fe",
+    },
+  },
+  {
+    id: "pittys",
+    symbol: "PITTYS",
+    name: "Pittys",
+    image:
+      "https://assets.coingecko.com/coins/images/20795/large/Screenshot-2021-11-22-at-22-35-20.png?1637676982",
+    contracts: {
+      ethereum: "0xbf5ed0843b304f93332af890e4ce09ec96145976",
+    },
+  },
+  {
+    id: "juicebox",
+    symbol: "jbx",
+    name: "Juicebox",
+    image:
+      "https://assets.coingecko.com/coins/images/21120/large/CCeIEmvE_400x400.jpg?1638341224",
+    contracts: {
+      ethereum: "0x3abf2a4f8452ccc2cf7b4c1e4663147600646f66",
+    },
+  },
+  {
+    id: "splash",
+    symbol: "spl",
+    name: "Splash",
+    image:
+      "https://assets.coingecko.com/coins/images/20900/large/NKh15jtQ_400x400.jpg?1637878654",
+    contracts: {
+      "binance-smart-chain": "0x7fc766baf71aba5c7835975bbdf315bf0bed3289",
+    },
+  },
+  {
+    id: "mirrored-galaxy-digital-holdings-ltd",
+    symbol: "mglxy",
+    name: "Mirrored Galaxy Digital Holdings Ltd",
+    image:
+      "https://assets.coingecko.com/coins/images/21091/large/mir.png?1638323655",
+    contracts: {
+      terra: "terra1l5lrxtwd98ylfy09fn866au6dp76gu8ywnudls",
+    },
+  },
+  {
+    id: "wanamoon",
+    symbol: "moon",
+    name: "WANAMOON",
+    image:
+      "https://assets.coingecko.com/coins/images/20725/large/listingicon.png?1637594543",
+    contracts: {
+      "binance-smart-chain": "0xc21490565eaf5637d36508683ceb1003f8dcfc65",
+    },
+  },
+  {
+    id: "mirrored-square",
+    symbol: "msq",
+    name: "Mirrored Square",
+    image:
+      "https://assets.coingecko.com/coins/images/21092/large/mir.png?1638323635",
+    contracts: {},
+  },
+  {
+    id: "mirrored-coinbase",
+    symbol: "mcoin",
+    name: "Mirrored Coinbase",
+    image:
+      "https://assets.coingecko.com/coins/images/21089/large/mir.png?1638323675",
+    contracts: {},
+  },
+  {
+    id: "stimmy",
+    symbol: "STIMMY",
+    name: "$STIMMY",
+    image:
+      "https://assets.coingecko.com/coins/images/20796/large/logo.gif?1637677225",
+    contracts: {
+      ethereum: "0xff7e285b87e7f9247f0953cf8cf5cb24eede4b9c",
+    },
+  },
+  {
+    id: "dogelana",
+    symbol: "DLANA",
+    name: "Dogelana",
+    image:
+      "https://assets.coingecko.com/coins/images/21133/large/200-logo.png?1638361785",
+    contracts: {
+      solana: "DogeLZECE9CthXasBLFxgeA2umEyt8CcV7Jsf6P5ZTFo",
+    },
+  },
+  {
+    id: "ran-x-crypto",
+    symbol: "rxc",
+    name: "Ran x Crypto",
+    image:
+      "https://assets.coingecko.com/coins/images/20949/large/ofJzS3VY_400x400.jpg?1638102159",
+    contracts: {
+      "binance-smart-chain": "0x784a5211b47ff615a19797cdbf121d0aa04d37f0",
+    },
+  },
+  {
+    id: "rocket",
+    symbol: "rokt",
+    name: "Rocket",
+    image:
+      "https://assets.coingecko.com/coins/images/20787/large/rokt_250x250.png?1637671513",
+    contracts: {
+      "binance-smart-chain": "0xc0731c3a2cbd795c6ab6dd7fe2146edc51cc21b0",
+    },
+  },
+  {
+    id: "wapswap-finance",
+    symbol: "wap",
+    name: "WapSwap Finance",
+    image:
+      "https://assets.coingecko.com/coins/images/21081/large/wapswap.PNG?1638310270",
+    contracts: {
+      "binance-smart-chain": "0xd819f503cf5c5932f549cb9c97d28685558d9c80",
+      "polygon-pos": "0xae01eeb7091e94edc57d79507322fb8be9cd64e9",
+    },
+  },
+  {
+    id: "rome",
+    symbol: "rome",
+    name: "Rome",
+    image:
+      "https://assets.coingecko.com/coins/images/21078/large/rome-dao.jpeg?1638291936",
+    contracts: {
+      moonriver: "0x4a436073552044d5f2f49b176853ad3ad473d9d6",
+    },
+  },
+  {
+    id: "symbiosis-finance",
+    symbol: "sis",
+    name: "Symbiosis Finance",
+    image:
+      "https://assets.coingecko.com/coins/images/20805/large/SymbiosisFinance_logo-150x150.jpeg?1637707064",
+    contracts: {
+      ethereum: "0xd38bb40815d2b0c2d2c866e0c72c5728ffc76dd9",
+    },
+  },
+  {
+    id: "snowballxyz",
+    symbol: "sno",
+    name: "Snowball-Snowbank",
+    image: "missing_large.png",
+    contracts: {
+      avalanche: "0xe761afc921ec7ff11df025f8967d08e3daa805a8",
+    },
+  },
+  {
+    id: "doxxed-santa",
+    symbol: "DxSanta",
+    name: "Doxxed Santa",
+    image:
+      "https://assets.coingecko.com/coins/images/21074/large/photo-2021-11-29-17-28-11.jpg?1638284137",
+    contracts: {
+      "binance-smart-chain": "0x2013a45418b1fdf7d0e1fa046e6cc27faa290be5",
+    },
+  },
+  {
+    id: "sipher",
+    symbol: "sipher",
+    name: "Sipher",
+    image:
+      "https://assets.coingecko.com/coins/images/21070/large/SipherToken.png?1638312272",
+    contracts: {},
+  },
+  {
+    id: "anchorust",
+    symbol: "aust",
+    name: "AnchorUST",
+    image:
+      "https://assets.coingecko.com/coins/images/21097/large/aust.png?1638324579",
+    contracts: {
+      terra: "terra1hzh9vpxhsk8253se0vv5jj6etdvxu3nv8z07zu",
+    },
+  },
+  {
+    id: "million-monke",
+    symbol: "MIMO",
+    name: "Million Monke",
+    image:
+      "https://assets.coingecko.com/coins/images/21071/large/200xMIMO.png?1638281151",
+    contracts: {
+      solana: "9TE7ebz1dsFo1uQ2T4oYAKSm39Y6fWuHrd6Uk6XaiD16",
+    },
+  },
+  {
+    id: "bitcoin-latinum",
+    symbol: "ltnm",
+    name: "Bitcoin Latinum",
+    image:
+      "https://assets.coingecko.com/coins/images/20780/large/10386.png?1637668026",
+    contracts: {},
+  },
+  {
+    id: "candylad",
+    symbol: "candylad",
+    name: "Candylad",
+    image:
+      "https://assets.coingecko.com/coins/images/20938/large/8Q1tiqi0_400x400.jpg?1638022978",
+    contracts: {
+      "binance-smart-chain": "0x136bfcdec5db31b565052451ad806014ab9f2b38",
+    },
+  },
+  {
+    id: "rps-league",
+    symbol: "rps",
+    name: "Rps League",
+    image:
+      "https://assets.coingecko.com/coins/images/20918/large/nS5mB7aP_400x400.jpg?1637924138",
+    contracts: {
+      "binance-smart-chain": "0xc2a605a31bf67a5af81cf6e39af79a62d8462717",
+    },
+  },
+  {
+    id: "infinitycash",
+    symbol: "ifc",
+    name: "InfinityCash",
+    image:
+      "https://assets.coingecko.com/coins/images/21066/large/logo-infinity-cash-BETA-Piece%28formatpetit%29.png?1638278015",
+    contracts: {
+      "binance-smart-chain": "0x1ef741cc15cc3ade55a628f26cbbab4369ea2912",
+    },
+  },
+  {
+    id: "hayfever",
+    symbol: "hay",
+    name: "Hayfever",
+    image:
+      "https://assets.coingecko.com/coins/images/21063/large/a-0TgPj-_400x400.jpg?1638276610",
+    contracts: {
+      ethereum: "0xf6269e2e0c271fb6af35e7f8a539ebc7155e33bb",
+    },
+  },
+  {
+    id: "party-hat",
+    symbol: "phat",
+    name: "Party Hat",
+    image:
+      "https://assets.coingecko.com/coins/images/21110/large/phat.png?1638331630",
+    contracts: {
+      "harmony-shard-0": "0xbcf532871415bc6e3d147d777c6ad3e68e50cd92",
+    },
+  },
+  {
+    id: "wizarre-scroll",
+    symbol: "scrl",
+    name: "Wizarre Scroll",
+    image:
+      "https://assets.coingecko.com/coins/images/21046/large/scroll_200.png?1638257148",
+    contracts: {
+      "binance-smart-chain": "",
+    },
+  },
+  {
+    id: "biconomy",
+    symbol: "bico",
+    name: "Biconomy",
+    image:
+      "https://assets.coingecko.com/coins/images/21061/large/biconomy_logo.jpg?1638269749",
+    contracts: {
+      ethereum: "0xf17e65822b568b3903685a7c9f496cf7656cc6c2",
+    },
+  },
+  {
+    id: "anomus-coin",
+    symbol: "anom",
+    name: "Anomus Coin",
+    image:
+      "https://assets.coingecko.com/coins/images/20865/large/w07_TWqn_400x400.png?1637807012",
+    contracts: {
+      ethereum: "0x5224f552f110ec78e6e0468138950ae5f3040942",
+      "binance-smart-chain": "0x5224f552f110ec78e6e0468138950ae5f3040942",
+    },
+  },
+  {
+    id: "littlebabydoge",
+    symbol: "lbd",
+    name: "LittleBabyDoge",
+    image:
+      "https://assets.coingecko.com/coins/images/21056/large/littlebabydoge.PNG?1638266446",
+    contracts: {
+      "binance-smart-chain": "0xf67006f8d22edebd1191f3e728ab9a90289e6c38",
+    },
+  },
+  {
+    id: "papa-dao",
+    symbol: "papa",
+    name: "PAPA DAO",
+    image:
+      "https://assets.coingecko.com/coins/images/21096/large/papa_dao.PNG?1638324558",
+    contracts: {
+      avalanche: "0x70b33ebc5544c12691d055b49762d0f8365d99fe",
+    },
+  },
+  {
+    id: "animal-token",
+    symbol: "stray",
+    name: "Animal Token",
+    image:
+      "https://assets.coingecko.com/coins/images/20857/large/NP9VmDTt_400x400.jpg?1637793290",
+    contracts: {
+      "binance-smart-chain": "0x10bd76630349f649697cb6c75b7de00854381fc5",
+    },
+  },
+  {
+    id: "retromoon",
+    symbol: "retro",
+    name: "Retromoon",
+    image:
+      "https://assets.coingecko.com/coins/images/21041/large/lWdfnsR.png?1638254065",
+    contracts: {
+      "binance-smart-chain": "0xe81fe8bbbea13a0fd5cc0aafb6062631c659ec54",
+    },
+  },
+  {
+    id: "frosty-floki",
+    symbol: "FrostyFloki",
+    name: "Frosty Floki",
+    image:
+      "https://assets.coingecko.com/coins/images/21009/large/download.png?1638189544",
+    contracts: {
+      "binance-smart-chain": "0x969f330c1419130b208f258f517af73edda6a884",
+    },
+  },
+  {
+    id: "mirror-mamd-token",
+    symbol: "mamd",
+    name: "Mirror mAMD Token",
+    image:
+      "https://assets.coingecko.com/coins/images/21005/large/70503197_%281%29.png?1638188758",
+    contracts: {
+      terra: "terra18ej5nsuu867fkx4tuy2aglpvqjrkcrjjslap3z",
+    },
+  },
+  {
+    id: "rise2protocol",
+    symbol: "ripr",
+    name: "RISE2PROTOCOL",
+    image:
+      "https://assets.coingecko.com/coins/images/20777/large/9QF4MllD_400x400.jpg?1637663956",
+    contracts: {
+      "binance-smart-chain": "0xa40bfccb879f26648d5c16ce6205425068c10bc7",
+    },
+  },
+  {
+    id: "trueburn",
+    symbol: "true",
+    name: "TrueBurn",
+    image:
+      "https://assets.coingecko.com/coins/images/20972/large/61962c17bdb496f689e0612d_Phoenix-Alpha-1_200x200.png?1638156933",
+    contracts: {
+      "binance-smart-chain": "0x2480334963d06dc39dd148f504a13ef3e6d8d896",
+    },
+  },
+  {
+    id: "dart-inu",
+    symbol: "dart",
+    name: "Dart Inu",
+    image:
+      "https://assets.coingecko.com/coins/images/20997/large/dart.PNG?1638175952",
+    contracts: {
+      "binance-smart-chain": "0x49152dd96be5a710facf9a8ab7de4343a49186d5",
+    },
+  },
+  {
+    id: "astroport",
+    symbol: "astro",
+    name: "Astroport",
+    image:
+      "https://assets.coingecko.com/coins/images/20804/large/Astro_coin_icon.png?1637706905",
+    contracts: {},
+  },
+  {
+    id: "gunstar-metaverse",
+    symbol: "gst",
+    name: "Gunstar Metaverse",
+    image:
+      "https://assets.coingecko.com/coins/images/21079/large/UNJq8zNl_400x400.jpg?1638308564",
+    contracts: {
+      "binance-smart-chain": "0x7edc0ec89f987ecd85617b891c44fe462a325869",
+    },
+  },
+  {
+    id: "egoras-credit",
+    symbol: "egc",
+    name: "Egoras Credit",
+    image:
+      "https://assets.coingecko.com/coins/images/20987/large/RSGoYMG.png?1638169232",
+    contracts: {
+      "binance-smart-chain": "0xd68e5c52f7563486cc1a15d00efa12c8644a907e",
+    },
+  },
+  {
+    id: "hippie-inu",
+    symbol: "HIPPIE",
+    name: "Hippie Inu",
+    image:
+      "https://assets.coingecko.com/coins/images/20888/large/Screenshot-2021-11-24-at-18-18-56.png?1637843864",
+    contracts: {
+      "binance-smart-chain": "0x3b8c8472216240a5593fd2d6266f29e90e22f490",
+    },
+  },
+  {
+    id: "collectcoin",
+    symbol: "clct",
+    name: "CollectCoin",
+    image:
+      "https://assets.coingecko.com/coins/images/21106/large/GFGaAmZ.jpeg?1638328356",
+    contracts: {
+      "binance-smart-chain": "0x6b81ed499bfe7f4cb79c381892e5ce69c3c9a9df",
+    },
+  },
+  {
+    id: "calamari-network",
+    symbol: "kma",
+    name: "Calamari Network",
+    image:
+      "https://assets.coingecko.com/coins/images/20976/large/kma.png?1638161627",
+    contracts: {},
+  },
+  {
+    id: "tornadao",
+    symbol: "nado",
+    name: "Tornadao",
+    image:
+      "https://assets.coingecko.com/coins/images/21051/large/logoT.png?1638260643",
+    contracts: {
+      avalanche: "0xb80323c7aa915cb960b19b5cca1d88a2132f7bd1",
+    },
+  },
+  {
+    id: "cryptodicehero",
+    symbol: "hro",
+    name: "CryptoDiceHero",
+    image:
+      "https://assets.coingecko.com/coins/images/20952/large/zQA_yvEK_400x400.jpg?1638138694",
+    contracts: {
+      "binance-smart-chain": "0xfb1a34eb2585b0ad7976420d7a21ef2f4aebeeb6",
+    },
+  },
+  {
+    id: "simp-token",
+    symbol: "simp",
+    name: "Simp",
+    image:
+      "https://assets.coingecko.com/coins/images/21050/large/QNvDXSE.png?1638260408",
+    contracts: {
+      "binance-smart-chain": "0xd0accf05878cafe24ff8b3f82f194c62ed755707",
+    },
+  },
+  {
+    id: "robo-inu-finance",
+    symbol: "rbif",
+    name: "Robo Inu Finance",
+    image:
+      "https://assets.coingecko.com/coins/images/20821/large/logo_200x200.png?1637721845",
+    contracts: {
+      ethereum: "0x7b32e70e8d73ac87c1b342e063528b2930b15ceb",
+    },
+  },
+  {
+    id: "chives-coin",
+    symbol: "xcc",
+    name: "Chives Coin",
+    image:
+      "https://assets.coingecko.com/coins/images/20898/large/dHnrNJRV_400x400.jpg?1637878141",
+    contracts: {},
+  },
+  {
+    id: "embr",
+    symbol: "embr",
+    name: "Embr",
+    image:
+      "https://assets.coingecko.com/coins/images/20904/large/14582.png?1637881127",
+    contracts: {
+      "binance-smart-chain": "0x6cb8065f96d63630425fd95a408a0d6cd697c662",
+    },
+  },
+  {
+    id: "pixelsquid",
+    symbol: "pixelsquid",
+    name: "PixelSQUID",
+    image:
+      "https://assets.coingecko.com/coins/images/21067/large/mmexport1638201775702.png?1638278629",
+    contracts: {
+      "binance-smart-chain": "0x5a549cb605f1e651200c22d1a8482929b36330f7",
+    },
+  },
+  {
+    id: "xircus",
+    symbol: "xircus",
+    name: "Xircus",
+    image:
+      "https://assets.coingecko.com/coins/images/20944/large/1_Vu-dbJ6KND-mzmS-p1_7_w.png?1638027658",
+    contracts: {
+      "binance-smart-chain": "0x1df2bf8bff0f2a8d67cf84ca55fc9ccc9c3da018",
+    },
+  },
+  {
     id: "atlantis",
     symbol: "atlas",
     name: "Atlantis",
@@ -108736,6 +110989,255 @@ export const tokens: TokenD[] = [
       "https://assets.coingecko.com/coins/images/20922/large/15211.png?1637926873",
     contracts: {
       "binance-smart-chain": "0xcf87ccf958d728f50d8ae5e4f15bc4ca5733cdf5",
+    },
+  },
+  {
+    id: "golden-age",
+    symbol: "ga",
+    name: "Golden Age",
+    image:
+      "https://assets.coingecko.com/coins/images/20745/large/IwqVsND.png?1637634015",
+    contracts: {
+      "binance-smart-chain": "0x68db7736df537fcf5504dc701d720457c279719d",
+    },
+  },
+  {
+    id: "meme-inu",
+    symbol: "meme",
+    name: "Meme Inu",
+    image:
+      "https://assets.coingecko.com/coins/images/20755/large/photo_2021-11-20_13-39-45.jpg?1637638928",
+    contracts: {
+      ethereum: "0x74b988156925937bd4e082f0ed7429da8eaea8db",
+    },
+  },
+  {
+    id: "pacific",
+    symbol: "paf",
+    name: "Pacific",
+    image:
+      "https://assets.coingecko.com/coins/images/20915/large/paf.png?1637922989",
+    contracts: {
+      ethereum: "0x6a969d379700b2e5ea4e684d273d63c1c050ba49",
+    },
+  },
+  {
+    id: "robot-shib",
+    symbol: "RSHIB",
+    name: "ROBOT SHIB",
+    image:
+      "https://assets.coingecko.com/coins/images/20920/large/robotshib.png?1637925277",
+    contracts: {
+      "binance-smart-chain": "0xc7fba797141f5392094e3dca8943ca7d8b6f92d8",
+    },
+  },
+  {
+    id: "strong-inu",
+    symbol: "sinu",
+    name: "Strong Inu",
+    image:
+      "https://assets.coingecko.com/coins/images/21043/large/8w3GTqRO_400x400.jpg?1638256041",
+    contracts: {
+      ethereum: "0xcd31462b625ea4095914ab3aa8c6e17a228e2721",
+    },
+  },
+  {
+    id: "coinflect",
+    symbol: "cflt",
+    name: "Coinflect",
+    image:
+      "https://assets.coingecko.com/coins/images/20815/large/favicon-3.png?1637718879",
+    contracts: {
+      "binance-smart-chain": "0x04305e84400f70b778868fd5226a6135d8fe151d",
+    },
+  },
+  {
+    id: "metaland",
+    symbol: "VML",
+    name: "MetaLand",
+    image:
+      "https://assets.coingecko.com/coins/images/20925/large/245534_a1e67f06e5514a78914f96b52e1a5f85_mv2.png?1637933936",
+    contracts: {
+      "binance-smart-chain": "0xd302c09bc32aef53146b6ba7bc420f5caca897f6",
+    },
+  },
+  {
+    id: "nft-maze",
+    symbol: "MAZE",
+    name: "NFT MAZE",
+    image:
+      "https://assets.coingecko.com/coins/images/20784/large/maze.png?1637671162",
+    contracts: {
+      "binance-smart-chain": "0xbc23833d965632cec84bf98181cb84c31bbdfa94",
+    },
+  },
+  {
+    id: "apefund",
+    symbol: "apefund",
+    name: "ApeFund",
+    image:
+      "https://assets.coingecko.com/coins/images/20722/large/BavuVre2_400x400.jpg?1637589075",
+    contracts: {
+      "binance-smart-chain": "0xf81f3ff200abd5451e78105eaa7ee9f8e8dd20f8",
+    },
+  },
+  {
+    id: "shibapad",
+    symbol: "sbp",
+    name: "ShibaPad",
+    image:
+      "https://assets.coingecko.com/coins/images/20992/large/shiba200.png?1638170478",
+    contracts: {
+      "binance-smart-chain": "0x75e457c1ad98bcc78ae676e9a87a324807475b6b",
+    },
+  },
+  {
+    id: "flokipad",
+    symbol: "flokipad",
+    name: "FlokiPad",
+    image:
+      "https://assets.coingecko.com/coins/images/20839/large/flokipad.PNG?1637738948",
+    contracts: {
+      "binance-smart-chain": "0x367f881e42b83030dd73f0e2e8d951013ca97d16",
+    },
+  },
+  {
+    id: "daddy-dogeback",
+    symbol: "daddydb",
+    name: "Daddy Dogeback",
+    image:
+      "https://assets.coingecko.com/coins/images/20790/large/DOGELOGO-TRANS-200-PX.png?1637672597",
+    contracts: {
+      "binance-smart-chain": "0x8755ccab81406cc5d98abe787719062591527421",
+    },
+  },
+  {
+    id: "supernova",
+    symbol: "snt",
+    name: "Supernova",
+    image:
+      "https://assets.coingecko.com/coins/images/21083/large/256SNT.png?1638310636",
+    contracts: {
+      fantom: "0x69d17c151ef62421ec338a0c92ca1c1202a427ec",
+    },
+  },
+  {
+    id: "crypto-mushroomz",
+    symbol: "shroomz",
+    name: "Crypto Mushroomz",
+    image:
+      "https://assets.coingecko.com/coins/images/20990/large/6k8KBF3H_400x400.png?1638170123",
+    contracts: {
+      solana: "2vRgBSJEVPXxayrhXoazQyCKSGFYQG3ZdfT2Gv5gZykL",
+    },
+  },
+  {
+    id: "spaceship-war",
+    symbol: "spw",
+    name: "Spaceship War",
+    image:
+      "https://assets.coingecko.com/coins/images/21087/large/logo_-_2021-12-01T082041.526.png?1638318048",
+    contracts: {
+      "binance-smart-chain": "0x1b23340f5221fbd2e14f36e5b3e5d833d4d215b5",
+    },
+  },
+  {
+    id: "wolf-game-wool",
+    symbol: "wool",
+    name: "Wolf Game Wool",
+    image:
+      "https://assets.coingecko.com/coins/images/20760/large/KM3RwIVx_400x400.jpg?1637650093",
+    contracts: {
+      ethereum: "0x8355dbe8b0e275abad27eb843f3eaf3fc855e525",
+    },
+  },
+  {
+    id: "shiba-light",
+    symbol: "shibt",
+    name: "Shiba Light",
+    image:
+      "https://assets.coingecko.com/coins/images/20744/large/logo_-_2021-11-23T101625.925.png?1637633795",
+    contracts: {
+      solana: "2946ofy854iifvXCQmHX2AJgxRBoQcchy1gfD26RtkHp",
+    },
+  },
+  {
+    id: "depocket",
+    symbol: "depo",
+    name: "DePocket",
+    image:
+      "https://assets.coingecko.com/coins/images/21082/large/EnjwdEis_400x400.png?1638310364",
+    contracts: {
+      "binance-smart-chain": "0x7d99eda556388ad7743a1b658b9c4fc67d7a9d74",
+    },
+  },
+  {
+    id: "mini-shib",
+    symbol: "mshib",
+    name: "mini SHIB",
+    image:
+      "https://assets.coingecko.com/coins/images/20874/large/piPMf_g2_400x400.jpg?1637813141",
+    contracts: {
+      ethereum: "0x3c5bda020caa1350a7b4e6e013a2516423c2800f",
+    },
+  },
+  {
+    id: "topdog",
+    symbol: "$TOPDOG",
+    name: "TOPDOG",
+    image:
+      "https://assets.coingecko.com/coins/images/21026/large/logo-1-4.jpg?1638196912",
+    contracts: {
+      ethereum: "0x25bd12ae9bbac47dc730e2559feb5dbe8e226894",
+    },
+  },
+  {
+    id: "hbarpad",
+    symbol: "hbarp",
+    name: "HbarPad",
+    image:
+      "https://assets.coingecko.com/coins/images/21034/large/Z27E5jfjHjy9.png?1638249982",
+    contracts: {
+      "binance-smart-chain": "0x926cc5b32c1e88d7532deff023ececdd66f37bfe",
+    },
+  },
+  {
+    id: "cheqd-network",
+    symbol: "cheq",
+    name: "CHEQD Network",
+    image:
+      "https://assets.coingecko.com/coins/images/20855/large/79901197.png?1637791407",
+    contracts: {},
+  },
+  {
+    id: "futurescash",
+    symbol: "fct",
+    name: "FuturesCash",
+    image:
+      "https://assets.coingecko.com/coins/images/21094/large/FCT.png?1638323787",
+    contracts: {
+      "binance-smart-chain": "0xce7709b026ed17b25fedf64b6a4c48f23580c429",
+    },
+  },
+  {
+    id: "starchi",
+    symbol: "elixir",
+    name: "Starchi",
+    image:
+      "https://assets.coingecko.com/coins/images/18941/large/starchi.jpg?1633961292",
+    contracts: {
+      "polygon-pos": "0xed0bb69f9f96e8c5fffdf16c468ecec385134ea5",
+      "binance-smart-chain": "0x9663677b81c2d427e81c01ef7315ea96546f5bb1",
+    },
+  },
+  {
+    id: "baby-bali",
+    symbol: "BB",
+    name: "Baby Bali",
+    image:
+      "https://assets.coingecko.com/coins/images/20789/large/New-Era-of-Baby-Bali-200x200pxl.png?1637671831",
+    contracts: {
+      "binance-smart-chain": "0x16f9cc3c6f8d8006cfc0ee693cef9d76b0d44c36",
     },
   },
 ];

@@ -7,8 +7,31 @@ import {
 import { pick } from "utils/utils";
 import moment, { Moment } from "moment";
 import { NetworkId } from "./sdk/network";
+import { StakingRequest } from "./sdk/staking/staking-request";
+import { StakingResponse } from "./sdk/staking/staking-response";
+import { TokenBalanceRequest } from "./sdk/token-balance/token-balance-request";
+import { TokenBalanceResponse } from "./sdk/token-balance/token-balance-response";
+import { YieldFarmingRequest } from "./sdk/yield-farming/yield-farming-request";
+import { YieldFarmingResponse } from "./sdk/yield-farming/yield-farming-response";
+import { UserWallet } from "./user";
 
 export type HookType = "token-balance" | "staking" | "yield-farming";
+
+export type HookRequest =
+  | TokenBalanceRequest
+  | StakingRequest
+  | YieldFarmingRequest;
+export type HookResponse =
+  | TokenBalanceResponse
+  | StakingResponse
+  | YieldFarmingResponse;
+
+export type HookResult = {
+  hook: Hook;
+  wallet: UserWallet;
+  request: HookRequest;
+  response: HookResponse | undefined;
+};
 
 export type HookVersion = {
   active: boolean;

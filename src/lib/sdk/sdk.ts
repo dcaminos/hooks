@@ -5,7 +5,7 @@ import { StakingResponse } from "lib/sdk/staking/staking-response";
 import { TokenBalanceRequest } from "lib/sdk/token-balance/token-balance-request";
 import { TokenBalanceResponse } from "lib/sdk/token-balance/token-balance-response";
 import { Monaco } from "@monaco-editor/react";
-import { HookType } from "lib/hook";
+import { HookRequest, HookResponse, HookType } from "lib/hook";
 import { YieldFarmingRequest } from "./yield-farming/yield-farming-request";
 import { YieldFarmingResponse } from "./yield-farming/yield-farming-response";
 
@@ -39,8 +39,6 @@ export {
 
 export const addHooksSDK = (monaco: Monaco, hookType: HookType) => {
   const sdkURI = monaco.Uri.parse("hooks-sdk.ts");
-
-  console.log(require("!!raw-loader!bignumber.js/bignumber.d.ts").default);
 
   if (monaco.editor.getModel(sdkURI) === null) {
     const libMap = [
@@ -116,18 +114,9 @@ export const addHooksSDK = (monaco: Monaco, hookType: HookType) => {
   }
 };
 
-export type HookRquest =
-  | TokenBalanceRequest
-  | StakingRequest
-  | YieldFarmingRequest;
-export type HookResponse =
-  | TokenBalanceResponse
-  | StakingResponse
-  | YieldFarmingResponse;
-
 export const run = async (
   jsCode: string,
-  request: HookRquest
+  request: HookRequest
 ): Promise<HookResponse | undefined> => {
   const BigNumber = require("bignumber.js").BigNumber;
   const Contract = require("lib/sdk/contract").Contract;

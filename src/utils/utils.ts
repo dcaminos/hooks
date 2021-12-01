@@ -3,6 +3,12 @@ import { BigNumber } from "bignumber.js";
 import { TokensPrice } from "lib/sdk/token";
 import { tokens } from "lib/config/tokens";
 
+export function uniq(array: Array<any>): Array<any> {
+  return array.reduce(function (a: Array<any>[], b: any) {
+    if (a.indexOf(b) < 0) a.push(b);
+    return a;
+  }, []);
+}
 export function pick<T, K extends keyof T>(obj: T, ...keys: K[]): Pick<T, K> {
   const ret: any = {};
   keys.forEach((key) => {

@@ -44,13 +44,15 @@ export class TokenStore {
 
   getTokensWithPrice = async (tokenIds: string[]) => {
     const prices = await getTokensPrices(tokenIds);
-    return tokenIds.map((tid) => {
-      const obj = this.tokens.find((t) => t.id === tid);
-      if (!obj) {
-        return null;
-      }
-      obj.price = prices[obj.id];
-      return obj;
-    });
+    return tokenIds
+      .map((tid) => {
+        const obj = this.tokens.find((t) => t.id === tid);
+        if (!obj) {
+          return null;
+        }
+        obj.price = prices[obj.id];
+        return obj;
+      })
+      .filter((i) => i !== null) as Token[];
   };
 }

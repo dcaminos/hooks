@@ -99,7 +99,9 @@ export class EditorStore {
       this.currentHook,
       this.testingAddress
     );
+
     const jsCode = await this.compile();
+    console.log(jsCode);
     if (!jsCode || !request) {
       return;
     }

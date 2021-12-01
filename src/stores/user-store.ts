@@ -38,7 +38,10 @@ export class UserStore {
     );
     when(
       () => this.user !== undefined,
-      () => this.fetchUserHooks()
+      () => {
+        this.fetchUserHooks();
+        this.rootStore.dashboardStore!.runHooks();
+      }
     );
   }
 

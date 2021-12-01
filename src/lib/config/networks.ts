@@ -33,4 +33,22 @@ export const networks: NetworkD[] = [
     image: "https://assets.coingecko.com/coins/images/17984/large/9285.png",
     blockTime: 3,
   },
+  {
+    id: "avalanche",
+    name: "Avalanche",
+    url: "https://api.avax.network/ext/bc/C/rpc",
+    tokenId: "avalanche-2",
+    image:
+      "https://assets.coingecko.com/coins/images/12559/large/coin-round-red.png?1604021818",
+    blockTime: 3,
+  },
+  {
+    id: "polygon-pos",
+    name: "Matic",
+    url: "https://rpc-mainnet.maticvigil.com/",
+    tokenId: "matic-network",
+    image:
+      "https://assets.coingecko.com/coins/images/4713/large/matic-token-icon.png?1624446912",
+    blockTime: 3,
+  },
 ];
