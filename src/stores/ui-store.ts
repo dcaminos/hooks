@@ -15,6 +15,7 @@ export type ModalType =
 export class UiStore {
   theme: "light" | "dark" = "light";
   sidebarCollapsed: boolean = false;
+  hideZeroBalance: boolean;
 
   // Modals
   isNewHookModalVisible: boolean = false;
@@ -29,11 +30,24 @@ export class UiStore {
   constructor(private rootStore: RootStore) {
     makeAutoObservable(this);
     this.rootStore.uiStore = this;
+
+    if (localStorage.getItem("tokenBalance-hideZeroBalance") === null) {
+      localStorage.setItem("tokenBalance-hideZeroBalance", "true");
+      this.hideZeroBalance = true;
+    }
+    this.hideZeroBalance =
+      localStorage.getItem("tokenBalance-hideZeroBalance") === "true";
   }
 
   @action
   setTheme = (value: "light" | "dark") => {
     this.theme = value;
+  };
+
+  @action
+  setHideZeroBalance = (value: boolean) => {
+    this.hideZeroBalance = value;
+    localStorage.setItem("tokenBalance-hideZeroBalance", `${value}`);
   };
 
   @action

@@ -1,6 +1,6 @@
-import { Avatar, Card, Col, Dropdown, Menu, Row, Space } from "antd";
+import { Avatar, Card, Checkbox, Col, Dropdown, Menu, Row, Space } from "antd";
 import BigNumber from "bignumber.js";
-import { DashboardContext } from "components/router/contexts";
+import { DashboardContext, UIContext } from "components/router/contexts";
 import { NetworkId } from "lib/sdk/network";
 import { Token } from "lib/sdk/token";
 import { TokenBalanceResponse } from "lib/sdk/token-balance/token-balance-response";
@@ -10,6 +10,7 @@ import { RiMoreFill } from "react-icons/ri";
 
 export const TokenBalancesCard: React.FC = observer((props) => {
   const { tokenBalanceResults } = useContext(DashboardContext)!;
+  const { hideZeroBalance, setHideZeroBalance } = useContext(UIContext)!;
 
   const balances: Map<string, BigNumber> = new Map<string, BigNumber>();
   const tokens: Map<string, Token> = new Map<string, Token>();
@@ -73,10 +74,16 @@ export const TokenBalancesCard: React.FC = observer((props) => {
         </Col>
 
         <Col span={24}>
+          <Checkbox
+            checked={hideZeroBalance}
+            onChange={(e) => setHideZeroBalance(e.target.checked)}
+          >
+            Hide zero balances
+          </Checkbox>
           {Array.from(balances.keys()).map((k) => {
             const token = tokens.get(k)!;
             const balance = balances.get(k)!;
-            if (balance.isZero()) {
+            if (balance.isZero() && hideZeroBalance) {
               return null;
             }
             return (
@@ -103,7 +110,7 @@ export const TokenBalancesCard: React.FC = observer((props) => {
                 </Col>
 
                 <Space direction="vertical" size={0} align="end">
-                  <p className="da-p1-body da-text-color-black-60 da-mb-0">
+                  <p className="da-p1-body da-text-size-12 da-text-color-black-60 da-mb-0">
                     {balance.toFormat(8)}
                   </p>
                   <h5 className="">
