@@ -17,7 +17,7 @@ export const YieldFarmingCard: React.FC = observer((props) => {
   );
 
   return (
-    <Card className="da-border-color-black-40 da-mb-32 ">
+    <Card className="da-border-color-black-40">
       <Row>
         <Col span={24}>
           <Row justify="space-between" align="top">

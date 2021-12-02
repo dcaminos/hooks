@@ -44,11 +44,11 @@ export const Dashboard: React.FC = observer((props) => {
                 </Col>
 
                 <Col span={24}>
-                  <YieldFarmingCard />
+                  <StakingCard />
                 </Col>
 
                 <Col span={24}>
-                  <StakingCard />
+                  <YieldFarmingCard />
                 </Col>
 
                 <Col md={6} span={12} className="da-overflow-hidden">

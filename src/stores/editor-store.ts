@@ -101,7 +101,6 @@ export class EditorStore {
     );
 
     const jsCode = await this.compile();
-    console.log(jsCode);
     if (!jsCode || !request) {
       return;
     }

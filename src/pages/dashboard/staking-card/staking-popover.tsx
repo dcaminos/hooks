@@ -1,16 +1,16 @@
 import { Avatar, Popover, Space, Table } from "antd";
 import BigNumber from "bignumber.js";
-import { YieldFarmingResult } from "lib/sdk/yield-farming/factory";
+import { StakingResult } from "lib/sdk/staking/factory";
 import { observer } from "mobx-react-lite";
 import React from "react";
-import "./yield-farming-card.less";
+import "./staking-card.less";
 
-export type YieldFarmingPopoverProps = {
-  data: YieldFarmingResult;
+export type StakingPopoverProps = {
+  data: StakingResult;
   positionValue: BigNumber;
 };
 
-export const YieldFarmingPopover: React.FC<YieldFarmingPopoverProps> = observer(
+export const StakingPopover: React.FC<StakingPopoverProps> = observer(
   (props) => {
     const { children, data, positionValue } = props;
 
@@ -19,6 +19,7 @@ export const YieldFarmingPopover: React.FC<YieldFarmingPopoverProps> = observer(
         title: "Field",
         dataIndex: "field",
         key: "field",
+
         width: "250px",
       },
       {
@@ -34,8 +35,7 @@ export const YieldFarmingPopover: React.FC<YieldFarmingPopoverProps> = observer(
     }
 
     const network = data.response.network;
-    const stakedToken0 = data.response.stakedToken0;
-    const stakedToken1 = data.response.stakedToken1;
+    const stakedToken = data.response.stakedToken;
     const rewardsToken = data.response.rewardsToken;
 
     const tableData = [
@@ -62,28 +62,14 @@ export const YieldFarmingPopover: React.FC<YieldFarmingPopoverProps> = observer(
 
           {
             key: 12,
-            field: "Staked Token 0",
+            field: "Staked Token",
             value: (
               <Space>
-                <Avatar shape="square" src={stakedToken0.image} size={20} />{" "}
-                {stakedToken0.name} {stakedToken0.symbol.toUpperCase()}{" "}
+                <Avatar shape="square" src={stakedToken.image} size={20} />{" "}
+                {stakedToken.name} {stakedToken.symbol.toUpperCase()}{" "}
                 <strong>
                   {"$ "}
-                  {stakedToken0.price?.toFormat(2)}
-                </strong>
-              </Space>
-            ),
-          },
-          {
-            key: 13,
-            field: "Staked Token 1",
-            value: (
-              <Space>
-                <Avatar shape="square" src={stakedToken1.image} size={20} />{" "}
-                {stakedToken1.name} {stakedToken1.symbol.toUpperCase()}{" "}
-                <strong>
-                  {"$ "}
-                  {stakedToken1.price?.toFormat(2)}
+                  {stakedToken.price?.toFormat(2)}
                 </strong>
               </Space>
             ),
@@ -152,35 +138,8 @@ export const YieldFarmingPopover: React.FC<YieldFarmingPopoverProps> = observer(
           },
           {
             key: 33,
-            field: "LP info",
-            children: [
-              {
-                key: 331,
-                field: "Total supply",
-                value: data.response.lpTotalSupply?.toFormat() ?? "-.--------",
-              },
-              {
-                key: 332,
-                field: "LP Value",
-                value: <>$ {data.response.lpValue?.toFormat(2)}</>,
-              },
-              {
-                key: 333,
-                field: "Staked",
-                value: (
-                  <>
-                    {data.response.staked.toFormat()}{" "}
-                    <strong>
-                      (${" "}
-                      {data.response.staked
-                        .times(data.response.lpValue ?? new BigNumber(0))
-                        .toFormat(2)}
-                      )
-                    </strong>
-                  </>
-                ),
-              },
-            ],
+            field: "Staked token info",
+            children: [],
           },
           {
             key: 34,
@@ -242,7 +201,7 @@ export const YieldFarmingPopover: React.FC<YieldFarmingPopoverProps> = observer(
     return (
       <Popover
         placement="left"
-        overlayClassName="yield-farming-popover"
+        overlayClassName="staking-popover"
         content={
           <Table
             showHeader={false}
