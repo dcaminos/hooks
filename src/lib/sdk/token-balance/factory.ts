@@ -1,6 +1,15 @@
 import { Hook, TokenBalanceData } from "lib/hook";
+import { UserWallet } from "lib/user";
 import { Token } from "../token";
 import { TokenBalanceRequest } from "./token-balance-request";
+import { TokenBalanceResponse } from "./token-balance-response";
+
+export type TokenBalanceResult = {
+  hook: Hook;
+  wallet: UserWallet;
+  request: TokenBalanceRequest;
+  response: TokenBalanceResponse | undefined;
+};
 
 export class TokenBalanceFactory {
   static fromDashboard = (

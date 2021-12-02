@@ -1,7 +1,16 @@
 import { Hook, StakingData } from "lib/hook";
+import { UserWallet } from "lib/user";
 import { Network } from "../network";
 import { Token } from "../token";
 import { StakingRequest } from "./staking-request";
+import { StakingResponse } from "./staking-response";
+
+export type StakingResult = {
+  hook: Hook;
+  wallet: UserWallet;
+  request: StakingRequest;
+  response: StakingResponse | undefined;
+};
 
 export class StakingFactory {
   static fromDashboard = (

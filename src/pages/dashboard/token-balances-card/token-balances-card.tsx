@@ -110,13 +110,13 @@ export const TokenBalancesCard: React.FC = observer((props) => {
                 </Col>
 
                 <Space direction="vertical" size={0} align="end">
-                  <p className="da-p1-body da-text-size-12 da-text-color-black-60 da-mb-0">
-                    {balance.toFormat(8)}
-                  </p>
-                  <h5 className="">
+                  <h5 className="da-mb-0 ">
                     $
                     {balance.times(token.price ?? new BigNumber(0)).toFormat(2)}
                   </h5>
+                  <p className="da-mb-0 da-text-color-dark-0 da-caption da-font-weight-400">
+                    {balance.toFormat(8)}
+                  </p>
                 </Space>
               </Row>
             );

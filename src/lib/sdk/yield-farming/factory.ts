@@ -1,7 +1,16 @@
 import { Hook, YieldFarmingData } from "lib/hook";
+import { UserWallet } from "lib/user";
 import { Network } from "../network";
 import { Token } from "../token";
 import { YieldFarmingRequest } from "./yield-farming-request";
+import { YieldFarmingResponse } from "./yield-farming-response";
+
+export type YieldFarmingResult = {
+  hook: Hook;
+  wallet: UserWallet;
+  request: YieldFarmingRequest;
+  response: YieldFarmingResponse | undefined;
+};
 
 export class YieldFarmingFactory {
   static fromDashboard = (
