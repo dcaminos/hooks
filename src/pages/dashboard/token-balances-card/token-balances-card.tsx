@@ -1,28 +1,23 @@
-import { Avatar, Card, Checkbox, Col, Dropdown, Menu, Row, Space } from "antd";
+import { Card, Checkbox, Col, Dropdown, Menu, Row, Space } from "antd";
 import BigNumber from "bignumber.js";
 import { DashboardContext, UIContext } from "components/router/contexts";
 import { NetworkId } from "lib/sdk/network";
-import { Token } from "lib/sdk/token";
 import { TokenBalanceResponse } from "lib/sdk/token-balance/token-balance-response";
 import { observer } from "mobx-react-lite";
 import React, { useContext } from "react";
 import { RiMoreFill } from "react-icons/ri";
+import { TokenBalanceItem } from "./token-balance-item";
 
 export const TokenBalancesCard: React.FC = observer((props) => {
-  const { tokenBalanceResults } = useContext(DashboardContext)!;
+  const { action, tokenBalanceResults } = useContext(DashboardContext)!;
   const { hideZeroBalance, setHideZeroBalance } = useContext(UIContext)!;
 
-  const balances: Map<string, BigNumber> = new Map<string, BigNumber>();
-  const tokens: Map<string, Token> = new Map<string, Token>();
   let total = new BigNumber(0);
   tokenBalanceResults.forEach((tbr) => {
     if (tbr.response !== undefined) {
       const response = tbr.response as TokenBalanceResponse;
       response.balances.forEach((value: BigNumber, networkId: NetworkId) => {
         if (value) {
-          const prev = balances.get(response.token.id) ?? new BigNumber(0);
-          balances.set(response.token.id, prev.plus(value));
-          tokens.set(response.token.id, response.token);
           total = total.plus(
             value.times(response.token.price ?? new BigNumber(0))
           );
@@ -40,7 +35,10 @@ export const TokenBalancesCard: React.FC = observer((props) => {
   );
 
   return (
-    <Card className="da-border-color-black-40 da-mb-32 ">
+    <Card
+      className="da-border-color-black-40 da-mb-32 "
+      loading={action !== undefined}
+    >
       <Row>
         <Col span={24}>
           <Row justify="space-between" align="top">
@@ -80,47 +78,9 @@ export const TokenBalancesCard: React.FC = observer((props) => {
           >
             Hide zero balances
           </Checkbox>
-          {Array.from(balances.keys()).map((k) => {
-            const token = tokens.get(k)!;
-            const balance = balances.get(k)!;
-            if (balance.isZero() && hideZeroBalance) {
-              return null;
-            }
-            return (
-              <Row
-                key={`token-balance-row-${k}`}
-                align="middle"
-                justify="space-between"
-                className="da-mt-16"
-              >
-                <Col flex="0.9">
-                  <Row align="middle">
-                    <Col flex="1">
-                      <Space align="center">
-                        <Avatar shape="square" src={token.image} size={40} />
-                        <Space direction="vertical" size={0}>
-                          {token.symbol.toUpperCase()}
-                          <p className="da-p1-body da-text-color-black-60 da-mb-0">
-                            {token.name}
-                          </p>
-                        </Space>
-                      </Space>
-                    </Col>
-                  </Row>
-                </Col>
-
-                <Space direction="vertical" size={0} align="end">
-                  <h5 className="da-mb-0 ">
-                    $
-                    {balance.times(token.price ?? new BigNumber(0)).toFormat(2)}
-                  </h5>
-                  <p className="da-mb-0 da-text-color-dark-0 da-caption da-font-weight-400">
-                    {balance.toFormat(8)}
-                  </p>
-                </Space>
-              </Row>
-            );
-          })}
+          {tokenBalanceResults.map((data) => (
+            <TokenBalanceItem data={data} hideZeroBalance={hideZeroBalance} />
+          ))}
         </Col>
       </Row>
     </Card>

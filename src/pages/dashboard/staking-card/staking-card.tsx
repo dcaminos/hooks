@@ -6,7 +6,7 @@ import { RiMoreFill } from "react-icons/ri";
 import { StakingItem } from "./staking-item";
 
 export const StakingCard: React.FC = observer((props) => {
-  const { stakingResults } = useContext(DashboardContext)!;
+  const { action, stakingResults } = useContext(DashboardContext)!;
 
   const menu = (
     <Menu>
@@ -17,7 +17,7 @@ export const StakingCard: React.FC = observer((props) => {
   );
 
   return (
-    <Card className="da-border-color-black-40">
+    <Card className="da-border-color-black-40" loading={action !== undefined}>
       <Row>
         <Col span={24}>
           <Row justify="space-between" align="top">

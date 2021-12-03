@@ -118,8 +118,6 @@ export const YieldFarmingItem: React.FC<YieldFarmingItemProps> = observer(
             </YieldFarmingPopover>
           </Space>
         </Col>
-
-        <Col span={24}></Col>
       </Row>
     );
   }
