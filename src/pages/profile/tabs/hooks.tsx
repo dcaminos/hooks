@@ -1,7 +1,8 @@
-import { Button, Card, Radio } from "antd";
+import { Button, Card, Col, Radio, Row } from "antd";
 import { HookList } from "components/hook-list/hook-list";
 import { HookContext, UserContext } from "components/router/contexts";
 import { Hook } from "lib/hook";
+import { runInAction } from "mobx";
 import { observer } from "mobx-react-lite";
 import { useContext, useState } from "react";
 
@@ -9,7 +10,9 @@ export const HooksTab: React.FC = observer(() => {
   const { hooks } = useContext(HookContext)!;
   const { user, loading, updateUser } = useContext(UserContext)!;
 
-  const [filterChoice, setFilterChoice] = useState("all");
+  const [subsFilterChoice, setSubsFilterChoice] = useState("all");
+  const [typeFilterChoice, setTypeFilterChoice] = useState("all");
+
 
   if (!user) return null;
 
@@ -19,7 +22,9 @@ export const HooksTab: React.FC = observer(() => {
 
   const selectHook = (hookId: string | undefined) => {
     if (!hookId || loading) return;
-    user.profiles[0].hookIds.push(hookId);
+    runInAction(() => {
+      user.profiles[0].hookIds.push(hookId);
+    })
     updateUser(user);
   };
 
@@ -51,33 +56,70 @@ export const HooksTab: React.FC = observer(() => {
     return selectedHookIds.some((id) => id === hookId);
   };
 
-  const handleFilterChange = (e: any) => setFilterChoice(e.target.value);
+  const handleSubsFilterChange = (e: any) => setSubsFilterChoice(e.target.value);
+
+  const handleHookTypeFilterChange = (e: any) => setTypeFilterChoice(e.target.value);
 
   const FiltersChoices = (
-    <Radio.Group
-      size="middle"
-      value={filterChoice}
-      onChange={handleFilterChange}
-      className="da-mb-8"
-    >
-      <Radio.Button value="all">All</Radio.Button>
-      <Radio.Button value="subs">Subscribed</Radio.Button>
-      <Radio.Button value="unsubs">Unsubscribed</Radio.Button>
-    </Radio.Group>
+    <Row >
+      <Col span={12}>
+        <Radio.Group
+          buttonStyle="solid"
+          size="middle"
+          value={subsFilterChoice}
+          onChange={handleSubsFilterChange}
+          className="da-mb-8"
+          >
+          <Radio.Button value="all">All</Radio.Button>
+          <Radio.Button value="subs">Subscribed</Radio.Button>
+          <Radio.Button value="unsubs">Unsubscribed</Radio.Button>
+        </Radio.Group>
+      </Col>
+      <Col span={12}>
+        <Row justify="end">
+          <Radio.Group 
+            size="middle"
+            value={typeFilterChoice}
+            onChange={handleHookTypeFilterChange}
+            className="da-mb-8"
+            >
+            <Radio.Button value="all">All</Radio.Button>
+            <Radio.Button value="balance">Balance</Radio.Button>
+            <Radio.Button value="staking">Staking</Radio.Button>
+            <Radio.Button value="farming">Farming</Radio.Button>
+          </Radio.Group>
+        </Row>
+      </Col>
+    </Row>
   );
 
   let filteredHooks: Hook[] = [];
 
-  switch (filterChoice) {
+  switch (subsFilterChoice) {
     case "all":
       filteredHooks = hooks;
       break;
     case "subs":
-      filteredHooks = hooks.filter((hook) => !isHookSubscribed(hook.id));
-      break;
-    case "unsubs":
       filteredHooks = hooks.filter((hook) => isHookSubscribed(hook.id));
       break;
+    case "unsubs":
+      filteredHooks = hooks.filter((hook) => !isHookSubscribed(hook.id));
+      break;
+  }
+
+  switch (typeFilterChoice) {
+    case "all":
+      break;
+    case "balance":
+      filteredHooks = filteredHooks.filter((hook => hook.type === "token-balance"));
+      break;
+    case "staking":
+      filteredHooks = filteredHooks.filter((hook => hook.type === "staking"));
+      break;
+    case "farming":
+      filteredHooks = filteredHooks.filter((hook => hook.type === "yield-farming"));
+      break;
+
   }
 
   return (

@@ -3,7 +3,7 @@ import { ReactNode, useState } from "react";
 import { HookListHeader } from "../../components/hook-list/hook-list-header";
 import { Hook } from "../../lib/hook";
 import { HookCard } from "./hook-card";
-import { HookCardRow } from "./hook-row";
+import { HookRow } from "./hook-row";
 
 export type HookListInternalProps = {
   listType: "list" | "card";
@@ -107,7 +107,7 @@ export const HookList: React.FC<HookListProps> = (props) => {
           pagination={pagiCheckLarge}
           dataSource={hooksFilters}
           renderItem={(value) => (
-            <HookCardRow hook={value} actionsRender={renderHookActions} />
+            <HookRow hook={value} actionsRender={renderHookActions} />
           )}
         />
       )}

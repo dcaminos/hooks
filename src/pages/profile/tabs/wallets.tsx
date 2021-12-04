@@ -22,7 +22,7 @@ export const WalletsTab: React.FC = observer(() => {
   };
 
   return (
-    <Card>
+    <Card className="da-mb-8">
       <Row justify="end">
         <Col span={12}>
           <h4>Wallets</h4>

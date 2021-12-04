@@ -11,6 +11,8 @@ export type TokenTagProps = {
 export const TokenTag: React.FC<TokenTagProps> = (props) => {
   const { className, token, closable, onClose } = props;
 
+  if (!token) return null;
+
   return (
     <Tag
       style={{
