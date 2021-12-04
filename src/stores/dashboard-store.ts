@@ -1,16 +1,21 @@
 import {
   Hook,
-  HookRequest,
   HookResult,
   StakingData,
   TokenBalanceData,
   YieldFarmingData,
 } from "lib/hook";
 import { run } from "lib/sdk/sdk";
-import { StakingFactory } from "lib/sdk/staking/factory";
+import { StakingFactory, StakingResult } from "lib/sdk/staking/factory";
 import { Token } from "lib/sdk/token";
-import { TokenBalanceFactory } from "lib/sdk/token-balance/factory";
-import { YieldFarmingFactory } from "lib/sdk/yield-farming/factory";
+import {
+  TokenBalanceFactory,
+  TokenBalanceResult,
+} from "lib/sdk/token-balance/factory";
+import {
+  YieldFarmingFactory,
+  YieldFarmingResult,
+} from "lib/sdk/yield-farming/factory";
 import { UserWallet } from "lib/user";
 import { computed, makeAutoObservable, runInAction } from "mobx";
 import { uniq } from "utils/utils";
@@ -27,7 +32,23 @@ export class DashboardStore {
 
   @computed
   get tokenBalanceResults() {
-    return this.results.filter((r) => r.hook.type === "token-balance");
+    return this.results.filter(
+      (r) => r.hook.type === "token-balance"
+    ) as TokenBalanceResult[];
+  }
+
+  @computed
+  get stakingResults() {
+    return this.results.filter(
+      (r) => r.hook.type === "staking"
+    ) as StakingResult[];
+  }
+
+  @computed
+  get yieldFarmingResults() {
+    return this.results.filter(
+      (r) => r.hook.type === "yield-farming"
+    ) as YieldFarmingResult[];
   }
 
   runHooks = async () => {
@@ -97,14 +118,14 @@ export class DashboardStore {
 
   runWithWallet = async (
     hook: Hook,
-    request: HookRequest,
+    request: any,
     wallet: UserWallet
   ): Promise<HookResult> => {
     return {
       hook,
       wallet,
       request,
-      response: await run(hook.versions[0].js, request),
+      response: (await run(hook.versions[0].js, request)) as any,
     };
   };
 

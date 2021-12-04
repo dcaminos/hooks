@@ -30,8 +30,8 @@ export class YieldFarmingResponse {
   private _poolWeight?: BigNumber;
 
   // Calculated values
-
   private _apr?: BigNumber;
+  private _lpValue?: BigNumber;
 
   constructor(stakingResponse: YieldFarmingResponseD) {
     this._network = stakingResponse.network;
@@ -46,6 +46,7 @@ export class YieldFarmingResponse {
     this._liquidity = stakingResponse.liquidity;
     this._poolWeight = stakingResponse.poolWeight;
     this.calculateAPR();
+    this.calculateLpValue();
   }
 
   public get network() {
@@ -96,6 +97,10 @@ export class YieldFarmingResponse {
     return this._apr;
   }
 
+  public get lpValue() {
+    return this._lpValue;
+  }
+
   calculateAPR = () => {
     if (
       this.poolWeight &&
@@ -111,6 +116,12 @@ export class YieldFarmingResponse {
         .times(this.rewardsToken.price)
         .div(this.liquidity)
         .times(new BigNumber(100));
+    }
+  };
+
+  calculateLpValue = () => {
+    if (this._lpTotalSupply && this._liquidity) {
+      this._lpValue = this._liquidity.div(this._lpTotalSupply);
     }
   };
 
