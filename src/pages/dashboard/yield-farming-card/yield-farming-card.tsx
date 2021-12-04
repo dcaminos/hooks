@@ -1,18 +1,24 @@
 import { Card, Col, Dropdown, Menu, Row } from "antd";
-import { DashboardContext } from "components/router/contexts";
+import { DashboardContext, UIContext } from "components/router/contexts";
 import { observer } from "mobx-react-lite";
 import React, { useContext } from "react";
 import { RiMoreFill } from "react-icons/ri";
+import { useHistory } from "react-router";
 import { YieldFarmingItem } from "./yield-farming-item";
 
 export const YieldFarmingCard: React.FC = observer((props) => {
   const { action, yieldFarmingResults } = useContext(DashboardContext)!;
+  const { showModal } = useContext(UIContext)!;
+  const history = useHistory();
 
   const menu = (
     <Menu>
-      <Menu.Item>Last 28 Days</Menu.Item>
-      <Menu.Item>Last Month</Menu.Item>
-      <Menu.Item>Last Year</Menu.Item>
+      <Menu.Item onClick={() => showModal("new-yield-farming")}>
+        New Yield Farming Hook
+      </Menu.Item>
+      <Menu.Item onClick={() => history.push("/profile")}>
+        Subscribe to another Hook
+      </Menu.Item>
     </Menu>
   );
 

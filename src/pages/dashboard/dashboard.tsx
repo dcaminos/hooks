@@ -3,17 +3,13 @@ import { observer } from "mobx-react-lite";
 import React, { useContext } from "react";
 import { UIContext, UserContext } from "../../components/router/contexts";
 import ActiveUserCardVertical from "../../examples/active-user-card-vertical";
-import AnalyticsProjectTableCard from "../../examples/analytics-project-table-card";
-import AnalyticsRevenueRadarCard from "../../examples/analytics-revenue-radar-card";
-import BestTeamCard from "../../examples/best-team-card";
 import CustomerSupportCardVertical from "../../examples/customer-support-card-vertical";
 import { DownloadCard } from "../../examples/download-card";
-import EarningsCard from "../../examples/earnings-card";
 import OrderColumnCardVertical from "../../examples/order-column-card-vertical";
 import SubsColumnCardVertical from "../../examples/subs-column-card-vertical";
-import { CreateHookCard } from "./create-hook-card/create-hook-card";
+import { NetWorthCard } from "./net-worth-card/net-worth-card";
 import { StakingCard } from "./staking-card/staking-card";
-import { TokenBalancesCard } from "./token-balances-card/token-balances-card";
+import { TokenBalancesCard } from "./token-balances-card/token-balance-card";
 import { YieldFarmingCard } from "./yield-farming-card/yield-farming-card";
 
 export const Dashboard: React.FC = observer((props) => {
@@ -40,7 +36,7 @@ export const Dashboard: React.FC = observer((props) => {
             <Col flex="1" className="da-overflow-hidden">
               <Row gutter={[32, 32]}>
                 <Col span={24}>
-                  <CreateHookCard />
+                  <NetWorthCard />
                 </Col>
 
                 <Col span={24}>
@@ -66,18 +62,6 @@ export const Dashboard: React.FC = observer((props) => {
                 <Col md={6} span={12} className="da-overflow-hidden">
                   <CustomerSupportCardVertical />
                 </Col>
-
-                <Col span={24}>
-                  <BestTeamCard />
-                </Col>
-
-                <Col span={24}>
-                  <EarningsCard />
-                </Col>
-
-                <Col span={24}>
-                  <AnalyticsProjectTableCard />
-                </Col>
               </Row>
             </Col>
 
@@ -85,8 +69,6 @@ export const Dashboard: React.FC = observer((props) => {
               <TokenBalancesCard />
 
               <DownloadCard />
-
-              <AnalyticsRevenueRadarCard />
             </Col>
           </Row>
         </Col>

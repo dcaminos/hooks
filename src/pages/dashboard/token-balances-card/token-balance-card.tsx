@@ -6,11 +6,14 @@ import { TokenBalanceResponse } from "lib/sdk/token-balance/token-balance-respon
 import { observer } from "mobx-react-lite";
 import React, { useContext } from "react";
 import { RiMoreFill } from "react-icons/ri";
+import { useHistory } from "react-router";
 import { TokenBalanceItem } from "./token-balance-item";
 
 export const TokenBalancesCard: React.FC = observer((props) => {
   const { action, tokenBalanceResults } = useContext(DashboardContext)!;
-  const { hideZeroBalance, setHideZeroBalance } = useContext(UIContext)!;
+  const { hideZeroBalance, setHideZeroBalance, showModal } =
+    useContext(UIContext)!;
+  const history = useHistory();
 
   let total = new BigNumber(0);
   tokenBalanceResults.forEach((tbr) => {
@@ -28,9 +31,12 @@ export const TokenBalancesCard: React.FC = observer((props) => {
 
   const menu = (
     <Menu>
-      <Menu.Item>Last 28 Days</Menu.Item>
-      <Menu.Item>Last Month</Menu.Item>
-      <Menu.Item>Last Year</Menu.Item>
+      <Menu.Item onClick={() => showModal("new-token-balance")}>
+        New Token Balance Hook
+      </Menu.Item>
+      <Menu.Item onClick={() => history.push("/profile")}>
+        Subscribe to another Hook
+      </Menu.Item>
     </Menu>
   );
 
@@ -38,6 +44,7 @@ export const TokenBalancesCard: React.FC = observer((props) => {
     <Card
       className="da-border-color-black-40 da-mb-32 "
       loading={action !== undefined}
+      style={{ minHeight: 250 }}
     >
       <Row>
         <Col span={24}>
