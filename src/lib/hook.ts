@@ -17,7 +17,13 @@ import { YieldFarmingResult } from "./sdk/yield-farming/factory";
 import { YieldFarmingRequest } from "./sdk/yield-farming/yield-farming-request";
 import { YieldFarmingResponse } from "./sdk/yield-farming/yield-farming-response";
 
-export type HookType = "token-balance" | "staking" | "yield-farming";
+export type HookType =
+  | "token-balance"
+  | "staking"
+  | "yield-farming"
+  | "lending"
+  | "agreggator"
+  | "leverage";
 
 export type HookRequest =
   | TokenBalanceRequest

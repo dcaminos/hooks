@@ -26,7 +26,14 @@ export class UserStore {
   public user: User | undefined;
   public authReady: boolean = false;
   public userHooks: Hook[] = [];
-  public loading: boolean = false;
+  public action:
+    | "signUp"
+    | "signIn"
+    | "fetchUser"
+    | "createProfile"
+    | "updateUser"
+    | "addWalletToDefaultProfile"
+    | undefined;
 
   constructor(private rootStore: RootStore) {
     makeAutoObservable(this);
@@ -55,7 +62,7 @@ export class UserStore {
 
   @action
   signUp = async (email: string, password: string): Promise<void> => {
-    this.loading = true;
+    this.action = "signUp";
     try {
       const userCredential = await createUserWithEmailAndPassword(
         getAuth(),
@@ -65,14 +72,14 @@ export class UserStore {
       UserStore.firebaseUser = userCredential.user;
       await this.fetchUser();
     } catch (error) {
-      this.loading = false;
+      this.action = undefined;
       throw Error((error as FirebaseError).code);
     }
   };
 
   @action
   signIn = async (email: string, password: string, rememberMe: boolean) => {
-    this.loading = true;
+    this.action = "signIn";
     try {
       await setPersistence(
         getAuth(),
@@ -86,7 +93,7 @@ export class UserStore {
       UserStore.firebaseUser = userCredential.user;
       await this.fetchUser();
     } catch (error) {
-      this.loading = false;
+      this.action = undefined;
       throw Error((error as FirebaseError).code);
     }
   };
@@ -102,9 +109,12 @@ export class UserStore {
     if (!UserStore.firebaseUser) {
       runInAction(() => {
         this.authReady = true;
+        this.action = undefined;
       });
       return;
     }
+
+    this.action = "fetchUser";
 
     const docRef = doc(
       this.rootStore.firestore,
@@ -134,32 +144,33 @@ export class UserStore {
     runInAction(() => {
       this.user = user;
       this.authReady = true;
-      this.loading = false;
+      this.action = undefined;
     });
   };
 
   @action
   createProfile = async (profile: Partial<UserProfile>) => {
     if (!this.user) return;
+    this.action = "createProfile";
     const user = { ...this.user };
     user.profiles.push({ ...defaultProfile, ...profile });
     const userDocRef = doc(this.rootStore.firestore, "users", this.user.id);
     await setDoc(userDocRef.withConverter(userConverter), user);
     runInAction(() => {
       this.user = user;
-      this.loading = false;
+      this.action = undefined;
     });
   };
 
   @action
   updateUser = async (newUser: User) => {
     if (!this.user) return;
-    this.loading = true;
+    this.action = "updateUser";
     const userDocRef = doc(this.rootStore.firestore, "users", this.user.id);
     await setDoc(userDocRef.withConverter(userConverter), newUser);
     runInAction(() => {
       this.user = newUser;
-      this.loading = false;
+      this.action = undefined;
     });
   };
 
@@ -184,13 +195,13 @@ export class UserStore {
   addWalletToDefaultProfile = async (wallet: UserWallet) => {
     if (!this.user) return;
     const user = { ...this.user };
-    this.loading = true;
+    this.action = "addWalletToDefaultProfile";
     user.profiles[0].wallets.push(wallet);
     const userDocRef = doc(this.rootStore.firestore, "users", this.user.id);
     await setDoc(userDocRef.withConverter(userConverter), user);
     runInAction(() => {
       this.user = user;
-      this.loading = false;
+      this.action = undefined;
     });
   };
 }

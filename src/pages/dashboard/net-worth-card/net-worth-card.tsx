@@ -13,7 +13,7 @@ import { RiAddCircleLine, RiSearch2Line } from "react-icons/ri";
 import { useHistory } from "react-router";
 
 export const NetWorthCard: React.FC = observer((props) => {
-  const { results } = useContext(DashboardContext)!;
+  const { action, results } = useContext(DashboardContext)!;
   const { theme, showModal } = useContext(UIContext)!;
   const history = useHistory();
 
@@ -84,11 +84,12 @@ export const NetWorthCard: React.FC = observer((props) => {
         backgroundSize: "cover",
         backgroundPosition: "right",
       }}
+      loading={action !== undefined}
     >
       <Row align="middle" className="da-mt-8">
         <Col span={24}>
           <h1 className="da-mb-0 ">{`$ ${total.toFormat(2)}`}</h1>
-          <span className="da-mb-32 da-p1-body da-d-block da-text-color-black-60 da-text-color-dark-50">
+          <span className="da-mb-16 da-p1-body da-d-block da-text-color-black-60 da-text-color-dark-50">
             NET WORTH
           </span>
 

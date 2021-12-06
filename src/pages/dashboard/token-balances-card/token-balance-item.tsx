@@ -22,9 +22,7 @@ export const TokenBalanceItem: React.FC<TokenBalanceItemProps> = (props) => {
   let balance = new BigNumber(0);
   data.response.balances.forEach((value: BigNumber, networkId: NetworkId) => {
     if (value) {
-      balance = balance.plus(
-        value.times(data.response!.token.price ?? new BigNumber(0))
-      );
+      balance = balance.plus(value);
     }
   });
 

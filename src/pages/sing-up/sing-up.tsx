@@ -22,7 +22,7 @@ export type SignUpFormState = {
 };
 
 export const SingUp: React.FC = observer((props) => {
-  const { signUp, loading } = useContext(UserContext)!;
+  const { signUp, action } = useContext(UserContext)!;
 
   const [redirect, setRedirect] = useState(false);
 
@@ -202,7 +202,7 @@ export const SingUp: React.FC = observer((props) => {
                   type="primary"
                   htmlType="submit"
                   onClick={handleSubmit}
-                  loading={loading}
+                  loading={action !== undefined}
                 >
                   Sign up
                 </Button>

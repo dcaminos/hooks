@@ -20,7 +20,7 @@ import { AuthLeftContent } from "../../components/auth-left-content/auth-left-co
 import { UserContext } from "../../components/router/contexts";
 
 export const SignIn: React.FC = observer((props) => {
-  const { authReady, user, signIn, loading } = useContext(UserContext)!;
+  const { authReady, user, signIn, action } = useContext(UserContext)!;
   const history = useHistory();
   const [email, setEmail] = React.useState<string>("");
   const [password, setPassword] = React.useState<string>("");
@@ -159,7 +159,7 @@ export const SignIn: React.FC = observer((props) => {
                   block
                   type="primary"
                   htmlType="submit"
-                  loading={loading}
+                  loading={action !== undefined}
                 >
                   Sign in
                 </Button>

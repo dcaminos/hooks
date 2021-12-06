@@ -15,7 +15,7 @@ export const networks: NetworkD[] = [
     url: "https://bsc-dataseed.binance.org",
     tokenId: "binancecoin",
     image: "https://assets.coingecko.com/coins/images/18711/large/Unknown.png",
-    blockTime: 3,
+    blockTime: 3.04,
   },
   {
     id: "solana",
@@ -31,7 +31,7 @@ export const networks: NetworkD[] = [
     url: "https://rpc.moonriver.moonbeam.network",
     tokenId: "moonriver",
     image: "https://assets.coingecko.com/coins/images/17984/large/9285.png",
-    blockTime: 3,
+    blockTime: 12.9,
   },
   {
     id: "avalanche",

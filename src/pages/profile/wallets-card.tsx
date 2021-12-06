@@ -1,12 +1,12 @@
-import { Avatar, Button, Card, Col, List, Row } from "antd";
-import generic from "assets/images/memoji/memoji-1.png";
+import { Button, Card, List } from "antd";
+import { UIContext, UserContext } from "components/router/contexts";
 import { observer } from "mobx-react-lite";
 import { useContext } from "react";
+import { RiWallet3Fill } from "react-icons/ri";
 import { Link } from "react-router-dom";
-import { UIContext, UserContext } from "components/router/contexts";
 
-export const WalletsTab: React.FC = observer(() => {
-  const { user, updateUser, loading } = useContext(UserContext)!;
+export const WalletsCard: React.FC = observer(() => {
+  const { user, updateUser, action } = useContext(UserContext)!;
 
   const { showModal } = useContext(UIContext)!;
 
@@ -15,31 +15,27 @@ export const WalletsTab: React.FC = observer(() => {
   const { wallets } = user.profiles[0];
 
   const deleteWallet = (index: number) => {
-    if (loading) return;
+    if (action !== undefined) return;
     const newUser = { ...user };
     newUser.profiles[0].wallets.splice(index, 1);
     updateUser(newUser);
   };
 
   return (
-    <Card className="da-mb-8">
-      <Row justify="end">
-        <Col span={12}>
-          <h4>Wallets</h4>
-        </Col>
-        <Col span={12}>
-          <Row justify="end">
-            <Button
-              type="primary"
-              size="small"
-              className="da-mr-sm-8 da-mr-16"
-              onClick={() => showModal("new-wallet")}
-            >
-              Add new
-            </Button>
-          </Row>
-        </Col>
-      </Row>
+    <Card
+      className="da-border-color-black-40"
+      headStyle={{ borderBottom: 0 }}
+      title={<h4 className="da-m-0">Wallets</h4>}
+      extra={
+        <Button
+          className="da-mt-8"
+          type="primary"
+          onClick={() => showModal("new-wallet")}
+        >
+          Add Wallet
+        </Button>
+      }
+    >
       <List
         itemLayout="horizontal"
         dataSource={wallets}
@@ -49,14 +45,16 @@ export const WalletsTab: React.FC = observer(() => {
               <Link
                 to="#"
                 onClick={() => deleteWallet(index)}
-                style={{ color: "red" }}
+                style={{ color: "#FF0022", fontSize: 20 }}
               >
-                delete
+                <i className="ri-delete-bin-6-line" />
               </Link>,
             ]}
           >
             <List.Item.Meta
-              avatar={<Avatar src={generic} />}
+              avatar={
+                <RiWallet3Fill size={30} className="da-text-color-primary-1" />
+              }
               title={item.name}
               description={item.address}
             />

@@ -17,7 +17,7 @@ export type FirstProfileModalProps = {};
 export const FirstProfileModal: React.FC<FirstProfileModalProps> = observer(
   (props) => {
     const [form] = Form.useForm();
-    const { createProfile, loading } = useContext(UserContext)!;
+    const { createProfile, action } = useContext(UserContext)!;
 
     const { isNewProfileModalVisible, hideModal } = useContext(UIContext)!;
 
@@ -74,7 +74,7 @@ export const FirstProfileModal: React.FC<FirstProfileModalProps> = observer(
         onCancel={onModalCancel}
         okText={"Create Profile"}
         closeIcon={closeIcon}
-        confirmLoading={loading}
+        confirmLoading={action !== undefined}
         onOk={form.submit}
       >
         <NewProfileForm form={form} onSubmit={onModalSubmit} />

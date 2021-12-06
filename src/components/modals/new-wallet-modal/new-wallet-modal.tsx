@@ -12,7 +12,7 @@ const modalType: ModalType = "new-wallet";
 export const NewWalletModal: React.FC = observer((props) => {
   const [form] = Form.useForm();
 
-  const { addWalletToDefaultProfile, loading } = useContext(UserContext)!;
+  const { addWalletToDefaultProfile, action } = useContext(UserContext)!;
 
   const { isNewWalletModalVisible, hideModal } = useContext(UIContext)!;
 
@@ -54,7 +54,7 @@ export const NewWalletModal: React.FC = observer((props) => {
       onCancel={onModalCancel}
       okText={"Add wallet"}
       closeIcon={closeIcon}
-      confirmLoading={loading}
+      confirmLoading={action !== undefined}
       onOk={form.submit}
     >
       <NewWalletForm form={form} onSubmit={onModalSubmit} />

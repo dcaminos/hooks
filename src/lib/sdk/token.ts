@@ -78,7 +78,11 @@ export class Token {
         //ethereum
         try {
           const provider = new ethers.providers.JsonRpcProvider(network.url);
-          if (network.tokenId === this.id) {
+          if (
+            network.tokenId === this.id &&
+            this.contracts[networkId] === "network-currency"
+          ) {
+            console.log("PASO");
             const response = await provider.getBalance(walletAddress);
             return new BigNumber(ethers.utils.formatEther(response));
           }
