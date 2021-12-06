@@ -5,6 +5,7 @@ import { useContext, useState } from "react";
 import { HookListHeader } from "../../components/hook-list/hook-list-header";
 import { Hook } from "../../lib/hook";
 import { HookRow } from "./hook-row";
+import "./hook-list.less";
 
 export type HookListInternalProps = {
   searchValue: string;
