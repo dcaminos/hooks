@@ -6,10 +6,11 @@ import { HookType } from "../../lib/hook";
 
 export type HookIconProps = {
   type: HookType;
+  size?: number;
 };
 
 export const HookIcon: React.FC<HookIconProps> = (props) => {
-  const { type } = props;
+  const { type, size = 30 } = props;
 
   //lending IoGitCompare
   // leverage farming MdCompare
@@ -33,7 +34,7 @@ export const HookIcon: React.FC<HookIconProps> = (props) => {
   return (
     <Icon
       style={{ display: "flex" }}
-      size={30}
+      size={size}
       className="da-text-color-primary-1"
     />
   );

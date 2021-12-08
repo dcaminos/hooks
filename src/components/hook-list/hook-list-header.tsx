@@ -1,5 +1,6 @@
 //import { searchProduct, priceFilter } from '../../../../redux/ecommerce/ecommerceActions';
-import { Col, Input, Row, Select } from "antd";
+import { Col, Input, Row, Select, Space, Switch } from "antd";
+import { HookIcon } from "components/hook-icon/hook-icon";
 import React from "react";
 import { HookListInternalProps } from "./hook-list";
 
@@ -15,8 +16,8 @@ export const HookListHeader: React.FC<HookListHeaderProps> = (props) => {
   return (
     <Row gutter={[16, 16]} className="da-ecommerce-app-header da-mb-32">
       <Col flex="1 0 0" className="da-ecommerce-app-header-search">
-        <p>Name</p>
         <Input
+          autoFocus
           placeholder="Search here"
           value={listProps.searchValue}
           onChange={(e) => setListProps({ searchValue: e.target.value })}
@@ -24,44 +25,52 @@ export const HookListHeader: React.FC<HookListHeaderProps> = (props) => {
       </Col>
 
       <Col className="da-ecommerce-app-header-select">
-        <p>Type</p>
         <Select
           defaultValue={listProps.typeValue}
-          style={{ width: 150 }}
+          style={{ width: 160 }}
           onChange={(e) => setListProps({ typeValue: e })}
         >
-          <Option value="all">All Types</Option>
-          <Option value="token-balance">Token Balance</Option>
-          <Option value="staking">Staking</Option>
-          <Option value="yield-farming">Yield Farming</Option>
+          <Option value="all">Any Type</Option>
+          <Option value="token-balance">
+            <Space>
+              <HookIcon size={20} type="token-balance" />
+              Token Balance
+            </Space>
+          </Option>
+          <Option value="staking">
+            <Space>
+              <HookIcon size={20} type="staking" />
+              Staking
+            </Space>
+          </Option>
+          <Option value="yield-farming">
+            <Space>
+              <HookIcon size={20} type="yield-farming" />
+              Yield Farming
+            </Space>
+          </Option>
         </Select>
       </Col>
 
       <Col>
-        <p>Status</p>
         <Select
           defaultValue={listProps.statusValue}
-          style={{ width: 150 }}
+          style={{ width: 160 }}
           onChange={(e) => setListProps({ statusValue: e })}
         >
-          <Option value="all">All</Option>
-          <Option value="subscribed">Subscribed</Option>
-          <Option value="unsubscribed">Unsubscribed</Option>
-        </Select>
-      </Col>
-
-      <Col>
-        <p>Sort by</p>
-        <Select
-          defaultValue={listProps.sortValue}
-          style={{ width: 150 }}
-          onChange={(e) => setListProps({ sortValue: e })}
-        >
-          <Option value="alpha">Alphabetically</Option>
-          <Option value="network">By Network</Option>
-          <Option value="lastUpdated">Last updated</Option>
-          <Option value="newer">Newer</Option>
-          <Option value="older">Older</Option>
+          <Option value="all">Any State</Option>
+          <Option value="on">
+            <Space>
+              <Switch size="small" checked={true} />
+              Only On
+            </Space>
+          </Option>
+          <Option value="off">
+            <Space>
+              <Switch size="small" checked={false} />
+              Only Off
+            </Space>
+          </Option>
         </Select>
       </Col>
     </Row>

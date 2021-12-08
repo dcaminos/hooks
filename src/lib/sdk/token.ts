@@ -82,7 +82,6 @@ export class Token {
             network.tokenId === this.id &&
             this.contracts[networkId] === "network-currency"
           ) {
-            console.log("PASO");
             const response = await provider.getBalance(walletAddress);
             return new BigNumber(ethers.utils.formatEther(response));
           }
