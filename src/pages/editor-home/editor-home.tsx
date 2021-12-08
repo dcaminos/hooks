@@ -13,7 +13,7 @@ export const EditorHome: React.FC = observer(() => {
   return (
     <>
       <Button onClick={openModal}>Create new Hook</Button>
-      <HookList hooks={userHooks} />
+      <HookList hooks={userHooks} page={"editor"} />
     </>
   );
 });

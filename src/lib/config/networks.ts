@@ -51,4 +51,13 @@ export const networks: NetworkD[] = [
       "https://assets.coingecko.com/coins/images/4713/large/matic-token-icon.png?1624446912",
     blockTime: 3,
   },
+  {
+    id: "velas",
+    name: "Velas",
+    url: "https://evmexplorer.velas.com/rpc",
+    tokenId: "velas",
+    image:
+      "https://assets.coingecko.com/coins/images/9651/large/velas.png?1607999828",
+    blockTime: 3,
+  },
 ];

@@ -4,7 +4,8 @@ export type NetworkId =
   | "polygon-pos"
   | "solana"
   | "moonriver"
-  | "avalanche";
+  | "avalanche"
+  | "velas";
 
 export type NetworkD = {
   id: NetworkId;

@@ -23,11 +23,12 @@ const defaultHookListInternalProps: HookListInternalProps = {
 
 export type HookListProps = {
   hooks: Hook[];
+  page: "dashboard" | "editor";
   loading?: boolean;
 };
 
 export const HookList: React.FC<HookListProps> = observer((props) => {
-  const { hooks, loading } = props;
+  const { hooks, page, loading } = props;
   const [listProps, setListProps] = useState(defaultHookListInternalProps);
   const { user, updateUser } = useContext(UserContext)!;
   const userHooks: string[] = user?.profiles[0].hookIds ?? [];
@@ -137,6 +138,7 @@ export const HookList: React.FC<HookListProps> = observer((props) => {
           renderItem={(hook) => (
             <HookRow
               hook={hook}
+              page={page}
               subscribed={userHooks.includes(hook.id)}
               setSubscription={setSubscription}
             />

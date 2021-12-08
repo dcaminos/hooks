@@ -1,6 +1,7 @@
+import { contracts as extraContractList } from "lib/config/extra-config";
 import { tokens as tokenList } from "lib/config/tokens";
 import { NetworkId } from "lib/sdk/network";
-import { Token } from "lib/sdk/token";
+import { Token, TokenD } from "lib/sdk/token";
 import { computed, makeAutoObservable } from "mobx";
 import { getTokensPrices } from "utils/utils";
 import { RootStore } from "./root-store";
@@ -12,7 +13,7 @@ export class TokenStore {
   constructor(private rootStore: RootStore) {
     makeAutoObservable(this);
     this.rootStore.tokenStore = this;
-    this.tokens = tokenList.map((t) => new Token(t));
+    this.tokens = this.getTokenList().map((t) => new Token(t));
     this.tokensPerNetwor = new Map<NetworkId, Token[]>();
     this.rootStore.networkStore?.networks.forEach((network) => {
       this.tokensPerNetwor.set(
@@ -24,7 +25,23 @@ export class TokenStore {
         )
       );
     });
+
+    console.log(this.getToken("velas"));
   }
+
+  getTokenList = (): TokenD[] => {
+    extraContractList.forEach((partialToken) => {
+      const index = tokenList.findIndex((t) => t.id === partialToken.id);
+      if (index !== -1) {
+        tokenList[index].contracts = {
+          ...tokenList[index].contracts,
+          ...partialToken.contracts,
+        };
+      }
+    });
+
+    return tokenList;
+  };
 
   @computed
   getTokensPerNetwork = (networkId?: NetworkId) => {

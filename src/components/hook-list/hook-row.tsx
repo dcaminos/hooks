@@ -1,8 +1,9 @@
-import { Avatar, List, Space, Switch } from "antd";
+import { Avatar, Button, List, Space, Switch } from "antd";
 import { HookIcon } from "components/hook-icon/hook-icon";
 import { TokenContext } from "components/router/contexts";
 import { observer } from "mobx-react-lite";
 import React, { useContext, useState } from "react";
+import { useHistory } from "react-router";
 import {
   Hook,
   StakingData,
@@ -12,18 +13,24 @@ import {
 
 export type HookRowProps = {
   hook: Hook;
+  page: "dashboard" | "editor";
   subscribed: boolean;
   setSubscription: (hookId: string, value: boolean) => Promise<void>;
 };
 
 export const HookRow: React.FC<HookRowProps> = (props) => {
-  const { hook, subscribed, setSubscription } = props;
+  const { hook, page, subscribed, setSubscription } = props;
   const [loading, setLoading] = useState(false);
+  const history = useHistory();
 
   const onChange = async (value: boolean) => {
     setLoading(true);
     await setSubscription(hook.id, value);
     setLoading(false);
+  };
+
+  const onEdit = () => {
+    history.push(`/editor/${hook.id}`);
   };
 
   let body = null;
@@ -43,9 +50,21 @@ export const HookRow: React.FC<HookRowProps> = (props) => {
   return (
     <List.Item
       className="hook-list-item"
-      actions={[
-        <Switch checked={subscribed} loading={loading} onChange={onChange} />,
-      ]}
+      actions={
+        page === "dashboard"
+          ? [
+              <Switch
+                checked={subscribed}
+                loading={loading}
+                onChange={onChange}
+              />,
+            ]
+          : [
+              <Button type="primary" onClick={onEdit}>
+                Edit
+              </Button>,
+            ]
+      }
     >
       {body}
     </List.Item>

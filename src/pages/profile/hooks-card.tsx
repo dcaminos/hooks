@@ -30,7 +30,11 @@ export const HooksCard: React.FC = observer(() => {
         </Button>
       }
     >
-      <HookList hooks={hooks} loading={action === "fetchUser"} />
+      <HookList
+        hooks={hooks}
+        page={"dashboard"}
+        loading={action === "fetchUser"}
+      />
     </Card>
   );
 });
