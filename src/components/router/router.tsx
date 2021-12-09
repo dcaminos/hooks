@@ -110,7 +110,6 @@ export const Router: React.FC = observer((props) => {
         {/** FAQ */}
         <Route exact path={"/faq"} render={() => <FaqPage />} />
 
-
         {/* NotFound */}
         <Route path="*">
           <PageNotFound />

@@ -1,7 +1,7 @@
 import React, { useState, createElement, useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
 
-import { Layout, Button, Row, Col } from "antd";
+import { Layout, Button, Row, Col, Menu } from "antd";
 import { RiMenuFoldLine, RiMenuUnfoldLine } from "react-icons/ri";
 
 import logoSmall from "../../assets/images/logo/logo-small.svg";
@@ -12,6 +12,7 @@ import { Footer } from "./footer";
 //import MenuMobile from "./mobile";
 import { observer } from "mobx-react-lite";
 import { UIContext } from "../router/contexts";
+import { Home, Document, User } from "react-iconly";
 
 const { Sider } = Layout;
 
@@ -22,7 +23,7 @@ export type SidebarProps = {
 
 export const Sidebar: React.FC<SidebarProps> = observer((props) => {
   const { setVisible } = props;
-  const { sidebarCollapsed } = useContext(UIContext)!;
+  const { sidebarCollapsed, theme } = useContext(UIContext)!;
 
   const sidebarCollapseButton = true;
 
@@ -55,9 +56,10 @@ export const Sidebar: React.FC<SidebarProps> = observer((props) => {
       collapsed={collapsed}
       width={256}
       className="da-sidebar da-bg-color-black-0 da-bg-color-dark-100"
+      style={{ minHeight: "100vh" }}
     >
       <Row
-        className="da-mr-12 da-ml-24 da-mt-24"
+        className="da-mr-8 da-mb-8 da-ml-24 da-mt-24"
         align="bottom"
         justify="space-between"
       >
@@ -81,6 +83,20 @@ export const Sidebar: React.FC<SidebarProps> = observer((props) => {
           </Col>
         )}
       </Row>
+
+      <Menu mode="inline" theme={theme === "light" ? "light" : "dark"}>
+        <Menu.Item key={1} icon={<Home />} onClick={() => {}}>
+          <Link to={"/"}>Dashboard</Link>
+        </Menu.Item>
+
+        <Menu.Item key={2} icon={<Document />} onClick={() => {}}>
+          <Link to={"/editor"}>Editor</Link>
+        </Menu.Item>
+
+        <Menu.Item key={3} icon={<User />} onClick={() => {}}>
+          <Link to={"/profile"}>Profile</Link>
+        </Menu.Item>
+      </Menu>
 
       {/*<MenuItem onClose={onClose} />*/}
 

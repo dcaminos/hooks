@@ -6,8 +6,8 @@ import { Search } from "react-iconly";
 
 import { HeaderSearch } from "./header-search";
 import { HeaderUser } from "./header-user";
-import { HeaderNotifications } from "./header-notifications";
 import { HeaderText } from "./header-text";
+import { HeaderConfigs } from "./header-config";
 
 export type HeaderProps = {
   setVisible: (value: boolean) => void;
@@ -107,7 +107,7 @@ export const Header: React.FC<HeaderProps> = (props) => {
               )}
             </Col>
 
-            <HeaderNotifications />
+            <HeaderConfigs />
 
             <HeaderUser />
           </Row>
