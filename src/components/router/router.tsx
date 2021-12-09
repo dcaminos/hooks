@@ -16,6 +16,7 @@ import { UIContext } from "./contexts";
 import { FixedLayout } from "../layout/fixed-layout";
 import { VerticalLayout } from "../layout/vertical-layout";
 import { PrivatePage } from "./private-page";
+import { FaqPage } from "pages/faq/faq";
 
 export const Router: React.FC = observer((props) => {
   // Mobx
@@ -105,6 +106,10 @@ export const Router: React.FC = observer((props) => {
 
         {/** Sign In */}
         <Route exact path={"/signin"} render={() => <SignIn />} />
+
+        {/** FAQ */}
+        <Route exact path={"/faq"} render={() => <FaqPage />} />
+
 
         {/* NotFound */}
         <Route path="*">
