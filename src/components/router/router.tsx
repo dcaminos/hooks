@@ -5,7 +5,7 @@ import { useContext, useEffect } from "react";
 // Router
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import { Dashboard } from "../../pages/dashboard/dashboard";
-import { EditorHome } from "../../pages/editor-home/editor-home";
+import { EditorPage } from "../../pages/editor/editor";
 import { EditorIDE } from "../../pages/editor-ide/editor-ide";
 // Components
 //import Analytics from "../view/main/dashboard/analytics";
@@ -13,7 +13,6 @@ import { PageNotFound } from "../../pages/page-not-found/page-not-found";
 import { SignIn } from "../../pages/sign-in/sign-in";
 import { SingUp } from "../../pages/sing-up/sing-up";
 import { UIContext } from "./contexts";
-import { FixedLayout } from "../layout/fixed-layout";
 import { VerticalLayout } from "../layout/vertical-layout";
 import { PrivatePage } from "./private-page";
 import { FaqPage } from "pages/faq/faq";
@@ -47,9 +46,9 @@ export const Router: React.FC = observer((props) => {
           path={"/editor"}
           render={() => (
             <PrivatePage>
-              <FixedLayout>
-                <EditorHome />
-              </FixedLayout>
+              <VerticalLayout>
+                <EditorPage />
+              </VerticalLayout>
             </PrivatePage>
           )}
         />

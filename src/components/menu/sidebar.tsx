@@ -12,7 +12,7 @@ import { Footer } from "./footer";
 //import MenuMobile from "./mobile";
 import { observer } from "mobx-react-lite";
 import { UIContext } from "../router/contexts";
-import { Home, Document, User } from "react-iconly";
+import { Graph, Document, User } from "react-iconly";
 
 const { Sider } = Layout;
 
@@ -85,16 +85,16 @@ export const Sidebar: React.FC<SidebarProps> = observer((props) => {
       </Row>
 
       <Menu mode="inline" theme={theme === "light" ? "light" : "dark"}>
-        <Menu.Item key={1} icon={<Home />} onClick={() => {}}>
+        <Menu.Item key={1} icon={<Graph />} onClick={() => {}}>
           <Link to={"/"}>Dashboard</Link>
         </Menu.Item>
 
-        <Menu.Item key={2} icon={<Document />} onClick={() => {}}>
-          <Link to={"/editor"}>Editor</Link>
+        <Menu.Item key={2} icon={<User />} onClick={() => {}}>
+          <Link to={"/profile"}>Profile</Link>
         </Menu.Item>
 
-        <Menu.Item key={3} icon={<User />} onClick={() => {}}>
-          <Link to={"/profile"}>Profile</Link>
+        <Menu.Item key={3} icon={<Document />} onClick={() => {}}>
+          <Link to={"/editor"}>Editor</Link>
         </Menu.Item>
       </Menu>
 

@@ -2,11 +2,7 @@ import { Col, Row } from "antd";
 import { observer } from "mobx-react-lite";
 import React, { useContext } from "react";
 import { UIContext, UserContext } from "../../components/router/contexts";
-import ActiveUserCardVertical from "../../examples/active-user-card-vertical";
-import CustomerSupportCardVertical from "../../examples/customer-support-card-vertical";
-import { DownloadCard } from "../../examples/download-card";
-import OrderColumnCardVertical from "../../examples/order-column-card-vertical";
-import SubsColumnCardVertical from "../../examples/subs-column-card-vertical";
+import { HookRequestCard } from "./hook-request-card/hook-request-card";
 import { NetWorthCard } from "./net-worth-card/net-worth-card";
 import { StakingCard } from "./staking-card/staking-card";
 import { TokenBalancesCard } from "./token-balances-card/token-balance-card";
@@ -46,29 +42,13 @@ export const Dashboard: React.FC = observer((props) => {
                 <Col span={24}>
                   <YieldFarmingCard />
                 </Col>
-
-                <Col md={6} span={12} className="da-overflow-hidden">
-                  <OrderColumnCardVertical />
-                </Col>
-
-                <Col md={6} span={12} className="da-overflow-hidden">
-                  <ActiveUserCardVertical />
-                </Col>
-
-                <Col md={6} span={12} className="da-overflow-hidden">
-                  <SubsColumnCardVertical />
-                </Col>
-
-                <Col md={6} span={12} className="da-overflow-hidden">
-                  <CustomerSupportCardVertical />
-                </Col>
               </Row>
             </Col>
 
             <Col className="da-analytics-col-2">
               <TokenBalancesCard />
 
-              <DownloadCard />
+              <HookRequestCard />
             </Col>
           </Row>
         </Col>
