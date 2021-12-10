@@ -18,6 +18,7 @@ export const Footer: React.FC<FooterProps> = observer((props) => {
       className="da-sidebar-footer da-pb-24 da-px-24 da-bg-color-dark-100"
       align="middle"
       justify="space-between"
+      style={{ position: "absolute", bottom: 0, width: "100%" }}
     >
       <Divider className="da-border-color-black-20 da-border-color-dark-70 da-mt-0" />
 
