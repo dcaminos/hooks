@@ -13,7 +13,7 @@ import {
 
 export type HookRowProps = {
   hook: Hook;
-  page: "dashboard" | "editor";
+  page: "profile" | "editor";
   subscribed: boolean;
   setSubscription: (hookId: string, value: boolean) => Promise<void>;
 };
@@ -51,7 +51,7 @@ export const HookRow: React.FC<HookRowProps> = (props) => {
     <List.Item
       className="hook-list-item"
       actions={
-        page === "dashboard"
+        page === "profile"
           ? [
               <Switch
                 checked={subscribed}

@@ -1,11 +1,8 @@
-import React from "react";
-
-import { Button, Row, Col, Dropdown, Divider, Avatar, Switch } from "antd";
-import { Calendar, Setting } from "react-iconly";
-import { RiMoneyDollarCircleLine, RiTruckLine } from "react-icons/ri";
-import { useContext } from "react";
+import { Button, Col, Divider, Dropdown, Radio, Row, Switch } from "antd";
 import { UIContext } from "components/router/contexts";
 import { observer } from "mobx-react-lite";
+import React, { useContext } from "react";
+import { GoSettings } from "react-icons/go";
 
 export const HeaderConfigs: React.FC = observer((props) => {
   const { theme, setTheme } = useContext(UIContext)!;
@@ -23,8 +20,8 @@ export const HeaderConfigs: React.FC = observer((props) => {
       <Divider className="da-my-16 da-mx-0 da-bg-color-black-40 da-bg-color-dark-80" />
 
       <div className="da-px-16">
-        <Row align="middle">
-          <Col className="da-mr-8 da-p1-body da-font-weight-500 da-text-color-black-100 da-text-color-dark-10 da-text-color-dark-0 da-mr-64">
+        <Row align="middle" justify="space-between">
+          <Col className="da-mr-8 da-p1-body da-font-weight-500 da-text-color-black-100 da-text-color-dark-10 da-text-color-dark-0 da-mr-32">
             Dark Mode
           </Col>
           <Col className="da-mr-0" pull="right">
@@ -40,95 +37,24 @@ export const HeaderConfigs: React.FC = observer((props) => {
 
       <div className="da-px-16">
         <Row align="middle">
-          <Col className="da-mr-8">
-            <Avatar
-              size={32}
-              icon={
-                <div className="da-text-color-primary-1 remix-icon">
-                  {" "}
-                  <Calendar size={17} />
-                </div>
-              }
-              className="da-d-flex-center-full"
+          <Col className="da-mr-8 da-p1-body da-font-weight-500 da-text-color-black-100 da-text-color-dark-10 da-text-color-dark-0 da-mr-32">
+            Currency
+          </Col>
+          <Col className="da-mr-0" pull="right">
+            <Radio.Group
+              options={[
+                { label: "USD", value: "usd" },
+                { label: "EUR", value: "eur" },
+                { label: "BTC", value: "btc" },
+              ]}
+              size="small"
+              onChange={() => {}}
+              value={"usd"}
+              optionType="button"
+              buttonStyle="solid"
             />
           </Col>
-
-          <Col>
-            <span className="da-d-block da-w-100 da-mb-4 da-badge-text da-font-weight-500 da-text-color-black-100 da-text-color-dark-10">
-              Incoming Events
-            </span>
-
-            <span className="da-d-block da-input-description da-font-weight-500 da-text-color-black-80 da-text-color-dark-40">
-              You have 4 events this week.
-            </span>
-          </Col>
         </Row>
-      </div>
-
-      <Divider className="da-my-16 da-mx-0 da-bg-color-black-40 da-bg-color-dark-80" />
-
-      <div className="da-px-16">
-        <Row align="middle">
-          <Col className="da-mr-8">
-            <Avatar
-              size={32}
-              icon={
-                <RiMoneyDollarCircleLine
-                  size={17}
-                  className="da-text-color-primary-1 remix-icon"
-                />
-              }
-              className="da-d-flex-center-full"
-            />
-          </Col>
-
-          <Col>
-            <span className="da-d-block da-w-100 da-mb-4 da-badge-text da-font-weight-500 da-text-color-black-100 da-text-color-dark-10">
-              Congratulations🎉
-            </span>
-
-            <span className="da-d-block da-input-description da-font-weight-500 da-text-color-black-80 da-text-color-dark-40">
-              You have 12 new sales!
-            </span>
-          </Col>
-        </Row>
-      </div>
-
-      <Divider className="da-my-16 da-mx-0 da-bg-color-black-40 da-bg-color-dark-80" />
-
-      <div className="da-px-16">
-        <Row align="middle">
-          <Col className="da-mr-8">
-            <Avatar
-              size={32}
-              icon={
-                <RiTruckLine
-                  size={17}
-                  className="da-text-color-primary-1 remix-icon"
-                />
-              }
-              className="da-d-flex-center-full"
-            />
-          </Col>
-
-          <Col>
-            <span className="da-d-block da-w-100 da-mb-4 da-badge-text da-font-weight-500 da-text-color-black-100 da-text-color-dark-10">
-              Deliveries
-            </span>
-
-            <span className="da-d-block da-input-description da-font-weight-500 da-text-color-black-80 da-text-color-dark-40">
-              Last 10 Orders has been delivered.
-            </span>
-          </Col>
-        </Row>
-      </div>
-
-      <Divider className="da-my-16 da-mx-0 da-bg-color-black-40 da-bg-color-dark-80" />
-
-      <div className="da-px-16">
-        <Button type="primary" block>
-          Clear all notifications
-        </Button>
       </div>
     </div>
   );
@@ -140,9 +66,7 @@ export const HeaderConfigs: React.FC = observer((props) => {
         icon={
           <Dropdown overlay={notificationMenu} placement="bottomRight">
             <div className="da-position-relative">
-              <div className="a-text-color-black-60">
-                <Setting />
-              </div>
+              <GoSettings size={20} color="#b2bec3" />
             </div>
           </Dropdown>
         }

@@ -23,7 +23,7 @@ const defaultHookListInternalProps: HookListInternalProps = {
 
 export type HookListProps = {
   hooks: Hook[];
-  page: "dashboard" | "editor";
+  page: "profile" | "editor";
   loading?: boolean;
 };
 

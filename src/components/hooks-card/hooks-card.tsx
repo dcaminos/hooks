@@ -1,15 +1,17 @@
 import { Button, Card } from "antd";
 import { HookList } from "components/hook-list/hook-list";
-import {
-  HookContext,
-  UIContext,
-  UserContext,
-} from "components/router/contexts";
+import { UIContext, UserContext } from "components/router/contexts";
+import { Hook } from "lib/hook";
 import { observer } from "mobx-react-lite";
 import { useContext } from "react";
 
-export const HooksCard: React.FC = observer(() => {
-  const { hooks } = useContext(HookContext)!;
+export type HooksCardProps = {
+  page: "profile" | "editor";
+  hooks: Hook[];
+};
+
+export const HooksCard: React.FC<HooksCardProps> = observer((props) => {
+  const { page, hooks } = props;
   const { showModal } = useContext(UIContext)!;
   const { user, action } = useContext(UserContext)!;
 
@@ -30,11 +32,7 @@ export const HooksCard: React.FC = observer(() => {
         </Button>
       }
     >
-      <HookList
-        hooks={hooks}
-        page={"dashboard"}
-        loading={action === "fetchUser"}
-      />
+      <HookList hooks={hooks} page={page} loading={action === "fetchUser"} />
     </Card>
   );
 });

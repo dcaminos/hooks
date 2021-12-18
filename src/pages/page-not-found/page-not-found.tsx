@@ -38,7 +38,7 @@ export const PageNotFound: React.FC = (props) => {
 
       <Col span={24} className="da-py-24">
         <p className="da-mb-0 da-badge-text">
-          COPYRIGHT ©2020 Hypeople, All rights Reserved
+          COPYRIGHT ©2021 hooks.finance, All rights Reserved
         </p>
       </Col>
     </Row>

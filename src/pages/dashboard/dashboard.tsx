@@ -22,9 +22,7 @@ export const Dashboard: React.FC = observer((props) => {
         <Col span={24}>
           <h3>Welcome back {user?.email} 👋</h3>
 
-          <p className="da-p1-body da-mb-0">
-            Your current status and analytics are here
-          </p>
+          <p className="da-p1-body da-mb-0">Your current status is here</p>
         </Col>
 
         <Col span={24} className="da-mt-32">

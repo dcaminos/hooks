@@ -63,7 +63,7 @@ export const HeaderSearch: React.FC<HeaderSearchProps> = observer((props) => {
       <Input
         {...props.inputFocusProp}
         //{...autocomplete.getInputProps({}) as any}
-        placeholder="Search..."
+        placeholder="Search hooks..."
         prefix={
           <RiSearchLine className="site-form-item-icon da-text-color-black-80 da-text-color-dark-20" />
         }

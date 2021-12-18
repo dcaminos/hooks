@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 
 import { Divider, Avatar, Row, Col } from "antd";
@@ -6,6 +6,7 @@ import { RiSettings3Line } from "react-icons/ri";
 
 import avatar from "../../assets/images/memoji/memoji-1.png";
 import { observer } from "mobx-react-lite";
+import { UserContext } from "components/router/contexts";
 
 export type FooterProps = {
   collapsed: boolean;
@@ -13,6 +14,8 @@ export type FooterProps = {
 };
 
 export const Footer: React.FC<FooterProps> = observer((props) => {
+  const { user } = useContext(UserContext)!;
+
   return props.collapsed === false ? (
     <Row
       className="da-sidebar-footer da-pb-24 da-px-24 da-bg-color-dark-100"
@@ -28,7 +31,7 @@ export const Footer: React.FC<FooterProps> = observer((props) => {
 
           <div>
             <span className="da-d-block da-text-color-black-100 da-text-color-dark-0 da-p1-body">
-              Jane Doe
+              {user ? user.email?.substring(0, user.email.indexOf("@")) : ""}
             </span>
 
             <Link
@@ -43,7 +46,7 @@ export const Footer: React.FC<FooterProps> = observer((props) => {
       </Col>
 
       <Col>
-        <Link to="/pages/profile/security" onClick={props.onClose}>
+        <Link to="/account" onClick={props.onClose}>
           <RiSettings3Line
             className="remix-icon da-text-color-black-100 da-text-color-dark-0"
             size={24}
@@ -58,7 +61,7 @@ export const Footer: React.FC<FooterProps> = observer((props) => {
       justify="center"
     >
       <Col>
-        <Link to="/pages/profile/personel-information" onClick={props.onClose}>
+        <Link to="/account" onClick={props.onClose}>
           <Avatar size={36} src={avatar} />
         </Link>
       </Col>
