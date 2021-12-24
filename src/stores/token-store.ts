@@ -26,7 +26,7 @@ export class TokenStore {
       );
     });
 
-    console.log(this.getToken("velas"));
+    //console.log(this.getToken("velas"));
   }
 
   getTokenList = (): TokenD[] => {

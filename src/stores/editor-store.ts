@@ -108,11 +108,10 @@ export class EditorStore {
     console.time("Hook running time");
     const response = await run(jsCode, request);
     console.timeEnd("Hook running time");
-    console.log(response);
     if (response) {
       //const tokensInfo = await getTokensInfo(this.currentHook.tokenIds);
       //console.log("Hook reponse:");
-      console.log(response.toString());
+      //console.log(response.toString());
     }
     DetachConsole(tempConsole);
     runInAction(() => {
