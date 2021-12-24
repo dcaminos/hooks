@@ -111,7 +111,7 @@ export class EditorStore {
     if (response) {
       //const tokensInfo = await getTokensInfo(this.currentHook.tokenIds);
       //console.log("Hook reponse:");
-      //console.log(response.toString());
+      console.log(response.toString());
     }
     DetachConsole(tempConsole);
     runInAction(() => {
