@@ -22,8 +22,8 @@ import { UserContext } from "../../components/router/contexts";
 export const SignIn: React.FC = observer((props) => {
   const { authReady, user, signIn, action } = useContext(UserContext)!;
   const history = useHistory();
-  const [email, setEmail] = React.useState<string>("");
-  const [password, setPassword] = React.useState<string>("");
+  const [email, setEmail] = React.useState<string>("demo@demo.com");
+  const [password, setPassword] = React.useState<string>("demo001");
   const [rememberMe, setRememberMe] = React.useState<boolean>(true);
 
   useEffect(() => {
@@ -90,6 +90,7 @@ export const SignIn: React.FC = observer((props) => {
                 label="Email:"
                 name="email"
                 id="email"
+                initialValue={"demo@demo.com"}
                 className="da-mb-16"
                 rules={[
                   { type: "email", validateTrigger: "onSubmit" },
@@ -110,6 +111,7 @@ export const SignIn: React.FC = observer((props) => {
                 label="Password:"
                 name="password"
                 id="password"
+                initialValue={"demo001"}
                 className="da-mb-8"
                 rules={[
                   {

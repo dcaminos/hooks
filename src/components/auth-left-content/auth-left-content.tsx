@@ -35,13 +35,12 @@ export const AuthLeftContent: React.FC = (props) => {
 
             <Col xl={18} span={24} className="da-text-item da-text-center">
               <h2 className="da-text-color-primary-1 da-text-color-dark-0 da-mx-lg-16 da-mb-16">
-                Very good works are waiting for you 🤞
+                Your main dashboard for all DEFI world
               </h2>
 
               <p className="da-mb-0 da-text-color-black-80 da-text-color-dark-30">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever.
+              Subscribe to any smart contract and bring all your data. No mathers what network!<br/>
+              If the contract is not in our platform, you can develop your own HOOK in our online editor.
               </p>
             </Col>
           </Row>
